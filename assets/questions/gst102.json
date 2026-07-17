@@ -1,0 +1,72 @@
+{
+  "course_id": "gst102",
+  "course_name": "Nigerian Peoples & Culture",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "gst102_001",
+      "text": "Which of the following is regarded as the oldest civilization in Nigeria based on archaeological evidence?",
+      "options": [
+        "Ife Culture",
+        "Nok Culture",
+        "Benin Empire",
+        "Igbo-Ukwu Culture"
+      ],
+      "correct_index": 1,
+      "explanation": "The Nok Culture is famous for its unique terracotta sculptures and is dating back from 1500 BC to 200 AD, making it the oldest known iron-age civilization in Nigeria.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst102_002",
+      "text": "The traditional socio-political organization of the pre-colonial Igbo society was characterized as:",
+      "options": [
+        "Highly centralized monarchy",
+        "Segmentary or acephalous (headless) system",
+        "Emirate system",
+        "Oligarchy governed by priests"
+      ],
+      "correct_index": 1,
+      "explanation": "Pre-colonial Igbo society was highly decentralized and democratic, relying on village groups, titles, and elder councils rather than centralized monarchs.",
+      "difficulty": 2
+    },
+    {
+      "id": "gst102_003",
+      "text": "In pre-colonial administration, the Yoruba council of kingmakers is known as:",
+      "options": [
+        "Oluwo",
+        "Oyomesi",
+        "Ogboni",
+        "Esama"
+      ],
+      "correct_index": 1,
+      "explanation": "The Oyomesi was the council of state and kingmakers in the old Oyo Empire, who served as a check on the powers of the Alaafin (king).",
+      "difficulty": 1
+    },
+    {
+      "id": "gst102_004",
+      "text": "Under the British colonial administration, the amalgamation of the Northern and Southern protectorates of Nigeria took place in what year?",
+      "options": [
+        "1900",
+        "1906",
+        "1914",
+        "1960"
+      ],
+      "correct_index": 2,
+      "explanation": "Lord Frederick Lugard amalgamated the Northern and Southern protectorates of Nigeria in January 1914 to form a single political entity.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst102_005",
+      "text": "The historical trade route across the Sahara desert that linked West Africa to North Africa and Europe is called:",
+      "options": [
+        "Atlantic Slave Trade Route",
+        "Trans-Saharan Trade Route",
+        "Silk Road",
+        "Nile Valley Trade Route"
+      ],
+      "correct_index": 1,
+      "explanation": "The Trans-Saharan trade route facilitated the exchange of goods like gold, salt, and leather between West African kingdoms and North African traders.",
+      "difficulty": 2
+    }
+  ]
+}

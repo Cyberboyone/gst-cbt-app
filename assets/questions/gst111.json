@@ -1,0 +1,72 @@
+{
+  "course_id": "gst111",
+  "course_name": "Logic & Philosophy",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "gst111_001",
+      "text": "What is the primary definition of philosophy based on its Greek etymology?",
+      "options": [
+        "Love of knowledge",
+        "Love of wisdom",
+        "Search for truth",
+        "Study of existence"
+      ],
+      "correct_index": 1,
+      "explanation": "Philosophy comes from the Greek words 'philo' (love) and 'sophia' (wisdom), meaning 'love of wisdom'.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst111_002",
+      "text": "A fallacy that attacks the person making the argument rather than addressing the argument itself is called:",
+      "options": [
+        "Argumentum ad Populum",
+        "Argumentum ad Hominem",
+        "Petitio Principii",
+        "Post Hoc Ergo Propter Hoc"
+      ],
+      "correct_index": 1,
+      "explanation": "'Ad Hominem' is Latin for 'to the man'. It occurs when an arguer attacks their opponent's character or background instead of their actual claims.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst111_003",
+      "text": "Which branch of philosophy is concerned with the nature, origin, and limits of human knowledge?",
+      "options": [
+        "Metaphysics",
+        "Epistemology",
+        "Aesthetics",
+        "Ethics"
+      ],
+      "correct_index": 1,
+      "explanation": "Epistemology is the study of knowledge. It answers questions like: 'What is knowledge?', 'How do we acquire it?', and 'What is the limit of what we can know?'.",
+      "difficulty": 2
+    },
+    {
+      "id": "gst111_004",
+      "text": "Consider the syllogism: 'All humans are mortal. Socrates is human. Therefore, Socrates is mortal.' This is an example of what type of reasoning?",
+      "options": [
+        "Inductive reasoning",
+        "Deductive reasoning",
+        "Abductive reasoning",
+        "Fallacious reasoning"
+      ],
+      "correct_index": 1,
+      "explanation": "Deductive reasoning starts with general premises and draws a specific, logically certain conclusion. If the premises are true, the conclusion must be true.",
+      "difficulty": 2
+    },
+    {
+      "id": "gst111_005",
+      "text": "A proposition that is assumed to be true without proof, serving as a basis for further reasoning, is known as a/an:",
+      "options": [
+        "Theorem",
+        "Axiom",
+        "Hypothesis",
+        "Conclusion"
+      ],
+      "correct_index": 1,
+      "explanation": "An axiom or postulate is a statement accepted as true without proof, forming the foundation of a logical or mathematical system.",
+      "difficulty": 2
+    }
+  ]
+}

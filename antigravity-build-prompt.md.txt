@@ -1,0 +1,105 @@
+# Antigravity Build Prompt — GST CBT App
+
+Copy everything below into Antigravity as your project brief / initial prompt.
+
+---
+
+Build a complete Flutter mobile app called **GST CBT** — a CBT (computer-based test) practice app for Nigerian university GST (General Studies) courses. Build the full feature set in one pass, no phased MVP. Follow this spec exactly.
+
+## Tech Stack
+- Flutter (Android-first, iOS-compatible)
+- Local storage: Hive for offline-first data (profile, progress, settings, downloaded materials)
+- Backend: Firebase — Firestore (leaderboard, question bank, materials metadata, referrals), Cloud Functions (referral bonus validation), Storage (study material files), Analytics
+- Ads: Google AdMob (banner + rewarded video)
+- Packages: `google_mobile_ads`, `lottie`, `audioplayers`, `pdf`, `printing`, `uuid`, `share_plus`, `connectivity_plus`, `path_provider`
+
+## Identity Model — No Sign-In, No School/Department Selection
+- No login, no email/phone/password, no school or department selection screen anywhere in the flow
+- On first launch, generate an anonymous `device_id` (UUID v4) stored locally, invisible to the user
+- Onboarding is a single step: enter a nickname, then go straight to Home
+- Nickname is used for leaderboard display only
+- Generate a referral code per device tied to `device_id` for invite tracking
+- Include a "Backup my progress" feature: generates a portable encrypted code representing the local data snapshot, which can be entered on a new device to restore progress — no account system involved
+
+## Design System
+Follow this style throughout — reference: soft pastel rounded cards, circular progress gauges, minimal line icons, bold clean typography, generous white space.
+- Brand colors: deep navy (#0B1E3F) and signature orange (#FF7A33) as primary anchors; warm cream (#FBF7F2) as base background
+- Pastel tint per course card: soft peach (#FFE8D6), soft sky blue (#DCEEFF), soft mint (#DFF5E4), soft lavender (#EAE2FA)
+- Cards: 16–24px corner radius
+- Progress shown via circular gauges/rings (not flat bars) for XP, streak, and scores
+- Streak view: a calendar-grid or OMR-bubble-sheet-style dot row (nod to the CBT/exam-sheet format) showing daily practice history
+- Icons: single-color line icons inside circular badges
+- Typography: bold large headline + light body text
+- Primary CTA: floating circular arrow button, consistent across cards
+- Header pattern: greeting + avatar + notification bell + progress bar (home screen)
+- Footer: "Powered by Siyayya.com" on Home and About screens
+
+## Full Feature Set (build all at once)
+
+**Splash/Intro**: Lottie loading animation on launch, skippable after 1 second.
+
+**Onboarding**: nickname entry only, then Home.
+
+**Home**: "Hello [nickname]" header with avatar, notification bell, today's-goal progress ring; course cards (pastel-tinted per subject) each showing completion % and a circular arrow CTA; streak counter, coin balance, XP badge; "continue where you left off" shortcut.
+
+**Practice Mode**: untimed, instant feedback with explanation per question, toggleable sound cue, auto-saves progress after every question (crash-safe).
+
+**Exam Mode**: timed to match real GST CBT duration, no feedback until submission, result screen with score/time/topic breakdown and circular score gauge, PDF export/print of the result shareable via WhatsApp.
+
+**Gamification**: XP per correct answer scaled by difficulty; daily streak with a 1-day grace period before reset; badges (first perfect score, 7-day streak, 100 questions answered, etc.); coins earned through practice and rewarded ads, spendable on material unlocks, hints, and streak-freeze; calendar/bubble-grid streak view.
+
+**Leaderboard**: national ranking by nickname + XP, synced when online, cached last-seen version shown offline.
+
+**Study Materials**: downloadable PDFs/notes per course from Firebase Storage, versioned so only updates re-download, fully usable offline once downloaded, low-data-mode prompt before large downloads on mobile data.
+
+**Invite Friend**: shareable referral code/link via WhatsApp/SMS/etc.; bonus coins credited when the invitee completes their first quiz, validated server-side via a Cloud Function (not client-trusted).
+
+**Ads**: banner ads on non-quiz screens only — never during an active practice or exam question; rewarded video ads ("catch ads") unlock hints, streak-freeze, or offline material packs; one-time IAP option to remove ads entirely.
+
+**About Page**: app purpose, version number, Siyayya branding, feedback/contact link.
+
+**Contextual Pop-ups**: first-time tooltips (dismiss-once), streak-about-to-break warning (max once per day), low-data-mode suggestion before large downloads.
+
+**Footer**: "Powered by Siyayya.com" on Home and About.
+
+## Data Model
+
+Local (Hive):
+```
+Profile: { device_id, nickname, xp, streak_count, coins, last_active_date }
+Progress: { course_id, questions_attempted, correct_count, best_score, last_attempt_date }
+Downloads: { material_id, file_path, version, downloaded_at }
+Settings: { sound_on, ads_removed, low_data_mode }
+```
+
+Firestore:
+```
+leaderboard/{device_id}: { nickname, xp, updated_at }
+referrals/{referral_code}: { device_id, invite_count }
+questions/{course_id}/{question_id}: { text, options[], correct_index, explanation }
+materials/{material_id}: { title, course_id, file_url, version, size }
+app_config: { min_app_version, active_courses[], announcement }
+```
+
+## Non-Functional Requirements
+- Must work fully offline with zero internet after the first course download (~5–10MB per course); only ads, leaderboard sync, and content updates need connectivity
+- APK size target under 25MB excluding downloaded materials
+- All animations and sounds must be mutable/skippable
+- Never show ads during an active quiz question
+- Bundle a starter question set as a local JSON asset so the app is usable immediately after install before any Firestore sync happens
+- Firestore security rules should not require auth but must restrict writes to safe fields only; validate referral bonus crediting server-side in a Cloud Function, never trust the client directly
+
+## Build This First (initial scaffold priority)
+1. Theme/design system (colors, text styles, reusable widgets: course card, progress ring, streak bubbles)
+2. Local Hive setup + device_id generation
+3. Onboarding (nickname only) + Home screen
+4. Starter local question JSON + Practice mode
+5. Exam mode + result screen + PDF export
+6. Gamification logic (XP, streak, coins, badges)
+7. Firestore sync for leaderboard
+8. Study materials download/versioning
+9. Invite/referral system + Cloud Function validation
+10. AdMob integration (test IDs first)
+11. About page, settings, pop-ups, polish
+
+Ask me clarifying questions only if something here is ambiguous — otherwise proceed with reasonable defaults consistent with this spec.

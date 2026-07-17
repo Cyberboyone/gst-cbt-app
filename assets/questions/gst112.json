@@ -1,0 +1,72 @@
+{
+  "course_id": "gst112",
+  "course_name": "Citizenship Education",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "gst112_001",
+      "text": "What is the supreme law of the Federal Republic of Nigeria?",
+      "options": [
+        "The Criminal Code",
+        "The Constitution",
+        "Acts of the National Assembly",
+        "Customary Law"
+      ],
+      "correct_index": 1,
+      "explanation": "The Constitution of Nigeria is supreme, and its provisions have binding force on all authorities and persons throughout the country.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst112_002",
+      "text": "According to the Nigerian Constitution, a person can acquire citizenship by birth if:",
+      "options": [
+        "They reside in Nigeria for 15 years",
+        "Either of their parents or grandparents was born in Nigeria and belongs to a community indigenous to Nigeria",
+        "They are married to a citizen of Nigeria",
+        "They register with the local government authority"
+      ],
+      "correct_index": 1,
+      "explanation": "Citizenship by birth under Section 25 of the 1999 Constitution is granted to anyone born in or outside Nigeria whose parents/grandparents are citizens of Nigeria by birth.",
+      "difficulty": 2
+    },
+    {
+      "id": "gst112_003",
+      "text": "Which organ of government is primarily responsible for making laws in Nigeria?",
+      "options": [
+        "The Executive",
+        "The Legislature",
+        "The Judiciary",
+        "The Civil Service"
+      ],
+      "correct_index": 1,
+      "explanation": "The Legislature (the National Assembly, consisting of the Senate and House of Representatives) is responsible for law-making.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst112_004",
+      "text": "The arm of government responsible for interpreting laws and resolving disputes is the:",
+      "options": [
+        "Police",
+        "Legislature",
+        "Judiciary",
+        "Executive"
+      ],
+      "correct_index": 2,
+      "explanation": "The Judiciary (the court system headed by the Chief Justice of Nigeria) interprets the laws and administers justice.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst112_005",
+      "text": "Which of the following is a fundamental civic duty of a Nigerian citizen?",
+      "options": [
+        "Receiving free tertiary education",
+        "Voting in elections, paying taxes, and respecting national symbols",
+        "Obtaining a passport",
+        "Working for the government"
+      ],
+      "correct_index": 1,
+      "explanation": "Civic duties are obligations of citizens, which include law obedience, tax payment, voting, and national respect.",
+      "difficulty": 1
+    }
+  ]
+}
