@@ -40,4 +40,8 @@ class AppConstants {
   static const String poweredBy = 'Powered by Siyayya.com';
   static const String contactEmail = 'support@siyayya.com';
   static const String webUrl = 'https://siyayya.com';
+  // --- AdMob ---
+  static const String bannerAdUnitId = 'ca-app-pub-5897464116009220/4983329949';
+  static const String interstitialAdUnitId = 'ca-app-pub-3940256099942544/1033173712'; // Test ID for now
+  static const String rewardedAdUnitId = 'ca-app-pub-3940256099942544/5224354917'; // Test ID for now
 }

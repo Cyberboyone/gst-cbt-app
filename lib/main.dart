@@ -1,12 +1,22 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'services/hive_service.dart';
 import 'models/question.dart';
 import 'app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase
+  await Firebase.initializeApp();
+  FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
+
+  // Initialize AdMob
+  await MobileAds.instance.initialize();
 
   // Initialize Hive local database
   final hiveService = HiveService();
