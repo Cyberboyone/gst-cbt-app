@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+
 import '../models/course.dart';
 import '../models/question.dart';
 import '../services/hive_service.dart';
@@ -9,7 +9,6 @@ enum QuizMode { practice, exam }
 
 class QuizProvider with ChangeNotifier {
   final HiveService _hiveService = HiveService();
-  final AudioPlayer _audioPlayer = AudioPlayer();
 
   // Active session parameters
   Course? _activeCourse;
@@ -208,17 +207,13 @@ class QuizProvider with ChangeNotifier {
   }
 
   Future<void> _playAssetSound(String assetPath) async {
-    try {
-      await _audioPlayer.play(AssetSource(assetPath));
-    } catch (e) {
-      debugPrint('Error playing audio: $e');
-    }
+    // Sound playback stubbed — audioplayers not yet configured
+    debugPrint('Sound: $assetPath (stubbed)');
   }
 
   @override
   void dispose() {
     _cancelTimer();
-    _audioPlayer.dispose();
     super.dispose();
   }
 }

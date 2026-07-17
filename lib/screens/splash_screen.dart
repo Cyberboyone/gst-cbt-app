@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:lottie/lottie.dart';
 import '../config/theme.dart';
 import '../config/routes.dart';
 import '../providers/profile_provider.dart';
@@ -112,25 +111,18 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                   const SizedBox(height: 48.0),
                   
-                  // Lottie Loading Fallback
+                  // Animated loading indicator
                   SizedBox(
                     height: 80.0,
-                    child: Lottie.asset(
-                      'assets/animations/splash_loading.json',
-                      width: 150.0,
-                      errorBuilder: (context, error, stackTrace) {
-                        // Fallback loading indicator if Lottie is not available yet
-                        return const Center(
-                          child: SizedBox(
-                            width: 32.0,
-                            height: 32.0,
-                            child: CircularProgressIndicator(
-                              color: AppColors.orange,
-                              strokeWidth: 3.0,
-                            ),
-                          ),
-                        );
-                      },
+                    child: Center(
+                      child: SizedBox(
+                        width: 40.0,
+                        height: 40.0,
+                        child: CircularProgressIndicator(
+                          color: AppColors.orange,
+                          strokeWidth: 3.0,
+                        ),
+                      ),
                     ),
                   ),
                 ],
