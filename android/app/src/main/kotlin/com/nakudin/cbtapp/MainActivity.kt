@@ -1,4 +1,4 @@
-package com.siyayya.gstcbt
+package com.nakudin.cbtapp
 
 import io.flutter.embedding.android.FlutterActivity
 
