@@ -6,6 +6,7 @@ import '../providers/profile_provider.dart';
 import '../providers/settings_provider.dart';
 import '../services/backup_service.dart';
 import '../widgets/powered_by_footer.dart';
+import '../config/routes.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});

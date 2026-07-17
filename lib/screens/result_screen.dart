@@ -143,7 +143,7 @@ class _ResultScreenState extends State<ResultScreen> {
                       '${widget.scorePercentage}%',
                       style: const TextStyle(
                         fontSize: 28.0,
-                        fontWeight: FontWeight.black,
+                        fontWeight: FontWeight.w900,
                         color: AppColors.navy,
                       ),
                     ),
@@ -248,7 +248,7 @@ class _ResultScreenState extends State<ResultScreen> {
                       children: [
                         const Text('XP Earned', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.black)),
+                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -266,7 +266,7 @@ class _ResultScreenState extends State<ResultScreen> {
                       children: [
                         const Text('Coins Reward', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedCoins 🪙', style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.black)),
+                        Text('+$earnedCoins 🪙', style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),

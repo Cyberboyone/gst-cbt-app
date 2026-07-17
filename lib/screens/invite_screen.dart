@@ -109,7 +109,7 @@ class _InviteScreenState extends State<InviteScreen> {
 
             const Text(
               'Share the Knowledge',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.black, color: AppColors.navy),
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.navy),
             ),
             const SizedBox(height: 8.0),
             const Text(
@@ -148,7 +148,7 @@ class _InviteScreenState extends State<InviteScreen> {
                           code,
                           style: const TextStyle(
                             fontSize: 18.0,
-                            fontWeight: FontWeight.black,
+                            fontWeight: FontWeight.w900,
                             color: AppColors.navy,
                             letterSpacing: 1.0,
                           ),

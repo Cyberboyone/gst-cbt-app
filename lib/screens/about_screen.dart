@@ -32,7 +32,7 @@ class AboutScreen extends StatelessWidget {
                     alignment: Alignment.center,
                     child: const Text(
                       'GST',
-                      style: TextStyle(color: Colors.white, fontSize: 22.0, fontWeight: FontWeight.black),
+                      style: TextStyle(color: Colors.white, fontSize: 22.0, fontWeight: FontWeight.w900),
                     ),
                   ),
                   const SizedBox(height: 16.0),
