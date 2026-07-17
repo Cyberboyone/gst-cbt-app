@@ -3,17 +3,15 @@
 
 import 'package:flutter/material.dart';
 
-Future<void> exportResultToPdf({
-  required BuildContext context,
-  required String courseCode,
-  required int scorePercentage,
-  required int correctAnswers,
-  required int totalQuestions,
-}) async {
-  ScaffoldMessenger.of(context).showSnackBar(
-    const SnackBar(
-      content: Text('PDF export coming soon!'),
-      duration: Duration(seconds: 2),
-    ),
-  );
+class PdfExportHelper {
+  static Future<void> exportResultPdf({
+    required String courseCode,
+    required int scorePercentage,
+    required int correctAnswers,
+    required int totalQuestions,
+    required int timeSpentSeconds,
+    required String studentName,
+  }) async {
+    debugPrint('PDF export coming soon for $courseCode!');
+  }
 }
