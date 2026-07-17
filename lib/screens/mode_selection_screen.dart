@@ -20,7 +20,7 @@ class ModeSelectionScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                  color: AppTheme.textPrimary,
+                  color: AppColors.navy,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -29,7 +29,7 @@ class ModeSelectionScreen extends StatelessWidget {
                 'Select the exam category you want to practice.',
                 style: TextStyle(
                   fontSize: 16,
-                  color: AppTheme.textSecondary,
+                  color: AppColors.inkSoft,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -117,7 +117,7 @@ class _ModeCard extends StatelessWidget {
                     style: const TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: AppTheme.textPrimary,
+                      color: AppColors.navy,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -125,13 +125,13 @@ class _ModeCard extends StatelessWidget {
                     subtitle,
                     style: TextStyle(
                       fontSize: 14,
-                      color: AppTheme.textPrimary.withOpacity(0.7),
+                      color: AppColors.navy.withOpacity(0.7),
                     ),
                   ),
                 ],
               ),
             ),
-            const Icon(Icons.arrow_forward_ios, color: AppTheme.textPrimary),
+            const Icon(Icons.arrow_forward_ios, color: AppColors.navy),
           ],
         ),
       ),
