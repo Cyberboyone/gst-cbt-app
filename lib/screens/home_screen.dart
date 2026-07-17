@@ -255,7 +255,7 @@ class _HomeTab extends StatelessWidget {
               // Streak Section Title
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                baseline: TextBaseline.alphabetic,
+                textBaseline: TextBaseline.alphabetic,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 children: [
                   const Text(
