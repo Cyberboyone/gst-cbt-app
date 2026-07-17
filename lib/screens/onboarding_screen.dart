@@ -31,7 +31,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
     profileProvider.createProfile(_nicknameController.text.trim()).then((_) {
-      Navigator.of(context).pushReplacementNamed(AppRoutes.home);
+      Navigator.of(context).pushReplacementNamed(AppRoutes.modeSelection);
     }).catchError((error) {
       setState(() {
         _isSubmitting = false;

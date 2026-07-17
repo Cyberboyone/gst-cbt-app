@@ -1,0 +1,72 @@
+{
+  "course_id": "jamb_eng",
+  "course_name": "Use of English",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "gst101_001",
+      "text": "Identify the option that represents a correct use of the semicolon.",
+      "options": [
+        "We went to the market; and we bought yams.",
+        "We went to the market; we bought yams.",
+        "We went; to the market and bought yams.",
+        "We went to the market we bought; yams."
+      ],
+      "correct_index": 1,
+      "explanation": "A semicolon is used to link two independent clauses that are closely related in thought. Semicolons should not be used with coordinating conjunctions like 'and'.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst101_002",
+      "text": "Which of the following sentences exhibits subject-verb agreement?",
+      "options": [
+        "Each of the students are expected to submit the assignment.",
+        "Each of the students is expected to submit the assignment.",
+        "Every student are expected to submit the assignment.",
+        "Both student is expected to submit the assignment."
+      ],
+      "correct_index": 1,
+      "explanation": "'Each' is a singular pronoun and requires a singular verb ('is'), regardless of the plural noun phrase 'of the students' that follows it.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst101_003",
+      "text": "Choose the most appropriate synonym for the word 'Ephemeral'.",
+      "options": [
+        "Eternal",
+        "Short-lived",
+        "Beautiful",
+        "Trivial"
+      ],
+      "correct_index": 1,
+      "explanation": "'Ephemeral' means lasting for a very short time, which is synonymous with 'short-lived'.",
+      "difficulty": 2
+    },
+    {
+      "id": "gst101_004",
+      "text": "Select the correct spelling among the options.",
+      "options": [
+        "Accomodation",
+        "Accommodation",
+        "Acomodation",
+        "Accormodation"
+      ],
+      "correct_index": 1,
+      "explanation": "The correct spelling is 'Accommodation' with double 'c' and double 'm'.",
+      "difficulty": 1
+    },
+    {
+      "id": "gst101_005",
+      "text": "What type of sentence is: 'Although she was tired, she completed her GST study guide'?",
+      "options": [
+        "Simple sentence",
+        "Compound sentence",
+        "Complex sentence",
+        "Compound-Complex sentence"
+      ],
+      "correct_index": 2,
+      "explanation": "A complex sentence contains one independent clause ('she completed her GST study guide') and at least one dependent clause ('Although she was tired').",
+      "difficulty": 2
+    }
+  ]
+}

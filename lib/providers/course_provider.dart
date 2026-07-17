@@ -7,12 +7,14 @@ class CourseProvider with ChangeNotifier {
   final HiveService _hiveService = HiveService();
 
   final List<Course> _courses = [
+    // 100 Level (University) Courses
     Course(
       id: 'gst101',
       code: 'GST 101',
       name: 'Use of English',
       icon: '📘',
       colorHex: '#FFE8D6', // Peach
+      mode: '100_level',
     ),
     Course(
       id: 'gst102',
@@ -20,6 +22,7 @@ class CourseProvider with ChangeNotifier {
       name: 'Nigerian Peoples & Culture',
       icon: '🌍',
       colorHex: '#DCEEFF', // Sky
+      mode: '100_level',
     ),
     Course(
       id: 'gst111',
@@ -27,6 +30,7 @@ class CourseProvider with ChangeNotifier {
       name: 'Logic & Philosophy',
       icon: '🧠',
       colorHex: '#DFF5E4', // Mint
+      mode: '100_level',
     ),
     Course(
       id: 'gst112',
@@ -34,6 +38,67 @@ class CourseProvider with ChangeNotifier {
       name: 'Citizenship Education',
       icon: '🏛️',
       colorHex: '#EAE2FA', // Lavender
+      mode: '100_level',
+    ),
+    Course(
+      id: 'cos101',
+      code: 'COS 101',
+      name: 'Intro to Computer Science',
+      icon: '💻',
+      colorHex: '#FFE8D6', // Peach
+      mode: '100_level',
+    ),
+    Course(
+      id: 'bio101',
+      code: 'BIO 101',
+      name: 'General Biology',
+      icon: '🧬',
+      colorHex: '#DFF5E4', // Mint
+      mode: '100_level',
+    ),
+    
+    // JAMB Subjects
+    Course(
+      id: 'jamb_eng',
+      code: 'ENG',
+      name: 'Use of English',
+      icon: '📚',
+      colorHex: '#DCEEFF', // Sky
+      mode: 'jamb',
+    ),
+    Course(
+      id: 'jamb_phy',
+      code: 'PHY',
+      name: 'Physics',
+      icon: '⚛️',
+      colorHex: '#FFE8D6', // Peach
+      mode: 'jamb',
+    ),
+    Course(
+      id: 'jamb_mth',
+      code: 'MTH',
+      name: 'Mathematics',
+      icon: '🧮',
+      colorHex: '#EAE2FA', // Lavender
+      mode: 'jamb',
+    ),
+
+    // WAEC Subjects
+    Course(
+      id: 'waec_eng',
+      code: 'ENG',
+      name: 'English Language',
+      icon: '📝',
+      colorHex: '#DCEEFF', // Sky
+      mode: 'waec',
+    ),
+    Course(
+      id: 'waec_mth',
+      code: 'MTH',
+      name: 'Mathematics',
+      icon: '📐',
+      colorHex: '#DFF5E4', // Mint
+      mode: 'waec',
     ),
   ];
 

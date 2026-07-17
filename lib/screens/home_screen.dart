@@ -17,7 +17,8 @@ import 'leaderboard_screen.dart';
 import 'materials_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final String selectedMode;
+  const HomeScreen({super.key, this.selectedMode = '100_level'});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -71,9 +72,14 @@ class _HomeTab extends StatelessWidget {
     final profile = profileProvider.profile;
     if (profile == null) return const SizedBox.shrink();
 
+    // Filter courses by selected mode
+    final homeScreen = context.findAncestorWidgetOfExactType<HomeScreen>();
+    final mode = homeScreen?.selectedMode ?? '100_level';
+    final filteredCourses = courseProvider.courses.where((c) => c.mode == mode).toList();
+
     // Calculate completed questions today (mock/stat check)
     // We'll count progress attempted as today's completed for demo
-    final progressList = courseProvider.courses.map((c) => courseProvider.getProgressForCourse(c.id));
+    final progressList = filteredCourses.map((c) => courseProvider.getProgressForCourse(c.id));
     int totalTodayQuestionsAttempted = 0;
     for (var p in progressList) {
       totalTodayQuestionsAttempted += p.questionsAttempted;
@@ -293,9 +299,9 @@ class _HomeTab extends StatelessWidget {
                 textBaseline: TextBaseline.alphabetic,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 children: [
-                  const Text(
-                    'Your Courses',
-                    style: TextStyle(
+                  Text(
+                    mode == 'jamb' ? 'JAMB Subjects' : mode == 'waec' ? 'WAEC Subjects' : '100 Level Courses',
+                    style: const TextStyle(
                       fontSize: 16.5,
                       fontWeight: FontWeight.w800,
                       color: AppColors.navy,
@@ -322,9 +328,9 @@ class _HomeTab extends StatelessWidget {
               ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: courseProvider.courses.length,
+                itemCount: filteredCourses.length,
                 itemBuilder: (context, index) {
-                  final course = courseProvider.courses[index];
+                  final course = filteredCourses[index];
                   final completion = courseProvider.getCompletionPercentage(course.id);
                   return CourseCard(
                     course: course,
@@ -545,6 +551,9 @@ class _PracticeTab extends StatelessWidget {
 
   void _chooseCourseForSession(BuildContext context, QuizMode mode) {
     final courseProvider = Provider.of<CourseProvider>(context, listen: false);
+    final homeScreen = context.findAncestorWidgetOfExactType<HomeScreen>();
+    final selectedMode = homeScreen?.selectedMode ?? '100_level';
+    final filtered = courseProvider.courses.where((c) => c.mode == selectedMode).toList();
     
     showModalBottomSheet(
       context: context,
@@ -564,7 +573,7 @@ class _PracticeTab extends StatelessWidget {
             ),
             const SizedBox(height: 18.0),
             
-            ...courseProvider.courses.map((course) => Container(
+            ...filtered.map((course) => Container(
               margin: const EdgeInsets.only(bottom: 10.0),
               child: ListTile(
                 leading: CircleAvatar(

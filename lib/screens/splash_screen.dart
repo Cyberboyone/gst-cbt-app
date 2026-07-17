@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
     profileProvider.loadProfile().then((_) {
       if (profileProvider.hasProfile) {
-        Navigator.of(context).pushReplacementNamed(AppRoutes.home);
+        Navigator.of(context).pushReplacementNamed(AppRoutes.modeSelection);
       } else {
         Navigator.of(context).pushReplacementNamed(AppRoutes.onboarding);
       }

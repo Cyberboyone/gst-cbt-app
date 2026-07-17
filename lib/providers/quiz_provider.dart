@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 import '../models/course.dart';
 import '../models/question.dart';
@@ -9,6 +10,7 @@ enum QuizMode { practice, exam }
 
 class QuizProvider with ChangeNotifier {
   final HiveService _hiveService = HiveService();
+  final AudioPlayer _audioPlayer = AudioPlayer();
 
   // Active session parameters
   Course? _activeCourse;
@@ -92,8 +94,10 @@ class QuizProvider with ChangeNotifier {
     // Limit exam mode to 40 questions maximum, or all if less
     if (_mode == QuizMode.exam && _questions.length > 40) {
       _questions = _questions.sublist(0, 40);
-    } else if (_mode == QuizMode.practice && _questions.length > 20) {
-      _questions = _questions.sublist(0, 20); // standard practice batch
+    } else if (_mode == QuizMode.practice) {
+      if (_questions.length > 20) {
+        _questions = _questions.sublist(0, 20); // standard practice batch
+      }
     }
 
     _isLoading = false;
@@ -207,13 +211,17 @@ class QuizProvider with ChangeNotifier {
   }
 
   Future<void> _playAssetSound(String assetPath) async {
-    // Sound playback stubbed — audioplayers not yet configured
-    debugPrint('Sound: $assetPath (stubbed)');
+    try {
+      await _audioPlayer.play(AssetSource(assetPath));
+    } catch (e) {
+      debugPrint('Error playing audio: $e');
+    }
   }
 
   @override
   void dispose() {
     _cancelTimer();
+    _audioPlayer.dispose();
     super.dispose();
   }
 }

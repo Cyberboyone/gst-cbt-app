@@ -6,6 +6,7 @@ class Course {
   final String name;
   final String icon; // Emoji character or icon key
   final String colorHex; // Hex string for styling
+  final String mode; // e.g. "jamb", "waec", "100_level"
 
   Course({
     required this.id,
@@ -13,6 +14,7 @@ class Course {
     required this.name,
     required this.icon,
     required this.colorHex,
+    this.mode = '100_level',
   });
 
   Map<String, dynamic> toMap() {
@@ -22,6 +24,7 @@ class Course {
       'name': name,
       'icon': icon,
       'colorHex': colorHex,
+      'mode': mode,
     };
   }
 
@@ -32,6 +35,7 @@ class Course {
       name: map['name'] as String? ?? '',
       icon: map['icon'] as String? ?? '📘',
       colorHex: map['colorHex'] as String? ?? '#FFE8D6',
+      mode: map['mode'] as String? ?? '100_level',
     );
   }
 

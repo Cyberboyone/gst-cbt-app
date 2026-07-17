@@ -8,6 +8,7 @@ import 'providers/course_provider.dart';
 import 'providers/quiz_provider.dart';
 import 'screens/splash_screen.dart';
 import 'screens/onboarding_screen.dart';
+import 'screens/mode_selection_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/practice_screen.dart';
 import 'screens/exam_screen.dart';
@@ -37,6 +38,7 @@ class GstCbtApp extends StatelessWidget {
         routes: {
           AppRoutes.splash: (context) => const SplashScreen(),
           AppRoutes.onboarding: (context) => const OnboardingScreen(),
+          AppRoutes.modeSelection: (context) => const ModeSelectionScreen(),
           AppRoutes.home: (context) => const HomeScreen(),
           AppRoutes.practice: (context) => const PracticeScreen(),
           AppRoutes.exam: (context) => const ExamScreen(),

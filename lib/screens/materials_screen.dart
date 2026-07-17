@@ -42,36 +42,64 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
       // Create defaults
       final defaults = [
         StudyMaterial(
-          id: 'mat_gst101_1',
-          title: 'Grammar and Sentence Structure Guide',
-          courseId: 'gst101',
-          fileUrl: 'https://raw.githubusercontent.com/msitarzewski/agency-agents/main/materials/gst101/grammar_guide.pdf',
-          version: 1,
-          size: '4.2 MB',
-        ),
-        StudyMaterial(
-          id: 'mat_gst102_1',
-          title: 'Pre-Colonial Nigerian Kingdoms & Culture',
-          courseId: 'gst102',
-          fileUrl: 'https://raw.githubusercontent.com/msitarzewski/agency-agents/main/materials/gst102/kingdoms.pdf',
-          version: 1,
-          size: '5.8 MB',
-        ),
-        StudyMaterial(
-          id: 'mat_gst111_1',
-          title: 'Introduction to Logic and Fallacies',
-          courseId: 'gst111',
-          fileUrl: 'https://raw.githubusercontent.com/msitarzewski/agency-agents/main/materials/gst111/logic_intro.pdf',
-          version: 1,
-          size: '3.1 MB',
-        ),
-        StudyMaterial(
-          id: 'mat_gst112_1',
-          title: 'Citizenship Education Study Handbook',
+          id: 'mat_gst112_npc',
+          title: 'GST 112 - Nigerian Peoples and Culture',
           courseId: 'gst112',
-          fileUrl: 'https://raw.githubusercontent.com/msitarzewski/agency-agents/main/materials/gst112/handbook.pdf',
-          version: 2,
-          size: '6.5 MB',
+          fileUrl: 'bundled://materials/gst112_nigerian_peoples_culture.pdf',
+          version: 1,
+          size: '600 KB',
+          isDownloaded: true,
+          localPath: 'bundled',
+        ),
+        StudyMaterial(
+          id: 'mat_gst_answers_qna',
+          title: 'GST Answers and Questions Compilation',
+          courseId: 'gst101',
+          fileUrl: 'bundled://materials/gst_answers_questions.pdf',
+          version: 1,
+          size: '557 KB',
+          isDownloaded: true,
+          localPath: 'bundled',
+        ),
+        StudyMaterial(
+          id: 'mat_gst211_sem1',
+          title: 'GST 211 First Semester Answers',
+          courseId: 'gst111',
+          fileUrl: 'bundled://materials/gst211_first_semester_answers.pdf',
+          version: 1,
+          size: '82 KB',
+          isDownloaded: true,
+          localPath: 'bundled',
+        ),
+        StudyMaterial(
+          id: 'mat_gst2202_note',
+          title: 'GST 2202 New Study Note',
+          courseId: 'gst102',
+          fileUrl: 'bundled://materials/gst2202_new_note.docx',
+          version: 1,
+          size: '79 KB',
+          isDownloaded: true,
+          localPath: 'bundled',
+        ),
+        StudyMaterial(
+          id: 'mat_ent_past_q',
+          title: 'ENT Past Questions',
+          courseId: 'cos101',
+          fileUrl: 'bundled://materials/ent_pass_q.pdf',
+          version: 1,
+          size: '5.6 MB',
+          isDownloaded: true,
+          localPath: 'bundled',
+        ),
+        StudyMaterial(
+          id: 'mat_past_q_general',
+          title: 'Past Questions (General)',
+          courseId: 'gst101',
+          fileUrl: 'bundled://materials/past_questions_general.pdf',
+          version: 1,
+          size: '5.2 MB',
+          isDownloaded: true,
+          localPath: 'bundled',
         ),
       ];
       
@@ -155,7 +183,13 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
   }
 
   void _viewMaterial(StudyMaterial material) {
-    // Navigate to PDF viewer screen (mock or view)
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('Opening "${material.title}"...'),
+        duration: const Duration(seconds: 2),
+      ),
+    );
+    // For bundled assets, show the mock viewer
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -178,7 +212,10 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
         const SizedBox(height: 20.0),
 
         ..._materials.map((material) {
-          final course = courseProvider.courses.firstWhere((c) => c.id == material.courseId);
+          final course = courseProvider.courses.firstWhere(
+            (c) => c.id == material.courseId,
+            orElse: () => Course(id: '', code: 'GEN', name: 'General', icon: '📄', colorHex: '#DCEEFF'),
+          );
           final progress = _downloadProgress[material.id];
           final isDownloading = progress != null;
 
