@@ -56,7 +56,7 @@ class AboutScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'GST CBT Prep is a specialized computer-based test training platform crafted for Nigerian university undergraduates studying General Studies (GST) courses. It provides complete offline support for taking exam simulations, reading lecture summaries, and analyzing performance metric improvements over time.',
+              'GST CBT Prep is a specialized computer-based test training platform crafted for Nigerian university undergraduates studying General Studies (GST) courses. It provides complete offline support for taking exam simulations, reading lecture summaries, and analyzing performance metrics over time.',
               style: TextStyle(color: AppColors.inkSoft, fontSize: 13.0, height: 1.45),
             ),
             const SizedBox(height: 24.0),
@@ -67,7 +67,7 @@ class AboutScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             _buildFeatureBullet('Offline Practice Mode', 'Review questions with instant answer explanations.'),
-            _buildFeatureBullet('Mock Exam Timer', 'Match real GST duration to build speed and accuracy.'),
+            _buildFeatureBullet('Mock Exam Timer', 'Match real CBT exam duration to build speed and accuracy.'),
             _buildFeatureBullet('Gamification Engine', 'Earn coins, accumulate XP, and achieve streak milestones.'),
             _buildFeatureBullet('Study Notes Manager', 'Download lecture summaries for off-grid reading.'),
             const SizedBox(height: 24.0),

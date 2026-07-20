@@ -28,7 +28,7 @@ class AppTheme {
         seedColor: AppColors.orange,
         primary: AppColors.navy,
         secondary: AppColors.orange,
-        background: AppColors.cream,
+        surface: AppColors.cream,
       ),
       fontFamily: 'Segoe UI', // Fallback to system fonts Segoe UI/Helvetica
       textTheme: const TextTheme(

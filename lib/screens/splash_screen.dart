@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
     profileProvider.loadProfile().then((_) {
       if (profileProvider.hasProfile) {
-        Navigator.of(context).pushReplacementNamed(AppRoutes.modeSelection);
+        Navigator.of(context).pushReplacementNamed(AppRoutes.home);
       } else {
         Navigator.of(context).pushReplacementNamed(AppRoutes.onboarding);
       }
@@ -104,7 +104,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   Text(
                     'Practice offline. Pass once.',
                     style: TextStyle(
-                      color: Colors.white.withOpacity(0.6),
+                      color: Colors.white.withValues(alpha: 0.6),
                       fontSize: 14.0,
                       fontWeight: FontWeight.w500,
                     ),
@@ -142,7 +142,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Text(
                         'Skip',
                         style: TextStyle(
-                          color: Colors.white.withOpacity(0.7),
+                          color: Colors.white.withValues(alpha: 0.7),
                           fontSize: 14.0,
                           fontWeight: FontWeight.w700,
                         ),
@@ -150,7 +150,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       const SizedBox(width: 4.0),
                       Icon(
                         Icons.double_arrow_rounded,
-                        color: Colors.white.withOpacity(0.7),
+                        color: Colors.white.withValues(alpha: 0.7),
                         size: 16.0,
                       ),
                     ],

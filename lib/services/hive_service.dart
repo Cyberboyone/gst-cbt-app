@@ -24,6 +24,7 @@ class HiveService {
     await Hive.openBox(AppConstants.settingsBox);
     await Hive.openBox(AppConstants.questionsBox);
     await Hive.openBox(AppConstants.downloadsBox);
+    await Hive.openBox(AppConstants.claimedCodesBox);
 
     _initialized = true;
     _initDefaults();
@@ -144,6 +145,17 @@ class HiveService {
   Future<void> saveMaterial(StudyMaterial material) async {
     final box = Hive.box(AppConstants.downloadsBox);
     await box.put(material.id, material.toMap());
+  }
+
+  // --- Claimed Referral Codes ---
+  bool isReferralCodeClaimed(String code) {
+    final box = Hive.box(AppConstants.claimedCodesBox);
+    return box.get(code, defaultValue: false) == true;
+  }
+
+  Future<void> markReferralCodeClaimed(String code) async {
+    final box = Hive.box(AppConstants.claimedCodesBox);
+    await box.put(code, true);
   }
 
   // --- Clear local database for reset ---

@@ -12,7 +12,6 @@ class QuizProvider with ChangeNotifier {
   final HiveService _hiveService = HiveService();
   final AudioPlayer _audioPlayer = AudioPlayer();
 
-  // Active session parameters
   Course? _activeCourse;
   Course? get activeCourse => _activeCourse;
 
@@ -28,12 +27,11 @@ class QuizProvider with ChangeNotifier {
   bool _isLoading = false;
   bool get isLoading => _isLoading;
 
-  // Sound settings
   bool _soundOn = true;
   void setSoundOn(bool value) => _soundOn = value;
 
-  // --- Practice Mode specific state ---
-  int? _selectedOptionIndex; // Selected index for current question
+  // Practice Mode
+  int? _selectedOptionIndex;
   int? get selectedOptionIndex => _selectedOptionIndex;
 
   bool _isAnswerChecked = false;
@@ -45,18 +43,36 @@ class QuizProvider with ChangeNotifier {
   int _sessionAttempted = 0;
   int get sessionAttempted => _sessionAttempted;
 
-  // --- Exam Mode specific state ---
-  final Map<int, int> _examAnswers = {}; // Map of question index -> selected option index
+  // Combo system
+  int _currentCombo = 0;
+  int get currentCombo => _currentCombo;
+
+  int _sessionBestCombo = 0;
+  int get sessionBestCombo => _sessionBestCombo;
+
+  bool _lastAnswerCorrect = false;
+  bool get lastAnswerCorrect => _lastAnswerCorrect;
+
+  DateTime? _sessionStartTime;
+  DateTime? get sessionStartTime => _sessionStartTime;
+
+  // Hint system
+  bool _hintUsedThisQuestion = false;
+  bool get hintUsedThisQuestion => _hintUsedThisQuestion;
+  List<int> _eliminatedOptions = [];
+  List<int> get eliminatedOptions => _eliminatedOptions;
+
+  // Exam Mode
+  final Map<int, int> _examAnswers = {};
   Map<int, int> get examAnswers => _examAnswers;
 
-  int _examDurationSeconds = 1800; // 30 mins default
+  int _examDurationSeconds = 1800;
   int _examRemainingSeconds = 1800;
   int get examRemainingSeconds => _examRemainingSeconds;
-  
+
   Timer? _examTimer;
   bool get isExamRunning => _examTimer != null && _examTimer!.isActive;
 
-  // Start a new session
   Future<void> startSession({
     required Course course,
     required QuizMode mode,
@@ -71,18 +87,22 @@ class QuizProvider with ChangeNotifier {
     _isAnswerChecked = false;
     _sessionCorrectAnswers = 0;
     _sessionAttempted = 0;
+    _currentCombo = 0;
+    _sessionBestCombo = 0;
+    _lastAnswerCorrect = false;
+    _sessionStartTime = DateTime.now();
+    _eliminatedOptions = [];
+    _hintUsedThisQuestion = false;
     _examAnswers.clear();
     _examRemainingSeconds = examDurationMinutes * 60;
     _examDurationSeconds = examDurationMinutes * 60;
-    
+
     _cancelTimer();
     notifyListeners();
 
-    // Fetch questions
     if (overrideQuestions != null && overrideQuestions.isNotEmpty) {
       _questions = List.from(overrideQuestions);
     } else {
-      // Load questions from local DB
       final localQuestions = _hiveService.getCachedQuestions(course.id);
       if (localQuestions.isNotEmpty) {
         _questions = List.from(localQuestions)..shuffle();
@@ -91,12 +111,11 @@ class QuizProvider with ChangeNotifier {
       }
     }
 
-    // Limit exam mode to 40 questions maximum, or all if less
     if (_mode == QuizMode.exam && _questions.length > 40) {
       _questions = _questions.sublist(0, 40);
     } else if (_mode == QuizMode.practice) {
       if (_questions.length > 20) {
-        _questions = _questions.sublist(0, 20); // standard practice batch
+        _questions = _questions.sublist(0, 20);
       }
     }
 
@@ -108,19 +127,16 @@ class QuizProvider with ChangeNotifier {
     }
   }
 
-  // Current Question
   Question? get currentQuestion {
     if (_questions.isEmpty || _currentIndex >= _questions.length) return null;
     return _questions[_currentIndex];
   }
 
-  // --- Practice Mode Operations ---
   void selectOption(int index) {
     if (_mode == QuizMode.practice) {
       if (_isAnswerChecked) return;
       _selectedOptionIndex = index;
     } else {
-      // Exam mode
       _examAnswers[_currentIndex] = index;
     }
     notifyListeners();
@@ -128,22 +144,26 @@ class QuizProvider with ChangeNotifier {
 
   Future<void> checkAnswer() async {
     if (_mode != QuizMode.practice || _isAnswerChecked || _selectedOptionIndex == null) return;
-    
+
     _isAnswerChecked = true;
     _sessionAttempted++;
 
     final correct = currentQuestion!.correctIndex;
     final isCorrect = _selectedOptionIndex == correct;
+    _lastAnswerCorrect = isCorrect;
 
     if (isCorrect) {
       _sessionCorrectAnswers++;
+      _currentCombo++;
+      if (_currentCombo > _sessionBestCombo) {
+        _sessionBestCombo = _currentCombo;
+      }
       if (_soundOn) {
-        // Play correct sound
         await _playAssetSound('sounds/correct.mp3');
       }
     } else {
+      _currentCombo = 0;
       if (_soundOn) {
-        // Play wrong sound
         await _playAssetSound('sounds/wrong.mp3');
       }
     }
@@ -155,11 +175,28 @@ class QuizProvider with ChangeNotifier {
       _currentIndex++;
       _selectedOptionIndex = null;
       _isAnswerChecked = false;
+      _eliminatedOptions = [];
+      _hintUsedThisQuestion = false;
       notifyListeners();
     }
   }
 
-  // --- Exam Mode Operations ---
+  void useHint() {
+    if (_mode != QuizMode.practice || _isAnswerChecked || _hintUsedThisQuestion) return;
+    if (_questions.isEmpty || _currentIndex >= _questions.length) return;
+
+    final correctIdx = _questions[_currentIndex].correctIndex;
+    final options = List<int>.generate(_questions[_currentIndex].options.length, (i) => i);
+    options.remove(correctIdx);
+
+    final toEliminate = (options.length / 2).ceil();
+    options.shuffle();
+    _eliminatedOptions = options.sublist(0, toEliminate);
+    _hintUsedThisQuestion = true;
+    notifyListeners();
+  }
+
+  // Exam Mode
   void navigateToQuestion(int index) {
     if (index >= 0 && index < _questions.length) {
       _currentIndex = index;
@@ -174,7 +211,6 @@ class QuizProvider with ChangeNotifier {
         notifyListeners();
       } else {
         _cancelTimer();
-        // Time expired, auto-submit is triggered via UI listening
         notifyListeners();
       }
     });
@@ -185,11 +221,10 @@ class QuizProvider with ChangeNotifier {
     _examTimer = null;
   }
 
-  // Submit Exam
   Map<String, dynamic> submitExam() {
     _cancelTimer();
     int correctCount = 0;
-    
+
     for (int i = 0; i < _questions.length; i++) {
       final selected = _examAnswers[i];
       final actualCorrect = _questions[i].correctIndex;
@@ -198,8 +233,8 @@ class QuizProvider with ChangeNotifier {
       }
     }
 
-    final scorePercentage = _questions.isEmpty 
-        ? 0 
+    final scorePercentage = _questions.isEmpty
+        ? 0
         : ((correctCount / _questions.length) * 100).round();
 
     return {

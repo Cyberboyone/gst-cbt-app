@@ -29,7 +29,7 @@ class StreakBubbles extends StatelessWidget {
             shape: BoxShape.circle,
             color: isFilled ? AppColors.orange : Colors.transparent,
             border: Border.all(
-              color: isFilled ? AppColors.orange : Colors.white.withOpacity(0.35),
+              color: isFilled ? AppColors.orange : Colors.white.withValues(alpha: 0.35),
               width: 2.0,
             ),
           ),

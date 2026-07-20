@@ -5,6 +5,7 @@ import 'package:share_plus/share_plus.dart';
 import '../config/theme.dart';
 import '../config/constants.dart';
 import '../providers/profile_provider.dart';
+import '../services/hive_service.dart';
 import '../widgets/powered_by_footer.dart';
 
 class InviteScreen extends StatefulWidget {
@@ -16,6 +17,7 @@ class InviteScreen extends StatefulWidget {
 
 class _InviteScreenState extends State<InviteScreen> {
   final TextEditingController _friendCodeController = TextEditingController();
+  final HiveService _hiveService = HiveService();
   bool _isClaiming = false;
   bool _claimed = false;
 
@@ -26,7 +28,7 @@ class _InviteScreenState extends State<InviteScreen> {
   }
 
   void _shareReferral(String code) {
-    final msg = 'Join me on GST CBT Prep to practice and pass your General Studies courses offline!\n'
+    final msg = 'Join me on GST CBT Prep to practice and pass your courses offline!\n'
         'Use my invite code: $code to unlock 20 bonus coins instantly.\n'
         'Download the app now!';
     Share.share(msg);
@@ -41,14 +43,13 @@ class _InviteScreenState extends State<InviteScreen> {
   }
 
   void _claimBonus() {
-    final code = _friendCodeController.text.trim();
+    final code = _friendCodeController.text.trim().toUpperCase();
     if (code.isEmpty) return;
 
     setState(() {
       _isClaiming = true;
     });
 
-    // Simulate validation
     Future.delayed(const Duration(milliseconds: 800), () {
       if (!mounted) return;
 
@@ -63,8 +64,30 @@ class _InviteScreenState extends State<InviteScreen> {
         return;
       }
 
-      profileProvider.addCoins(20); // reward 20 coins
-      
+      final codePattern = RegExp(r'^[A-Z0-9]{4}-[A-Z0-9]{4}$');
+      if (!codePattern.hasMatch(code)) {
+        setState(() {
+          _isClaiming = false;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Invalid code format. Use format: XXXX-XXXX'), backgroundColor: Colors.red),
+        );
+        return;
+      }
+
+      if (_hiveService.isReferralCodeClaimed(code)) {
+        setState(() {
+          _isClaiming = false;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('This code has already been claimed!'), backgroundColor: Colors.red),
+        );
+        return;
+      }
+
+      _hiveService.markReferralCodeClaimed(code);
+      profileProvider.addCoins(AppConstants.referralBonusCoins);
+
       setState(() {
         _isClaiming = false;
         _claimed = true;
@@ -72,7 +95,7 @@ class _InviteScreenState extends State<InviteScreen> {
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Successfully claimed! +20 Coins 🪙 added to balance.'),
+          content: Text('Successfully claimed! +20 Coins added to balance.'),
           backgroundColor: AppColors.navy,
         ),
       );
@@ -95,63 +118,42 @@ class _InviteScreenState extends State<InviteScreen> {
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 12.0),
           children: [
-            // Banner illustration
             Container(
               height: 140.0,
-              decoration: BoxDecoration(
-                color: AppColors.peach,
-                borderRadius: BorderRadius.circular(20.0),
-              ),
+              decoration: BoxDecoration(color: AppColors.peach, borderRadius: BorderRadius.circular(20.0)),
               alignment: Alignment.center,
               child: const Text('🎁 🤝 🪙', style: TextStyle(fontSize: 48.0)),
             ),
             const SizedBox(height: 24.0),
 
-            const Text(
-              'Share the Knowledge',
-              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.navy),
-            ),
+            const Text('Share the Knowledge', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.navy)),
             const SizedBox(height: 8.0),
             const Text(
-              'Invite your classmates to practice on GST CBT Prep. You both receive bonus coins when they complete their first quiz session!',
+              'Invite your classmates to practice on GST CBT Prep. You both receive 20 bonus coins when they enter your code!',
               style: TextStyle(color: AppColors.inkSoft, fontSize: 13.5, height: 1.45),
             ),
             const SizedBox(height: 24.0),
 
-            // Share Card
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
-                boxShadow: const [
-                  BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))
-                ],
+                boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
               ),
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  const Text(
-                    'YOUR REFERRAL CODE',
-                    style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold, letterSpacing: 0.5),
-                  ),
+                  const Text('YOUR REFERRAL CODE', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold, letterSpacing: 0.5)),
                   const SizedBox(height: 8.0),
                   Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.cream,
-                      borderRadius: BorderRadius.circular(12.0),
-                    ),
+                    decoration: BoxDecoration(color: AppColors.cream, borderRadius: BorderRadius.circular(12.0)),
                     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           code,
-                          style: const TextStyle(
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.w900,
-                            color: AppColors.navy,
-                            letterSpacing: 1.0,
-                          ),
+                          style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w900, color: AppColors.navy, letterSpacing: 1.0),
                         ),
                         IconButton(
                           icon: const Icon(Icons.copy_rounded, color: AppColors.orange),
@@ -183,26 +185,20 @@ class _InviteScreenState extends State<InviteScreen> {
             ),
             const SizedBox(height: 24.0),
 
-            // Claim Code Card
             if (!_claimed) ...[
-              const Text(
-                'Enter Invite Code',
-                style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy),
-              ),
+              const Text('Enter Invite Code', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
               const SizedBox(height: 8.0),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: const [
-                    BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))
-                  ],
+                  boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
                 ),
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
                     const Text(
-                      'Pasted friend\'s code to unlock 20 starter coins immediately.',
+                      'Paste a friend\'s code (format: XXXX-XXXX) to unlock 20 starter coins immediately.',
                       style: TextStyle(color: AppColors.inkSoft, fontSize: 12.0, height: 1.3),
                     ),
                     const SizedBox(height: 12.0),

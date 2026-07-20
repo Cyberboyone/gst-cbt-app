@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../config/theme.dart';
+import '../config/constants.dart';
 import '../config/routes.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
@@ -31,15 +32,26 @@ class ResultScreen extends StatefulWidget {
   State<ResultScreen> createState() => _ResultScreenState();
 }
 
-class _ResultScreenState extends State<ResultScreen> {
+class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderStateMixin {
   bool _rewardsSaved = false;
+  late AnimationController _animController;
+  late Animation<double> _scaleAnimation;
 
   @override
   void initState() {
     super.initState();
+    _animController = AnimationController(vsync: this, duration: const Duration(milliseconds: 600));
+    _scaleAnimation = CurvedAnimation(parent: _animController, curve: Curves.elasticOut);
+    _animController.forward();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _saveRewardsAndStats();
     });
+  }
+
+  @override
+  void dispose() {
+    _animController.dispose();
+    super.dispose();
   }
 
   void _saveRewardsAndStats() {
@@ -49,8 +61,8 @@ class _ResultScreenState extends State<ResultScreen> {
     final profile = Provider.of<ProfileProvider>(context, listen: false);
     final courses = Provider.of<CourseProvider>(context, listen: false);
 
-    // Calculate dynamic XP and Coins rewards
-    // 10 XP per correct answer. 50 XP bonus for passing (>=45%). 100 XP bonus for a perfect score (100%).
+    final previousLevel = AppConstants.getLevelForXp(profile.profile?.xp ?? 0);
+
     int xpBonus = 0;
     int coinBonus = 0;
 
@@ -65,7 +77,11 @@ class _ResultScreenState extends State<ResultScreen> {
     final totalXp = (widget.correctAnswers * 10) + xpBonus;
     final totalCoins = (widget.correctAnswers * 1) + coinBonus;
 
-    // Save locally
+    profile.recordSessionStats(
+      correct: widget.correctAnswers,
+      attempted: widget.totalQuestions,
+      coins: totalCoins,
+    );
     profile.updateXP(totalXp);
     profile.addCoins(totalCoins);
     profile.updateStreak();
@@ -75,6 +91,130 @@ class _ResultScreenState extends State<ResultScreen> {
       additionalAttempted: widget.totalQuestions,
       additionalCorrect: widget.correctAnswers,
       newExamScore: widget.scorePercentage,
+    );
+
+    final coursesPracticed = courses.courses
+        .where((c) => courses.getProgressForCourse(c.id).questionsAttempted > 0)
+        .map((c) => c.id)
+        .toList();
+
+    final currentExamPerfect = widget.scorePercentage == 100;
+    final allCoursesPerfect = courses.courses.every((c) => courses.getProgressForCourse(c.id).bestScore >= 100 && courses.getProgressForCourse(c.id).bestScore > 0);
+    final passedExamCount = courses.courses.where((c) => courses.getProgressForCourse(c.id).bestScore >= 45).length;
+
+    final newBadges = profile.checkBadges(
+      coursesPracticed: coursesPracticed,
+      currentExamPerfect: currentExamPerfect,
+      allCoursesPerfect: allCoursesPerfect,
+      passedExamCount: passedExamCount,
+    );
+
+    final newLevel = AppConstants.getLevelForXp(profile.profile?.xp ?? 0);
+
+    if (newBadges.isNotEmpty || newLevel > previousLevel) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _showRewardsDialog(context, newBadges, newLevel > previousLevel, newLevel, profile);
+      });
+    }
+  }
+
+  void _showRewardsDialog(BuildContext context, List<String> newBadges, bool leveledUp, int newLevel, ProfileProvider profile) {
+    final levelInfo = AppConstants.levels[newLevel];
+
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24.0)),
+        backgroundColor: AppColors.cream,
+        title: Column(
+          children: [
+            Text(leveledUp ? '🎉' : '🏅', style: const TextStyle(fontSize: 48.0)),
+            const SizedBox(height: 8.0),
+            Text(
+              leveledUp ? 'Level Up!' : 'Achievement Unlocked!',
+              style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.navy, fontSize: 22.0),
+            ),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            if (leveledUp) ...[
+              Container(
+                padding: const EdgeInsets.all(12.0),
+                decoration: BoxDecoration(
+                  color: AppColors.navy,
+                  borderRadius: BorderRadius.circular(12.0),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(levelInfo['icon'], style: const TextStyle(fontSize: 24.0)),
+                    const SizedBox(width: 8.0),
+                    Text(
+                      'You are now a ${levelInfo['title']}!',
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16.0),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 12.0),
+            ],
+            if (newBadges.isNotEmpty) ...[
+              const Text('New Badges:', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+              const SizedBox(height: 8.0),
+              ...newBadges.map((id) {
+                final badge = AppConstants.badgeCatalog.firstWhere(
+                  (b) => b['id'] == id,
+                  orElse: () => {'name': id, 'icon': '🏆'},
+                );
+                return Container(
+                  margin: const EdgeInsets.only(bottom: 6.0),
+                  padding: const EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  child: Row(
+                    children: [
+                      Text(badge['icon']!, style: const TextStyle(fontSize: 20.0)),
+                      const SizedBox(width: 10.0),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(badge['name']!, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 13.0)),
+                            Text(badge['description']!, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0)),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }),
+            ],
+          ],
+        ),
+        actions: [
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.pop(ctx);
+                profile.clearRecentBadges();
+                if (leveledUp) profile.clearLevelUp();
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.orange,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+              ),
+              child: const Text('Awesome!', style: TextStyle(fontWeight: FontWeight.bold)),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -100,7 +240,6 @@ class _ResultScreenState extends State<ResultScreen> {
         'Score: ${widget.scorePercentage}% (${widget.correctAnswers}/${widget.totalQuestions} correct)\n'
         'Time: ${_formatTime(widget.timeSpentSeconds)}\n'
         'Download the app to test your prep!';
-    
     Share.share(msg);
   }
 
@@ -109,11 +248,12 @@ class _ResultScreenState extends State<ResultScreen> {
     final profile = context.watch<ProfileProvider>().profile;
     final nickname = profile?.nickname ?? 'Student';
     final isPassed = widget.scorePercentage >= 45;
+    final isPerfect = widget.scorePercentage == 100;
 
-    // Rewards calculation for display
-    int displayXpBonus = widget.scorePercentage == 100 ? 100 : (widget.scorePercentage >= 45 ? 50 : 0);
-    int displayCoinBonus = widget.scorePercentage == 100 ? 15 : (widget.scorePercentage >= 45 ? 5 : 0);
-    final earnedXp = (widget.correctAnswers * 10) + displayXpBonus;
+    final streakMultiplier = AppConstants.getStreakMultiplier(profile?.streakCount ?? 0);
+    int displayXpBonus = isPerfect ? 100 : (isPassed ? 50 : 0);
+    int displayCoinBonus = isPerfect ? 15 : (isPassed ? 5 : 0);
+    final earnedXp = ((widget.correctAnswers * 10 + displayXpBonus) * streakMultiplier).round();
     final earnedCoins = (widget.correctAnswers * 1) + displayCoinBonus;
 
     return Scaffold(
@@ -129,66 +269,62 @@ class _ResultScreenState extends State<ResultScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 12.0),
           children: [
             const SizedBox(height: 12.0),
-            
-            // Large Score ring
+
+            // Animated Score ring
             Center(
-              child: ProgressRing(
-                percentage: widget.scorePercentage / 100.0,
-                size: 130.0,
-                strokeWidth: 12.0,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      '${widget.scorePercentage}%',
-                      style: const TextStyle(
-                        fontSize: 28.0,
-                        fontWeight: FontWeight.w900,
-                        color: AppColors.navy,
+              child: ScaleTransition(
+                scale: _scaleAnimation,
+                child: ProgressRing(
+                  percentage: widget.scorePercentage / 100.0,
+                  size: 130.0,
+                  strokeWidth: 12.0,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '${widget.scorePercentage}%',
+                        style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, color: AppColors.navy),
                       ),
-                    ),
-                    Text(
-                      isPassed ? 'PASSED' : 'RE-TAKE',
-                      style: TextStyle(
-                        fontSize: 10.0,
-                        fontWeight: FontWeight.bold,
-                        color: isPassed ? Colors.green : Colors.red,
-                        letterSpacing: 1.0,
+                      Text(
+                        isPerfect ? 'PERFECT!' : (isPassed ? 'PASSED' : 'RE-TAKE'),
+                        style: TextStyle(
+                          fontSize: 10.0,
+                          fontWeight: FontWeight.bold,
+                          color: isPerfect ? AppColors.orange : (isPassed ? Colors.green : Colors.red),
+                          letterSpacing: 1.0,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
             const SizedBox(height: 32.0),
-            
+
             // Score Description Banner
             Container(
               decoration: BoxDecoration(
-                color: isPassed ? AppColors.mint : AppColors.peach,
+                color: isPerfect ? AppColors.lavender : (isPassed ? AppColors.mint : AppColors.peach),
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(
-                    isPassed ? '🏆' : '📚',
-                    style: const TextStyle(fontSize: 24.0),
-                  ),
+                  Text(isPerfect ? '💯' : (isPassed ? '🏆' : '📚'), style: const TextStyle(fontSize: 24.0)),
                   const SizedBox(width: 14.0),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          isPassed ? 'Credit Accomplished!' : 'Keep Practicing!',
+                          isPerfect ? 'Outstanding! Perfect Score!' : (isPassed ? 'Credit Accomplished!' : 'Keep Practicing!'),
                           style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy),
                         ),
                         const SizedBox(height: 2.0),
                         Text(
-                          isPassed 
-                              ? 'Congratulations! You performed above the credit cut-off of 45%.'
-                              : 'The university GST passing score is 45%. Take another review practice.',
+                          isPerfect
+                              ? 'Flawless performance! You aced every single question!'
+                              : (isPassed ? 'Congratulations! You performed above the credit cut-off of 45%.' : 'The passing score is 45%. Take another review practice.'),
                           style: const TextStyle(fontSize: 12.0, color: AppColors.navy),
                         ),
                       ],
@@ -199,19 +335,13 @@ class _ResultScreenState extends State<ResultScreen> {
             ),
             const SizedBox(height: 24.0),
 
-            // Performance statistics table
-            const Text(
-              'Exam Summary',
-              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy),
-            ),
+            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
-                boxShadow: const [
-                  BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))
-                ],
+                boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Column(
@@ -223,25 +353,22 @@ class _ResultScreenState extends State<ResultScreen> {
                   _buildStatRow('Correct Answers', '${widget.correctAnswers}'),
                   const Divider(height: 1),
                   _buildStatRow('Time Spent', _formatTime(widget.timeSpentSeconds)),
+                  if (streakMultiplier > 1.0) ...[
+                    const Divider(height: 1),
+                    _buildStatRow('Streak Multiplier', 'x${streakMultiplier.toStringAsFixed(1)}'),
+                  ],
                 ],
               ),
             ),
             const SizedBox(height: 24.0),
 
-            // Rewards
-            const Text(
-              'Rewards Unlocked',
-              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy),
-            ),
+            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
             const SizedBox(height: 12.0),
             Row(
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.lavender,
-                      borderRadius: BorderRadius.circular(14.0),
-                    ),
+                    decoration: BoxDecoration(color: AppColors.lavender, borderRadius: BorderRadius.circular(14.0)),
                     padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -256,10 +383,7 @@ class _ResultScreenState extends State<ResultScreen> {
                 const SizedBox(width: 12.0),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(
-                      color: AppColors.sky,
-                      borderRadius: BorderRadius.circular(14.0),
-                    ),
+                    decoration: BoxDecoration(color: AppColors.sky, borderRadius: BorderRadius.circular(14.0)),
                     padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -275,7 +399,6 @@ class _ResultScreenState extends State<ResultScreen> {
             ),
             const SizedBox(height: 36.0),
 
-            // Actions panel
             SizedBox(
               height: 50.0,
               width: double.infinity,
@@ -292,7 +415,7 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
             ),
             const SizedBox(height: 12.0),
-            
+
             Row(
               children: [
                 Expanded(
@@ -314,10 +437,7 @@ class _ResultScreenState extends State<ResultScreen> {
                   child: SizedBox(
                     height: 50.0,
                     child: ElevatedButton(
-                      onPressed: () {
-                        // Reset session and return to home route
-                        Navigator.of(context).popUntil((route) => route.isFirst);
-                      },
+                      onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.orange,
                         foregroundColor: Colors.white,
@@ -330,7 +450,7 @@ class _ResultScreenState extends State<ResultScreen> {
                 ),
               ],
             ),
-            
+
             const PoweredByFooter(),
           ],
         ),

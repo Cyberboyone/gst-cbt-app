@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../config/theme.dart';
+import '../config/constants.dart';
 import '../providers/quiz_provider.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
@@ -13,16 +14,14 @@ class PracticeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final quizProvider = Provider.of<QuizProvider>(context);
     final settingsProvider = Provider.of<SettingsProvider>(context);
-    
+
     final activeCourse = quizProvider.activeCourse;
     final questions = quizProvider.questions;
     final currentQ = quizProvider.currentQuestion;
 
     if (activeCourse == null || quizProvider.isLoading) {
       return const Scaffold(
-        body: Center(
-          child: CircularProgressIndicator(color: AppColors.orange),
-        ),
+        body: Center(child: CircularProgressIndicator(color: AppColors.orange)),
       );
     }
 
@@ -37,16 +36,9 @@ class PracticeScreen extends StatelessWidget {
               children: [
                 const Text('📚', style: TextStyle(fontSize: 48.0)),
                 const SizedBox(height: 18.0),
-                const Text(
-                  'No questions available',
-                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.navy),
-                ),
+                const Text('No questions available', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.navy)),
                 const SizedBox(height: 8.0),
-                const Text(
-                  'Connect to the internet to fetch questions from GitHub, or try again later.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: AppColors.inkSoft),
-                ),
+                const Text('Connect to the internet to fetch questions, or try again later.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.inkSoft)),
                 const SizedBox(height: 24.0),
                 ElevatedButton(
                   onPressed: () => Navigator.pop(context),
@@ -63,7 +55,6 @@ class PracticeScreen extends StatelessWidget {
     final isLast = quizProvider.currentIndex == questions.length - 1;
     final progressVal = (quizProvider.currentIndex + 1) / questions.length;
 
-    // Sync sound settings to quiz provider
     quizProvider.setSoundOn(settingsProvider.settings.soundOn);
 
     return Scaffold(
@@ -71,14 +62,8 @@ class PracticeScreen extends StatelessWidget {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              activeCourse.code,
-              style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.navy, fontSize: 16.0),
-            ),
-            Text(
-              activeCourse.name,
-              style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.w500),
-            ),
+            Text(activeCourse.code, style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.navy, fontSize: 16.0)),
+            Text(activeCourse.name, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.w500)),
           ],
         ),
         centerTitle: true,
@@ -89,21 +74,39 @@ class PracticeScreen extends StatelessWidget {
           onPressed: () => _confirmExit(context),
         ),
         actions: [
+          if (quizProvider.currentCombo >= 3)
+            Container(
+              margin: const EdgeInsets.only(right: 4.0),
+              padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+              decoration: BoxDecoration(
+                color: AppColors.orange,
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('🔥', style: TextStyle(fontSize: 12.0)),
+                  const SizedBox(width: 2.0),
+                  Text(
+                    'x${quizProvider.currentCombo}',
+                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12.0),
+                  ),
+                ],
+              ),
+            ),
           IconButton(
             icon: Icon(
               settingsProvider.settings.soundOn ? Icons.volume_up_rounded : Icons.volume_off_rounded,
               color: AppColors.navy,
             ),
-            onPressed: () {
-              settingsProvider.toggleSound(!settingsProvider.settings.soundOn);
-            },
+            onPressed: () => settingsProvider.toggleSound(!settingsProvider.settings.soundOn),
           ),
         ],
       ),
       body: SafeArea(
         child: Column(
           children: [
-            // Linear Progress indicators
+            // Progress and combo indicators
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
               child: Column(
@@ -125,13 +128,32 @@ class PracticeScreen extends StatelessWidget {
                   LinearProgressIndicator(
                     value: progressVal,
                     color: AppColors.orange,
-                    backgroundColor: AppColors.navy.withOpacity(0.08),
+                    backgroundColor: AppColors.navy.withValues(alpha: 0.08),
                     borderRadius: BorderRadius.circular(4.0),
                   ),
+                  // Combo bar
+                  if (quizProvider.sessionBestCombo >= 3) ...[
+                    const SizedBox(height: 6.0),
+                    Row(
+                      children: [
+                        Text(
+                          'Best combo: ${quizProvider.sessionBestCombo} 🔥',
+                          style: const TextStyle(fontSize: 11.0, fontWeight: FontWeight.w700, color: AppColors.orange),
+                        ),
+                        if (quizProvider.currentCombo >= 3) ...[
+                          const SizedBox(width: 8.0),
+                          Text(
+                            '(${(AppConstants.getComboMultiplier(quizProvider.currentCombo) * 100).toInt()}% bonus)',
+                            style: TextStyle(fontSize: 11.0, fontWeight: FontWeight.w600, color: AppColors.navy.withValues(alpha: 0.6)),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ],
                 ],
               ),
             ),
-            
+
             // Question body
             Expanded(
               child: SingleChildScrollView(
@@ -139,36 +161,27 @@ class PracticeScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Question text card
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20.0),
-                        boxShadow: const [
-                          BoxShadow(color: AppColors.cardShadow, blurRadius: 12.0, offset: Offset(0, 4))
-                        ],
+                        boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 12.0, offset: Offset(0, 4))],
                       ),
                       padding: const EdgeInsets.all(20.0),
                       child: Text(
                         currentQ!.text,
-                        style: const TextStyle(
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w700,
-                          color: AppColors.navy,
-                          height: 1.4,
-                        ),
+                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.navy, height: 1.4),
                       ),
                     ),
                     const SizedBox(height: 24.0),
-                    
-                    // Options List
+
                     ...List.generate(currentQ.options.length, (idx) {
                       final optionText = currentQ.options[idx];
-                      return _buildOptionTile(context, quizProvider, idx, optionText);
+                      final isEliminated = quizProvider.eliminatedOptions.contains(idx);
+                      return _buildOptionTile(context, quizProvider, idx, optionText, isEliminated);
                     }),
-                    
-                    // Explanation section (if checked)
+
                     if (quizProvider.isAnswerChecked) ...[
                       const SizedBox(height: 20.0),
                       _buildExplanationBox(currentQ.explanation),
@@ -177,30 +190,60 @@ class PracticeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            
-            // Bottom Action buttons
+
+            // Bottom action buttons
             Padding(
               padding: const EdgeInsets.all(22.0),
-              child: SizedBox(
-                width: double.infinity,
-                height: 56.0,
-                child: ElevatedButton(
-                  onPressed: quizProvider.selectedOptionIndex == null 
-                      ? null 
-                      : () => _handleAction(context, quizProvider, isLast),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.navy,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-                    elevation: 0,
+              child: Column(
+                children: [
+                  // Hint button
+                  if (!quizProvider.isAnswerChecked && !quizProvider.hintUsedThisQuestion)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 10.0),
+                      child: SizedBox(
+                        width: double.infinity,
+                        height: 40.0,
+                        child: OutlinedButton.icon(
+                          onPressed: () {
+                            final profile = Provider.of<ProfileProvider>(context, listen: false);
+                            if (profile.profile!.coins >= AppConstants.coinsForHint) {
+                              _showHintConfirmDialog(context, profile, quizProvider);
+                            } else {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(content: Text('Not enough coins for a hint! Need 5 coins.')),
+                              );
+                            }
+                          },
+                          icon: const Text('💡', style: TextStyle(fontSize: 14.0)),
+                          label: Text('Use Hint (${AppConstants.coinsForHint} coins)', style: const TextStyle(fontSize: 12.0)),
+                          style: OutlinedButton.styleFrom(
+                            side: const BorderSide(color: AppColors.orange, width: 1.5),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+                            foregroundColor: AppColors.orange,
+                          ),
+                        ),
+                      ),
+                    ),
+                  SizedBox(
+                    width: double.infinity,
+                    height: 56.0,
+                    child: ElevatedButton(
+                      onPressed: quizProvider.selectedOptionIndex == null
+                          ? null
+                          : () => _handleAction(context, quizProvider, isLast),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: AppColors.navy,
+                        foregroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                        elevation: 0,
+                      ),
+                      child: Text(
+                        quizProvider.isAnswerChecked ? (isLast ? 'Finish' : 'Next Question') : 'Check Answer',
+                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ),
-                  child: Text(
-                    quizProvider.isAnswerChecked 
-                        ? (isLast ? 'Finish' : 'Next Question') 
-                        : 'Check Answer',
-                    style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-                  ),
-                ),
+                ],
               ),
             ),
           ],
@@ -209,12 +252,33 @@ class PracticeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildOptionTile(
-    BuildContext context,
-    QuizProvider quiz,
-    int idx,
-    String text,
-  ) {
+  void _showHintConfirmDialog(BuildContext context, ProfileProvider profile, QuizProvider quiz) {
+    final optionCount = quiz.currentQuestion?.options.length ?? 4;
+    final eliminateCount = ((optionCount - 1) / 2).ceil();
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+        title: const Text('Use Hint?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+        content: Text('This will eliminate $eliminateCount wrong answer(s) for ${AppConstants.coinsForHint} coins.', style: const TextStyle(color: AppColors.inkSoft)),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel', style: TextStyle(color: AppColors.navy))),
+          TextButton(
+            onPressed: () async {
+              Navigator.pop(ctx);
+              final spent = await profile.spendCoins(AppConstants.coinsForHint);
+              if (spent) {
+                quiz.useHint();
+              }
+            },
+            child: const Text('Use Hint', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildOptionTile(BuildContext context, QuizProvider quiz, int idx, String text, bool isEliminated) {
     final isSelected = quiz.selectedOptionIndex == idx;
     final isChecked = quiz.isAnswerChecked;
     final correctIdx = quiz.currentQuestion!.correctIndex;
@@ -223,18 +287,18 @@ class PracticeScreen extends StatelessWidget {
     Color borderColor = Colors.transparent;
     Color textColor = AppColors.navy;
 
-    if (isChecked) {
+    if (isEliminated && !isChecked) {
+      tileColor = Colors.grey.withValues(alpha: 0.1);
+      textColor = Colors.grey;
+    } else if (isChecked) {
       if (idx == correctIdx) {
-        // Correct answer highlighted green
-        tileColor = const Color(0xFFDFF5E4); // Mint
-        borderColor = const Color(0xFF2E7D32).withOpacity(0.3);
+        tileColor = const Color(0xFFDFF5E4);
+        borderColor = const Color(0xFF2E7D32).withValues(alpha: 0.3);
       } else if (isSelected) {
-        // Selected wrong answer highlighted red
-        tileColor = const Color(0xFFFFE8D6); // Peach/soft red
-        borderColor = Colors.red.withOpacity(0.3);
+        tileColor = const Color(0xFFFFE8D6);
+        borderColor = Colors.red.withValues(alpha: 0.3);
       }
     } else if (isSelected) {
-      // Selected but not checked highlighted orange border
       borderColor = AppColors.orange;
     }
 
@@ -243,22 +307,17 @@ class PracticeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: tileColor,
         borderRadius: BorderRadius.circular(16.0),
-        border: Border.all(
-          color: borderColor,
-          width: 2.0,
-        ),
-        boxShadow: const [
-          BoxShadow(color: AppColors.cardShadow, blurRadius: 8.0, offset: Offset(0, 2))
-        ],
+        border: Border.all(color: borderColor, width: 2.0),
+        boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 8.0, offset: Offset(0, 2))],
       ),
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-        onTap: () => quiz.selectOption(idx),
+        onTap: isEliminated && !isChecked ? null : () => quiz.selectOption(idx),
         leading: CircleAvatar(
           radius: 14.0,
-          backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withOpacity(0.08),
+          backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withValues(alpha: 0.08),
           child: Text(
-            String.fromCharCode(65 + idx), // A, B, C, D
+            String.fromCharCode(65 + idx),
             style: TextStyle(
               color: isSelected ? Colors.white : AppColors.navy,
               fontWeight: FontWeight.bold,
@@ -266,14 +325,7 @@ class PracticeScreen extends StatelessWidget {
             ),
           ),
         ),
-        title: Text(
-          text,
-          style: TextStyle(
-            color: textColor,
-            fontWeight: FontWeight.w600,
-            fontSize: 14.0,
-          ),
-        ),
+        title: Text(text, style: TextStyle(color: textColor, fontWeight: FontWeight.w600, fontSize: 14.0)),
       ),
     );
   }
@@ -283,7 +335,7 @@ class PracticeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFFF0F4FA),
         borderRadius: BorderRadius.circular(16.0),
-        border: Border.all(color: AppColors.navy.withOpacity(0.08)),
+        border: Border.all(color: AppColors.navy.withValues(alpha: 0.08)),
       ),
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -293,17 +345,11 @@ class PracticeScreen extends StatelessWidget {
             children: [
               Text('💡', style: TextStyle(fontSize: 16.0)),
               SizedBox(width: 8.0),
-              Text(
-                'Explanation',
-                style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 13.0),
-              ),
+              Text('Explanation', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 13.0)),
             ],
           ),
           const SizedBox(height: 8.0),
-          Text(
-            explanation,
-            style: const TextStyle(color: AppColors.inkSoft, fontSize: 12.5, height: 1.45),
-          ),
+          Text(explanation, style: const TextStyle(color: AppColors.inkSoft, fontSize: 12.5, height: 1.45)),
         ],
       ),
     );
@@ -311,41 +357,65 @@ class PracticeScreen extends StatelessWidget {
 
   void _handleAction(BuildContext context, QuizProvider quiz, bool isLast) {
     if (!quiz.isAnswerChecked) {
-      // Check answer
       quiz.checkAnswer();
     } else if (!isLast) {
-      // Go to next
       quiz.nextQuestion();
     } else {
-      // Finish Session, save progress and reward XP/Coins
       final profile = Provider.of<ProfileProvider>(context, listen: false);
       final courses = Provider.of<CourseProvider>(context, listen: false);
-      
-      final xpEarned = quiz.sessionCorrectAnswers * 10;
-      final coinsEarned = quiz.sessionCorrectAnswers * 1;
-      
-      // Update DB
+
+      final streakMultiplier = AppConstants.getStreakMultiplier(profile.profile?.streakCount ?? 0);
+      final comboMultiplier = AppConstants.getComboMultiplier(quiz.sessionBestCombo);
+      final totalMultiplier = streakMultiplier * comboMultiplier;
+
+      final baseXp = quiz.sessionCorrectAnswers * 10;
+      final xpEarned = (baseXp * totalMultiplier).round();
+      final coinsEarned = quiz.sessionCorrectAnswers;
+
+      profile.recordCombo(quiz.sessionBestCombo);
+      profile.recordSessionStats(
+        correct: quiz.sessionCorrectAnswers,
+        attempted: quiz.sessionAttempted,
+        coins: coinsEarned,
+      );
       profile.updateXP(xpEarned);
       profile.addCoins(coinsEarned);
       profile.updateStreak();
-      
+
       courses.updateCourseProgress(
         courseId: quiz.activeCourse!.id,
         additionalAttempted: quiz.sessionAttempted,
         additionalCorrect: quiz.sessionCorrectAnswers,
       );
 
-      // Return to Home
+      // Check daily goal bonus
+      final questionsNow = profile.profile?.questionsToday ?? 0;
+      if (questionsNow >= AppConstants.dailyGoalQuestions && questionsNow - quiz.sessionAttempted < AppConstants.dailyGoalQuestions) {
+        profile.addCoins(2);
+      }
+
+      final newBadges = profile.checkBadges(
+        coursesPracticed: courses.courses
+            .where((c) => courses.getProgressForCourse(c.id).questionsAttempted > 0)
+            .map((c) => c.id)
+            .toList(),
+      );
+
       Navigator.pop(context);
 
-      // Show congratulations toast
+      String message = 'Practice Complete! +$xpEarned XP, +$coinsEarned Coins';
+      if (totalMultiplier > 1.0) {
+        message += ' (x${totalMultiplier.toStringAsFixed(1)} multiplier!)';
+      }
+      if (newBadges.isNotEmpty) {
+        message += '\n🏅 New badge${newBadges.length > 1 ? 's' : ''} unlocked!';
+      }
+
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(
-            'Practice Complete! +$xpEarned XP, +$coinsEarned Coins 🪙',
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
+          content: Text(message, style: const TextStyle(fontWeight: FontWeight.bold)),
           backgroundColor: AppColors.navy,
+          duration: const Duration(seconds: 3),
         ),
       );
     }
@@ -359,14 +429,11 @@ class PracticeScreen extends StatelessWidget {
         title: const Text('Exit Session?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
         content: const Text('Your current practice score will not be saved if you exit now.'),
         actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel', style: TextStyle(color: AppColors.navy)),
-          ),
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.navy))),
           TextButton(
             onPressed: () {
-              Navigator.pop(context); // close dialog
-              Navigator.pop(context); // exit practice
+              Navigator.pop(context);
+              Navigator.pop(context);
             },
             child: const Text('Exit', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
           ),

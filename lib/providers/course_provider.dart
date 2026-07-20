@@ -57,49 +57,6 @@ class CourseProvider with ChangeNotifier {
       mode: '100_level',
     ),
     
-    // JAMB Subjects
-    Course(
-      id: 'jamb_eng',
-      code: 'ENG',
-      name: 'Use of English',
-      icon: '📚',
-      colorHex: '#DCEEFF', // Sky
-      mode: 'jamb',
-    ),
-    Course(
-      id: 'jamb_phy',
-      code: 'PHY',
-      name: 'Physics',
-      icon: '⚛️',
-      colorHex: '#FFE8D6', // Peach
-      mode: 'jamb',
-    ),
-    Course(
-      id: 'jamb_mth',
-      code: 'MTH',
-      name: 'Mathematics',
-      icon: '🧮',
-      colorHex: '#EAE2FA', // Lavender
-      mode: 'jamb',
-    ),
-
-    // WAEC Subjects
-    Course(
-      id: 'waec_eng',
-      code: 'ENG',
-      name: 'English Language',
-      icon: '📝',
-      colorHex: '#DCEEFF', // Sky
-      mode: 'waec',
-    ),
-    Course(
-      id: 'waec_mth',
-      code: 'MTH',
-      name: 'Mathematics',
-      icon: '📐',
-      colorHex: '#DFF5E4', // Mint
-      mode: 'waec',
-    ),
   ];
 
   List<Course> get courses => _courses;

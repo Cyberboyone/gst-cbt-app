@@ -31,7 +31,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
     profileProvider.createProfile(_nicknameController.text.trim()).then((_) {
-      Navigator.of(context).pushReplacementNamed(AppRoutes.modeSelection);
+      Navigator.of(context).pushReplacementNamed(AppRoutes.home);
     }).catchError((error) {
       setState(() {
         _isSubmitting = false;
@@ -104,7 +104,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: BorderSide(color: AppColors.navy.withOpacity(0.12), width: 1.5),
+                      borderSide: BorderSide(color: AppColors.navy.withValues(alpha: 0.12), width: 1.5),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),

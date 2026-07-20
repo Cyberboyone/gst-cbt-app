@@ -71,13 +71,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
 
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
-    final currentProfile = profileProvider.profile;
-    if (currentProfile != null) {
-      final updated = currentProfile.copyWith(nickname: newName);
-      profileProvider.updateXP(0); // This just saves and triggers listeners (using standard logic)
-      // Wait, let's create a custom setNickname method or just use updateXP with 0 since it saves
-      // Let's modify ProfileProvider later if needed, but wait, let's just make it update profile
-    }
+    profileProvider.setNickname(newName);
 
     setState(() {
       _isEditingName = false;
@@ -276,6 +270,72 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             const SizedBox(height: 24.0),
 
+            // Achievements
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              child: ListTile(
+                leading: const CircleAvatar(
+                  backgroundColor: AppColors.lavender,
+                  child: Text('🏅', style: TextStyle(fontSize: 18.0)),
+                ),
+                title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                subtitle: const Text('View your badges and milestones', style: TextStyle(fontSize: 12.0)),
+                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.orange),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                onTap: () {
+                  Navigator.pushNamed(context, AppRoutes.badges);
+                },
+              ),
+            ),
+            const SizedBox(height: 12.0),
+
+            // Coin Shop
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              child: ListTile(
+                leading: const CircleAvatar(
+                  backgroundColor: AppColors.mint,
+                  child: Text('🪙', style: TextStyle(fontSize: 18.0)),
+                ),
+                title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                subtitle: const Text('Spend coins on hints and streak freezes', style: TextStyle(fontSize: 12.0)),
+                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.orange),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                onTap: () {
+                  Navigator.pushNamed(context, AppRoutes.shop);
+                },
+              ),
+            ),
+            const SizedBox(height: 24.0),
+
+            // Invite & Referrals
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              child: ListTile(
+                leading: const CircleAvatar(
+                  backgroundColor: AppColors.mint,
+                  child: Text('🎁', style: TextStyle(fontSize: 18.0)),
+                ),
+                title: const Text('Invite Friends', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                subtitle: const Text('Share your code and earn 20 bonus coins', style: TextStyle(fontSize: 12.0)),
+                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.orange),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                onTap: () {
+                  Navigator.pushNamed(context, AppRoutes.invite);
+                },
+              ),
+            ),
+            const SizedBox(height: 24.0),
+
             // Ad Removal stub
             if (!settings.adsRemoved) ...[
               Container(
@@ -316,8 +376,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
             // Reset Caution
             Container(
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.red.withOpacity(0.3)),
-                color: Colors.red.withOpacity(0.04),
+                border: Border.all(color: Colors.red.withValues(alpha: 0.3)),
+                color: Colors.red.withValues(alpha: 0.04),
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: const EdgeInsets.all(16.0),

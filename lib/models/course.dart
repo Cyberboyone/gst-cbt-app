@@ -6,7 +6,7 @@ class Course {
   final String name;
   final String icon; // Emoji character or icon key
   final String colorHex; // Hex string for styling
-  final String mode; // e.g. "jamb", "waec", "100_level"
+  final String mode; // e.g. "100_level"
 
   Course({
     required this.id,
