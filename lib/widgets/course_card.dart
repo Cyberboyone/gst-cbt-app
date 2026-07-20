@@ -38,7 +38,7 @@ class CourseCard extends StatelessWidget {
                 height: 70.0,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.white.withValues(alpha: 0.35),
+                  color: Colors.white.withOpacity( 0.35),
                 ),
               ),
             ),
@@ -54,7 +54,7 @@ class CourseCard extends StatelessWidget {
                     height: 44.0,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.white.withValues(alpha: 0.7),
+                      color: Colors.white.withOpacity( 0.7),
                     ),
                     alignment: Alignment.center,
                     child: Text(
@@ -95,7 +95,7 @@ class CourseCard extends StatelessWidget {
                           height: 5.0,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: AppColors.navy.withValues(alpha: 0.12),
+                            color: AppColors.navy.withOpacity( 0.12),
                             borderRadius: BorderRadius.circular(4.0),
                           ),
                           alignment: Alignment.centerLeft,

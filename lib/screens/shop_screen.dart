@@ -191,7 +191,7 @@ class ShopScreen extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
               decoration: BoxDecoration(
-                color: canAfford ? AppColors.orange : Colors.grey.withValues(alpha: 0.2),
+                color: canAfford ? AppColors.orange : Colors.grey.withOpacity( 0.2),
                 borderRadius: BorderRadius.circular(12.0),
               ),
               child: Text(

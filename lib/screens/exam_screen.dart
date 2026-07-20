@@ -113,12 +113,12 @@ class _ExamScreenState extends State<ExamScreen> {
                   final isCurrent = quiz.currentIndex == idx;
 
                   Color color = Colors.white;
-                  Color border = AppColors.navy.withValues(alpha: 0.12);
+                  Color border = AppColors.navy.withOpacity( 0.12);
                   Color text = AppColors.navy;
 
                   if (isCurrent) {
                     border = AppColors.orange;
-                    color = AppColors.orange.withValues(alpha: 0.08);
+                    color = AppColors.orange.withOpacity( 0.08);
                   } else if (isAnswered) {
                     color = AppColors.navy;
                     text = Colors.white;
@@ -191,7 +191,7 @@ class _ExamScreenState extends State<ExamScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
             margin: const EdgeInsets.only(right: 14.0),
             decoration: BoxDecoration(
-              color: isTimeLow ? Colors.red.withValues(alpha: 0.15) : Colors.red.withValues(alpha: 0.08),
+              color: isTimeLow ? Colors.red.withOpacity( 0.15) : Colors.red.withOpacity( 0.08),
               borderRadius: BorderRadius.circular(10.0),
               border: isTimeLow ? Border.all(color: Colors.red, width: 1.5) : null,
             ),
@@ -229,7 +229,7 @@ class _ExamScreenState extends State<ExamScreen> {
                     children: [
                       Text(
                         '${quizProvider.examAnswers.length}/${questions.length} answered',
-                        style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy.withValues(alpha: 0.5), fontSize: 12.0),
+                        style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy.withOpacity( 0.5), fontSize: 12.0),
                       ),
                       const SizedBox(width: 8.0),
                       ElevatedButton.icon(
@@ -237,7 +237,7 @@ class _ExamScreenState extends State<ExamScreen> {
                         icon: const Icon(Icons.grid_on_rounded, size: 14),
                         label: const Text('View All'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.navy.withValues(alpha: 0.06),
+                          backgroundColor: AppColors.navy.withOpacity( 0.06),
                           foregroundColor: AppColors.navy,
                           elevation: 0,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
@@ -288,7 +288,7 @@ class _ExamScreenState extends State<ExamScreen> {
                           onTap: () => quizProvider.selectOption(idx),
                           leading: CircleAvatar(
                             radius: 14.0,
-                            backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withValues(alpha: 0.08),
+                            backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withOpacity( 0.08),
                             child: Text(
                               String.fromCharCode(65 + idx),
                               style: TextStyle(
@@ -318,7 +318,7 @@ class _ExamScreenState extends State<ExamScreen> {
                     icon: const Icon(Icons.arrow_back_ios_new_rounded),
                     style: IconButton.styleFrom(
                       padding: const EdgeInsets.all(16.0),
-                      backgroundColor: AppColors.navy.withValues(alpha: 0.06),
+                      backgroundColor: AppColors.navy.withOpacity( 0.06),
                     ),
                   ),
                   const SizedBox(width: 14.0),

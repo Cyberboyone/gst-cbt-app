@@ -47,7 +47,7 @@ class BadgesScreen extends StatelessWidget {
                     child: LinearProgressIndicator(
                       value: totalBadges > 0 ? unlockedCount / totalBadges : 0,
                       color: AppColors.orange,
-                      backgroundColor: Colors.white.withValues(alpha: 0.2),
+                      backgroundColor: Colors.white.withOpacity( 0.2),
                       minHeight: 8.0,
                     ),
                   ),
@@ -60,7 +60,7 @@ class BadgesScreen extends StatelessWidget {
               return Container(
                 margin: const EdgeInsets.only(bottom: 12.0),
                 decoration: BoxDecoration(
-                  color: isUnlocked ? Colors.white : Colors.white.withValues(alpha: 0.5),
+                  color: isUnlocked ? Colors.white : Colors.white.withOpacity( 0.5),
                   borderRadius: BorderRadius.circular(16.0),
                   boxShadow: isUnlocked
                       ? const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))]
@@ -72,7 +72,7 @@ class BadgesScreen extends StatelessWidget {
                     width: 48.0,
                     height: 48.0,
                     decoration: BoxDecoration(
-                      color: isUnlocked ? AppColors.mint : Colors.grey.withValues(alpha: 0.15),
+                      color: isUnlocked ? AppColors.mint : Colors.grey.withOpacity( 0.15),
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     alignment: Alignment.center,
@@ -92,7 +92,7 @@ class BadgesScreen extends StatelessWidget {
                   subtitle: Text(
                     badgeData['description']!,
                     style: TextStyle(
-                      color: isUnlocked ? AppColors.inkSoft : Colors.grey.withValues(alpha: 0.7),
+                      color: isUnlocked ? AppColors.inkSoft : Colors.grey.withOpacity( 0.7),
                       fontSize: 12.0,
                     ),
                   ),

@@ -128,7 +128,7 @@ class PracticeScreen extends StatelessWidget {
                   LinearProgressIndicator(
                     value: progressVal,
                     color: AppColors.orange,
-                    backgroundColor: AppColors.navy.withValues(alpha: 0.08),
+                    backgroundColor: AppColors.navy.withOpacity( 0.08),
                     borderRadius: BorderRadius.circular(4.0),
                   ),
                   // Combo bar
@@ -144,7 +144,7 @@ class PracticeScreen extends StatelessWidget {
                           const SizedBox(width: 8.0),
                           Text(
                             '(${(AppConstants.getComboMultiplier(quizProvider.currentCombo) * 100).toInt()}% bonus)',
-                            style: TextStyle(fontSize: 11.0, fontWeight: FontWeight.w600, color: AppColors.navy.withValues(alpha: 0.6)),
+                            style: TextStyle(fontSize: 11.0, fontWeight: FontWeight.w600, color: AppColors.navy.withOpacity( 0.6)),
                           ),
                         ],
                       ],
@@ -288,15 +288,15 @@ class PracticeScreen extends StatelessWidget {
     Color textColor = AppColors.navy;
 
     if (isEliminated && !isChecked) {
-      tileColor = Colors.grey.withValues(alpha: 0.1);
+      tileColor = Colors.grey.withOpacity( 0.1);
       textColor = Colors.grey;
     } else if (isChecked) {
       if (idx == correctIdx) {
         tileColor = const Color(0xFFDFF5E4);
-        borderColor = const Color(0xFF2E7D32).withValues(alpha: 0.3);
+        borderColor = const Color(0xFF2E7D32).withOpacity( 0.3);
       } else if (isSelected) {
         tileColor = const Color(0xFFFFE8D6);
-        borderColor = Colors.red.withValues(alpha: 0.3);
+        borderColor = Colors.red.withOpacity( 0.3);
       }
     } else if (isSelected) {
       borderColor = AppColors.orange;
@@ -315,7 +315,7 @@ class PracticeScreen extends StatelessWidget {
         onTap: isEliminated && !isChecked ? null : () => quiz.selectOption(idx),
         leading: CircleAvatar(
           radius: 14.0,
-          backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withValues(alpha: 0.08),
+          backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withOpacity( 0.08),
           child: Text(
             String.fromCharCode(65 + idx),
             style: TextStyle(
@@ -335,7 +335,7 @@ class PracticeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFFF0F4FA),
         borderRadius: BorderRadius.circular(16.0),
-        border: Border.all(color: AppColors.navy.withValues(alpha: 0.08)),
+        border: Border.all(color: AppColors.navy.withOpacity( 0.08)),
       ),
       padding: const EdgeInsets.all(16.0),
       child: Column(

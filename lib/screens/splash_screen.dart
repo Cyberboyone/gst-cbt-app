@@ -104,7 +104,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   Text(
                     'Practice offline. Pass once.',
                     style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.6),
+                      color: Colors.white.withOpacity( 0.6),
                       fontSize: 14.0,
                       fontWeight: FontWeight.w500,
                     ),
@@ -142,7 +142,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Text(
                         'Skip',
                         style: TextStyle(
-                          color: Colors.white.withValues(alpha: 0.7),
+                          color: Colors.white.withOpacity( 0.7),
                           fontSize: 14.0,
                           fontWeight: FontWeight.w700,
                         ),
@@ -150,7 +150,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       const SizedBox(width: 4.0),
                       Icon(
                         Icons.double_arrow_rounded,
-                        color: Colors.white.withValues(alpha: 0.7),
+                        color: Colors.white.withOpacity( 0.7),
                         size: 16.0,
                       ),
                     ],

@@ -239,7 +239,7 @@ class _HomeTab extends StatelessWidget {
                             child: LinearProgressIndicator(
                               value: levelProgress,
                               color: AppColors.orange,
-                              backgroundColor: Colors.white.withValues(alpha: 0.2),
+                              backgroundColor: Colors.white.withOpacity( 0.2),
                               minHeight: 6.0,
                             ),
                           ),
@@ -247,7 +247,7 @@ class _HomeTab extends StatelessWidget {
                           Text(
                             '${profile.xp}/${profileProvider.nextLevelXp} XP to next level',
                             style: TextStyle(
-                              color: Colors.white.withValues(alpha: 0.7),
+                              color: Colors.white.withOpacity( 0.7),
                               fontSize: 11.0,
                             ),
                           ),
@@ -533,7 +533,7 @@ class _PracticeTab extends StatelessWidget {
                         ],
                       ),
                     ),
-                    Icon(Icons.chevron_right_rounded, color: AppColors.navy.withValues(alpha: 0.5)),
+                    Icon(Icons.chevron_right_rounded, color: AppColors.navy.withOpacity( 0.5)),
                   ],
                 ),
               ),
@@ -569,7 +569,7 @@ class _PracticeTab extends StatelessWidget {
                 children: [
                   Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
                   const SizedBox(height: 4.0),
-                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.navy.withValues(alpha: 0.7), height: 1.3)),
+                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.navy.withOpacity( 0.7), height: 1.3)),
                 ],
               ),
             ),

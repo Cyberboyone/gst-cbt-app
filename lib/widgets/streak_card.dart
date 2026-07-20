@@ -31,7 +31,7 @@ class StreakCard extends StatelessWidget {
                 Text(
                   'Current streak',
                   style: TextStyle(
-                    color: Colors.white.withValues(alpha: 0.7),
+                    color: Colors.white.withOpacity( 0.7),
                     fontSize: 11.5,
                     fontWeight: FontWeight.w600,
                   ),

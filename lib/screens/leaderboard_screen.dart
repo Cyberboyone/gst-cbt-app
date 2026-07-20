@@ -48,12 +48,12 @@ class LeaderboardScreen extends StatelessWidget {
                       const SizedBox(height: 2.0),
                       Text(
                         '${profileProvider.levelInfo['icon']} ${profileProvider.levelInfo['title']}',
-                        style: TextStyle(color: Colors.white.withValues(alpha: 0.8), fontSize: 14.0, fontWeight: FontWeight.w700),
+                        style: TextStyle(color: Colors.white.withOpacity( 0.8), fontSize: 14.0, fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(height: 2.0),
                       Text(
                         _getRankTitle(profile),
-                        style: TextStyle(color: Colors.white.withValues(alpha: 0.6), fontSize: 12.0),
+                        style: TextStyle(color: Colors.white.withOpacity( 0.6), fontSize: 12.0),
                       ),
                     ],
                   ),
