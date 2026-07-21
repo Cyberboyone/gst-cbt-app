@@ -251,19 +251,11 @@ class QuizProvider with ChangeNotifier {
     };
   }
 
-  static const String _soundBaseUrl = 'https://raw.githubusercontent.com/Cyberboyone/gst-cbt-app/main/assets/sounds';
-
   Future<void> _playAssetSound(String assetPath) async {
     try {
       await _audioPlayer.play(AssetSource(assetPath));
     } catch (e) {
-      debugPrint('Asset sound failed, trying URL: $e');
-      try {
-        final fileName = assetPath.split('/').last;
-        await _audioPlayer.play(UrlSource('$_soundBaseUrl/$fileName'));
-      } catch (e2) {
-        debugPrint('URL sound also failed: $e2');
-      }
+      debugPrint('Error playing audio: $e');
     }
   }
 

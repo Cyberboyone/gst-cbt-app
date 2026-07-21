@@ -31,11 +31,6 @@ dependencies:
   # Media & animations
   audioplayers: ^6.0.0
 
-  # PDF generation & viewing
-  pdf: ^3.10.7
-  printing: ^5.11.1
-  open_filex: ^4.4.0
-
   # Ads (AdMob)
   google_mobile_ads: ^5.1.0
 

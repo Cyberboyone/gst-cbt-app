@@ -8,7 +8,6 @@ import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/powered_by_footer.dart';
-import '../utils/pdf_export.dart';
 
 class ResultScreen extends StatefulWidget {
   final int totalQuestions;
@@ -224,17 +223,6 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
     return '${minutes}m ${seconds}s';
   }
 
-  void _exportPdf(BuildContext context, String nickname) {
-    PdfExportHelper.exportResultPdf(
-      courseCode: widget.courseCode,
-      scorePercentage: widget.scorePercentage,
-      correctAnswers: widget.correctAnswers,
-      totalQuestions: widget.totalQuestions,
-      timeSpentSeconds: widget.timeSpentSeconds,
-      studentName: nickname,
-    );
-  }
-
   void _shareResults(String nickname) {
     final msg = 'Hey! I just completed the ${widget.courseCode} Exam Simulation on the CBT App.\n'
         'Score: ${widget.scorePercentage}% (${widget.correctAnswers}/${widget.totalQuestions} correct)\n'
@@ -398,23 +386,6 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               ],
             ),
             const SizedBox(height: 36.0),
-
-            SizedBox(
-              height: 50.0,
-              width: double.infinity,
-              child: ElevatedButton.icon(
-                onPressed: () => _exportPdf(context, nickname),
-                icon: const Icon(Icons.picture_as_pdf_rounded),
-                label: const Text('Export Transcript (PDF)'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.primary,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                  elevation: 0,
-                ),
-              ),
-            ),
-            const SizedBox(height: 12.0),
 
             Row(
               children: [
