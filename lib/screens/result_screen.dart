@@ -236,7 +236,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
   }
 
   void _shareResults(String nickname) {
-    final msg = 'Hey! I just completed the ${widget.courseCode} Exam Simulation on the GST CBT Prep App.\n'
+    final msg = 'Hey! I just completed the ${widget.courseCode} Exam Simulation on the CBT App.\n'
         'Score: ${widget.scorePercentage}% (${widget.correctAnswers}/${widget.totalQuestions} correct)\n'
         'Time: ${_formatTime(widget.timeSpentSeconds)}\n'
         'Download the app to test your prep!';

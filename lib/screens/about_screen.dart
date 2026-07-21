@@ -10,7 +10,7 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About GST CBT', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
+        title: const Text('About CBT', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -56,7 +56,7 @@ class AboutScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'GST CBT Prep is a specialized computer-based test training platform crafted for Nigerian university undergraduates studying General Studies (GST) courses. It provides complete offline support for taking exam simulations, reading lecture summaries, and analyzing performance metrics over time.',
+              'CBT is a specialized computer-based test training platform crafted for Nigerian university undergraduates studying General Studies (GST) courses. It provides complete offline support for taking exam simulations, and analyzing performance metrics over time.',
               style: TextStyle(color: AppColors.inkSoft, fontSize: 13.0, height: 1.45),
             ),
             const SizedBox(height: 24.0),

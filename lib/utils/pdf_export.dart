@@ -32,7 +32,7 @@ class PdfExportHelper {
                 child: pw.Column(
                   children: [
                     pw.Text(
-                      'GST CBT Prep App',
+                      'CBT App',
                       style: pw.TextStyle(
                         fontSize: 24,
                         fontWeight: pw.FontWeight.bold,

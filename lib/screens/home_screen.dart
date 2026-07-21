@@ -468,7 +468,7 @@ class _HomeTab extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         title: const Text('Announcements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         content: const Text(
-          'Welcome to the GST CBT Prep App!\n\nAll features are 100% offline. Pick a course and start practicing to prepare for your GST exams.',
+          'Welcome to the CBT App!\n\nAll features are 100% offline. Pick a course and start practicing to prepare for your GST exams.',
           style: TextStyle(color: AppColors.inkSoft, height: 1.4),
         ),
         actions: [

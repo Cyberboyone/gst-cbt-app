@@ -92,7 +92,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                   const SizedBox(height: 24.0),
                   const Text(
-                    'GST CBT Prep',
+                    'CBT',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24.0,

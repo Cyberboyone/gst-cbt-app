@@ -31,7 +31,7 @@ class GstCbtApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => QuizProvider()),
       ],
       child: MaterialApp(
-        title: 'GST CBT Prep',
+        title: 'CBT',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.lightTheme,
         initialRoute: AppRoutes.splash,
