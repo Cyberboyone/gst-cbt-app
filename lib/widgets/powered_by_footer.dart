@@ -13,7 +13,7 @@ class PoweredByFooter extends StatelessWidget {
         child: RichText(
           text: const TextSpan(
             style: TextStyle(
-              fontFamily: 'Segoe UI',
+              fontFamily: 'Nunito',
               fontSize: 10.5,
               fontWeight: FontWeight.w600,
               color: AppColors.inkSoft,
@@ -23,7 +23,7 @@ class PoweredByFooter extends StatelessWidget {
               TextSpan(
                 text: 'Siyayya.com',
                 style: TextStyle(
-                  color: AppColors.navy,
+                  color: AppColors.primary,
                   fontWeight: FontWeight.w700,
                 ),
               ),

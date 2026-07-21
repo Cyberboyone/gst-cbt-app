@@ -88,7 +88,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Settings', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -107,13 +107,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(16.0),
+                  boxShadow: AppColors.clayShadowSmall,
                 ),
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
                   children: [
                     CircleAvatar(
                       backgroundColor: AppColors.peach,
-                      child: Text(profile.nickname[0].toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                      child: Text(profile.nickname[0].toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                     ),
                     const SizedBox(width: 14.0),
                     Expanded(
@@ -131,7 +132,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               children: [
                                 Text(
                                   profile.nickname,
-                                  style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: AppColors.navy),
+                                  style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: AppColors.primary),
                                 ),
                                 const SizedBox(height: 2.0),
                                 Text(
@@ -142,7 +143,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             ),
                     ),
                     IconButton(
-                      icon: Icon(_isEditingName ? Icons.check_circle : Icons.edit, color: AppColors.orange),
+                      icon: Icon(_isEditingName ? Icons.check_circle : Icons.edit, color: AppColors.accent),
                       onPressed: () {
                         if (_isEditingName) {
                           _saveNewNickname();
@@ -168,24 +169,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
+                boxShadow: AppColors.clayShadowSmall,
               ),
               child: Column(
                 children: [
                   SwitchListTile(
-                    title: const Text('Sound Effects', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.navy)),
+                    title: const Text('Sound Effects', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.primary)),
                     subtitle: const Text('Play audio cues for answers', style: TextStyle(fontSize: 12.0)),
                     value: settings.soundOn,
-                    activeColor: AppColors.orange,
+                    activeColor: AppColors.primary,
                     onChanged: (val) {
                       settingsProvider.toggleSound(val);
                     },
                   ),
                   const Divider(height: 1),
                   SwitchListTile(
-                    title: const Text('Low Data Mode', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.navy)),
+                    title: const Text('Low Data Mode', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.primary)),
                     subtitle: const Text('Prompt before loading large assets', style: TextStyle(fontSize: 12.0)),
                     value: settings.lowDataMode,
-                    activeColor: AppColors.orange,
+                    activeColor: AppColors.primary,
                     onChanged: (val) {
                       settingsProvider.toggleLowDataMode(val);
                     },
@@ -224,7 +226,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       icon: const Icon(Icons.copy_rounded, size: 18),
                       label: const Text('Generate & Copy Backup Code'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.navy,
+                        backgroundColor: AppColors.primary,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                       ),
@@ -239,7 +241,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   // Restore Action
                   const Text(
                     'Restore Progress',
-                    style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 14.0),
+                    style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 14.0),
                   ),
                   const SizedBox(height: 8.0),
                   TextField(
@@ -259,10 +261,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     child: OutlinedButton(
                       onPressed: _restoreProgress,
                       style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: AppColors.orange, width: 1.5),
+                        side: const BorderSide(color: AppColors.accent, width: 1.5),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                       ),
-                      child: const Text('Restore from Code', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+                      child: const Text('Restore from Code', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
                     ),
                   ),
                 ],
@@ -275,15 +277,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
+                boxShadow: AppColors.clayShadowSmall,
               ),
               child: ListTile(
                 leading: const CircleAvatar(
-                  backgroundColor: AppColors.lavender,
+                  backgroundColor: AppColors.xpLight,
                   child: Text('🏅', style: TextStyle(fontSize: 18.0)),
                 ),
-                title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                 subtitle: const Text('View your badges and milestones', style: TextStyle(fontSize: 12.0)),
-                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.orange),
+                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.accent),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                 onTap: () {
                   Navigator.pushNamed(context, AppRoutes.badges);
@@ -297,15 +300,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
+                boxShadow: AppColors.clayShadowSmall,
               ),
               child: ListTile(
                 leading: const CircleAvatar(
-                  backgroundColor: AppColors.mint,
+                  backgroundColor: AppColors.coinsLight,
                   child: Text('🪙', style: TextStyle(fontSize: 18.0)),
                 ),
-                title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                 subtitle: const Text('Spend coins on hints and streak freezes', style: TextStyle(fontSize: 12.0)),
-                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.orange),
+                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.accent),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                 onTap: () {
                   Navigator.pushNamed(context, AppRoutes.shop);
@@ -319,15 +323,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
+                boxShadow: AppColors.clayShadowSmall,
               ),
               child: ListTile(
                 leading: const CircleAvatar(
-                  backgroundColor: AppColors.mint,
+                  backgroundColor: AppColors.correctLight,
                   child: Text('🎁', style: TextStyle(fontSize: 18.0)),
                 ),
-                title: const Text('Invite Friends', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                title: const Text('Invite Friends', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                 subtitle: const Text('Share your code and earn 20 bonus coins', style: TextStyle(fontSize: 12.0)),
-                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.orange),
+                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.accent),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                 onTap: () {
                   Navigator.pushNamed(context, AppRoutes.invite);
@@ -352,9 +357,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Remove Ads Forever', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                          Text('Remove Ads Forever', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                           SizedBox(height: 2.0),
-                          Text('Unlock Premium study without interruptions.', style: TextStyle(fontSize: 11.5, color: AppColors.navy)),
+                          Text('Unlock Premium study without interruptions.', style: TextStyle(fontSize: 11.5, color: AppColors.primary)),
                         ],
                       ),
                     ),
@@ -365,7 +370,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           const SnackBar(content: Text('Premium Mode Activated (Simulation)')),
                         );
                       },
-                      child: const Text('Unlock', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+                      child: const Text('Unlock', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
                     )
                   ],
                 ),
@@ -397,7 +402,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           title: const Text('Reset All Data? ⚠️', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
                           content: const Text('This action is irreversible. All offline progress will be lost.'),
                           actions: [
-                            TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.navy))),
+                            TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
                             TextButton(
                               onPressed: () {
                                 Navigator.pop(context);

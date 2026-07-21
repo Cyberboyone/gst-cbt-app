@@ -17,7 +17,7 @@ class ShopScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
@@ -32,8 +32,8 @@ class ShopScreen extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('$coins', style: const TextStyle(color: AppColors.navy, fontWeight: FontWeight.w900, fontSize: 14.0)),
-                const Text(' coins', style: TextStyle(fontSize: 14.0, color: AppColors.navy)),
+                Text('$coins', style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w900, fontSize: 14.0)),
+                const Text(' coins', style: TextStyle(fontSize: 14.0, color: AppColors.primary)),
               ],
             ),
           ),
@@ -72,7 +72,7 @@ class ShopScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24.0),
-            const Text('Power-ups', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
+            const Text('Power-ups', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
             const SizedBox(height: 4.0),
             const Text('Spend your earned coins on useful items', style: TextStyle(color: AppColors.inkSoft, fontSize: 12.5)),
             const SizedBox(height: 14.0),
@@ -87,7 +87,7 @@ class ShopScreen extends StatelessWidget {
                 final spent = await profileProvider.spendCoins(AppConstants.coinsForHint);
                 if (spent && context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Hint purchased!'), backgroundColor: AppColors.navy),
+                    const SnackBar(content: Text('Hint purchased!'), backgroundColor: AppColors.primary),
                   );
                 }
               },
@@ -106,7 +106,7 @@ class ShopScreen extends StatelessWidget {
                   profileProvider.activateStreakFreeze();
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Streak Freeze activated!'), backgroundColor: AppColors.navy),
+                      const SnackBar(content: Text('Streak Freeze activated!'), backgroundColor: AppColors.primary),
                     );
                   }
                 }
@@ -120,7 +120,7 @@ class ShopScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('How to earn more coins', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 14.0)),
+                  const Text('How to earn more coins', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 14.0)),
                   const SizedBox(height: 10.0),
                   _buildEarnRow('Answer questions correctly', '+1 coin each'),
                   _buildEarnRow('Pass an exam (45%+)', '+5 bonus coins'),
@@ -149,8 +149,8 @@ class ShopScreen extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(16.0),
-        boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
+        borderRadius: BorderRadius.circular(20.0),
+        boxShadow: AppColors.clayShadow,
       ),
       padding: const EdgeInsets.all(16.0),
       child: Row(
@@ -160,7 +160,7 @@ class ShopScreen extends StatelessWidget {
             height: 56.0,
             decoration: BoxDecoration(color: AppColors.cream, borderRadius: BorderRadius.circular(14.0)),
             alignment: Alignment.center,
-            child: Text(icon, style: const TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold, color: AppColors.navy)),
+            child: Text(icon, style: const TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold, color: AppColors.primary)),
           ),
           const SizedBox(width: 14.0),
           Expanded(
@@ -169,13 +169,13 @@ class ShopScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 15.0)),
+                    Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0)),
                     if (badge != null) ...[
                       const SizedBox(width: 6.0),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 2.0),
                         decoration: BoxDecoration(color: AppColors.mint, borderRadius: BorderRadius.circular(6.0)),
-                        child: Text(badge, style: const TextStyle(color: AppColors.navy, fontSize: 9.0, fontWeight: FontWeight.bold)),
+                        child: Text(badge, style: const TextStyle(color: AppColors.primary, fontSize: 9.0, fontWeight: FontWeight.bold)),
                       ),
                     ],
                   ],
@@ -191,7 +191,7 @@ class ShopScreen extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
               decoration: BoxDecoration(
-                color: canAfford ? AppColors.orange : Colors.grey.withOpacity( 0.2),
+                color: canAfford ? AppColors.accent : Colors.grey.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(12.0),
               ),
               child: Text(
@@ -215,8 +215,8 @@ class ShopScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.navy, fontSize: 12.5)),
-          Text(amount, style: const TextStyle(color: AppColors.orange, fontSize: 12.5, fontWeight: FontWeight.bold)),
+          Text(label, style: const TextStyle(color: AppColors.primary, fontSize: 12.5)),
+          Text(amount, style: const TextStyle(color: AppColors.accent, fontSize: 12.5, fontWeight: FontWeight.bold)),
         ],
       ),
     );

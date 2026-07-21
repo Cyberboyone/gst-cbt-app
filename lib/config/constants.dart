@@ -1,3 +1,31 @@
+import 'package:flutter/material.dart';
+import 'theme.dart';
+
+// ── Design Tokens ──
+class AppSpacing {
+  static const double xs = 4.0;
+  static const double sm = 8.0;
+  static const double md = 16.0;
+  static const double lg = 24.0;
+  static const double xl = 32.0;
+  static const double xxl = 48.0;
+}
+
+class AppRadius {
+  static const double sm = 10.0;
+  static const double md = 14.0;
+  static const double lg = 20.0;
+  static const double xl = 24.0;
+  static const double full = 999.0;
+}
+
+class AppDuration {
+  static const Duration micro = Duration(milliseconds: 80);
+  static const Duration fast = Duration(milliseconds: 150);
+  static const Duration normal = Duration(milliseconds: 250);
+  static const Duration slow = Duration(milliseconds: 350);
+}
+
 class AppConstants {
   // GitHub Backend Configuration
   static const String githubUsername = 'msitarzewski';

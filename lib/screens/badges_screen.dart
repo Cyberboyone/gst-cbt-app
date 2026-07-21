@@ -18,7 +18,7 @@ class BadgesScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
@@ -29,8 +29,9 @@ class BadgesScreen extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: AppColors.navy,
+                gradient: AppColors.primaryGradient,
                 borderRadius: BorderRadius.circular(20.0),
+                boxShadow: AppColors.clayShadowLarge,
               ),
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -46,8 +47,8 @@ class BadgesScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(4.0),
                     child: LinearProgressIndicator(
                       value: totalBadges > 0 ? unlockedCount / totalBadges : 0,
-                      color: AppColors.orange,
-                      backgroundColor: Colors.white.withOpacity( 0.2),
+                      color: AppColors.accent,
+                      backgroundColor: Colors.white.withOpacity(0.2),
                       minHeight: 8.0,
                     ),
                   ),
@@ -60,11 +61,9 @@ class BadgesScreen extends StatelessWidget {
               return Container(
                 margin: const EdgeInsets.only(bottom: 12.0),
                 decoration: BoxDecoration(
-                  color: isUnlocked ? Colors.white : Colors.white.withOpacity( 0.5),
+                  color: isUnlocked ? Colors.white : Colors.white.withOpacity(0.5),
                   borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: isUnlocked
-                      ? const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))]
-                      : null,
+                  boxShadow: isUnlocked ? AppColors.clayShadowSmall : null,
                 ),
                 child: ListTile(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
@@ -85,7 +84,7 @@ class BadgesScreen extends StatelessWidget {
                     badgeData['name']!,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: isUnlocked ? AppColors.navy : Colors.grey,
+                      color: isUnlocked ? AppColors.primary : Colors.grey,
                       fontSize: 14.0,
                     ),
                   ),
@@ -97,7 +96,7 @@ class BadgesScreen extends StatelessWidget {
                     ),
                   ),
                   trailing: isUnlocked
-                      ? const Icon(Icons.check_circle, color: AppColors.orange, size: 22.0)
+                      ? const Icon(Icons.check_circle, color: AppColors.correct, size: 22.0)
                       : const Icon(Icons.lock_outline, color: Colors.grey, size: 20.0),
                 ),
               );

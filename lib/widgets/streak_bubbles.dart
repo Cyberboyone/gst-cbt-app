@@ -27,9 +27,9 @@ class StreakBubbles extends StatelessWidget {
           margin: const EdgeInsets.only(left: 6.0),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: isFilled ? AppColors.orange : Colors.transparent,
+            color: isFilled ? AppColors.accent : Colors.transparent,
             border: Border.all(
-              color: isFilled ? AppColors.orange : Colors.white.withOpacity( 0.35),
+              color: isFilled ? AppColors.accent : Colors.white.withOpacity(0.35),
               width: 2.0,
             ),
           ),

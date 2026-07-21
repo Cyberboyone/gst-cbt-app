@@ -24,16 +24,17 @@ class LeaderboardScreen extends StatelessWidget {
         if (profile != null) ...[
           // User Card with Level
           Container(
-            decoration: const BoxDecoration(
-              color: AppColors.navy,
-              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+            decoration: BoxDecoration(
+              gradient: AppColors.primaryGradient,
+              borderRadius: BorderRadius.circular(20.0),
+              boxShadow: AppColors.clayShadowLarge,
             ),
             padding: const EdgeInsets.all(20.0),
             child: Row(
               children: [
                 CircleAvatar(
                   radius: 30.0,
-                  backgroundColor: AppColors.orange,
+                  backgroundColor: AppColors.accent,
                   child: Text(
                     profile.nickname.isNotEmpty ? profile.nickname[0].toUpperCase() : 'S',
                     style: const TextStyle(color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold),
@@ -63,7 +64,7 @@ class LeaderboardScreen extends StatelessWidget {
                   children: [
                     Text(
                       '${profile.xp}',
-                      style: const TextStyle(color: AppColors.orange, fontSize: 24.0, fontWeight: FontWeight.w900),
+                      style: const TextStyle(color: AppColors.accent, fontSize: 24.0, fontWeight: FontWeight.w900),
                     ),
                     const Text('Total XP', style: TextStyle(color: Colors.white, fontSize: 11.0, fontWeight: FontWeight.w600)),
                   ],
@@ -86,7 +87,7 @@ class LeaderboardScreen extends StatelessWidget {
           const SizedBox(height: 24.0),
         ],
 
-        const Text('Your Best High Scores', style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.navy)),
+        const Text('Your Best High Scores', style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.primary)),
         const SizedBox(height: 12.0),
 
         ...courseProvider.courses.map((course) {
@@ -99,11 +100,11 @@ class LeaderboardScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(16.0),
-              boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
+              boxShadow: AppColors.clayShadowSmall,
             ),
             child: ListTile(
               leading: CircleAvatar(backgroundColor: course.color, child: Text(course.icon)),
-              title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+              title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
               subtitle: Text(
                 'Attempted: ${progress.questionsAttempted} | Accuracy: $accuracy%',
                 style: const TextStyle(fontSize: 12.0),
@@ -118,7 +119,7 @@ class LeaderboardScreen extends StatelessWidget {
                 ),
                 child: Text(
                   '${progress.bestScore}%',
-                  style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy),
+                  style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary),
                 ),
               ),
             ),
@@ -137,7 +138,7 @@ class LeaderboardScreen extends StatelessWidget {
               Expanded(
                 child: Text(
                   'Your rank is based on XP earned from practice and exams. Complete more sessions and maintain streaks to climb higher!',
-                  style: TextStyle(color: AppColors.navy, fontSize: 12.0, height: 1.4, fontWeight: FontWeight.w500),
+                  style: TextStyle(color: AppColors.primary, fontSize: 12.0, height: 1.4, fontWeight: FontWeight.w500),
                 ),
               ),
             ],
@@ -151,7 +152,7 @@ class LeaderboardScreen extends StatelessWidget {
     if (isEmbedded) {
       return Scaffold(
         appBar: AppBar(
-          title: const Text('Ranks & Standings', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+          title: const Text('Ranks & Standings', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
           backgroundColor: Colors.transparent,
           elevation: 0,
           centerTitle: true,
@@ -177,11 +178,15 @@ class LeaderboardScreen extends StatelessWidget {
 
   Widget _buildMiniStat(String label, String value, Color color) {
     return Container(
-      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(12.0)),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(12.0),
+        boxShadow: AppColors.clayShadowSmall,
+      ),
       padding: const EdgeInsets.all(10.0),
       child: Column(
         children: [
-          Text(value, style: const TextStyle(color: AppColors.navy, fontSize: 16.0, fontWeight: FontWeight.w900)),
+          Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 16.0, fontWeight: FontWeight.w900)),
           const SizedBox(height: 2.0),
           Text(label, style: TextStyle(color: AppColors.inkSoft, fontSize: 9.5, fontWeight: FontWeight.bold)),
         ],

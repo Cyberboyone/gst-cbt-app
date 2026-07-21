@@ -18,7 +18,7 @@ class NavBar extends StatelessWidget {
         color: Colors.white,
         border: Border(
           top: BorderSide(
-            color: AppColors.navy.withOpacity( 0.06),
+            color: AppColors.primary.withOpacity( 0.06),
             width: 1.0,
           ),
         ),
@@ -41,7 +41,7 @@ class NavBar extends StatelessWidget {
 
   Widget _buildNavItem(int index, String icon, String label) {
     final isActive = currentIndex == index;
-    final activeColor = AppColors.orange;
+    final activeColor = AppColors.primary;
     final inactiveColor = const Color(0xFFAEB6C4);
 
     return GestureDetector(

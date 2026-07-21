@@ -17,8 +17,9 @@ class StreakCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(18.0),
       decoration: BoxDecoration(
-        color: AppColors.navy,
+        gradient: AppColors.accentGradient,
         borderRadius: BorderRadius.circular(20.0),
+        boxShadow: AppColors.clayShadow,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -40,7 +41,7 @@ class StreakCard extends StatelessWidget {
                 RichText(
                   text: TextSpan(
                     style: const TextStyle(
-                      fontFamily: 'Segoe UI',
+                      fontFamily: 'Nunito',
                       fontSize: 22.0,
                       fontWeight: FontWeight.w800,
                       color: Colors.white,
@@ -49,7 +50,7 @@ class StreakCard extends StatelessWidget {
                       TextSpan(text: '$streakCount '),
                       const TextSpan(
                         text: 'days 🔥',
-                        style: TextStyle(color: AppColors.orange),
+                        style: TextStyle(color: AppColors.accent),
                       ),
                     ],
                   ),

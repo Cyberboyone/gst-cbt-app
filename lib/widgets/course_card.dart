@@ -25,6 +25,7 @@ class CourseCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: course.color,
           borderRadius: BorderRadius.circular(20.0),
+          boxShadow: AppColors.clayShadow,
         ),
         clipBehavior: Clip.antiAlias,
         child: Stack(
@@ -83,7 +84,7 @@ class CourseCard extends StatelessWidget {
                         Text(
                           course.name,
                           style: const TextStyle(
-                            color: AppColors.navy,
+                            color: AppColors.primary,
                             fontSize: 15.0,
                             fontWeight: FontWeight.w800,
                           ),
@@ -91,29 +92,20 @@ class CourseCard extends StatelessWidget {
                         const SizedBox(height: 8.0),
                         
                         // Progress bar background
-                        Container(
-                          height: 5.0,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: AppColors.navy.withOpacity( 0.12),
-                            borderRadius: BorderRadius.circular(4.0),
-                          ),
-                          alignment: Alignment.centerLeft,
-                          child: FractionallySizedBox(
-                            widthFactor: progressPercentage.clamp(0.0, 1.0),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: AppColors.navy,
-                                borderRadius: BorderRadius.circular(4.0),
-                              ),
-                            ),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(4.0),
+                          child: LinearProgressIndicator(
+                            value: progressPercentage.clamp(0.0, 1.0),
+                            backgroundColor: AppColors.primary.withOpacity(0.12),
+                            color: AppColors.primary,
+                            minHeight: 5.0,
                           ),
                         ),
                         const SizedBox(height: 5.0),
                         Text(
                           pctText,
                           style: const TextStyle(
-                            color: AppColors.navy,
+                            color: AppColors.primary,
                             fontSize: 11.0,
                             fontWeight: FontWeight.w700,
                           ),
@@ -129,7 +121,7 @@ class CourseCard extends StatelessWidget {
                     height: 36.0,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.navy,
+                      color: AppColors.primary,
                     ),
                     alignment: Alignment.center,
                     child: const Icon(

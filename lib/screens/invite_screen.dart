@@ -96,7 +96,7 @@ class _InviteScreenState extends State<InviteScreen> {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Successfully claimed! +20 Coins added to balance.'),
-          backgroundColor: AppColors.navy,
+          backgroundColor: AppColors.primary,
         ),
       );
       _friendCodeController.clear();
@@ -110,7 +110,7 @@ class _InviteScreenState extends State<InviteScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Invite & Referrals', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Invite & Referrals', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -120,13 +120,17 @@ class _InviteScreenState extends State<InviteScreen> {
           children: [
             Container(
               height: 140.0,
-              decoration: BoxDecoration(color: AppColors.peach, borderRadius: BorderRadius.circular(20.0)),
+              decoration: BoxDecoration(
+                gradient: AppColors.primaryGradient,
+                borderRadius: BorderRadius.circular(20.0),
+                boxShadow: AppColors.clayShadowLarge,
+              ),
               alignment: Alignment.center,
               child: const Text('🎁 🤝 🪙', style: TextStyle(fontSize: 48.0)),
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Share the Knowledge', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.navy)),
+            const Text('Share the Knowledge', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.primary)),
             const SizedBox(height: 8.0),
             const Text(
               'Invite your classmates to practice on GST CBT Prep. You both receive 20 bonus coins when they enter your code!',
@@ -137,8 +141,8 @@ class _InviteScreenState extends State<InviteScreen> {
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(16.0),
-                boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
+                borderRadius: BorderRadius.circular(20.0),
+                boxShadow: AppColors.clayShadow,
               ),
               padding: const EdgeInsets.all(20.0),
               child: Column(
@@ -153,10 +157,10 @@ class _InviteScreenState extends State<InviteScreen> {
                       children: [
                         Text(
                           code,
-                          style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w900, color: AppColors.navy, letterSpacing: 1.0),
+                          style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w900, color: AppColors.primary, letterSpacing: 1.0),
                         ),
                         IconButton(
-                          icon: const Icon(Icons.copy_rounded, color: AppColors.orange),
+                          icon: const Icon(Icons.copy_rounded, color: AppColors.accent),
                           onPressed: () => _copyCode(code),
                           padding: EdgeInsets.zero,
                           constraints: const BoxConstraints(),
@@ -173,7 +177,7 @@ class _InviteScreenState extends State<InviteScreen> {
                       icon: const Icon(Icons.share_rounded, size: 18),
                       label: const Text('Share Code via WhatsApp / SMS'),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.navy,
+                        backgroundColor: AppColors.primary,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                         elevation: 0,
@@ -186,13 +190,13 @@ class _InviteScreenState extends State<InviteScreen> {
             const SizedBox(height: 24.0),
 
             if (!_claimed) ...[
-              const Text('Enter Invite Code', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
+              const Text('Enter Invite Code', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
               const SizedBox(height: 8.0),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
+                  borderRadius: BorderRadius.circular(20.0),
+                  boxShadow: AppColors.clayShadow,
                 ),
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -222,7 +226,7 @@ class _InviteScreenState extends State<InviteScreen> {
                           child: ElevatedButton(
                             onPressed: _isClaiming ? null : _claimBonus,
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: AppColors.orange,
+                              backgroundColor: AppColors.accent,
                               foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                               elevation: 0,

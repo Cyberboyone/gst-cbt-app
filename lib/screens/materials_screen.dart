@@ -162,7 +162,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
           context: context,
           builder: (context) => AlertDialog(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-            title: const Text('Low Data Warning ⚠️', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+            title: const Text('Low Data Warning ⚠️', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
             content: Text(
               'Low Data Mode is enabled in your settings. This download requires $size of data. Do you want to proceed?',
               style: const TextStyle(color: AppColors.inkSoft),
@@ -170,11 +170,11 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context, false),
-                child: const Text('Cancel', style: TextStyle(color: AppColors.navy)),
+                child: const Text('Cancel', style: TextStyle(color: AppColors.primary)),
               ),
               TextButton(
                 onPressed: () => Navigator.pop(context, true),
-                child: const Text('Download anyway', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+                child: const Text('Download anyway', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
               ),
             ],
           ),
@@ -223,14 +223,8 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
             margin: const EdgeInsets.only(bottom: 14.0),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(16.0),
-              boxShadow: const [
-                BoxShadow(
-                  color: AppColors.cardShadow,
-                  blurRadius: 10.0,
-                  offset: Offset(0, 4),
-                )
-              ],
+              borderRadius: BorderRadius.circular(20.0),
+              boxShadow: AppColors.clayShadow,
             ),
             child: Padding(
               padding: const EdgeInsets.all(16.0),
@@ -255,7 +249,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
                         Text(
                           course.code,
                           style: const TextStyle(
-                            color: AppColors.orange,
+                            color: AppColors.accent,
                             fontWeight: FontWeight.bold,
                             fontSize: 11.0,
                           ),
@@ -264,7 +258,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
                         Text(
                           material.title,
                           style: const TextStyle(
-                            color: AppColors.navy,
+                            color: AppColors.primary,
                             fontWeight: FontWeight.w800,
                             fontSize: 14.0,
                           ),
@@ -284,8 +278,8 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
                           const SizedBox(height: 8.0),
                           LinearProgressIndicator(
                             value: progress,
-                            color: AppColors.orange,
-                            backgroundColor: AppColors.navy.withOpacity( 0.08),
+                            color: AppColors.primary,
+                            backgroundColor: AppColors.primary.withOpacity(0.08),
                             borderRadius: BorderRadius.circular(4.0),
                           ),
                         ],
@@ -297,18 +291,18 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
                   // Action Button
                   if (material.isDownloaded)
                     IconButton(
-                      icon: const Icon(Icons.menu_book_rounded, color: AppColors.navy),
+                      icon: const Icon(Icons.menu_book_rounded, color: AppColors.primary),
                       onPressed: () => _viewMaterial(material),
                     )
                   else if (isDownloading)
                     const SizedBox(
                       width: 24.0,
                       height: 24.0,
-                      child: CircularProgressIndicator(strokeWidth: 2.5, color: AppColors.orange),
+                      child: CircularProgressIndicator(strokeWidth: 2.5, color: AppColors.primary),
                     )
                   else
                     IconButton(
-                      icon: const Icon(Icons.file_download_outlined, color: AppColors.orange),
+                      icon: const Icon(Icons.file_download_outlined, color: AppColors.primary),
                       onPressed: () => _startDownload(material),
                     ),
                 ],
@@ -323,7 +317,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
     if (widget.isEmbedded) {
       return Scaffold(
         appBar: AppBar(
-          title: const Text('Study Materials', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+          title: const Text('Study Materials', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
           backgroundColor: Colors.transparent,
           elevation: 0,
           centerTitle: true,
@@ -367,7 +361,7 @@ class _MockPdfViewer extends StatelessWidget {
               const SizedBox(height: 24.0),
               const Text(
                 'PDF Reader View Active',
-                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.navy),
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.primary),
               ),
               const SizedBox(height: 12.0),
               Text(
@@ -381,7 +375,7 @@ class _MockPdfViewer extends StatelessWidget {
                 icon: const Icon(Icons.arrow_back),
                 label: const Text('Back to Materials'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.navy,
+                  backgroundColor: AppColors.primary,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                 ),

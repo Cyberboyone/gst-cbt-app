@@ -10,7 +10,7 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About GST CBT', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('About GST CBT', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
@@ -27,7 +27,7 @@ class AboutScreen extends StatelessWidget {
                     height: 72.0,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.orange,
+                      color: AppColors.accent,
                     ),
                     alignment: Alignment.center,
                     child: const Text(
@@ -38,7 +38,7 @@ class AboutScreen extends StatelessWidget {
                   const SizedBox(height: 16.0),
                   const Text(
                     AppConstants.appName,
-                    style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, color: AppColors.navy),
+                    style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, color: AppColors.primary),
                   ),
                   const SizedBox(height: 4.0),
                   const Text(
@@ -52,7 +52,7 @@ class AboutScreen extends StatelessWidget {
             
             const Text(
               'App Purpose',
-              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 15.0),
+              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
             const Text(
@@ -63,7 +63,7 @@ class AboutScreen extends StatelessWidget {
 
             const Text(
               'Key Features',
-              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 15.0),
+              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
             _buildFeatureBullet('Offline Practice Mode', 'Review questions with instant answer explanations.'),
@@ -74,7 +74,7 @@ class AboutScreen extends StatelessWidget {
 
             const Text(
               'About Siyayya',
-              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 15.0),
+              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
             const Text(
@@ -85,7 +85,7 @@ class AboutScreen extends StatelessWidget {
 
             const Text(
               'Support & Feedback',
-              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 15.0),
+              style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
             const Text(
@@ -95,7 +95,7 @@ class AboutScreen extends StatelessWidget {
             const SizedBox(height: 8.0),
             Text(
               AppConstants.contactEmail,
-              style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.orange, fontSize: 14.0),
+              style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.accent, fontSize: 14.0),
             ),
             
             const PoweredByFooter(),
@@ -111,13 +111,13 @@ class AboutScreen extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('• ', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold, fontSize: 16.0)),
+          const Text('• ', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold, fontSize: 16.0)),
           Expanded(
             child: RichText(
               text: TextSpan(
-                style: const TextStyle(fontFamily: 'Segoe UI', fontSize: 13.0, color: AppColors.inkSoft),
+                style: const TextStyle(fontFamily: 'Nunito', fontSize: 13.0, color: AppColors.inkSoft),
                 children: [
-                  TextSpan(text: '$title: ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                  TextSpan(text: '$title: ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                   TextSpan(text: desc),
                 ],
               ),

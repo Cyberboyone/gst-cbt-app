@@ -58,7 +58,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 height: 56.0,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.orange,
+                  color: AppColors.accent,
                 ),
                 alignment: Alignment.center,
                 child: const Text(
@@ -96,15 +96,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   decoration: InputDecoration(
                     labelText: 'Nickname',
                     hintText: 'e.g., Musab',
-                    labelStyle: const TextStyle(color: AppColors.navy),
-                    floatingLabelStyle: const TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold),
+                    labelStyle: const TextStyle(color: AppColors.primary),
+                    floatingLabelStyle: const TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: const BorderSide(color: AppColors.orange, width: 2.0),
+                      borderSide: const BorderSide(color: AppColors.accent, width: 2.0),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: BorderSide(color: AppColors.navy.withOpacity( 0.12), width: 1.5),
+                      borderSide: BorderSide(color: AppColors.primary.withOpacity(0.12), width: 1.5),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
@@ -137,7 +137,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 child: ElevatedButton(
                   onPressed: _isSubmitting ? null : _submit,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.navy,
+                    backgroundColor: AppColors.primary,
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.0),

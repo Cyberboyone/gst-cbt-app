@@ -29,8 +29,8 @@ class ProgressRing extends StatelessWidget {
             painter: _ConicProgressPainter(
               percentage: percentage,
               strokeWidth: strokeWidth,
-              progressColor: AppColors.orange,
-              backgroundColor: const Color(0xFFEFE7DC),
+              progressColor: AppColors.primary,
+              backgroundColor: AppColors.primary.withOpacity(0.12),
             ),
           ),
           if (child != null) child!,

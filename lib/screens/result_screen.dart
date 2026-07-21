@@ -133,7 +133,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             const SizedBox(height: 8.0),
             Text(
               leveledUp ? 'Level Up!' : 'Achievement Unlocked!',
-              style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.navy, fontSize: 22.0),
+              style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 22.0),
             ),
           ],
         ),
@@ -144,7 +144,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               Container(
                 padding: const EdgeInsets.all(12.0),
                 decoration: BoxDecoration(
-                  color: AppColors.navy,
+                  color: AppColors.primary,
                   borderRadius: BorderRadius.circular(12.0),
                 ),
                 child: Row(
@@ -162,7 +162,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               const SizedBox(height: 12.0),
             ],
             if (newBadges.isNotEmpty) ...[
-              const Text('New Badges:', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+              const Text('New Badges:', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
               const SizedBox(height: 8.0),
               ...newBadges.map((id) {
                 final badge = AppConstants.badgeCatalog.firstWhere(
@@ -184,7 +184,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(badge['name']!, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 13.0)),
+                            Text(badge['name']!, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 13.0)),
                             Text(badge['description']!, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0)),
                           ],
                         ),
@@ -206,7 +206,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                 if (leveledUp) profile.clearLevelUp();
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.orange,
+                backgroundColor: AppColors.accent,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
               ),
@@ -258,7 +258,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Exam Result', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Exam Result', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -283,14 +283,14 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                     children: [
                       Text(
                         '${widget.scorePercentage}%',
-                        style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, color: AppColors.navy),
+                        style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, color: AppColors.primary),
                       ),
                       Text(
                         isPerfect ? 'PERFECT!' : (isPassed ? 'PASSED' : 'RE-TAKE'),
                         style: TextStyle(
                           fontSize: 10.0,
                           fontWeight: FontWeight.bold,
-                          color: isPerfect ? AppColors.orange : (isPassed ? Colors.green : Colors.red),
+                          color: isPerfect ? AppColors.accent : (isPassed ? Colors.green : Colors.red),
                           letterSpacing: 1.0,
                         ),
                       ),
@@ -318,14 +318,14 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         Text(
                           isPerfect ? 'Outstanding! Perfect Score!' : (isPassed ? 'Credit Accomplished!' : 'Keep Practicing!'),
-                          style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy),
+                          style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary),
                         ),
                         const SizedBox(height: 2.0),
                         Text(
                           isPerfect
                               ? 'Flawless performance! You aced every single question!'
                               : (isPassed ? 'Congratulations! You performed above the credit cut-off of 45%.' : 'The passing score is 45%. Take another review practice.'),
-                          style: const TextStyle(fontSize: 12.0, color: AppColors.navy),
+                          style: const TextStyle(fontSize: 12.0, color: AppColors.primary),
                         ),
                       ],
                     ),
@@ -335,13 +335,13 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
+            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(16.0),
-                boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 10.0, offset: Offset(0, 4))],
+                boxShadow: AppColors.clayShadow,
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Column(
@@ -362,7 +362,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
+            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
             const SizedBox(height: 12.0),
             Row(
               children: [
@@ -375,7 +375,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         const Text('XP Earned', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -390,7 +390,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         const Text('Coins Reward', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedCoins 🪙', style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+$earnedCoins 🪙', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -407,7 +407,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                 icon: const Icon(Icons.picture_as_pdf_rounded),
                 label: const Text('Export Transcript (PDF)'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.navy,
+                  backgroundColor: AppColors.primary,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                   elevation: 0,
@@ -423,10 +423,10 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                     height: 50.0,
                     child: OutlinedButton.icon(
                       onPressed: () => _shareResults(nickname),
-                      icon: const Icon(Icons.share_rounded, color: AppColors.orange, size: 18),
-                      label: const Text('Share Result', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+                      icon: const Icon(Icons.share_rounded, color: AppColors.accent, size: 18),
+                      label: const Text('Share Result', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
                       style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: AppColors.orange, width: 1.5),
+                        side: const BorderSide(color: AppColors.accent, width: 1.5),
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                       ),
                     ),
@@ -439,7 +439,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                     child: ElevatedButton(
                       onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.orange,
+                        backgroundColor: AppColors.accent,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
                         elevation: 0,
@@ -465,7 +465,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(label, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13.5, fontWeight: FontWeight.bold)),
-          Text(value, style: const TextStyle(color: AppColors.navy, fontSize: 13.5, fontWeight: FontWeight.w800)),
+          Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 13.5, fontWeight: FontWeight.w800)),
         ],
       ),
     );

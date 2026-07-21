@@ -100,7 +100,7 @@ class _HomeTab extends StatelessWidget {
                         decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                           gradient: LinearGradient(
-                            colors: [AppColors.orange, Color(0xFFFFB877)],
+                            colors: [AppColors.accent, Color(0xFFFFB877)],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                           ),
@@ -131,7 +131,7 @@ class _HomeTab extends StatelessWidget {
                           Text(
                             'Hello, ${profile.nickname}',
                             style: const TextStyle(
-                              color: AppColors.navy,
+                              color: AppColors.primary,
                               fontSize: 19.0,
                               fontWeight: FontWeight.w800,
                               letterSpacing: -0.2,
@@ -152,13 +152,6 @@ class _HomeTab extends StatelessWidget {
                           decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.cardShadow,
-                                blurRadius: 12.0,
-                                offset: Offset(0, 4),
-                              )
-                            ],
                           ),
                           alignment: Alignment.center,
                           child: const Text('🔔', style: TextStyle(fontSize: 16.0)),
@@ -171,7 +164,7 @@ class _HomeTab extends StatelessWidget {
                             height: 7.0,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: AppColors.orange,
+                              color: AppColors.accent,
                               border: Border.all(color: Colors.white, width: 1.5),
                             ),
                           ),
@@ -187,16 +180,14 @@ class _HomeTab extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   gradient: const LinearGradient(
-                    colors: [AppColors.navy, Color(0xFF1A3A6B)],
+                    colors: [AppColors.primary, AppColors.primaryDark],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
-                  borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: const [
-                    BoxShadow(color: AppColors.cardShadow, blurRadius: 16.0, offset: Offset(0, 6)),
-                  ],
+                  borderRadius: BorderRadius.circular(20.0),
+                  boxShadow: AppColors.clayShadowLarge,
                 ),
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(18.0),
                 child: Row(
                   children: [
                     Text(levelInfo['icon'], style: const TextStyle(fontSize: 32.0)),
@@ -219,8 +210,8 @@ class _HomeTab extends StatelessWidget {
                               Container(
                                 padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 2.0),
                                 decoration: BoxDecoration(
-                                  color: AppColors.orange,
-                                  borderRadius: BorderRadius.circular(6.0),
+                                  color: AppColors.accent,
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 child: Text(
                                   '${profile.xp} XP',
@@ -238,8 +229,8 @@ class _HomeTab extends StatelessWidget {
                             borderRadius: BorderRadius.circular(4.0),
                             child: LinearProgressIndicator(
                               value: levelProgress,
-                              color: AppColors.orange,
-                              backgroundColor: Colors.white.withOpacity( 0.2),
+                              color: AppColors.accent,
+                              backgroundColor: Colors.white.withOpacity(0.2),
                               minHeight: 6.0,
                             ),
                           ),
@@ -263,12 +254,10 @@ class _HomeTab extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: const [
-                    BoxShadow(color: AppColors.cardShadow, blurRadius: 16.0, offset: Offset(0, 6)),
-                  ],
+                  borderRadius: BorderRadius.circular(20.0),
+                  boxShadow: AppColors.clayShadow,
                 ),
-                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 14.0),
+                padding: const EdgeInsets.symmetric(horizontal: 18.0, vertical: 16.0),
                 child: Row(
                   children: [
                     ProgressRing(
@@ -280,7 +269,7 @@ class _HomeTab extends StatelessWidget {
                         style: const TextStyle(
                           fontSize: 11.0,
                           fontWeight: FontWeight.w800,
-                          color: AppColors.navy,
+                          color: AppColors.primary,
                         ),
                       ),
                     ),
@@ -301,7 +290,7 @@ class _HomeTab extends StatelessWidget {
                           Text(
                             '$questionsDone of $dailyGoal questions done',
                             style: const TextStyle(
-                              color: AppColors.navy,
+                              color: AppColors.primary,
                               fontSize: 14.0,
                               fontWeight: FontWeight.w700,
                             ),
@@ -324,13 +313,13 @@ class _HomeTab extends StatelessWidget {
                 children: [
                   const Text(
                     'Your Streak',
-                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.navy),
+                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.primary),
                   ),
                   GestureDetector(
                     onTap: () => _showStreakDetails(context, profile.streakCount, profile.streakFreezeActive),
                     child: const Text(
                       'View info',
-                      style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w700, color: AppColors.orange),
+                      style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w700, color: AppColors.accent),
                     ),
                   ),
                 ],
@@ -347,13 +336,13 @@ class _HomeTab extends StatelessWidget {
                 children: [
                   const Text(
                     'Courses',
-                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.navy),
+                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.primary),
                   ),
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(context, AppRoutes.about),
                     child: const Text(
                       'About App',
-                      style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w700, color: AppColors.orange),
+                      style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w700, color: AppColors.accent),
                     ),
                   ),
                 ],
@@ -395,7 +384,7 @@ class _HomeTab extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-        title: const Text('Streak System', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Streak System', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         content: Text(
           'You have a streak of $streakCount days!\n\n'
           'Answer at least 1 question every day to maintain your streak. '
@@ -410,7 +399,7 @@ class _HomeTab extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Got it', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+            child: const Text('Got it', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
           ),
         ],
       ),
@@ -422,7 +411,7 @@ class _HomeTab extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-        title: const Text('Announcements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Announcements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         content: const Text(
           'Welcome to the GST CBT Prep App!\n\nAll features are 100% offline. Study materials can be downloaded from the Materials tab when connected to the internet.',
           style: TextStyle(color: AppColors.inkSoft, height: 1.4),
@@ -430,7 +419,7 @@ class _HomeTab extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Close', style: TextStyle(color: AppColors.navy, fontWeight: FontWeight.bold)),
+            child: const Text('Close', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
           ),
         ],
       ),
@@ -448,7 +437,7 @@ class _PracticeTab extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Practice & Exam Center', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.navy)),
+        title: const Text('Practice & Exam Center', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
@@ -481,11 +470,11 @@ class _PracticeTab extends StatelessWidget {
               color: AppColors.peach,
               onTap: () => _chooseCourseForSession(context, QuizMode.exam),
             ),
-            const SizedBox(height: 24.0),
+            const SizedBox(height: 28.0),
 
             const Text(
               'Quick Stats',
-              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy),
+              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary),
             ),
             const SizedBox(height: 12.0),
 
@@ -516,7 +505,8 @@ class _PracticeTab extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   color: AppColors.mint,
-                  borderRadius: BorderRadius.circular(16.0),
+                  borderRadius: BorderRadius.circular(20.0),
+                  boxShadow: AppColors.clayShadowSmall,
                 ),
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
@@ -527,13 +517,13 @@ class _PracticeTab extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 14.0)),
+                          Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 14.0)),
                           SizedBox(height: 2.0),
                           Text('Spend coins on hints and streak freezes', style: TextStyle(fontSize: 11.5, color: AppColors.inkSoft)),
                         ],
                       ),
                     ),
-                    Icon(Icons.chevron_right_rounded, color: AppColors.navy.withOpacity( 0.5)),
+                    Icon(Icons.chevron_right_rounded, color: AppColors.primary.withOpacity( 0.5)),
                   ],
                 ),
               ),
@@ -557,7 +547,11 @@ class _PracticeTab extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20.0)),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(20.0),
+          boxShadow: AppColors.clayShadowSmall,
+        ),
         padding: const EdgeInsets.all(20.0),
         child: Row(
           children: [
@@ -567,13 +561,13 @@ class _PracticeTab extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.navy)),
+                  Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
                   const SizedBox(height: 4.0),
-                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.navy.withOpacity( 0.7), height: 1.3)),
+                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.primary.withOpacity( 0.7), height: 1.3)),
                 ],
               ),
             ),
-            const Icon(Icons.arrow_forward_ios_rounded, color: AppColors.navy, size: 16.0),
+            const Icon(Icons.arrow_forward_ios_rounded, color: AppColors.primary, size: 16.0),
           ],
         ),
       ),
@@ -582,14 +576,18 @@ class _PracticeTab extends StatelessWidget {
 
   Widget _buildStatTile(String label, String value, Color color) {
     return Container(
-      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(16.0)),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(16.0),
+        boxShadow: AppColors.clayShadowSmall,
+      ),
       padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(label, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.5, fontWeight: FontWeight.bold)),
           const SizedBox(height: 6.0),
-          Text(value, style: const TextStyle(color: AppColors.navy, fontSize: 18.0, fontWeight: FontWeight.w800)),
+          Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w800)),
         ],
       ),
     );
@@ -611,14 +609,14 @@ class _PracticeTab extends StatelessWidget {
           children: [
             Text(
               mode == QuizMode.practice ? 'Select Practice Course' : 'Select Exam Course',
-              style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.navy),
+              style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.primary),
             ),
             const SizedBox(height: 18.0),
             ...filtered.map((course) => Container(
                   margin: const EdgeInsets.only(bottom: 10.0),
                   child: ListTile(
                     leading: CircleAvatar(backgroundColor: course.color, child: Text(course.icon)),
-                    title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+                    title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                     subtitle: Text(course.name, style: const TextStyle(fontSize: 12.0)),
                     trailing: const Icon(Icons.chevron_right_rounded),
                     tileColor: Colors.white,

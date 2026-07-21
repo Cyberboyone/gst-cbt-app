@@ -21,7 +21,7 @@ class PracticeScreen extends StatelessWidget {
 
     if (activeCourse == null || quizProvider.isLoading) {
       return const Scaffold(
-        body: Center(child: CircularProgressIndicator(color: AppColors.orange)),
+        body: Center(child: CircularProgressIndicator(color: AppColors.accent)),
       );
     }
 
@@ -36,13 +36,13 @@ class PracticeScreen extends StatelessWidget {
               children: [
                 const Text('📚', style: TextStyle(fontSize: 48.0)),
                 const SizedBox(height: 18.0),
-                const Text('No questions available', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.navy)),
+                const Text('No questions available', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.primary)),
                 const SizedBox(height: 8.0),
                 const Text('Connect to the internet to fetch questions, or try again later.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.inkSoft)),
                 const SizedBox(height: 24.0),
                 ElevatedButton(
                   onPressed: () => Navigator.pop(context),
-                  style: ElevatedButton.styleFrom(backgroundColor: AppColors.navy, foregroundColor: Colors.white),
+                  style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: Colors.white),
                   child: const Text('Go Back'),
                 ),
               ],
@@ -62,7 +62,7 @@ class PracticeScreen extends StatelessWidget {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(activeCourse.code, style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.navy, fontSize: 16.0)),
+            Text(activeCourse.code, style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 16.0)),
             Text(activeCourse.name, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.w500)),
           ],
         ),
@@ -70,7 +70,7 @@ class PracticeScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.close_rounded, color: AppColors.navy),
+          icon: const Icon(Icons.close_rounded, color: AppColors.primary),
           onPressed: () => _confirmExit(context),
         ),
         actions: [
@@ -79,7 +79,7 @@ class PracticeScreen extends StatelessWidget {
               margin: const EdgeInsets.only(right: 4.0),
               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
               decoration: BoxDecoration(
-                color: AppColors.orange,
+                gradient: AppColors.accentGradient,
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: Row(
@@ -97,7 +97,7 @@ class PracticeScreen extends StatelessWidget {
           IconButton(
             icon: Icon(
               settingsProvider.settings.soundOn ? Icons.volume_up_rounded : Icons.volume_off_rounded,
-              color: AppColors.navy,
+              color: AppColors.primary,
             ),
             onPressed: () => settingsProvider.toggleSound(!settingsProvider.settings.soundOn),
           ),
@@ -116,19 +116,19 @@ class PracticeScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Question ${quizProvider.currentIndex + 1} of ${questions.length}',
-                        style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 12.0),
+                        style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 12.0),
                       ),
                       Text(
                         'Correct: ${quizProvider.sessionCorrectAnswers}/${quizProvider.sessionAttempted}',
-                        style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.orange, fontSize: 12.0),
+                        style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.correct, fontSize: 12.0),
                       ),
                     ],
                   ),
                   const SizedBox(height: 8.0),
                   LinearProgressIndicator(
                     value: progressVal,
-                    color: AppColors.orange,
-                    backgroundColor: AppColors.navy.withOpacity( 0.08),
+                    color: AppColors.primary,
+                    backgroundColor: AppColors.primary.withOpacity(0.08),
                     borderRadius: BorderRadius.circular(4.0),
                   ),
                   // Combo bar
@@ -138,13 +138,13 @@ class PracticeScreen extends StatelessWidget {
                       children: [
                         Text(
                           'Best combo: ${quizProvider.sessionBestCombo} 🔥',
-                          style: const TextStyle(fontSize: 11.0, fontWeight: FontWeight.w700, color: AppColors.orange),
+                          style: const TextStyle(fontSize: 11.0, fontWeight: FontWeight.w700, color: AppColors.accent),
                         ),
                         if (quizProvider.currentCombo >= 3) ...[
                           const SizedBox(width: 8.0),
                           Text(
                             '(${(AppConstants.getComboMultiplier(quizProvider.currentCombo) * 100).toInt()}% bonus)',
-                            style: TextStyle(fontSize: 11.0, fontWeight: FontWeight.w600, color: AppColors.navy.withOpacity( 0.6)),
+                            style: TextStyle(fontSize: 11.0, fontWeight: FontWeight.w600, color: AppColors.primary.withOpacity( 0.6)),
                           ),
                         ],
                       ],
@@ -166,12 +166,12 @@ class PracticeScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20.0),
-                        boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 12.0, offset: Offset(0, 4))],
+                        boxShadow: AppColors.clayShadow,
                       ),
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(22.0),
                       child: Text(
                         currentQ!.text,
-                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.navy, height: 1.4),
+                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.primary, height: 1.4),
                       ),
                     ),
                     const SizedBox(height: 24.0),
@@ -217,9 +217,9 @@ class PracticeScreen extends StatelessWidget {
                           icon: const Text('💡', style: TextStyle(fontSize: 14.0)),
                           label: Text('Use Hint (${AppConstants.coinsForHint} coins)', style: const TextStyle(fontSize: 12.0)),
                           style: OutlinedButton.styleFrom(
-                            side: const BorderSide(color: AppColors.orange, width: 1.5),
+                            side: const BorderSide(color: AppColors.accent, width: 1.5),
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-                            foregroundColor: AppColors.orange,
+                            foregroundColor: AppColors.accent,
                           ),
                         ),
                       ),
@@ -232,7 +232,7 @@ class PracticeScreen extends StatelessWidget {
                           ? null
                           : () => _handleAction(context, quizProvider, isLast),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.navy,
+                        backgroundColor: AppColors.primary,
                         foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                         elevation: 0,
@@ -259,10 +259,10 @@ class PracticeScreen extends StatelessWidget {
       context: context,
       builder: (ctx) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-        title: const Text('Use Hint?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+        title: const Text('Use Hint?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
         content: Text('This will eliminate $eliminateCount wrong answer(s) for ${AppConstants.coinsForHint} coins.', style: const TextStyle(color: AppColors.inkSoft)),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel', style: TextStyle(color: AppColors.navy))),
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
           TextButton(
             onPressed: () async {
               Navigator.pop(ctx);
@@ -271,7 +271,7 @@ class PracticeScreen extends StatelessWidget {
                 quiz.useHint();
               }
             },
-            child: const Text('Use Hint', style: TextStyle(color: AppColors.orange, fontWeight: FontWeight.bold)),
+            child: const Text('Use Hint', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
           ),
         ],
       ),
@@ -285,7 +285,7 @@ class PracticeScreen extends StatelessWidget {
 
     Color tileColor = Colors.white;
     Color borderColor = Colors.transparent;
-    Color textColor = AppColors.navy;
+    Color textColor = AppColors.primary;
 
     if (isEliminated && !isChecked) {
       tileColor = Colors.grey.withOpacity( 0.1);
@@ -299,7 +299,7 @@ class PracticeScreen extends StatelessWidget {
         borderColor = Colors.red.withOpacity( 0.3);
       }
     } else if (isSelected) {
-      borderColor = AppColors.orange;
+      borderColor = AppColors.accent;
     }
 
     return Container(
@@ -308,18 +308,18 @@ class PracticeScreen extends StatelessWidget {
         color: tileColor,
         borderRadius: BorderRadius.circular(16.0),
         border: Border.all(color: borderColor, width: 2.0),
-        boxShadow: const [BoxShadow(color: AppColors.cardShadow, blurRadius: 8.0, offset: Offset(0, 2))],
+        boxShadow: AppColors.clayShadowSmall,
       ),
       child: ListTile(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
         onTap: isEliminated && !isChecked ? null : () => quiz.selectOption(idx),
         leading: CircleAvatar(
           radius: 14.0,
-          backgroundColor: isSelected ? AppColors.orange : AppColors.navy.withOpacity( 0.08),
+          backgroundColor: isSelected ? AppColors.accent : AppColors.primary.withOpacity( 0.08),
           child: Text(
             String.fromCharCode(65 + idx),
             style: TextStyle(
-              color: isSelected ? Colors.white : AppColors.navy,
+              color: isSelected ? Colors.white : AppColors.primary,
               fontWeight: FontWeight.bold,
               fontSize: 12.0,
             ),
@@ -335,7 +335,7 @@ class PracticeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFFF0F4FA),
         borderRadius: BorderRadius.circular(16.0),
-        border: Border.all(color: AppColors.navy.withOpacity( 0.08)),
+        border: Border.all(color: AppColors.primary.withOpacity( 0.08)),
       ),
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -345,7 +345,7 @@ class PracticeScreen extends StatelessWidget {
             children: [
               Text('💡', style: TextStyle(fontSize: 16.0)),
               SizedBox(width: 8.0),
-              Text('Explanation', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy, fontSize: 13.0)),
+              Text('Explanation', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 13.0)),
             ],
           ),
           const SizedBox(height: 8.0),
@@ -414,7 +414,7 @@ class PracticeScreen extends StatelessWidget {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(message, style: const TextStyle(fontWeight: FontWeight.bold)),
-          backgroundColor: AppColors.navy,
+          backgroundColor: AppColors.primary,
           duration: const Duration(seconds: 3),
         ),
       );
@@ -426,10 +426,10 @@ class PracticeScreen extends StatelessWidget {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-        title: const Text('Exit Session?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.navy)),
+        title: const Text('Exit Session?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
         content: const Text('Your current practice score will not be saved if you exit now.'),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.navy))),
+          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
           TextButton(
             onPressed: () {
               Navigator.pop(context);
