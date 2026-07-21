@@ -18,5 +18,7 @@ Thumbs.db
 .opencode/
 
 # Misc
+agency-agents/
+job_log*.txt
 *.ps1
 build_log.txt
