@@ -347,59 +347,81 @@ class _HomeTab extends StatelessWidget {
               ),
               const SizedBox(height: 12.0),
 
-              // Start Practice Card
-              GestureDetector(
-                onTap: () {
-                  final quizProvider = Provider.of<QuizProvider>(context, listen: false);
-                  final courseProvider = Provider.of<CourseProvider>(context, listen: false);
-                  if (courseProvider.courses.isNotEmpty) {
-                    _showPracticeCoursePicker(context, courseProvider.courses, quizProvider);
-                  }
-                },
-                child: Container(
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [AppColors.primary, AppColors.primaryDark],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                    ),
-                    borderRadius: BorderRadius.circular(20.0),
-                    boxShadow: AppColors.clayShadowLarge,
-                  ),
-                  padding: const EdgeInsets.all(20.0),
-                  child: Row(
-                    children: [
-                      const Text('📝', style: TextStyle(fontSize: 32.0)),
-                      const SizedBox(width: 16.0),
-                      const Expanded(
+              // Start Session Cards
+              Row(
+                children: [
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                        final courseProvider = Provider.of<CourseProvider>(context, listen: false);
+                        if (courseProvider.courses.isNotEmpty) {
+                          _showCoursePicker(context, courseProvider.courses, quizProvider, QuizMode.practice);
+                        }
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.sky,
+                          borderRadius: BorderRadius.circular(20.0),
+                          boxShadow: AppColors.clayShadowSmall,
+                        ),
+                        padding: const EdgeInsets.all(16.0),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              'Start Practice',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                                fontWeight: FontWeight.w800,
-                              ),
+                            const Text('📝', style: TextStyle(fontSize: 28.0)),
+                            const SizedBox(height: 10.0),
+                            const Text(
+                              'Practice',
+                              style: TextStyle(color: AppColors.foreground, fontSize: 15.0, fontWeight: FontWeight.w800),
                             ),
-                            SizedBox(height: 4.0),
+                            const SizedBox(height: 3.0),
                             Text(
-                              'Pick a course and sharpen your GST knowledge',
-                              style: TextStyle(
-                                color: Colors.white70,
-                                fontSize: 12.0,
-                                fontWeight: FontWeight.w500,
-                              ),
+                              'Learn at your own pace',
+                              style: TextStyle(color: AppColors.textSecondary, fontSize: 11.0),
                             ),
                           ],
                         ),
                       ),
-                      const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white70, size: 16.0),
-                    ],
+                    ),
                   ),
-                ),
+                  const SizedBox(width: 12.0),
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                        final courseProvider = Provider.of<CourseProvider>(context, listen: false);
+                        if (courseProvider.courses.isNotEmpty) {
+                          _showCoursePicker(context, courseProvider.courses, quizProvider, QuizMode.exam);
+                        }
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.peach,
+                          borderRadius: BorderRadius.circular(20.0),
+                          boxShadow: AppColors.clayShadowSmall,
+                        ),
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('⏱️', style: TextStyle(fontSize: 28.0)),
+                            const SizedBox(height: 10.0),
+                            const Text(
+                              'Exam',
+                              style: TextStyle(color: AppColors.foreground, fontSize: 15.0, fontWeight: FontWeight.w800),
+                            ),
+                            const SizedBox(height: 3.0),
+                            Text(
+                              'Timed test simulation',
+                              style: TextStyle(color: AppColors.textSecondary, fontSize: 11.0),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
               const SizedBox(height: 20.0),
 
@@ -481,7 +503,7 @@ class _HomeTab extends StatelessWidget {
     );
   }
 
-  void _showPracticeCoursePicker(BuildContext context, List<Course> courses, QuizProvider quizProvider) {
+  void _showCoursePicker(BuildContext context, List<Course> courses, QuizProvider quizProvider, QuizMode mode) {
     showModalBottomSheet(
       context: context,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24.0))),
@@ -494,9 +516,9 @@ class _HomeTab extends StatelessWidget {
           shrinkWrap: true,
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 24.0),
           children: [
-            const Text(
-              'Select Course',
-              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.primary),
+            Text(
+              mode == QuizMode.practice ? 'Select Course' : 'Select Course',
+              style: const TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.primary),
             ),
             const SizedBox(height: 18.0),
             ...courses.map((course) => Container(
@@ -511,8 +533,12 @@ class _HomeTab extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                       final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
-                      quizProvider.startSession(course: course, mode: QuizMode.practice, soundOn: settingsProvider.settings.soundOn).then((_) {
-                        Navigator.pushNamed(context, AppRoutes.practice);
+                      quizProvider.startSession(course: course, mode: mode, soundOn: settingsProvider.settings.soundOn).then((_) {
+                        if (mode == QuizMode.practice) {
+                          Navigator.pushNamed(context, AppRoutes.practice);
+                        } else {
+                          Navigator.pushNamed(context, AppRoutes.exam);
+                        }
                       });
                     },
                   ),

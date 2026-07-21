@@ -172,7 +172,7 @@ class QuizProvider with ChangeNotifier {
     notifyListeners();
 
     if (_soundOn) {
-      _playAssetSound(isCorrect ? 'sounds/correct.mp3' : 'sounds/wrong.mp3');
+      _playAssetSound(isCorrect ? 'sounds/correct.wav' : 'sounds/wrong.wav');
     }
   }
 

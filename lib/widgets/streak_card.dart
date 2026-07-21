@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../config/theme.dart';
+import '../config/constants.dart';
 import 'streak_bubbles.dart';
 
 class StreakCard extends StatelessWidget {
@@ -14,50 +15,108 @@ class StreakCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String streakLabel;
+    if (streakCount == 0) {
+      streakLabel = 'Start your streak today!';
+    } else if (streakCount < 3) {
+      streakLabel = 'Keep going!';
+    } else if (streakCount < 7) {
+      streakLabel = 'Nice work!';
+    } else if (streakCount < 14) {
+      streakLabel = 'On fire!';
+    } else if (streakCount < 30) {
+      streakLabel = 'Unstoppable!';
+    } else {
+      streakLabel = 'Legendary!';
+    }
+
     return Container(
-      padding: const EdgeInsets.all(18.0),
       decoration: BoxDecoration(
-        gradient: AppColors.accentGradient,
+        color: Colors.white,
         borderRadius: BorderRadius.circular(20.0),
         boxShadow: AppColors.clayShadow,
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      padding: const EdgeInsets.all(18.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  'Current streak',
-                  style: TextStyle(
-                    color: Colors.white.withOpacity( 0.7),
-                    fontSize: 11.5,
-                    fontWeight: FontWeight.w600,
-                  ),
+          Row(
+            children: [
+              Container(
+                width: 44.0,
+                height: 44.0,
+                decoration: BoxDecoration(
+                  color: AppColors.streakLight,
+                  borderRadius: BorderRadius.circular(14.0),
                 ),
-                const SizedBox(height: 2.0),
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'Nunito',
-                      fontSize: 22.0,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
+                alignment: Alignment.center,
+                child: Text(
+                  streakCount > 0 ? '🔥' : '💫',
+                  style: const TextStyle(fontSize: 22.0),
+                ),
+              ),
+              const SizedBox(width: 14.0),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          '$streakCount',
+                          style: const TextStyle(
+                            fontSize: 28.0,
+                            fontWeight: FontWeight.w900,
+                            color: AppColors.foreground,
+                            height: 1.0,
+                          ),
+                        ),
+                        const SizedBox(width: 6.0),
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 2.0),
+                          child: Text(
+                            'day${streakCount == 1 ? '' : 's'}',
+                            style: const TextStyle(
+                              fontSize: 14.0,
+                              fontWeight: FontWeight.w600,
+                              color: AppColors.textSecondary,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                    children: [
-                      TextSpan(text: '$streakCount '),
-                      const TextSpan(
-                        text: 'days 🔥',
-                        style: TextStyle(color: AppColors.accent),
+                    const SizedBox(height: 2.0),
+                    Text(
+                      streakLabel,
+                      style: const TextStyle(
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.accent,
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+              if (streakCount >= 3)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                  decoration: BoxDecoration(
+                    color: AppColors.accentLight,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: Text(
+                    'x${AppConstants.getStreakMultiplier(streakCount).toStringAsFixed(1)}',
+                    style: const TextStyle(
+                      fontSize: 11.0,
+                      fontWeight: FontWeight.w800,
+                      color: AppColors.accent,
+                    ),
                   ),
                 ),
-              ],
-            ),
+            ],
           ),
+          const SizedBox(height: 14.0),
           StreakBubbles(streakCount: streakCount),
         ],
       ),

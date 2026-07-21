@@ -50,7 +50,7 @@ class _ExamScreenState extends State<ExamScreen> {
 
   Future<void> _playWarningSound() async {
     try {
-      await _warningPlayer.play(AssetSource('sounds/wrong.mp3'));
+      await _warningPlayer.play(AssetSource('sounds/wrong.wav'));
     } catch (e) {
       debugPrint('Warning sound error: $e');
     }
