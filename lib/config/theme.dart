@@ -24,7 +24,7 @@ class AppColors {
   static const Color foreground = Color(0xFF1E1B4B);
   static const Color textPrimary = Color(0xFF1E1B4B);
   static const Color textSecondary = Color(0xFF64748B);
-  static const Color textMuted = Color(0xFF94A3B8);
+  static const Color textMuted = Color(0xFF64748B);
 
   // ── Muted / Borders ──
   static const Color muted = Color(0xFFEBEEF8);
@@ -63,44 +63,44 @@ class AppColors {
   static const Color cardShadow = Color(0x0A4F46E5);
 
   // ── Claymorphism Shadows ──
-  static List<BoxShadow> get clayShadow => [
-        const BoxShadow(
-          offset: Offset(-3, -3),
-          blurRadius: 8,
-          color: Color(0xFFFFFFFF),
-        ),
-        BoxShadow(
-          offset: const Offset(4, 4),
-          blurRadius: 10,
-          color: Colors.black.withOpacity(0.08),
-        ),
-      ];
+  static final List<BoxShadow> clayShadow = [
+    const BoxShadow(
+      offset: Offset(-3, -3),
+      blurRadius: 8,
+      color: Color(0xFFFFFFFF),
+    ),
+    BoxShadow(
+      offset: const Offset(4, 4),
+      blurRadius: 10,
+      color: Colors.black.withOpacity(0.08),
+    ),
+  ];
 
-  static List<BoxShadow> get clayShadowSmall => [
-        const BoxShadow(
-          offset: Offset(-2, -2),
-          blurRadius: 6,
-          color: Color(0xFFFFFFFF),
-        ),
-        BoxShadow(
-          offset: const Offset(3, 3),
-          blurRadius: 8,
-          color: Colors.black.withOpacity(0.06),
-        ),
-      ];
+  static final List<BoxShadow> clayShadowSmall = [
+    const BoxShadow(
+      offset: Offset(-2, -2),
+      blurRadius: 6,
+      color: Color(0xFFFFFFFF),
+    ),
+    BoxShadow(
+      offset: const Offset(3, 3),
+      blurRadius: 8,
+      color: Colors.black.withOpacity(0.06),
+    ),
+  ];
 
-  static List<BoxShadow> get clayShadowLarge => [
-        const BoxShadow(
-          offset: Offset(-4, -4),
-          blurRadius: 12,
-          color: Color(0xFFFFFFFF),
-        ),
-        BoxShadow(
-          offset: const Offset(6, 6),
-          blurRadius: 16,
-          color: Colors.black.withOpacity(0.1),
-        ),
-      ];
+  static final List<BoxShadow> clayShadowLarge = [
+    const BoxShadow(
+      offset: Offset(-4, -4),
+      blurRadius: 12,
+      color: Color(0xFFFFFFFF),
+    ),
+    BoxShadow(
+      offset: const Offset(6, 6),
+      blurRadius: 16,
+      color: Colors.black.withOpacity(0.1),
+    ),
+  ];
 
   // ── Gradients ──
   static const LinearGradient primaryGradient = LinearGradient(
@@ -141,8 +141,8 @@ class AppColors {
 }
 
 class AppTheme {
-  static ThemeData get lightTheme {
-    return ThemeData(
+  static final ThemeData lightTheme = _buildTheme();
+  static ThemeData _buildTheme() {
       useMaterial3: true,
       scaffoldBackgroundColor: AppColors.background,
       primaryColor: AppColors.primary,
@@ -233,7 +233,7 @@ class AppTheme {
           color: AppColors.textSecondary,
         ),
         labelSmall: TextStyle(
-          fontSize: 10.0,
+          fontSize: 12.0,
           fontWeight: FontWeight.w600,
           color: AppColors.textMuted,
           letterSpacing: 0.5,

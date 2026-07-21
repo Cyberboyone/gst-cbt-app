@@ -25,7 +25,7 @@ class PracticeScreen extends StatelessWidget {
       );
     }
 
-    if (questions.isEmpty) {
+    if (questions.isEmpty || currentQ == null) {
       return Scaffold(
         appBar: AppBar(title: Text(activeCourse.code)),
         body: Center(
@@ -55,7 +55,11 @@ class PracticeScreen extends StatelessWidget {
     final isLast = quizProvider.currentIndex == questions.length - 1;
     final progressVal = (quizProvider.currentIndex + 1) / questions.length;
 
-    quizProvider.setSoundOn(settingsProvider.settings.soundOn);
+    // Sync sound setting outside of build to avoid rebuild loop
+    final soundOn = settingsProvider.settings.soundOn;
+    if (quizProvider.soundOn != soundOn) {
+      quizProvider.setSoundOn(soundOn);
+    }
 
     return Scaffold(
       appBar: AppBar(

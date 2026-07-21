@@ -41,9 +41,14 @@ class GamifiedBadge {
       name: map['name'] as String? ?? '',
       description: map['description'] as String? ?? '',
       icon: map['icon'] as String? ?? '🏆',
-      unlockedAt: map['unlockedAt'] != null
-          ? DateTime.parse(map['unlockedAt'] as String)
-          : null,
+      unlockedAt: _safeParseDateTime(map['unlockedAt']),
     );
+  }
+
+  static DateTime? _safeParseDateTime(dynamic value) {
+    if (value is String) {
+      try { return DateTime.parse(value); } catch (_) {}
+    }
+    return null;
   }
 }

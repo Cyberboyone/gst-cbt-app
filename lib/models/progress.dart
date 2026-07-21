@@ -44,9 +44,14 @@ class CourseProgress {
       questionsAttempted: map['questionsAttempted'] as int? ?? 0,
       correctCount: map['correctCount'] as int? ?? 0,
       bestScore: map['bestScore'] as int? ?? 0,
-      lastAttemptDate: map['lastAttemptDate'] != null
-          ? DateTime.parse(map['lastAttemptDate'] as String)
-          : DateTime.now(),
+      lastAttemptDate: _safeParseDateTime(map['lastAttemptDate']),
     );
+  }
+
+  static DateTime _safeParseDateTime(dynamic value) {
+    if (value is String) {
+      try { return DateTime.parse(value); } catch (_) {}
+    }
+    return DateTime.now();
   }
 }

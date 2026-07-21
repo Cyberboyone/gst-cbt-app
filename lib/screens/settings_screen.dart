@@ -43,6 +43,30 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final code = _restoreController.text.trim();
     if (code.isEmpty) return;
 
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+        title: const Text('Overwrite All Data?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
+        content: const Text('This will permanently delete your current progress and replace it with the backup data. Continue?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Cancel', style: TextStyle(color: AppColors.primary)),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              _executeRestore(code);
+            },
+            child: const Text('Restore', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _executeRestore(String code) {
     _backupService.restoreFromCode(code).then((success) {
       if (success) {
         // Reload states
@@ -63,9 +87,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
   void _saveNewNickname() {
     final newName = _nicknameController.text.trim();
-    if (newName.length < 2) {
+    if (newName.length < 2 || newName.length > 15) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Nickname must be at least 2 characters')),
+        const SnackBar(content: Text('Nickname must be 2-15 characters')),
+      );
+      return;
+    }
+    if (!RegExp(r'^[a-zA-Z0-9 _-]+$').hasMatch(newName)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Only letters, numbers, spaces, _ and - allowed')),
       );
       return;
     }
@@ -114,7 +144,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   children: [
                     CircleAvatar(
                       backgroundColor: AppColors.peach,
-                      child: Text(profile.nickname[0].toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
+                      child: Text(profile.nickname.isNotEmpty ? profile.nickname[0].toUpperCase() : 'S', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
                     ),
                     const SizedBox(width: 14.0),
                     Expanded(

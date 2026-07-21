@@ -50,6 +50,11 @@ class GstCbtApp extends StatelessWidget {
           AppRoutes.shop: (context) => const ShopScreen(),
           AppRoutes.badges: (context) => const BadgesScreen(),
         },
+        onUnknownRoute: (settings) => MaterialPageRoute(
+          builder: (_) => const Scaffold(
+            body: Center(child: Text('Page not found')),
+          ),
+        ),
       ),
     );
   }

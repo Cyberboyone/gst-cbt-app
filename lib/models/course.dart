@@ -40,10 +40,14 @@ class Course {
   }
 
   Color get color {
-    final hexString = colorHex.replaceAll('#', '');
-    if (hexString.length == 6) {
-      return Color(int.parse('FF$hexString', radix: 16));
+    try {
+      final hexString = colorHex.replaceAll('#', '');
+      if (hexString.length == 6) {
+        return Color(int.parse('FF$hexString', radix: 16));
+      }
+      return Color(int.parse(hexString, radix: 16));
+    } catch (_) {
+      return const Color(0xFFE8D6FF);
     }
-    return Color(int.parse(hexString, radix: 16));
   }
 }

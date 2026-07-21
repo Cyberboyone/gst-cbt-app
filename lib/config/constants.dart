@@ -105,6 +105,12 @@ class AppConstants {
     {'id': 'full_house', 'name': 'Full House', 'description': 'Get 100% on every course', 'icon': '🏠'},
   ];
 
+  // Exam Rules
+  static const int passingScorePercentage = 45;
+  static const int examDefaultMinutes = 30;
+  static const int practiceMaxQuestions = 20;
+  static const int examMaxQuestions = 40;
+
   // App Metadata
   static const String appVersion = '1.0.0';
   static const String appName = 'GST CBT';

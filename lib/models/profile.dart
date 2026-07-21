@@ -107,9 +107,7 @@ class Profile {
       xp: map['xp'] as int? ?? 0,
       streakCount: map['streakCount'] as int? ?? 0,
       coins: map['coins'] as int? ?? 0,
-      lastActiveDate: map['lastActiveDate'] != null
-          ? DateTime.parse(map['lastActiveDate'] as String)
-          : DateTime.now(),
+      lastActiveDate: _safeParseDateTime(map['lastActiveDate']),
       referralCode: map['referralCode'] as String? ?? '',
       questionsToday: map['questionsToday'] as int? ?? 0,
       lastGoalResetDate: map['lastGoalResetDate'] as String? ?? '',
@@ -121,5 +119,12 @@ class Profile {
       unlockedBadgeIds: badges,
       streakFreezeActive: map['streakFreezeActive'] as bool? ?? false,
     );
+  }
+
+  static DateTime _safeParseDateTime(dynamic value) {
+    if (value is String) {
+      try { return DateTime.parse(value); } catch (_) {}
+    }
+    return DateTime.now();
   }
 }

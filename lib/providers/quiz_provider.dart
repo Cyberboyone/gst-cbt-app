@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
+import '../config/constants.dart';
 import '../models/course.dart';
 import '../models/question.dart';
 import '../services/hive_service.dart';
@@ -28,6 +29,7 @@ class QuizProvider with ChangeNotifier {
   bool get isLoading => _isLoading;
 
   bool _soundOn = true;
+  bool get soundOn => _soundOn;
   void setSoundOn(bool value) => _soundOn = value;
 
   // Practice Mode
@@ -66,8 +68,8 @@ class QuizProvider with ChangeNotifier {
   final Map<int, int> _examAnswers = {};
   Map<int, int> get examAnswers => _examAnswers;
 
-  int _examDurationSeconds = 1800;
-  int _examRemainingSeconds = 1800;
+  int _examDurationSeconds = AppConstants.examDefaultMinutes * 60;
+  int _examRemainingSeconds = AppConstants.examDefaultMinutes * 60;
   int get examRemainingSeconds => _examRemainingSeconds;
 
   Timer? _examTimer;
@@ -111,11 +113,11 @@ class QuizProvider with ChangeNotifier {
       }
     }
 
-    if (_mode == QuizMode.exam && _questions.length > 40) {
-      _questions = _questions.sublist(0, 40);
+    if (_mode == QuizMode.exam && _questions.length > AppConstants.examMaxQuestions) {
+      _questions = _questions.sublist(0, AppConstants.examMaxQuestions);
     } else if (_mode == QuizMode.practice) {
-      if (_questions.length > 20) {
-        _questions = _questions.sublist(0, 20);
+      if (_questions.length > AppConstants.practiceMaxQuestions) {
+        _questions = _questions.sublist(0, AppConstants.practiceMaxQuestions);
       }
     }
 
@@ -144,11 +146,13 @@ class QuizProvider with ChangeNotifier {
 
   Future<void> checkAnswer() async {
     if (_mode != QuizMode.practice || _isAnswerChecked || _selectedOptionIndex == null) return;
+    final q = currentQuestion;
+    if (q == null) return;
 
     _isAnswerChecked = true;
     _sessionAttempted++;
 
-    final correct = currentQuestion!.correctIndex;
+    final correct = q.correctIndex;
     final isCorrect = _selectedOptionIndex == correct;
     _lastAnswerCorrect = isCorrect;
 

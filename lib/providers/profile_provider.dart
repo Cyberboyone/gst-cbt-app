@@ -154,6 +154,7 @@ class ProfileProvider with ChangeNotifier {
     if (combo > _profile!.bestCombo) {
       _profile = _profile!.copyWith(bestCombo: combo);
       _hiveService.saveProfile(_profile!);
+      notifyListeners();
     }
   }
 
@@ -171,6 +172,7 @@ class ProfileProvider with ChangeNotifier {
       daysGoalCompleted: reachedGoal ? _profile!.daysGoalCompleted + 1 : _profile!.daysGoalCompleted,
     );
     _hiveService.saveProfile(_profile!);
+    notifyListeners();
   }
 
   List<String> checkBadges({List<String> coursesPracticed = const [], int passedExamCount = 0, bool currentExamPerfect = false, bool allCoursesPerfect = false}) {

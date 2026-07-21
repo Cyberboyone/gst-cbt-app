@@ -22,7 +22,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     super.dispose();
   }
 
-  void _submit() {
+  Future<void> _submit() async {
     if (!_formKey.currentState!.validate()) return;
     
     setState(() {
@@ -30,16 +30,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     });
 
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
-    profileProvider.createProfile(_nicknameController.text.trim()).then((_) {
+    try {
+      await profileProvider.createProfile(_nicknameController.text.trim());
+      if (!mounted) return;
       Navigator.of(context).pushReplacementNamed(AppRoutes.home);
-    }).catchError((error) {
+    } catch (error) {
+      if (!mounted) return;
       setState(() {
         _isSubmitting = false;
       });
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error creating profile: $error')),
+        const SnackBar(content: Text('Something went wrong. Please try again.')),
       );
-    });
+    }
   }
 
   @override
@@ -121,8 +124,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     if (value == null || value.trim().isEmpty) {
                       return 'Please enter a nickname';
                     }
-                    if (value.trim().length < 2) {
-                      return 'Nickname must be at least 2 characters';
+                    if (value.trim().length < 2 || value.trim().length > 15) {
+                      return 'Nickname must be 2-15 characters';
+                    }
+                    if (!RegExp(r'^[a-zA-Z0-9 _-]+$').hasMatch(value.trim())) {
+                      return 'Only letters, numbers, spaces, _ and -';
                     }
                     return null;
                   },

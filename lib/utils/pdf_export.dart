@@ -1,6 +1,7 @@
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:printing/printing.dart';
+import '../config/constants.dart';
 
 class PdfExportHelper {
   static Future<void> exportResultPdf({
@@ -16,7 +17,7 @@ class PdfExportHelper {
     final minutes = (timeSpentSeconds / 60).floor();
     final seconds = timeSpentSeconds % 60;
     final timeStr = '${minutes}m ${seconds}s';
-    final passed = scorePercentage >= 50;
+    final passed = scorePercentage >= AppConstants.passingScorePercentage;
 
     pdf.addPage(
       pw.Page(

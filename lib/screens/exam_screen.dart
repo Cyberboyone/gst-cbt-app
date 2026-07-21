@@ -63,6 +63,8 @@ class _ExamScreenState extends State<ExamScreen> {
   }
 
   void _submitExam(BuildContext context, QuizProvider quiz, {bool auto = false}) {
+    final course = quiz.activeCourse;
+    if (course == null) return;
     final results = quiz.submitExam();
 
     if (auto) {
@@ -79,8 +81,8 @@ class _ExamScreenState extends State<ExamScreen> {
           correctAnswers: results['correctAnswers'] as int,
           scorePercentage: results['scorePercentage'] as int,
           timeSpentSeconds: results['timeSpentSeconds'] as int,
-          courseCode: quiz.activeCourse!.code,
-          courseId: quiz.activeCourse!.id,
+          courseCode: course.code,
+          courseId: course.id,
         ),
       ),
     );
@@ -159,7 +161,7 @@ class _ExamScreenState extends State<ExamScreen> {
       return const Scaffold(body: Center(child: CircularProgressIndicator(color: AppColors.accent)));
     }
 
-    if (questions.isEmpty) {
+    if (questions.isEmpty || currentQ == null) {
       return Scaffold(
         appBar: AppBar(title: Text(activeCourse.code)),
         body: const Center(child: Text('No questions loaded')),

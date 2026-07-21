@@ -247,7 +247,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     final profile = context.watch<ProfileProvider>().profile;
     final nickname = profile?.nickname ?? 'Student';
-    final isPassed = widget.scorePercentage >= 45;
+    final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
     final isPerfect = widget.scorePercentage == 100;
 
     final streakMultiplier = AppConstants.getStreakMultiplier(profile?.streakCount ?? 0);

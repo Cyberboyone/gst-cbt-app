@@ -188,7 +188,7 @@ class LeaderboardScreen extends StatelessWidget {
         children: [
           Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 16.0, fontWeight: FontWeight.w900)),
           const SizedBox(height: 2.0),
-          Text(label, style: TextStyle(color: AppColors.inkSoft, fontSize: 9.5, fontWeight: FontWeight.bold)),
+          Text(label, style: TextStyle(color: AppColors.inkSoft, fontSize: 12.0, fontWeight: FontWeight.bold)),
         ],
       ),
     );

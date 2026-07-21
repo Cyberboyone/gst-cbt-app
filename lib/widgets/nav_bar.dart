@@ -30,16 +30,16 @@ class NavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          _buildNavItem(0, '🏠', 'Home'),
-          _buildNavItem(1, '📝', 'Practice'),
-          _buildNavItem(2, '📥', 'Materials'),
-          _buildNavItem(3, '🏆', 'Ranks'),
+          _buildNavItem(0, Icons.home_rounded, 'Home'),
+          _buildNavItem(1, Icons.quiz_rounded, 'Practice'),
+          _buildNavItem(2, Icons.download_rounded, 'Materials'),
+          _buildNavItem(3, Icons.leaderboard_rounded, 'Ranks'),
         ],
       ),
     );
   }
 
-  Widget _buildNavItem(int index, String icon, String label) {
+  Widget _buildNavItem(int index, IconData icon, String label) {
     final isActive = currentIndex == index;
     final activeColor = AppColors.primary;
     final inactiveColor = const Color(0xFFAEB6C4);
@@ -50,19 +50,17 @@ class NavBar extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
+          Icon(
             icon,
-            style: TextStyle(
-              fontSize: 16.0,
-              color: isActive ? activeColor : inactiveColor,
-            ),
+            size: 22.0,
+            color: isActive ? activeColor : inactiveColor,
           ),
           const SizedBox(height: 4.0),
           Text(
             label,
             style: TextStyle(
               color: isActive ? activeColor : inactiveColor,
-              fontSize: 10.0,
+              fontSize: 12.0,
               fontWeight: FontWeight.w700,
             ),
           ),

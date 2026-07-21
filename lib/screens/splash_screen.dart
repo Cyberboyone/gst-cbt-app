@@ -35,17 +35,17 @@ class _SplashScreenState extends State<SplashScreen> {
     _timer = Timer(const Duration(milliseconds: 2500), _navigateToNext);
   }
 
-  void _navigateToNext() {
+  void _navigateToNext() async {
     if (!mounted) return;
     
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
-    profileProvider.loadProfile().then((_) {
-      if (profileProvider.hasProfile) {
-        Navigator.of(context).pushReplacementNamed(AppRoutes.home);
-      } else {
-        Navigator.of(context).pushReplacementNamed(AppRoutes.onboarding);
-      }
-    });
+    await profileProvider.loadProfile();
+    if (!mounted) return;
+    if (profileProvider.hasProfile) {
+      Navigator.of(context).pushReplacementNamed(AppRoutes.home);
+    } else {
+      Navigator.of(context).pushReplacementNamed(AppRoutes.onboarding);
+    }
   }
 
   void _skip() {
