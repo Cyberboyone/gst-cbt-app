@@ -30,7 +30,9 @@ class QuizProvider with ChangeNotifier {
 
   bool _soundOn = true;
   bool get soundOn => _soundOn;
-  void setSoundOn(bool value) => _soundOn = value;
+  void setSoundOn(bool value) {
+    _soundOn = value;
+  }
 
   // Practice Mode
   int? _selectedOptionIndex;
@@ -80,10 +82,12 @@ class QuizProvider with ChangeNotifier {
     required QuizMode mode,
     List<Question>? overrideQuestions,
     int examDurationMinutes = 30,
+    bool soundOn = true,
   }) async {
     _isLoading = true;
     _activeCourse = course;
     _mode = mode;
+    _soundOn = soundOn;
     _currentIndex = 0;
     _selectedOptionIndex = null;
     _isAnswerChecked = false;
@@ -162,16 +166,14 @@ class QuizProvider with ChangeNotifier {
       if (_currentCombo > _sessionBestCombo) {
         _sessionBestCombo = _currentCombo;
       }
-      if (_soundOn) {
-        await _playAssetSound('sounds/correct.mp3');
-      }
     } else {
       _currentCombo = 0;
-      if (_soundOn) {
-        await _playAssetSound('sounds/wrong.mp3');
-      }
     }
     notifyListeners();
+
+    if (_soundOn) {
+      _playAssetSound(isCorrect ? 'sounds/correct.mp3' : 'sounds/wrong.mp3');
+    }
   }
 
   void nextQuestion() {

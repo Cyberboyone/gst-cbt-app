@@ -421,7 +421,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: [
                   const Text('Danger Zone', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red)),
                   const SizedBox(height: 4.0),
-                  const Text('Clears all profiles, offline caching progress, and downloaded materials from this device.', style: TextStyle(fontSize: 11.5, color: AppColors.inkSoft)),
+                  const Text('Clears all profiles and offline caching progress from this device.', style: TextStyle(fontSize: 11.5, color: AppColors.inkSoft)),
                   const SizedBox(height: 12.0),
                   TextButton(
                     onPressed: () {

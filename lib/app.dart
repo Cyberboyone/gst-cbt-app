@@ -12,7 +12,6 @@ import 'screens/home_screen.dart';
 import 'screens/practice_screen.dart';
 import 'screens/exam_screen.dart';
 import 'screens/leaderboard_screen.dart';
-import 'screens/materials_screen.dart';
 import 'screens/invite_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/about_screen.dart';
@@ -43,7 +42,6 @@ class GstCbtApp extends StatelessWidget {
           AppRoutes.practice: (context) => const PracticeScreen(),
           AppRoutes.exam: (context) => const ExamScreen(),
           AppRoutes.leaderboard: (context) => const LeaderboardScreen(),
-          AppRoutes.materials: (context) => const MaterialsScreen(),
           AppRoutes.invite: (context) => const InviteScreen(),
           AppRoutes.settings: (context) => const SettingsScreen(),
           AppRoutes.about: (context) => const AboutScreen(),

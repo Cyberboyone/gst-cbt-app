@@ -7,6 +7,7 @@ import '../models/course.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/quiz_provider.dart';
+import '../providers/settings_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/streak_card.dart';
 import '../widgets/course_card.dart';
@@ -14,7 +15,6 @@ import '../widgets/nav_bar.dart';
 import '../widgets/powered_by_footer.dart';
 
 import 'leaderboard_screen.dart';
-import 'materials_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -50,8 +50,6 @@ class _HomeScreenState extends State<HomeScreen> {
       case 1:
         return const _PracticeTab();
       case 2:
-        return const MaterialsScreen(isEmbedded: true);
-      case 3:
         return const LeaderboardScreen(isEmbedded: true);
       default:
         return const _HomeTab();
@@ -131,7 +129,7 @@ class _HomeTab extends StatelessWidget {
                           Text(
                             'Hello, ${profile.nickname}',
                             style: const TextStyle(
-                              color: AppColors.primary,
+                              color: AppColors.foreground,
                               fontSize: 19.0,
                               fontWeight: FontWeight.w800,
                               letterSpacing: -0.2,
@@ -290,7 +288,7 @@ class _HomeTab extends StatelessWidget {
                           Text(
                             '$questionsDone of $dailyGoal questions done',
                             style: const TextStyle(
-                              color: AppColors.primary,
+                              color: AppColors.foreground,
                               fontSize: 14.0,
                               fontWeight: FontWeight.w700,
                             ),
@@ -313,7 +311,7 @@ class _HomeTab extends StatelessWidget {
                 children: [
                   const Text(
                     'Your Streak',
-                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.primary),
+                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.foreground),
                   ),
                   GestureDetector(
                     onTap: () => _showStreakDetails(context, profile.streakCount, profile.streakFreezeActive),
@@ -336,7 +334,7 @@ class _HomeTab extends StatelessWidget {
                 children: [
                   const Text(
                     'Courses',
-                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.primary),
+                    style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.foreground),
                   ),
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(context, AppRoutes.about),
@@ -348,6 +346,62 @@ class _HomeTab extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 12.0),
+
+              // Start Practice Card
+              GestureDetector(
+                onTap: () {
+                  final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                  final courseProvider = Provider.of<CourseProvider>(context, listen: false);
+                  if (courseProvider.courses.isNotEmpty) {
+                    _showPracticeCoursePicker(context, courseProvider.courses, quizProvider);
+                  }
+                },
+                child: Container(
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [AppColors.primary, AppColors.primaryDark],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(20.0),
+                    boxShadow: AppColors.clayShadowLarge,
+                  ),
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    children: [
+                      const Text('📝', style: TextStyle(fontSize: 32.0)),
+                      const SizedBox(width: 16.0),
+                      const Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Start Practice',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 17.0,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                            SizedBox(height: 4.0),
+                            Text(
+                              'Pick a course and sharpen your GST knowledge',
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Icon(Icons.arrow_forward_ios_rounded, color: Colors.white70, size: 16.0),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20.0),
 
               ListView.builder(
                 shrinkWrap: true,
@@ -374,7 +428,8 @@ class _HomeTab extends StatelessWidget {
 
   void _startCourseQuiz(BuildContext context, Course course) {
     final quizProvider = Provider.of<QuizProvider>(context, listen: false);
-    quizProvider.startSession(course: course, mode: QuizMode.practice).then((_) {
+    final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+    quizProvider.startSession(course: course, mode: QuizMode.practice, soundOn: settingsProvider.settings.soundOn).then((_) {
       Navigator.pushNamed(context, AppRoutes.practice);
     });
   }
@@ -413,7 +468,7 @@ class _HomeTab extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         title: const Text('Announcements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         content: const Text(
-          'Welcome to the GST CBT Prep App!\n\nAll features are 100% offline. Study materials can be downloaded from the Materials tab when connected to the internet.',
+          'Welcome to the GST CBT Prep App!\n\nAll features are 100% offline. Pick a course and start practicing to prepare for your GST exams.',
           style: TextStyle(color: AppColors.inkSoft, height: 1.4),
         ),
         actions: [
@@ -422,6 +477,48 @@ class _HomeTab extends StatelessWidget {
             child: const Text('Close', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
           ),
         ],
+      ),
+    );
+  }
+
+  void _showPracticeCoursePicker(BuildContext context, List<Course> courses, QuizProvider quizProvider) {
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24.0))),
+      backgroundColor: AppColors.cream,
+      builder: (context) => ConstrainedBox(
+        constraints: BoxConstraints(
+          maxHeight: MediaQuery.of(context).size.height * 0.6,
+        ),
+        child: ListView(
+          shrinkWrap: true,
+          padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 24.0),
+          children: [
+            const Text(
+              'Select Course',
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.primary),
+            ),
+            const SizedBox(height: 18.0),
+            ...courses.map((course) => Container(
+                  margin: const EdgeInsets.only(bottom: 10.0),
+                  child: ListTile(
+                    leading: CircleAvatar(backgroundColor: course.color, child: Text(course.icon)),
+                    title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
+                    subtitle: Text(course.name, style: const TextStyle(fontSize: 12.0)),
+                    trailing: const Icon(Icons.chevron_right_rounded),
+                    tileColor: Colors.white,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
+                    onTap: () {
+                      Navigator.pop(context);
+                      final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+                      quizProvider.startSession(course: course, mode: QuizMode.practice, soundOn: settingsProvider.settings.soundOn).then((_) {
+                        Navigator.pushNamed(context, AppRoutes.practice);
+                      });
+                    },
+                  ),
+                )),
+          ],
+        ),
       ),
     );
   }
@@ -474,7 +571,7 @@ class _PracticeTab extends StatelessWidget {
 
             const Text(
               'Quick Stats',
-              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary),
+              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.foreground),
             ),
             const SizedBox(height: 12.0),
 
@@ -561,13 +658,13 @@ class _PracticeTab extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+                  Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.foreground)),
                   const SizedBox(height: 4.0),
-                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.primary.withOpacity( 0.7), height: 1.3)),
+                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary.withOpacity( 0.7), height: 1.3)),
                 ],
               ),
             ),
-            const Icon(Icons.arrow_forward_ios_rounded, color: AppColors.primary, size: 16.0),
+            const Icon(Icons.arrow_forward_ios_rounded, color: AppColors.textSecondary, size: 16.0),
           ],
         ),
       ),
@@ -587,7 +684,7 @@ class _PracticeTab extends StatelessWidget {
         children: [
           Text(label, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.5, fontWeight: FontWeight.bold)),
           const SizedBox(height: 6.0),
-          Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w800)),
+          Text(value, style: const TextStyle(color: AppColors.foreground, fontSize: 18.0, fontWeight: FontWeight.w800)),
         ],
       ),
     );
@@ -599,13 +696,17 @@ class _PracticeTab extends StatelessWidget {
 
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24.0))),
       backgroundColor: AppColors.cream,
-      builder: (context) => Container(
-        padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 24.0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+      builder: (context) => DraggableScrollableSheet(
+        initialChildSize: 0.5,
+        minChildSize: 0.3,
+        maxChildSize: 0.75,
+        expand: false,
+        builder: (context, scrollController) => ListView(
+          controller: scrollController,
+          padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 24.0),
           children: [
             Text(
               mode == QuizMode.practice ? 'Select Practice Course' : 'Select Exam Course',
@@ -624,7 +725,8 @@ class _PracticeTab extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                       final quizProvider = Provider.of<QuizProvider>(context, listen: false);
-                      quizProvider.startSession(course: course, mode: mode).then((_) {
+                      final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+                      quizProvider.startSession(course: course, mode: mode, soundOn: settingsProvider.settings.soundOn).then((_) {
                         if (mode == QuizMode.practice) {
                           Navigator.pushNamed(context, AppRoutes.practice);
                         } else {

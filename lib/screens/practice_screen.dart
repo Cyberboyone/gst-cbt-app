@@ -36,7 +36,7 @@ class PracticeScreen extends StatelessWidget {
               children: [
                 const Text('📚', style: TextStyle(fontSize: 48.0)),
                 const SizedBox(height: 18.0),
-                const Text('No questions available', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.primary)),
+                const Text('No questions available', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold, color: AppColors.foreground)),
                 const SizedBox(height: 8.0),
                 const Text('Connect to the internet to fetch questions, or try again later.', textAlign: TextAlign.center, style: TextStyle(color: AppColors.inkSoft)),
                 const SizedBox(height: 24.0),
@@ -55,18 +55,12 @@ class PracticeScreen extends StatelessWidget {
     final isLast = quizProvider.currentIndex == questions.length - 1;
     final progressVal = (quizProvider.currentIndex + 1) / questions.length;
 
-    // Sync sound setting outside of build to avoid rebuild loop
-    final soundOn = settingsProvider.settings.soundOn;
-    if (quizProvider.soundOn != soundOn) {
-      quizProvider.setSoundOn(soundOn);
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(activeCourse.code, style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 16.0)),
+            Text(activeCourse.code, style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.foreground, fontSize: 16.0)),
             Text(activeCourse.name, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.w500)),
           ],
         ),
@@ -120,7 +114,7 @@ class PracticeScreen extends StatelessWidget {
                     children: [
                       Text(
                         'Question ${quizProvider.currentIndex + 1} of ${questions.length}',
-                        style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 12.0),
+                        style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.foreground, fontSize: 12.0),
                       ),
                       Text(
                         'Correct: ${quizProvider.sessionCorrectAnswers}/${quizProvider.sessionAttempted}',
@@ -175,7 +169,7 @@ class PracticeScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(22.0),
                       child: Text(
                         currentQ!.text,
-                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.primary, height: 1.4),
+                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.foreground, height: 1.4),
                       ),
                     ),
                     const SizedBox(height: 24.0),
@@ -289,7 +283,7 @@ class PracticeScreen extends StatelessWidget {
 
     Color tileColor = Colors.white;
     Color borderColor = Colors.transparent;
-    Color textColor = AppColors.primary;
+    Color textColor = AppColors.foreground;
 
     if (isEliminated && !isChecked) {
       tileColor = Colors.grey.withOpacity( 0.1);
@@ -319,11 +313,11 @@ class PracticeScreen extends StatelessWidget {
         onTap: isEliminated && !isChecked ? null : () => quiz.selectOption(idx),
         leading: CircleAvatar(
           radius: 14.0,
-          backgroundColor: isSelected ? AppColors.accent : AppColors.primary.withOpacity( 0.08),
+          backgroundColor: isSelected ? AppColors.accent : AppColors.foreground.withOpacity( 0.08),
           child: Text(
             String.fromCharCode(65 + idx),
             style: TextStyle(
-              color: isSelected ? Colors.white : AppColors.primary,
+              color: isSelected ? Colors.white : AppColors.foreground,
               fontWeight: FontWeight.bold,
               fontSize: 12.0,
             ),

@@ -32,8 +32,7 @@ class NavBar extends StatelessWidget {
         children: [
           _buildNavItem(0, Icons.home_rounded, 'Home'),
           _buildNavItem(1, Icons.quiz_rounded, 'Practice'),
-          _buildNavItem(2, Icons.download_rounded, 'Materials'),
-          _buildNavItem(3, Icons.leaderboard_rounded, 'Ranks'),
+          _buildNavItem(2, Icons.leaderboard_rounded, 'Ranks'),
         ],
       ),
     );
