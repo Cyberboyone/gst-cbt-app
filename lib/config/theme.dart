@@ -143,6 +143,7 @@ class AppColors {
 class AppTheme {
   static final ThemeData lightTheme = _buildTheme();
   static ThemeData _buildTheme() {
+    return ThemeData(
       useMaterial3: true,
       scaffoldBackgroundColor: AppColors.background,
       primaryColor: AppColors.primary,

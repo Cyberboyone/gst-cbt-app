@@ -127,7 +127,7 @@ class AppConstants {
   static int getLevelForXp(int xp) {
     int level = 0;
     for (int i = levels.length - 1; i >= 0; i--) {
-      if (xp >= levels[i]['xp'] as int) {
+      if (xp >= (levels[i]['xp'] as int)) {
         level = i;
         break;
       }
