@@ -7,6 +7,7 @@ import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/settings_provider.dart';
 import '../services/ad_service.dart';
+import 'practice_result_screen.dart';
 
 class PracticeScreen extends StatelessWidget {
   const PracticeScreen({super.key});
@@ -454,19 +455,19 @@ class PracticeScreen extends StatelessWidget {
 
       Navigator.pop(context);
 
-      String message = 'Practice Complete! +$xpEarned XP, +$coinsEarned Coins';
-      if (totalMultiplier > 1.0) {
-        message += ' (x${totalMultiplier.toStringAsFixed(1)} multiplier!)';
-      }
-      if (newBadges.isNotEmpty) {
-        message += '\n🏅 New badge${newBadges.length > 1 ? 's' : ''} unlocked!';
-      }
-
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(message, style: const TextStyle(fontWeight: FontWeight.bold)),
-          backgroundColor: AppColors.primary,
-          duration: const Duration(seconds: 3),
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => PracticeResultScreen(
+            totalQuestions: quiz.sessionAttempted,
+            correctAnswers: quiz.sessionCorrectAnswers,
+            courseCode: quiz.activeCourse!.code,
+            courseId: quiz.activeCourse!.id,
+            bestCombo: quiz.sessionBestCombo,
+            xpEarned: xpEarned,
+            coinsEarned: coinsEarned,
+            multiplier: totalMultiplier,
+          ),
         ),
       );
     }

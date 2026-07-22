@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:printing/printing.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -10,37 +9,38 @@ import '../config/constants.dart';
 import '../config/routes.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
-import '../providers/settings_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/powered_by_footer.dart';
 
-class ResultScreen extends StatefulWidget {
+class PracticeResultScreen extends StatefulWidget {
   final int totalQuestions;
   final int correctAnswers;
-  final int scorePercentage;
-  final int timeSpentSeconds;
   final String courseCode;
   final String courseId;
+  final int bestCombo;
+  final int xpEarned;
+  final int coinsEarned;
+  final double multiplier;
 
-  const ResultScreen({
+  const PracticeResultScreen({
     super.key,
     required this.totalQuestions,
     required this.correctAnswers,
-    required this.scorePercentage,
-    required this.timeSpentSeconds,
     required this.courseCode,
     required this.courseId,
+    required this.bestCombo,
+    required this.xpEarned,
+    required this.coinsEarned,
+    required this.multiplier,
   });
 
   @override
-  State<ResultScreen> createState() => _ResultScreenState();
+  State<PracticeResultScreen> createState() => _PracticeResultScreenState();
 }
 
-class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderStateMixin {
-  bool _rewardsSaved = false;
+class _PracticeResultScreenState extends State<PracticeResultScreen> with SingleTickerProviderStateMixin {
   late AnimationController _animController;
   late Animation<double> _scaleAnimation;
-  final AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
@@ -48,194 +48,17 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
     _animController = AnimationController(vsync: this, duration: const Duration(milliseconds: 600));
     _scaleAnimation = CurvedAnimation(parent: _animController, curve: Curves.elasticOut);
     _animController.forward();
-    _playCompletionSound();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _saveRewardsAndStats();
-    });
   }
 
   @override
   void dispose() {
     _animController.dispose();
-    _audioPlayer.dispose();
     super.dispose();
   }
 
-  Future<void> _playCompletionSound() async {
-    final settings = Provider.of<SettingsProvider>(context, listen: false);
-    if (!settings.settings.soundOn) return;
-    final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
-    final isPerfect = widget.scorePercentage == 100;
-    if (isPerfect) {
-      await _audioPlayer.play(AssetSource('sounds/complete.wav'));
-    } else if (isPassed) {
-      await _audioPlayer.play(AssetSource('sounds/correct.wav'));
-    }
-  }
-
-  void _saveRewardsAndStats() {
-    if (_rewardsSaved) return;
-    _rewardsSaved = true;
-
-    final profile = Provider.of<ProfileProvider>(context, listen: false);
-    final courses = Provider.of<CourseProvider>(context, listen: false);
-
-    final previousLevel = AppConstants.getLevelForXp(profile.profile?.xp ?? 0);
-
-    int xpBonus = 0;
-    int coinBonus = 0;
-
-    if (widget.scorePercentage == 100) {
-      xpBonus = 100;
-      coinBonus = 15;
-    } else if (widget.scorePercentage >= 45) {
-      xpBonus = 50;
-      coinBonus = 5;
-    }
-
-    final totalXp = (widget.correctAnswers * 10) + xpBonus;
-    final totalCoins = (widget.correctAnswers * 1) + coinBonus;
-
-    profile.recordSessionStats(
-      correct: widget.correctAnswers,
-      attempted: widget.totalQuestions,
-      coins: totalCoins,
-    );
-    profile.updateXP(totalXp);
-    profile.addCoins(totalCoins);
-    profile.updateStreak();
-
-    courses.updateCourseProgress(
-      courseId: widget.courseId,
-      additionalAttempted: widget.totalQuestions,
-      additionalCorrect: widget.correctAnswers,
-      newExamScore: widget.scorePercentage,
-    );
-
-    final coursesPracticed = courses.courses
-        .where((c) => courses.getProgressForCourse(c.id).questionsAttempted > 0)
-        .map((c) => c.id)
-        .toList();
-
-    final currentExamPerfect = widget.scorePercentage == 100;
-    final allCoursesPerfect = courses.courses.every((c) => courses.getProgressForCourse(c.id).bestScore >= 100 && courses.getProgressForCourse(c.id).bestScore > 0);
-    final passedExamCount = courses.courses.where((c) => courses.getProgressForCourse(c.id).bestScore >= 45).length;
-
-    final newBadges = profile.checkBadges(
-      coursesPracticed: coursesPracticed,
-      currentExamPerfect: currentExamPerfect,
-      allCoursesPerfect: allCoursesPerfect,
-      passedExamCount: passedExamCount,
-    );
-
-    final newLevel = AppConstants.getLevelForXp(profile.profile?.xp ?? 0);
-
-    if (newBadges.isNotEmpty || newLevel > previousLevel) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        _showRewardsDialog(context, newBadges, newLevel > previousLevel, newLevel, profile);
-      });
-    }
-  }
-
-  void _showRewardsDialog(BuildContext context, List<String> newBadges, bool leveledUp, int newLevel, ProfileProvider profile) {
-    final levelInfo = AppConstants.levels[newLevel];
-
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (ctx) => AlertDialog(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24.0)),
-        backgroundColor: AppColors.cream,
-        title: Column(
-          children: [
-            Text(leveledUp ? '🎉' : '🏅', style: const TextStyle(fontSize: 48.0)),
-            const SizedBox(height: 8.0),
-            Text(
-              leveledUp ? 'Level Up!' : 'Achievement Unlocked!',
-              style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 22.0),
-            ),
-          ],
-        ),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (leveledUp) ...[
-              Container(
-                padding: const EdgeInsets.all(12.0),
-                decoration: BoxDecoration(
-                  color: AppColors.primary,
-                  borderRadius: BorderRadius.circular(12.0),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(levelInfo['icon'], style: const TextStyle(fontSize: 24.0)),
-                    const SizedBox(width: 8.0),
-                    Text(
-                      'You are now a ${levelInfo['title']}!',
-                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16.0),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12.0),
-            ],
-            if (newBadges.isNotEmpty) ...[
-              const Text('New Badges:', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
-              const SizedBox(height: 8.0),
-              ...newBadges.map((id) {
-                final badge = AppConstants.badgeCatalog.firstWhere(
-                  (b) => b['id'] == id,
-                  orElse: () => {'name': id, 'icon': '🏆'},
-                );
-                return Container(
-                  margin: const EdgeInsets.only(bottom: 6.0),
-                  padding: const EdgeInsets.all(10.0),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                  child: Row(
-                    children: [
-                      Text(badge['icon']!, style: const TextStyle(fontSize: 20.0)),
-                      const SizedBox(width: 10.0),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(badge['name']!, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 13.0)),
-                            Text(badge['description']!, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0)),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              }),
-            ],
-          ],
-        ),
-        actions: [
-          SizedBox(
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pop(ctx);
-                profile.clearRecentBadges();
-                if (leveledUp) profile.clearLevelUp();
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.accent,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-              ),
-              child: const Text('Awesome!', style: TextStyle(fontWeight: FontWeight.bold)),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+  int get _scorePercentage => widget.totalQuestions == 0
+      ? 0
+      : ((widget.correctAnswers / widget.totalQuestions) * 100).round();
 
   String _formatTime(int totalSeconds) {
     final minutes = (totalSeconds / 60).floor();
@@ -244,9 +67,10 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
   }
 
   void _shareResults(String nickname) {
-    final msg = 'Hey! I just completed the ${widget.courseCode} Exam Simulation on the CBT App.\n'
-        'Score: ${widget.scorePercentage}% (${widget.correctAnswers}/${widget.totalQuestions} correct)\n'
-        'Time: ${_formatTime(widget.timeSpentSeconds)}\n'
+    final msg = 'Hey! I just completed a ${widget.courseCode} Practice Session on the CBT App.\n'
+        'Score: $_scorePercentage% (${widget.correctAnswers}/${widget.totalQuestions} correct)\n'
+        'Best Combo: ${widget.bestCombo}x 🔥\n'
+        'XP Earned: +${widget.xpEarned} | Coins: +${widget.coinsEarned}\n'
         'Download the app to test your prep!';
     Share.share(msg);
   }
@@ -257,8 +81,10 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
     final dateStr = '${now.day}/${now.month}/${now.year}';
     final timeStr = '${now.hour.toString().padLeft(2, '0')}:${now.minute.toString().padLeft(2, '0')}';
 
-    final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
-    final isPerfect = widget.scorePercentage == 100;
+    final theme = pw.ThemeData.withFont(
+      base: await PdfGoogleFonts.nunitoRegular(),
+      bold: await PdfGoogleFonts.nunitoBold(),
+    );
 
     doc.addPage(
       pw.Page(
@@ -266,13 +92,14 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
         build: (pw.Context context) => pw.Column(
           crossAxisAlignment: pw.CrossAxisAlignment.start,
           children: [
+            // Header
             pw.Row(
               mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
               children: [
                 pw.Column(
                   crossAxisAlignment: pw.CrossAxisAlignment.start,
                   children: [
-                    pw.Text('CBT App - Exam Result', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 20, color: PdfColors.indigo700)),
+                    pw.Text('CBT App - Practice Result', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 20, color: PdfColors.indigo700)),
                     pw.SizedBox(height: 4),
                     pw.Text('Powered by Siyayya.com', style: pw.TextStyle(fontSize: 10, color: PdfColors.grey600)),
                   ],
@@ -289,6 +116,8 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             pw.SizedBox(height: 20),
             pw.Divider(color: PdfColors.indigo200),
             pw.SizedBox(height: 12),
+
+            // Student info
             pw.Container(
               padding: pw.EdgeInsets.all(12),
               decoration: pw.BoxDecoration(
@@ -323,7 +152,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         pw.Text('Session Type', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 12, color: PdfColors.grey700)),
                         pw.SizedBox(height: 2),
-                        pw.Text('Exam Simulation', style: pw.TextStyle(fontSize: 14)),
+                        pw.Text('Practice', style: pw.TextStyle(fontSize: 14)),
                       ],
                     ),
                   ),
@@ -331,29 +160,31 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               ),
             ),
             pw.SizedBox(height: 20),
+
+            // Score
             pw.Center(
               child: pw.Container(
                 padding: pw.EdgeInsets.all(20),
                 decoration: pw.BoxDecoration(
-                  color: isPerfect ? PdfColors.purple50 : (isPassed ? PdfColors.green50 : PdfColors.red50),
+                  color: PdfColors.indigo50,
                   borderRadius: pw.BorderRadius.circular(12),
                 ),
                 child: pw.Column(
                   children: [
-                    pw.Text('${widget.scorePercentage}%', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 48, color: PdfColors.indigo700)),
+                    pw.Text('$_scorePercentage%', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 48, color: PdfColors.indigo700)),
                     pw.SizedBox(height: 4),
                     pw.Text(
-                      isPerfect ? 'PERFECT SCORE' : (isPassed ? 'PASSED' : 'RE-TAKE NEEDED'),
+                      _scorePercentage >= 80 ? 'Excellent!' : (_scorePercentage >= 60 ? 'Good Job!' : (_scorePercentage >= 45 ? 'Passed' : 'Keep Practicing')),
                       style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 14, color: PdfColors.indigo700),
                     ),
-                    pw.SizedBox(height: 2),
-                    pw.Text('Pass mark: ${AppConstants.passingScorePercentage}%', style: pw.TextStyle(fontSize: 10, color: PdfColors.grey600)),
                   ],
                 ),
               ),
             ),
             pw.SizedBox(height: 20),
-            pw.Text('Exam Summary', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 16, color: PdfColors.indigo700)),
+
+            // Summary Table
+            pw.Text('Session Summary', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 16, color: PdfColors.indigo700)),
             pw.SizedBox(height: 10),
             pw.Table.fromTextArray(
               headerStyle: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 11),
@@ -372,20 +203,22 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                 ['Course', widget.courseCode],
                 ['Questions Attempted', '${widget.totalQuestions}'],
                 ['Correct Answers', '${widget.correctAnswers}'],
-                ['Score', '${widget.scorePercentage}%'],
-                ['Time Spent', _formatTime(widget.timeSpentSeconds)],
-                ['Pass Mark', '${AppConstants.passingScorePercentage}%'],
-                ['Result', isPassed ? 'PASSED' : 'FAILED'],
-                ['XP Earned', '+${((widget.correctAnswers * 10) + (isPerfect ? 100 : (isPassed ? 50 : 0)))}'],
-                ['Coins Earned', '+${(widget.correctAnswers * 1) + (isPerfect ? 15 : (isPassed ? 5 : 0))}'],
+                ['Score', '$_scorePercentage%'],
+                ['Best Combo', '${widget.bestCombo}x'],
+                ['XP Earned', '+${widget.xpEarned}'],
+                ['Coins Earned', '+${widget.coinsEarned}'],
+                if (widget.multiplier > 1.0)
+                  ['Multiplier', 'x${widget.multiplier.toStringAsFixed(1)}'],
               ],
             ),
             pw.SizedBox(height: 20),
+
+            // Footer
             pw.Divider(color: PdfColors.grey300),
             pw.SizedBox(height: 8),
             pw.Center(
               child: pw.Text(
-                'Generated by CBT App - $dateStr $timeStr',
+                'Generated by CBT App - ${dateStr} ${timeStr}',
                 style: pw.TextStyle(fontSize: 9, color: PdfColors.grey500),
               ),
             ),
@@ -396,7 +229,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
 
     await Printing.layoutPdf(
       onLayout: (PdfPageFormat format) async => doc.save(),
-      name: 'CBT_Exam_${widget.courseCode}_$dateStr',
+      name: 'CBT_Practice_${widget.courseCode}_$dateStr',
     );
   }
 
@@ -404,18 +237,10 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     final profile = context.watch<ProfileProvider>().profile;
     final nickname = profile?.nickname ?? 'Student';
-    final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
-    final isPerfect = widget.scorePercentage == 100;
-
-    final streakMultiplier = AppConstants.getStreakMultiplier(profile?.streakCount ?? 0);
-    int displayXpBonus = isPerfect ? 100 : (isPassed ? 50 : 0);
-    int displayCoinBonus = isPerfect ? 15 : (isPassed ? 5 : 0);
-    final earnedXp = ((widget.correctAnswers * 10 + displayXpBonus) * streakMultiplier).round();
-    final earnedCoins = (widget.correctAnswers * 1) + displayCoinBonus;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Exam Result', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
+        title: const Text('Practice Result', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -432,22 +257,22 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               child: ScaleTransition(
                 scale: _scaleAnimation,
                 child: ProgressRing(
-                  percentage: widget.scorePercentage / 100.0,
+                  percentage: _scorePercentage / 100.0,
                   size: 130.0,
                   strokeWidth: 12.0,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        '${widget.scorePercentage}%',
+                        '$_scorePercentage%',
                         style: const TextStyle(fontSize: 28.0, fontWeight: FontWeight.w900, color: AppColors.primary),
                       ),
                       Text(
-                        isPerfect ? 'PERFECT!' : (isPassed ? 'PASSED' : 'RE-TAKE'),
+                        'CORRECT',
                         style: TextStyle(
                           fontSize: 10.0,
                           fontWeight: FontWeight.bold,
-                          color: isPerfect ? AppColors.accent : (isPassed ? Colors.green : Colors.red),
+                          color: _scorePercentage >= 80 ? AppColors.accent : (_scorePercentage >= 45 ? Colors.green : Colors.orange),
                           letterSpacing: 1.0,
                         ),
                       ),
@@ -458,30 +283,30 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 32.0),
 
-            // Score Description Banner
+            // Score description banner
             Container(
               decoration: BoxDecoration(
-                color: isPerfect ? AppColors.lavender : (isPassed ? AppColors.mint : AppColors.peach),
+                color: _scorePercentage >= 80 ? AppColors.lavender : (_scorePercentage >= 45 ? AppColors.mint : AppColors.peach),
                 borderRadius: BorderRadius.circular(16.0),
               ),
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(isPerfect ? '💯' : (isPassed ? '🏆' : '📚'), style: const TextStyle(fontSize: 24.0)),
+                  Text(_scorePercentage >= 80 ? '💯' : (_scorePercentage >= 45 ? '🏆' : '📚'), style: const TextStyle(fontSize: 24.0)),
                   const SizedBox(width: 14.0),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          isPerfect ? 'Outstanding! Perfect Score!' : (isPassed ? 'Credit Accomplished!' : 'Keep Practicing!'),
+                          _scorePercentage >= 80 ? 'Excellent Work!' : (_scorePercentage >= 45 ? 'Good Progress!' : 'Keep Practicing!'),
                           style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary),
                         ),
                         const SizedBox(height: 2.0),
                         Text(
-                          isPerfect
-                              ? 'Flawless performance! You aced every single question!'
-                              : (isPassed ? 'Congratulations! You performed above the credit cut-off of 45%.' : 'The passing score is 45%. Take another review practice.'),
+                          _scorePercentage >= 80
+                              ? 'Outstanding performance! You nailed most of the questions.'
+                              : (_scorePercentage >= 45 ? 'Nice work! Review the ones you missed.' : 'Practice makes perfect. Try again to improve!'),
                           style: const TextStyle(fontSize: 12.0, color: AppColors.primary),
                         ),
                       ],
@@ -492,7 +317,8 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            // Session Summary
+            const Text('Session Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
@@ -503,23 +329,27 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Column(
                 children: [
-                  _buildStatRow('Course Subject', widget.courseCode),
+                  _buildStatRow('Course', widget.courseCode),
                   const Divider(height: 1),
                   _buildStatRow('Questions Attempted', '${widget.totalQuestions}'),
                   const Divider(height: 1),
                   _buildStatRow('Correct Answers', '${widget.correctAnswers}'),
                   const Divider(height: 1),
-                  _buildStatRow('Time Spent', _formatTime(widget.timeSpentSeconds)),
-                  if (streakMultiplier > 1.0) ...[
+                  if (widget.bestCombo >= 3) ...[
+                    _buildStatRow('Best Combo', '${widget.bestCombo}x 🔥'),
                     const Divider(height: 1),
-                    _buildStatRow('Streak Multiplier', 'x${streakMultiplier.toStringAsFixed(1)}'),
+                  ],
+                  if (widget.multiplier > 1.0) ...[
+                    _buildStatRow('Multiplier', 'x${widget.multiplier.toStringAsFixed(1)}'),
+                    const Divider(height: 1),
                   ],
                 ],
               ),
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            // Rewards
+            const Text('Rewards Earned', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
             const SizedBox(height: 12.0),
             Row(
               children: [
@@ -532,7 +362,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         const Text('XP Earned', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+$widget.xpEarned XP', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -547,7 +377,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         const Text('Coins Reward', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedCoins 🪙', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+${widget.coinsEarned} 🪙', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -556,6 +386,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 36.0),
 
+            // Action buttons: Print | Share | Home
             Row(
               children: [
                 Expanded(
