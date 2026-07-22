@@ -52,7 +52,7 @@ class _ConfettiAnimationState extends State<ConfettiAnimation>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 4),
+      duration: const Duration(seconds: 2),
     );
     _generatePieces();
     if (widget.show) {
