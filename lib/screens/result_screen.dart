@@ -4,7 +4,7 @@ import 'package:share_plus/share_plus.dart';
 import 'package:audioplayers/audioplayers.dart';
 import '../config/theme.dart';
 import '../config/constants.dart';
-import '../config/routes.dart'
+import '../config/routes.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/settings_provider.dart';

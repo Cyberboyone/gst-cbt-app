@@ -2,13 +2,14 @@ import 'package:flutter/foundation.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:unity_ads_plugin/unity_ads_plugin.dart';
 import '../config/constants.dart';
+import 'dart:async';
 
 class AdService {
   AdService._();
   static final AdService instance = AdService._();
 
   bool _initialized = false;
-  Stream<ConnectivityResult>? _connectivitySubscription;
+  StreamSubscription<ConnectivityResult>? _connectivitySubscription;
 
   void init() {
     if (_initialized) return;
