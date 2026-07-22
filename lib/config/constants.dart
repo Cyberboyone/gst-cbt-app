@@ -123,7 +123,7 @@ class AppConstants {
   static String get unityAdsGameId => Platform.isIOS ? '6160345' : '6160344';
   static String get unityInterstitialPlacement => Platform.isIOS ? 'Interstitial_iOS' : 'Interstitial_Android';
   static String get unityRewardedPlacement => Platform.isIOS ? 'Rewarded_iOS' : 'Rewarded_Android';
-  static String get unityBannerPlacement => Platform.isIOS ? 'Banner_iOS' : 'Banner_Android';
+  static String get unityBannerPlacement => Platform.isIOS ? 'Banner_ios' : 'Banner_Android';
 
   // Static helpers
   static int getLevelForXp(int xp) {

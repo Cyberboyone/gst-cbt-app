@@ -57,6 +57,7 @@ class AdService {
   void showInterstitial({VoidCallback? onComplete}) {
     final id = AppConstants.unityInterstitialPlacement;
     debugPrint('[AdService] showInterstitial called for $id');
+    preloadInterstitial();
     _showInterstitialVideo(id, onComplete);
   }
 
@@ -83,6 +84,7 @@ class AdService {
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
     final id = AppConstants.unityRewardedPlacement;
     debugPrint('[AdService] showRewarded called for $id');
+    preloadRewarded();
     _showRewardedVideo(id, onRewarded, onFailed);
   }
 
