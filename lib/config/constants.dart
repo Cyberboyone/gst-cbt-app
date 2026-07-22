@@ -119,12 +119,10 @@ class AppConstants {
   static const String webUrl = 'https://siyayya.com';
 
   // --- Unity Ads ---
-  // TODO: Replace with your Unity Ads Game ID from https://dashboard.unity3d.com
-  static const String unityAdsGameId = '5890725'; // placeholder — replace after Unity Dashboard setup
-  // TODO: Replace with your placement IDs after creating ad units in Unity Dashboard
-  static const String unityInterstitialPlacement = 'interstitial';
-  static const String unityRewardedPlacement = 'rewarded';
-  static const String unityBannerPlacement = 'banner';
+  static const String unityAdsGameId = '6160344';
+  static const String unityInterstitialPlacement = 'Interstitial_Android';
+  static const String unityRewardedPlacement = 'Rewarded_Android';
+  static const String unityBannerPlacement = 'Banner_Android';
 
   // Static helpers
   static int getLevelForXp(int xp) {

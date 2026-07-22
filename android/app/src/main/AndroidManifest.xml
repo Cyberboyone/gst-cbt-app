@@ -27,10 +27,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <!-- Unity Ads: replace GAME_ID with your Unity Dashboard Game ID -->
         <meta-data
             android:name="unityads.gameId"
-            android:value="5890725" />
+            android:value="6160344" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileProvider"
