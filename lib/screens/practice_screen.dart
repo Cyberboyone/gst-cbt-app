@@ -98,7 +98,11 @@ class PracticeScreen extends StatelessWidget {
               settingsProvider.settings.soundOn ? Icons.volume_up_rounded : Icons.volume_off_rounded,
               color: AppColors.primary,
             ),
-            onPressed: () => settingsProvider.toggleSound(!settingsProvider.settings.soundOn),
+            onPressed: () {
+              final newSoundOn = !settingsProvider.settings.soundOn;
+              settingsProvider.toggleSound(newSoundOn);
+              quizProvider.setSoundOn(newSoundOn);
+            },
           ),
         ],
       ),
