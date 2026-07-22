@@ -1,11 +1,12 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:unity_ads_plugin/unity_ads_plugin.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'services/hive_service.dart';
 import 'models/question.dart';
+import 'config/constants.dart';
 import 'app.dart';
 
 void main() async {
@@ -15,8 +16,14 @@ void main() async {
   await Firebase.initializeApp();
   FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
 
-  // Initialize AdMob
-  await MobileAds.instance.initialize();
+  // Initialize Unity Ads
+  UnityAds.init(
+    gameId: AppConstants.unityAdsGameId,
+    testMode: false,
+    onComplete: () => debugPrint('Unity Ads initialized'),
+    onFailed: (error, message) =>
+        debugPrint('Unity Ads init failed: $error – $message'),
+  );
 
   // Initialize Hive local database
   final hiveService = HiveService();
