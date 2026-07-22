@@ -13,6 +13,7 @@ import '../providers/course_provider.dart';
 import '../providers/settings_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/powered_by_footer.dart';
+import '../widgets/confetti_animation.dart';
 
 class PracticeResultScreen extends StatefulWidget {
   final int totalQuestions;
@@ -265,7 +266,10 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
         automaticallyImplyLeading: false,
       ),
       body: SafeArea(
-        child: ListView(
+        child: Stack(
+          children: [
+            ConfettiAnimation(show: _scorePercentage >= 80),
+            ListView(
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 12.0),
           children: [
             const SizedBox(height: 12.0),
@@ -457,6 +461,8 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             ),
 
             const PoweredByFooter(),
+          ],
+        ),
           ],
         ),
       ),
