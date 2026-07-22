@@ -386,24 +386,25 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             ),
             const SizedBox(height: 36.0),
 
-            // Action buttons: Print | Share | Home
+            // Print button (full width)
+            SizedBox(
+              width: double.infinity,
+              height: 50.0,
+              child: OutlinedButton.icon(
+                onPressed: () => _printResult(nickname),
+                icon: const Icon(Icons.print_rounded, color: AppColors.primary, size: 18),
+                label: const Text('Print Result', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
+                style: OutlinedButton.styleFrom(
+                  side: const BorderSide(color: AppColors.primary, width: 1.5),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
+
+            // Share + Home
             Row(
               children: [
-                Expanded(
-                  child: SizedBox(
-                    height: 50.0,
-                    child: OutlinedButton.icon(
-                      onPressed: () => _printResult(nickname),
-                      icon: const Icon(Icons.print_rounded, color: AppColors.primary, size: 18),
-                      label: const Text('Print', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
-                      style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: AppColors.primary, width: 1.5),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 8.0),
                 Expanded(
                   child: SizedBox(
                     height: 50.0,
@@ -418,7 +419,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                     ),
                   ),
                 ),
-                const SizedBox(width: 8.0),
+                const SizedBox(width: 12.0),
                 Expanded(
                   child: SizedBox(
                     height: 50.0,
