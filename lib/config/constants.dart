@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'theme.dart';
 
@@ -119,10 +120,10 @@ class AppConstants {
   static const String webUrl = 'https://siyayya.com';
 
   // --- Unity Ads ---
-  static const String unityAdsGameId = '6160344';
-  static const String unityInterstitialPlacement = 'Interstitial_Android';
-  static const String unityRewardedPlacement = 'Rewarded_Android';
-  static const String unityBannerPlacement = 'Banner_Android';
+  static String get unityAdsGameId => Platform.isIOS ? '6160345' : '6160344';
+  static String get unityInterstitialPlacement => Platform.isIOS ? 'Interstitial_iOS' : 'Interstitial_Android';
+  static String get unityRewardedPlacement => Platform.isIOS ? 'Rewarded_iOS' : 'Rewarded_Android';
+  static String get unityBannerPlacement => Platform.isIOS ? 'Banner_iOS' : 'Banner_Android';
 
   // Static helpers
   static int getLevelForXp(int xp) {
