@@ -17,6 +17,28 @@ Thumbs.db
 # Opencode
 .opencode/
 
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Runner/GeneratedPluginRegistrant.*
+
+# Android
+android/.gradle/
+android/local.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/key.properties
+
+# Firebase (download from console)
+ios/Runner/GoogleService-Info.plist
+
 # Misc
 agency-agents/
 job_log*.txt
