@@ -67,9 +67,11 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
     final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
     final isPerfect = widget.scorePercentage == 100;
     if (isPerfect) {
-      await _audioPlayer.play(AssetSource('sounds/complete.wav'));
+      await _audioPlayer.play(AssetSource('sounds/applause.wav'));
     } else if (isPassed) {
       await _audioPlayer.play(AssetSource('sounds/correct.wav'));
+    } else {
+      await _audioPlayer.play(AssetSource('sounds/fail.wav'));
     }
   }
 
