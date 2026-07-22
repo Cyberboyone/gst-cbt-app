@@ -17,7 +17,11 @@ class AdService {
     UnityAds.init(
       gameId: AppConstants.unityAdsGameId,
       testMode: kDebugMode,
-      onComplete: () => print('[AdService] Unity Ads ready'),
+      onComplete: () {
+        print('[AdService] Unity Ads initialized successfully');
+        preloadInterstitial();
+        preloadRewarded();
+      },
       onFailed: (error, message) =>
           print('[AdService] Init failed: $error – $message'),
     );
@@ -39,8 +43,14 @@ class AdService {
     _connectivitySubscription?.cancel();
   }
 
-  /// Pre-load an interstitial or rewarded ad.
+  bool isAdReady(String placementId) {
+    final status = UnityAds.getPlacementStatus(placementId);
+    print('[AdService] Placement $placementId status: $status');
+    return status == PlacementStatus.ready;
+  }
+
   void preload(String placementId) {
+    print('[AdService] Preloading: $placementId');
     UnityAds.load(
       placementId: placementId,
       onComplete: (id) => print('[AdService] Loaded: $id'),
@@ -49,27 +59,81 @@ class AdService {
     );
   }
 
-  /// Show an interstitial ad (fire-and-forget).
   void showInterstitial({VoidCallback? onComplete}) {
+    final id = AppConstants.unityInterstitialPlacement;
+    print('[AdService] showInterstitial called for $id');
+    print('[AdService] Init state: $_initialized, isReady: ${isAdReady(id)}');
+
+    if (!isAdReady(id)) {
+      print('[AdService] Interstitial not ready – loading then showing');
+      preload(id);
+      UnityAds.load(
+        placementId: id,
+        onComplete: (_) {
+          print('[AdService] Loaded interstitial on retry – showing now');
+          _showInterstitialVideo(id, onComplete);
+        },
+        onFailed: (_, e, m) {
+          print('[AdService] Retry load failed: $e – $m');
+          onComplete?.call();
+        },
+      );
+      return;
+    }
+    _showInterstitialVideo(id, onComplete);
+  }
+
+  void _showInterstitialVideo(String id, VoidCallback? onComplete) {
     UnityAds.showVideoAd(
-      placementId: AppConstants.unityInterstitialPlacement,
-      onStart: (_) {},
-      onSkipped: (_) => onComplete?.call(),
-      onComplete: (_) => onComplete?.call(),
+      placementId: id,
+      onStart: (_) => print('[AdService] Interstitial started'),
+      onSkipped: (_) {
+        print('[AdService] Interstitial skipped');
+        onComplete?.call();
+      },
+      onComplete: (_) {
+        print('[AdService] Interstitial completed');
+        preloadInterstitial();
+        onComplete?.call();
+      },
       onFailed: (_, e, m) {
-        print('[AdService] Interstitial failed: $e – $m');
+        print('[AdService] Interstitial show failed: $e – $m');
         onComplete?.call();
       },
     );
   }
 
-  /// Show a rewarded ad. [onRewarded] fires only when the user watched fully.
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
+    final id = AppConstants.unityRewardedPlacement;
+    print('[AdService] showRewarded called for $id');
+    print('[AdService] Init state: $_initialized, isReady: ${isAdReady(id)}');
+
+    if (!isAdReady(id)) {
+      print('[AdService] Rewarded not ready – loading then showing');
+      preload(id);
+      UnityAds.load(
+        placementId: id,
+        onComplete: (_) {
+          print('[AdService] Loaded rewarded on retry – showing now');
+          _showRewardedVideo(id, onRewarded, onFailed);
+        },
+        onFailed: (_, e, m) {
+          print('[AdService] Retry load failed: $e – $m');
+          onFailed?.call();
+        },
+      );
+      return;
+    }
+    _showRewardedVideo(id, onRewarded, onFailed);
+  }
+
+  void _showRewardedVideo(String id, VoidCallback? onRewarded, VoidCallback? onFailed) {
     UnityAds.showVideoAd(
-      placementId: AppConstants.unityRewardedPlacement,
-      onStart: (_) {},
+      placementId: id,
+      onStart: (_) => print('[AdService] Rewarded started'),
       onComplete: (_) {
         print('[AdService] Rewarded completed – granting reward');
+        preloadRewarded();
         onRewarded?.call();
       },
       onSkipped: (_) {
@@ -77,15 +141,13 @@ class AdService {
         onFailed?.call();
       },
       onFailed: (_, e, m) {
-        print('[AdService] Rewarded failed: $e – $m');
+        print('[AdService] Rewarded show failed: $e – $m');
         onFailed?.call();
       },
     );
   }
 
-  /// Pre-load the next interstitial (call after app startup / after showing one).
   void preloadInterstitial() => preload(AppConstants.unityInterstitialPlacement);
 
-  /// Pre-load the next rewarded (call after app startup / after showing one).
   void preloadRewarded() => preload(AppConstants.unityRewardedPlacement);
 }
