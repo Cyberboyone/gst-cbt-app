@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:audioplayers/audioplayers.dart';
 import '../config/theme.dart';
 import '../config/constants.dart';
-import '../config/routes.dart';
+import '../config/routes.dart'
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
+import '../providers/settings_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/powered_by_footer.dart';
 
@@ -35,6 +37,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
   bool _rewardsSaved = false;
   late AnimationController _animController;
   late Animation<double> _scaleAnimation;
+  final AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
@@ -42,6 +45,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
     _animController = AnimationController(vsync: this, duration: const Duration(milliseconds: 600));
     _scaleAnimation = CurvedAnimation(parent: _animController, curve: Curves.elasticOut);
     _animController.forward();
+    _playCompletionSound();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _saveRewardsAndStats();
     });
@@ -50,7 +54,20 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
   @override
   void dispose() {
     _animController.dispose();
+    _audioPlayer.dispose();
     super.dispose();
+  }
+
+  Future<void> _playCompletionSound() async {
+    final settings = Provider.of<SettingsProvider>(context, listen: false);
+    if (!settings.settings.soundOn) return;
+    final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
+    final isPerfect = widget.scorePercentage == 100;
+    if (isPerfect) {
+      await _audioPlayer.play(AssetSource('sounds/complete.wav'));
+    } else if (isPassed) {
+      await _audioPlayer.play(AssetSource('sounds/correct.wav'));
+    }
   }
 
   void _saveRewardsAndStats() {

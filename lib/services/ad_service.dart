@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:unity_ads_plugin/unity_ads_plugin.dart';
 import '../config/constants.dart';
 
@@ -7,6 +8,7 @@ class AdService {
   static final AdService instance = AdService._();
 
   bool _initialized = false;
+  Stream<ConnectivityResult>? _connectivitySubscription;
 
   void init() {
     if (_initialized) return;
@@ -18,6 +20,22 @@ class AdService {
       onFailed: (error, message) =>
           debugPrint('[AdService] Init failed: $error – $message'),
     );
+    _listenConnectivity();
+  }
+
+  void _listenConnectivity() {
+    _connectivitySubscription?.cancel();
+    _connectivitySubscription = Connectivity().onConnectivityChanged.listen((result) {
+      if (result != ConnectivityResult.none) {
+        debugPrint('[AdService] Network available – preloading ads');
+        preloadInterstitial();
+        preloadRewarded();
+      }
+    });
+  }
+
+  void dispose() {
+    _connectivitySubscription?.cancel();
   }
 
   /// Pre-load an interstitial or rewarded ad.
