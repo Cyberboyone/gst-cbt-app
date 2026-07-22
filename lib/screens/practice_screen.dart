@@ -6,6 +6,7 @@ import '../providers/quiz_provider.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/settings_provider.dart';
+import '../services/ad_service.dart';
 
 class PracticeScreen extends StatelessWidget {
   const PracticeScreen({super.key});
@@ -204,8 +205,11 @@ class PracticeScreen extends StatelessWidget {
                         child: OutlinedButton.icon(
                           onPressed: () {
                             final profile = Provider.of<ProfileProvider>(context, listen: false);
+                            final adsRemoved = Provider.of<SettingsProvider>(context, listen: false).settings.adsRemoved;
                             if (profile.profile!.coins >= AppConstants.coinsForHint) {
-                              _showHintConfirmDialog(context, profile, quizProvider);
+                              _showHintConfirmDialog(context, profile, quizProvider, adsRemoved: adsRemoved);
+                            } else if (!adsRemoved) {
+                              _showRewardedHintDialog(context, quizProvider);
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(content: Text('Not enough coins for a hint! Need 5 coins.')),
@@ -250,7 +254,7 @@ class PracticeScreen extends StatelessWidget {
     );
   }
 
-  void _showHintConfirmDialog(BuildContext context, ProfileProvider profile, QuizProvider quiz) {
+  void _showHintConfirmDialog(BuildContext context, ProfileProvider profile, QuizProvider quiz, {bool adsRemoved = false}) {
     final optionCount = quiz.currentQuestion?.options.length ?? 4;
     final eliminateCount = ((optionCount - 1) / 2).ceil();
     showDialog(
@@ -261,6 +265,14 @@ class PracticeScreen extends StatelessWidget {
         content: Text('This will eliminate $eliminateCount wrong answer(s) for ${AppConstants.coinsForHint} coins.', style: const TextStyle(color: AppColors.inkSoft)),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
+          if (!adsRemoved)
+            TextButton(
+              onPressed: () {
+                Navigator.pop(ctx);
+                _showRewardedHintDialog(context, quiz);
+              },
+              child: const Text('Watch Ad', style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
+            ),
           TextButton(
             onPressed: () async {
               Navigator.pop(ctx);
@@ -270,6 +282,43 @@ class PracticeScreen extends StatelessWidget {
               }
             },
             child: const Text('Use Hint', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showRewardedHintDialog(BuildContext context, QuizProvider quiz) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+        title: const Text('Watch an Ad?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
+        content: const Text('Watch a short video ad to get a free hint (no coins needed!).', style: TextStyle(color: AppColors.inkSoft)),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(ctx);
+              AdService.instance.showRewarded(
+                onRewarded: () {
+                  quiz.useHint();
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Free hint granted!'), backgroundColor: Colors.green),
+                    );
+                  }
+                },
+                onFailed: () {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text('Ad not available. Try again later.')),
+                    );
+                  }
+                },
+              );
+            },
+            child: const Text('Watch Ad', style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold)),
           ),
         ],
       ),

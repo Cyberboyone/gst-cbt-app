@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../config/theme.dart';
 import '../providers/quiz_provider.dart';
 import '../providers/settings_provider.dart';
+import '../services/ad_service.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'result_screen.dart';
 
@@ -73,19 +74,31 @@ class _ExamScreenState extends State<ExamScreen> {
       );
     }
 
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ResultScreen(
-          totalQuestions: results['totalQuestions'] as int,
-          correctAnswers: results['correctAnswers'] as int,
-          scorePercentage: results['scorePercentage'] as int,
-          timeSpentSeconds: results['timeSpentSeconds'] as int,
-          courseCode: course.code,
-          courseId: course.id,
+    void _navigateToResult() {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ResultScreen(
+            totalQuestions: results['totalQuestions'] as int,
+            correctAnswers: results['correctAnswers'] as int,
+            scorePercentage: results['scorePercentage'] as int,
+            timeSpentSeconds: results['timeSpentSeconds'] as int,
+            courseCode: course.code,
+            courseId: course.id,
+          ),
         ),
-      ),
-    );
+      );
+    }
+
+    final adsRemoved = Provider.of<SettingsProvider>(context, listen: false).settings.adsRemoved;
+    if (adsRemoved) {
+      _navigateToResult();
+    } else {
+      AdService.instance.showInterstitial(onComplete: () {
+        AdService.instance.preloadInterstitial();
+        _navigateToResult();
+      });
+    }
   }
 
   void _showQuestionGrid(BuildContext context, QuizProvider quiz) {

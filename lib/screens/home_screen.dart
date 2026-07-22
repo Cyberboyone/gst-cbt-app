@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:unity_ads_plugin/unity_ads_plugin.dart';
 import '../config/theme.dart';
 import '../config/constants.dart';
 import '../config/routes.dart';
@@ -439,6 +440,19 @@ class _HomeTab extends StatelessWidget {
                   );
                 },
               ),
+
+              // Banner Ad
+              if (!Provider.of<SettingsProvider>(context, listen: false).settings.adsRemoved)
+                Padding(
+                  padding: const EdgeInsets.only(top: 16.0),
+                  child: UnityBannerAd(
+                    placementId: AppConstants.unityBannerPlacement,
+                    onLoad: (_) {},
+                    onClick: (_) {},
+                    onShown: (_) {},
+                    onFailed: (_, __, ___) {},
+                  ),
+                ),
 
               const PoweredByFooter(),
             ],
