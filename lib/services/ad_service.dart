@@ -43,12 +43,6 @@ class AdService {
     _connectivitySubscription?.cancel();
   }
 
-  bool isAdReady(String placementId) {
-    final status = UnityAds.getPlacementStatus(placementId);
-    print('[AdService] Placement $placementId status: $status');
-    return status == PlacementStatus.ready;
-  }
-
   void preload(String placementId) {
     print('[AdService] Preloading: $placementId');
     UnityAds.load(
@@ -62,24 +56,6 @@ class AdService {
   void showInterstitial({VoidCallback? onComplete}) {
     final id = AppConstants.unityInterstitialPlacement;
     print('[AdService] showInterstitial called for $id');
-    print('[AdService] Init state: $_initialized, isReady: ${isAdReady(id)}');
-
-    if (!isAdReady(id)) {
-      print('[AdService] Interstitial not ready – loading then showing');
-      preload(id);
-      UnityAds.load(
-        placementId: id,
-        onComplete: (_) {
-          print('[AdService] Loaded interstitial on retry – showing now');
-          _showInterstitialVideo(id, onComplete);
-        },
-        onFailed: (_, e, m) {
-          print('[AdService] Retry load failed: $e – $m');
-          onComplete?.call();
-        },
-      );
-      return;
-    }
     _showInterstitialVideo(id, onComplete);
   }
 
@@ -106,24 +82,6 @@ class AdService {
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
     final id = AppConstants.unityRewardedPlacement;
     print('[AdService] showRewarded called for $id');
-    print('[AdService] Init state: $_initialized, isReady: ${isAdReady(id)}');
-
-    if (!isAdReady(id)) {
-      print('[AdService] Rewarded not ready – loading then showing');
-      preload(id);
-      UnityAds.load(
-        placementId: id,
-        onComplete: (_) {
-          print('[AdService] Loaded rewarded on retry – showing now');
-          _showRewardedVideo(id, onRewarded, onFailed);
-        },
-        onFailed: (_, e, m) {
-          print('[AdService] Retry load failed: $e – $m');
-          onFailed?.call();
-        },
-      );
-      return;
-    }
     _showRewardedVideo(id, onRewarded, onFailed);
   }
 
