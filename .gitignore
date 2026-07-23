@@ -35,6 +35,7 @@ android/app/debug/
 android/app/profile/
 android/app/release/
 android/key.properties
+android/app/keystore.jks
 
 # Firebase (download from console)
 ios/Runner/GoogleService-Info.plist

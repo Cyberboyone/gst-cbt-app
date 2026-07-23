@@ -18,7 +18,7 @@ class AdService {
     debugPrint('[AdService] Initializing with gameId: ${AppConstants.unityAdsGameId}');
     await UnityAds.init(
       gameId: AppConstants.unityAdsGameId,
-      testMode: true,
+      testMode: kDebugMode,
       onComplete: () {
         debugPrint('[AdService] Unity Ads initialized successfully');
         _preloadAll();
