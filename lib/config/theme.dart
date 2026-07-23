@@ -267,14 +267,6 @@ class AppTheme {
           color: AppColors.textPrimary,
         ),
       ),
-      cardTheme: CardThemeData(
-        color: AppColors.glassBg,
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0),
-          side: const BorderSide(color: AppColors.glassBorder, width: 1),
-        ),
-      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
@@ -334,13 +326,6 @@ class AppTheme {
           fontFamily: 'Nunito',
           fontSize: 11,
           fontWeight: FontWeight.w600,
-        ),
-      ),
-      dialogTheme: DialogThemeData(
-        backgroundColor: AppColors.surface,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(24.0),
-          side: const BorderSide(color: AppColors.glassBorder, width: 1),
         ),
       ),
       bottomSheetTheme: const BottomSheetThemeData(
