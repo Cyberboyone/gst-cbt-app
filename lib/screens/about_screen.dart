@@ -78,7 +78,7 @@ class AboutScreen extends StatelessWidget {
             ),
             const SizedBox(height: 8.0),
             const Text(
-              'Siyayya.com is a digital education and resources network. Our objective is to make tertiary education tools accessible, reliable, and affordable for all students.',
+              'Siyayya.com is your campus marketplace — a platform to buy, sell, and discover products and services across Nigerian university campuses.',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.45),
             ),
             const SizedBox(height: 24.0),
