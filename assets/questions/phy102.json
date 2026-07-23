@@ -1,0 +1,2737 @@
+﻿{
+    "course_id":  "phy102",
+    "course_name":  "Electromagnetism",
+    "version":  "1.0.0",
+    "questions":  [
+                      {
+                          "id":  "phy102_001",
+                          "text":  "What is the definition of Electromotive Force (EMF)?",
+                          "options":  [
+                                          "The potential difference across the terminals of a battery when current is flowing",
+                                          "The potential difference across the terminals of a battery when no current is flowing",
+                                          "The total resistance within the circuit",
+                                          "The rate of charge flow through a conductor"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "EMF is defined as the potential difference across the terminals of the battery when no current is flowing through it.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_002",
+                          "text":  "What does EMF represent in terms of energy?",
+                          "options":  [
+                                          "Energy lost per coulomb of charge",
+                                          "Energy supplied by a battery per coulomb of charge passing through it",
+                                          "Energy stored in the magnetic field",
+                                          "Energy dissipated as heat"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "EMF is the energy supplied by a battery or a cell per coulomb (Q) of charge passing through it.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_003",
+                          "text":  "Which formula represents the fundamental definition of EMF?",
+                          "options":  [
+                                          "Îµ = I Ã— R",
+                                          "Îµ = V + Ir",
+                                          "Îµ = E/Q",
+                                          "Îµ = Q/E"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The fundamental definition is Îµ = E/Q, where E is the energy in the circuit and Q is the charge.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_004",
+                          "text":  "Using Ohm\u0027s law analogy, the EMF formula is expressed as:",
+                          "options":  [
+                                          "Îµ = I(R - r)",
+                                          "Îµ = I(R + r)",
+                                          "Îµ = V - Ir",
+                                          "Îµ = IR only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Using Ohm\u0027s law analogy, Îµ = I(R + r), where R is external resistance and r is internal resistance.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_005",
+                          "text":  "Expanding the EMF formula Îµ = I(R + r) gives:",
+                          "options":  [
+                                          "Îµ = IR - Ir",
+                                          "Îµ = V - Ir",
+                                          "Îµ = V + Ir",
+                                          "Îµ = IÂ²R"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Expanding: Îµ = IR + Ir = V + Ir, where V is the terminal voltage.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_006",
+                          "text":  "A circuit has V = 3.2 V, I = 0.6 A, and internal resistance r = 0.5 Î©. What is the EMF?",
+                          "options":  [
+                                          "3.2 V",
+                                          "3.5 V",
+                                          "2.9 V",
+                                          "4.0 V"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Îµ = V + Ir = 3.2 + (0.6 Ã— 0.5) = 3.2 + 0.3 = 3.5 V",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_007",
+                          "text":  "What is the difference between EMF and potential difference?",
+                          "options":  [
+                                          "EMF converts electrical energy to other forms; potential difference converts other forms to electrical",
+                                          "EMF converts other forms of energy to electrical; potential difference converts electrical to other forms",
+                                          "Both are the same quantity",
+                                          "EMF applies only to resistors; potential difference applies to batteries"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "EMF is energy changed into electrical energy per coulomb; potential difference is electrical energy changed into other forms per coulomb.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_008",
+                          "text":  "Which of the following is NOT an example of a source of EMF?",
+                          "options":  [
+                                          "Solar cell",
+                                          "Resistor",
+                                          "Dynamo",
+                                          "Thermocouple"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Sources of EMF include cells, solar cells, batteries, generators, thermocouples, and dynamos. A resistor is not a source of EMF.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_009",
+                          "text":  "What is the role of internal resistance in a battery when no current flows?",
+                          "options":  [
+                                          "It reduces the EMF",
+                                          "It has no effect since there is no current to slow down",
+                                          "It increases the terminal voltage",
+                                          "It converts EMF to potential difference"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "When no current is flowing, internal resistance does not change anything because there is no current for it to slow down.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_010",
+                          "text":  "In the formula Îµ = V + Ir, what does the term \u0027Ir\u0027 represent?",
+                          "options":  [
+                                          "The terminal voltage",
+                                          "The voltage drop across the external resistance",
+                                          "The voltage drop across the internal resistance",
+                                          "The total power of the circuit"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Ir is the voltage drop across the internal resistance r of the cell.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_011",
+                          "text":  "What is magnetism?",
+                          "options":  [
+                                          "A phenomenon arising from the force caused by magnets that produce fields which attract or repel metallic objects",
+                                          "A force that only acts on non-metallic objects",
+                                          "The static charge between two conductors",
+                                          "The flow of electrons through a conductor"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Magnetism is the phenomenon arising from the force caused by magnets that produce fields which attract or repel other metallic objects.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_012",
+                          "text":  "What are the poles of a bar magnet called?",
+                          "options":  [
+                                          "Positive and negative",
+                                          "North and south",
+                                          "East and west",
+                                          "Primary and secondary"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A bar magnet has two poles: the north pole and the south pole.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_013",
+                          "text":  "According to magnetism, what happens when like poles are brought together?",
+                          "options":  [
+                                          "They attract each other",
+                                          "They repel each other",
+                                          "Nothing happens",
+                                          "They merge into one pole"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Like poles repel each other â€” this is a fundamental rule of magnetism.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_014",
+                          "text":  "What happens when unlike (opposite) poles of two magnets are brought together?",
+                          "options":  [
+                                          "They repel each other",
+                                          "They have no interaction",
+                                          "They attract each other",
+                                          "They cancel each other out"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Unlike (opposite) poles attract each other.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_015",
+                          "text":  "What is the unit of magnetic field?",
+                          "options":  [
+                                          "Newton",
+                                          "Ampere",
+                                          "Tesla",
+                                          "Weber"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The magnetic field is expressed in the unit Tesla (T).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_016",
+                          "text":  "What is a magnetic field?",
+                          "options":  [
+                                          "The space around a charged particle",
+                                          "The space or region around a magnet within which magnetic force is exerted on another magnet",
+                                          "The force between two current-carrying wires",
+                                          "The region where electric fields exist"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The space or region around a magnet within which magnetic force is exerted on another magnet is called the magnetic field.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_017",
+                          "text":  "How is the magnetic field of a bar magnet located experimentally?",
+                          "options":  [
+                                          "Using a voltmeter",
+                                          "Using a galvanometer",
+                                          "Using a magnetic compass",
+                                          "Using an ammeter"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "To locate the magnetic field of a bar magnet, we use a magnetic compass.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_018",
+                          "text":  "What does it indicate when magnetic field lines are very close to each other?",
+                          "options":  [
+                                          "The magnetic field is very weak",
+                                          "The magnetic field is very strong",
+                                          "There is no magnetic field",
+                                          "The field is uniform"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "If the magnetic field lines are very close to each other in a particular region, the strength of the magnetic field is very strong.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_019",
+                          "text":  "What causes magnetism?",
+                          "options":  [
+                                          "Stationary electric charges",
+                                          "Electrically charged particles in motion",
+                                          "Gravitational forces",
+                                          "Nuclear reactions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Magnetism is caused by electrically charged particles.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_020",
+                          "text":  "The force acting on an electrically charged particle in a magnetic field depends on:",
+                          "options":  [
+                                          "Only the magnitude of the charge",
+                                          "Only the velocity of the particle",
+                                          "The magnitude of the charge, the velocity, and the strength of the field",
+                                          "Only the strength of the magnetic field"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The force depends on the magnitude of the charge, the velocity of the particle, and the strength of the magnetic field.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_021",
+                          "text":  "The formula for the force on a moving charge in a magnetic field is:",
+                          "options":  [
+                                          "F = qvB cos Î¸",
+                                          "F = qvB sin Î¸",
+                                          "F = qvB tan Î¸",
+                                          "F = q/vB"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The force on a moving charge is F = qvB sin Î¸, where Î¸ is the angle between the velocity and the magnetic field.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_022",
+                          "text":  "In the vector form, the force on a moving charge is written as:",
+                          "options":  [
+                                          "F = qv + B",
+                                          "F = qv Â· B",
+                                          "F = qv Ã— B",
+                                          "F = q(v - B)"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The vector form is Fâƒ— = qvâƒ— Ã— Bâƒ— (cross product of velocity and magnetic field).",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_023",
+                          "text":  "What is the magnetic force on a charged particle when the angle between velocity and magnetic field is 0Â°?",
+                          "options":  [
+                                          "Maximum",
+                                          "qvB",
+                                          "Zero",
+                                          "Infinite"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "When Î¸ = 0Â°, sin 0Â° = 0, so F = qvB sin 0Â° = 0. The force is zero when velocity is parallel to the field.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_024",
+                          "text":  "A 50 C charged particle moves at 3 m/s in a magnetic field of 1T, with its path parallel to the field. What is the magnetic force?",
+                          "options":  [
+                                          "150 N",
+                                          "50 N",
+                                          "0 N",
+                                          "300 N"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Since the path is parallel to the field, Î¸ = 0Â°. F = qvB sin 0Â° = 50 Ã— 3 Ã— 1 Ã— 0 = 0 N.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_025",
+                          "text":  "The force on a moving charge in a magnetic field is proportional to:",
+                          "options":  [
+                                          "The square of the charge",
+                                          "The charge q",
+                                          "1/q",
+                                          "qÂ²v"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The magnetic force is proportional to the charge q.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_026",
+                          "text":  "In the right-hand rule for magnetic force, the thumb points in the direction of:",
+                          "options":  [
+                                          "The magnetic field B",
+                                          "The velocity v",
+                                          "The force F (for positive charge)",
+                                          "The current I"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Your thumb will point in the direction of the force (F) if the charge q is positive.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_027",
+                          "text":  "In the right-hand rule, the index finger points along:",
+                          "options":  [
+                                          "The magnetic field B",
+                                          "The direction of motion (velocity v)",
+                                          "The force F",
+                                          "The current direction"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Point your index finger along the direction of motion of charge v.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_028",
+                          "text":  "The magnetic force is always perpendicular to:",
+                          "options":  [
+                                          "Both the velocity and the magnetic field",
+                                          "Only the velocity",
+                                          "Only the magnetic field",
+                                          "The electric field"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The magnetic force is perpendicular to both v and B.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_029",
+                          "text":  "Which of the following is an example of magnetic force in everyday life?",
+                          "options":  [
+                                          "A compass needle",
+                                          "A light bulb",
+                                          "A capacitor",
+                                          "A voltmeter"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "A compass is an example of magnetic force. Others include motors, refrigerator magnets, and train tracks.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_030",
+                          "text":  "The magnetic force between two moving charges is:",
+                          "options":  [
+                                          "The force exerted on their charge by the electric field created by the other",
+                                          "The force exerted upon their charge by the magnetic field created by the other",
+                                          "A gravitational interaction",
+                                          "Dependent only on their masses"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The magnetic force between two moving charges is described as the force exerted upon their charge by the magnetic field created by the other.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_031",
+                          "text":  "Who discovered the Law of Electromagnetic Induction?",
+                          "options":  [
+                                          "James Clerk Maxwell",
+                                          "Michael Faraday",
+                                          "Heinrich Hertz",
+                                          "Andre-Marie Ampere"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Michael Faraday discovered the Law of Induction in 1830.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_032",
+                          "text":  "In what year was the Law of Electromagnetic Induction discovered?",
+                          "options":  [
+                                          "1820",
+                                          "1845",
+                                          "1830",
+                                          "1865"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Michael Faraday discovered the Law of Induction in 1830.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_033",
+                          "text":  "What is Electromagnetic Induction?",
+                          "options":  [
+                                          "The induction of an electromotive force by the motion of a conductor across a magnetic field or by a change in magnetic flux",
+                                          "The generation of magnetic fields by static charges",
+                                          "The flow of current in a closed circuit",
+                                          "The alignment of magnetic dipoles"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Electromagnetic Induction is the induction of an EMF by the motion of a conductor across a magnetic field or by a change in magnetic flux.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_034",
+                          "text":  "Faraday\u0027s First Law of Electromagnetic Induction states:",
+                          "options":  [
+                                          "The magnitude of induced EMF equals the rate of change of flux linkages",
+                                          "Whenever a conductor is placed in a varying magnetic field, EMF is induced",
+                                          "The direction of induced EMF opposes the cause of its production",
+                                          "Current is directly proportional to voltage"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Faraday\u0027s First Law: Whenever a conductor is placed in a varying magnetic field, EMF induces â€” this is called induced emf. If the conductor is a closed circuit, induced current flows.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_035",
+                          "text":  "Faraday\u0027s Second Law of Electromagnetic Induction states:",
+                          "options":  [
+                                          "EMF is induced only when the conductor moves",
+                                          "The magnitude of the induced EMF equals the rate of change of flux linkages",
+                                          "Induced current always opposes the motion",
+                                          "EMF is proportional to the square of the number of turns"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Faraday\u0027s Second Law: The magnitude of the induced EMF is equal to the rate of change of flux linkages.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_036",
+                          "text":  "The formula for induced voltage in a coil according to Faraday\u0027s law is:",
+                          "options":  [
+                                          "e = N Ã— dÎ¦/dt",
+                                          "e = Î¦/N",
+                                          "e = dN/dÎ¦",
+                                          "e = NÂ²Î¦"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The induced voltage is e = N Ã— dÎ¦/dt, where N is the number of turns and Î¦ is the magnetic flux.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_037",
+                          "text":  "What does \u0027N\u0027 represent in Faraday\u0027s induction formula e = N Ã— dÎ¦/dt?",
+                          "options":  [
+                                          "The magnetic flux",
+                                          "The number of turns in the coil",
+                                          "The induced current",
+                                          "The resistance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "N is the number of turns in the coil.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_038",
+                          "text":  "What is Lenz\u0027s Law?",
+                          "options":  [
+                                          "The induced EMF equals the rate of change of flux",
+                                          "The polarity of induced EMF is such that it opposes the cause of its production",
+                                          "Like poles repel",
+                                          "The force on a charge equals qvB"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Lenz\u0027s law states that the polarity (direction) of induced emf is such that it opposes the cause of its production.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_039",
+                          "text":  "The mathematical expression of Lenz\u0027s Law is:",
+                          "options":  [
+                                          "E = N(dÎ¦/dt)",
+                                          "E = -N(dÎ¦/dt)",
+                                          "E = N/dÎ¦",
+                                          "E = dÎ¦ Ã— N"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Lenz\u0027s Law: E = -N(dÎ¦/dt). The negative sign indicates opposition.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_040",
+                          "text":  "What are eddy currents?",
+                          "options":  [
+                                          "Currents that flow in a straight line",
+                                          "Currents that swirl in a conductor opposing changes in magnetic flux",
+                                          "Currents produced by batteries",
+                                          "Currents in a capacitor"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "By Lenz\u0027s law, eddy currents swirl in such a way as to create a magnetic field opposing the change.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_041",
+                          "text":  "Eddy currents transform kinetic energy into:",
+                          "options":  [
+                                          "Electrical energy",
+                                          "Magnetic energy",
+                                          "Heat",
+                                          "Chemical energy"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Eddy currents transform more useful forms of energy, such as kinetic energy, into heat.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_042",
+                          "text":  "How are eddy currents used in some train braking systems?",
+                          "options":  [
+                                          "By increasing the magnetic field to speed up the train",
+                                          "By exposing metal wheels to a magnetic field, generating eddy currents that slow the wheels",
+                                          "By converting electrical energy into kinetic energy",
+                                          "By reducing the internal resistance of the motor"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "During braking, the brakes expose the metal wheels to a magnetic field which generates eddy currents in the wheels, and the magnetic interaction slows the wheels down.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_043",
+                          "text":  "Which of the following is an application of electromagnetic induction?",
+                          "options":  [
+                                          "Capacitor charging",
+                                          "AC Generator",
+                                          "LED lighting",
+                                          "Electrostatic induction"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Applications of electromagnetic induction include AC generators, electrical transformers, and magnetic flow meters.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_044",
+                          "text":  "In an AC generator, the rotation of the coil in a magnetic field causes:",
+                          "options":  [
+                                          "Constant magnetic flux",
+                                          "The magnetic flux to change, inducing an EMF",
+                                          "A DC current only",
+                                          "No EMF to be generated"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The rotation of the coil causes the magnetic flux through it to change, so an EMF keeps inducing in the coil.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_045",
+                          "text":  "A step-down transformer is one in which:",
+                          "options":  [
+                                          "Secondary voltage is higher than primary voltage",
+                                          "Primary voltage is higher than secondary voltage",
+                                          "Primary and secondary voltages are equal",
+                                          "It only works with DC"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A step-down transformer is one in which the voltage is higher in the primary than the secondary voltage.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_046",
+                          "text":  "A step-up transformer is used to:",
+                          "options":  [
+                                          "Decrease voltage from primary to secondary",
+                                          "Increase voltage from primary to secondary (secondary has more turns)",
+                                          "Keep voltage constant",
+                                          "Convert AC to DC"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "In a step-up transformer, the secondary winding has more turns, resulting in higher secondary voltage.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_047",
+                          "text":  "A straight wire of length 0.20 m moves at 3.0 m/s at right angles to a magnetic field of 0.10 T. What is the induced EMF?",
+                          "options":  [
+                                          "0.5 V",
+                                          "0.06 V",
+                                          "0.05 V",
+                                          "0.04 V"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Îµ = BLV = 0.10 Ã— 0.20 Ã— 3.0 = 0.06 V",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_048",
+                          "text":  "An induction furnace uses eddy currents to:",
+                          "options":  [
+                                          "Cool materials down",
+                                          "Generate high temperatures sufficient to melt metals",
+                                          "Store electrical energy",
+                                          "Magnetize metal objects"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Eddy currents generated in the metals in an induction furnace produce high temperatures sufficient to melt it.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_049",
+                          "text":  "Which machines work on the principle of electromagnetic induction?",
+                          "options":  [
+                                          "Only generators",
+                                          "Only transformers",
+                                          "Generators, transformers, and motors",
+                                          "Only motors"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Machines like generators, transformers, and motors work on the principle of electromagnetic induction.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_050",
+                          "text":  "In the AC generator, the effective area of the loop is:",
+                          "options":  [
+                                          "A sin Î¸",
+                                          "A cos Î¸",
+                                          "A tan Î¸",
+                                          "A"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "As the coil rotates in magnetic field B, the effective area of the loop is A cos Î¸, where Î¸ is the angle between A and B.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_051",
+                          "text":  "What is inductance?",
+                          "options":  [
+                                          "The tendency of a conductor to oppose a change in voltage",
+                                          "The tendency of an electrical conductor to oppose a change in the electric current flowing through it",
+                                          "The ability of a capacitor to store charge",
+                                          "The resistance of a wire to current flow"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Inductance is the tendency of an electrical conductor to oppose a change in the electric current flowing through it.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_052",
+                          "text":  "What symbol is used to represent inductance?",
+                          "options":  [
+                                          "C",
+                                          "R",
+                                          "L",
+                                          "I"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "L is used to represent inductance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_053",
+                          "text":  "What is the SI unit of inductance?",
+                          "options":  [
+                                          "Farad",
+                                          "Ohm",
+                                          "Tesla",
+                                          "Henry"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Henry is the SI unit of inductance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_054",
+                          "text":  "One Henry is defined as:",
+                          "options":  [
+                                          "The inductance that produces 1 A current when 1 V is applied",
+                                          "The inductance required to produce 1 volt EMF when current changes at 1 Ampere per second",
+                                          "The energy stored when current is 1 A",
+                                          "The inductance of a solenoid with 1 turn"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "1 Henry is defined as the amount of inductance required to produce an emf of 1 volt in a conductor when the current change in the conductor is at the rate of 1 Ampere per second.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_055",
+                          "text":  "Which factor does NOT affect inductance in a circuit?",
+                          "options":  [
+                                          "Number of wire turns",
+                                          "Coil area",
+                                          "Core material",
+                                          "The colour of the wire"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Factors affecting inductance are: number of wire turns, coil area, core material, and coil length. Colour does not affect it.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_056",
+                          "text":  "How does the number of wire turns affect inductance?",
+                          "options":  [
+                                          "More turns decrease inductance",
+                                          "Turns have no effect on inductance",
+                                          "More turns increase inductance",
+                                          "Inductance is inversely proportional to turns squared"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Inductance is greater when the number of turns of wire in the coil is greater.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_057",
+                          "text":  "How does coil length affect inductance?",
+                          "options":  [
+                                          "Longer coil gives greater inductance",
+                                          "Longer coil gives lesser inductance",
+                                          "Coil length has no effect",
+                                          "Inductance is proportional to length"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The longer the coil\u0027s length, the lesser the inductance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_058",
+                          "text":  "What is self-inductance?",
+                          "options":  [
+                                          "When an EMF is induced in a circuit by current changing in an adjacent circuit",
+                                          "When a change in current or flux in a coil induces an EMF in the same coil",
+                                          "The inductance of two separate coils",
+                                          "The mutual effect between two conductors"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Self-inductance is when a change in the current or magnetic flux of the coil induces an EMF in that same coil.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_059",
+                          "text":  "The self-inductance formula in terms of flux is:",
+                          "options":  [
+                                          "VL = N(dÏ†/dt)",
+                                          "VL = -N(dÏ†/dt)",
+                                          "VL = L(di/dt)",
+                                          "VL = N/L"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "VL = -N(dÏ†/dt), where the negative sign indicates opposition.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_060",
+                          "text":  "The self-inductance formula in terms of current rate of change is:",
+                          "options":  [
+                                          "E = L(di/dt)",
+                                          "E = -L(di/dt)",
+                                          "E = LÂ²(di/dt)",
+                                          "E = di/(L Ã— dt)"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "E = -L(di/dt), where L is the self-inductance in Henries.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_061",
+                          "text":  "What is mutual inductance?",
+                          "options":  [
+                                          "The self-opposition of a coil to current changes",
+                                          "The property whereby an EMF is induced in a circuit by a change of flux due to current changing in an adjacent circuit",
+                                          "The energy stored in a magnetic field",
+                                          "The resistance of two coupled coils"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Mutual inductance M is the property whereby an EMF is induced in a circuit by a change of flux due to current changing in an adjacent circuit.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_062",
+                          "text":  "The formula for mutual inductance is:",
+                          "options":  [
+                                          "M = Î¼â‚€Î¼áµ£Nâ‚Nâ‚‚A/l",
+                                          "M = Nâ‚Nâ‚‚/l",
+                                          "M = Î¼â‚€A/l",
+                                          "M = Nâ‚/(Nâ‚‚ Ã— l)"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "M = Î¼â‚€Î¼áµ£Nâ‚Nâ‚‚A/l, where Î¼â‚€ is permeability of free space, Î¼áµ£ is relative permeability, Nâ‚Nâ‚‚ are turns, A is cross-sectional area, and l is length.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_063",
+                          "text":  "What happens to mutual inductance when the separation between two coils is increased?",
+                          "options":  [
+                                          "It increases",
+                                          "It remains the same",
+                                          "It decreases",
+                                          "It becomes negative"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "When separation increases, the magnetic flux linked with the secondary coil decreases, so mutual inductance decreases.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_064",
+                          "text":  "What is an application of mutual inductance?",
+                          "options":  [
+                                          "Capacitor charging",
+                                          "Transformers, generators, and electric motors",
+                                          "Electrostatic discharge",
+                                          "Battery charging only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Mutual inductance can be used in transformers, generators, and electric motors.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_065",
+                          "text":  "A solenoid has 500 turns, iron core with relative permeability 800, length 0.4 m, radius 0.03 m, and current changes from 0 to 3 A in 0.4 s. The self-inductance is approximately:",
+                          "options":  [
+                                          "0.177 H",
+                                          "1.77 H",
+                                          "17.7 H",
+                                          "0.0177 H"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "L = Î¼áµ£Î¼â‚€NÂ²Ï€rÂ²/l = 800 Ã— 4Ï€Ã—10â»â· Ã— 500Â² Ã— Ï€ Ã— (0.03)Â² / 0.4 â‰ˆ 1.77 H",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_066",
+                          "text":  "In the self-inductance solenoid example (L = 1.77 H), with di = 3 A and dt = 0.4 s, the induced EMF is:",
+                          "options":  [
+                                          "0.44 V",
+                                          "4.4 V",
+                                          "13.275 V",
+                                          "132.75 V"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Îµ = L di/dt = 1.77 Ã— 3/0.4 = 13.275 V",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_067",
+                          "text":  "In self-inductance, which coil induces the EMF?",
+                          "options":  [
+                                          "A neighbouring coil",
+                                          "The primary coil only",
+                                          "The coil itself",
+                                          "An external coil"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In self-inductance, the coil opposes the change in current by inducing an EMF in itself.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_068",
+                          "text":  "In mutual inductance, what is the primary (P) coil connected to?",
+                          "options":  [
+                                          "A galvanometer",
+                                          "A battery and a key",
+                                          "Another inductor",
+                                          "A capacitor"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A battery and a key are connected to the P-coil (Primary coil).",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_069",
+                          "text":  "What is the electronic component designed to add inductance to a circuit called?",
+                          "options":  [
+                                          "Capacitor",
+                                          "Resistor",
+                                          "Inductor",
+                                          "Diode"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The electronic component designed to add inductance to a circuit is an inductor.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_070",
+                          "text":  "In mutual inductance example: di = 8 A, dt = 0.4 s, Îµâ‚‚ = 60 mV. What is Mâ‚‚â‚?",
+                          "options":  [
+                                          "30 mH",
+                                          "3 mH",
+                                          "0.3 mH",
+                                          "300 mH"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Mâ‚‚â‚ = Îµâ‚‚/(di/dt) = 60Ã—10â»Â³ Ã— 0.4/8 = 3 Ã— 10â»Â³ H = 3 mH",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_071",
+                          "text":  "The Biot-Savart Law gives the magnetic field due to:",
+                          "options":  [
+                                          "A stationary charge",
+                                          "An element of a current-carrying wire",
+                                          "A changing electric field",
+                                          "A permanent magnet only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Biot-Savart Law states that the magnetic field dB is due to an element dl of a current-carrying wire.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_072",
+                          "text":  "Ampere\u0027s Law is described as the magnetic equivalent of:",
+                          "options":  [
+                                          "Faraday\u0027s Law",
+                                          "Coulomb\u0027s Law",
+                                          "Gauss\u0027s Law",
+                                          "Lenz\u0027s Law"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Ampere\u0027s law is the magnetic equivalent of Gauss\u0027s law and can be derived from the Biot-Savart law.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_073",
+                          "text":  "Ampere\u0027s Law is mathematically expressed as:",
+                          "options":  [
+                                          "Bâˆ®dl = Î¼â‚€I_enc",
+                                          "B = Î¼â‚€I/2Ï€r",
+                                          "âˆ®EÂ·dl = 0",
+                                          "âˆ®BÂ·dA = 0"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Ampere\u0027s Law: Bâˆ®dl = Î¼â‚€I_enc, where I_enc is the enclosed current.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_074",
+                          "text":  "What does the Biot-Savart formula dB = (Î¼â‚€/4Ï€)(Idl Ã— rÌ‚/rÂ²) describe?",
+                          "options":  [
+                                          "The electric field due to a point charge",
+                                          "The magnetic field at a point P due to a small current element",
+                                          "The force between two magnets",
+                                          "The induced EMF in a coil"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Biot-Savart Law describes the magnetic field dB at any point P due to an element dl of a current-carrying wire.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_075",
+                          "text":  "Energy in a magnetic field can be calculated using:",
+                          "options":  [
+                                          "E = qV",
+                                          "E = qVB",
+                                          "E = mvÂ²/2",
+                                          "E = q/VB"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The potential energy in a magnetic field is E = qVB, where q is the charge, V is velocity, and B is the magnetic field.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_076",
+                          "text":  "Who was the first to calculate the speed of propagation of electromagnetic waves?",
+                          "options":  [
+                                          "Michael Faraday",
+                                          "James Clerk Maxwell",
+                                          "Heinrich Hertz",
+                                          "Isaac Newton"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Maxwell was the first person to calculate the speed of propagation of electromagnetic waves.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_077",
+                          "text":  "Maxwell concluded that electromagnetic waves and visible light are:",
+                          "options":  [
+                                          "Completely different phenomena",
+                                          "Similar",
+                                          "Opposite in nature",
+                                          "Unrelated"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Maxwell concluded that EM waves and visible light are similar.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_078",
+                          "text":  "Gauss\u0027s Law for electricity (Maxwell equation i) is:",
+                          "options":  [
+                                          "âˆ‡Â·B = 0",
+                                          "âˆ‡Â·D = Ïáµ¥",
+                                          "âˆ‡Ã—E = -âˆ‚B/âˆ‚t",
+                                          "âˆ‡Ã—H = âˆ‚D/âˆ‚t + J"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "âˆ‡Â·D = Ïáµ¥ is Gauss\u0027s Law for electricity, where D is electric flux density and Ïáµ¥ is electric charge density.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_079",
+                          "text":  "Gauss\u0027s Magnetic Law (Maxwell equation ii) states:",
+                          "options":  [
+                                          "âˆ‡Â·B = Ïáµ¥",
+                                          "âˆ‡Â·B = 0",
+                                          "âˆ‡Â·B = Î¼â‚€J",
+                                          "âˆ‡Â·B = Îµâ‚€E"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "âˆ‡Â·B = 0 states that the divergence of the magnetic flux is null (no magnetic monopoles exist).",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_080",
+                          "text":  "Faraday\u0027s Law in Maxwell\u0027s equations (equation iii) is:",
+                          "options":  [
+                                          "âˆ‡Ã—E = âˆ‚B/âˆ‚t",
+                                          "âˆ‡Ã—E = -âˆ‚B/âˆ‚t",
+                                          "âˆ‡Â·E = -âˆ‚B/âˆ‚t",
+                                          "âˆ‡Ã—H = âˆ‚D/âˆ‚t"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "âˆ‡Ã—E = -âˆ‚B/âˆ‚t is Faraday\u0027s Law in differential form.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_081",
+                          "text":  "The Ampere-Maxwell Law (Maxwell equation iv) is:",
+                          "options":  [
+                                          "âˆ‡Ã—H = J only",
+                                          "âˆ‡Ã—H = âˆ‚D/âˆ‚t + J",
+                                          "âˆ‡Â·H = âˆ‚D/âˆ‚t",
+                                          "âˆ‡Ã—E = âˆ‚D/âˆ‚t"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "âˆ‡Ã—H = âˆ‚D/âˆ‚t + J is the Ampere-Maxwell Law.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_082",
+                          "text":  "Equation âˆ‡Â·D = Ïáµ¥ states that the divergence of D equals:",
+                          "options":  [
+                                          "Zero always",
+                                          "The volume of electric charge density",
+                                          "The magnetic flux density",
+                                          "The induced EMF"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Equation (i) states that the divergence of electric flux density D equals the volume of electric charge density.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_083",
+                          "text":  "The most widespread version of Faraday\u0027s law states:",
+                          "options":  [
+                                          "The EMF equals the product of flux and time",
+                                          "The EMF around a closed path equals the negative of the time rate of change of the enclosed magnetic flux",
+                                          "The EMF is always positive",
+                                          "The flux is constant around a closed path"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The EMF around a closed path is equal to the negative of the time rate of change of the magnetic flux enclosed by the path.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_084",
+                          "text":  "What do Maxwell\u0027s equations form the foundation of?",
+                          "options":  [
+                                          "Classical mechanics only",
+                                          "Classical electrodynamics, electric circuits, and classical optics",
+                                          "Quantum mechanics",
+                                          "Thermodynamics"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Maxwell\u0027s equations form the foundation of classical electrodynamics, electric circuits, and classical optics.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_085",
+                          "text":  "What are electromagnetic waves?",
+                          "options":  [
+                                          "Only electric field oscillations",
+                                          "Only magnetic field oscillations",
+                                          "Oscillating electric and magnetic fields",
+                                          "Sound waves in a medium"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Electromagnetic waves are the composition of oscillating electric and magnetic fields.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_086",
+                          "text":  "Electromagnetic waves are solutions to:",
+                          "options":  [
+                                          "Newton\u0027s equations",
+                                          "Maxwell\u0027s equations",
+                                          "SchrÃ¶dinger\u0027s equation",
+                                          "Navier-Stokes equations"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electromagnetic waves are solutions of Maxwell\u0027s equations, which are the fundamental equations of electrodynamics.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_087",
+                          "text":  "What is the speed of electromagnetic waves in a vacuum?",
+                          "options":  [
+                                          "3 Ã— 10â¶ m/s",
+                                          "3 Ã— 10â· m/s",
+                                          "3 Ã— 10â¸ m/s",
+                                          "3 Ã— 10â¹ m/s"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In vacuum, EM waves travel at a constant velocity of 3 Ã— 10â¸ m/s.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_088",
+                          "text":  "The direction of propagation of an electromagnetic wave is given by:",
+                          "options":  [
+                                          "E + B",
+                                          "E Ã— B (cross product)",
+                                          "E Â· B (dot product)",
+                                          "E - B"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The direction of propagation is given by the vector cross product Eâƒ— Ã— Bâƒ—.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_089",
+                          "text":  "Electromagnetic waves are ________ in nature.",
+                          "options":  [
+                                          "Longitudinal",
+                                          "Transverse",
+                                          "Torsional",
+                                          "Compressional"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electromagnetic waves are transverse in nature.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_090",
+                          "text":  "The relationship between wavelength, speed, and frequency of an EM wave is:",
+                          "options":  [
+                                          "Î» = cf",
+                                          "Î» = c/f",
+                                          "Î» = f/c",
+                                          "Î» = c Ã— fÂ²"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The wavelength Î» = c/f, where c is the speed of light and f is the frequency.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_091",
+                          "text":  "The speed of electromagnetic waves in free space is given by:",
+                          "options":  [
+                                          "C = âˆš(Î¼â‚€Îµâ‚€)",
+                                          "C = Î¼â‚€Îµâ‚€",
+                                          "C = 1/âˆš(Î¼â‚€Îµâ‚€)",
+                                          "C = Î¼â‚€/Îµâ‚€"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "C = 1/âˆš(Î¼â‚€Îµâ‚€) where Î¼â‚€ is absolute permeability and Îµâ‚€ is absolute permittivity.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_092",
+                          "text":  "The value of absolute permeability Î¼â‚€ is:",
+                          "options":  [
+                                          "8.854 Ã— 10â»Â¹Â² Nâ»Â¹mâ»Â²",
+                                          "1.257 Ã— 10â»â¶ TmAâ»Â¹",
+                                          "3 Ã— 10â¸ m/s",
+                                          "6.626 Ã— 10â»Â³â´ JÂ·s"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Î¼â‚€ (absolute permeability) = 1.257 Ã— 10â»â¶ TmAâ»Â¹",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_093",
+                          "text":  "The value of absolute permittivity Îµâ‚€ is:",
+                          "options":  [
+                                          "1.257 Ã— 10â»â¶ TmAâ»Â¹",
+                                          "8.854 Ã— 10â»Â¹Â² Nâ»Â¹mâ»Â²",
+                                          "3 Ã— 10â¸ m/s",
+                                          "9 Ã— 10â¹ NmÂ²/CÂ²"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Îµâ‚€ (absolute permittivity) = 8.854 Ã— 10â»Â¹Â² Nâ»Â¹mâ»Â²",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_094",
+                          "text":  "The wavelength range for visible light is approximately:",
+                          "options":  [
+                                          "100 nm to 300 nm",
+                                          "400 nm to 700 nm",
+                                          "700 nm to 1000 nm",
+                                          "10 nm to 100 nm"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Visible light wavelength ranges from approximately 400 nm to 700 nm.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_095",
+                          "text":  "The wavelength of violet light is approximately:",
+                          "options":  [
+                                          "700 nm",
+                                          "550 nm",
+                                          "400 nm",
+                                          "300 nm"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Violet light has a wavelength of approximately 400 nm.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_096",
+                          "text":  "The wavelength of red light is approximately:",
+                          "options":  [
+                                          "400 nm",
+                                          "550 nm",
+                                          "700 nm",
+                                          "800 nm"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Red light has a wavelength of approximately 700 nm.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_097",
+                          "text":  "Which type of radiation is used to detect forged bank notes?",
+                          "options":  [
+                                          "Infrared radiation",
+                                          "Radio waves",
+                                          "UV rays",
+                                          "Gamma rays"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "UV rays are used to detect forged bank notes. Real banknotes don\u0027t turn fluorescent under UV light.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_098",
+                          "text":  "Infrared radiation is used in:",
+                          "options":  [
+                                          "X-ray machines",
+                                          "Night vision and security cameras",
+                                          "Microwave cooking only",
+                                          "Gamma ray treatment"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Infrared radiation is used for night vision and in security cameras.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_099",
+                          "text":  "A mathematical representation of an EM wave traveling in the x-direction is:",
+                          "options":  [
+                                          "E(x,t) = E_max sin(kx + wt)",
+                                          "E(x,t) = E_max cos(kx - wt + Ï†)",
+                                          "E(x,t) = E_max Ã— kx",
+                                          "E(x,t) = E_max / cos(wt)"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A plane EM wave traveling in x-direction: E(x,t) = E_max cos(kx - wt + Ï†)",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_100",
+                          "text":  "Who experimentally confirmed the existence of electromagnetic waves?",
+                          "options":  [
+                                          "Michael Faraday",
+                                          "James Clerk Maxwell",
+                                          "Heinrich Hertz",
+                                          "Isaac Newton"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Maxwell gave the basic idea of EM radiations, while Hertz experimentally confirmed the existence of electromagnetic waves.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_101",
+                          "text":  "Coulomb\u0027s Law was formulated by:",
+                          "options":  [
+                                          "Michael Faraday",
+                                          "Charles-Augustin de Coulomb",
+                                          "James Clerk Maxwell",
+                                          "Andre-Marie Ampere"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Coulomb\u0027s Law was formulated by French physicist Charles-Augustin de Coulomb.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_102",
+                          "text":  "In what year was Coulomb\u0027s Law formulated?",
+                          "options":  [
+                                          "1800",
+                                          "1750",
+                                          "1785",
+                                          "1830"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Coulomb\u0027s Law was formulated in 1785.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_103",
+                          "text":  "The formula for Coulomb\u0027s Law is:",
+                          "options":  [
+                                          "F = k(qâ‚ + qâ‚‚)/rÂ²",
+                                          "F = kqâ‚qâ‚‚/r",
+                                          "F = kqâ‚qâ‚‚/rÂ²",
+                                          "F = qâ‚qâ‚‚/krÂ²"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "F = kqâ‚qâ‚‚/rÂ², where F is the electrostatic force, qâ‚ and qâ‚‚ are charges, r is distance, and k is Coulomb\u0027s constant.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_104",
+                          "text":  "The value of Coulomb\u0027s constant k is approximately:",
+                          "options":  [
+                                          "6.67 Ã— 10â»Â¹Â¹ NmÂ²/kgÂ²",
+                                          "8.9875 Ã— 10â¹ NmÂ²/CÂ²",
+                                          "1.602 Ã— 10â»Â¹â¹ C",
+                                          "9.11 Ã— 10â»Â³Â¹ kg"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Coulomb\u0027s constant k â‰ˆ 8.9875 Ã— 10â¹ NmÂ²/CÂ²",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_105",
+                          "text":  "Coulomb\u0027s Law states the force between two charges is:",
+                          "options":  [
+                                          "Directly proportional to their product and inversely proportional to the distance",
+                                          "Directly proportional to their product and inversely proportional to the square of the distance",
+                                          "Inversely proportional to the product of charges",
+                                          "Directly proportional to the square of the distance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The force is directly proportional to the product of the magnitudes of the charges and inversely proportional to the square of the distance.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_106",
+                          "text":  "Two positive charges placed near each other will:",
+                          "options":  [
+                                          "Attract each other",
+                                          "Have no interaction",
+                                          "Repel each other",
+                                          "Create a neutral field"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Like charges (both positive or both negative) repel each other.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_107",
+                          "text":  "If charges qâ‚ = +3 C and qâ‚‚ = +2 C are 2 m apart, the force is approximately:",
+                          "options":  [
+                                          "1.347 Ã— 10Â¹â° N (repulsive)",
+                                          "1.347 Ã— 10Â¹â° N (attractive)",
+                                          "6.74 Ã— 10â¹ N (repulsive)",
+                                          "2.69 Ã— 10Â¹â° N (attractive)"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "F = 8.9875Ã—10â¹ Ã— (3Ã—2)/4 = 1.347Ã—10Â¹â° N. Both positive, so repulsive.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_108",
+                          "text":  "In Coulomb\u0027s Law, the force acts:",
+                          "options":  [
+                                          "Perpendicular to the line joining the charges",
+                                          "Along the line joining the charges",
+                                          "At 45Â° to the line joining the charges",
+                                          "In any random direction"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The force acts along the line joining the charges and is either attractive or repulsive.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_109",
+                          "text":  "If the distance between two charges is doubled, the force between them:",
+                          "options":  [
+                                          "Doubles",
+                                          "Halves",
+                                          "Becomes four times smaller",
+                                          "Becomes four times larger"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Since F âˆ 1/rÂ², doubling r gives F âˆ 1/(2r)Â² = 1/4rÂ². The force becomes 4 times smaller.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_110",
+                          "text":  "Coulomb\u0027s Law is a fundamental principle in which field?",
+                          "options":  [
+                                          "Mechanics",
+                                          "Thermodynamics",
+                                          "Electrostatics/Electromagnetism",
+                                          "Optics"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Coulomb\u0027s Law is a fundamental principle in electrostatics, describing the force between charged particles.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_111",
+                          "text":  "What is electric charge?",
+                          "options":  [
+                                          "A fundamental property of matter that causes it to experience electromagnetic interactions",
+                                          "The flow of electrons in a circuit",
+                                          "The energy stored in a capacitor",
+                                          "The potential difference across a resistor"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Electric charge is a fundamental property of matter that causes it to experience electromagnetic interactions.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_112",
+                          "text":  "Electric charge exists in two types:",
+                          "options":  [
+                                          "Strong and weak",
+                                          "Positive (+) and negative (-)",
+                                          "North and south",
+                                          "Static and dynamic"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric charge comes in two types: positive (+) and negative (-).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_113",
+                          "text":  "What is quantization of electric charge?",
+                          "options":  [
+                                          "Charge can have any continuous value",
+                                          "Charge exists in discrete packets; the smallest unit is the electron/proton charge",
+                                          "Charge is always negative",
+                                          "Charge increases with temperature"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Quantization: Electric charge is quantized, meaning it exists in discrete packets. The smallest unit is approximately 1.602 Ã— 10â»Â¹â¹ C.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_114",
+                          "text":  "The smallest unit of electric charge (charge of an electron or proton) is:",
+                          "options":  [
+                                          "1.602 Ã— 10â»Â²Â³ C",
+                                          "1.602 Ã— 10â»Â¹â¹ C",
+                                          "9.11 Ã— 10â»Â³Â¹ C",
+                                          "6.626 Ã— 10â»Â³â´ C"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The charge of an electron or proton is approximately 1.602 Ã— 10â»Â¹â¹ coulombs.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_115",
+                          "text":  "Conservation of electric charge means:",
+                          "options":  [
+                                          "Charge can be created but not destroyed",
+                                          "Charge can be destroyed but not created",
+                                          "In isolated systems, the total electric charge remains constant",
+                                          "Charge is always zero in a closed system"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Electric charge is conserved in isolated systems. In any process, the total electric charge remains constant.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_116",
+                          "text":  "What is additivity of electric charge?",
+                          "options":  [
+                                          "Charges multiply when combined",
+                                          "The total charge of a system is the algebraic sum of individual charges",
+                                          "Charges can only be added, not subtracted",
+                                          "Positive charges add while negative charges cancel"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Additivity: The total charge of a system is the algebraic sum of the individual charges within it.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_117",
+                          "text":  "In charging by friction, what happens when two different materials rub together?",
+                          "options":  [
+                                          "Protons transfer from one material to the other",
+                                          "Electrons transfer from one material to the other",
+                                          "Neutrons transfer from one material to the other",
+                                          "No charge transfer occurs"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "In friction charging, electrons can transfer from one material to the other.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_118",
+                          "text":  "When a glass rod is rubbed with silk cloth, what charge does the glass rod acquire?",
+                          "options":  [
+                                          "Negative charge",
+                                          "No charge",
+                                          "Positive charge",
+                                          "Neutral charge"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Rubbing a glass rod with silk transfers electrons from glass to silk, so the glass rod acquires a positive charge.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_119",
+                          "text":  "Charging by conduction involves:",
+                          "options":  [
+                                          "Bringing a charged object near but not touching a neutral object",
+                                          "Bringing a charged object into contact with a neutral object",
+                                          "Rubbing two materials together",
+                                          "Grounding a charged object"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Charging by conduction involves bringing a charged object into contact with a neutral object; electrons transfer until equilibrium.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_120",
+                          "text":  "Charging by induction involves:",
+                          "options":  [
+                                          "Direct contact between charged and neutral objects",
+                                          "Rubbing two objects together",
+                                          "Bringing a charged object near but NOT in contact with a neutral object",
+                                          "Applying heat to separate charges"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Induction involves bringing a charged object near, but not in contact with, a neutral object, causing redistribution of charges.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_121",
+                          "text":  "In electrostatic induction, unlike simple induction:",
+                          "options":  [
+                                          "The charged object is in contact with the neutral object",
+                                          "The neutral object is grounded to allow excess charge to flow away",
+                                          "Electrons are added to the system from outside",
+                                          "Only positive charges are redistributed"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "In electrostatic induction, the neutral object is grounded to allow the excess charge to flow away or be neutralized.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_122",
+                          "text":  "When a negatively charged rod is brought near a neutral conductor (induction), the side nearest to the rod becomes:",
+                          "options":  [
+                                          "Negatively charged",
+                                          "Positively charged",
+                                          "Neutral",
+                                          "Doubly charged"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electrons in the conductor move away from the rod, leaving the side nearest the rod positively charged.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_123",
+                          "text":  "What is the result when a charged metal rod touches a neutral metal sphere?",
+                          "options":  [
+                                          "No charge transfers",
+                                          "Electrons flow from the rod to the sphere until both reach the same charge",
+                                          "The sphere becomes more charged than the rod",
+                                          "The rod gains all the charge"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Touching a charged metal rod to a neutral metal sphere allows electrons to flow from the rod to the sphere until both reach the same charge.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_124",
+                          "text":  "What is the electric field strength (E) at a point in space?",
+                          "options":  [
+                                          "The total energy at that point",
+                                          "A measure of the force experienced by a positive test charge placed at that point",
+                                          "The charge density at that point",
+                                          "The magnetic force at that point"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric field strength is a measure of the force experienced by a positive test charge placed at that point due to the presence of other charges.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_125",
+                          "text":  "The mathematical expression for electric field strength is:",
+                          "options":  [
+                                          "E = F Ã— qâ‚€",
+                                          "E = F/qâ‚€",
+                                          "E = qâ‚€/F",
+                                          "E = F + qâ‚€"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "E = F/qâ‚€, where F is the force and qâ‚€ is the test charge.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_126",
+                          "text":  "The SI unit of electric field strength is:",
+                          "options":  [
+                                          "Newtons per coulomb (N/C) or volts per meter (V/m)",
+                                          "Coulombs per meter",
+                                          "Joules per coulomb",
+                                          "Amperes per meter"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The SI unit of electric field strength is volts per meter (V/m), equivalent to N/C.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_127",
+                          "text":  "The intensity of the electric field at a point is given by:",
+                          "options":  [
+                                          "E = kq/r",
+                                          "E = k|q|/rÂ²",
+                                          "E = kqÂ²/r",
+                                          "E = k/qrÂ²"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "E = k|q|/rÂ², where k is Coulomb\u0027s constant, q is the charge, and r is the distance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_128",
+                          "text":  "Electric field lines for a positive charge point:",
+                          "options":  [
+                                          "Radially inward toward the charge",
+                                          "Radially outward from the charge",
+                                          "In circles around the charge",
+                                          "Parallel to each other"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric field is radially outward from a positive charge.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_129",
+                          "text":  "Electric field lines for a negative charge point:",
+                          "options":  [
+                                          "Radially outward from the charge",
+                                          "Radially inward toward the charge",
+                                          "In horizontal lines",
+                                          "In spirals"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric field is radially inward towards a negative charge.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_130",
+                          "text":  "Superposition in the context of electric fields means:",
+                          "options":  [
+                                          "The total field is the product of individual fields",
+                                          "The total electric field is the vector sum of fields produced by each individual charge",
+                                          "Fields cancel each other out completely",
+                                          "Each charge creates only one field line"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Superposition: The total electric field at a point due to multiple charges is the vector sum of the electric fields produced by each individual charge.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_131",
+                          "text":  "A point charge Q = 2 C is at the origin. The electric field at r = 3 m is approximately:",
+                          "options":  [
+                                          "1.9975 Ã— 10â¹ N/C",
+                                          "1.9975 Ã— 10â· N/C",
+                                          "5.9925 Ã— 10â¹ N/C",
+                                          "0.9975 Ã— 10â¹ N/C"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "E = k|Q|/rÂ² = 8.9875Ã—10â¹ Ã— 2/9 â‰ˆ 1.9975 Ã— 10â¹ N/C",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_132",
+                          "text":  "A \u0027line of force\u0027 in physics refers to:",
+                          "options":  [
+                                          "A real physical line connecting two charges",
+                                          "Imaginary lines or curves that represent the direction of force in a field",
+                                          "The path of current in a conductor",
+                                          "The length of a magnetic coil"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Lines of force are imaginary lines or curves that represent the direction of a force exerted by a field on a charged particle.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_133",
+                          "text":  "Electric field is a ________ quantity.",
+                          "options":  [
+                                          "Scalar",
+                                          "Vector",
+                                          "Tensor",
+                                          "Dimensionless"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric field strength is a vector quantity, meaning it has both magnitude and direction.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_134",
+                          "text":  "Gauss\u0027s Law relates:",
+                          "options":  [
+                                          "Magnetic flux to current",
+                                          "Electric flux through a closed surface to the electric charge enclosed",
+                                          "Voltage to resistance",
+                                          "Inductance to capacitance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Gauss\u0027s Law relates the electric flux through a closed surface to the electric charge enclosed by the surface.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_135",
+                          "text":  "The mathematical form of Gauss\u0027s Law is:",
+                          "options":  [
+                                          "âˆ®Eâƒ—Â·dAâƒ— = Q_enc Ã— Îµâ‚€",
+                                          "âˆ®Eâƒ—Â·dAâƒ— = Q_enc/Îµâ‚€",
+                                          "âˆ®Eâƒ—Â·dAâƒ— = Îµâ‚€/Q_enc",
+                                          "âˆ®Eâƒ—Â·dAâƒ— = 0"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Gauss\u0027s Law: âˆ®Eâƒ—Â·dAâƒ— = Q_enc/Îµâ‚€, where Q_enc is the total enclosed charge and Îµâ‚€ is permittivity of free space.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_136",
+                          "text":  "Inside a conductor, the electric field is:",
+                          "options":  [
+                                          "Maximum",
+                                          "Equal to the external field",
+                                          "Zero",
+                                          "Infinite"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Inside a conductor, the electric field is zero, and Gauss\u0027s Law can be used to prove this.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_137",
+                          "text":  "Gauss\u0027s Law is particularly powerful because it allows calculation of electric fields by:",
+                          "options":  [
+                                          "Direct integration always",
+                                          "Considering the symmetry of charge distribution and choosing a suitable Gaussian surface",
+                                          "Measuring the force on a test charge experimentally",
+                                          "Using only the value of k"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Gauss\u0027s Law is powerful because by choosing the right Gaussian surface based on symmetry, calculation of electric flux becomes much simpler.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_138",
+                          "text":  "Which of the following is an application of Gauss\u0027s Law?",
+                          "options":  [
+                                          "Finding the speed of light",
+                                          "Determining the electric field due to uniformly charged spheres, cylinders, or planes",
+                                          "Calculating mutual inductance",
+                                          "Finding the wavelength of EM waves"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Gauss\u0027s Law can be used to determine the electric field due to uniformly charged objects such as spheres, cylinders, or planes.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_139",
+                          "text":  "Gauss\u0027s Law can be applied to study electric dipole fields for understanding:",
+                          "options":  [
+                                          "Nuclear forces",
+                                          "The behavior of polar molecules and their interactions",
+                                          "Quantum energy levels",
+                                          "Gravitational fields"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Gauss\u0027s Law can be applied to study the electric field due to electric dipoles, helping understand polar molecules.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_140",
+                          "text":  "In Gauss\u0027s Law, Îµâ‚€ represents:",
+                          "options":  [
+                                          "The permeability of free space",
+                                          "The permittivity of free space",
+                                          "The electric charge enclosed",
+                                          "The magnetic flux density"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Îµâ‚€ is the permittivity of free space, a fundamental constant.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_141",
+                          "text":  "Electric potential is often referred to as:",
+                          "options":  [
+                                          "Current",
+                                          "Resistance",
+                                          "Potential or voltage",
+                                          "Capacitance"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Electric potential is often simply referred to as potential or voltage.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_142",
+                          "text":  "Electric potential represents:",
+                          "options":  [
+                                          "The force per unit charge",
+                                          "The electric potential energy per unit charge at a point in space",
+                                          "The current per unit resistance",
+                                          "The charge per unit area"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric potential represents the electric potential energy per unit charge at a point in space.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_143",
+                          "text":  "The electric potential at a point due to a point charge q is:",
+                          "options":  [
+                                          "V = kq/rÂ²",
+                                          "V = kq/r",
+                                          "V = k/qr",
+                                          "V = kr/q"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "V = kq/r, where k is Coulomb\u0027s constant, q is the charge, and r is the distance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_144",
+                          "text":  "For a point charge q = 5 nC at r = 3 m, the electric potential is approximately:",
+                          "options":  [
+                                          "14.98 V",
+                                          "1.498 V",
+                                          "149.8 V",
+                                          "0.1498 V"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "V = (8.9875Ã—10â¹ Ã— 5Ã—10â»â¹)/3 â‰ˆ 14.98 V",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_145",
+                          "text":  "The electric potential difference Î”V in a uniform electric field E over distance d is:",
+                          "options":  [
+                                          "Î”V = E Ã— d",
+                                          "Î”V = -E Ã— d",
+                                          "Î”V = E/d",
+                                          "Î”V = E + d"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Î”V = -EÂ·d in a uniform electric field.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_146",
+                          "text":  "If E = 1000 N/C and d = 0.02 m, the electric potential difference Î”V is:",
+                          "options":  [
+                                          "+20 V",
+                                          "-20 V",
+                                          "50 V",
+                                          "-50 V"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Î”V = -EÂ·d = -(1000 N/C)(0.02 m) = -20 V",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_147",
+                          "text":  "The potential gradient is also known as:",
+                          "options":  [
+                                          "The magnetic field",
+                                          "The electric field",
+                                          "The current density",
+                                          "The charge density"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The potential gradient is also known as the electric field; it represents the rate of change of electric potential with respect to distance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_148",
+                          "text":  "The electric field between two plates with Î”V = 100 V and d = 0.1 m is:",
+                          "options":  [
+                                          "10 N/C",
+                                          "100 N/C",
+                                          "1000 N/C",
+                                          "10000 N/C"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "E = Î”V/d = 100/0.1 = 1000 N/C",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_149",
+                          "text":  "Electric potential energy is:",
+                          "options":  [
+                                          "The energy associated with the motion of charges",
+                                          "The energy associated with the configuration of charges in an electric field",
+                                          "The kinetic energy of electrons",
+                                          "The energy stored in an inductor"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric potential energy is the energy associated with the configuration of charges in an electric field.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_150",
+                          "text":  "The electric potential energy between two point charges is:",
+                          "options":  [
+                                          "U = kqâ‚qâ‚‚/rÂ²",
+                                          "U = kqâ‚qâ‚‚/r",
+                                          "U = k(qâ‚+qâ‚‚)/r",
+                                          "U = qâ‚qâ‚‚r/k"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "U = kqâ‚qâ‚‚/r, where k is Coulomb\u0027s constant, qâ‚ and qâ‚‚ are the charges, and r is their separation.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_151",
+                          "text":  "Two charges qâ‚ = 2 nC, qâ‚‚ = -4 nC are r = 0.1 m apart. The potential energy is approximately:",
+                          "options":  [
+                                          "7.19 Ã— 10â»â¹ J",
+                                          "-7.19 Ã— 10â»â¹ J",
+                                          "7.19 Ã— 10â»â¶ J",
+                                          "-7.19 Ã— 10â»â¶ J"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "U = kÃ—qâ‚Ã—qâ‚‚/r = 8.9875Ã—10â¹ Ã— 2Ã—10â»â¹ Ã— (-4Ã—10â»â¹) / 0.1 â‰ˆ -7.19Ã—10â»â¹ J (negative because unlike charges)",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_152",
+                          "text":  "Electric potential energy represents the work done to:",
+                          "options":  [
+                                          "Accelerate charges to infinite speed",
+                                          "Bring a configuration of charges from infinity to their positions in the field",
+                                          "Maintain constant current in a circuit",
+                                          "Discharge a capacitor"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric potential energy represents the work done to bring a configuration of charges from infinity to their respective positions in the field.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_153",
+                          "text":  "What is a capacitor?",
+                          "options":  [
+                                          "A device that opposes changes in current",
+                                          "A fundamental electronic component that stores and releases electrical energy",
+                                          "A device that converts AC to DC",
+                                          "A component that measures voltage"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Capacitors are fundamental electronic components that store and release electrical energy.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_154",
+                          "text":  "A basic capacitor consists of:",
+                          "options":  [
+                                          "One conductive plate and a resistor",
+                                          "Two conductive plates separated by a dielectric material",
+                                          "A coil wound around an iron core",
+                                          "A semiconductor material"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "At its core, a capacitor consists of two conductive plates separated by a dielectric material.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_155",
+                          "text":  "Capacitance (C) is measured in:",
+                          "options":  [
+                                          "Henry",
+                                          "Ohm",
+                                          "Farad",
+                                          "Tesla"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The ability of a capacitor to store charge is quantified by capacitance, measured in farads (F).",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_156",
+                          "text":  "When capacitors are connected in series, the total capacitance is calculated using:",
+                          "options":  [
+                                          "C_total = Câ‚ + Câ‚‚ + Câ‚ƒ + ...",
+                                          "1/C_total = 1/Câ‚ + 1/Câ‚‚ + 1/Câ‚ƒ + ...",
+                                          "C_total = Câ‚ Ã— Câ‚‚ Ã— Câ‚ƒ",
+                                          "C_total = (Câ‚ + Câ‚‚)/2"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "For capacitors in series: 1/C_total = 1/Câ‚ + 1/Câ‚‚ + 1/Câ‚ƒ + ...",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_157",
+                          "text":  "When capacitors are connected in parallel, the total capacitance is:",
+                          "options":  [
+                                          "1/C_total = 1/Câ‚ + 1/Câ‚‚ + ...",
+                                          "C_total = Câ‚ Ã— Câ‚‚",
+                                          "C_total = Câ‚ + Câ‚‚ + Câ‚ƒ + ...",
+                                          "C_total = Câ‚ - Câ‚‚"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "For capacitors in parallel: C_total = Câ‚ + Câ‚‚ + Câ‚ƒ + ...",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_158",
+                          "text":  "Three capacitors Câ‚ = 10 Î¼F, Câ‚‚ = 15 Î¼F, Câ‚ƒ = 20 Î¼F are connected in series. The total capacitance is:",
+                          "options":  [
+                                          "45 Î¼F",
+                                          "5 Î¼F",
+                                          "15 Î¼F",
+                                          "3 Î¼F"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "1/C_total = 1/10 + 1/15 + 1/20 = 3/30 + 2/30 + 1.5/30 = 6/30. C_total = 30/6 = 5 Î¼F",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_159",
+                          "text":  "Three capacitors Câ‚ = 10 Î¼F, Câ‚‚ = 15 Î¼F, Câ‚ƒ = 20 Î¼F are connected in parallel. The total capacitance is:",
+                          "options":  [
+                                          "5 Î¼F",
+                                          "10 Î¼F",
+                                          "45 Î¼F",
+                                          "15 Î¼F"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "C_total = 10 + 15 + 20 = 45 Î¼F",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_160",
+                          "text":  "Electrolytic capacitors are:",
+                          "options":  [
+                                          "Non-polarized and use ceramic dielectric",
+                                          "Polarized and use electrolyte as dielectric",
+                                          "Variable capacitors used in tuning circuits",
+                                          "Used for high frequency applications only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electrolytic capacitors utilize an electrolyte as the dielectric and are polarized, meaning they must be connected in a specific polarity.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_161",
+                          "text":  "Ceramic capacitors are:",
+                          "options":  [
+                                          "Polarized and expensive",
+                                          "Non-polarized, widely used due to low cost and stability",
+                                          "Only used in high voltage applications",
+                                          "Made of metallic foil"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Ceramic capacitors use ceramic materials as the dielectric and are non-polarized, widely used due to their low cost and stability.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_162",
+                          "text":  "Supercapacitors (ultracapacitors) are known for:",
+                          "options":  [
+                                          "Very low capacitance values",
+                                          "Much higher capacitance values compared to traditional capacitors",
+                                          "Being used only in audio circuits",
+                                          "Not being rechargeable"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Supercapacitors offer much higher capacitance values and are used for energy storage applications requiring rapid charge and discharge cycles.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_163",
+                          "text":  "Which application uses capacitors to smooth out voltage fluctuations?",
+                          "options":  [
+                                          "Signal amplification",
+                                          "Motor starting",
+                                          "Power supply filtering",
+                                          "Frequency modulation"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Power Supply Filtering: Capacitors smooth out voltage fluctuations in power supplies, ensuring stable DC voltage output.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_164",
+                          "text":  "Capacitors block DC while allowing AC signals to pass, making them useful for:",
+                          "options":  [
+                                          "Energy storage only",
+                                          "Signal coupling and decoupling",
+                                          "Motor starting only",
+                                          "Power supply regulation only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Capacitors block DC while allowing AC signals to pass through, making them useful for coupling signals between circuit stages and decoupling noise.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_165",
+                          "text":  "Film capacitors use ________ as dielectrics.",
+                          "options":  [
+                                          "Ceramic materials",
+                                          "Electrolyte solution",
+                                          "Thin plastic films (polyester, polypropylene, polycarbonate)",
+                                          "Tantalum metal"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Film capacitors use thin plastic films as dielectrics and are available in types such as polyester, polypropylene, and polycarbonate.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_166",
+                          "text":  "A 100 Î¼F capacitor is connected to a 12 V battery through a 1 kÎ© resistor. The time to charge to 90% is found using:",
+                          "options":  [
+                                          "t = RC Ã— ln(V/V_max)",
+                                          "t = -RC Ã— ln(1 - V/V_max)",
+                                          "t = RC/V",
+                                          "t = V/(RC)"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The charging time formula is t = -RC Ã— ln(1 - V/V_max)",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_167",
+                          "text":  "Which type of capacitor is known for high capacitance density and low leakage current?",
+                          "options":  [
+                                          "Ceramic capacitor",
+                                          "Film capacitor",
+                                          "Tantalum capacitor",
+                                          "Electrolytic capacitor"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Tantalum capacitors use tantalum metal as one of the plates and are known for their high capacitance density and low leakage current.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_168",
+                          "text":  "What are dielectrics?",
+                          "options":  [
+                                          "Materials that conduct electricity easily",
+                                          "Materials that do not conduct electricity easily due to their lack of free-moving charges",
+                                          "Semiconductor materials",
+                                          "Magnetic materials"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Dielectrics are materials that do not conduct electricity easily due to their lack of free-moving charges.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_169",
+                          "text":  "When subjected to an electric field, dielectrics:",
+                          "options":  [
+                                          "Conduct electricity freely",
+                                          "Polarize â€” positive and negative charges separate, creating an internal opposing field",
+                                          "Lose all their charges",
+                                          "Generate magnetic fields"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "When subjected to an electric field, dielectrics polarize, meaning positive and negative charges separate, creating an internal electric field that opposes the external field.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_170",
+                          "text":  "In a capacitor, the dielectric material:",
+                          "options":  [
+                                          "Increases the electric field between the plates",
+                                          "Reduces the electric field between the plates, allowing for higher capacitance",
+                                          "Acts as a conductor",
+                                          "Has no effect on capacitance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The dielectric reduces the electric field between the plates, allowing for a higher capacitance and thus more charge storage.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_171",
+                          "text":  "The interior walls of a microwave oven use which type of dielectric?",
+                          "options":  [
+                                          "Rubber",
+                                          "Glass",
+                                          "Ceramic (reflects microwave radiation)",
+                                          "Paper"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The interior walls of a microwave oven are lined with a dielectric material, typically ceramic, which reflects microwave radiation.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_172",
+                          "text":  "Dielectric heating works by:",
+                          "options":  [
+                                          "Passing direct current through a material",
+                                          "Subjecting materials to a high-frequency electric field, causing molecular friction and heating",
+                                          "Using infrared radiation",
+                                          "Magnetic induction"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Dielectric heating heats materials by subjecting them to a high-frequency electric field; the dielectric properties cause heating due to molecular friction.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_173",
+                          "text":  "Which of the following is a dielectric insulator?",
+                          "options":  [
+                                          "Copper",
+                                          "Aluminum",
+                                          "Rubber",
+                                          "Silver"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Examples of dielectric insulators include rubber, glass, porcelain, and certain plastics.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_174",
+                          "text":  "Dielectric resonators are used in:",
+                          "options":  [
+                                          "DC power supplies",
+                                          "Microwave circuits and antennas to store and release electromagnetic energy at specific frequencies",
+                                          "Audio amplifiers",
+                                          "Battery charging systems"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Dielectric resonators are used in microwave circuits and antennas, storing and releasing electromagnetic energy efficiently at specific frequencies.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_175",
+                          "text":  "Dielectric elastomers are used in:",
+                          "options":  [
+                                          "Power transmission lines",
+                                          "Actuators, artificial muscles, and soft robotics",
+                                          "Microwave ovens",
+                                          "Television screens"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Dielectric elastomers change shape or size when subjected to an electric field, finding applications in actuators, artificial muscles, and soft robotics.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_176",
+                          "text":  "What is electric displacement (D)?",
+                          "options":  [
+                                          "The force on a charge in a magnetic field",
+                                          "The electric field created by free and bound charges in a material; defined as electric flux density",
+                                          "The velocity of electrons in a conductor",
+                                          "The potential difference between two points"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Electric displacement D represents the electric field created by the presence of free and bound charges in a material; it is the electric flux density.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_177",
+                          "text":  "The formula for electric displacement D is:",
+                          "options":  [
+                                          "D = Îµâ‚€E - P",
+                                          "D = Îµâ‚€E + P",
+                                          "D = Îµâ‚€/E + P",
+                                          "D = E + Îµâ‚€P"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "D = Îµâ‚€E + P, where Îµâ‚€ is vacuum permittivity, E is the electric field, and P is the polarization.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_178",
+                          "text":  "In D = Îµâ‚€E + P, what does P represent?",
+                          "options":  [
+                                          "Pressure",
+                                          "Polarization of the material",
+                                          "Power",
+                                          "Permeability"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "P is the polarization of the material.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_179",
+                          "text":  "What is polarization in a dielectric?",
+                          "options":  [
+                                          "The flow of electrons in a conductor",
+                                          "The alignment of electric dipoles within a material in response to an external electric field",
+                                          "The separation of positive and negative plates in a capacitor",
+                                          "The magnetization of a material"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Polarization refers to the alignment of electric dipoles within a material in response to an external electric field.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_180",
+                          "text":  "The formula for polarization P is:",
+                          "options":  [
+                                          "P = Îµâ‚€Ï‡E",
+                                          "P = Îµâ‚€E/Ï‡",
+                                          "P = Ï‡E/Îµâ‚€",
+                                          "P = Îµâ‚€ + Ï‡E"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "P = Îµâ‚€Ï‡E, where Îµâ‚€ is vacuum permittivity, Ï‡ is electric susceptibility, and E is electric field strength.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_181",
+                          "text":  "In electronic polarization:",
+                          "options":  [
+                                          "Ionic displacement occurs",
+                                          "Permanent dipoles rotate",
+                                          "The electron cloud around atoms shifts when subjected to an electric field",
+                                          "Protons are displaced"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Electronic polarization: In some materials, the electron cloud around the atoms shifts when subjected to an electric field, causing polarization.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_182",
+                          "text":  "In ionic polarization:",
+                          "options":  [
+                                          "Electron clouds shift",
+                                          "Permanent dipoles align with the field",
+                                          "Positively and negatively charged ions are displaced by an electric field",
+                                          "No physical movement occurs"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In ionic materials, when an electric field is applied, the positive and negative ions can be displaced, leading to polarization.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_183",
+                          "text":  "In orientation polarization:",
+                          "options":  [
+                                          "New dipoles are created",
+                                          "Existing permanent dipoles align themselves with the electric field",
+                                          "Electron clouds are displaced",
+                                          "Ionic bonds break"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Orientation polarization: In materials with permanent dipoles, the dipoles align themselves with the electric field, resulting in polarization.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_184",
+                          "text":  "The electric susceptibility Ï‡ describes:",
+                          "options":  [
+                                          "How much current flows for a given voltage",
+                                          "How much polarization occurs in response to an electric field",
+                                          "The resistance of a dielectric",
+                                          "The permeability of a magnetic material"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The electric susceptibility Ï‡ describes how much polarization occurs in response to an electric field.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_185",
+                          "text":  "For a dielectric with Ï‡ = 2.5 and E = 1000 V/m, the polarization P is:",
+                          "options":  [
+                                          "2.2125 Ã— 10â»â¸ C/mÂ²",
+                                          "2.2125 Ã— 10â»âµ C/mÂ²",
+                                          "2.2125 Ã— 10â»Â¹Â¹ C/mÂ²",
+                                          "2.2125 Ã— 10â»Â² C/mÂ²"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "P = Îµâ‚€Ï‡E = 8.85Ã—10â»Â¹Â² Ã— 2.5 Ã— 1000 = 2.2125 Ã— 10â»â¸ C/mÂ²",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_186",
+                          "text":  "The induced voltage formula Îµ = BLV sin Î¸ gives 0 when Î¸ is:",
+                          "options":  [
+                                          "90Â°",
+                                          "45Â°",
+                                          "180Â°",
+                                          "0Â°"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "When Î¸ = 0Â°, sin 0Â° = 0, so the induced EMF Îµ = BLV Ã— 0 = 0.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_187",
+                          "text":  "The induced EMF Îµ = BLV applies when the wire moves:",
+                          "options":  [
+                                          "Parallel to the magnetic field",
+                                          "At right angles to the magnetic field",
+                                          "At 45Â° to the magnetic field",
+                                          "In any direction"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "When the wire moves at right angles to the magnetic field (Î¸ = 90Â°), Îµ = BLV sin 90Â° = BLV.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_188",
+                          "text":  "What property of the magnetic force causes a charged particle to move in a circular path in a magnetic field?",
+                          "options":  [
+                                          "The force is parallel to the velocity",
+                                          "The force is perpendicular to the motion and changes only direction, not speed",
+                                          "The force increases with time",
+                                          "The force is zero in a magnetic field"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The magnetic force is always perpendicular to the direction of motion, so it only changes the direction of the velocity, not the speed â€” causing circular motion.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_189",
+                          "text":  "Greater coil area means:",
+                          "options":  [
+                                          "Lesser inductance",
+                                          "No change in inductance",
+                                          "Greater inductance",
+                                          "Inductance becomes negative"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Greater coil area gives greater inductance; it presents less opposition to the formation of magnetic field flux for a given field force.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_190",
+                          "text":  "Greater magnetic permeability of the core material means:",
+                          "options":  [
+                                          "Lesser inductance",
+                                          "Greater inductance",
+                                          "No change in inductance",
+                                          "The coil stops working"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The greater the magnetic permeability of the core to which the coil is wrapped, the greater the inductance.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_191",
+                          "text":  "In an EM wave, the electric field (E) and magnetic field (B) are oriented:",
+                          "options":  [
+                                          "Parallel to each other and perpendicular to propagation direction",
+                                          "Perpendicular to each other and perpendicular to the direction of propagation",
+                                          "Both parallel to the propagation direction",
+                                          "At 45Â° to each other"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "EM waves consist of time-varying electric and magnetic fields which are perpendicular to each other and also perpendicular to the direction of propagation.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_192",
+                          "text":  "In an electromagnetic wave, which property changes when passing from one medium to another?",
+                          "options":  [
+                                          "Frequency",
+                                          "Time period",
+                                          "Velocity",
+                                          "All of the above change equally"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Velocity of an electromagnetic wave is dependent on the medium; frequency, time period, and wavelength depend on the source producing the wave.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_193",
+                          "text":  "Radio waves and X-rays both travel at the same speed because:",
+                          "options":  [
+                                          "They are produced by the same source",
+                                          "Any wave from the electromagnetic spectrum travels at a constant speed of light",
+                                          "They have the same wavelength",
+                                          "They have the same frequency"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Any wave from the electromagnetic spectrum travels at a constant speed of light (3 Ã— 10â¸ m/s). Their frequency, energy, and wavelength vary.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_194",
+                          "text":  "Photons can travel at the speed of light because:",
+                          "options":  [
+                                          "They have infinite energy",
+                                          "They do not have mass",
+                                          "They are larger than other particles",
+                                          "They have negative charge"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Photons can travel at a speed of light while other particles cannot because they do not have mass.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_195",
+                          "text":  "The wavelength of a photon of infrared light with frequency 2.5 Ã— 10Â¹â´ Hz is:",
+                          "options":  [
+                                          "1.2 Ã— 10â»â¶ m",
+                                          "1.2 Ã— 10â»â¹ m",
+                                          "1.2 Ã— 10â»Â³ m",
+                                          "1.2 Ã— 10â»Â¹Â² m"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Î» = c/f = 3Ã—10â¸ / 2.5Ã—10Â¹â´ = 1.2 Ã— 10â»â¶ m",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_196",
+                          "text":  "If charges qâ‚ = +5 C and qâ‚‚ = -4 C are 3 m apart, the force is approximately:",
+                          "options":  [
+                                          "1.997 Ã— 10Â¹â° N (repulsive)",
+                                          "1.997 Ã— 10Â¹â° N (attractive)",
+                                          "5.994 Ã— 10â¹ N (attractive)",
+                                          "2.997 Ã— 10Â¹â° N (repulsive)"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "F = 8.9875Ã—10â¹ Ã— |5Ã—(-4)|/9 â‰ˆ 1.997Ã—10Â¹â° N. Opposite charges attract.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_197",
+                          "text":  "For a point charge q = 3 nC at r = 4 m, the electric field (potential gradient) is approximately:",
+                          "options":  [
+                                          "1.69 N/C",
+                                          "53.4 N/C",
+                                          "5.34 N/C",
+                                          "0.534 N/C"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "E = k|q|/rÂ² = 8.9875Ã—10â¹ Ã— 3Ã—10â»â¹ / 16 â‰ˆ 5.34 N/C",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_198",
+                          "text":  "When a magnetic compass is brought near a bar magnet, it:",
+                          "options":  [
+                                          "Does not deflect",
+                                          "Deflects",
+                                          "Stops working",
+                                          "Points to geographic south"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "When a magnetic compass is brought closer to the magnet, it deflects.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_199",
+                          "text":  "The divergence operator âˆ‡Â· in Maxwell\u0027s equations is represented by:",
+                          "options":  [
+                                          "A normal triangle",
+                                          "An inverted triangle (del/nabla)",
+                                          "A crossed circle",
+                                          "A double integral sign"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The inverted triangle (âˆ‡, nabla or del) is called the divergence operator.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_200",
+                          "text":  "Power companies use step-up transformers to boost voltage to reduce:",
+                          "options":  [
+                                          "Capacitance",
+                                          "Inductance",
+                                          "Current, thereby minimizing power loss in transmission lines",
+                                          "Resistance of the transmission lines"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Power companies use step-up transformers to boost voltage to 100 kV, which reduces the current and minimizes the loss of power in transmission lines.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_201",
+                          "text":  "Which of the following statements about magnetic field lines is TRUE?",
+                          "options":  [
+                                          "Magnetic field lines start and end at the same pole",
+                                          "Closely spaced field lines indicate a weak magnetic field",
+                                          "Widely spaced field lines indicate a weak magnetic field",
+                                          "Magnetic field lines only exist inside the magnet"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "If the magnetic field lines are far away from each other, the magnetic field is very weak.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "phy102_202",
+                          "text":  "Which property of a capacitor indicates how its capacitance changes with temperature?",
+                          "options":  [
+                                          "Equivalent Series Resistance (ESR)",
+                                          "Voltage Rating",
+                                          "Temperature Coefficient",
+                                          "Dielectric Absorption"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Temperature Coefficient indicates how a capacitor\u0027s capacitance changes with temperature.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_203",
+                          "text":  "Dielectric absorption (soakage) in a capacitor refers to:",
+                          "options":  [
+                                          "The capacitor breaking down under high voltage",
+                                          "A phenomenon where capacitors retain a small charge even after being discharged",
+                                          "The absorption of moisture by the dielectric",
+                                          "The increase in ESR over time"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Dielectric absorption or soakage is when some capacitors retain a small charge even after being discharged.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_204",
+                          "text":  "The potential gradient (electric field) E between two plates is given by:",
+                          "options":  [
+                                          "E = Î”V Ã— d",
+                                          "E = d/Î”V",
+                                          "E = Î”V/d",
+                                          "E = 1/(Î”V Ã— d)"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The magnitude of the electric field E = Î”V/d, where Î”V is the potential difference and d is the distance between plates.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_205",
+                          "text":  "A galvanometer with a fixed non-magnetic metallic core uses eddy currents to:",
+                          "options":  [
+                                          "Amplify the current signal",
+                                          "Oppose the motion of the coil and bring it to rest",
+                                          "Generate more current",
+                                          "Increase sensitivity"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "When the coil in a galvanometer oscillates, the eddy currents that generate in the core oppose the motion and bring the coil to rest.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_206",
+                          "text":  "Maxwell\u0027s equations describe how:",
+                          "options":  [
+                                          "Gravity affects charged particles",
+                                          "The electric field can create a magnetic field and vice versa",
+                                          "Nuclear forces interact",
+                                          "Quantum particles behave"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Maxwell\u0027s equations describe how the electric field can create a magnetic field and vice versa.",
+                          "difficulty":  3
+                      },
+                      {
+                          "id":  "phy102_207",
+                          "text":  "The EM wave equation in homogeneous form is:",
+                          "options":  [
+                                          "(vÂ²phâˆ‡Â² + âˆ‚Â²/âˆ‚tÂ²)E = 0",
+                                          "(vÂ²phâˆ‡Â² - âˆ‚Â²/âˆ‚tÂ²)E = 0",
+                                          "(vÂ²phâˆ‡Â² Ã— âˆ‚Â²/âˆ‚tÂ²)E = 0",
+                                          "(vÂ²ph + âˆ‡Â² - âˆ‚Â²/âˆ‚tÂ²)E = 0"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The homogeneous form of the EM wave equation is (vÂ²phâˆ‡Â² - âˆ‚Â²/âˆ‚tÂ²)E = 0",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_208",
+                          "text":  "The phase velocity of an EM wave in a medium is:",
+                          "options":  [
+                                          "v_ph = âˆš(Î¼Ïµ)",
+                                          "v_ph = Î¼Ïµ",
+                                          "v_ph = 1/âˆš(Î¼Ïµ)",
+                                          "v_ph = 1/(Î¼Ïµ)"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "v_ph = 1/âˆš(Î¼Ïµ), where Î¼ is permeability and Ïµ is permittivity of the medium.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_209",
+                          "text":  "High frequency propagation is used to:",
+                          "options":  [
+                                          "Reduce accuracy",
+                                          "Increase accuracy",
+                                          "Maintain constant signal strength",
+                                          "Reduce the speed of the wave"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "For increasing accuracy, the frequency of propagation needs to be high.",
+                          "difficulty":  2
+                      },
+                      {
+                          "id":  "phy102_210",
+                          "text":  "The sequence for the propagation of electromagnetic waves is:",
+                          "options":  [
+                                          "Reception, propagation, generation, reflection",
+                                          "Generation, propagation, reflection, reception",
+                                          "Reflection, generation, reception, propagation",
+                                          "Propagation, generation, reflection, reception"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The sequence is: generation, propagation, reflection, and reception.",
+                          "difficulty":  2
+                      }
+                  ]
+}

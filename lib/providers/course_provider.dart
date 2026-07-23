@@ -56,6 +56,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#DFF5E4', // Mint
       mode: '100_level',
     ),
+    Course(
+      id: 'phy102',
+      code: 'PHY 102',
+      name: 'Electromagnetism',
+      icon: '⚡',
+      colorHex: '#FFF3CD', // Amber
+      mode: '100_level',
+    ),
     
   ];
 
