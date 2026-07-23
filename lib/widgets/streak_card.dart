@@ -32,9 +32,9 @@ class StreakCard extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.glassBg,
         borderRadius: BorderRadius.circular(20.0),
-        boxShadow: AppColors.clayShadow,
+        border: Border.all(color: AppColors.glassBorder, width: 1),
       ),
       padding: const EdgeInsets.all(18.0),
       child: Column(
@@ -51,7 +51,7 @@ class StreakCard extends StatelessWidget {
                 ),
                 alignment: Alignment.center,
                 child: Text(
-                  streakCount > 0 ? '🔥' : '💫',
+                  streakCount > 0 ? '\u{1F525}' : '\u{1F4AB}',
                   style: const TextStyle(fontSize: 22.0),
                 ),
               ),
@@ -68,7 +68,7 @@ class StreakCard extends StatelessWidget {
                           style: const TextStyle(
                             fontSize: 28.0,
                             fontWeight: FontWeight.w900,
-                            color: AppColors.foreground,
+                            color: AppColors.textPrimary,
                             height: 1.0,
                           ),
                         ),
@@ -102,7 +102,7 @@ class StreakCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
                   decoration: BoxDecoration(
-                    color: AppColors.accentLight,
+                    color: AppColors.goldLight,
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   child: Text(

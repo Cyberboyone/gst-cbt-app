@@ -48,6 +48,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
@@ -55,67 +56,69 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 48.0),
-              // App logo / emblem
               Container(
                 width: 56.0,
                 height: 56.0,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.accent,
+                  gradient: AppColors.primaryGradient,
                 ),
                 alignment: Alignment.center,
                 child: const Text(
                   'G',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: AppColors.onPrimary,
                     fontSize: 22.0,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ),
               const SizedBox(height: 24.0),
-              
-              // Welcome Text
-              Text(
+              const Text(
                 'Get Started',
-                style: Theme.of(context).textTheme.headlineLarge,
+                style: TextStyle(
+                  fontSize: 32.0,
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.textPrimary,
+                  letterSpacing: -0.5,
+                  height: 1.2,
+                ),
               ),
               const SizedBox(height: 8.0),
               const Text(
                 'Enter a nickname to track your CBT practice progress and rank on the leaderboard.',
                 style: TextStyle(
-                  color: AppColors.inkSoft,
+                  color: AppColors.textSecondary,
                   fontSize: 14.0,
                   height: 1.4,
                 ),
               ),
               const SizedBox(height: 36.0),
-              
-              // Input field
               Form(
                 key: _formKey,
                 child: TextFormField(
                   controller: _nicknameController,
+                  style: const TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
                     labelText: 'Nickname',
                     hintText: 'e.g., Musab',
-                    labelStyle: const TextStyle(color: AppColors.primary),
-                    floatingLabelStyle: const TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold),
+                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    floatingLabelStyle: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: const BorderSide(color: AppColors.accent, width: 2.0),
+                      borderSide: const BorderSide(color: AppColors.primary, width: 2.0),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: BorderSide(color: AppColors.primary.withOpacity(0.12), width: 1.5),
+                      borderSide: const BorderSide(color: AppColors.border, width: 1.5),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: const BorderSide(color: Colors.red, width: 1.5),
+                      borderSide: const BorderSide(color: AppColors.destructive, width: 1.5),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: const BorderSide(color: Colors.red, width: 2.0),
+                      borderSide: const BorderSide(color: AppColors.destructive, width: 2.0),
                     ),
                     contentPadding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 18.0),
                   ),
@@ -135,8 +138,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
               ),
               const Spacer(),
-              
-              // Submit button
               SizedBox(
                 width: double.infinity,
                 height: 56.0,
@@ -144,7 +145,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   onPressed: _isSubmitting ? null : _submit,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: AppColors.primary,
-                    foregroundColor: Colors.white,
+                    foregroundColor: AppColors.onPrimary,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.0),
                     ),
@@ -154,7 +155,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       ? const SizedBox(
                           width: 24.0,
                           height: 24.0,
-                          child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2.5),
+                          child: CircularProgressIndicator(color: AppColors.onPrimary, strokeWidth: 2.5),
                         )
                       : const Text(
                           'Let\'s Go',

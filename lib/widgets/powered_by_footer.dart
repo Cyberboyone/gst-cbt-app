@@ -18,7 +18,7 @@ class PoweredByFooter extends StatelessWidget {
               fontFamily: 'Nunito',
               fontSize: 12.0,
               fontWeight: FontWeight.w600,
-              color: AppColors.inkSoft,
+              color: AppColors.textMuted,
             ),
             children: [
               const TextSpan(text: 'Powered by '),

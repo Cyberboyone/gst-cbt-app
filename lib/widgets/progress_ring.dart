@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../config/theme.dart';
 
 class ProgressRing extends StatelessWidget {
-  final double percentage; // 0.0 to 1.0
+  final double percentage;
   final double size;
   final double strokeWidth;
   final Widget? child;
@@ -30,7 +30,7 @@ class ProgressRing extends StatelessWidget {
               percentage: percentage,
               strokeWidth: strokeWidth,
               progressColor: AppColors.primary,
-              backgroundColor: AppColors.primary.withOpacity(0.12),
+              backgroundColor: AppColors.muted,
             ),
           ),
           if (child != null) child!,
@@ -70,13 +70,11 @@ class _ConicProgressPainter extends CustomPainter {
       ..strokeWidth = strokeWidth
       ..strokeCap = StrokeCap.round;
 
-    // Draw background circle
     canvas.drawCircle(center, radius, bgPaint);
 
-    // Draw progress arc (start from top: -pi/2)
     const startAngle = -pi / 2;
     final sweepAngle = 2 * pi * percentage.clamp(0.0, 1.0);
-    
+
     canvas.drawArc(
       Rect.fromCircle(center: center, radius: radius),
       startAngle,

@@ -17,6 +17,7 @@ class BadgesScreen extends StatelessWidget {
     final unlockedCount = unlockedIds.length;
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
@@ -38,17 +39,17 @@ class BadgesScreen extends StatelessWidget {
                 children: [
                   Text(
                     '$unlockedCount / $totalBadges',
-                    style: const TextStyle(color: Colors.white, fontSize: 28.0, fontWeight: FontWeight.w900),
+                    style: const TextStyle(color: AppColors.onPrimary, fontSize: 28.0, fontWeight: FontWeight.w900),
                   ),
                   const SizedBox(height: 4.0),
-                  const Text('Badges Unlocked', style: TextStyle(color: Colors.white70, fontSize: 13.0, fontWeight: FontWeight.w600)),
+                  Text('Badges Unlocked', style: TextStyle(color: AppColors.onPrimary.withOpacity(0.7), fontSize: 13.0, fontWeight: FontWeight.w600)),
                   const SizedBox(height: 10.0),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(4.0),
                     child: LinearProgressIndicator(
                       value: totalBadges > 0 ? unlockedCount / totalBadges : 0,
-                      color: AppColors.accent,
-                      backgroundColor: Colors.white.withOpacity(0.2),
+                      color: AppColors.onPrimary,
+                      backgroundColor: AppColors.onPrimary.withOpacity(0.2),
                       minHeight: 8.0,
                     ),
                   ),
@@ -61,9 +62,12 @@ class BadgesScreen extends StatelessWidget {
               return Container(
                 margin: const EdgeInsets.only(bottom: 12.0),
                 decoration: BoxDecoration(
-                  color: isUnlocked ? Colors.white : Colors.white.withOpacity(0.5),
+                  color: AppColors.glassBg,
                   borderRadius: BorderRadius.circular(16.0),
-                  boxShadow: isUnlocked ? AppColors.clayShadowSmall : null,
+                  border: Border.all(
+                    color: isUnlocked ? AppColors.correct.withOpacity(0.3) : AppColors.glassBorder,
+                    width: 1,
+                  ),
                 ),
                 child: ListTile(
                   contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
@@ -71,33 +75,33 @@ class BadgesScreen extends StatelessWidget {
                     width: 48.0,
                     height: 48.0,
                     decoration: BoxDecoration(
-                      color: isUnlocked ? AppColors.mint : Colors.grey.withOpacity( 0.15),
+                      color: isUnlocked ? AppColors.correctLight : AppColors.muted,
                       borderRadius: BorderRadius.circular(12.0),
                     ),
                     alignment: Alignment.center,
                     child: Text(
                       badgeData['icon']!,
-                      style: TextStyle(fontSize: 24.0, color: isUnlocked ? null : Colors.grey),
+                      style: TextStyle(fontSize: 24.0, color: isUnlocked ? null : AppColors.textMuted),
                     ),
                   ),
                   title: Text(
                     badgeData['name']!,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      color: isUnlocked ? AppColors.primary : Colors.grey,
+                      color: isUnlocked ? AppColors.textPrimary : AppColors.textMuted,
                       fontSize: 14.0,
                     ),
                   ),
                   subtitle: Text(
                     badgeData['description']!,
                     style: TextStyle(
-                      color: isUnlocked ? AppColors.inkSoft : Colors.grey.withOpacity( 0.7),
+                      color: isUnlocked ? AppColors.textSecondary : AppColors.textMuted.withOpacity(0.7),
                       fontSize: 12.0,
                     ),
                   ),
                   trailing: isUnlocked
                       ? const Icon(Icons.check_circle, color: AppColors.correct, size: 22.0)
-                      : const Icon(Icons.lock_outline, color: Colors.grey, size: 20.0),
+                      : Icon(Icons.lock_outline, color: AppColors.textMuted.withOpacity(0.5), size: 20.0),
                 ),
               );
             }),

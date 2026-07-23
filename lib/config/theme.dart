@@ -1,154 +1,168 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // ── Primary Palette (Claymorphism + Education) ──
-  static const Color primary = Color(0xFF4F46E5);
-  static const Color primaryLight = Color(0xFF818CF8);
-  static const Color primaryDark = Color(0xFF3730A3);
-  static const Color onPrimary = Color(0xFFFFFFFF);
+  // ── Primary (Cyan) ──
+  static const Color primary = Color(0xFF00D4FF);
+  static const Color primaryLight = Color(0xFF5CE1FF);
+  static const Color primaryDark = Color(0xFF0091B3);
+  static const Color onPrimary = Color(0xFF0A1628);
 
-  // ── Secondary (Progress / Success) ──
-  static const Color secondary = Color(0xFF0D9488);
-  static const Color secondaryLight = Color(0xFF2DD4BF);
+  // ── Secondary (Pink) ──
+  static const Color secondary = Color(0xFFFF6B9D);
+  static const Color secondaryLight = Color(0xFFFF9DC2);
 
-  // ── Accent / CTA ──
-  static const Color accent = Color(0xFFEA580C);
-  static const Color accentLight = Color(0xFFFDBA74);
+  // ── Accent (Gold) ──
+  static const Color accent = Color(0xFFFFD700);
+  static const Color accentLight = Color(0xFFFFE566);
 
   // ── Backgrounds ──
-  static const Color background = Color(0xFFEEF2FF);
-  static const Color surface = Color(0xFFFFFFFF);
-  static const Color card = Color(0xFFFFFFFF);
+  static const Color background = Color(0xFF0A1628);
+  static const Color surface = Color(0xFF111D35);
+  static const Color card = Color(0xFF162040);
+
+  // ── Glass ──
+  static const Color glassBg = Color(0x331A2A50);
+  static const Color glassBorder = Color(0x3300D4FF);
 
   // ── Text ──
-  static const Color foreground = Color(0xFF1E1B4B);
-  static const Color textPrimary = Color(0xFF1E1B4B);
-  static const Color textSecondary = Color(0xFF64748B);
-  static const Color textMuted = Color(0xFF64748B);
+  static const Color foreground = Color(0xFFFFFFFF);
+  static const Color textPrimary = Color(0xFFFFFFFF);
+  static const Color textSecondary = Color(0xFF8899BB);
+  static const Color textMuted = Color(0xFF556688);
 
   // ── Muted / Borders ──
-  static const Color muted = Color(0xFFEBEEF8);
-  static const Color border = Color(0xFFC7D2FE);
-  static const Color divider = Color(0xFFE2E8F0);
+  static const Color muted = Color(0xFF1A2A50);
+  static const Color border = Color(0xFF1E3060);
+  static const Color divider = Color(0xFF1A2A50);
 
   // ── Semantic States ──
-  static const Color correct = Color(0xFF059669);
-  static const Color correctLight = Color(0xFFD1FAE5);
-  static const Color incorrect = Color(0xFFEF4444);
-  static const Color incorrectLight = Color(0xFFFEE2E2);
-  static const Color warning = Color(0xFFF59E0B);
-  static const Color warningLight = Color(0xFFFEF3C7);
-  static const Color destructive = Color(0xFFDC2626);
+  static const Color correct = Color(0xFF00E676);
+  static const Color correctLight = Color(0x3300E676);
+  static const Color incorrect = Color(0xFFFF5252);
+  static const Color incorrectLight = Color(0x33FF5252);
+  static const Color warning = Color(0xFFFFAB40);
+  static const Color warningLight = Color(0x33FFAB40);
+  static const Color destructive = Color(0xFFFF5252);
 
   // ── Gamification ──
-  static const Color gold = Color(0xFFF59E0B);
-  static const Color goldLight = Color(0xFFFEF3C7);
-  static const Color xp = Color(0xFF7C3AED);
-  static const Color xpLight = Color(0xFFEDE9FE);
-  static const Color streak = Color(0xFFEA580C);
-  static const Color streakLight = Color(0xFFFED7AA);
-  static const Color coins = Color(0xFFCA8A04);
-  static const Color coinsLight = Color(0xFFFEF9C3);
+  static const Color gold = Color(0xFFFFD700);
+  static const Color goldLight = Color(0x33FFD700);
+  static const Color xp = Color(0xFFBB86FC);
+  static const Color xpLight = Color(0x33BB86FC);
+  static const Color streak = Color(0xFFFF6B9D);
+  static const Color streakLight = Color(0x33FF6B9D);
+  static const Color coins = Color(0xFFFFD700);
+  static const Color coinsLight = Color(0x33FFD700);
 
-  // ── Legacy aliases (backward compat) ──
-  static const Color navy = primary;
+  // ── Legacy aliases ──
+  static const Color navy = Color(0xFF0A1628);
   static const Color orange = accent;
   static const Color cream = background;
   static const Color inkSoft = textSecondary;
-  static const Color white = surface;
-  static const Color peach = Color(0xFFFED7AA);
-  static const Color sky = Color(0xFFDBEAFE);
-  static const Color mint = Color(0xFFD1FAE5);
-  static const Color lavender = Color(0xFFEDE9FE);
-  static const Color cardShadow = Color(0x0A4F46E5);
+  static const Color white = textPrimary;
+  static const Color peach = Color(0x33FF6B9D);
+  static const Color sky = Color(0x3300D4FF);
+  static const Color mint = Color(0x3300E676);
+  static const Color lavender = Color(0x33BB86FC);
+  static const Color cardShadow = Color(0x1A00D4FF);
 
-  // ── Claymorphism Shadows ──
+  // ── Shadows ──
   static final List<BoxShadow> clayShadow = [
-    const BoxShadow(
-      offset: Offset(-3, -3),
-      blurRadius: 8,
-      color: Color(0xFFFFFFFF),
+    BoxShadow(
+      offset: const Offset(0, 4),
+      blurRadius: 20,
+      color: Colors.black.withOpacity(0.3),
     ),
     BoxShadow(
-      offset: const Offset(4, 4),
-      blurRadius: 10,
-      color: Colors.black.withOpacity(0.08),
+      offset: const Offset(0, 0),
+      blurRadius: 1,
+      color: AppColors.primary.withOpacity(0.05),
     ),
   ];
 
   static final List<BoxShadow> clayShadowSmall = [
-    const BoxShadow(
-      offset: Offset(-2, -2),
-      blurRadius: 6,
-      color: Color(0xFFFFFFFF),
-    ),
     BoxShadow(
-      offset: const Offset(3, 3),
-      blurRadius: 8,
-      color: Colors.black.withOpacity(0.06),
+      offset: const Offset(0, 2),
+      blurRadius: 12,
+      color: Colors.black.withOpacity(0.2),
     ),
   ];
 
   static final List<BoxShadow> clayShadowLarge = [
-    const BoxShadow(
-      offset: Offset(-4, -4),
-      blurRadius: 12,
-      color: Color(0xFFFFFFFF),
-    ),
     BoxShadow(
-      offset: const Offset(6, 6),
-      blurRadius: 16,
-      color: Colors.black.withOpacity(0.1),
+      offset: const Offset(0, 8),
+      blurRadius: 30,
+      color: Colors.black.withOpacity(0.4),
+    ),
+  ];
+
+  static final List<BoxShadow> glowShadow = [
+    BoxShadow(
+      offset: const Offset(0, 0),
+      blurRadius: 20,
+      color: AppColors.primary.withOpacity(0.3),
     ),
   ];
 
   // ── Gradients ──
   static const LinearGradient primaryGradient = LinearGradient(
-    colors: [primary, primaryLight],
+    colors: [Color(0xFF00D4FF), Color(0xFF0091B3)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient accentGradient = LinearGradient(
-    colors: [accent, Color(0xFFF97316)],
+    colors: [Color(0xFFFFD700), Color(0xFFFFAB40)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient correctGradient = LinearGradient(
-    colors: [correct, Color(0xFF10B981)],
+    colors: [Color(0xFF00E676), Color(0xFF00C853)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient incorrectGradient = LinearGradient(
-    colors: [incorrect, Color(0xFFF87171)],
+    colors: [Color(0xFFFF5252), Color(0xFFFF1744)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient goldGradient = LinearGradient(
-    colors: [Color(0xFFF59E0B), Color(0xFFFBBF24)],
+    colors: [Color(0xFFFFD700), Color(0xFFFFAB40)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const LinearGradient xpGradient = LinearGradient(
-    colors: [Color(0xFF7C3AED), Color(0xFFA78BFA)],
+    colors: [Color(0xFFBB86FC), Color(0xFF9C64FC)],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  static const LinearGradient darkGradient = LinearGradient(
+    colors: [Color(0xFF0A1628), Color(0xFF111D35)],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+  );
+
+  static const LinearGradient glassGradient = LinearGradient(
+    colors: [Color(0x1A00D4FF), Color(0x0DFFFFFF)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 }
 
 class AppTheme {
-  static final ThemeData lightTheme = _buildTheme();
+  static final ThemeData darkTheme = _buildTheme();
   static ThemeData _buildTheme() {
     return ThemeData(
       useMaterial3: true,
+      brightness: Brightness.dark,
       scaffoldBackgroundColor: AppColors.background,
       primaryColor: AppColors.primary,
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: AppColors.primary,
+      colorScheme: const ColorScheme.dark(
         primary: AppColors.primary,
         secondary: AppColors.secondary,
         tertiary: AppColors.accent,
@@ -241,7 +255,7 @@ class AppTheme {
         ),
       ),
       appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.background,
+        backgroundColor: Colors.transparent,
         foregroundColor: AppColors.textPrimary,
         elevation: 0,
         scrolledUnderElevation: 0,
@@ -253,11 +267,12 @@ class AppTheme {
           color: AppColors.textPrimary,
         ),
       ),
-      cardTheme: CardTheme(
-        color: AppColors.card,
+      cardTheme: CardThemeData(
+        color: AppColors.glassBg,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.0),
+          side: const BorderSide(color: AppColors.glassBorder, width: 1),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -292,12 +307,12 @@ class AppTheme {
         ),
       ),
       snackBarTheme: SnackBarThemeData(
-        backgroundColor: AppColors.foreground,
+        backgroundColor: AppColors.surface,
         contentTextStyle: const TextStyle(
           fontFamily: 'Nunito',
           fontSize: 14.0,
           fontWeight: FontWeight.w600,
-          color: Colors.white,
+          color: AppColors.textPrimary,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12.0),
@@ -319,6 +334,19 @@ class AppTheme {
           fontFamily: 'Nunito',
           fontSize: 11,
           fontWeight: FontWeight.w600,
+        ),
+      ),
+      dialogTheme: DialogThemeData(
+        backgroundColor: AppColors.surface,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(24.0),
+          side: const BorderSide(color: AppColors.glassBorder, width: 1),
+        ),
+      ),
+      bottomSheetTheme: const BottomSheetThemeData(
+        backgroundColor: AppColors.surface,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(24.0)),
         ),
       ),
     );

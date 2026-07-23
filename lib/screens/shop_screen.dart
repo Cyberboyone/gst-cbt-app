@@ -16,6 +16,7 @@ class ShopScreen extends StatelessWidget {
     final hasFreeze = profile?.streakFreezeActive ?? false;
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
@@ -26,14 +27,14 @@ class ShopScreen extends StatelessWidget {
             margin: const EdgeInsets.only(right: 16.0),
             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
             decoration: BoxDecoration(
-              color: AppColors.mint,
+              color: AppColors.coinsLight,
               borderRadius: BorderRadius.circular(10.0),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Text('$coins', style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w900, fontSize: 14.0)),
-                const Text(' coins', style: TextStyle(fontSize: 14.0, color: AppColors.primary)),
+                Text('$coins', style: const TextStyle(color: AppColors.accent, fontWeight: FontWeight.w900, fontSize: 14.0)),
+                const Text(' coins', style: TextStyle(fontSize: 14.0, color: AppColors.accent)),
               ],
             ),
           ),
@@ -45,26 +46,22 @@ class ShopScreen extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFF2E7D32), Color(0xFF4CAF50)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
+                gradient: AppColors.goldGradient,
                 borderRadius: BorderRadius.circular(20.0),
               ),
               padding: const EdgeInsets.all(20.0),
               child: Row(
                 children: [
-                  const Text('COINS', style: TextStyle(color: Colors.white70, fontSize: 32.0, fontWeight: FontWeight.w900)),
+                  const Text('COINS', style: TextStyle(color: AppColors.onPrimary, fontSize: 32.0, fontWeight: FontWeight.w900)),
                   const SizedBox(width: 16.0),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('Your Balance', style: TextStyle(color: Colors.white70, fontSize: 12.0, fontWeight: FontWeight.w600)),
+                      Text('Your Balance', style: TextStyle(color: AppColors.onPrimary.withOpacity(0.7), fontSize: 12.0, fontWeight: FontWeight.w600)),
                       const SizedBox(height: 2.0),
                       Text(
                         '$coins coins',
-                        style: const TextStyle(color: Colors.white, fontSize: 26.0, fontWeight: FontWeight.w900),
+                        style: const TextStyle(color: AppColors.onPrimary, fontSize: 26.0, fontWeight: FontWeight.w900),
                       ),
                     ],
                   ),
@@ -72,17 +69,18 @@ class ShopScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24.0),
-            const Text('Power-ups', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            const Text('Power-ups', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 4.0),
-            const Text('Spend your earned coins on useful items', style: TextStyle(color: AppColors.inkSoft, fontSize: 12.5)),
+            const Text('Spend your earned coins on useful items', style: TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
             const SizedBox(height: 14.0),
             _buildShopItem(
               context,
-              icon: 'HINT',
+              icon: Icons.lightbulb_rounded,
               title: 'Answer Hint',
               description: 'Eliminates wrong answers during practice.',
               cost: AppConstants.coinsForHint,
               canAfford: coins >= AppConstants.coinsForHint,
+              color: AppColors.primary,
               onBuy: () async {
                 final spent = await profileProvider.spendCoins(AppConstants.coinsForHint);
                 if (spent && context.mounted) {
@@ -95,11 +93,12 @@ class ShopScreen extends StatelessWidget {
             const SizedBox(height: 14.0),
             _buildShopItem(
               context,
-              icon: 'FREEZE',
+              icon: Icons.ac_unit_rounded,
               title: 'Streak Freeze',
               description: 'Protects your streak for 1 missed day.',
               cost: AppConstants.coinsForStreakFreeze,
               canAfford: coins >= AppConstants.coinsForStreakFreeze && !hasFreeze,
+              color: AppColors.xp,
               onBuy: () async {
                 final spent = await profileProvider.spendCoins(AppConstants.coinsForStreakFreeze);
                 if (spent) {
@@ -115,12 +114,16 @@ class ShopScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24.0),
             Container(
-              decoration: BoxDecoration(color: AppColors.lavender, borderRadius: BorderRadius.circular(16.0)),
+              decoration: BoxDecoration(
+                color: AppColors.coinsLight,
+                borderRadius: BorderRadius.circular(16.0),
+                border: Border.all(color: AppColors.accent.withOpacity(0.3)),
+              ),
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('How to earn more coins', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 14.0)),
+                  const Text('How to earn more coins', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary, fontSize: 14.0)),
                   const SizedBox(height: 10.0),
                   _buildEarnRow('Answer questions correctly', '+1 coin each'),
                   _buildEarnRow('Pass an exam (45%+)', '+5 bonus coins'),
@@ -138,19 +141,20 @@ class ShopScreen extends StatelessWidget {
 
   Widget _buildShopItem(
     BuildContext context, {
-    required String icon,
+    required IconData icon,
     required String title,
     required String description,
     required int cost,
     required bool canAfford,
+    required Color color,
     required VoidCallback onBuy,
     String? badge,
   }) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.glassBg,
         borderRadius: BorderRadius.circular(20.0),
-        boxShadow: AppColors.clayShadow,
+        border: Border.all(color: AppColors.glassBorder, width: 1),
       ),
       padding: const EdgeInsets.all(16.0),
       child: Row(
@@ -158,9 +162,12 @@ class ShopScreen extends StatelessWidget {
           Container(
             width: 56.0,
             height: 56.0,
-            decoration: BoxDecoration(color: AppColors.cream, borderRadius: BorderRadius.circular(14.0)),
+            decoration: BoxDecoration(
+              color: color.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(14.0),
+            ),
             alignment: Alignment.center,
-            child: Text(icon, style: const TextStyle(fontSize: 12.0, fontWeight: FontWeight.bold, color: AppColors.primary)),
+            child: Icon(icon, color: color, size: 24.0),
           ),
           const SizedBox(width: 14.0),
           Expanded(
@@ -169,19 +176,19 @@ class ShopScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0)),
+                    Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary, fontSize: 15.0)),
                     if (badge != null) ...[
                       const SizedBox(width: 6.0),
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 6.0, vertical: 2.0),
-                        decoration: BoxDecoration(color: AppColors.mint, borderRadius: BorderRadius.circular(6.0)),
-                        child: Text(badge, style: const TextStyle(color: AppColors.primary, fontSize: 9.0, fontWeight: FontWeight.bold)),
+                        decoration: BoxDecoration(color: AppColors.correctLight, borderRadius: BorderRadius.circular(6.0)),
+                        child: Text(badge, style: const TextStyle(color: AppColors.correct, fontSize: 9.0, fontWeight: FontWeight.bold)),
                       ),
                     ],
                   ],
                 ),
                 const SizedBox(height: 4.0),
-                Text(description, style: const TextStyle(color: AppColors.inkSoft, fontSize: 12.0, height: 1.3)),
+                Text(description, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.0, height: 1.3)),
               ],
             ),
           ),
@@ -191,13 +198,13 @@ class ShopScreen extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 10.0),
               decoration: BoxDecoration(
-                color: canAfford ? AppColors.accent : Colors.grey.withOpacity(0.2),
+                color: canAfford ? AppColors.accent : AppColors.muted,
                 borderRadius: BorderRadius.circular(12.0),
               ),
               child: Text(
                 '$cost coins',
                 style: TextStyle(
-                  color: canAfford ? Colors.white : Colors.grey,
+                  color: canAfford ? AppColors.onPrimary : AppColors.textMuted,
                   fontWeight: FontWeight.w900,
                   fontSize: 12.0,
                 ),
@@ -215,7 +222,7 @@ class ShopScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.primary, fontSize: 12.5)),
+          Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
           Text(amount, style: const TextStyle(color: AppColors.accent, fontSize: 12.5, fontWeight: FontWeight.bold)),
         ],
       ),

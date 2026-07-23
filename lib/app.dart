@@ -33,7 +33,7 @@ class GstCbtApp extends StatelessWidget {
       child: MaterialApp(
         title: 'CBT',
         debugShowCheckedModeBanner: false,
-        theme: AppTheme.lightTheme,
+        theme: AppTheme.darkTheme,
         initialRoute: AppRoutes.splash,
         routes: {
           AppRoutes.splash: (context) => const SplashScreen(),

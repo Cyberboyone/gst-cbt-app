@@ -32,7 +32,6 @@ class _ExamScreenState extends State<ExamScreen> {
       });
     }
 
-    // Time warning at 60 seconds
     if (quiz.mode == QuizMode.exam && quiz.examRemainingSeconds <= 60 && quiz.examRemainingSeconds > 0 && !_timeWarningPlayed) {
       _timeWarningPlayed = true;
       final settings = Provider.of<SettingsProvider>(context, listen: false);
@@ -70,7 +69,7 @@ class _ExamScreenState extends State<ExamScreen> {
 
     if (auto) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Time expired! Exam auto-submitted.'), backgroundColor: Colors.red),
+        const SnackBar(content: Text('Time expired! Exam auto-submitted.'), backgroundColor: AppColors.destructive),
       );
     }
 
@@ -105,7 +104,7 @@ class _ExamScreenState extends State<ExamScreen> {
     showModalBottomSheet(
       context: context,
       shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(24.0))),
-        backgroundColor: AppColors.background,
+      backgroundColor: AppColors.surface,
       builder: (context) => Container(
         padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 24.0),
         child: Column(
@@ -127,16 +126,16 @@ class _ExamScreenState extends State<ExamScreen> {
                   final isAnswered = quiz.examAnswers.containsKey(idx);
                   final isCurrent = quiz.currentIndex == idx;
 
-                  Color color = Colors.white;
-                  Color border = AppColors.primary.withOpacity(0.12);
-                  Color text = AppColors.primary;
+                  Color color = AppColors.glassBg;
+                  Color border = AppColors.glassBorder;
+                  Color text = AppColors.textPrimary;
 
                   if (isCurrent) {
                     border = AppColors.accent;
-                    color = AppColors.accent.withOpacity(0.08);
+                    color = AppColors.accent.withOpacity(0.1);
                   } else if (isAnswered) {
                     color = AppColors.primary;
-                    text = Colors.white;
+                    text = AppColors.onPrimary;
                   }
 
                   return GestureDetector(
@@ -171,11 +170,12 @@ class _ExamScreenState extends State<ExamScreen> {
     final currentQ = quizProvider.currentQuestion;
 
     if (activeCourse == null || quizProvider.isLoading) {
-      return const Scaffold(body: Center(child: CircularProgressIndicator(color: AppColors.accent)));
+      return const Scaffold(backgroundColor: AppColors.background, body: Center(child: CircularProgressIndicator(color: AppColors.primary)));
     }
 
     if (questions.isEmpty || currentQ == null) {
       return Scaffold(
+        backgroundColor: AppColors.background,
         appBar: AppBar(title: Text(activeCourse.code)),
         body: const Center(child: Text('No questions loaded')),
       );
@@ -186,12 +186,13 @@ class _ExamScreenState extends State<ExamScreen> {
     final isTimeLow = quizProvider.examRemainingSeconds <= 60;
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(activeCourse.code, style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 16.0)),
-            const Text('Exam Mode', style: TextStyle(color: Colors.red, fontSize: 11.0, fontWeight: FontWeight.bold)),
+            const Text('Exam Mode', style: TextStyle(color: AppColors.destructive, fontSize: 11.0, fontWeight: FontWeight.bold)),
           ],
         ),
         centerTitle: true,
@@ -206,19 +207,19 @@ class _ExamScreenState extends State<ExamScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
             margin: const EdgeInsets.only(right: 14.0),
             decoration: BoxDecoration(
-              color: isTimeLow ? Colors.red.withOpacity( 0.15) : Colors.red.withOpacity( 0.08),
+              color: isTimeLow ? AppColors.destructive.withOpacity(0.15) : AppColors.destructive.withOpacity(0.08),
               borderRadius: BorderRadius.circular(10.0),
-              border: isTimeLow ? Border.all(color: Colors.red, width: 1.5) : null,
+              border: isTimeLow ? Border.all(color: AppColors.destructive, width: 1.5) : null,
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.timer_outlined, color: isTimeLow ? Colors.red.shade700 : Colors.red, size: 16.0),
+                Icon(Icons.timer_outlined, color: isTimeLow ? AppColors.destructive : AppColors.secondary, size: 16.0),
                 const SizedBox(width: 4.0),
                 Text(
                   _formatDuration(quizProvider.examRemainingSeconds),
                   style: TextStyle(
-                    color: isTimeLow ? Colors.red.shade700 : Colors.red,
+                    color: isTimeLow ? AppColors.destructive : AppColors.secondary,
                     fontWeight: FontWeight.w800,
                     fontSize: 13.0,
                   ),
@@ -252,7 +253,7 @@ class _ExamScreenState extends State<ExamScreen> {
                         icon: const Icon(Icons.grid_on_rounded, size: 14),
                         label: const Text('View All'),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: AppColors.primary.withOpacity(0.06),
+                          backgroundColor: AppColors.primary.withOpacity(0.1),
                           foregroundColor: AppColors.primary,
                           elevation: 0,
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
@@ -274,14 +275,14 @@ class _ExamScreenState extends State<ExamScreen> {
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: AppColors.glassBg,
                         borderRadius: BorderRadius.circular(20.0),
-                        boxShadow: AppColors.clayShadow,
+                        border: Border.all(color: AppColors.glassBorder, width: 1),
                       ),
                       padding: const EdgeInsets.all(22.0),
                       child: Text(
                         currentQ!.text,
-                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.primary, height: 1.4),
+                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.textPrimary, height: 1.4),
                       ),
                     ),
                     const SizedBox(height: 24.0),
@@ -293,21 +294,20 @@ class _ExamScreenState extends State<ExamScreen> {
                       return Container(
                         margin: const EdgeInsets.only(bottom: 12.0),
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: AppColors.glassBg,
                           borderRadius: BorderRadius.circular(16.0),
-                          border: Border.all(color: isSelected ? AppColors.primary : Colors.transparent, width: 2.0),
-                          boxShadow: AppColors.clayShadowSmall,
+                          border: Border.all(color: isSelected ? AppColors.primary : AppColors.glassBorder, width: 2.0),
                         ),
                         child: ListTile(
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                           onTap: () => quizProvider.selectOption(idx),
                           leading: CircleAvatar(
                             radius: 14.0,
-                            backgroundColor: isSelected ? AppColors.primary : AppColors.primary.withOpacity(0.08),
+                            backgroundColor: isSelected ? AppColors.primary : AppColors.muted,
                             child: Text(
                               String.fromCharCode(65 + idx),
                               style: TextStyle(
-                                color: isSelected ? Colors.white : AppColors.primary,
+                                color: isSelected ? AppColors.onPrimary : AppColors.textPrimary,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12.0,
                               ),
@@ -326,14 +326,15 @@ class _ExamScreenState extends State<ExamScreen> {
               padding: const EdgeInsets.all(22.0),
               child: Row(
                 children: [
-                  IconButton.filledTonal(
+                  IconButton(
                     onPressed: quizProvider.currentIndex > 0
                         ? () => quizProvider.navigateToQuestion(quizProvider.currentIndex - 1)
                         : null,
                     icon: const Icon(Icons.arrow_back_ios_new_rounded),
                     style: IconButton.styleFrom(
                       padding: const EdgeInsets.all(16.0),
-                      backgroundColor: AppColors.primary.withOpacity(0.06),
+                      backgroundColor: AppColors.glassBg,
+                      foregroundColor: quizProvider.currentIndex > 0 ? AppColors.primary : AppColors.textMuted,
                     ),
                   ),
                   const SizedBox(width: 14.0),
@@ -348,12 +349,6 @@ class _ExamScreenState extends State<ExamScreen> {
                               _confirmSubmit(context, quizProvider);
                             }
                           },
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.primary,
-                            foregroundColor: Colors.white,
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
-                            elevation: 0,
-                          ),
                           child: Text(
                             quizProvider.currentIndex < questions.length - 1 ? 'Next' : 'Submit Exam',
                             style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
@@ -380,8 +375,9 @@ class _ExamScreenState extends State<ExamScreen> {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+        backgroundColor: AppColors.surface,
         title: const Text('Submit Exam?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
-        content: Text(alertText, style: const TextStyle(color: AppColors.inkSoft)),
+        content: Text(alertText, style: const TextStyle(color: AppColors.textSecondary)),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
           TextButton(
@@ -401,6 +397,7 @@ class _ExamScreenState extends State<ExamScreen> {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+        backgroundColor: AppColors.surface,
         title: const Text('Cancel Exam?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
         content: const Text('Your answers will be lost and this attempt will not be recorded.'),
         actions: [
@@ -410,7 +407,7 @@ class _ExamScreenState extends State<ExamScreen> {
               Navigator.pop(context);
               Navigator.pop(context);
             },
-            child: const Text('Cancel Exam', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold)),
+            child: const Text('Cancel Exam', style: TextStyle(color: AppColors.destructive, fontWeight: FontWeight.bold)),
           ),
         ],
       ),

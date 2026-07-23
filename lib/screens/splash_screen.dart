@@ -23,7 +23,6 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void _startTimer() {
-    // Show splash for 2.5 seconds, but allow skip after 1 second
     Future.delayed(const Duration(seconds: 1), () {
       if (mounted) {
         setState(() {
@@ -62,39 +61,31 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.primary,
+      backgroundColor: AppColors.background,
       body: SafeArea(
         child: Stack(
           children: [
-            // Center Logo & Lottie
             Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // App Emblem
                   Container(
                     width: 90.0,
                     height: 90.0,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.accent,
                     ),
-                    alignment: Alignment.center,
-                    child: const Text(
-                      'GST',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 28.0,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: -1.0,
-                      ),
+                    clipBehavior: Clip.antiAlias,
+                    child: Image.asset(
+                      'assets/icon.png',
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 24.0),
                   const Text(
                     'CBT',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: AppColors.textPrimary,
                       fontSize: 24.0,
                       fontWeight: FontWeight.w800,
                       letterSpacing: -0.5,
@@ -104,22 +95,20 @@ class _SplashScreenState extends State<SplashScreen> {
                   Text(
                     'Practice offline. Pass once.',
                     style: TextStyle(
-                      color: Colors.white.withOpacity( 0.6),
+                      color: AppColors.textSecondary.withOpacity(0.6),
                       fontSize: 14.0,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
                   const SizedBox(height: 48.0),
-                  
-                  // Animated loading indicator
-                  SizedBox(
+                  const SizedBox(
                     height: 80.0,
                     child: Center(
                       child: SizedBox(
                         width: 40.0,
                         height: 40.0,
                         child: CircularProgressIndicator(
-                          color: AppColors.accent,
+                          color: AppColors.primary,
                           strokeWidth: 3.0,
                         ),
                       ),
@@ -128,8 +117,6 @@ class _SplashScreenState extends State<SplashScreen> {
                 ],
               ),
             ),
-            
-            // Skippable indicator
             if (_canSkip)
               Positioned(
                 bottom: 24.0,
@@ -142,7 +129,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       Text(
                         'Skip',
                         style: TextStyle(
-                          color: Colors.white.withOpacity( 0.7),
+                          color: AppColors.textSecondary.withOpacity(0.7),
                           fontSize: 14.0,
                           fontWeight: FontWeight.w700,
                         ),
@@ -150,7 +137,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       const SizedBox(width: 4.0),
                       Icon(
                         Icons.double_arrow_rounded,
-                        color: Colors.white.withOpacity( 0.7),
+                        color: AppColors.textSecondary.withOpacity(0.7),
                         size: 16.0,
                       ),
                     ],

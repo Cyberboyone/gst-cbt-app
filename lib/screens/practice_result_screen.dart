@@ -88,7 +88,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
   void _shareResults(String nickname) {
     final msg = 'Hey! I just completed a ${widget.courseCode} Practice Session on the CBT App.\n'
         'Score: $_scorePercentage% (${widget.correctAnswers}/${widget.totalQuestions} correct)\n'
-        'Best Combo: ${widget.bestCombo}x 🔥\n'
+        'Best Combo: ${widget.bestCombo}x \u{1F525}\n'
         'XP Earned: +${widget.xpEarned} | Coins: +${widget.coinsEarned}\n'
         'Download the app to test your prep!';
     Share.share(msg);
@@ -111,7 +111,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
         build: (pw.Context context) => pw.Column(
           crossAxisAlignment: pw.CrossAxisAlignment.start,
           children: [
-            // Header
             pw.Row(
               mainAxisAlignment: pw.MainAxisAlignment.spaceBetween,
               children: [
@@ -135,8 +134,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             pw.SizedBox(height: 20),
             pw.Divider(color: PdfColors.indigo200),
             pw.SizedBox(height: 12),
-
-            // Student info
             pw.Container(
               padding: pw.EdgeInsets.all(12),
               decoration: pw.BoxDecoration(
@@ -179,8 +176,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
               ),
             ),
             pw.SizedBox(height: 20),
-
-            // Score
             pw.Center(
               child: pw.Container(
                 padding: pw.EdgeInsets.all(20),
@@ -201,22 +196,14 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
               ),
             ),
             pw.SizedBox(height: 20),
-
-            // Summary Table
             pw.Text('Session Summary', style: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 16, color: PdfColors.indigo700)),
             pw.SizedBox(height: 10),
             pw.Table.fromTextArray(
               headerStyle: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 11),
               cellStyle: pw.TextStyle(fontSize: 11),
               cellHeight: 30,
-              cellAlignments: {
-                0: pw.Alignment.centerLeft,
-                1: pw.Alignment.centerRight,
-              },
-              headerAlignments: {
-                0: pw.Alignment.centerLeft,
-                1: pw.Alignment.centerRight,
-              },
+              cellAlignments: {0: pw.Alignment.centerLeft, 1: pw.Alignment.centerRight},
+              headerAlignments: {0: pw.Alignment.centerLeft, 1: pw.Alignment.centerRight},
               data: [
                 ['Metric', 'Value'],
                 ['Course', widget.courseCode],
@@ -231,8 +218,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
               ],
             ),
             pw.SizedBox(height: 20),
-
-            // Footer
             pw.Divider(color: PdfColors.grey300),
             pw.SizedBox(height: 8),
             pw.Center(
@@ -256,8 +241,11 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
   Widget build(BuildContext context) {
     final profile = context.watch<ProfileProvider>().profile;
     final nickname = profile?.nickname ?? 'Student';
+    final isPassed = _scorePercentage >= 45;
+    final isHigh = _scorePercentage >= 80;
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text('Practice Result', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         centerTitle: true,
@@ -274,7 +262,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
           children: [
             const SizedBox(height: 12.0),
 
-            // Animated Score ring
             Center(
               child: ScaleTransition(
                 scale: _scaleAnimation,
@@ -294,7 +281,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                         style: TextStyle(
                           fontSize: 10.0,
                           fontWeight: FontWeight.bold,
-                          color: _scorePercentage >= 80 ? AppColors.accent : (_scorePercentage >= 45 ? Colors.green : Colors.orange),
+                          color: isHigh ? AppColors.accent : (isPassed ? AppColors.correct : AppColors.secondary),
                           letterSpacing: 1.0,
                         ),
                       ),
@@ -305,31 +292,38 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             ),
             const SizedBox(height: 32.0),
 
-            // Score description banner
             Container(
               decoration: BoxDecoration(
-                color: _scorePercentage >= 80 ? AppColors.lavender : (_scorePercentage >= 45 ? AppColors.mint : AppColors.peach),
+                color: isHigh ? AppColors.xpLight : (isPassed ? AppColors.correctLight : AppColors.incorrectLight),
                 borderRadius: BorderRadius.circular(16.0),
+                border: Border.all(
+                  color: isHigh ? AppColors.xp : (isPassed ? AppColors.correct : AppColors.destructive),
+                  width: 1,
+                ),
               ),
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(_scorePercentage >= 80 ? '💯' : (_scorePercentage >= 45 ? '🏆' : '📚'), style: const TextStyle(fontSize: 24.0)),
+                  Icon(
+                    isHigh ? Icons.stars_rounded : (isPassed ? Icons.emoji_events_rounded : Icons.school_rounded),
+                    color: isHigh ? AppColors.xp : (isPassed ? AppColors.correct : AppColors.destructive),
+                    size: 24.0,
+                  ),
                   const SizedBox(width: 14.0),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          _scorePercentage >= 80 ? 'Excellent Work!' : (_scorePercentage >= 45 ? 'Good Progress!' : 'Keep Practicing!'),
-                          style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary),
+                          isHigh ? 'Excellent Work!' : (isPassed ? 'Good Progress!' : 'Keep Practicing!'),
+                          style: TextStyle(fontWeight: FontWeight.bold, color: isHigh ? AppColors.xp : (isPassed ? AppColors.correct : AppColors.destructive)),
                         ),
                         const SizedBox(height: 2.0),
                         Text(
-                          _scorePercentage >= 80
+                          isHigh
                               ? 'Outstanding performance! You nailed most of the questions.'
-                              : (_scorePercentage >= 45 ? 'Nice work! Review the ones you missed.' : 'Practice makes perfect. Try again to improve!'),
-                          style: const TextStyle(fontSize: 12.0, color: AppColors.primary),
+                              : (isPassed ? 'Nice work! Review the ones you missed.' : 'Practice makes perfect. Try again to improve!'),
+                          style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
                         ),
                       ],
                     ),
@@ -339,52 +333,54 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             ),
             const SizedBox(height: 24.0),
 
-            // Session Summary
-            const Text('Session Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            const Text('Session Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: AppColors.glassBg,
                 borderRadius: BorderRadius.circular(16.0),
-                boxShadow: AppColors.clayShadow,
+                border: Border.all(color: AppColors.glassBorder, width: 1),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Column(
                 children: [
                   _buildStatRow('Course', widget.courseCode),
-                  const Divider(height: 1),
+                  const Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Questions Attempted', '${widget.totalQuestions}'),
-                  const Divider(height: 1),
+                  const Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Correct Answers', '${widget.correctAnswers}'),
-                  const Divider(height: 1),
+                  const Divider(height: 1, color: AppColors.divider),
                   if (widget.bestCombo >= 3) ...[
-                    _buildStatRow('Best Combo', '${widget.bestCombo}x 🔥'),
-                    const Divider(height: 1),
+                    _buildStatRow('Best Combo', '${widget.bestCombo}x \u{1F525}'),
+                    const Divider(height: 1, color: AppColors.divider),
                   ],
                   if (widget.multiplier > 1.0) ...[
                     _buildStatRow('Multiplier', 'x${widget.multiplier.toStringAsFixed(1)}'),
-                    const Divider(height: 1),
+                    const Divider(height: 1, color: AppColors.divider),
                   ],
                 ],
               ),
             ),
             const SizedBox(height: 24.0),
 
-            // Rewards
-            const Text('Rewards Earned', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            const Text('Rewards Earned', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Row(
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: AppColors.lavender, borderRadius: BorderRadius.circular(14.0)),
+                    decoration: BoxDecoration(
+                      color: AppColors.xpLight,
+                      borderRadius: BorderRadius.circular(14.0),
+                      border: Border.all(color: AppColors.xp.withOpacity(0.3)),
+                    ),
                     padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('XP Earned', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        const Text('XP Earned', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$widget.xpEarned XP', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+$widget.xpEarned XP', style: const TextStyle(color: AppColors.xp, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -392,14 +388,18 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                 const SizedBox(width: 12.0),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: AppColors.sky, borderRadius: BorderRadius.circular(14.0)),
+                    decoration: BoxDecoration(
+                      color: AppColors.coinsLight,
+                      borderRadius: BorderRadius.circular(14.0),
+                      border: Border.all(color: AppColors.coins.withOpacity(0.3)),
+                    ),
                     padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Coins Reward', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        const Text('Coins Reward', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+${widget.coinsEarned} 🪙', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+${widget.coinsEarned}', style: const TextStyle(color: AppColors.coins, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -408,7 +408,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             ),
             const SizedBox(height: 36.0),
 
-            // Print button (full width)
             SizedBox(
               width: double.infinity,
               height: 50.0,
@@ -416,15 +415,10 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                 onPressed: () => _printResult(nickname),
                 icon: const Icon(Icons.print_rounded, color: AppColors.primary, size: 18),
                 label: const Text('Print Result', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
-                style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: AppColors.primary, width: 1.5),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                ),
               ),
             ),
             const SizedBox(height: 10.0),
 
-            // Share + Home
             Row(
               children: [
                 Expanded(
@@ -434,10 +428,6 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                       onPressed: () => _shareResults(nickname),
                       icon: const Icon(Icons.share_rounded, color: AppColors.accent, size: 18),
                       label: const Text('Share', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
-                      style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: AppColors.accent, width: 1.5),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                      ),
                     ),
                   ),
                 ),
@@ -449,9 +439,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                       onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.accent,
-                        foregroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                        elevation: 0,
+                        foregroundColor: AppColors.onPrimary,
                       ),
                       child: const Text('Home', style: TextStyle(fontWeight: FontWeight.bold)),
                     ),
@@ -475,7 +463,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13.5, fontWeight: FontWeight.bold)),
+          Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13.5, fontWeight: FontWeight.bold)),
           Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 13.5, fontWeight: FontWeight.w800)),
         ],
       ),

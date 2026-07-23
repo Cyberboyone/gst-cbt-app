@@ -23,14 +23,13 @@ class CourseCard extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(bottom: 14.0),
         decoration: BoxDecoration(
-          color: course.color,
+          color: AppColors.glassBg,
           borderRadius: BorderRadius.circular(20.0),
-          boxShadow: AppColors.clayShadow,
+          border: Border.all(color: AppColors.glassBorder, width: 1),
         ),
         clipBehavior: Clip.antiAlias,
         child: Stack(
           children: [
-            // Decorative circular overlay in top-right
             Positioned(
               right: -18.0,
               top: -18.0,
@@ -39,23 +38,20 @@ class CourseCard extends StatelessWidget {
                 height: 70.0,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.white.withOpacity( 0.35),
+                  color: course.color.withOpacity(0.15),
                 ),
               ),
             ),
-            
-            // Card Content
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  // Icon badge
                   Container(
                     width: 44.0,
                     height: 44.0,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.white.withOpacity( 0.7),
+                      color: course.color.withOpacity(0.2),
                     ),
                     alignment: Alignment.center,
                     child: Text(
@@ -64,8 +60,6 @@ class CourseCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 14.0),
-                  
-                  // Info column
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -74,7 +68,7 @@ class CourseCard extends StatelessWidget {
                         Text(
                           course.code,
                           style: const TextStyle(
-                            color: AppColors.inkSoft,
+                            color: AppColors.textMuted,
                             fontSize: 11.0,
                             fontWeight: FontWeight.w700,
                             letterSpacing: 0.3,
@@ -90,8 +84,6 @@ class CourseCard extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(height: 8.0),
-                        
-                        // Progress bar background
                         ClipRRect(
                           borderRadius: BorderRadius.circular(4.0),
                           child: LinearProgressIndicator(
@@ -114,8 +106,6 @@ class CourseCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 14.0),
-                  
-                  // Go Button (arrow button)
                   Container(
                     width: 36.0,
                     height: 36.0,
@@ -126,7 +116,7 @@ class CourseCard extends StatelessWidget {
                     alignment: Alignment.center,
                     child: const Icon(
                       Icons.arrow_forward,
-                      color: Colors.white,
+                      color: AppColors.onPrimary,
                       size: 16.0,
                     ),
                   ),

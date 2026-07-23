@@ -9,6 +9,7 @@ class AboutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text('About CBT', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         backgroundColor: Colors.transparent,
@@ -27,23 +28,22 @@ class AboutScreen extends StatelessWidget {
                     height: 72.0,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.accent,
                     ),
-                    alignment: Alignment.center,
-                    child: const Text(
-                      'GST',
-                      style: TextStyle(color: Colors.white, fontSize: 22.0, fontWeight: FontWeight.w900),
+                    clipBehavior: Clip.antiAlias,
+                    child: Image.asset(
+                      'assets/icon.png',
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 16.0),
                   const Text(
                     AppConstants.appName,
-                    style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, color: AppColors.primary),
+                    style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
                   ),
                   const SizedBox(height: 4.0),
                   const Text(
                     'Version ${AppConstants.appVersion}',
-                    style: TextStyle(fontSize: 13.0, color: AppColors.inkSoft),
+                    style: TextStyle(fontSize: 13.0, color: AppColors.textSecondary),
                   ),
                 ],
               ),
@@ -57,7 +57,7 @@ class AboutScreen extends StatelessWidget {
             const SizedBox(height: 8.0),
             const Text(
               'CBT is a specialized computer-based test training platform crafted for Nigerian university undergraduates studying General Studies (GST) courses. It provides complete offline support for taking exam simulations, and analyzing performance metrics over time.',
-              style: TextStyle(color: AppColors.inkSoft, fontSize: 13.0, height: 1.45),
+              style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.45),
             ),
             const SizedBox(height: 24.0),
 
@@ -79,7 +79,7 @@ class AboutScreen extends StatelessWidget {
             const SizedBox(height: 8.0),
             const Text(
               'Siyayya.com is a digital education and resources network. Our objective is to make tertiary education tools accessible, reliable, and affordable for all students.',
-              style: TextStyle(color: AppColors.inkSoft, fontSize: 13.0, height: 1.45),
+              style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.45),
             ),
             const SizedBox(height: 24.0),
 
@@ -90,7 +90,7 @@ class AboutScreen extends StatelessWidget {
             const SizedBox(height: 8.0),
             const Text(
               'Encountered a bug or have questions/suggestions? Please reach out to us:',
-              style: TextStyle(color: AppColors.inkSoft, fontSize: 13.0, height: 1.4),
+              style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.4),
             ),
             const SizedBox(height: 8.0),
             Text(
@@ -111,13 +111,13 @@ class AboutScreen extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('• ', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold, fontSize: 16.0)),
+          const Text('\u2022 ', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold, fontSize: 16.0)),
           Expanded(
             child: RichText(
               text: TextSpan(
-                style: const TextStyle(fontFamily: 'Nunito', fontSize: 13.0, color: AppColors.inkSoft),
+                style: const TextStyle(fontFamily: 'Nunito', fontSize: 13.0, color: AppColors.textSecondary),
                 children: [
-                  TextSpan(text: '$title: ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
+                  TextSpan(text: '$title: ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
                   TextSpan(text: desc),
                 ],
               ),

@@ -14,11 +14,11 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
+      decoration: const BoxDecoration(
+        color: AppColors.surface,
         border: Border(
           top: BorderSide(
-            color: AppColors.primary.withOpacity( 0.06),
+            color: AppColors.glassBorder,
             width: 1.0,
           ),
         ),
@@ -41,29 +41,39 @@ class NavBar extends StatelessWidget {
   Widget _buildNavItem(int index, IconData icon, String label) {
     final isActive = currentIndex == index;
     final activeColor = AppColors.primary;
-    final inactiveColor = const Color(0xFFAEB6C4);
+    final inactiveColor = AppColors.textMuted;
 
     return GestureDetector(
       onTap: () => onTap(index),
       behavior: HitTestBehavior.opaque,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            icon,
-            size: 22.0,
-            color: isActive ? activeColor : inactiveColor,
-          ),
-          const SizedBox(height: 4.0),
-          Text(
-            label,
-            style: TextStyle(
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+        decoration: isActive
+            ? BoxDecoration(
+                color: AppColors.primary.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(12.0),
+              )
+            : null,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              icon,
+              size: 22.0,
               color: isActive ? activeColor : inactiveColor,
-              fontSize: 12.0,
-              fontWeight: FontWeight.w700,
             ),
-          ),
-        ],
+            const SizedBox(height: 4.0),
+            Text(
+              label,
+              style: TextStyle(
+                color: isActive ? activeColor : inactiveColor,
+                fontSize: 11.0,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

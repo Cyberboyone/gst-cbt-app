@@ -148,10 +148,10 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24.0)),
-        backgroundColor: AppColors.cream,
+        backgroundColor: AppColors.surface,
         title: Column(
           children: [
-            Text(leveledUp ? '🎉' : '🏅', style: const TextStyle(fontSize: 48.0)),
+            Text(leveledUp ? '\u{1F389}' : '\u{1F3C5}', style: const TextStyle(fontSize: 48.0)),
             const SizedBox(height: 8.0),
             Text(
               leveledUp ? 'Level Up!' : 'Achievement Unlocked!',
@@ -176,7 +176,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                     const SizedBox(width: 8.0),
                     Text(
                       'You are now a ${levelInfo['title']}!',
-                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16.0),
+                      style: const TextStyle(color: AppColors.onPrimary, fontWeight: FontWeight.bold, fontSize: 16.0),
                     ),
                   ],
                 ),
@@ -189,14 +189,15 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               ...newBadges.map((id) {
                 final badge = AppConstants.badgeCatalog.firstWhere(
                   (b) => b['id'] == id,
-                  orElse: () => {'name': id, 'icon': '🏆'},
+                  orElse: () => {'name': id, 'icon': '\u{1F3C6}'},
                 );
                 return Container(
                   margin: const EdgeInsets.only(bottom: 6.0),
                   padding: const EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: AppColors.glassBg,
                     borderRadius: BorderRadius.circular(10.0),
+                    border: Border.all(color: AppColors.glassBorder),
                   ),
                   child: Row(
                     children: [
@@ -207,7 +208,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(badge['name']!, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 13.0)),
-                            Text(badge['description']!, style: const TextStyle(color: AppColors.inkSoft, fontSize: 11.0)),
+                            Text(badge['description']!, style: const TextStyle(color: AppColors.textSecondary, fontSize: 11.0)),
                           ],
                         ),
                       ),
@@ -229,7 +230,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: AppColors.accent,
-                foregroundColor: Colors.white,
+                foregroundColor: AppColors.onPrimary,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
               ),
               child: const Text('Awesome!', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -362,14 +363,8 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               headerStyle: pw.TextStyle(fontWeight: pw.FontWeight.bold, fontSize: 11),
               cellStyle: pw.TextStyle(fontSize: 11),
               cellHeight: 30,
-              cellAlignments: {
-                0: pw.Alignment.centerLeft,
-                1: pw.Alignment.centerRight,
-              },
-              headerAlignments: {
-                0: pw.Alignment.centerLeft,
-                1: pw.Alignment.centerRight,
-              },
+              cellAlignments: {0: pw.Alignment.centerLeft, 1: pw.Alignment.centerRight},
+              headerAlignments: {0: pw.Alignment.centerLeft, 1: pw.Alignment.centerRight},
               data: [
                 ['Metric', 'Value'],
                 ['Course', widget.courseCode],
@@ -417,6 +412,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
     final earnedCoins = (widget.correctAnswers * 1) + displayCoinBonus;
 
     return Scaffold(
+      backgroundColor: AppColors.background,
       appBar: AppBar(
         title: const Text('Exam Result', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
         centerTitle: true,
@@ -433,7 +429,6 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
           children: [
             const SizedBox(height: 12.0),
 
-            // Animated Score ring
             Center(
               child: ScaleTransition(
                 scale: _scaleAnimation,
@@ -453,7 +448,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                         style: TextStyle(
                           fontSize: 10.0,
                           fontWeight: FontWeight.bold,
-                          color: isPerfect ? AppColors.accent : (isPassed ? Colors.green : Colors.red),
+                          color: isPerfect ? AppColors.accent : (isPassed ? AppColors.correct : AppColors.destructive),
                           letterSpacing: 1.0,
                         ),
                       ),
@@ -464,16 +459,23 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 32.0),
 
-            // Score Description Banner
             Container(
               decoration: BoxDecoration(
-                color: isPerfect ? AppColors.lavender : (isPassed ? AppColors.mint : AppColors.peach),
+                color: isPerfect ? AppColors.xpLight : (isPassed ? AppColors.correctLight : AppColors.incorrectLight),
                 borderRadius: BorderRadius.circular(16.0),
+                border: Border.all(
+                  color: isPerfect ? AppColors.xp : (isPassed ? AppColors.correct : AppColors.destructive),
+                  width: 1,
+                ),
               ),
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text(isPerfect ? '💯' : (isPassed ? '🏆' : '📚'), style: const TextStyle(fontSize: 24.0)),
+                  Icon(
+                    isPerfect ? Icons.stars_rounded : (isPassed ? Icons.emoji_events_rounded : Icons.school_rounded),
+                    color: isPerfect ? AppColors.xp : (isPassed ? AppColors.correct : AppColors.destructive),
+                    size: 24.0,
+                  ),
                   const SizedBox(width: 14.0),
                   Expanded(
                     child: Column(
@@ -481,14 +483,14 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       children: [
                         Text(
                           isPerfect ? 'Outstanding! Perfect Score!' : (isPassed ? 'Credit Accomplished!' : 'Keep Practicing!'),
-                          style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary),
+                          style: TextStyle(fontWeight: FontWeight.bold, color: isPerfect ? AppColors.xp : (isPassed ? AppColors.correct : AppColors.destructive)),
                         ),
                         const SizedBox(height: 2.0),
                         Text(
                           isPerfect
                               ? 'Flawless performance! You aced every single question!'
                               : (isPassed ? 'Congratulations! You performed above the credit cut-off of 45%.' : 'The passing score is 45%. Take another review practice.'),
-                          style: const TextStyle(fontSize: 12.0, color: AppColors.primary),
+                          style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
                         ),
                       ],
                     ),
@@ -498,26 +500,26 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: AppColors.glassBg,
                 borderRadius: BorderRadius.circular(16.0),
-                boxShadow: AppColors.clayShadow,
+                border: Border.all(color: AppColors.glassBorder, width: 1),
               ),
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
               child: Column(
                 children: [
                   _buildStatRow('Course Subject', widget.courseCode),
-                  const Divider(height: 1),
+                  const Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Questions Attempted', '${widget.totalQuestions}'),
-                  const Divider(height: 1),
+                  const Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Correct Answers', '${widget.correctAnswers}'),
-                  const Divider(height: 1),
+                  const Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Time Spent', _formatTime(widget.timeSpentSeconds)),
                   if (streakMultiplier > 1.0) ...[
-                    const Divider(height: 1),
+                    const Divider(height: 1, color: AppColors.divider),
                     _buildStatRow('Streak Multiplier', 'x${streakMultiplier.toStringAsFixed(1)}'),
                   ],
                 ],
@@ -525,20 +527,24 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.primary)),
+            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Row(
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: AppColors.lavender, borderRadius: BorderRadius.circular(14.0)),
+                    decoration: BoxDecoration(
+                      color: AppColors.xpLight,
+                      borderRadius: BorderRadius.circular(14.0),
+                      border: Border.all(color: AppColors.xp.withOpacity(0.3)),
+                    ),
                     padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('XP Earned', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        const Text('XP Earned', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+$earnedXp XP', style: const TextStyle(color: AppColors.xp, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -546,14 +552,18 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                 const SizedBox(width: 12.0),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: AppColors.sky, borderRadius: BorderRadius.circular(14.0)),
+                    decoration: BoxDecoration(
+                      color: AppColors.coinsLight,
+                      borderRadius: BorderRadius.circular(14.0),
+                      border: Border.all(color: AppColors.coins.withOpacity(0.3)),
+                    ),
                     padding: const EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Coins Reward', style: TextStyle(color: AppColors.inkSoft, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        const Text('Coins Reward', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
-                        Text('+$earnedCoins 🪙', style: const TextStyle(color: AppColors.primary, fontSize: 18.0, fontWeight: FontWeight.w900)),
+                        Text('+$earnedCoins', style: const TextStyle(color: AppColors.coins, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
                     ),
                   ),
@@ -562,7 +572,6 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 36.0),
 
-            // Print button (full width)
             SizedBox(
               width: double.infinity,
               height: 50.0,
@@ -570,15 +579,10 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                 onPressed: () => _printResult(nickname),
                 icon: const Icon(Icons.print_rounded, color: AppColors.primary, size: 18),
                 label: const Text('Print Result', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold)),
-                style: OutlinedButton.styleFrom(
-                  side: const BorderSide(color: AppColors.primary, width: 1.5),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                ),
               ),
             ),
             const SizedBox(height: 10.0),
 
-            // Share + Home
             Row(
               children: [
                 Expanded(
@@ -588,10 +592,6 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       onPressed: () => _shareResults(nickname),
                       icon: const Icon(Icons.share_rounded, color: AppColors.accent, size: 18),
                       label: const Text('Share', style: TextStyle(color: AppColors.accent, fontWeight: FontWeight.bold)),
-                      style: OutlinedButton.styleFrom(
-                        side: const BorderSide(color: AppColors.accent, width: 1.5),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                      ),
                     ),
                   ),
                 ),
@@ -603,9 +603,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                       onPressed: () => Navigator.of(context).popUntil((route) => route.isFirst),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.accent,
-                        foregroundColor: Colors.white,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.0)),
-                        elevation: 0,
+                        foregroundColor: AppColors.onPrimary,
                       ),
                       child: const Text('Home', style: TextStyle(fontWeight: FontWeight.bold)),
                     ),
@@ -629,7 +627,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.inkSoft, fontSize: 13.5, fontWeight: FontWeight.bold)),
+          Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13.5, fontWeight: FontWeight.bold)),
           Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 13.5, fontWeight: FontWeight.w800)),
         ],
       ),
