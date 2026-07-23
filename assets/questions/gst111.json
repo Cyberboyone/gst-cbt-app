@@ -1,72 +1,2698 @@
-{
-  "course_id": "gst111",
-  "course_name": "Logic & Philosophy",
-  "version": "1.0.0",
-  "questions": [
-    {
-      "id": "gst111_001",
-      "text": "What is the primary definition of philosophy based on its Greek etymology?",
-      "options": [
-        "Love of knowledge",
-        "Love of wisdom",
-        "Search for truth",
-        "Study of existence"
-      ],
-      "correct_index": 1,
-      "explanation": "Philosophy comes from the Greek words 'philo' (love) and 'sophia' (wisdom), meaning 'love of wisdom'.",
-      "difficulty": 1
-    },
-    {
-      "id": "gst111_002",
-      "text": "A fallacy that attacks the person making the argument rather than addressing the argument itself is called:",
-      "options": [
-        "Argumentum ad Populum",
-        "Argumentum ad Hominem",
-        "Petitio Principii",
-        "Post Hoc Ergo Propter Hoc"
-      ],
-      "correct_index": 1,
-      "explanation": "'Ad Hominem' is Latin for 'to the man'. It occurs when an arguer attacks their opponent's character or background instead of their actual claims.",
-      "difficulty": 1
-    },
-    {
-      "id": "gst111_003",
-      "text": "Which branch of philosophy is concerned with the nature, origin, and limits of human knowledge?",
-      "options": [
-        "Metaphysics",
-        "Epistemology",
-        "Aesthetics",
-        "Ethics"
-      ],
-      "correct_index": 1,
-      "explanation": "Epistemology is the study of knowledge. It answers questions like: 'What is knowledge?', 'How do we acquire it?', and 'What is the limit of what we can know?'.",
-      "difficulty": 2
-    },
-    {
-      "id": "gst111_004",
-      "text": "Consider the syllogism: 'All humans are mortal. Socrates is human. Therefore, Socrates is mortal.' This is an example of what type of reasoning?",
-      "options": [
-        "Inductive reasoning",
-        "Deductive reasoning",
-        "Abductive reasoning",
-        "Fallacious reasoning"
-      ],
-      "correct_index": 1,
-      "explanation": "Deductive reasoning starts with general premises and draws a specific, logically certain conclusion. If the premises are true, the conclusion must be true.",
-      "difficulty": 2
-    },
-    {
-      "id": "gst111_005",
-      "text": "A proposition that is assumed to be true without proof, serving as a basis for further reasoning, is known as a/an:",
-      "options": [
-        "Theorem",
-        "Axiom",
-        "Hypothesis",
-        "Conclusion"
-      ],
-      "correct_index": 1,
-      "explanation": "An axiom or postulate is a statement accepted as true without proof, forming the foundation of a logical or mathematical system.",
-      "difficulty": 2
-    }
-  ]
+﻿{
+    "course_id":  "gst111",
+    "course_name":  "Logic \u0026 Philosophy",
+    "version":  "2.0.0",
+    "questions":  [
+                      {
+                          "id":  "gst111_001",
+                          "text":  "In communication, information is encoded and imparted by sender to receiver via a/an",
+                          "explanation":  "The channel or medium is the means through which information travels from sender to receiver.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "channel/medium",
+                                          "Communicating",
+                                          "Message",
+                                          "Receiving"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_002",
+                          "text":  "The researcher in a communication process after decoding the message, gives the sender a",
+                          "explanation":  "Feedback is the response given by the receiver back to the sender after decoding.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "award",
+                                          "feedback",
+                                          "voice",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_003",
+                          "text":  "Communication requires that all parties involved in that process have common background",
+                          "explanation":  "Effective communication requires common background/shared understanding between parties.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "false",
+                                          "not sure",
+                                          "true",
+                                          "no idea"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_004",
+                          "text":  "The most common types of communication are:",
+                          "explanation":  "Verbal and non-verbal are the two most common broad types of communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Verbal and non-verbal communication",
+                                          "Dyad",
+                                          "Nodding and shaking",
+                                          "Facial expression"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_005",
+                          "text":  "Verbal communication has to do with when communication is verbalized or spoken",
+                          "explanation":  "Verbal communication involves the use of words, whether spoken or written.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "not sure",
+                                          "may be",
+                                          "false",
+                                          "true"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_006",
+                          "text":  "The process of communicating through sending and receiving wordless message is referred to as",
+                          "explanation":  "Non-verbal communication involves wordless messages through body language, gestures, etc.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Non-verbal",
+                                          "Verbal",
+                                          "Audio",
+                                          "Gesture"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_007",
+                          "text":  "Non-verbal communication plays a key role in every person\u0027s day to day life",
+                          "explanation":  "Non-verbal cues like facial expressions and body language are essential in daily interactions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "not agreed",
+                                          "true",
+                                          "false",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_008",
+                          "text":  "One of the following is not a type of communication",
+                          "explanation":  "Engineering communication is not a recognized type of communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "visual communication",
+                                          "electronic communication",
+                                          "chemical communication",
+                                          "engineering communication"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_009",
+                          "text":  "The type of communication that is done through visual aid is",
+                          "explanation":  "Visual communication uses visual aids like charts, graphs, and images.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Distance/silence",
+                                          "Chemical communication",
+                                          "Visual communication",
+                                          "Electronic communication"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_010",
+                          "text":  "The type of communication that relies on the organ of smell which is the nose is",
+                          "explanation":  "Chemical communication relies on the sense of smell (pheromones, etc).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "chemical communication",
+                                          "visual communication",
+                                          "electronic communication",
+                                          "distance communication"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_011",
+                          "text":  "Maintaining a distance between us and our friends could communicate our feelings to them",
+                          "explanation":  "Physical distance is a form of non-verbal communication that conveys feelings.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "true",
+                                          "false",
+                                          "no idea",
+                                          "not sure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_012",
+                          "text":  "Stimulus in communication is seen as the trigger that triggers the communication process",
+                          "explanation":  "A stimulus is the event or trigger that initiates the communication process.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Not really",
+                                          "False",
+                                          "true",
+                                          "I doubt"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_013",
+                          "text":  "An encoder/sender in a communication process refers to the individual who also begins the exchange",
+                          "explanation":  "The encoder (sender) initiates the communication by encoding and sending a message.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "true",
+                                          "false",
+                                          "no idea",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_014",
+                          "text":  "The following are elements of communication process except",
+                          "explanation":  "Form/chemical is not a recognized element of the communication process.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "stimulus/content or message",
+                                          "the encoder/sender",
+                                          "form/chemical",
+                                          "communication"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_015",
+                          "text":  "The decoder is also called the target or receiver",
+                          "explanation":  "The decoder is the person who receives and interprets the message, also called the receiver.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "false",
+                                          "true",
+                                          "no idea",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_016",
+                          "text":  "The result that the encoder gets about the message that he sends across to the receiver is",
+                          "explanation":  "Feedback is the response the encoder receives about the message sent.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "booster",
+                                          "feedback",
+                                          "channel",
+                                          "decoder"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_017",
+                          "text":  "Communication could be vertical or horizontal",
+                          "explanation":  "Communication flows can be vertical (up/down hierarchy) or horizontal (same level).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "false",
+                                          "no idea",
+                                          "true",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_018",
+                          "text":  "The flow of information from the top to the bottom in communication is referred to as:",
+                          "explanation":  "Vertical communication flows from top to bottom (or bottom to top) in an organization.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "vertical communication",
+                                          "horizontal communication",
+                                          "chemical communication",
+                                          "no idea"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_019",
+                          "text":  "Horizontal communication could be referred to as the exchange of messages and ideas or feelings between two people of the same level or mates",
+                          "explanation":  "Horizontal communication occurs between people at the same organizational level.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "False",
+                                          "Still thinking",
+                                          "True",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_020",
+                          "text":  "One of the following is not a language skill:",
+                          "explanation":  "Jumping is a physical activity, not a language skill.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "listening skills",
+                                          "speaking skill",
+                                          "reading skill",
+                                          "jumping skill"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_021",
+                          "text":  "The most basic form of interpersonal communication is",
+                          "explanation":  "Dyadic communication (between two people) is the most basic form of interpersonal communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "dyad",
+                                          "case",
+                                          "phone",
+                                          "school"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_022",
+                          "text":  "Grammar is seen as the study of how words and their component parts combine to form sentences",
+                          "explanation":  "Grammar is the systematic study of how words combine to form sentences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "not really",
+                                          "true",
+                                          "false",
+                                          "I doubt"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_023",
+                          "text":  "The two categories of word classes in English language are:",
+                          "explanation":  "Word classes are categorized into open classes (nouns, verbs, adjectives, adverbs) and closed systems.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "noun and verb",
+                                          "simile and metaphor",
+                                          "open classes and closed system",
+                                          "auditory"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_024",
+                          "text":  "The term parts of speech is traced to traditional grammarians",
+                          "explanation":  "The term \u0027parts of speech\u0027 originated from traditional grammarians.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "not sure",
+                                          "false",
+                                          "no idea",
+                                          "true"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_025",
+                          "text":  "Nouns that designate specific people, places, states, days, festivals, rivers etc are known as:",
+                          "explanation":  "Proper nouns name specific entities and are always capitalized.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "abstract nouns",
+                                          "concrete nouns",
+                                          "common nouns",
+                                          "proper nouns"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_026",
+                          "text":  "Common nouns are divided into",
+                          "explanation":  "Common nouns are classified as countable (book, chair) or uncountable (water, air).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "countable and uncountable",
+                                          "Abstract and unabstract",
+                                          "Common and uncommon",
+                                          "Proper and improper"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_027",
+                          "text":  "Common nouns are names given to class of people, animals, place etc",
+                          "explanation":  "Common nouns refer to general categories rather than specific entities.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "true",
+                                          "false",
+                                          "not decided",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_028",
+                          "text":  "The nouns that are considered as mass in nature and cannot be counted are referred to as:",
+                          "explanation":  "Uncountable nouns cannot be counted individually (e.g., water, information).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "mass nouns",
+                                          "countable nouns",
+                                          "uncountable nouns",
+                                          "huge nouns"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_029",
+                          "text":  "All the following are examples of collective nouns except",
+                          "explanation":  "Boy is a common noun, not a collective noun. Collective nouns refer to groups.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "committee",
+                                          "congregation",
+                                          "class",
+                                          "boy"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_030",
+                          "text":  "Nouns that do not exist physically and so cannot be seen or touched are:",
+                          "explanation":  "Abstract nouns refer to ideas, qualities, or conditions (love, courage, happiness).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "countable nouns",
+                                          "proper nouns",
+                                          "abstract nouns",
+                                          "collective nouns"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_031",
+                          "text":  "The head of department is a woman. The underlined expression is noun as",
+                          "explanation":  "\u0027The head of department\u0027 is the subject performing the action of the sentence.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "subject of sentence",
+                                          "object of sentence",
+                                          "complement of object",
+                                          "complement of subject"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_032",
+                          "text":  "I saw him coming from school. The underlined word is noun as:",
+                          "explanation":  "\u0027Him\u0027 functions as a noun in a prepositional-like construction.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "subject of sentence",
+                                          "complement of subject",
+                                          "complement of prepositions",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_033",
+                          "text":  "The plural of the noun goose is",
+                          "explanation":  "Goose is an irregular noun; its plural is geese.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "gooses",
+                                          "giise",
+                                          "geese",
+                                          "geesess"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_034",
+                          "text":  "The following as compound nouns form their plurals by adding plural markers to the first nouns except:",
+                          "explanation":  "Assistant-director forms its plural by adding -s to \u0027director\u0027, not \u0027assistant\u0027.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "mother-in-law",
+                                          "director-general",
+                                          "commander-in-chief",
+                                          "assistant-director"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_035",
+                          "text":  "Words that can be used to replace nouns perfectly in all situations are",
+                          "explanation":  "Pronouns are words that substitute for nouns in sentences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "verbs",
+                                          "adjectives",
+                                          "pronouns",
+                                          "interjections"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_036",
+                          "text":  "There are............ persons under the personal pronoun",
+                          "explanation":  "Personal pronouns have three persons: first, second, and third person.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "one",
+                                          "seven",
+                                          "three",
+                                          "ten"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_037",
+                          "text":  "The types of pronouns that denote possession are called",
+                          "explanation":  "Possessive pronouns show ownership (mine, yours, his, hers, ours, theirs).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "personal pronouns",
+                                          "reflexive pronouns",
+                                          "demonstrative pronouns",
+                                          "possessive pronouns"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_038",
+                          "text":  "Pronouns that reflect or mirror back on their subjects are",
+                          "explanation":  "Reflexive pronouns refer back to the subject (myself, yourself, himself).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "possessive pronouns",
+                                          "reflexive pronouns",
+                                          "demonstrative pronouns",
+                                          "noun phrase"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_039",
+                          "text":  "The man killed himself is an example of:",
+                          "explanation":  "\u0027Himself\u0027 is a reflexive pronoun reflecting back to \u0027the man\u0027.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "demonstrative pronoun",
+                                          "possessive pronoun",
+                                          "reflexive pronoun",
+                                          "no idea"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_040",
+                          "text":  "Where is the money you promised to give me is an example of",
+                          "explanation":  "\u0027Where\u0027 is an interrogative pronoun used to ask questions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "interrogative pronoun",
+                                          "indefinite pronoun",
+                                          "relative pronoun",
+                                          "reciprocal pronoun"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_041",
+                          "text":  "Vanessa and Benjamin like each other is an example of",
+                          "explanation":  "\u0027Each other\u0027 is a reciprocal pronoun showing mutual action.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "relative pronouns",
+                                          "indefinite pronouns",
+                                          "reciprocal pronouns",
+                                          "further pronouns"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_042",
+                          "text":  "Demonstrative pronouns are",
+                          "explanation":  "Demonstrative pronouns point to specific things (this, that, these, those).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "pointing pronouns",
+                                          "question pronouns",
+                                          "dancing pronouns",
+                                          "helping pronouns"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_043",
+                          "text":  "No one is in the class is an example of",
+                          "explanation":  "\u0027No one\u0027 is an indefinite pronoun that does not refer to a specific person.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "relative pronouns",
+                                          "indefinite pronouns",
+                                          "personal pronouns",
+                                          "proper pronouns"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_044",
+                          "text":  "A word or group of words that denotes an action or shows the state of being of the subject in a sentence is called",
+                          "explanation":  "A verb expresses action or state of being of the subject.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "a noun",
+                                          "a clause",
+                                          "a verb",
+                                          "an adjective"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_045",
+                          "text":  "The two main classes of verbs in the English language are:",
+                          "explanation":  "Verbs are classified into main (lexical) verbs and auxiliary (helping) verbs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "main/lexical and auxiliary verbs",
+                                          "minor/major verbs",
+                                          "auxiliary/major verbs",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_046",
+                          "text":  "Verbs whose actions as denoted move across from the subject to the object are:",
+                          "explanation":  "Transitive verbs require an object to receive the action.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "transitive verb",
+                                          "modal verb",
+                                          "auxiliary verb",
+                                          "intransitive verb"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_047",
+                          "text":  "Intransitive verbs are those types of verbs which do not require objects to be fully operational",
+                          "explanation":  "Intransitive verbs do not take objects (e.g., sleep, run, arrive).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "false",
+                                          "no idea",
+                                          "true",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_048",
+                          "text":  "Auxiliary verbs are also called",
+                          "explanation":  "Auxiliary verbs help the main verb (e.g., is, am, are, have, will).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "helping verbs",
+                                          "guiding verbs",
+                                          "transitive verbs",
+                                          "moving verbs"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_049",
+                          "text":  "Auxiliary verbs are sub-divided into two groups",
+                          "explanation":  "Auxiliaries split into primary (be, have, do) and modal (can, will, may).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "primary auxiliaries and modals",
+                                          "secondary auxiliaries",
+                                          "tertiary auxiliaries",
+                                          "modals"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_050",
+                          "text":  "The class of words that modify, describe or qualify verbs is called",
+                          "explanation":  "Adverbs modify verbs, adjectives, or other adverbs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "nouns",
+                                          "pronouns",
+                                          "adverb",
+                                          "adjectives"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_051",
+                          "text":  "Adjectives traditionally describe or modify nouns or pronouns in sentences.",
+                          "explanation":  "Adjectives modify nouns and pronouns in sentences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "agreed",
+                                          "disagree",
+                                          "maybe",
+                                          "no idea"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_052",
+                          "text":  "All the following are functions of adjectives except",
+                          "explanation":  "Adjectives cannot function as subjects of a sentence.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "as attributives",
+                                          "as predicative",
+                                          "subjective complements",
+                                          "subjects of sentence"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_053",
+                          "text":  "The following are degrees of comparison of adjectives except",
+                          "explanation":  "There is no negative degree of comparison for adjectives.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "the positive degree",
+                                          "the comparative degree",
+                                          "the superlative degree",
+                                          "the negative degree"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_054",
+                          "text":  "The part of speech that shows the relationship between two words in a sentence is called",
+                          "explanation":  "Prepositions show relationships between words (on, at, in, under).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "preposition",
+                                          "noun",
+                                          "pronoun",
+                                          "interjection"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_055",
+                          "text":  "The word class that links words, groups of words, phrases, clauses and sentences is:",
+                          "explanation":  "Conjunctions link words and clauses together (and, but, or).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "noun",
+                                          "verb",
+                                          "adverb",
+                                          "conjunctions"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_056",
+                          "text":  "The following are types of conjunctions except",
+                          "explanation":  "Superior conjunctions is not a type of conjunction.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "coordinating conjunctions",
+                                          "subordinating conjunctions",
+                                          "correlative conjunctions",
+                                          "superior conjunctions"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_057",
+                          "text":  "Either the man or his wife will attend the party is an example of",
+                          "explanation":  "\u0027Either...or\u0027 is a correlative conjunction pair.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "correlative conjunction",
+                                          "superlative conjunction",
+                                          "coordinating conjunction",
+                                          "subordinating conjunction"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_058",
+                          "text":  "___________ are used to express sudden outbursts of feelings or strong emotions",
+                          "explanation":  "Interjections express sudden emotions (oh!, wow!, ouch!).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "conjunction",
+                                          "interjection",
+                                          "adverbs",
+                                          "nouns"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_059",
+                          "text":  "Intensive reading is usually done with a high degree of concentration",
+                          "explanation":  "Intensive reading involves careful, detailed reading with full concentration.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "False",
+                                          "True",
+                                          "Let me ask",
+                                          "No ideas"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_060",
+                          "text":  "The SQ3R is",
+                          "explanation":  "SQ3R is a study technique: Survey, Question, Read, Recite, Review.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Study techniques",
+                                          "Speaking techniques",
+                                          "Dancing techniques",
+                                          "Travelling techniques"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_061",
+                          "text":  "The Q in SQ3R study techniques stands for",
+                          "explanation":  "Q stands for Question in the SQ3R method.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "question",
+                                          "queue",
+                                          "quality",
+                                          "quarry"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_062",
+                          "text":  "Cramming can lead to mental fatigue and confusion",
+                          "explanation":  "Cramming overloads the brain and leads to fatigue and poor retention.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "False",
+                                          "Don\u0027t know",
+                                          "True",
+                                          "No ideas"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_063",
+                          "text":  "The following except one are factors in memory",
+                          "explanation":  "Cramming is not a positive factor in memory; it hinders retention.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Activity",
+                                          "Practice",
+                                          "System",
+                                          "Cramming"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_064",
+                          "text":  "The following are genres of literature except",
+                          "explanation":  "Reading is a skill, not a genre of literature.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Prose",
+                                          "Poetry",
+                                          "Drama/play",
+                                          "Reading"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_065",
+                          "text":  "Prose in literature is divided into",
+                          "explanation":  "Prose is divided into fiction (imagined) and non-fiction (factual).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "fiction and non-fiction",
+                                          "biography and birthdays",
+                                          "novella and poetry",
+                                          "dirge and elegy"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_066",
+                          "text":  "The form of literature which imitates human action is",
+                          "explanation":  "Drama imitates human action through performance.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "poetry",
+                                          "drama",
+                                          "prose",
+                                          "orature"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_067",
+                          "text":  "The term prose is derived from Latin word",
+                          "explanation":  "Prose comes from Latin \u0027prorsus\u0027 meaning straightforward.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "predice",
+                                          "prorsus",
+                                          "prons",
+                                          "privy"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_068",
+                          "text":  "The following but one are different types of drama",
+                          "explanation":  "Musicology is the study of music, not a type of drama.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "tragedy",
+                                          "comedy",
+                                          "tragic-comedy",
+                                          "musicology"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_069",
+                          "text":  "Literature serves as a means of education",
+                          "explanation":  "Literature educates by teaching moral values and life lessons.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "may be",
+                                          "no idea",
+                                          "true",
+                                          "false"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_070",
+                          "text":  "Literature improves audiences use of language",
+                          "explanation":  "Reading literature enhances vocabulary and language skills.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "true",
+                                          "I don\u0027t think",
+                                          "False",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_071",
+                          "text":  "The following are listening defects except",
+                          "explanation":  "Sleeping factors are not classified as listening defects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "physiological factors",
+                                          "psychological factors",
+                                          "environmental factors",
+                                          "sleeping factors"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_072",
+                          "text":  "The following are some methods to adopt while listening except:",
+                          "explanation":  "Fighting the speaker is not a proper listening method.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "the face it solution",
+                                          "maintain eye contact",
+                                          "avoid distractions",
+                                          "fight the speaker"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_073",
+                          "text":  "__________ cannot function as main verbs",
+                          "explanation":  "Modal verbs (can, will, may) cannot function as main verbs alone.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "nouns",
+                                          "adverbs",
+                                          "modal verbs",
+                                          "pronouns"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_074",
+                          "text":  "Tongue, Lungs, vocal cords, and lips are referred to as",
+                          "explanation":  "These are the speech organs used to produce speech sounds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "speech organs",
+                                          "singing organs",
+                                          "listening organs",
+                                          "writing organs"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_075",
+                          "text":  "__________ are located in the human head with the exception of the lungs",
+                          "explanation":  "Speech organs are mostly in the head; lungs are in the chest.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "nouns",
+                                          "writing organs",
+                                          "listening organs",
+                                          "speech organs"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_076",
+                          "text":  "The mobile organs of speech are called_______",
+                          "explanation":  "Articulators are the mobile organs of speech (tongue, lips, etc).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "articulators",
+                                          "organs",
+                                          "bilabial",
+                                          "velar"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_077",
+                          "text":  "Examples of the articulators are",
+                          "explanation":  "Tongue, uvula, and lips are examples of mobile articulators.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Lungs",
+                                          "Vocal cords",
+                                          "Tongue uvula/lips",
+                                          "Nose"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_078",
+                          "text":  "There _________ points of articulation in speech sounds",
+                          "explanation":  "There are eight points of articulation for speech sounds.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Eight",
+                                          "Two",
+                                          "Four",
+                                          "Three"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_079",
+                          "text":  "Sounds produced with lower lip and teeth are called__________",
+                          "explanation":  "Labiodental sounds use the lower lip and upper teeth (f, v).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Glottal",
+                                          "Palatal",
+                                          "Dental",
+                                          "Labiodentals"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_080",
+                          "text":  "Alveolar sounds are produced with the tongue on the alveolar ridge.",
+                          "explanation":  "Alveolar sounds (t, d, n, l) use the tongue tip on the alveolar ridge.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "False",
+                                          "May be",
+                                          "True",
+                                          "No"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_081",
+                          "text":  "________ Sounds are produced at the velum or soft palate",
+                          "explanation":  "Velar sounds (k, g, ng) are produced at the soft palate.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "stops",
+                                          "velar",
+                                          "bilabial",
+                                          "teeth"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_082",
+                          "text":  "Bilabial sounds are produced with both lips",
+                          "explanation":  "Bilabial sounds (p, b, m) use both lips.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "true",
+                                          "may be",
+                                          "no idea",
+                                          "false"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_083",
+                          "text":  "The sound produced with the tip of the tongue and both upper and lower teeth is called__________",
+                          "explanation":  "Dental sounds use the tongue tip against the teeth (th sounds).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "velar",
+                                          "glottal",
+                                          "dental",
+                                          "palatal"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_084",
+                          "text":  "In the manners of articulation in speech sounds_________ forms of air blockage are identified",
+                          "explanation":  "Seven manners of articulation are identified in speech sounds.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "one",
+                                          "ten",
+                                          "seven",
+                                          "two"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_085",
+                          "text":  "_________ are sounds characterized by friction of the exhaling air",
+                          "explanation":  "Fricatives produce friction as air passes through (f, v, s, z, sh).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "fricatives",
+                                          "dental",
+                                          "alveolar",
+                                          "stops"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_086",
+                          "text":  "Sounds that are produced in the nasal cavity are",
+                          "explanation":  "Nasal sounds (m, n, ng) produce sound through the nasal cavity.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "liquid",
+                                          "vowel",
+                                          "nasals",
+                                          "lateral"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_087",
+                          "text":  "One of these is an example of Bilabial",
+                          "explanation":  "[p] and [b] are bilabial stops produced with both lips.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "[t] [d]",
+                                          "[k] [g]",
+                                          "[h][w]",
+                                          "[p][b]"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_088",
+                          "text":  "Love, anger, beauty, poverty, etc are examples of",
+                          "explanation":  "These are abstract nouns - they cannot be physically touched or seen.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "concrete nouns",
+                                          "proper nouns",
+                                          "common nouns",
+                                          "abstract nouns"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_089",
+                          "text":  "________ constitute the sound category into which speech sounds are classified phonetically.",
+                          "explanation":  "Vowels and consonants are the two main sound categories.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "vowels",
+                                          "syllable",
+                                          "lateral",
+                                          "palatal"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_090",
+                          "text":  "The basic types of reading disorders are:",
+                          "explanation":  "Dyslexia (difficulty reading) and alexia (loss of reading ability) are reading disorders.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "cramming and singing",
+                                          "dyslexia and alexia",
+                                          "reading the sleeping",
+                                          "humming and narrating"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_091",
+                          "text":  "_________ refers to a difficulty with reading and writing",
+                          "explanation":  "Dyslexia is a learning disorder affecting reading ability.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "dyslexia",
+                                          "agraphia",
+                                          "alexia",
+                                          "monoxia"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_092",
+                          "text":  "_________ and ________ are types of reading",
+                          "explanation":  "Extensive (wide, fast) and intensive (careful, detailed) are the two types.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "extensive and intensive",
+                                          "cramming and recitation",
+                                          "summary and comprehension",
+                                          "rote and learning"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_093",
+                          "text":  "___________ refers to reading widely and fast",
+                          "explanation":  "Extensive reading involves reading widely and quickly for general understanding.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Intensive reading",
+                                          "Rote reading",
+                                          "Extensive reading",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_094",
+                          "text":  "Skimming and scanning are basic skills needed for extensive reading.",
+                          "explanation":  "Skimming and scanning are essential skills for extensive reading.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "am not aware",
+                                          "no idea",
+                                          "true",
+                                          "false"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_095",
+                          "text":  "A fast skimmer may read 800 words per minute with just 5% comprehension.",
+                          "explanation":  "Skimming trades depth of comprehension for speed.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "true",
+                                          "false",
+                                          "no idea",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_096",
+                          "text":  "Looking for a specific point or information while reading is called",
+                          "explanation":  "Scanning involves searching text for specific information.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "skimming",
+                                          "reading",
+                                          "scanning",
+                                          "writing"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_097",
+                          "text":  "Lying on the bed is a good reading habit.",
+                          "explanation":  "Lying on the bed is not a good reading habit; it causes drowsiness and poor posture.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "false",
+                                          "true",
+                                          "may be",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_098",
+                          "text":  "The following are reading faults except",
+                          "explanation":  "Progression is normal reading movement, not a fault.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "pointing at words",
+                                          "regression",
+                                          "counting of words",
+                                          "progression"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_099",
+                          "text":  "The purpose of skimming is to ____________",
+                          "explanation":  "Skimming quickly identifies main ideas and general content.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Identify information quickly",
+                                          "Educate",
+                                          "Excite the reader",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_100",
+                          "text":  "The environment where one reads can impede comprehension while reading",
+                          "explanation":  "A noisy or distracting environment negatively affects reading comprehension.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Not true",
+                                          "True",
+                                          "No idea",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_101",
+                          "text":  "Listening is_____________",
+                          "explanation":  "Listening is considered the first language skill acquired.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "first language skill",
+                                          "second language skill",
+                                          "third language skill",
+                                          "A \u0026 B above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_102",
+                          "text":  "Listening can be considered as a",
+                          "explanation":  "Listening is a receptive skill - you receive and process information.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "receptive",
+                                          "productive",
+                                          "paying skill",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_103",
+                          "text":  "To listen well, the listener should possess the following health fitness except",
+                          "explanation":  "Intelligence is not specifically a health requirement for good listening.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "good physical state",
+                                          "good mental state",
+                                          "intelligent enough",
+                                          "good psychological and emotional state"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_104",
+                          "text":  "Listening impediments include the following except one:",
+                          "explanation":  "Distractions from the audience is not a standard category of listening impediment.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "distractions from the speaker",
+                                          "distractions outside the speaker",
+                                          "distractions from the audience",
+                                          "distractions within the listener"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_105",
+                          "text":  "Which of the following is not a type of listening",
+                          "explanation":  "Creative listening is not a recognized type of listening.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "attitudinal",
+                                          "creative",
+                                          "informational",
+                                          "appreciative"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_106",
+                          "text":  "Listening is the ability",
+                          "explanation":  "Listening encompasses receiving, interpreting, and organizing messages.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "receive message",
+                                          "interpret message",
+                                          "organize message",
+                                          "accurately receive and interpret message in the communication process"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_107",
+                          "text":  "Listening is the same as hearing",
+                          "explanation":  "Listening involves active processing while hearing is passive sound reception.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "true",
+                                          "false",
+                                          "true and false",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_108",
+                          "text":  "Generally we have two types of listening",
+                          "explanation":  "Discriminative and comprehensive are the two main types of listening.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "discriminative and comprehensive",
+                                          "discriminative and analytical",
+                                          "comprehensive and critical",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_109",
+                          "text":  "The speech organs are:",
+                          "explanation":  "The nose is one of the speech organs used for nasal sounds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "tongue",
+                                          "lungs",
+                                          "lips",
+                                          "nose"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_110",
+                          "text":  "There are__________ cavities which serve as resonance chambers where sounds are resonated to take their sound value.",
+                          "explanation":  "There are 2 resonance cavities: oral and nasal.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "4",
+                                          "2",
+                                          "1",
+                                          "3"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_111",
+                          "text":  "Sounds are either oral or nasal",
+                          "explanation":  "Speech sounds are classified as either oral (through mouth) or nasal (through nose).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "false",
+                                          "true",
+                                          "true/false",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_112",
+                          "text":  "The mobile organs of speech are called____________",
+                          "explanation":  "Articulators are the mobile organs of speech.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "oral cavity",
+                                          "nasal cavity",
+                                          "articulators",
+                                          "none of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_113",
+                          "text":  "All these are mobile organs of speech except one:",
+                          "explanation":  "Teeth are stationary organs of speech, not mobile.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "tongue",
+                                          "uvula",
+                                          "lips",
+                                          "teeth"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_114",
+                          "text":  "The stationary organs of speech include the following except",
+                          "explanation":  "The uvula is a mobile organ, not a stationary one.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Teeth",
+                                          "Alveolar ridge",
+                                          "Hard palate",
+                                          "Uvula"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_115",
+                          "text":  "___________ numbers of speech sounds are classified according to their points of articulation",
+                          "explanation":  "8 speech sounds are classified by their points of articulation.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "2",
+                                          "4",
+                                          "8",
+                                          "5"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_116",
+                          "text":  "Eight positions of speech sounds identified are_________",
+                          "explanation":  "The eight include bilabial, labiodental, dental, alveolar, palatal, velar, uvular, glottal.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "stops (plosives) and Glottal",
+                                          "Bilabial and Labio-dental",
+                                          "Dental and palatal",
+                                          "Alveolar and velar"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_117",
+                          "text":  "All of these are forms of air blockage: I. stops II. fricatives III. affricates IV. nasal V. Lateral VI. Liquid VII. Semi-vowel",
+                          "explanation":  "All listed are recognized forms of air blockage in speech.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "True",
+                                          "False",
+                                          "Maybe",
+                                          "Don\u0027t know"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_118",
+                          "text":  "The sound system of the English language involves two main features",
+                          "explanation":  "English sound system involves consonants and vowels.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "True",
+                                          "False",
+                                          "Maybe",
+                                          "Don\u0027t know"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_119",
+                          "text":  "Consonant sounds are_________ in number",
+                          "explanation":  "English has 24 consonant sounds.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "20",
+                                          "22",
+                                          "24",
+                                          "26"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_120",
+                          "text":  "We have________ vowel sounds",
+                          "explanation":  "English has 20 vowel sounds (12 pure vowels and 8 diphthongs).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "19",
+                                          "20",
+                                          "44",
+                                          "24"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_121",
+                          "text":  "In the production of consonant sound, there is_________",
+                          "explanation":  "Consonants involve complete or partial obstruction of airflow.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Free flow of air",
+                                          "Partial obstruction of air in the oral cavity",
+                                          "Complete or partial obstruction of air in the oral cavity",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_122",
+                          "text":  "Phonetically, vowels are articulated without any obstruction in the mouth",
+                          "explanation":  "Vowels are produced with free airflow and no obstruction.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "true",
+                                          "False",
+                                          "True and false",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_123",
+                          "text":  "There are _______ pure vowels",
+                          "explanation":  "English has 12 pure (monophthong) vowels.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "10",
+                                          "12",
+                                          "8",
+                                          "24"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_124",
+                          "text":  "Diphthongs are_________ in number:",
+                          "explanation":  "English has 8 diphthongs (gliding vowels).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "10",
+                                          "12",
+                                          "20",
+                                          "8"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_125",
+                          "text":  "What is a syllable?",
+                          "explanation":  "A syllable is the minimal unit of speech, typically centered on a vowel.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "It is a minimal unit of speech production, normally composed of vowel or vowel like consonant",
+                                          "It is the largest grammatical unit that contains a subject and a verb",
+                                          "All of the above",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_126",
+                          "text":  "A syllable consists of_________ surrounded by one or more consonants usually before the vowel, but sometimes after it.",
+                          "explanation":  "The nucleus of a syllable is always a vowel or vowel-like sound.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "consonant",
+                                          "monophthong",
+                                          "vowel",
+                                          "diphthong"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_127",
+                          "text":  "English has a considerable number of syllable types. They include all these except one",
+                          "explanation":  "VVV is not a standard syllable type in English.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "CV",
+                                          "CVC",
+                                          "CCV",
+                                          "VVV"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_128",
+                          "text":  "Apart from vowel, which other consonants can form peak or prominence?",
+                          "explanation":  "Sonorant consonants (like l, m, n) can form syllable peaks.",
+                          "difficulty":  3,
+                          "options":  [
+                                          "vowel",
+                                          "consonants",
+                                          "sonorant consonants",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_129",
+                          "text":  "A vowel can occur at the following position",
+                          "explanation":  "Vowels can appear in initial, medial, or final positions in English.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "The initial only",
+                                          "The initial, the medial and the final position",
+                                          "The medial only",
+                                          "The final only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_130",
+                          "text":  "The nouns that designate specific people are called:",
+                          "explanation":  "Proper nouns designate specific people; mass nouns like names can also apply.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Proper nouns",
+                                          "Common nouns",
+                                          "Mass nouns",
+                                          "Both A \u0026 C"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_131",
+                          "text":  "A common noun names",
+                          "explanation":  "Common nouns name general categories of people, animals, places, things.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Class of people",
+                                          "Animals",
+                                          "Places",
+                                          "Class of people, animals, places and so on"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_132",
+                          "text":  "Proper nouns usually begins with _________",
+                          "explanation":  "Proper nouns always begin with capital letters.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "small letters",
+                                          "Capital letters",
+                                          "Capital letters",
+                                          "Both small and capital letters"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_133",
+                          "text":  "Common nouns are divided into _________",
+                          "explanation":  "Common nouns are classified as countable or uncountable.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "countable and proper nouns",
+                                          "uncountable and mass nouns",
+                                          "countable and uncountable nouns",
+                                          "uncountable and tangible nouns"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_134",
+                          "text":  "Examples of these can be regarded as proper nouns",
+                          "explanation":  "Mustapha, Yola, Monday, Christmas are specific names = proper nouns.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "grass, pen, chair, church",
+                                          "Mustapha, Yola, Monday, Christmas",
+                                          "All of the above",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_135",
+                          "text":  "Nouns can perform the following functions except",
+                          "explanation":  "Nouns do not function as complements of verbs (that\u0027s adjective/adverb role).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Subject of sentences",
+                                          "Object of sentence",
+                                          "Complements of subjects",
+                                          "Complement of verbs"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_136",
+                          "text":  "The examples of verb in \u0027I am a king\u0027 and \u0027the water is cold\u0027 are",
+                          "explanation":  "\u0027am\u0027 and \u0027is\u0027 are linking verbs in these sentences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "I and a",
+                                          "water and the",
+                                          "cold and king",
+                                          "am and is"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_137",
+                          "text":  "How many types of verbs do we have in English language?",
+                          "explanation":  "English verbs are classified into main (lexical) and auxiliary verbs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Main or Lexical verbs and Auxiliary",
+                                          "Main and supportive verbs",
+                                          "Lexical verbs dependent verbs",
+                                          "Independent and dependent verbs"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_138",
+                          "text":  "The main or lexical verbs are divided into smaller groups. They are:",
+                          "explanation":  "Main verbs分为 transitive, intransitive, and linking verbs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Transitive verbs, action verbs, intransitive verbs, and linking verbs",
+                                          "Transitive verbs, intransitive verbs, and linking verbs",
+                                          "Transitive, intransitive linking and fragmented verbs",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_139",
+                          "text":  "Auxiliary verbs are subdivided into________ groups:",
+                          "explanation":  "Auxiliaries are divided into 2 groups: primary auxiliaries and modals.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3",
+                                          "4",
+                                          "6",
+                                          "2"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_140",
+                          "text":  "Primary auxiliary verbs and modal auxiliary verbs are examples of_______",
+                          "explanation":  "Both primary auxiliaries and modals are types of auxiliary verbs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Lexical verbs",
+                                          "Linking verbs",
+                                          "Stationary verbs",
+                                          "Auxiliary verbs"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_141",
+                          "text":  "English language has ________ parts of speech",
+                          "explanation":  "English has 8 parts of speech: noun, verb, adjective, adverb, preposition, conjunction, pronoun, interjection.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "8",
+                                          "7",
+                                          "9",
+                                          "10"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_142",
+                          "text":  "Adjectives traditionally describe nouns or pronouns in sentences:",
+                          "explanation":  "Adjectives modify nouns and pronouns.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False",
+                                          "True and false",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_143",
+                          "text":  "The word \u0027Loudly\u0027 in the sentence \u0027He cried loudly\u0027 is an example of__________",
+                          "explanation":  "\u0027Loudly\u0027 modifies the verb \u0027cried\u0027, so it is an adverb.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "adjectives",
+                                          "pronouns",
+                                          "adverb",
+                                          "noun"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_144",
+                          "text":  "Adjectives have three degrees of comparison. They are:",
+                          "explanation":  "The three degrees are positive, comparative, and superlative.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The positive degree, the balance degree and the comparative degree",
+                                          "The positive degree, the comparative and the superlative degree",
+                                          "None of the above",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_145",
+                          "text":  "The superlative degree of adjectives is used to express______",
+                          "explanation":  "Superlative is used when comparing three or more things.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "one thing",
+                                          "two things",
+                                          "two or more things",
+                                          "all of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_146",
+                          "text":  "All of the following are examples of preposition except _____",
+                          "explanation":  "\u0027Neither, either, both, but\u0027 are conjunctions, not prepositions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "on, at, before, under",
+                                          "by near, above, in",
+                                          "left, after, for, along",
+                                          "neither, either, both, but"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_147",
+                          "text":  "Students are involved in two types of study. They are:",
+                          "explanation":  "Students engage in private (solo) and group study.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "private and group study",
+                                          "private and public study",
+                                          "group and public study",
+                                          "public and group study"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_148",
+                          "text":  "For the student-learner to effectively organize his study time, certain points are considered:",
+                          "explanation":  "Effective study organization considers the learner, materials, and resources.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "the individual as a learner only",
+                                          "materials for study and purpose of study",
+                                          "the individual as a learner, material for study, and materials available to student-learner",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_149",
+                          "text":  "The process of perceiving, recognizing, interpreting and understanding a sensible grammatical unity of a language is called____",
+                          "explanation":  "Reading involves perceiving, recognizing, interpreting and understanding text.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Writing",
+                                          "Speaking",
+                                          "Reading",
+                                          "Listening"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_150",
+                          "text":  "Two main types of reading involve",
+                          "explanation":  "The two main types of reading are intensive and extensive.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "intensive and extensive",
+                                          "skimming and scanning",
+                                          "skimming and intensive",
+                                          "scanning and extensive"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_151",
+                          "text":  "A language is generally a system of communication that is a_________ of symbols, a set of rules for making these symbols and a set of principles for interpretation of symbols",
+                          "explanation":  "A language is fundamentally a system of signs/symbols for communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "System of signs",
+                                          "Set of rules",
+                                          "Principles of interpretation",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_152",
+                          "text":  "A language is a system of communication which consists of a set of symbols that is often referred to as a set of_________",
+                          "explanation":  "Language symbols are commonly referred to as signs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "words",
+                                          "phrases",
+                                          "signs",
+                                          "sentences"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_153",
+                          "text":  "Human languages are also referred to as_________ languages",
+                          "explanation":  "Human languages are called natural languages.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Verbal",
+                                          "Sign",
+                                          "Natural",
+                                          "Written"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_154",
+                          "text":  "Sign languages are those used by _____________ individuals to communicate in the absence of the spoken language",
+                          "explanation":  "Sign languages are used by hearing-impaired individuals.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Visually impaired",
+                                          "Hearing impaired",
+                                          "Speech impaired",
+                                          "Dumb"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_155",
+                          "text":  "Language is primarily a means of ___________",
+                          "explanation":  "The primary purpose of language is communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Speaking",
+                                          "Reading",
+                                          "Communication",
+                                          "Listening"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_156",
+                          "text":  "Human language is generally described as an open system of communication. It is open in the sense that it is_________",
+                          "explanation":  "Language is open because it can generate infinite new expressions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Immeasurable",
+                                          "Infinite",
+                                          "Countable",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_157",
+                          "text":  "Language is not just a means of communication but a complex system of human behavior. It is a social_________ which humans are born to acquire and use",
+                          "explanation":  "Language is part of human culture and social behavior.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Event",
+                                          "Practice",
+                                          "Act",
+                                          "Culture"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_158",
+                          "text":  "There are _________ basic properties of human language",
+                          "explanation":  "There are five basic properties of human language.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Three",
+                                          "Four",
+                                          "Five",
+                                          "Six"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_159",
+                          "text":  "The concept of ___________ implies the capacity of speakers to generate new utterances which have never been said before",
+                          "explanation":  "Productivity allows speakers to create unlimited new sentences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Displacement",
+                                          "Arbitrariness",
+                                          "Productivity",
+                                          "Cultural transmission"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_160",
+                          "text":  "______ is the arbitrary association of sounds and meanings in language",
+                          "explanation":  "Arbitrariness means there is no natural connection between sound and meaning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Duality",
+                                          "Productivity",
+                                          "Displacement",
+                                          "Arbitrariness"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_161",
+                          "text":  "Arbitrariness is most easily seen in _________",
+                          "explanation":  "Arbitrariness is most evident in individual words.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Words",
+                                          "Sentences",
+                                          "Consonants",
+                                          "Vowels"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_162",
+                          "text":  "Language consists of two structural levels. This is called_________",
+                          "explanation":  "Duality means language operates at two structural levels (sounds and meaning).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Duality",
+                                          "Arbitrariness",
+                                          "Displacement",
+                                          "Productivity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_163",
+                          "text":  "Language is described as _____________ because we can talk and write about events that are not present",
+                          "explanation":  "Displacement allows us to refer to things not in the immediate environment.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Productivity",
+                                          "Cultural transmission",
+                                          "Displacement",
+                                          "Duality"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_164",
+                          "text":  "The idea that _________ and meanings are both important to human communication is referred to as the double articulation of human language",
+                          "explanation":  "Double articulation involves both sounds (form) and meanings (content).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Speech",
+                                          "Sentences",
+                                          "Grammar",
+                                          "Sounds"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_165",
+                          "text":  "Language is used to fulfill a lot of functions. Jakobson identifies __________ functions of language in human communication",
+                          "explanation":  "Jakobson identified 6 functions of language (referential, emotive, conative, phatic, metalingual, poetic).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_166",
+                          "text":  "The function of language which is concerned with the social interaction of the speaker and the addressee is called the________ function",
+                          "explanation":  "The phatic function concerns social interaction and communication channels.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Phatic",
+                                          "Referential",
+                                          "Emotive",
+                                          "Metalingual"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_167",
+                          "text":  "The function of language which expresses the feeling or emotion of the speaker is called the__________ function",
+                          "explanation":  "The emotive function expresses the speaker\u0027s feelings and emotions.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Phatic",
+                                          "Metalingual",
+                                          "Referential",
+                                          "Emotive"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_168",
+                          "text":  "The ____________ function of language is also referred to as the context-based function of language",
+                          "explanation":  "The referential function relates to the context and information being conveyed.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Phatic",
+                                          "Emotive",
+                                          "Referential",
+                                          "Metalingual"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_169",
+                          "text":  "Which function of language is concerned with the message itself?",
+                          "explanation":  "The poetic function focuses on the message itself (aesthetic use of language).",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Referential",
+                                          "Emotive",
+                                          "Phatic",
+                                          "Poetic"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_170",
+                          "text":  "________ function of language is used for the benefit of the addressee",
+                          "explanation":  "The conative function aims to influence or benefit the addressee.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Emotive",
+                                          "Conative",
+                                          "Referential",
+                                          "Poetic"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_171",
+                          "text":  "_________ function of language is concerned with the social interaction and relationship of the speaker and the addressee",
+                          "explanation":  "The phatic function maintains social bonds and relationships.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Conative",
+                                          "Referential",
+                                          "Phatic",
+                                          "Emotive"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_172",
+                          "text":  "Hymes\u0027 theory of communicative competence relates to the ability to use language for________",
+                          "explanation":  "Communicative competence encompasses all these aspects of language use.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Communication",
+                                          "Social interaction",
+                                          "Cultural transmission",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_173",
+                          "text":  "Hymes postulates the following points of view in his speech except",
+                          "explanation":  "Hymes focused on knowledge, language, and culture, not behaviour.",
+                          "difficulty":  2,
+                          "options":  [
+                                          "Knowledge",
+                                          "Language",
+                                          "Behaviour",
+                                          "Culture"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_174",
+                          "text":  "Communication is the_____________ of meaning or information between a sender and a receiver",
+                          "explanation":  "Communication involves the exchange of meaning between sender and receiver.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Conveyance",
+                                          "Transmission",
+                                          "Exchange",
+                                          "Sending"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_175",
+                          "text":  "The following are principles of communication except",
+                          "explanation":  "Confusion is not a principle of communication; it is an obstacle.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Encoding",
+                                          "Decoding",
+                                          "Sending",
+                                          "Confusion"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_176",
+                          "text":  "The following are principles of communication except one:",
+                          "explanation":  "Information is not a principle of communication - it is what is communicated.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Information",
+                                          "Channel",
+                                          "Sender",
+                                          "Receiver"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_177",
+                          "text":  "__________ is the process by which the source or sender of a message composes a message with the intention of passing it on",
+                          "explanation":  "Encoding is the process of composing/formulating a message for transmission.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Decoding",
+                                          "Encoding",
+                                          "Transmission",
+                                          "Feedback"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_178",
+                          "text":  "Language can be best understood if considered as a tool for_____________",
+                          "explanation":  "Language is best understood as a tool for communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Communication",
+                                          "Knowledge",
+                                          "Cultural transmission",
+                                          "Grammar"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_179",
+                          "text":  "Communication is the _____________ of information between the sender and the receiver",
+                          "explanation":  "Communication is the exchange of information between sender and receiver.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Process",
+                                          "Exchange",
+                                          "Channel",
+                                          "Feedback"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_180",
+                          "text":  "Communication involves_________ which are the sources, the sender, the message, the channel, the receiver and the target",
+                          "explanation":  "These are the key elements/components of the communication process.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Encoding",
+                                          "Decoding",
+                                          "Elements",
+                                          "Principles"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_181",
+                          "text":  "The language of the modern world is the _______________ of human culture",
+                          "explanation":  "Lingua Franca serves as the common language of human culture worldwide.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Dialect",
+                                          "Grammar",
+                                          "Lingua Franca",
+                                          "Phonology"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_182",
+                          "text":  "Lingua Franca is the language of ____________",
+                          "explanation":  "Lingua Franca serves communication, culture, and the modern world.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Communication",
+                                          "Human culture",
+                                          "Modern world",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_183",
+                          "text":  "English is generally accepted as the __________ Lingua Franca of the world today",
+                          "explanation":  "English is the international Lingua Franca of the modern world.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "only",
+                                          "native",
+                                          "official",
+                                          "international"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_184",
+                          "text":  "English has a very unique and interesting position in language ecology because it is native to very few countries",
+                          "explanation":  "English is native to several countries (UK, US, Australia, Canada, etc).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "False",
+                                          "True",
+                                          "Maybe",
+                                          "Don\u0027t know"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_185",
+                          "text":  "Communication is based on feedback from the _______",
+                          "explanation":  "Communication relies on feedback from the audience/receiver.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "speaker",
+                                          "listener",
+                                          "audience",
+                                          "decoder"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_186",
+                          "text":  "The ___________ of communication are the components that make up communication to occur and take effect",
+                          "explanation":  "Elements of communication are the components that enable communication.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Elements",
+                                          "Principles",
+                                          "Channels",
+                                          "Sources"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_187",
+                          "text":  "The _____________ is the initiator of communication",
+                          "explanation":  "The sender initiates the communication process.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sender",
+                                          "Receiver",
+                                          "Channel",
+                                          "Feedback"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_188",
+                          "text":  "The _______________ is the information that is passed across in communication",
+                          "explanation":  "The message is the information being communicated.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sender",
+                                          "receiver",
+                                          "message",
+                                          "channel"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_189",
+                          "text":  "The ____________ is the channel through which the message is communicated to the receiver",
+                          "explanation":  "The channel is the medium through which the message travels.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "feedback",
+                                          "message",
+                                          "encoding",
+                                          "channel"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_190",
+                          "text":  "In communication, the ___________ is the person the message is intended for",
+                          "explanation":  "The receiver is the intended audience for the message.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sender",
+                                          "receiver",
+                                          "decoding",
+                                          "feedback"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_191",
+                          "text":  "The ________________ is the response that the receiver gives after the message has been sent",
+                          "explanation":  "Feedback is the receiver\u0027s response to the message.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "channel",
+                                          "feedback",
+                                          "encoding",
+                                          "decoding"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_192",
+                          "text":  "Language is the __________ of the ____________ of human culture",
+                          "explanation":  "Language is the medium of the identity of human culture.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "medium, identity",
+                                          "channel, transmission",
+                                          "tool, communication",
+                                          "key, identity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_193",
+                          "text":  "Language can be described as a vehicle of cultural transmission",
+                          "explanation":  "Language serves as the vehicle for transmitting culture.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Yes",
+                                          "No",
+                                          "Maybe",
+                                          "Don\u0027t know"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_194",
+                          "text":  "The _________________ of culture is the process of transferring cultural values from one generation to the other",
+                          "explanation":  "Cultural transmission is the passing of cultural values across generations.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Communication",
+                                          "Transmission",
+                                          "Transformation",
+                                          "Transition"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_195",
+                          "text":  "Language is the primary vehicle for the ____________ of culture",
+                          "explanation":  "Language is the primary vehicle for cultural transmission.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Communication",
+                                          "Transmission",
+                                          "Transformation",
+                                          "Transition"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_196",
+                          "text":  "Language and culture are _____________",
+                          "explanation":  "Language and culture are deeply intertwined and inseparable.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Separate",
+                                          "Independent",
+                                          "Inseparable",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_197",
+                          "text":  "Language is _______________ for the existence of culture",
+                          "explanation":  "Language is essential for culture to exist and be transmitted.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Not essential",
+                                          "Essential",
+                                          "Irrelevant",
+                                          "Optional"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_198",
+                          "text":  "Language and culture have a ________________ relationship",
+                          "explanation":  "Language and culture have a mutual, reciprocal relationship.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One-way",
+                                          "Two-way",
+                                          "One-sided",
+                                          "Mutual"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst111_199",
+                          "text":  "Language is the most _____________ form of culture",
+                          "explanation":  "Language is the most complex form of human culture.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ancient",
+                                          "Basic",
+                                          "Complex",
+                                          "Visible"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_200",
+                          "text":  "The ____________ of language is the most effective instrument for cultural transmission",
+                          "explanation":  "The spoken form of language is most effective for cultural transmission.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Written form",
+                                          "Spoken form",
+                                          "Grammar",
+                                          "Phonology"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_201",
+                          "text":  "Language is the ____________ of culture",
+                          "explanation":  "Language serves as the identity of culture.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Identity",
+                                          "Medium",
+                                          "Vehicle",
+                                          "Tool"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_202",
+                          "text":  "Culture is the _____________ of language",
+                          "explanation":  "Culture is the medium through which language operates.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Identity",
+                                          "Medium",
+                                          "Vehicle",
+                                          "Tool"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_203",
+                          "text":  "Language and culture are _____________ dependent on each other",
+                          "explanation":  "Language and culture are mutually dependent on each other.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mutually",
+                                          "Independently",
+                                          "Separately",
+                                          "None of the above"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_204",
+                          "text":  "The relationship between language and culture is _____________",
+                          "explanation":  "The relationship between language and culture is complex and deep.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Simple",
+                                          "Complex",
+                                          "One-sided",
+                                          "Non-existent"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst111_205",
+                          "text":  "Language is the _____________ that holds culture together",
+                          "explanation":  "Language is the glue that holds culture together.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Glue",
+                                          "Bond",
+                                          "Tie",
+                                          "Link"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst111_206",
+                          "text":  "Culture is the _____________ that gives language meaning",
+                          "explanation":  "Culture provides the context that gives language its meaning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Foundation",
+                                          "Basis",
+                                          "Context",
+                                          "Frame"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst111_207",
+                          "text":  "Language is the _____________ of human culture",
+                          "explanation":  "Language is the soul of human culture - its essential spirit.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Foundation",
+                                          "Heart",
+                                          "Core",
+                                          "Soul"
+                                      ],
+                          "correct_index":  3
+                      }
+                  ]
 }
