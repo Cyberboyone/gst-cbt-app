@@ -1,10 +1,12 @@
+import 'dart:math';
+
 class Question {
   final String id;
   final String text;
   final List<String> options;
   final int correctIndex;
   final String explanation;
-  final int difficulty; // 1 = Easy, 2 = Medium, 3 = Hard
+  final int difficulty;
 
   Question({
     required this.id,
@@ -14,6 +16,19 @@ class Question {
     required this.explanation,
     this.difficulty = 1,
   });
+
+  factory Question.shuffled(Question original) {
+    final indices = List<int>.generate(original.options.length, (i) => i);
+    indices.shuffle(Random());
+    return Question(
+      id: original.id,
+      text: original.text,
+      explanation: original.explanation,
+      difficulty: original.difficulty,
+      options: indices.map((i) => original.options[i]).toList(),
+      correctIndex: indices.indexOf(original.correctIndex),
+    );
+  }
 
   Map<String, dynamic> toMap() {
     return {

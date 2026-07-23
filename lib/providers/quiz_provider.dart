@@ -107,11 +107,11 @@ class QuizProvider with ChangeNotifier {
     notifyListeners();
 
     if (overrideQuestions != null && overrideQuestions.isNotEmpty) {
-      _questions = List.from(overrideQuestions);
+      _questions = overrideQuestions.map((q) => Question.shuffled(q)).toList()..shuffle();
     } else {
       final localQuestions = _hiveService.getCachedQuestions(course.id);
       if (localQuestions.isNotEmpty) {
-        _questions = List.from(localQuestions)..shuffle();
+        _questions = localQuestions.map((q) => Question.shuffled(q)).toList()..shuffle();
       } else {
         _questions = [];
       }

@@ -109,8 +109,8 @@ class AppConstants {
   // Exam Rules
   static const int passingScorePercentage = 45;
   static const int examDefaultMinutes = 30;
-  static const int practiceMaxQuestions = 20;
-  static const int examMaxQuestions = 40;
+  static const int practiceMaxQuestions = 50;
+  static const int examMaxQuestions = 50;
 
   // App Metadata
   static const String appVersion = '1.0.0';
