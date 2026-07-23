@@ -9,24 +9,31 @@ class AdService {
   static final AdService instance = AdService._();
 
   bool _initialized = false;
-  StreamSubscription<ConnectivityResult>? _connectivitySubscription;
+  bool _initFailed = false;
+  StreamSubscription? _connectivitySubscription;
 
-  void init() {
+  Future<void> init() async {
     if (_initialized) return;
     _initialized = true;
     debugPrint('[AdService] Initializing with gameId: ${AppConstants.unityAdsGameId}');
-    UnityAds.init(
+    await UnityAds.init(
       gameId: AppConstants.unityAdsGameId,
       testMode: kDebugMode,
       onComplete: () {
         debugPrint('[AdService] Unity Ads initialized successfully');
-        preloadInterstitial();
-        preloadRewarded();
+        _preloadAll();
       },
-      onFailed: (error, message) =>
-          debugPrint('[AdService] Init failed: $error – $message'),
+      onFailed: (error, message) {
+        debugPrint('[AdService] Init failed: $error – $message');
+        _initFailed = true;
+      },
     );
     _listenConnectivity();
+  }
+
+  void _preloadAll() {
+    preloadInterstitial();
+    preloadRewarded();
   }
 
   void _listenConnectivity() {
@@ -34,8 +41,7 @@ class AdService {
     _connectivitySubscription = Connectivity().onConnectivityChanged.listen((result) {
       if (result != ConnectivityResult.none) {
         debugPrint('[AdService] Network available – preloading ads');
-        preloadInterstitial();
-        preloadRewarded();
+        _preloadAll();
       }
     });
   }
@@ -45,6 +51,10 @@ class AdService {
   }
 
   void preload(String placementId) {
+    if (_initFailed) {
+      debugPrint('[AdService] Skipping preload – init failed');
+      return;
+    }
     debugPrint('[AdService] Preloading: $placementId');
     UnityAds.load(
       placementId: placementId,
@@ -57,7 +67,6 @@ class AdService {
   void showInterstitial({VoidCallback? onComplete}) {
     final id = AppConstants.unityInterstitialPlacement;
     debugPrint('[AdService] showInterstitial called for $id');
-    preloadInterstitial();
     _showInterstitialVideo(id, onComplete);
   }
 
@@ -84,7 +93,6 @@ class AdService {
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
     final id = AppConstants.unityRewardedPlacement;
     debugPrint('[AdService] showRewarded called for $id');
-    preloadRewarded();
     _showRewardedVideo(id, onRewarded, onFailed);
   }
 

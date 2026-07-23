@@ -16,10 +16,8 @@ void main() async {
   await Firebase.initializeApp();
   FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
 
-  // Initialize Unity Ads
-  AdService.instance.init();
-  AdService.instance.preloadInterstitial();
-  AdService.instance.preloadRewarded();
+  // Initialize Unity Ads (await so init completes before preload)
+  await AdService.instance.init();
 
   // Initialize Hive local database
   final hiveService = HiveService();
