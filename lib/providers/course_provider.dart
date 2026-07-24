@@ -72,6 +72,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#DCEEFF', // Sky
       mode: '200_level',
     ),
+    Course(
+      id: 'gst301',
+      code: 'GST 301',
+      name: 'Entrepreneurship Dev',
+      icon: '💼',
+      colorHex: '#FFF3CD', // Amber
+      mode: '300_level',
+    ),
     
   ];
 

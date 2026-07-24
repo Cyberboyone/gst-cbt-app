@@ -1,0 +1,2607 @@
+﻿{
+    "course_id":  "gst301",
+    "course_name":  "Entrepreneurship Development",
+    "version":  "2.0.0",
+    "questions":  [
+                      {
+                          "id":  "gst301_001",
+                          "text":  "The concept \u0027entrepreneur\u0027 is derived from which French word?",
+                          "options":  [
+                                          "entreprise",
+                                          "entreprendre",
+                                          "entrepreneur",
+                                          "entrepren"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The concept entrepreneur is derived from the French concept \u0027entreprendre\u0027 which is equivalent to the English \u0027to undertake\u0027.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_002",
+                          "text":  "According to Schumpeter (1951), who was the first to introduce the concept \u0027entrepreneur\u0027?",
+                          "options":  [
+                                          "Jean-Baptiste Say",
+                                          "Adam Smith",
+                                          "Richard Cantillon",
+                                          "Alfred Marshall"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Richard Cantillon, a French economist, was the first to introduce the concept \u0027entrepreneur\u0027 in his work in 1755.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_003",
+                          "text":  "Which scholar viewed the entrepreneur as a risk taker?",
+                          "options":  [
+                                          "Adam Smith",
+                                          "Richard Cantillon",
+                                          "John Stuart Mill",
+                                          "Jean-Baptiste Say"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Cantillon viewed the entrepreneur as a risk taker.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_004",
+                          "text":  "Jean-Baptiste Say identified entrepreneur as a new economic phenomenon in which year?",
+                          "options":  [
+                                          "1755",
+                                          "1800",
+                                          "1821",
+                                          "1890"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Jean-Baptiste Say analysed the concept in an advanced way in his work in 1821 where he identified entrepreneur as a new economic phenomenon.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_005",
+                          "text":  "Alfred Marshall formally recognized entrepreneurship as an important factor of production in which year?",
+                          "options":  [
+                                          "1860",
+                                          "1875",
+                                          "1890",
+                                          "1900"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Alfred Marshall formally recognized entrepreneurship as an important factor of production in 1890.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_006",
+                          "text":  "Schumpeter listed characteristics of entrepreneurs as all of the following EXCEPT:",
+                          "options":  [
+                                          "Risk-bearers",
+                                          "Coordinators and organizers",
+                                          "Followers",
+                                          "Innovators or creative imitators"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Schumpeter listed risk-bearers, coordinators and organizers, gap-fillers, leaders, and innovators or creative imitators as characteristics of entrepreneurs.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_007",
+                          "text":  "Cantillon (circa 1730) defined entrepreneurship as:",
+                          "options":  [
+                                          "The creation of new organizations",
+                                          "Self-employment of any sort",
+                                          "Innovation applied to business",
+                                          "The combination of resources"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Cantillon views entrepreneurship as \u0027self employment of any sort\u0027.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_008",
+                          "text":  "Gartner (1988) conceives entrepreneurship as:",
+                          "options":  [
+                                          "Innovation applied to a business context",
+                                          "The willingness to seek investment opportunities",
+                                          "The creation of new organizations",
+                                          "Self-employment of any sort"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Gartner (1988) conceives entrepreneurship as the creation of new organizations.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_009",
+                          "text":  "An entrepreneur who works within an existing organization to pursue business opportunities is called a(n):",
+                          "options":  [
+                                          "Entrepreneur",
+                                          "Intrapreneur",
+                                          "Technopreneur",
+                                          "Manager"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "An intrapreneur is an entrepreneur within an organization who pursues business opportunities within that organization.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_010",
+                          "text":  "A technopreneur is an individual whose business is in the realm of:",
+                          "options":  [
+                                          "Manufacturing",
+                                          "High technology",
+                                          "Agriculture",
+                                          "Commerce"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A technopreneur is an individual whose business is in the realm of high technology.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_011",
+                          "text":  "Which type of entrepreneur is preoccupied with introducing something new into the market?",
+                          "options":  [
+                                          "Imitating",
+                                          "Fabian",
+                                          "Innovative",
+                                          "Drone"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Innovative entrepreneurs are preoccupied with introducing something new into the market.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_012",
+                          "text":  "Fabian entrepreneurs are best described as:",
+                          "options":  [
+                                          "Resistant to change",
+                                          "Very careful and cautious in adopting changes",
+                                          "Copy cats of existing businesses",
+                                          "Technology innovators"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Fabian entrepreneurs are very careful and cautious in adopting any changes; they are also lazy and shy away from innovations.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_013",
+                          "text":  "Which type of entrepreneur prefers traditional/orthodox methods of production and is resistant to change?",
+                          "options":  [
+                                          "Fabian",
+                                          "Imitating",
+                                          "Innovative",
+                                          "Drone"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Drone entrepreneurs are resistant to change and prefer to stick to their traditional or orthodox methods of production.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_014",
+                          "text":  "Entrepreneurs occupy which THREE roles?",
+                          "options":  [
+                                          "Economic, social, and political",
+                                          "Economic, social, and technological",
+                                          "Social, political, and cultural",
+                                          "Technological, political, and economic"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Entrepreneurs occupy three roles as agents of: economic change, social change, and technological change.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_015",
+                          "text":  "According to Driessen and Zwart (2010), which are the THREE main characteristics of successful entrepreneurs?",
+                          "options":  [
+                                          "Risk taking, locus of control, self-efficacy",
+                                          "Need for achievement, internal locus of control, risk taking propensity",
+                                          "Need for power, tolerance of ambiguity, endurance",
+                                          "Need for autonomy, need for affiliation, endurance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Driessen and Zwart identified three main characteristics: need for achievement (n Ach), internal locus of control (ILOC), and risk taking propensity (RTP).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_016",
+                          "text":  "Which of the following is NOT a characteristic of entrepreneurship identified by Rockstar (2008)?",
+                          "options":  [
+                                          "Creative Activity",
+                                          "Dynamic Process",
+                                          "Involves Risk",
+                                          "Passive Activity"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Rockstar (2008) recognized characteristics as: Creative Activity, Dynamic Process, Purposeful Activity, and Involves Risk. Passive Activity is not among them.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_017",
+                          "text":  "The managerial roles of entrepreneurs were identified by:",
+                          "options":  [
+                                          "Adam Smith",
+                                          "Alfred Marshall",
+                                          "Henry Mintzberg",
+                                          "Joseph Schumpeter"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The managerial roles of entrepreneurs are the same as those identified by Henry Mintzberg in 1973.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_018",
+                          "text":  "When an entrepreneur acts as the link between the business and outside parties, he is performing the:",
+                          "options":  [
+                                          "Leader role",
+                                          "Liaison role",
+                                          "Monitor role",
+                                          "Spokesman role"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The entrepreneur has to act as the link between the business and the parties outside the business â€” this is the Liaison role.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_019",
+                          "text":  "The role in which an entrepreneur decides how scarce business resources are allocated is called:",
+                          "options":  [
+                                          "Negotiator role",
+                                          "Entrepreneurial role",
+                                          "Resource allocator role",
+                                          "Disturbance handler role"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Resource Allocator role involves deciding how scarce resources are allocated among competing ends.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_020",
+                          "text":  "Which of the following is an economic role of the entrepreneur?",
+                          "options":  [
+                                          "Stimulation of indigenous entrepreneurship",
+                                          "Bearing the ultimate risk of uncertainty",
+                                          "Stimulation of indigenous technology",
+                                          "Job creation in the community"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Bearing the ultimate risk of uncertainty is listed as an economic role of the entrepreneur.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_021",
+                          "text":  "Motivation is best described as:",
+                          "options":  [
+                                          "External incentives that attract individuals",
+                                          "The driving force within individuals that propels them to action",
+                                          "Government policies that encourage business",
+                                          "Social influences on business decisions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Motivation is the driving force within individuals that propels them to action.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_022",
+                          "text":  "David C. McClelland is known as the father of which theory?",
+                          "options":  [
+                                          "Locus of Control Theory",
+                                          "Risk Taking Theory",
+                                          "Need for Achievement Theory",
+                                          "Self-Efficacy Theory"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "David C. McClelland, a psychologist, is the father of the Need for Achievement Theory.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_023",
+                          "text":  "Individuals with high N Ach (Need for Achievement) are more likely to become entrepreneurs because they tend to engage in activities with:",
+                          "options":  [
+                                          "High risk and no feedback",
+                                          "Low individual responsibility",
+                                          "High degree of individual responsibility and moderate risk",
+                                          "No performance feedback"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "High N Ach individuals engage in activities with high degree of individual responsibility, moderate risk, and clear performance feedback.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_024",
+                          "text":  "Individuals who believe their personal actions directly affect the outcome of events have:",
+                          "options":  [
+                                          "External locus of control",
+                                          "Internal locus of control",
+                                          "High tolerance for ambiguity",
+                                          "Low self-efficacy"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Individuals with internal locus of control believe their personal actions directly affect the outcome of an event.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_025",
+                          "text":  "Self-efficacy is best defined as:",
+                          "options":  [
+                                          "Belief in fate and luck",
+                                          "Task-specific self-confidence in one\u0027s abilities",
+                                          "Desire for financial independence",
+                                          "Risk-taking propensity"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Self-efficacy is conceptualized as the belief in one\u0027s ability to muster and implement necessary personal resources â€” essentially task-specific self-confidence.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_026",
+                          "text":  "According to Shane et al. (2003), the four aspects of \u0027drive\u0027 are:",
+                          "options":  [
+                                          "Ambition, goals, energy/stamina, persistence",
+                                          "Risk, reward, feedback, flexibility",
+                                          "Vision, mission, strategy, implementation",
+                                          "Creativity, innovation, motivation, teamwork"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Shane et al. identified four aspects of drive: ambition, goals, energy and stamina, and persistence.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_027",
+                          "text":  "Which motivational factor refers to a \u0027passionate, selfish love of the work\u0027?",
+                          "options":  [
+                                          "Drive",
+                                          "Self-efficacy",
+                                          "Egoistic passion",
+                                          "Desire for independence"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Shane et al. (2003) viewed egoistic passion as a passionate, selfish love of the work.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_028",
+                          "text":  "Opportunity cost as a non-motivational factor suggests entrepreneurs are more likely to start businesses when their opportunity costs are:",
+                          "options":  [
+                                          "Higher",
+                                          "Lower",
+                                          "Equal to their rewards",
+                                          "Unpredictable"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Entrepreneurs are more likely to undertake entrepreneurial activities when their opportunity costs are lower.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_029",
+                          "text":  "Background characteristics as non-motivational factors include all of the following EXCEPT:",
+                          "options":  [
+                                          "Childhood",
+                                          "Family environment",
+                                          "Age",
+                                          "Locus of control"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Background characteristics include childhood, family environment, education, age, and work history. Locus of control is a motivational factor.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_030",
+                          "text":  "Creativity is defined as:",
+                          "options":  [
+                                          "The process of doing new things",
+                                          "The ability to bring something new into existence",
+                                          "The ability to imitate perfectly",
+                                          "Converting creative ideas into marketplace reality"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Creativity is the ability to bring something new into existence. Innovation is the process of doing new things.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_031",
+                          "text":  "Innovation is defined as:",
+                          "options":  [
+                                          "The ability to bring something new into existence",
+                                          "The process of doing new things and converting creative ideas into marketplace reality",
+                                          "The ability to imitate perfectly",
+                                          "A subconscious assimilation of information"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Innovation is the process of doing new things â€” the conversion of creative ideas into marketplace reality.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_032",
+                          "text":  "According to Holt (1992), the FIRST stage of the creative process is:",
+                          "options":  [
+                                          "Incubation",
+                                          "Preparation",
+                                          "Idea Germination",
+                                          "Verification"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Holt (1992) identified the creative process starting with Idea Germination, followed by Preparation, Incubation, Illumination, and Verification.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_033",
+                          "text":  "The stage in the creative process where the idea is \u0027put on a back burner\u0027 for the subconscious to work is:",
+                          "options":  [
+                                          "Germination",
+                                          "Preparation",
+                                          "Incubation",
+                                          "Illumination"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Incubation is the stage where the idea is put on a back burner and the subconscious mind is allowed time to assimilate information.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_034",
+                          "text":  "Illumination in the creative process occurs when:",
+                          "options":  [
+                                          "The idea is first planted",
+                                          "The idea surfaces as a realistic creation",
+                                          "The idea is tested and verified",
+                                          "The subconscious processes information"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Illumination occurs when the idea surfaces as a realistic creation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_035",
+                          "text":  "How many stages does Holt (1992) identify in the creative process?",
+                          "options":  [
+                                          "4",
+                                          "5",
+                                          "6",
+                                          "7"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Holt (1992) identifies 5 stages: Idea Germination, Preparation, Incubation, Illumination, and Verification.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_036",
+                          "text":  "Technological innovativeness primarily comprises:",
+                          "options":  [
+                                          "Market research and product design",
+                                          "Novelty in management systems",
+                                          "Research and engineering efforts aimed at new products and processes",
+                                          "Innovations in advertising and promotion"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Technological innovativeness primarily comprises research and engineering efforts aimed at developing new products and processes.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_037",
+                          "text":  "Administrative innovativeness is concerned with:",
+                          "options":  [
+                                          "New products and processes",
+                                          "Market research and advertising",
+                                          "Novelty in management systems, control techniques, and organizational structure",
+                                          "Research and engineering efforts"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Administrative innovativeness is concerned with novelty in management systems, control techniques, and organisational structure.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_038",
+                          "text":  "Which type of innovation comprises relatively small modifications to pre-existing solutions?",
+                          "options":  [
+                                          "Radical Innovation",
+                                          "Architectural Innovation",
+                                          "Modular Innovation",
+                                          "Incremental Innovation"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Incremental Innovation comprises relatively small modifications to pre-existing solutions.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_039",
+                          "text":  "Which type of innovation changes the core design of one or more components without changing the entire product architecture?",
+                          "options":  [
+                                          "Incremental Innovation",
+                                          "Modular Innovation",
+                                          "Radical Innovation",
+                                          "Architectural Innovation"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Modular Innovation changes the core design of one or more components but does not change the entire product architecture.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_040",
+                          "text":  "Radical innovation brings about:",
+                          "options":  [
+                                          "Small modifications to existing solutions",
+                                          "Reconfiguration of an established system",
+                                          "A new dominant design with a new set of core design concepts",
+                                          "Changes to only one component"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Radical Innovation brings about a new dominant design and consequently, a new set of core design concepts linked in a new architecture.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_041",
+                          "text":  "According to Desouza et al. (2007), the FIRST phase of successful innovation is:",
+                          "options":  [
+                                          "Advocacy and Screening",
+                                          "Experimentation",
+                                          "Idea Generation and Mobilisation",
+                                          "Commercialisation"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Idea Generation and Mobilisation is the first phase of successful innovation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_042",
+                          "text":  "An invention is considered an innovation only once it has been:",
+                          "options":  [
+                                          "Patented",
+                                          "Commercialised",
+                                          "Tested",
+                                          "Published"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "An invention is only considered an innovation once it has been commercialised.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_043",
+                          "text":  "The concept \u0027environment\u0027 literally means:",
+                          "options":  [
+                                          "The external forces only",
+                                          "The surroundings, internal, intermediate, and external objects, influences, or circumstances",
+                                          "The political and legal framework",
+                                          "The market conditions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Environment literally means the surroundings, internal, intermediate, and external objects, influences, or circumstances under which someone or something exists.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_044",
+                          "text":  "Which characteristic of the business environment describes that an occurrence can be seen as a strength by one organization but a weakness by another?",
+                          "options":  [
+                                          "Dynamism",
+                                          "Complexity",
+                                          "Multifaceted",
+                                          "Far-reaching impact"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Multifaceted means the business environment can be viewed from many angles â€” a strength to one may be a weakness to another.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_045",
+                          "text":  "The internal environmental factors of a business are also called the:",
+                          "options":  [
+                                          "Uncontrollable environment",
+                                          "External environment",
+                                          "Controllable environment",
+                                          "Intermediate environment"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Internal environmental factors refer to those factors over which the entrepreneur has control â€” this is also called the controllable environment.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_046",
+                          "text":  "Strengths in business are best described as:",
+                          "options":  [
+                                          "Unfavorable external conditions",
+                                          "Inherent capabilities that give strategic advantage",
+                                          "Inherent limitations that create strategic disadvantage",
+                                          "Favorable external conditions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Strengths are inherent capacities which a business can use to gain strategic advantage over competitors.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_047",
+                          "text":  "The intermediate environmental factors generally include:",
+                          "options":  [
+                                          "Government policies and laws",
+                                          "Customers and suppliers",
+                                          "Technological advancements",
+                                          "Demographic factors"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Intermediate determinants generally include the customers and the suppliers who are the links between the organisation and the purely external factors.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_048",
+                          "text":  "The National Directorate of Employment (NDE) was established by the Federal Government of Nigeria in:",
+                          "options":  [
+                                          "1980",
+                                          "1983",
+                                          "1986",
+                                          "1990"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The NDE was established by the Federal Government of Nigeria in November 1986.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_049",
+                          "text":  "Which of the following is NOT an external environmental factor?",
+                          "options":  [
+                                          "Demographic factors",
+                                          "Technological factors",
+                                          "Organizational behaviour",
+                                          "Socio-cultural factors"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Organizational behaviour is an internal environmental factor. Demographic, technological, and socio-cultural are external factors.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_050",
+                          "text":  "SWOT analysis stands for:",
+                          "options":  [
+                                          "Strengths, Weaknesses, Outcomes, Threats",
+                                          "Strengths, Weaknesses, Opportunities, Threats",
+                                          "Strategies, Weaknesses, Objectives, Threats",
+                                          "Strengths, Work, Opportunities, Targets"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "SWOT stands for Strengths, Weaknesses, Opportunities, and Threats.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_051",
+                          "text":  "The scanning of the internal environment to identify strengths and weaknesses can be done using which framework?",
+                          "options":  [
+                                          "5Ps",
+                                          "5Ws",
+                                          "5Ss",
+                                          "5Ts"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The entrepreneur can assess the internal environment by critically looking at the 5Ss: Skills, Strategy, Staff, Structure, and Systems.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_052",
+                          "text":  "Opportunities in the business environment are best described as:",
+                          "options":  [
+                                          "Unfavorable external conditions creating risk",
+                                          "Favorable conditions enabling the business to consolidate and strengthen its position",
+                                          "Internal strengths of the business",
+                                          "Competitive advantages over rivals"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Opportunities are favourable conditions in the business environment which enable it to consolidate and strengthen its position.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_053",
+                          "text":  "Which form of business ownership is the simplest and most popular?",
+                          "options":  [
+                                          "Partnership",
+                                          "Limited Liability Company",
+                                          "Sole Proprietorship",
+                                          "Cooperative"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The sole proprietorship is the simplest and most popular form of ownership.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_054",
+                          "text":  "One advantage of sole proprietorship is:",
+                          "options":  [
+                                          "Limited personal liability",
+                                          "Easy to raise capital for expansion",
+                                          "Ownership of all profits",
+                                          "Continuity after the death of the owner"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Ownership of all profits is listed as an advantage of sole proprietorship.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_055",
+                          "text":  "A major disadvantage of sole proprietorship is:",
+                          "options":  [
+                                          "Privacy",
+                                          "Unlimited personal liability",
+                                          "Maximum incentive to succeed",
+                                          "Flexibility of operation"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Unlimited personal liability is a major disadvantage of sole proprietorship.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_056",
+                          "text":  "A partnership is a legal form of business with:",
+                          "options":  [
+                                          "One owner",
+                                          "Two or more owners",
+                                          "At least seven owners",
+                                          "Unlimited number of owners"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A partnership is a legal form of business with two or more owners.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_057",
+                          "text":  "The minimum and maximum number of partners in a standard partnership are respectively:",
+                          "options":  [
+                                          "1 and 10",
+                                          "2 and 20",
+                                          "2 and 50",
+                                          "7 and 20"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The minimum number required to form a partnership is two, while the maximum is twenty (with exceptions for professionals).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_058",
+                          "text":  "The document that states all the terms of operating a partnership is called the:",
+                          "options":  [
+                                          "Memorandum of Association",
+                                          "Articles of Association",
+                                          "Partnership Agreement",
+                                          "Certificate of Incorporation"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The partnership agreement is a document that states all of the terms of operating the partnership for the protection of each partner.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_059",
+                          "text":  "A partner who is active in managing the firm and has unlimited liability is called a:",
+                          "options":  [
+                                          "Limited partner",
+                                          "Silent partner",
+                                          "Sleeping partner",
+                                          "General partner"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "A general partner is an owner who has unlimited liability and is active in managing the firm.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_060",
+                          "text":  "Partners who are known to the public as owners but take no active role in management are called:",
+                          "options":  [
+                                          "Secret partners",
+                                          "Silent partners",
+                                          "Sleeping partners",
+                                          "Nominal partners"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Silent partners are known by the public as owners but may take no active role in managing the business.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_061",
+                          "text":  "Partners who take an active role in management but are unknown to outsiders as partners are called:",
+                          "options":  [
+                                          "Nominal partners",
+                                          "Silent partners",
+                                          "Secret partners",
+                                          "Sleeping partners"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Secret partners take an active role in the management but are unknown to the outsiders as partners.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_062",
+                          "text":  "Partners who are neither known to the public as partners nor participate in management are called:",
+                          "options":  [
+                                          "Silent partners",
+                                          "Nominal partners",
+                                          "Secret partners",
+                                          "Sleeping/Dormant partners"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Sleeping (dormant) partners are neither known as partners by the public nor do they participate in managing the company.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_063",
+                          "text":  "The major law guiding the formation and registration of companies in Nigeria is:",
+                          "options":  [
+                                          "Business Registration Act 1980",
+                                          "Companies and Allied Matter Act (CAMA) 1990",
+                                          "Nigerian Business Act 1985",
+                                          "Corporate Governance Act 2000"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "In Nigeria, the Companies and Allied Matter Act (CAMA) of 1990 is the major law that guides formation and registration of companies.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_064",
+                          "text":  "According to Section 18 of CAMA 1990, how many or more persons may form and incorporate a company?",
+                          "options":  [
+                                          "One",
+                                          "Two",
+                                          "Seven",
+                                          "Twenty"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "According to Section 18 of CAMA 1990, two or more persons may form and incorporate a company.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_065",
+                          "text":  "A private liability company can be formed by a minimum of __ and maximum of __ persons (excluding employees):",
+                          "options":  [
+                                          "2 and 20",
+                                          "2 and 50",
+                                          "7 and 50",
+                                          "2 and 100"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A private company can be formed by minimum of 2 and maximum of 50 persons, excluding employees.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_066",
+                          "text":  "The name of a private limited company must end with:",
+                          "options":  [
+                                          "PLC",
+                                          "Ltd/GTE",
+                                          "Limited",
+                                          "Corp"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The law requires the name of a private company to end with the word \u0027limited\u0027.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_067",
+                          "text":  "The minimum share capital for a private company under CAMA 1990 is:",
+                          "options":  [
+                                          "N5,000",
+                                          "N10,000",
+                                          "N50,000",
+                                          "N500,000"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The minimum share capital required for a private company under CAMA 1990 is N10,000.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_068",
+                          "text":  "The minimum share capital required for a public company under CAMA 1990 is:",
+                          "options":  [
+                                          "N10,000",
+                                          "N100,000",
+                                          "N500,000",
+                                          "N1,000,000"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The minimum share capital required for a public company is N500,000.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_069",
+                          "text":  "Which document is the primary constitution of a company and is superior to all other constitutional documents?",
+                          "options":  [
+                                          "Articles of Association",
+                                          "Memorandum of Association",
+                                          "Partnership Agreement",
+                                          "Certificate of Incorporation"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Memorandum of Association is superior to the Articles of Association. Wherever there is a conflict, the Memorandum prevails.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_070",
+                          "text":  "The Articles of Association prescribes the rules and regulations for the:",
+                          "options":  [
+                                          "External management of the company",
+                                          "Internal management of the affairs of the company",
+                                          "Winding up of the company",
+                                          "Registration of the company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Articles of Association prescribes the rules and regulations for the internal management of the affairs of the company.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_071",
+                          "text":  "A cooperative is a form of business ownership that involves:",
+                          "options":  [
+                                          "Individual ownership with limited liability",
+                                          "Collective ownership of a production or marketing organization",
+                                          "Ownership by government only",
+                                          "Partnership between two professionals"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A cooperative is a form of business ownership which involves collective ownership of a production, storage, transportation, or marketing organisation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_072",
+                          "text":  "As defined by Daft (1997), a team is:",
+                          "options":  [
+                                          "A collection of people with similar backgrounds",
+                                          "A unit of two or more people who interact and coordinate their work to accomplish a specific goal",
+                                          "A group of managers in an organization",
+                                          "Any collection of employees in a workplace"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A team is a unit of two or more people who interact and coordinate their work to accomplish a specific goal.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_073",
+                          "text":  "A vertical team is also called a:",
+                          "options":  [
+                                          "Horizontal team",
+                                          "Special-purpose team",
+                                          "Functional or command team",
+                                          "Self-directed team"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A vertical team could also be called a functional or command team.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_074",
+                          "text":  "A horizontal team is composed of employees from:",
+                          "options":  [
+                                          "Same level of the hierarchy in different areas of expertise",
+                                          "Different levels of the organizational hierarchy",
+                                          "The same department only",
+                                          "Senior management exclusively"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "A horizontal team is composed of employees from about the same hierarchical level but from different areas of expertise.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_075",
+                          "text":  "The five stages of team formation in order are:",
+                          "options":  [
+                                          "Forming, Storming, Norming, Performing, Adjusting",
+                                          "Storming, Norming, Forming, Performing, Adjusting",
+                                          "Forming, Norming, Storming, Adjusting, Performing",
+                                          "Norming, Forming, Storming, Performing, Adjusting"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The five stages of team formation are: Forming, Stormy (Storming), Norming, Performing, and Adjusting.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_076",
+                          "text":  "Cohesiveness in teams refers to:",
+                          "options":  [
+                                          "The size of the team",
+                                          "The extent to which membership of a team is positively valued",
+                                          "The norms governing team behavior",
+                                          "The roles assigned to team members"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Cohesiveness is the extent to which membership of a team is positively valued and members are drawn toward the team.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_077",
+                          "text":  "Free riding or social loafing in teams refers to:",
+                          "options":  [
+                                          "Team members overworking",
+                                          "Team members not exerting equal effort in goal attainment",
+                                          "Benefits shared equally among members",
+                                          "Coordinating team activities effectively"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Free riding occurs when team members do not exert equal effort in goal attainment. Some members work less, benefiting from others\u0027 efforts.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_078",
+                          "text":  "The Propinquity theory of group formation states that individuals affiliate with one another due to:",
+                          "options":  [
+                                          "Similar attitudes and goals",
+                                          "Reward-cost outcomes of interaction",
+                                          "Spatial or geographical proximity",
+                                          "Shared activities and sentiments"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Propinquity theory states that individuals affiliate with one another because of spatial or geographical proximity.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_079",
+                          "text":  "The Balance theory of group formation [Theodore Newcomb] states that persons are attracted to one another on the basis of:",
+                          "options":  [
+                                          "Proximity and convenience",
+                                          "Similar attitudes towards commonly relevant objects and goals",
+                                          "Shared financial resources",
+                                          "Reward and cost outcomes"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Balance theory states that persons are attracted to one another on the basis of similar attitudes towards commonly relevant objects and goals.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_080",
+                          "text":  "A group created by formal authority of an organization to transform resource inputs into product outputs is called a:",
+                          "options":  [
+                                          "Psychological group",
+                                          "Informal group",
+                                          "Reference group",
+                                          "Work group"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "A Work Group is created by formal authority of an organisation to transform resource inputs into product outputs.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_081",
+                          "text":  "Groups that emerge unofficially without being designated as parts of the organization are called:",
+                          "options":  [
+                                          "Formal groups",
+                                          "Work groups",
+                                          "Informal groups",
+                                          "Reference groups"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Informal Groups emerge unofficially and without being designated as parts of the organisation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_082",
+                          "text":  "Vision is best described as:",
+                          "options":  [
+                                          "The current status of an organization",
+                                          "A mental image or picture of a preferred future for an individual or organization",
+                                          "The mission statement of an organization",
+                                          "The short-term objectives of a company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Vision is a mental image or picture of a preferred future either for the individual or for an organization which the visioner must bring into reality.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_083",
+                          "text":  "According to Collins \u0026 Porras (1996), the two broad components of vision are:",
+                          "options":  [
+                                          "Core ideology and envisioned future",
+                                          "Mission and objectives",
+                                          "Goals and strategies",
+                                          "Core values and core purpose"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Components of Vision according to Collins \u0026 Porras (1996) are: Core Ideology and Envisioned Future.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_084",
+                          "text":  "Core ideology consists of two sub-components, which are:",
+                          "options":  [
+                                          "Goals and objectives",
+                                          "Core value and core purpose",
+                                          "Mission and vision",
+                                          "Strategy and structure"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Core ideology can be further sub-divided into: Core value (guiding principles) and Core purpose (reason for the organization\u0027s existence).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_085",
+                          "text":  "If vision is taken away from an organization, the result is:",
+                          "options":  [
+                                          "Progress",
+                                          "Slow growth",
+                                          "Confusion",
+                                          "Efficiency"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Take away vision = Organization confusion.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_086",
+                          "text":  "If skills are taken away from an organization, the result is:",
+                          "options":  [
+                                          "Frustration",
+                                          "Anxiety",
+                                          "Confusion",
+                                          "False start"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Take away skills = Organisation anxiety.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_087",
+                          "text":  "Lack of action plan in an organization leads to:",
+                          "options":  [
+                                          "Confusion",
+                                          "Frustration",
+                                          "False starts",
+                                          "Anxiety"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Take away action plan = false starts.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_088",
+                          "text":  "According to Thompson (1997), mission is the:",
+                          "options":  [
+                                          "Future orientation of the company",
+                                          "Essential purpose of the organization, concerning why it is in existence and who it serves",
+                                          "Financial target of the organization",
+                                          "Short-term plan of action"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Thompson (1997) sees mission as the \u0027essential purpose of the organization, concerning particularly why it is in existence, the nature of its business, and the customers it seeks to serve and satisfy.\u0027",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_089",
+                          "text":  "In defining a mission statement, the organization must consider five key elements which include all EXCEPT:",
+                          "options":  [
+                                          "History of the organization",
+                                          "Current performance",
+                                          "Competitor\u0027s financial data",
+                                          "Resources available"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The five elements include: history, current performance, environment, available resources, and distinctive competences. Competitor\u0027s financial data is not among them.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_090",
+                          "text":  "Kazim (2004) defined goals as:",
+                          "options":  [
+                                          "Specific measurable results with timeframes",
+                                          "What an organization hopes to accomplish in a future period of time",
+                                          "The financial targets of the company",
+                                          "Detailed action plans for departments"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Goals are what an organization hopes to accomplish in a future period of time. They represent a future state or outcome.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_091",
+                          "text":  "Objectives differ from goals in that objectives are:",
+                          "options":  [
+                                          "Broader and more general",
+                                          "More specific, measurable, and concrete",
+                                          "Less important than goals",
+                                          "Focused on long-term outcomes only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "While goals are broad, objectives are concrete and specific â€” they make goals operational and tend to be quantitative.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_092",
+                          "text":  "Which of the following is NOT a characteristic of good objectives?",
+                          "options":  [
+                                          "Measurable in quantitative or qualitative terms",
+                                          "Must have a time horizon",
+                                          "Must be vague and general",
+                                          "Must be challenging and attainable"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Good objectives must be clear, specific, measurable, time-bound, and challenging. Being vague is NOT a characteristic of good objectives.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_093",
+                          "text":  "The three levels of regulation in Nigeria are:",
+                          "options":  [
+                                          "Executive, Legislative, and Judicial",
+                                          "Federal, State, and Local Government legislation",
+                                          "Federal, Regional, and Municipal",
+                                          "National, Zonal, and State"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The three levels of regulations in Nigeria are: Federal Legislation acts, State legislation laws, and Local Government by-laws.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_094",
+                          "text":  "The Corporate Affairs Commission (CAC) was established by:",
+                          "options":  [
+                                          "EFCC Act 2004",
+                                          "NAFDAC Decree 1993",
+                                          "Companies and Allied Matters Act (CAMA) 1990",
+                                          "Standard Organization Act 1971"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Corporate Affairs Commission was established by the Companies and Allied Matters Act (CAMA) 1990.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_095",
+                          "text":  "The headquarters of the Corporate Affairs Commission is based in:",
+                          "options":  [
+                                          "Lagos",
+                                          "Abuja",
+                                          "Port Harcourt",
+                                          "Kano"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The headquarters of the Commission was to be based at Abuja, the Federal Capital Territory.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_096",
+                          "text":  "NAFDAC was established under Decree No. __ of 1993:",
+                          "options":  [
+                                          "10",
+                                          "15",
+                                          "20",
+                                          "25"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "NAFDAC was established under Decree No. 15 of 1993.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_097",
+                          "text":  "The function of NAFDAC that ensures narcotic drugs are limited to medical/scientific purposes is:",
+                          "options":  [
+                                          "A function of EFCC",
+                                          "A function of CAC",
+                                          "A function of NAFDAC",
+                                          "A function of ICPC"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "NAFDAC ensures that the use of narcotic drugs and psychotropic substances are limited to medical and scientific purposes.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_098",
+                          "text":  "The Standard Organization of Nigeria (SON) was originally established as the Nigerian Standard Organization Act of:",
+                          "options":  [
+                                          "1965",
+                                          "1971",
+                                          "1980",
+                                          "1990"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Standard Organization was established as Nigerian Standard Organization Act of 1971, now Standard Organisation of Nigeria (SON).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_099",
+                          "text":  "The Independent Corrupt Practices and Other Related Offences Commission (ICPC) was established to:",
+                          "options":  [
+                                          "Register companies in Nigeria",
+                                          "Combat corruption",
+                                          "Control food and drug quality",
+                                          "Investigate financial crimes"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "ICPC was established as a legislative initiative to combat corruption which had become endemic in national life.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_100",
+                          "text":  "The Economic and Financial Crimes Commission (EFCC) was established by Act of parliament in:",
+                          "options":  [
+                                          "2000",
+                                          "2002",
+                                          "2004",
+                                          "2006"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The EFCC was established by Act of parliament in 2004.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_101",
+                          "text":  "Which of the following is a promotional/supportive role of government towards entrepreneurs?",
+                          "options":  [
+                                          "Tax evasion",
+                                          "Tax holiday",
+                                          "Over-regulation",
+                                          "Price fixing"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Tax holiday is a promotional/supportive role of government â€” a temporary reduction or elimination of tax to encourage business investment.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_102",
+                          "text":  "A feasibility study can be defined as:",
+                          "options":  [
+                                          "A document for bank loan applications only",
+                                          "A controlled process for identifying problems and opportunities, determining objectives, and assessing costs and benefits",
+                                          "A simple marketing plan",
+                                          "A financial statement for investors"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A Business Feasibility Study is a controlled process for identifying problems and opportunities, determining objectives, describing situations, defining successful outcomes, and assessing costs and benefits.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_103",
+                          "text":  "The Executive Summary of a feasibility study should be written:",
+                          "options":  [
+                                          "First, before other sections",
+                                          "After all other content sections are completed",
+                                          "By an external auditor",
+                                          "Only when applying for a bank loan"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Executive Summary should be written after the content section of the Business Feasibility Study is completed, although it is presented first.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_104",
+                          "text":  "A business plan is best described as:",
+                          "options":  [
+                                          "A bank application form",
+                                          "A road map that describes a business opportunity and tells what to expect and alternative routes to arrive at a destination",
+                                          "A financial statement submitted to tax authorities",
+                                          "A document listing only employee roles"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A Business Plan is like a road map because it tells you what to expect and what alternative routes you can take to arrive at your destination.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_105",
+                          "text":  "According to Cagan (2006), which of the following does NOT spur the need for a full-scale business plan?",
+                          "options":  [
+                                          "Planning to launch a new business",
+                                          "Business having grown substantially",
+                                          "Wanting to hire a new employee",
+                                          "Thinking about buying a business"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Cagan (2006) listed: launching a new business, substantial growth, expanding into new markets, adding new products, or buying a business. Hiring a new employee is not among them.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_106",
+                          "text":  "A plan must be all of the following EXCEPT:",
+                          "options":  [
+                                          "Explicit",
+                                          "Intelligible",
+                                          "Rigid",
+                                          "Flexible"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A plan must be Explicit, Intelligible, Flexible, and Written. Rigid contradicts the flexibility requirement.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_107",
+                          "text":  "Which component is NOT part of a written business plan?",
+                          "options":  [
+                                          "The Business Idea",
+                                          "Financial Information",
+                                          "Liquidation Plan",
+                                          "Marketing Information"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A written business plan should contain: The Business Idea, The Entrepreneurs, Business Objectives, product/service, financial information, the market, and management. A liquidation plan is not a standard component.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_108",
+                          "text":  "Feasibility studies are prepared primarily for:",
+                          "options":  [
+                                          "Existing businesses only",
+                                          "New ventures",
+                                          "Government agencies",
+                                          "Large corporations only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Feasibility studies are prepared for new ventures, while Business Plans are for new as well as existing businesses.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_109",
+                          "text":  "Sources of funds for business ventures are classified under which categories?",
+                          "options":  [
+                                          "Short, medium, and long-term sources",
+                                          "Personal/family, internal, and external sources",
+                                          "Government, private, and international sources",
+                                          "Bank, equity, and bond sources"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The various sources of funds for business ventures are classified under: Personal and family sources, Internal sources, and External sources.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_110",
+                          "text":  "Personal savings as a source of business finance is important because:",
+                          "options":  [
+                                          "It is the easiest source of large capital",
+                                          "It motivates the owner knowing that life savings could be lost if the venture fails",
+                                          "It has no associated risk",
+                                          "It requires no planning"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Personal savings motivate the owner to know that if the venture fails, the life saving will be lost â€” encouraging greater commitment.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_111",
+                          "text":  "Retained profits as an internal source of finance means:",
+                          "options":  [
+                                          "Borrowing funds from banks",
+                                          "Financing from profits generated from previous business activities",
+                                          "Selling shares to the public",
+                                          "Obtaining government grants"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Retained profits is an accepted practice to finance the fixed and working capital requirements from profits generated from previous business activities.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_112",
+                          "text":  "Short-term financing involves obligations with a maturity date of:",
+                          "options":  [
+                                          "Less than one year",
+                                          "Between one and five years",
+                                          "More than five years",
+                                          "More than ten years"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Short-term financing involves obligation debts that have a maturity date of less than one year.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_113",
+                          "text":  "An arrangement that allows a current account holder to draw above the account balance is called:",
+                          "options":  [
+                                          "Hire purchase",
+                                          "Bill of exchange",
+                                          "Bank overdraft facility",
+                                          "Trade credit"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A bank overdraft facility is an arrangement which allows a person who keeps a current account the opportunity to draw above the balance in the account.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_114",
+                          "text":  "Factoring involves:",
+                          "options":  [
+                                          "Borrowing against fixed assets",
+                                          "Selling debts to a factor who assumes all credit risks",
+                                          "Issuing bonds to the public",
+                                          "Long-term equity financing"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Factoring is a method of short-term financing where debts are sold to a factor by arrangement, and the factor assumes all credit risks associated with the account receivables.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_115",
+                          "text":  "Medium-term finance refers to funds made available for use between:",
+                          "options":  [
+                                          "One day and one year",
+                                          "Two and five years",
+                                          "Ten and twenty years",
+                                          "Five and ten years"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Medium term finance can refer to funds made available for use between two and five years.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_116",
+                          "text":  "Equity finance or shareholders\u0027 fund is characterized by:",
+                          "options":  [
+                                          "Legal obligation to repay principal and interest",
+                                          "No legal obligation to repay principal or pay interest",
+                                          "Short-term repayment schedule",
+                                          "Government guarantee of returns"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Equity finance is money invested in the venture with no legal obligation for entrepreneurs to repay the principal amount or pay interest on it.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_117",
+                          "text":  "A debenture is said to be secured when:",
+                          "options":  [
+                                          "There is no pledge of any assets",
+                                          "Specific assets of the venture have been pledged as collateral",
+                                          "The government guarantees the loan",
+                                          "All shareholders approve the issuance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A debenture is secured when specific assets of the venture have been pledged as collateral and the holder has a right of lien on those assets.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_118",
+                          "text":  "Hire purchase is an arrangement in which:",
+                          "options":  [
+                                          "The buyer owns the asset from the first payment",
+                                          "The buyer takes possession while the seller retains ownership until the last installment is paid",
+                                          "No down payment is required",
+                                          "The asset is leased permanently"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "In hire purchase, the buyer takes possession while the seller retains ownership until the last installment is paid.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_119",
+                          "text":  "Credit unions differ from banks in that they are:",
+                          "options":  [
+                                          "For-profit organizations that charge higher interest",
+                                          "Non-profit organizations that charge less interest",
+                                          "Government-owned institutions",
+                                          "Exclusively for large businesses"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Credit unions are non-profit organizations and charge less interest than the banks do.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_120",
+                          "text":  "Which of the following factors makes it difficult for SMEs to secure bank loans?",
+                          "options":  [
+                                          "High interest rates",
+                                          "Lack of collateral",
+                                          "Poor business proposals",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "SMEs face difficulty securing loans due to high interest rates, lack of collateral, poor track record, low level of education, and poor business proposals.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_121",
+                          "text":  "According to Schumpeter (1934), the entrepreneur is primarily an:",
+                          "options":  [
+                                          "Administrator",
+                                          "Risk bearer",
+                                          "Innovator who implements change",
+                                          "Financial manager"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Schumpeter (1934) conceives the entrepreneur as the innovator who implements change within markets through carrying out new combinations.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_122",
+                          "text":  "Knight (1921) views entrepreneurs as individuals who:",
+                          "options":  [
+                                          "Create new organizations from scratch",
+                                          "Attempt to predict and act upon change within markets",
+                                          "Only invest in established businesses",
+                                          "Work within existing organizations"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Knight (1921) views entrepreneurs as individuals who attempt to predict and act upon change within markets.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_123",
+                          "text":  "Schumpeter equated entrepreneurship with the concept of innovation in which year?",
+                          "options":  [
+                                          "1921",
+                                          "1930",
+                                          "1934",
+                                          "1951"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In 1934, Joseph Schumpeter equated entrepreneurship with the concept of innovation and applied it to a business context.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_124",
+                          "text":  "Penrose (1963) views entrepreneurship as:",
+                          "options":  [
+                                          "Self-employment of any sort",
+                                          "The activity that involves identifying opportunities within the economic system",
+                                          "The creation of new organizations",
+                                          "Innovation in business context"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Penrose (1963) views entrepreneurship as the activity that involves identifying opportunities within the economic system.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_125",
+                          "text":  "Nwachukwu (1990) regards entrepreneurship as a process of:",
+                          "options":  [
+                                          "Creating innovative products only",
+                                          "Seeing and evaluating business opportunities, gathering resources, and initiating action to ensure success",
+                                          "Managing existing organizations",
+                                          "Developing technology for businesses"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nwachukwu (1990) regards entrepreneurship as a process of seeing and evaluating business opportunities, gathering necessary resources, and initiating appropriate action to ensure success.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_126",
+                          "text":  "Mill stressed the significance of entrepreneurship specifically for:",
+                          "options":  [
+                                          "Political development",
+                                          "Economic growth",
+                                          "Social welfare",
+                                          "Technological advancement"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Unlike Smith and Ricardo, Mill stressed the significance of entrepreneurship for economic growth.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_127",
+                          "text":  "The two disciplines where entrepreneurship originated were:",
+                          "options":  [
+                                          "French and English",
+                                          "Economics and Business",
+                                          "Economics and History",
+                                          "History and French"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Most scholars who wrote about the origin of entrepreneurship are either economists or historians, hence the two disciplines are Economics and History.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_128",
+                          "text":  "Imitating entrepreneurs are also referred to as:",
+                          "options":  [
+                                          "Fabian entrepreneurs",
+                                          "Drone entrepreneurs",
+                                          "Copy cats",
+                                          "Risk takers"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Imitating entrepreneurs are also referred to as \u0027copy cats\u0027. They observe existing systems and replicate them in a better manner.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_129",
+                          "text":  "Tolerance of ambiguity is the ability to:",
+                          "options":  [
+                                          "Avoid all uncertain situations",
+                                          "Respond positively to ambiguous situations",
+                                          "Predict the future with certainty",
+                                          "Eliminate all risks from the business"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Teoh and Foo (1997) define tolerance of ambiguity as the ability to respond positively to ambiguous situations.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_130",
+                          "text":  "Career transition as a non-motivational factor arises when an individual is:",
+                          "options":  [
+                                          "Satisfied with their current career",
+                                          "Between one career-related activity and another",
+                                          "Forced out of business by competition",
+                                          "Starting their first business"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Career transition arises when an individual is between one career-related activity and another, which can necessitate the creation of a new business.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_131",
+                          "text":  "Positive Pull Influences as non-motivational factors refer to:",
+                          "options":  [
+                                          "Negative experiences that push one to start a business",
+                                          "Centers of influence (mentors) within society who encourage entrepreneurship",
+                                          "Government incentives for new businesses",
+                                          "Market opportunities discovered by chance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Positive Pull Influences refers to centers of influence within the society â€” individuals whom people look up to as mentors and who encourage entrepreneurship.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_132",
+                          "text":  "The two primary factors that affect the supply of entrepreneurship are:",
+                          "options":  [
+                                          "Capital and technology",
+                                          "Opportunity and willingness to become an entrepreneur",
+                                          "Education and work experience",
+                                          "Government support and infrastructure"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Two factors affect the supply of entrepreneurship: opportunity and willingness to become an entrepreneur.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_133",
+                          "text":  "Synergy in business is the idea that:",
+                          "options":  [
+                                          "The sum of parts is greater than the whole",
+                                          "The whole is greater than the sum of its parts (3+3=7)",
+                                          "All parts are equal in contribution",
+                                          "One strong part can compensate for weak parts"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Synergy is the idea that the whole is greater than the sum of its parts, i.e., 3+3=7.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_134",
+                          "text":  "Distinctive competence is best described as:",
+                          "options":  [
+                                          "Skills shared by all organizations in an industry",
+                                          "The specific ability possessed by a particular organization that distinguishes it from others",
+                                          "Government-certified expertise",
+                                          "The total assets of a company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Distinctive competence is the specific ability possessed by a particular organization that distinguishes it from others.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_135",
+                          "text":  "POSDCORB is an acronym for managerial functions that stands for:",
+                          "options":  [
+                                          "Planning, Organizing, Staffing, Directing, Coordinating, Reporting, Budgeting",
+                                          "Planning, Operating, Selling, Directing, Communicating, Reviewing, Budgeting",
+                                          "Planning, Organizing, Selling, Directing, Controlling, Reporting, Buying",
+                                          "Planning, Ordering, Staffing, Distributing, Coordinating, Reporting, Billing"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "POSDCORB means: Planning, Organizing, Staffing, Directing, Coordinating, Reporting and Budgeting.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_136",
+                          "text":  "Which of the following is an advantage of limited liability companies?",
+                          "options":  [
+                                          "Personal liability of shareholders",
+                                          "Easy termination",
+                                          "Ability to attract capital",
+                                          "Simple legal requirements"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Advantages of limited liability companies include: legal entity, limited liability, ability to attract capital, ability to continue indefinitely, transferable ownership.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_137",
+                          "text":  "The four types of competitive structure are:",
+                          "options":  [
+                                          "Monopoly, duopoly, oligopoly, and competition",
+                                          "Monopoly, oligopoly, monopolistic competition, and perfect competition",
+                                          "Pure monopoly, monopoly, oligopoly, and free market",
+                                          "Monopoly, duopoly, free trade, and oligopoly"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The four general types of competitive structure are monopoly, oligopoly, monopolistic competition, and perfect competition.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_138",
+                          "text":  "According to the Small Business Administration (SBA), before acquiring capital an entrepreneur should answer all EXCEPT:",
+                          "options":  [
+                                          "Why do I need the capital?",
+                                          "How much do I need?",
+                                          "Who are my competitors?",
+                                          "How can I repay it?"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The SBA questions focus on: why, how much, when needed, for how long, where to obtain, and how to repay. Competitor information is not part of this framework.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_139",
+                          "text":  "A promissory note is an example of which form of short-term finance?",
+                          "options":  [
+                                          "Trade credit",
+                                          "Notes payable",
+                                          "Bank overdraft",
+                                          "Factoring"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A promissory note is a short-term marketable debt security and is a typical example of notes payable.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_140",
+                          "text":  "Equipment leasing is an arrangement where:",
+                          "options":  [
+                                          "Equipment is purchased outright by the user",
+                                          "The user pays an agreed sum to use equipment owned by another party",
+                                          "The government provides equipment free of charge",
+                                          "Two companies share equipment at no cost"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Equipment leasing is an arrangement between the owner of equipment and the user, where the user pays an agreed sum for making use of the equipment.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_141",
+                          "text":  "Mortgage financing is usually provided for the acquisition of:",
+                          "options":  [
+                                          "Raw materials and inventory",
+                                          "Landed property and buildings",
+                                          "Manufacturing equipment only",
+                                          "Short-term working capital"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Mortgage institutions provide finance for acquisition of landed property â€” purchase of land, completed buildings, new buildings, or renovation of existing structures.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_142",
+                          "text":  "Product-market innovativeness consists of:",
+                          "options":  [
+                                          "Research and engineering for new processes",
+                                          "Novelty in management systems and control",
+                                          "Market research, product design, and innovations in advertising and promotion",
+                                          "Radical restructuring of the organization"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Products-market innovativeness consists of market research, products design, and innovations in advertising and promotion.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_143",
+                          "text":  "Disruptive Innovation is described as innovation that:",
+                          "options":  [
+                                          "Makes small improvements to existing products",
+                                          "Creates markets that appear as if from nowhere, generating massive new wealth",
+                                          "Takes existing technologies to new markets",
+                                          "Makes internal process improvements"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Disruptive Innovation gets a great deal of attention because markets appear as if from nowhere, creating massive new sources of wealth.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_144",
+                          "text":  "Application Innovation takes:",
+                          "options":  [
+                                          "New products to existing markets",
+                                          "Existing technologies into new markets to serve new purposes",
+                                          "Established offers to the next performance level",
+                                          "Established processes and makes them more efficient"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Application Innovation takes existing technologies into new markets to serve new purposes.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_145",
+                          "text":  "Business Model Innovation reframes:",
+                          "options":  [
+                                          "Only the product design",
+                                          "An established value proposition to the customer or a company\u0027s role in the value chain",
+                                          "Only the internal supply chain",
+                                          "The hiring process of the company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Business Model Innovation reframes an established value proposition to the customer or a company\u0027s established role in the value chain or both.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_146",
+                          "text":  "The Advocacy and Screening phase of successful innovation is described as:",
+                          "options":  [
+                                          "Generating new ideas for the first time",
+                                          "The period for weighing an idea\u0027s costs and benefits",
+                                          "Testing ideas in the market",
+                                          "Final acceptance of the innovation by the company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Advocacy and Screening phase is the period for weighing an idea\u0027s costs and benefits.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_147",
+                          "text":  "The experimentation phase of innovation assesses:",
+                          "options":  [
+                                          "The financial returns of the innovation",
+                                          "The sustainability of ideas for a particular firm at a particular time and in a particular environment",
+                                          "Who will manufacture the product",
+                                          "How the innovation will be marketed"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The experimentation phase assesses the sustainability of ideas for a particular firm at a particular time â€” and in a particular environment.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_148",
+                          "text":  "Diffusion in successful innovation is the process of:",
+                          "options":  [
+                                          "Generating new ideas",
+                                          "Testing ideas in the market",
+                                          "Gaining final company-wide acceptance of an innovation",
+                                          "Setting up structures and resources to produce the innovation"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Diffusion is the process of gaining final, company-overall acceptance of an innovation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_149",
+                          "text":  "According to Adams (2005), critical factors for individual creativity include all EXCEPT:",
+                          "options":  [
+                                          "Knowledge",
+                                          "Thinking",
+                                          "Verification",
+                                          "Personal motivation"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Adams (2005) identified: Knowledge, Thinking, Personal motivation, Environment, and explicit decision to be creative. Verification is a stage of the creative process, not a critical factor for creativity.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_150",
+                          "text":  "The organic business functions that every business must perform are:",
+                          "options":  [
+                                          "Planning, organizing, staffing, directing",
+                                          "Production, marketing, finance, and personnel",
+                                          "Innovation, creativity, risk-taking, leadership",
+                                          "Research, development, manufacturing, distribution"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The basic organic business functions every business has to perform are: production, marketing, finance and personnel.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_151",
+                          "text":  "Which of the following best describes a \u0027Technopreneur\u0027?",
+                          "options":  [
+                                          "An entrepreneur who avoids technology",
+                                          "An individual who is a technological innovator and a businessman combined",
+                                          "A person who manages technology departments",
+                                          "A government IT consultant"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A technopreneur is a technological innovator and a business man all combined in one individual.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_152",
+                          "text":  "The Nigerian Export Promotion Council (NEPC) was established through Decree No.:",
+                          "options":  [
+                                          "10 of 1970",
+                                          "26 of 1976",
+                                          "15 of 1993",
+                                          "41 of 1985"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The NEPC was established through the promulgation of the Nigerian Export Promotion Decree No. 26 of 1976.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_153",
+                          "text":  "The Federal Institute of Industrial Research is located at:",
+                          "options":  [
+                                          "Enugu",
+                                          "Zaria",
+                                          "Oshodi",
+                                          "Owerri"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Federal Institute of Industrial Research is located at Oshodi (FIRO).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_154",
+                          "text":  "Project Development Institute (PRODA) is located in:",
+                          "options":  [
+                                          "Lagos",
+                                          "Abuja",
+                                          "Enugu",
+                                          "Kaduna"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Project Development Institute (PRODA) is located in Enugu.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_155",
+                          "text":  "Industrial Development Centres (IDC) were first established by the Federal Government in:",
+                          "options":  [
+                                          "1960",
+                                          "1964",
+                                          "1970",
+                                          "1986"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Federal Government in 1964 established Industrial Development Centres (ADC/IDC) located in Oshogbo, Owerri, and Zaria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_156",
+                          "text":  "The primary role of a Monitor in entrepreneurial management is to:",
+                          "options":  [
+                                          "Negotiate on behalf of the business",
+                                          "Monitor both the internal and external environment constantly",
+                                          "Allocate scarce resources",
+                                          "Handle conflict within the organization"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The entrepreneur acts as a monitor, constantly monitoring both the internal and the external environment of the business.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_157",
+                          "text":  "A Limited Liability Partnership (LLP) was created to:",
+                          "options":  [
+                                          "Allow all partners to have unlimited liability",
+                                          "Limit the disadvantage of unlimited liability",
+                                          "Give the government control over partnership affairs",
+                                          "Combine features of sole proprietorship and company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Limited Liability Partnership (LLP) was created to limit the disadvantage of unlimited liability.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_158",
+                          "text":  "Master Limited Partnership (MLP) is unique because it:",
+                          "options":  [
+                                          "Acts like a partnership in all ways",
+                                          "Acts like a corporation but is taxed like a partnership, avoiding corporate income tax",
+                                          "Has no tax obligations",
+                                          "Is exclusively for government businesses"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "MLP acts like a corporation and is traded on stock exchanges like a corporation but is taxed like a partnership, thus avoiding the corporate income tax.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_159",
+                          "text":  "The Forming stage of team development is characterized by:",
+                          "options":  [
+                                          "Open exchange of views and feelings",
+                                          "Members finding out about the task, rules, and appropriate methods",
+                                          "Emergence of solutions to problems",
+                                          "Emotional resistance to demands of the task"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "In the Forming stage, members find out what the task is, what the rules are, and what methods are appropriate.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_160",
+                          "text":  "The Norming stage of team development involves:",
+                          "options":  [
+                                          "Emotional resistance to demands",
+                                          "Members finding out about the task",
+                                          "Open exchange of views and feelings with developing cooperation",
+                                          "Modifications made in light of feedback"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In the Norming stage, there is open exchange of views and feelings, and cooperation develops.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_161",
+                          "text":  "A special-purpose team is created to:",
+                          "options":  [
+                                          "Replace all other teams in an organization",
+                                          "Undertake a project of special importance or creativity outside the formal organization",
+                                          "Handle all day-to-day operations",
+                                          "Manage employee recruitment"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A special-purpose team is created outside the formal organization to undertake a project of special importance or creativity.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_162",
+                          "text":  "Problem-solving teams consist of __ to __ multi-skilled workers who rotate jobs:",
+                          "options":  [
+                                          "2 to 5",
+                                          "5 to 20",
+                                          "10 to 30",
+                                          "20 to 50"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Problem-solving teams consist of 5 to 20 multi-skilled workers who rotate jobs to produce an entire product or service.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_163",
+                          "text":  "Goal interdependence in teams means:",
+                          "options":  [
+                                          "Each member has independent goals",
+                                          "Team members\u0027 success is determined at least in part by others\u0027 success",
+                                          "Goals are set by management, not team members",
+                                          "All team members share one goal and nothing else"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Interdependence entails that each team member\u0027s success is determined, at least in part, by the success of the other members.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_164",
+                          "text":  "The Exchange theory of group formation is based on:",
+                          "options":  [
+                                          "Geographical proximity",
+                                          "Shared activities and sentiments",
+                                          "Reward-cost outcomes of interaction",
+                                          "Similar attitudes towards common goals"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Exchange theory is based upon reward-cost outcomes of interaction. A minimum positive level (rewards greater than cost) must exist for affiliation to take place.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_165",
+                          "text":  "Group Norms are best described as:",
+                          "options":  [
+                                          "The size and composition of the group",
+                                          "The rules or standards of behaviour that apply to group members",
+                                          "The level of skills of group members",
+                                          "The cohesiveness of the group"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Group Norms are the acceptable behaviour of the group â€” rules or standards of behaviour that apply to group members.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_166",
+                          "text":  "Decision by unanimity in groups means:",
+                          "options":  [
+                                          "The majority decides",
+                                          "A minority makes the decision",
+                                          "All group members agree on the course of action",
+                                          "The group leader decides alone"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "By Unanimity means all group members agree on the course of action to be taken.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_167",
+                          "text":  "One difference between individual and group decision making is that:",
+                          "options":  [
+                                          "Individuals always make better decisions than groups",
+                                          "Groups usually provide more and better solutions to problems than individuals",
+                                          "Groups make decisions faster than individuals",
+                                          "Individuals are more accurate in their judgments than groups"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Groups usually provide more and better solutions to problems than individuals working alone â€” they have higher accuracy and quality of judgement.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_168",
+                          "text":  "The core purpose of an organization is best described as:",
+                          "options":  [
+                                          "The financial targets of the organization",
+                                          "The reason for the organization\u0027s existence",
+                                          "The leadership style of management",
+                                          "The organization\u0027s short-term plan"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Core purpose is the reason for the organization\u0027s existence, a clear description of the activities of the organization.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_169",
+                          "text":  "Vision evaluation criteria include all EXCEPT:",
+                          "options":  [
+                                          "Foresight",
+                                          "Practicality",
+                                          "Profitability",
+                                          "Uniqueness"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Vision evaluation criteria include: Foresight, Broadness, Uniqueness, Consensus, Practicality, and Accessibility. Profitability is not a vision evaluation criterion.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_170",
+                          "text":  "Okpara (2000) defines entrepreneurship as:",
+                          "options":  [
+                                          "Innovation applied to a business context",
+                                          "The willingness and ability of an individual to seek out investment opportunities and establish and run an enterprise successfully",
+                                          "The creation of new organizations",
+                                          "Bearing the ultimate risk of uncertainty"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Okpara (2000) defines entrepreneurship as the willingness and ability of an individual to seek out investment opportunities in an environment and be able to establish and run an enterprise successfully.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_171",
+                          "text":  "Which of the following is NOT among the five NDE core programmes?",
+                          "options":  [
+                                          "Small-Scale Industries and Graduate Employment",
+                                          "Support for Agricultural Programmes",
+                                          "Export Promotion Activities",
+                                          "Special Public Works Programmes"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "NDE\u0027s four core programmes are: Small-Scale Industries and Graduate Employment, Support for Agricultural Programmes, National Youth Employment and Vocational Skills Development, and Special Public Works Programmes. Export promotion is NEPC\u0027s function.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_172",
+                          "text":  "A company limited by guarantee is one where:",
+                          "options":  [
+                                          "Members\u0027 liability is limited to their share capital",
+                                          "Members undertake to contribute to the company\u0027s assets upon winding up",
+                                          "Members have unlimited liability",
+                                          "Government guarantees all company debts"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A company limited by guarantee is one where members undertake to contribute to the assets of the company in the event of it being wound up.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_173",
+                          "text":  "Which of the following is NOT included in the Memorandum of Association under CAMA 1990?",
+                          "options":  [
+                                          "Name of the company",
+                                          "Address of registered office",
+                                          "Rules for board meetings",
+                                          "Share capital clause"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Rules for board meetings are in the Articles of Association. The Memorandum of Association includes: name, address, objects, restrictions, share capital, liability clause, and subscription clause.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_174",
+                          "text":  "Which of these is a socio-cultural environmental factor?",
+                          "options":  [
+                                          "Government tax policies",
+                                          "Consumer income levels",
+                                          "People\u0027s norms, values, and beliefs",
+                                          "Technological innovations"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Socio-cultural factors deal with the people, their norms, values, and beliefs as they affect the business.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_175",
+                          "text":  "An ideal business (in terms of opportunities and threats) is one that is:",
+                          "options":  [
+                                          "High in major threats and low in opportunities",
+                                          "Low in opportunities and threats",
+                                          "High in major opportunities and low in major threats",
+                                          "High in both opportunities and threats"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "An ideal business is high in major opportunities and low in major threats.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_176",
+                          "text":  "A speculative business is one that is:",
+                          "options":  [
+                                          "High in opportunities and low in threats",
+                                          "High in both major opportunities and threats",
+                                          "Low in both opportunities and threats",
+                                          "Low in opportunities and high in threats"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A speculative business is high in both major opportunities and threats.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_177",
+                          "text":  "A troubled business is one that is:",
+                          "options":  [
+                                          "Low in both opportunities and threats",
+                                          "High in opportunities and low in threats",
+                                          "Low in opportunities and high in threats",
+                                          "High in both opportunities and threats"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A troubled business is low in opportunities and high in threats.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_178",
+                          "text":  "Tax holiday is best described as:",
+                          "options":  [
+                                          "A permanent exemption from taxes",
+                                          "A temporary reduction or elimination of tax used as an incentive for business investment",
+                                          "A reward for large corporations only",
+                                          "An illegal practice of tax avoidance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A tax holiday is a temporary reduction or elimination of tax; governments usually create tax holidays as incentives for business investment.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_179",
+                          "text":  "The strategic importance of SMEs is acknowledged worldwide because they:",
+                          "options":  [
+                                          "Contribute only minimally to employment",
+                                          "Are mostly owned by foreigners",
+                                          "Contribute to employment growth at a higher rate than larger firms and form the backbone of a market economy",
+                                          "Have no impact on GDP"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "SMEs are contributing to employment growth at a higher rate than larger firms. In the EU economy, about 99.9% of enterprises are SMEs, forming the backbone of a market economy.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_180",
+                          "text":  "Which of the following is the body responsible for investigating and prosecuting advance fee fraud and money laundering in Nigeria?",
+                          "options":  [
+                                          "ICPC",
+                                          "NAFDAC",
+                                          "EFCC",
+                                          "CAC"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The EFCC was empowered to investigate all financial crimes including advance fee fraud, money laundering, counterfeiting, and computer credit card fraud.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_181",
+                          "text":  "The primary function of the Standard Organisation of Nigeria (SON) includes:",
+                          "options":  [
+                                          "Registering companies and businesses in Nigeria",
+                                          "Designating, establishing, and approving standards for metrology, materials, and commodities",
+                                          "Investigating financial crimes",
+                                          "Promoting export of Nigerian goods"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "SON\u0027s functions include designating, establishing, and approving standards in respect of metrology, materials, commodities, products, and processes for certification throughout Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_182",
+                          "text":  "When an individual has confidence in the face of difficulties and remains steadfast, this entrepreneurial characteristic is called:",
+                          "options":  [
+                                          "Risk-taking propensity",
+                                          "Confidence in the face of difficulties and discouraging circumstances",
+                                          "Tolerance",
+                                          "Self-efficacy"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Confidence in the Face of Difficulties and Discouraging Circumstances means the entrepreneur is steadfast and resolute and ready to move on even in the face of adversity.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_183",
+                          "text":  "Being \u0027results-oriented\u0027 as an entrepreneurial characteristic means:",
+                          "options":  [
+                                          "Focusing only on financial outcomes",
+                                          "Knowing how to get results under any circumstances through setting and pursuing goals doggedly",
+                                          "Avoiding risks at all costs",
+                                          "Following only established procedures"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Results-Oriented means the entrepreneur knows how to get results under any circumstances, by setting goals and ensuring they are doggedly pursued.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_184",
+                          "text":  "Total commitment as an entrepreneurial characteristic is compared to:",
+                          "options":  [
+                                          "Running a short-term project",
+                                          "Bringing a child into the world and nurturing them to adulthood",
+                                          "Working part-time in business",
+                                          "Managing an already established business"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Starting a new business is like bringing a child into the world and nurturing the child to adulthood â€” requiring commitment, dedication, hard work, energy, and single-mindedness.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_185",
+                          "text":  "The key to choosing the optimum form of business ownership is:",
+                          "options":  [
+                                          "Choosing the form with the lowest tax burden only",
+                                          "Understanding characteristics of each business entity and how they affect the entrepreneur\u0027s personal and business circumstances",
+                                          "Selecting the most common form used by competitors",
+                                          "Choosing the form recommended by family members"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The key to choosing the optimum form of ownership is the ability to understand the characteristics of each business entity and how they affect an entrepreneur\u0027s business and personal circumstances.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_186",
+                          "text":  "Structural Innovation capitalizes on:",
+                          "options":  [
+                                          "Internal process improvements",
+                                          "Disruption to restructure industry relationships",
+                                          "Customer experience improvements",
+                                          "Small modifications to existing products"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Structural Innovation capitalizes on disruption to restructure industry relationships.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_187",
+                          "text":  "Which is NOT a type of cooperative?",
+                          "options":  [
+                                          "Consumer/producer cooperative",
+                                          "Workers cooperative",
+                                          "Finance cooperatives",
+                                          "Shareholders cooperative"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "The types of cooperatives listed are: Consumer/producer cooperative, Workers cooperative, and Finance cooperatives. Shareholders cooperative is not a type.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_188",
+                          "text":  "An individual with HIGH self-efficacy will:",
+                          "options":  [
+                                          "Avoid all forms of negative feedback",
+                                          "Take negative feedback in a more positive manner and use it to improve performance",
+                                          "Give up easily when faced with challenges",
+                                          "Rely entirely on external support"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "An individual with high self-efficacy will take negative feedback in a more positive manner and use that feedback to improve his/her performance.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_189",
+                          "text":  "According to George Hanmans theory of group formation, the more activities persons share, the more:",
+                          "options":  [
+                                          "Likely they are to conflict",
+                                          "Numerous will be their interactions and stronger will be their sentiments",
+                                          "Their economic competition increases",
+                                          "Homogeneous the group becomes"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "George Hanmans theory states that the more activities a person shares, the more numerous will be their interactions and the stronger will be their sentiments.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_190",
+                          "text":  "The \u0027Storming\u0027 stage in group/team development is characterized by:",
+                          "options":  [
+                                          "Open exchange of views and cooperation",
+                                          "Emotional resistance to demands of the task",
+                                          "Emergence of solutions to problems",
+                                          "Members finding out what the task is"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Stormy (Storming) stage involves emotional resistance to demands of the task.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_191",
+                          "text":  "In the \u0027Total Integration\u0027 stage of group development:",
+                          "options":  [
+                                          "Members first meet and determine the task",
+                                          "A mature, organized, and well-functioning group emerges, handling complex tasks and disagreements creatively",
+                                          "Emotional conflicts dominate",
+                                          "Members focus only on simple tasks"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Total integration sees the emergence of a mature, organized, and well-functioning group. Complex tasks are dealt with and membership disagreements are handled creatively.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_192",
+                          "text":  "What does SMEDAN stand for in the context of entrepreneurship support in Nigeria?",
+                          "options":  [
+                                          "Small and Medium Enterprises Directive Agency Nigeria",
+                                          "Small and Medium Enterprises Development Agency of Nigeria",
+                                          "Small Market Enterprise Development Agency Nigeria",
+                                          "Structured Medium Enterprise Development Agency Nigeria"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "SMEDAN is the Small and Medium Enterprises Development Agency of Nigeria â€” created to encourage and assist entrepreneurs to find capital, draw up business plans, and comply with business regulations.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_193",
+                          "text":  "Which of the following is a consideration for choosing the form of business ownership?",
+                          "options":  [
+                                          "Tax consideration",
+                                          "Liability exposure",
+                                          "Start-up and future capital requirements",
+                                          "All of the above"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Relevant considerations include: tax consideration, liability exposure, start-up and future capital requirements, management ability, business goals, management succession plans, and cost of formation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_194",
+                          "text":  "The Disturbance Handler role of an entrepreneur involves:",
+                          "options":  [
+                                          "Allocating scarce business resources",
+                                          "Acting as arbitrator in situations of conflict to maintain organizational harmony",
+                                          "Negotiating with external parties",
+                                          "Launching new ideas for the business"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Disturbance Handler role means the entrepreneur acts as arbitrator in situations of conflict to maintain organizational harmony.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_195",
+                          "text":  "The Nigerian constitution distinguishes between the exclusive and concurrent legislative lists. Where there is conflict between them:",
+                          "options":  [
+                                          "State law supersedes federal law",
+                                          "Local government by-laws prevail",
+                                          "Federal legislation supersedes",
+                                          "The courts decide which prevails each time"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Nigerian constitution distinguishes between the exclusive and concurrent legislative lists. Where there is conflict, the Federal law supersedes the State law.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_196",
+                          "text":  "Subsidiaries in business support from government refers to:",
+                          "options":  [
+                                          "Punitive taxes on businesses",
+                                          "A form of financial assistance granted to economic agents to support increased productivity and employment",
+                                          "Foreign company investments in Nigeria",
+                                          "Government taking over private businesses"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Subsidies are a form of financial assistance granted to economic agents such as business organizations with the aim of supporting businesses to generate increased productivity and promote increased employment and society\u0027s welfare.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_197",
+                          "text":  "In a break-even analysis within a business plan, the key question being answered is:",
+                          "options":  [
+                                          "What is the total market size?",
+                                          "When will the firm begin to turn a profit?",
+                                          "How many employees are needed?",
+                                          "What are the competitor\u0027s weaknesses?"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Break-Even Analysis answers: When will the firm begin to turn a profit?",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_198",
+                          "text":  "Which of the following statements about entrepreneurship is CORRECT?",
+                          "options":  [
+                                          "Entrepreneurship is exclusively for small business owners",
+                                          "All entrepreneurs are inventors",
+                                          "Entrepreneurship involves exploitation of opportunities within a market",
+                                          "Entrepreneurs never bear risk"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Entrepreneurship is a function which involves the exploitation of opportunities which exist within a market.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_199",
+                          "text":  "The Central Bank of Nigeria (CBN) falls under which category of regulatory agencies in Nigeria?",
+                          "options":  [
+                                          "Technical and technological support systems",
+                                          "Financial support systems",
+                                          "Other regulatory agencies",
+                                          "Extension services units"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Central Bank of Nigeria (CBN) is listed among other regulatory agencies involved in regulatory and supportive roles.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst301_200",
+                          "text":  "Which of the following correctly describes the relationship between creativity and innovation?",
+                          "options":  [
+                                          "They mean exactly the same thing",
+                                          "Innovation is a prerequisite to creativity",
+                                          "Creativity is a prerequisite to innovation; innovation converts creative ideas into useful applications",
+                                          "Creativity and innovation are unrelated concepts"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Ideas have little value until converted into new products, services, or processes. Innovation is the transformation of creative ideas into useful applications, but creativity is prerequisite to innovation.",
+                          "difficulty":  1
+                      }
+                  ]
+}
