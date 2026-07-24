@@ -1,0 +1,2607 @@
+﻿{
+    "course_id":  "ssc202",
+    "course_name":  "Introduction to Computing Sciences",
+    "version":  "2.0.0",
+    "questions":  [
+                      {
+                          "id":  "ssc202_001",
+                          "text":  "A computer can best be defined as a(n):",
+                          "options":  [
+                                          "Mechanical device that only stores data",
+                                          "Electronic device that accepts data, processes it, and produces meaningful output",
+                                          "Device that only performs calculations",
+                                          "Device used only for communication"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_002",
+                          "text":  "The set of instructions that tells a computer what to do is called a:",
+                          "options":  [
+                                          "Program",
+                                          "Processor",
+                                          "Peripheral",
+                                          "Protocol"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_003",
+                          "text":  "Desktops and laptops used in daily activities are commonly called:",
+                          "options":  [
+                                          "Mainframes",
+                                          "Personal Computers (PCs)",
+                                          "Minicomputers",
+                                          "Supercomputers"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_004",
+                          "text":  "Which characteristic of a computer refers to its ability to perform in seconds what would take humans much longer?",
+                          "options":  [
+                                          "Accuracy",
+                                          "Diligence",
+                                          "Speed",
+                                          "Versatility"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_005",
+                          "text":  "Computer speed is typically measured in units such as:",
+                          "options":  [
+                                          "Kilometers per hour",
+                                          "Microseconds, nanoseconds, and picoseconds",
+                                          "Bytes per second only",
+                                          "Volts per second"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_006",
+                          "text":  "According to the lecture, errors in computer output are usually due to:",
+                          "options":  [
+                                          "Faulty electricity supply",
+                                          "Imprecise thinking and analysis of humans",
+                                          "The computer\u0027s own intelligence",
+                                          "Weather conditions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_007",
+                          "text":  "The characteristic that describes a computer\u0027s ability to work for hours without tiredness or loss of concentration is:",
+                          "options":  [
+                                          "Versatility",
+                                          "Diligence",
+                                          "Accuracy",
+                                          "No IQ"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_008",
+                          "text":  "A computer\u0027s ability to perform varied tasks such as playing audio, editing letters, and processing results is known as:",
+                          "options":  [
+                                          "Versatility",
+                                          "Diligence",
+                                          "Power of remembering",
+                                          "No feelings"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_009",
+                          "text":  "The characteristic \u0027Power of Remembering\u0027 means a computer:",
+                          "options":  [
+                                          "Forgets information automatically over time",
+                                          "Only forgets when instructed to do so",
+                                          "Cannot store any data",
+                                          "Remembers only recent data"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_010",
+                          "text":  "Why is a computer said to have \u0027No IQ\u0027?",
+                          "options":  [
+                                          "It cannot process data at all",
+                                          "It possesses no intelligence of its own and must be told what to do",
+                                          "It cannot store data",
+                                          "It lacks input devices"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_011",
+                          "text":  "Which of the following best explains \u0027No Feelings\u0027 as a computer characteristic?",
+                          "options":  [
+                                          "Computers make judgments based only on human instructions/programs",
+                                          "Computers can love and hate",
+                                          "Computers make emotional decisions",
+                                          "Computers have instincts"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_012",
+                          "text":  "How many basic operations do all computer systems perform?",
+                          "options":  [
+                                          "Three",
+                                          "Four",
+                                          "Five",
+                                          "Six"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_013",
+                          "text":  "The process of entering data and instructions into a computer system is called:",
+                          "options":  [
+                                          "Outputting",
+                                          "Inputting",
+                                          "Storing",
+                                          "Controlling"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_014",
+                          "text":  "Which of these is an example of an input device?",
+                          "options":  [
+                                          "Monitor",
+                                          "Printer",
+                                          "Keyboard",
+                                          "Speaker"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_015",
+                          "text":  "The act of saving data and instructions so they are available for further processing is known as:",
+                          "options":  [
+                                          "Controlling",
+                                          "Storing",
+                                          "Outputting",
+                                          "Processing"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_016",
+                          "text":  "Which of the following belongs to primary storage?",
+                          "options":  [
+                                          "Hard Disk Drive",
+                                          "Flash Drive",
+                                          "Random Access Memory (RAM)",
+                                          "Compact Disc"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_017",
+                          "text":  "Which of the following is an example of secondary storage?",
+                          "options":  [
+                                          "RAM",
+                                          "ROM",
+                                          "Solid State Drive (SSD)",
+                                          "Cache memory"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_018",
+                          "text":  "Directing the manner and sequence in which computer operations are performed is called:",
+                          "options":  [
+                                          "Processing",
+                                          "Controlling",
+                                          "Storing",
+                                          "Inputting"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_019",
+                          "text":  "Which component performs directing/controlling operations in a computer?",
+                          "options":  [
+                                          "Control Unit (CU)",
+                                          "Hard Disk",
+                                          "Monitor",
+                                          "Keyboard"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_020",
+                          "text":  "Performing arithmetic and logical operations on data to convert it into useful information describes:",
+                          "options":  [
+                                          "Outputting",
+                                          "Processing",
+                                          "Storing",
+                                          "Inputting"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_021",
+                          "text":  "Which units are responsible for processing tasks in a computer?",
+                          "options":  [
+                                          "CPU, ALU, and GPU",
+                                          "Monitor and Printer",
+                                          "Keyboard and Mouse",
+                                          "RAM and ROM only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_022",
+                          "text":  "Producing useful information or results for use describes which basic operation?",
+                          "options":  [
+                                          "Inputting",
+                                          "Storing",
+                                          "Outputting",
+                                          "Controlling"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_023",
+                          "text":  "Which of the following is an output device?",
+                          "options":  [
+                                          "Scanner",
+                                          "Microphone",
+                                          "Monitor",
+                                          "Mouse"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_024",
+                          "text":  "Computers are classified as analog, digital, and hybrid based on:",
+                          "options":  [
+                                          "Their cost",
+                                          "How they process data",
+                                          "Their size",
+                                          "Their manufacturer"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_025",
+                          "text":  "Which type of computer continuously measures physical magnitudes such as pressure, temperature, and voltage?",
+                          "options":  [
+                                          "Digital computer",
+                                          "Analog computer",
+                                          "Hybrid computer",
+                                          "Mainframe computer"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_026",
+                          "text":  "Which of the following is an example of an analog computer?",
+                          "options":  [
+                                          "Laptop",
+                                          "Speedometer",
+                                          "Smartphone",
+                                          "Supercomputer"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_027",
+                          "text":  "Digital computers operate directly on numbers expressed in:",
+                          "options":  [
+                                          "Decimal form",
+                                          "Binary form (0s and 1s)",
+                                          "Roman numerals",
+                                          "Hexadecimal form only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_028",
+                          "text":  "A computer that combines the features of both analog and digital computers is called a:",
+                          "options":  [
+                                          "Hybrid computer",
+                                          "Microcomputer",
+                                          "Minicomputer",
+                                          "Mainframe"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_029",
+                          "text":  "The smallest general purpose processing system designed for individual use is called a:",
+                          "options":  [
+                                          "Mainframe computer",
+                                          "Supercomputer",
+                                          "Microcomputer",
+                                          "Minicomputer"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_030",
+                          "text":  "Which of these is an example of a microcomputer?",
+                          "options":  [
+                                          "Smartphone",
+                                          "Mainframe computer",
+                                          "Supercomputer",
+                                          "Minicomputer"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_031",
+                          "text":  "A medium-sized general purpose computer capable of handling data from multiple users simultaneously is a:",
+                          "options":  [
+                                          "Microcomputer",
+                                          "Minicomputer",
+                                          "Supercomputer",
+                                          "Mainframe"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_032",
+                          "text":  "Which type of computer is commonly used in banking systems and airline reservations?",
+                          "options":  [
+                                          "Microcomputer",
+                                          "Minicomputer",
+                                          "Mainframe computer",
+                                          "Analog computer"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_033",
+                          "text":  "The most powerful and most expensive computers, used in space exploration and scientific research, are called:",
+                          "options":  [
+                                          "Supercomputers",
+                                          "Microcomputers",
+                                          "Minicomputers",
+                                          "Hybrid computers"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_034",
+                          "text":  "Which companies are mentioned as producers of supercomputers?",
+                          "options":  [
+                                          "IBM and Apple",
+                                          "Cray Research and Control Data Corporation",
+                                          "Microsoft and Google",
+                                          "Intel and AMD"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_035",
+                          "text":  "What ultimately determines the task a computer performs?",
+                          "options":  [
+                                          "The computer\u0027s own decision",
+                                          "Human instructions",
+                                          "Random chance",
+                                          "The internet"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_036",
+                          "text":  "Which of the following is NOT one of the five basic computer operations?",
+                          "options":  [
+                                          "Inputting",
+                                          "Storing",
+                                          "Advertising",
+                                          "Processing"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_037",
+                          "text":  "Most minicomputers, as noted in the lecture, have now largely been replaced by:",
+                          "options":  [
+                                          "Servers",
+                                          "Typewriters",
+                                          "Abacuses",
+                                          "Calculators"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_038",
+                          "text":  "A powerful computer today can perform how many calculations per second, as described in the lecture?",
+                          "options":  [
+                                          "Thousands",
+                                          "Millions",
+                                          "Billions",
+                                          "Hundreds"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_039",
+                          "text":  "Which of these best distinguishes accuracy from diligence in a computer?",
+                          "options":  [
+                                          "Accuracy is about correctness of results; diligence is about sustained error-free performance over time",
+                                          "They mean exactly the same thing",
+                                          "Accuracy relates to speed only",
+                                          "Diligence relates to storage only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_040",
+                          "text":  "The course content indicates that laboratory assignments in SSC 202 involve:",
+                          "options":  [
+                                          "Only theoretical exams",
+                                          "The PC\u0027s operating system and common application software like word processors and spreadsheets",
+                                          "Only hardware repair",
+                                          "Only internet browsing"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_041",
+                          "text":  "The Abacus (Soroban), one of the earliest computing devices, was invented around:",
+                          "options":  [
+                                          "600 BC",
+                                          "1600 AD",
+                                          "1942 AD",
+                                          "1200 BC"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_042",
+                          "text":  "Napier\u0027s Bone, a manual calculating device, was invented by:",
+                          "options":  [
+                                          "Blaise Pascal",
+                                          "Charles Babbage",
+                                          "John Napier",
+                                          "Howard Aiken"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_043",
+                          "text":  "In which century was Napier\u0027s Bone invented?",
+                          "options":  [
+                                          "15th century",
+                                          "16th century",
+                                          "17th century",
+                                          "18th century"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_044",
+                          "text":  "The first mechanical addition machine, the Pascaline, was invented by Blaise Pascal in the year:",
+                          "options":  [
+                                          "1622",
+                                          "1642",
+                                          "1742",
+                                          "1842"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_045",
+                          "text":  "Who invented the first calculator for multiplication, later in 1642?",
+                          "options":  [
+                                          "John Napier",
+                                          "Baron Gottfried Wilhelm Leibniz",
+                                          "Charles Babbage",
+                                          "Howard Aiken"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_046",
+                          "text":  "Keyboard calculating machines originated in which country around 1880?",
+                          "options":  [
+                                          "Germany",
+                                          "United Kingdom",
+                                          "United States of America",
+                                          "Japan"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_047",
+                          "text":  "Who is considered the father of modern computers?",
+                          "options":  [
+                                          "John Napier",
+                                          "Blaise Pascal",
+                                          "Charles Babbage",
+                                          "Howard Aiken"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_048",
+                          "text":  "Charles Babbage\u0027s prototype machine that could produce reliable statistical tables, invented in 1822, was called the:",
+                          "options":  [
+                                          "Analytical Engine",
+                                          "Difference Engine",
+                                          "Mark I",
+                                          "ENIAC"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_049",
+                          "text":  "Babbage\u0027s 1842 machine intended to be completely automatic was called the:",
+                          "options":  [
+                                          "Difference Engine",
+                                          "Analytical Engine",
+                                          "Pascaline",
+                                          "UNIVAC"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_050",
+                          "text":  "The Analytical Engine was designed to perform basic arithmetic functions at an average speed of:",
+                          "options":  [
+                                          "6 additions per minute",
+                                          "60 additions per minute",
+                                          "600 additions per minute",
+                                          "6000 additions per minute"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_051",
+                          "text":  "The Mark I Computer, the first fully automatic calculating machine, was designed by:",
+                          "options":  [
+                                          "John Mauchly",
+                                          "Howard A. Aiken in collaboration with IBM",
+                                          "John Atanasoff",
+                                          "John Von Neumann"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_052",
+                          "text":  "The Mark I Computer operated between the years:",
+                          "options":  [
+                                          "1937-1944",
+                                          "1943-1946",
+                                          "1947-1949",
+                                          "1951-1955"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_053",
+                          "text":  "How long did the Mark I take to add two numbers?",
+                          "options":  [
+                                          "0.3 seconds",
+                                          "4.5 seconds",
+                                          "200 microseconds",
+                                          "1500 microseconds"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_054",
+                          "text":  "How long did the Mark I take to multiply two numbers?",
+                          "options":  [
+                                          "0.3 seconds",
+                                          "4.5 seconds",
+                                          "2000 microseconds",
+                                          "4000 microseconds"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_055",
+                          "text":  "The Atanasoff Berry Computer (ABC) was developed to solve:",
+                          "options":  [
+                                          "Language translation problems",
+                                          "Certain mathematical equations",
+                                          "Graphics rendering",
+                                          "Data storage issues"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_056",
+                          "text":  "How many vacuum tubes did the Atanasoff Berry Computer use for its internal logic?",
+                          "options":  [
+                                          "18,000",
+                                          "300",
+                                          "45",
+                                          "1,000"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_057",
+                          "text":  "ENIAC stands for:",
+                          "options":  [
+                                          "Electronic Numerical Integrator and Calculator",
+                                          "Electronic National Integrated Automatic Computer",
+                                          "Electronic Numeric Input and Control",
+                                          "Electric Numerical Instructional Automated Calculator"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_058",
+                          "text":  "ENIAC was constructed by a team led by:",
+                          "options":  [
+                                          "Howard Aiken",
+                                          "Prof. J. Presper Eckert and John Mauchly",
+                                          "Charles Babbage",
+                                          "Maurice Wilkes"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_059",
+                          "text":  "ENIAC could add two numbers in:",
+                          "options":  [
+                                          "0.3 seconds",
+                                          "200 microseconds",
+                                          "1500 microseconds",
+                                          "4.5 seconds"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_060",
+                          "text":  "Approximately how many vacuum tubes did ENIAC use?",
+                          "options":  [
+                                          "45",
+                                          "300",
+                                          "18,000",
+                                          "1,000"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_061",
+                          "text":  "EDVAC stands for:",
+                          "options":  [
+                                          "Electronic Discrete Variable Automatic Computer",
+                                          "Electronic Digital Variable Analog Computer",
+                                          "Electronic Data Variable Access Computer",
+                                          "Electric Digital Value Automatic Calculator"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_062",
+                          "text":  "The stored-program concept used in EDVAC was proposed by:",
+                          "options":  [
+                                          "Howard Aiken",
+                                          "John Von Neumann",
+                                          "Maurice Wilkes",
+                                          "Jack Kilby"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_063",
+                          "text":  "EDSAC stands for:",
+                          "options":  [
+                                          "Electronic Delay Storage Automatic Calculator",
+                                          "Electronic Digital Storage Automated Computer",
+                                          "Electric Data Sequential Automatic Calculator",
+                                          "Electronic Data Sorting Analog Computer"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_064",
+                          "text":  "EDSAC was developed by a group of scientists headed by:",
+                          "options":  [
+                                          "Howard Aiken",
+                                          "John Von Neumann",
+                                          "Prof. Maurice Wilkes",
+                                          "Jack Kilby"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_065",
+                          "text":  "The Manchester Mark I (1948) had a storage capacity of:",
+                          "options":  [
+                                          "32 words",
+                                          "992 words",
+                                          "23 decimal digits",
+                                          "300 words"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_066",
+                          "text":  "UNIVAC stands for:",
+                          "options":  [
+                                          "Universal Automatic Computer",
+                                          "United Numeric Automated Calculator",
+                                          "Universal Numeric Analog Computer",
+                                          "United Automatic Variable Computer"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_067",
+                          "text":  "UNIVAC enjoys the prestige of being the first digital computer:",
+                          "options":  [
+                                          "Used only in universities",
+                                          "For commercial usage",
+                                          "Used exclusively for military purposes",
+                                          "Built entirely from transistors"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_068",
+                          "text":  "First generation computers (1942-1955) primarily used which technology?",
+                          "options":  [
+                                          "Transistors",
+                                          "Integrated Circuits",
+                                          "Vacuum tubes",
+                                          "Microprocessors"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_069",
+                          "text":  "Which of the following is a disadvantage of first generation computers?",
+                          "options":  [
+                                          "They were small and portable",
+                                          "They were bulky, generated much heat, and required constant maintenance",
+                                          "They used microprocessors",
+                                          "They were very cheap to produce commercially"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_070",
+                          "text":  "Second generation computers (1955-1964) were characterized mainly by the use of:",
+                          "options":  [
+                                          "Vacuum tubes",
+                                          "Transistors",
+                                          "Integrated circuits",
+                                          "VLSI chips"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_071",
+                          "text":  "The transistor, which replaced the vacuum tube, was invented in:",
+                          "options":  [
+                                          "1942",
+                                          "1947",
+                                          "1955",
+                                          "1964"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_072",
+                          "text":  "Second generation computers saw the development of high-level languages such as:",
+                          "options":  [
+                                          "PROLOG and Java",
+                                          "COBOL and FORTRAN",
+                                          "Python and C++",
+                                          "HTML and CSS"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_073",
+                          "text":  "Third generation computers (1964-1971) were based on which technology?",
+                          "options":  [
+                                          "Vacuum tubes",
+                                          "Transistors",
+                                          "Integrated Circuits (ICs)",
+                                          "Artificial Intelligence"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_074",
+                          "text":  "Who created the first integrated circuit at Texas Instruments?",
+                          "options":  [
+                                          "Howard Aiken",
+                                          "Jack Kilby",
+                                          "John Von Neumann",
+                                          "Maurice Wilkes"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_075",
+                          "text":  "Third generation computers allowed users to interact with computers via:",
+                          "options":  [
+                                          "Punch cards and printouts only",
+                                          "Keyboards, monitors, and an operating system",
+                                          "Voice commands only",
+                                          "Paper tape only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_076",
+                          "text":  "Fourth generation computers (1971-present) are based mainly on:",
+                          "options":  [
+                                          "Vacuum tubes",
+                                          "Transistors",
+                                          "Microprocessors (VLSI chips)",
+                                          "Punch cards"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_077",
+                          "text":  "VLSI stands for:",
+                          "options":  [
+                                          "Very Large Scale Integration",
+                                          "Variable Logic System Integration",
+                                          "Very Long Storage Integration",
+                                          "Virtual Large Scale Interface"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_078",
+                          "text":  "Fifth generation computers are associated with which technology, still a promise rather than reality according to the lecture?",
+                          "options":  [
+                                          "Vacuum tubes",
+                                          "Transistors",
+                                          "Artificial Intelligence",
+                                          "Integrated Circuits"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_079",
+                          "text":  "Which programming language was chosen by the Japanese as the operating software for fifth generation machines?",
+                          "options":  [
+                                          "FORTRAN",
+                                          "COBOL",
+                                          "PROLOG",
+                                          "BASIC"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_080",
+                          "text":  "The naming of computer eras in terms of \u0027generations\u0027 came into wide use only after:",
+                          "options":  [
+                                          "1942",
+                                          "1951",
+                                          "1964",
+                                          "1971"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_081",
+                          "text":  "Which of the following are listed as the programs in computing sciences?",
+                          "options":  [
+                                          "IT, Software Engineering, Information System, Data Science",
+                                          "Physics, Chemistry, Biology, Mathematics",
+                                          "Accounting, Marketing, Finance, Economics",
+                                          "Hardware, Software, Networking, Security only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_082",
+                          "text":  "Information Technology (IT) is best defined as:",
+                          "options":  [
+                                          "The study of biological systems",
+                                          "The use of computers, software, networks, and digital systems to process, store, retrieve, and transmit information",
+                                          "The manual recording of business transactions",
+                                          "A field limited only to hardware repair"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_083",
+                          "text":  "Which IT characteristic is illustrated by ATMs and payroll systems performing tasks with little human intervention?",
+                          "options":  [
+                                          "Automation",
+                                          "Security",
+                                          "Versatility",
+                                          "Reliability"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_084",
+                          "text":  "Online banking transactions being completed instantly best illustrates which IT characteristic?",
+                          "options":  [
+                                          "Accuracy",
+                                          "Speed",
+                                          "Storage capacity",
+                                          "Connectivity"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_085",
+                          "text":  "Financial calculations in accounting software with minimal errors best illustrate which IT characteristic?",
+                          "options":  [
+                                          "Accuracy",
+                                          "Automation",
+                                          "Real-time processing",
+                                          "Reliability"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_086",
+                          "text":  "Databases storing millions of customer records best illustrate which IT characteristic?",
+                          "options":  [
+                                          "Connectivity",
+                                          "Storage capacity",
+                                          "Security",
+                                          "Versatility"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_087",
+                          "text":  "Remote learning platforms and social media illustrate which IT characteristic?",
+                          "options":  [
+                                          "Connectivity",
+                                          "Automation",
+                                          "Accuracy",
+                                          "Storage capacity"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_088",
+                          "text":  "IT\u0027s use in hospital management systems, banking, and engineering illustrates which characteristic?",
+                          "options":  [
+                                          "Versatility",
+                                          "Security",
+                                          "Speed",
+                                          "Automation"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_089",
+                          "text":  "The 24/7 operation of banking systems best illustrates which IT characteristic?",
+                          "options":  [
+                                          "Reliability",
+                                          "Automation",
+                                          "Speed",
+                                          "Storage capacity"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_090",
+                          "text":  "Passwords, encryption, and firewalls used to prevent unauthorized access illustrate which IT characteristic?",
+                          "options":  [
+                                          "Security",
+                                          "Reliability",
+                                          "Versatility",
+                                          "Real-time processing"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_091",
+                          "text":  "Air traffic control systems, requiring immediate response to inputs, illustrate which IT characteristic?",
+                          "options":  [
+                                          "Real-time processing",
+                                          "Storage capacity",
+                                          "Automation",
+                                          "Connectivity"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_092",
+                          "text":  "Software engineering is best described as:",
+                          "options":  [
+                                          "Simple programming without structure",
+                                          "The systematic application of engineering principles to develop, operate, and maintain software systems",
+                                          "The study of computer hardware only",
+                                          "A branch of data science"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_093",
+                          "text":  "The term \u0027Software Engineering\u0027 was popularized during which event?",
+                          "options":  [
+                                          "The Turing Conference",
+                                          "The NATO Software Engineering Conference",
+                                          "The IBM Developers Summit",
+                                          "The World Wide Web Consortium meeting"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_094",
+                          "text":  "The NATO Software Engineering Conference highlighted the \u0027software crisis\u0027, which included problems such as:",
+                          "options":  [
+                                          "Too much documentation",
+                                          "Late delivery, high cost, and unreliable software",
+                                          "Excess hardware costs only",
+                                          "Lack of internet access"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_095",
+                          "text":  "Which of the following is the correct order of stages in the Software Development Life Cycle (SDLC)?",
+                          "options":  [
+                                          "Testing, Coding, Design, Requirements, Deployment, Maintenance",
+                                          "Requirements Analysis, System Design, Implementation, Testing, Deployment, Maintenance",
+                                          "Deployment, Testing, Design, Requirements, Coding, Maintenance",
+                                          "Maintenance, Requirements, Testing, Design, Coding, Deployment"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_096",
+                          "text":  "Gathering and understanding user needs occurs at which SDLC stage?",
+                          "options":  [
+                                          "Requirements Analysis",
+                                          "System Design",
+                                          "Testing",
+                                          "Deployment"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_097",
+                          "text":  "Planning the system architecture and database/interface design occurs at which SDLC stage?",
+                          "options":  [
+                                          "Requirements Analysis",
+                                          "System Design",
+                                          "Implementation",
+                                          "Maintenance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_098",
+                          "text":  "Writing the actual program using programming languages occurs at which SDLC stage?",
+                          "options":  [
+                                          "Implementation (Coding)",
+                                          "System Design",
+                                          "Testing",
+                                          "Deployment"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_099",
+                          "text":  "Checking for errors (bugs) and ensuring quality occurs at which SDLC stage?",
+                          "options":  [
+                                          "Requirements Analysis",
+                                          "Testing",
+                                          "Deployment",
+                                          "Maintenance"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_100",
+                          "text":  "Which SDLC stage involves updating and fixing the system after it has been released?",
+                          "options":  [
+                                          "Maintenance",
+                                          "Testing",
+                                          "Requirements Analysis",
+                                          "Deployment"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_101",
+                          "text":  "Which of these is listed as a tool used in software engineering?",
+                          "options":  [
+                                          "Git (a version control system)",
+                                          "Microsoft Word",
+                                          "PowerPoint",
+                                          "Excel only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_102",
+                          "text":  "An Information System (IS) is best defined as:",
+                          "options":  [
+                                          "A set of hardware devices only",
+                                          "An organized combination of people, hardware, software, data, and procedures that collect, process, store, and distribute information",
+                                          "A single computer program",
+                                          "A type of internet browser"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_103",
+                          "text":  "Which of the following is NOT listed as a component of an Information System?",
+                          "options":  [
+                                          "Hardware",
+                                          "Data",
+                                          "Procedures",
+                                          "Weather"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_104",
+                          "text":  "A system that handles daily routine transactions such as sales processing and ATM transactions is called a:",
+                          "options":  [
+                                          "Transaction Processing System (TPS)",
+                                          "Decision Support System (DSS)",
+                                          "Executive Information System (EIS)",
+                                          "Office Automation System (OAS)"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_105",
+                          "text":  "Which type of Information System provides reports for management decision making, such as monthly financial reports?",
+                          "options":  [
+                                          "TPS",
+                                          "Management Information System (MIS)",
+                                          "EIS",
+                                          "OAS"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_106",
+                          "text":  "A system that helps in complex decision making using data analysis, such as business forecasting, is a:",
+                          "options":  [
+                                          "Decision Support System (DSS)",
+                                          "TPS",
+                                          "OAS",
+                                          "MIS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_107",
+                          "text":  "Dashboards showing company performance for top executives are an example of a(n):",
+                          "options":  [
+                                          "TPS",
+                                          "Executive Information System (EIS)",
+                                          "OAS",
+                                          "DSS"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_108",
+                          "text":  "Word processing and email systems supporting office work are examples of a(n):",
+                          "options":  [
+                                          "Office Automation System (OAS)",
+                                          "TPS",
+                                          "MIS",
+                                          "EIS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_109",
+                          "text":  "Which of the following is a function of Information Systems, according to the lecture?",
+                          "options":  [
+                                          "Data Collection",
+                                          "Weather forecasting only",
+                                          "Manufacturing hardware",
+                                          "Only entertainment"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_110",
+                          "text":  "What is the relationship between Information Technology (IT) and Information Systems (IS)?",
+                          "options":  [
+                                          "IT is a component of IS, providing the tools used along with people and procedures",
+                                          "IS is a component of IT",
+                                          "They are entirely unrelated fields",
+                                          "IT replaces the need for IS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_111",
+                          "text":  "Data Science is best described as:",
+                          "options":  [
+                                          "A field solely about hardware manufacturing",
+                                          "An interdisciplinary field using scientific methods, algorithms, and systems to extract knowledge from data",
+                                          "A branch of software engineering only",
+                                          "The study of network cables"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_112",
+                          "text":  "Which of the following is a key component of Data Science?",
+                          "options":  [
+                                          "Data Cleaning",
+                                          "Hardware assembly",
+                                          "Circuit design",
+                                          "Networking cables installation"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_113",
+                          "text":  "Removing errors, duplicates, and inconsistencies in data is known as:",
+                          "options":  [
+                                          "Data Collection",
+                                          "Data Cleaning",
+                                          "Data Visualization",
+                                          "Data Analysis"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_114",
+                          "text":  "Presenting data using charts, graphs, and dashboards is known as:",
+                          "options":  [
+                                          "Data Visualization",
+                                          "Data Cleaning",
+                                          "Data Collection",
+                                          "Problem Definition"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_115",
+                          "text":  "In the Data Science lifecycle, which stage comes right after \u0027Problem Definition\u0027?",
+                          "options":  [
+                                          "Interpretation",
+                                          "Data Collection",
+                                          "Communication",
+                                          "Data Analysis \u0026 Modeling"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_116",
+                          "text":  "Which of the following is listed as a tool used in Data Science?",
+                          "options":  [
+                                          "Jupyter Notebook",
+                                          "AutoCAD",
+                                          "Photoshop",
+                                          "PowerPoint"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_117",
+                          "text":  "Which of the following is a listed application of Data Science?",
+                          "options":  [
+                                          "Disease prediction and diagnosis in healthcare",
+                                          "Manufacturing vacuum tubes",
+                                          "Designing analog circuits",
+                                          "Building web browsers only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_118",
+                          "text":  "Which of the following is listed as a challenge of Data Science?",
+                          "options":  [
+                                          "Data privacy and security issues",
+                                          "Lack of computers",
+                                          "Absence of the internet",
+                                          "Too few programming languages"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_119",
+                          "text":  "Which of these is given as an example of an Information System?",
+                          "options":  [
+                                          "Online banking system",
+                                          "Napier\u0027s Bone",
+                                          "Abacus",
+                                          "Pascaline"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_120",
+                          "text":  "Which program in computing sciences focuses on combining statistics, computer science, and domain knowledge to support decision-making?",
+                          "options":  [
+                                          "Data Science",
+                                          "Software Engineering",
+                                          "Information Technology",
+                                          "Information System"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_121",
+                          "text":  "Information processing is best defined as:",
+                          "options":  [
+                                          "The process of gathering, organizing, transforming, storing, and retrieving data to produce meaningful information",
+                                          "Only the act of typing data into a computer",
+                                          "The manufacturing of computer hardware",
+                                          "The installation of software only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_122",
+                          "text":  "The model that outlines how data is collected, processed, and transformed into information is known as:",
+                          "options":  [
+                                          "SDLC",
+                                          "IPO (Input-Process-Output)",
+                                          "TCP/IP",
+                                          "DNS"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_123",
+                          "text":  "Which of the following correctly lists the stages of information processing?",
+                          "options":  [
+                                          "Output, Input, Storage, Processing",
+                                          "Input, Storage, Processing, Output",
+                                          "Processing, Output, Input, Storage",
+                                          "Storage, Output, Processing, Input"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_124",
+                          "text":  "Scanning a barcode in a retail store is an example of which stage of information processing?",
+                          "options":  [
+                                          "Input",
+                                          "Storage",
+                                          "Processing",
+                                          "Output"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_125",
+                          "text":  "RAM is described in the lecture as which type of storage?",
+                          "options":  [
+                                          "Secondary storage for long-term retention",
+                                          "Primary/temporary storage for quick access during processing",
+                                          "Cloud storage",
+                                          "Output storage"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_126",
+                          "text":  "Hard drives, SSDs, and cloud storage that retain data even when powered off are examples of:",
+                          "options":  [
+                                          "Primary storage",
+                                          "Secondary storage",
+                                          "Cache memory",
+                                          "Registers"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_127",
+                          "text":  "Sorting customer records by name or date of purchase is an example of which information processing stage?",
+                          "options":  [
+                                          "Input",
+                                          "Storage",
+                                          "Processing",
+                                          "Output"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_128",
+                          "text":  "Displaying search results on a webpage is an example of which information processing stage?",
+                          "options":  [
+                                          "Input",
+                                          "Storage",
+                                          "Processing",
+                                          "Output"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_129",
+                          "text":  "Which system integrates business processes across departments such as finance, HR, and sales?",
+                          "options":  [
+                                          "Enterprise Resource Planning (ERP)",
+                                          "Customer Relationship Management (CRM)",
+                                          "Business Intelligence (BI)",
+                                          "Electronic Health Records (EHR)"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_130",
+                          "text":  "Which system processes customer data to help businesses understand behavior and personalize marketing?",
+                          "options":  [
+                                          "ERP",
+                                          "Customer Relationship Management (CRM)",
+                                          "EHR",
+                                          "LMS"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_131",
+                          "text":  "Which business application helps companies analyze data for data-driven decisions on marketing and supply chain?",
+                          "options":  [
+                                          "Business Intelligence (BI)",
+                                          "EHR",
+                                          "LMS",
+                                          "SIS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_132",
+                          "text":  "Patient data stored, processed, and accessed electronically to improve care coordination refers to:",
+                          "options":  [
+                                          "Electronic Health Records (EHR)",
+                                          "ERP",
+                                          "CRM",
+                                          "SIS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_133",
+                          "text":  "Converting X-rays and MRI scans into digital formats for analysis and diagnosis is an example of:",
+                          "options":  [
+                                          "Medical Imaging Systems",
+                                          "Telemedicine",
+                                          "ERP",
+                                          "LMS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_134",
+                          "text":  "Enabling remote consultation between patients and doctors via secure networks describes:",
+                          "options":  [
+                                          "Telemedicine",
+                                          "EHR",
+                                          "Medical Imaging Systems",
+                                          "SIS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_135",
+                          "text":  "Platforms like Moodle and Blackboard that store and distribute educational content are examples of:",
+                          "options":  [
+                                          "Learning Management Systems (LMS)",
+                                          "Student Information Systems (SIS)",
+                                          "ERP",
+                                          "EHR"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_136",
+                          "text":  "Systems that process student enrollment, grades, attendance, and academic records are called:",
+                          "options":  [
+                                          "LMS",
+                                          "Student Information Systems (SIS)",
+                                          "E-Government Services",
+                                          "CRM"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_137",
+                          "text":  "Government use of integrated information systems to manage taxation, voting, and benefits is called:",
+                          "options":  [
+                                          "E-Government Services",
+                                          "E-Learning",
+                                          "Telemedicine",
+                                          "CRM"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_138",
+                          "text":  "Processing social, economic, and demographic data to guide budgeting and public health initiatives describes:",
+                          "options":  [
+                                          "Data-Driven Policy Making",
+                                          "Medical Imaging",
+                                          "CRM",
+                                          "SIS"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_139",
+                          "text":  "Which of the following is listed as a positive societal impact of information processing?",
+                          "options":  [
+                                          "Job displacement",
+                                          "Improved access to information",
+                                          "Digital divide",
+                                          "Security risks"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_140",
+                          "text":  "Which of the following is listed as a challenge or ethical issue of information processing?",
+                          "options":  [
+                                          "Enhanced communication",
+                                          "Efficiency and automation",
+                                          "Privacy concerns",
+                                          "Better decision-making"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_141",
+                          "text":  "The risk of data breaches, cyberattacks, and identity theft as more data is processed digitally is known as:",
+                          "options":  [
+                                          "Digital divide",
+                                          "Security risks",
+                                          "Job displacement",
+                                          "Enhanced communication"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_142",
+                          "text":  "Unequal access to technology and infrastructure required for information processing is known as the:",
+                          "options":  [
+                                          "Digital divide",
+                                          "Software crisis",
+                                          "Data breach",
+                                          "Information overload"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_143",
+                          "text":  "Automation leading to job loss in industries like manufacturing is referred to as:",
+                          "options":  [
+                                          "Digital divide",
+                                          "Job displacement",
+                                          "Privacy concerns",
+                                          "Data-driven policy making"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_144",
+                          "text":  "Databases that use tables and allow complex queries, such as MySQL and PostgreSQL, are called:",
+                          "options":  [
+                                          "Relational Databases",
+                                          "NoSQL Databases",
+                                          "Cloud Networks",
+                                          "LANs"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_145",
+                          "text":  "Databases used for unstructured or semi-structured data, such as MongoDB and Cassandra, are called:",
+                          "options":  [
+                                          "Relational Databases",
+                                          "NoSQL Databases",
+                                          "WANs",
+                                          "LANs"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_146",
+                          "text":  "A network that connects devices within a limited geographic area, such as an office or school, is a:",
+                          "options":  [
+                                          "Wide Area Network (WAN)",
+                                          "Local Area Network (LAN)",
+                                          "Cloud Computing Network",
+                                          "Internet Service Provider"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_147",
+                          "text":  "A network that connects devices across larger distances, such as between cities or countries, is a:",
+                          "options":  [
+                                          "LAN",
+                                          "Wide Area Network (WAN)",
+                                          "Relational Database",
+                                          "NoSQL Database"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_148",
+                          "text":  "Networks that enable users to access remote computing resources and services via the internet are called:",
+                          "options":  [
+                                          "Local Area Networks",
+                                          "Cloud Computing Networks",
+                                          "Relational Databases",
+                                          "Wide Area Networks only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_149",
+                          "text":  "Which of the following best describes \u0027databases\u0027 as part of technological infrastructure?",
+                          "options":  [
+                                          "An organized collection of data that can be easily accessed, managed, and updated",
+                                          "A single input device",
+                                          "A type of output device",
+                                          "A programming language"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_150",
+                          "text":  "According to the lecture, ethical considerations in information processing include:",
+                          "options":  [
+                                          "Only hardware costs",
+                                          "Data privacy, security, and access to technology",
+                                          "Only software licensing",
+                                          "Only internet speed"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_151",
+                          "text":  "Which sector uses information processing for Electronic Health Records and telemedicine?",
+                          "options":  [
+                                          "Business",
+                                          "Healthcare",
+                                          "Governance",
+                                          "Education"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_152",
+                          "text":  "Which sector uses ERP, CRM, and Business Intelligence tools?",
+                          "options":  [
+                                          "Business",
+                                          "Healthcare",
+                                          "Education",
+                                          "Governance"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_153",
+                          "text":  "Generating a graph of sales performance in a business application is an example of which stage?",
+                          "options":  [
+                                          "Input",
+                                          "Storage",
+                                          "Processing",
+                                          "Output"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_154",
+                          "text":  "Analyzing medical data to identify trends is an example of which information processing stage?",
+                          "options":  [
+                                          "Input",
+                                          "Storage",
+                                          "Processing",
+                                          "Output"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_155",
+                          "text":  "Which of the following is described as the backbone of computing systems?",
+                          "options":  [
+                                          "Information processing",
+                                          "Internet browsers only",
+                                          "Hardware manufacturing",
+                                          "Marketing"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_156",
+                          "text":  "Capturing user information via online forms is an example of which stage of information processing?",
+                          "options":  [
+                                          "Input",
+                                          "Storage",
+                                          "Processing",
+                                          "Output"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_157",
+                          "text":  "Which of the following is an example of real-time, better decision-making enabled by information processing?",
+                          "options":  [
+                                          "Businesses, governments, and healthcare providers making informed decisions from real-time data",
+                                          "Manual paper filing",
+                                          "Postal mail delivery",
+                                          "Handwritten ledgers"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_158",
+                          "text":  "Storing organized collections of data that allow easy retrieval, often used for structured data processing, describes:",
+                          "options":  [
+                                          "Databases",
+                                          "Web browsers",
+                                          "Search engines",
+                                          "Cloud storage only"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_159",
+                          "text":  "Which of the following is an example of information processing in governance?",
+                          "options":  [
+                                          "E-Government services for taxation and voting",
+                                          "CRM for marketing",
+                                          "LMS for e-learning",
+                                          "EHR for patient records"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_160",
+                          "text":  "Which societal challenge relates specifically to unauthorized access to personal information causing identity theft?",
+                          "options":  [
+                                          "Security risks / data breaches",
+                                          "Job displacement",
+                                          "Digital divide",
+                                          "Enhanced communication"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_161",
+                          "text":  "The Internet is best defined as:",
+                          "options":  [
+                                          "A single computer network owned by one company",
+                                          "A global system of interconnected computer networks communicating via common protocols",
+                                          "A type of software application",
+                                          "A type of database only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_162",
+                          "text":  "Which layer of the Internet\u0027s structure includes cables, routers, and data centers?",
+                          "options":  [
+                                          "Application Layer",
+                                          "Transmission Layer",
+                                          "Physical Layer",
+                                          "Presentation Layer"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_163",
+                          "text":  "The transmission of data packets between devices through protocols like TCP/IP occurs at the:",
+                          "options":  [
+                                          "Physical Layer",
+                                          "Transmission Layer",
+                                          "Application Layer",
+                                          "Data Layer"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_164",
+                          "text":  "Which layer provides access to services such as the World Wide Web, email, and file transfer?",
+                          "options":  [
+                                          "Physical Layer",
+                                          "Transmission Layer",
+                                          "Application Layer",
+                                          "Network Layer"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_165",
+                          "text":  "The Internet is described as decentralized because:",
+                          "options":  [
+                                          "It has one central governing body controlling all data",
+                                          "It has a distributed network of servers and routers managing data routing, with no central governing body",
+                                          "It is owned by a single government",
+                                          "Only one company manages all servers"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_166",
+                          "text":  "In the client-server model, devices that request services or resources are called:",
+                          "options":  [
+                                          "Servers",
+                                          "Clients",
+                                          "Routers",
+                                          "Protocols"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_167",
+                          "text":  "In the client-server model, specialized computers that store resources and respond to requests are called:",
+                          "options":  [
+                                          "Clients",
+                                          "Servers",
+                                          "Browsers",
+                                          "Search engines"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_168",
+                          "text":  "TCP/IP stands for:",
+                          "options":  [
+                                          "Transmission Control Protocol/Internet Protocol",
+                                          "Text Control Protocol/Internal Process",
+                                          "Transfer Control Program/Internet Process",
+                                          "Transmission Control Program/Internal Protocol"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_169",
+                          "text":  "HTTP stands for:",
+                          "options":  [
+                                          "Hyper Transfer Text Protocol",
+                                          "Hypertext Transfer Protocol",
+                                          "High Transmission Text Protocol",
+                                          "Hyperlink Transfer Text Program"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_170",
+                          "text":  "HTTPS differs from HTTP in that it:",
+                          "options":  [
+                                          "Is slower but cheaper",
+                                          "Uses encryption to protect data in transit",
+                                          "Only works on mobile devices",
+                                          "Does not require a server"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_171",
+                          "text":  "The Domain Name System (DNS) is used to:",
+                          "options":  [
+                                          "Translate human-readable domain names into IP addresses",
+                                          "Encrypt emails",
+                                          "Store website images",
+                                          "Design web pages"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_172",
+                          "text":  "A web browser is best described as:",
+                          "options":  [
+                                          "A programming language",
+                                          "A software application used to access and navigate websites",
+                                          "A type of database",
+                                          "A hardware input device"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_173",
+                          "text":  "Which of the following is an example of a web browser?",
+                          "options":  [
+                                          "Google Chrome",
+                                          "MySQL",
+                                          "Python",
+                                          "MongoDB"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_174",
+                          "text":  "HTML stands for:",
+                          "options":  [
+                                          "Hyperlink and Text Markup Language",
+                                          "Hyper Text Markup Language",
+                                          "High Text Modeling Language",
+                                          "Home Tool Markup Language"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_175",
+                          "text":  "CSS stands for:",
+                          "options":  [
+                                          "Computer Style Sheets",
+                                          "Cascading Style Sheets",
+                                          "Creative Style System",
+                                          "Coded Style Sheets"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_176",
+                          "text":  "HTML is primarily used to:",
+                          "options":  [
+                                          "Control colors and layout of a webpage",
+                                          "Define the content and structure of a webpage",
+                                          "Make webpages interactive",
+                                          "Store website data in a database"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_177",
+                          "text":  "CSS is primarily used to:",
+                          "options":  [
+                                          "Define webpage content structure",
+                                          "Control the presentation and layout of HTML content, such as colors and fonts",
+                                          "Handle server-side database queries",
+                                          "Translate domain names to IP addresses"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_178",
+                          "text":  "JavaScript is mainly used to:",
+                          "options":  [
+                                          "Structure webpage content only",
+                                          "Style webpage colors only",
+                                          "Make web pages interactive with dynamic features like form validation and animations",
+                                          "Translate domain names"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_179",
+                          "text":  "Which of the following is an example of a web development framework?",
+                          "options":  [
+                                          "React",
+                                          "Google Chrome",
+                                          "DNS",
+                                          "HTTP"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_180",
+                          "text":  "Web development frameworks are used to:",
+                          "options":  [
+                                          "Simplify creation of complex web applications and reduce development time",
+                                          "Replace the need for the internet",
+                                          "Translate IP addresses to domain names only",
+                                          "Physically connect computer hardware"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_181",
+                          "text":  "Online resources refer to:",
+                          "options":  [
+                                          "Only physical books in a library",
+                                          "Various types of information and services available over the internet, such as websites and cloud services",
+                                          "Only hardware devices",
+                                          "Only offline software"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_182",
+                          "text":  "Wikipedia is given as an example of which type of website?",
+                          "options":  [
+                                          "Informational website",
+                                          "E-commerce website",
+                                          "Social media website",
+                                          "Search engine"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_183",
+                          "text":  "Amazon and eBay are given as examples of which type of website?",
+                          "options":  [
+                                          "Informational websites",
+                                          "E-commerce websites",
+                                          "Search engines",
+                                          "Online databases"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_184",
+                          "text":  "Facebook, Twitter, and Instagram are given as examples of which type of website?",
+                          "options":  [
+                                          "Social media websites",
+                                          "E-commerce websites",
+                                          "Online databases",
+                                          "Cloud services"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_185",
+                          "text":  "A search engine is a tool used to:",
+                          "options":  [
+                                          "Style web pages",
+                                          "Search for and retrieve information from the web by indexing content",
+                                          "Encrypt data transmissions",
+                                          "Store files locally only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_186",
+                          "text":  "Which of the following is an example of a search engine?",
+                          "options":  [
+                                          "Google",
+                                          "Dropbox",
+                                          "JSTOR",
+                                          "React"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_187",
+                          "text":  "An online database is best described as:",
+                          "options":  [
+                                          "A collection of structured data that can be accessed and queried over the internet",
+                                          "A physical filing cabinet",
+                                          "A type of web browser",
+                                          "A social media platform"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_188",
+                          "text":  "Which of the following is given as an example of an online database used for academic research?",
+                          "options":  [
+                                          "PubMed",
+                                          "Instagram",
+                                          "Amazon",
+                                          "Google Chrome"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_189",
+                          "text":  "Cloud computing allows users to:",
+                          "options":  [
+                                          "Access software, storage, and computing power via the internet without maintaining local infrastructure",
+                                          "Only store data physically at home",
+                                          "Avoid using the internet entirely",
+                                          "Replace all web browsers"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_190",
+                          "text":  "Which of the following is an example of a cloud service?",
+                          "options":  [
+                                          "Google Drive",
+                                          "HTML",
+                                          "DNS",
+                                          "TCP/IP"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_191",
+                          "text":  "Fraudulent attempts to obtain sensitive information by pretending to be a trustworthy entity is known as:",
+                          "options":  [
+                                          "Phishing",
+                                          "Malware",
+                                          "Encryption",
+                                          "Firewall"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_192",
+                          "text":  "Malicious software designed to harm a computer system, such as viruses and worms, is called:",
+                          "options":  [
+                                          "Phishing",
+                                          "Malware",
+                                          "DNS",
+                                          "HTTPS"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_193",
+                          "text":  "Unauthorized access to private information, often resulting in identity theft, is referred to as:",
+                          "options":  [
+                                          "Data Breaches",
+                                          "Two-Factor Authentication",
+                                          "Encryption",
+                                          "Fair Use"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_194",
+                          "text":  "Which of the following is a recommended best practice for internet security regarding passwords?",
+                          "options":  [
+                                          "Use the same simple password everywhere",
+                                          "Create unique and complex passwords for online accounts",
+                                          "Share passwords with friends for convenience",
+                                          "Avoid changing default passwords"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_195",
+                          "text":  "Adding an extra layer of security requiring a second verification step is called:",
+                          "options":  [
+                                          "Two-Factor Authentication (2FA)",
+                                          "Phishing",
+                                          "Malware",
+                                          "Fair Use"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_196",
+                          "text":  "Installing and regularly updating software to protect against malicious programs describes the use of:",
+                          "options":  [
+                                          "Antivirus software",
+                                          "Web browsers",
+                                          "Search engines",
+                                          "Cloud services"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_197",
+                          "text":  "Which of the following is a recommended best practice regarding public Wi-Fi?",
+                          "options":  [
+                                          "Conduct all financial transactions freely on public Wi-Fi",
+                                          "Avoid public Wi-Fi for sensitive transactions",
+                                          "Public Wi-Fi is always fully secure",
+                                          "Public Wi-Fi requires no precautions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_198",
+                          "text":  "Avoiding the use or sharing of copyrighted material without permission relates to which ethical consideration?",
+                          "options":  [
+                                          "Intellectual Property and Copyright",
+                                          "Digital Equity and Access",
+                                          "Two-Factor Authentication",
+                                          "Real-time processing"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_199",
+                          "text":  "Fair use, as an ethical consideration, refers to:",
+                          "options":  [
+                                          "Complete freedom to copy any material without restriction",
+                                          "Limited use of copyrighted material for educational or commentary purposes",
+                                          "Selling copyrighted content for profit",
+                                          "Ignoring copyright laws entirely"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "ssc202_200",
+                          "text":  "Ensuring all individuals, regardless of socioeconomic status, have equal access to the internet relates to which ethical consideration?",
+                          "options":  [
+                                          "Digital Equity and Access",
+                                          "Two-Factor Authentication",
+                                          "Phishing prevention",
+                                          "Data breach response"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "No explanation provided.",
+                          "difficulty":  1
+                      }
+                  ]
+}

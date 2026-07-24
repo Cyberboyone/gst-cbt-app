@@ -64,6 +64,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#FFF3CD', // Amber
       mode: '100_level',
     ),
+    Course(
+      id: 'ssc202',
+      code: 'SSC 202',
+      name: 'Intro to Computing Sciences',
+      icon: '🖥️',
+      colorHex: '#DCEEFF', // Sky
+      mode: '200_level',
+    ),
     
   ];
 
