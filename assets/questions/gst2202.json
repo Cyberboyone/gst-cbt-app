@@ -1,0 +1,1827 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "gst2202_001",
+                          "text":  "Philosophy is best described as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A religious doctrine",
+                                          "A rational inquiry into reality",
+                                          "A political ideology",
+                                          "A mathematical science"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_002",
+                          "text":  "Philosophy has:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One universal definition",
+                                          "No definition at all",
+                                          "A single agreed definition",
+                                          "Many definitions"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst2202_003",
+                          "text":  "According to Broad (1969), philosophy is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "What scientists do",
+                                          "What philosophers do",
+                                          "What teachers do",
+                                          "What students do"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_004",
+                          "text":  "One major function of philosophy is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Memorisation",
+                                          "World domination",
+                                          "Construction of world views",
+                                          "Physical training"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_005",
+                          "text":  "World views in philosophy are mainly:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Random statements",
+                                          "Emotional reactions",
+                                          "General guides for understanding reality",
+                                          "Political laws"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_006",
+                          "text":  "Philosophical statements are mainly products of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Guesswork",
+                                          "Reflection and speculation",
+                                          "Experiment alone",
+                                          "Tradition only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_007",
+                          "text":  "An example of a philosophical statement is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Water boils at 100°C",
+                                          "An unexamined life is not worth living",
+                                          "Nigeria is in Africa",
+                                          "2 + 2 = 4"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_008",
+                          "text":  "Philosophy helps human beings mainly to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Avoid thinking",
+                                          "Understand and cope with life challenges",
+                                          "Memorise facts",
+                                          "Win competitions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_009",
+                          "text":  "Philosophy is also described as the pursuit of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Wealth",
+                                          "Power",
+                                          "Wisdom",
+                                          "Entertainment"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_010",
+                          "text":  "Critical thinking in philosophy means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Accepting all beliefs",
+                                          "Rejecting all beliefs",
+                                          "Examining beliefs before accepting them",
+                                          "Ignoring opinions"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_011",
+                          "text":  "Philosophy does NOT take beliefs for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Granted",
+                                          "Examined",
+                                          "Questioned",
+                                          "Analysed"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_012",
+                          "text":  "According to Staniland H. S., philosophy is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Worship of ideas",
+                                          "Criticism of the ideas we live by",
+                                          "Study of numbers",
+                                          "Study of plants"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_013",
+                          "text":  "Kwasi Wiredu stated that philosophy examines:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Food systems",
+                                          "Intellectual foundations of life",
+                                          "Weather conditions",
+                                          "Trade routes"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_014",
+                          "text":  "Philosophy contributes to other disciplines by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replacing them",
+                                          "Ignoring them",
+                                          "Examining their foundations",
+                                          "Destroying them"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_015",
+                          "text":  "Philosophy of science is an example of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mathematics",
+                                          "A branch of philosophy",
+                                          "A physical science",
+                                          "A language course"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_016",
+                          "text":  "Thinking and reasoning are:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Always the same",
+                                          "Not always the same",
+                                          "Completely unrelated",
+                                          "Always perfect"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_017",
+                          "text":  "The skill of reasoning can be improved through:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Luck only",
+                                          "Experience and instruction",
+                                          "Isolation",
+                                          "Ignorance"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_018",
+                          "text":  "The purpose of GST2202 is to provide:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Physical training",
+                                          "Intellectual tools for reasoning",
+                                          "Financial skills",
+                                          "Religious instruction"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_019",
+                          "text":  "A person unable to assess claims properly may:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Always be correct",
+                                          "Believe anything",
+                                          "Never think",
+                                          "Avoid learning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_020",
+                          "text":  "Philosophical activity mainly involves:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Memorising facts",
+                                          "Forming, analysing, and criticising ideas",
+                                          "Copying opinions",
+                                          "Avoiding reflection"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_021",
+                          "text":  "Philosophy is traditionally divided into how many main branches?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Two",
+                                          "Three",
+                                          "Four",
+                                          "Five"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_022",
+                          "text":  "The term \"metaphysics\" was coined by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Plato",
+                                          "Aristotle",
+                                          "Andronicus of Rhodes",
+                                          "Socrates"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_023",
+                          "text":  "Metaphysics literally means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Study of knowledge",
+                                          "Beyond the physical",
+                                          "Study of ethics",
+                                          "Study of logic"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_024",
+                          "text":  "Epistemology is derived from two Greek words meaning:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Being and reality",
+                                          "Knowledge and theory",
+                                          "Truth and belief",
+                                          "Mind and matter"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_025",
+                          "text":  "Epistemology is best described as the theory of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Beauty",
+                                          "Knowledge",
+                                          "Reality",
+                                          "Morality"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_026",
+                          "text":  "Axiology is mainly concerned with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Knowledge",
+                                          "Reality",
+                                          "Beauty and values",
+                                          "Reasoning"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_027",
+                          "text":  "Ethics is also known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Moral philosophy",
+                                          "Natural philosophy",
+                                          "Political philosophy",
+                                          "Scientific philosophy"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_028",
+                          "text":  "Logic is primarily concerned with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Human emotions",
+                                          "Correct and incorrect reasoning",
+                                          "Physical reality",
+                                          "Moral actions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_029",
+                          "text":  "Ontology studies:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The universe only",
+                                          "Human nature only",
+                                          "Knowledge systems",
+                                          "Logic principles"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_030",
+                          "text":  "Cosmology studies:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Human mind",
+                                          "Universe",
+                                          "Moral behaviour",
+                                          "Language"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_031",
+                          "text":  "Idealism holds that reality is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Purely material",
+                                          "Mental or immaterial",
+                                          "Non-existent",
+                                          "Scientific only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_032",
+                          "text":  "Materialism reduces reality to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mind",
+                                          "Spirit",
+                                          "Matter",
+                                          "Ideas"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_033",
+                          "text":  "The Latin phrase \"esse est percipi\" means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "To think is to exist",
+                                          "To be is to be perceived",
+                                          "To know is to doubt",
+                                          "To act is to be"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_034",
+                          "text":  "Which philosopher is associated with idealism?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Democritus",
+                                          "George Berkeley",
+                                          "John Dewey",
+                                          "Gilbert Ryle"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_035",
+                          "text":  "Scepticism argues that:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Knowledge is certain",
+                                          "Knowledge is impossible to obtain with certainty",
+                                          "All knowledge is scientific",
+                                          "Truth is absolute"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_036",
+                          "text":  "Relativism claims that truth is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Universal",
+                                          "Absolute",
+                                          "Dependent on perspective",
+                                          "Fixed and permanent"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_037",
+                          "text":  "Normative ethics deals with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Meaning of moral language",
+                                          "Moral judgement of actions",
+                                          "Universe structure",
+                                          "Logical reasoning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_038",
+                          "text":  "Meta-ethics focuses on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Physical laws",
+                                          "Meaning of moral terms",
+                                          "Human anatomy",
+                                          "Political systems"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_039",
+                          "text":  "Logic is described by Aristotle as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Thinking on thinking",
+                                          "Science of matter",
+                                          "Study of society",
+                                          "Study of beauty"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_040",
+                          "text":  "One value of logic is that it helps people to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Avoid reasoning completely",
+                                          "Accept all opinions",
+                                          "Analyse arguments critically",
+                                          "Increase emotional thinking"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_041",
+                          "text":  "A logic-informed person is least likely to be influenced by ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Teachers",
+                                          "Political demagogues or advertisers",
+                                          "Scientists",
+                                          "Judges"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_042",
+                          "text":  "According to the text, training in logic helps us to provide ______ for our claims.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Stories",
+                                          "Opinions",
+                                          "Good reasons as evidence",
+                                          "Emotions"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_043",
+                          "text":  "Logic is most appreciated in ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Market place",
+                                          "Court of law",
+                                          "Religious centers",
+                                          "Sports arena"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_044",
+                          "text":  "Blaise Pascal stated that all our dignity lies in ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Wealth",
+                                          "Power",
+                                          "Thought",
+                                          "Knowledge"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_045",
+                          "text":  "How many major types of logic are identified in the text?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One",
+                                          "Two",
+                                          "Three",
+                                          "Four"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_046",
+                          "text":  "Formal logic is also known as ______ logic.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Symbolic",
+                                          "Traditional",
+                                          "Mathematical",
+                                          "Modern"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_047",
+                          "text":  "Symbolic logic is also called ______ logic.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Moral",
+                                          "Mathematical",
+                                          "Political",
+                                          "Emotional"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_048",
+                          "text":  "Symbolic logic uses ______ to express arguments clearly.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Words only",
+                                          "Stories",
+                                          "Symbols",
+                                          "Images"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_049",
+                          "text":  "Symbolic logic is mainly concerned with ______ relations.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Emotional",
+                                          "Semantic",
+                                          "Syntactical",
+                                          "Physical"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_050",
+                          "text":  "One importance of symbolic logic is that it reduces ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Knowledge",
+                                          "Ambiguity",
+                                          "Learning",
+                                          "Arguments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_051",
+                          "text":  "Symbolic logic helps to avoid ______ in ordinary language.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Clarity",
+                                          "Vagueness",
+                                          "Evidence",
+                                          "Logic"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_052",
+                          "text":  "The symbol (~) represents ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Conjunction",
+                                          "Negation",
+                                          "Disjunction",
+                                          "Conditional"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_053",
+                          "text":  "The statement \"Ade is not a student\" is represented as ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "P",
+                                          "~P",
+                                          "P ∙ Q",
+                                          "P ⸧ Q"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_054",
+                          "text":  "The symbol (∙) stands for ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Or",
+                                          "And",
+                                          "Not",
+                                          "If"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_055",
+                          "text":  "A conjunction is true only when ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One statement is false",
+                                          "Both statements are true",
+                                          "Both are false",
+                                          "One is unknown"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_056",
+                          "text":  "The symbol for disjunction is ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "∙",
+                                          "~",
+                                          "ʋ",
+                                          "≡"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_057",
+                          "text":  "Disjunction is commonly expressed as ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "And",
+                                          "Not",
+                                          "Either…or",
+                                          "If and only if"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_058",
+                          "text":  "There are ______ types of disjunction.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One",
+                                          "Two",
+                                          "Three",
+                                          "Four"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_059",
+                          "text":  "Inclusive disjunction is false only when ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One statement is true",
+                                          "Both statements are true",
+                                          "Both statements are false",
+                                          "One is false"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_060",
+                          "text":  "Symbolic logic allows us to determine validity of arguments without ______.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Evidence",
+                                          "Natural language ambiguity",
+                                          "Symbols",
+                                          "Statements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_061",
+                          "text":  "The conditional statement is symbolized by which sign?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "≡",
+                                          "⸧",
+                                          "∙",
+                                          "v"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_062",
+                          "text":  "A conditional statement is false only when:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Both antecedent and consequent are true",
+                                          "Antecedent is false and consequent is true",
+                                          "Antecedent is true and consequent is false",
+                                          "Both antecedent and consequent are false"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_063",
+                          "text":  "The antecedent in a conditional statement is the:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Statement that follows",
+                                          "Statement that precedes",
+                                          "Conclusion",
+                                          "Negation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_064",
+                          "text":  "A biconditional is also known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Contradiction",
+                                          "Material equivalence",
+                                          "Disjunction",
+                                          "Conjunction"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_065",
+                          "text":  "The symbol for biconditional is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "⸧",
+                                          "∙",
+                                          "≡",
+                                          "v"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_066",
+                          "text":  "A biconditional is true when:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One statement is true",
+                                          "Both statements differ in truth value",
+                                          "Both statements have same truth value",
+                                          "Both are false only"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_067",
+                          "text":  "The law of identity states that:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "p ≠ p",
+                                          "p ⸧ ~p",
+                                          "A = A",
+                                          "p v q"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_068",
+                          "text":  "The law of non-contradiction states that:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A thing can be and not be",
+                                          "A thing cannot both be and not be",
+                                          "Everything is false",
+                                          "Everything is true"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_069",
+                          "text":  "The principle of excluded middle states that:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "p is always false",
+                                          "p is both true and false",
+                                          "p is either true or false",
+                                          "p is neither true nor false"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_070",
+                          "text":  "In logic, inference means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Random guessing",
+                                          "Moving from known to unknown",
+                                          "Ignoring evidence",
+                                          "Repeating statements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_071",
+                          "text":  "The two main types of inference are:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Simple and complex",
+                                          "True and false",
+                                          "Deductive and inductive",
+                                          "Valid and invalid"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_072",
+                          "text":  "Modus Ponens concludes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "~p",
+                                          "q",
+                                          "p",
+                                          "p v q"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_073",
+                          "text":  "Modus Tollens involves:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Affirming antecedent",
+                                          "Denying consequent",
+                                          "Adding propositions",
+                                          "Ignoring premises"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_074",
+                          "text":  "Disjunctive syllogism works with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Conjunction",
+                                          "Negation of one option in a disjunction",
+                                          "Biconditional only",
+                                          "Identity only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_075",
+                          "text":  "The symbol for conjunction is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "v",
+                                          "∙",
+                                          "≡",
+                                          "⸧"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_076",
+                          "text":  "Addition rule allows us to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Remove a proposition",
+                                          "Conclude a conjunction",
+                                          "Form a disjunction from a single proposition",
+                                          "Deny a proposition"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_077",
+                          "text":  "Simplification allows us to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Combine statements",
+                                          "Conclude one part of a conjunction",
+                                          "Form biconditionals",
+                                          "Negate statements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_078",
+                          "text":  "Validity of an argument depends on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Truth of conclusion only",
+                                          "Truth of premises only",
+                                          "Logical structure",
+                                          "Length of argument"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_079",
+                          "text":  "An argument is invalid when:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "It has true premises and true conclusion",
+                                          "It has false premises only",
+                                          "It has true premises and false conclusion",
+                                          "It has no conclusion"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_080",
+                          "text":  "Inductive arguments are concerned with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Validity only",
+                                          "Formal structure only",
+                                          "Strength of inference",
+                                          "Symbolic notation only"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_081",
+                          "text":  "An argument is said to be sound when it is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Invalid with false premises",
+                                          "Valid and all premises are true",
+                                          "Inductive and weak",
+                                          "Based on opinion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_082",
+                          "text":  "Soundness of an argument excludes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Valid arguments only",
+                                          "Arguments with true premises and false conclusion",
+                                          "Invalid arguments with no conclusion",
+                                          "Simple propositions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_083",
+                          "text":  "Validity refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Truth of premises only",
+                                          "Truth of conclusion only",
+                                          "Logical relationship between premises and conclusion",
+                                          "Length of argument"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_084",
+                          "text":  "A proposition is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A question",
+                                          "A command",
+                                          "A declarative sentence that can be true or false",
+                                          "A feeling"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_085",
+                          "text":  "Which of the following is a proposition?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Close the window",
+                                          "What time is it?",
+                                          "A week has seven days",
+                                          "Wow!"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_086",
+                          "text":  "A non-proposition includes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Declarative statements",
+                                          "Questions and commands",
+                                          "True statements",
+                                          "False statements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_087",
+                          "text":  "A premise is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A final claim",
+                                          "A supporting statement",
+                                          "A question",
+                                          "A punctuation mark"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_088",
+                          "text":  "The conclusion of an argument is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A supporting reason",
+                                          "A claim supported by premises",
+                                          "A connective word",
+                                          "A question"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_089",
+                          "text":  "Deductive arguments are those in which premises:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Make conclusion probable",
+                                          "Necessitate the conclusion",
+                                          "Are irrelevant",
+                                          "Are always false"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_090",
+                          "text":  "Inductive arguments:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Guarantee conclusions",
+                                          "Provide probability",
+                                          "Are always valid",
+                                          "Do not use evidence"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_091",
+                          "text":  "In inductive reasoning, the conclusion is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Certain",
+                                          "Probable",
+                                          "Impossible",
+                                          "Contradictory"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_092",
+                          "text":  "\"All men are mortal; Jonathan is a man; therefore Jonathan is mortal\" is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Inductive",
+                                          "Deductive",
+                                          "Invalid",
+                                          "Emotional"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_093",
+                          "text":  "A valid argument can have:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only true premises and false conclusion",
+                                          "True or false premises but cannot have true premises and false conclusion",
+                                          "No conclusion",
+                                          "No premises"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_094",
+                          "text":  "The only impossible case for validity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True premises and true conclusion",
+                                          "False premises and false conclusion",
+                                          "True premises and false conclusion",
+                                          "False premises and true conclusion"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_095",
+                          "text":  "Sound arguments are:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Invalid arguments",
+                                          "Valid arguments with true premises",
+                                          "Inductive arguments",
+                                          "Opinions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_096",
+                          "text":  "A simple proposition contains:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Two independent clauses",
+                                          "One independent clause",
+                                          "Many sentences",
+                                          "No meaning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_097",
+                          "text":  "Logical constants are also called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Subjects",
+                                          "Connectives",
+                                          "Verbs",
+                                          "Objects"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_098",
+                          "text":  "Parentheses in logic are used to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Create confusion",
+                                          "Remove ambiguity",
+                                          "Replace words",
+                                          "Form sentences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_099",
+                          "text":  "The expression (R ∙ W ʋ C) without punctuation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Clear",
+                                          "Ambiguous",
+                                          "Always true",
+                                          "A command"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_100",
+                          "text":  "\"R ∙ (W ʋ C)\" means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "R and either W or C",
+                                          "Either R and W or C",
+                                          "R or W and C",
+                                          "None"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_101",
+                          "text":  "\"(R ∙ W) ʋ C\" means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "R and (W or C)",
+                                          "Either R and W, or C",
+                                          "R only",
+                                          "W only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_102",
+                          "text":  "An argument is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A dispute",
+                                          "A set of propositions supporting a claim",
+                                          "A question",
+                                          "A command"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_103",
+                          "text":  "A bad argument is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Not an argument",
+                                          "Still an argument",
+                                          "Always valid",
+                                          "Always sound"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_104",
+                          "text":  "Indicating words help identify:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Grammar rules",
+                                          "Premises and conclusions",
+                                          "Numbers",
+                                          "Names"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_105",
+                          "text":  "Validity depends on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Truth of premises",
+                                          "Logical form",
+                                          "Length of argument",
+                                          "Emotion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_106",
+                          "text":  "Inductive arguments deal with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Certainty",
+                                          "Probability",
+                                          "Commands",
+                                          "Definitions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_107",
+                          "text":  "A proposition must be:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Declarative and truth-apt",
+                                          "A command",
+                                          "A question",
+                                          "A feeling"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_108",
+                          "text":  "\"She\u0027s armed, so she\u0027s dangerous\" is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Not an argument",
+                                          "An argument with premise and conclusion",
+                                          "A question",
+                                          "A command"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_109",
+                          "text":  "Analysis of arguments involves:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ignoring conclusions",
+                                          "Identifying premises and conclusions",
+                                          "Changing meanings randomly",
+                                          "Removing logic"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_110",
+                          "text":  "A sound argument must be:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Invalid and false",
+                                          "Valid with true premises",
+                                          "Inductive and weak",
+                                          "Opinion-based"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_111",
+                          "text":  "The word \"discourse\" originates from which Latin term meaning \"to run off in different directions\"?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Disciplina",
+                                          "Discurrere",
+                                          "Disputare",
+                                          "Dictum"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_112",
+                          "text":  "Discourse can best be defined in linguistics as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Random speech",
+                                          "Speech pattern and language use in a community",
+                                          "Written grammar rules only",
+                                          "Mathematical reasoning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_113",
+                          "text":  "According to Oxford Advanced Learners Dictionary, discourse is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A short statement",
+                                          "A long and serious treatment of a subject",
+                                          "Casual conversation",
+                                          "A poem"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_114",
+                          "text":  "Which of the following is NOT a type of discourse?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Argumentation",
+                                          "Narration",
+                                          "Computation",
+                                          "Exposition"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_115",
+                          "text":  "Argumentation primarily aims to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Entertain",
+                                          "Convince using logic",
+                                          "Describe objects",
+                                          "Tell stories"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_116",
+                          "text":  "Narration mainly focuses on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Giving instructions",
+                                          "Telling a story",
+                                          "Logical proofs",
+                                          "Scientific analysis"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_117",
+                          "text":  "Description relies mainly on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Numbers and formulas",
+                                          "Human senses",
+                                          "Historical facts only",
+                                          "Debate skills"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_118",
+                          "text":  "Exposition is designed to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Inform",
+                                          "Persuade emotionally",
+                                          "Entertain",
+                                          "Confuse"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_119",
+                          "text":  "Which of the following is NOT a tool of exposition?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Definition",
+                                          "Cause and effect",
+                                          "Compare and contrast",
+                                          "Emotional manipulation"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "gst2202_120",
+                          "text":  "Speech act theory focuses on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Grammar rules only",
+                                          "Words as actions",
+                                          "Poetry writing",
+                                          "Sentence length"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_121",
+                          "text":  "A discourse community is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A group of politicians",
+                                          "People sharing similar ideas and language use",
+                                          "A school classroom only",
+                                          "A religious sect only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_122",
+                          "text":  "Syllogism was developed by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Plato",
+                                          "Socrates",
+                                          "Aristotle",
+                                          "Copi"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_123",
+                          "text":  "A syllogism consists of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Four statements",
+                                          "Three statements",
+                                          "Five statements",
+                                          "Two statements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_124",
+                          "text":  "The last part of a syllogism is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Premise",
+                                          "Conclusion",
+                                          "Hypothesis",
+                                          "Argument"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_125",
+                          "text":  "The major, minor, and middle terms belong to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Fallacies",
+                                          "Discourse",
+                                          "Categorical syllogism",
+                                          "Narration"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_126",
+                          "text":  "The arrangement of a syllogism depends on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mood and figure",
+                                          "Tone and style",
+                                          "Grammar and spelling",
+                                          "Emotion and logic"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_127",
+                          "text":  "The major premise is usually written:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Last",
+                                          "Second",
+                                          "First",
+                                          "Randomly"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_128",
+                          "text":  "Logic is primarily concerned with:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Emotions",
+                                          "Arguments",
+                                          "Stories",
+                                          "Opinions only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_129",
+                          "text":  "Conclusion indicators include:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Because, since",
+                                          "Therefore, thus",
+                                          "For, as",
+                                          "If, when"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_130",
+                          "text":  "Premise indicators include:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Hence, thus",
+                                          "Therefore, so",
+                                          "Because, since",
+                                          "Consequently, finally"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "gst2202_131",
+                          "text":  "A valid argument means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Premises are false",
+                                          "Conclusion follows necessarily from premises",
+                                          "Argument is emotional",
+                                          "Argument is long"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_132",
+                          "text":  "A fallacy is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A true argument",
+                                          "A reasoning error",
+                                          "A grammar rule",
+                                          "A type of narration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_133",
+                          "text":  "Fallacies are mainly classified into:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Formal and informal",
+                                          "Simple and complex",
+                                          "Written and oral",
+                                          "True and false"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_134",
+                          "text":  "Formal fallacies are also called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ad hominem",
+                                          "Non sequitur",
+                                          "Argumentum",
+                                          "Exposition"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_135",
+                          "text":  "Affirming the consequent is an example of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Informal fallacy",
+                                          "Formal fallacy",
+                                          "Narrative error",
+                                          "Exposition error"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_136",
+                          "text":  "Denying the antecedent is a violation of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Grammar rules",
+                                          "Rules of inference",
+                                          "Storytelling rules",
+                                          "Writing style"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_137",
+                          "text":  "Appeal to force is also called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Argumentum ad baculum",
+                                          "Argumentum ad populum",
+                                          "Argumentum ad hominem",
+                                          "Argumentum ad veracundiam"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "gst2202_138",
+                          "text":  "Appeal to pity is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ad populum",
+                                          "Ad misericordiam",
+                                          "Ad baculum",
+                                          "Ad ignorantiam"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_139",
+                          "text":  "Hasty generalisation involves:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Too much evidence",
+                                          "Small or unrepresentative sample",
+                                          "Logical proof",
+                                          "Strong conclusion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "gst2202_140",
+                          "text":  "Begging the question means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Using the conclusion as a premise",
+                                          "Asking too many questions",
+                                          "Giving evidence",
+                                          "Using narration in logic"
+                                      ],
+                          "correct_index":  0
+                      }
+                  ],
+    "course_id":  "gst2202",
+    "course_name":  "Philosophy, Logic \u0026 Human Existence",
+    "version":  "1.0.0"
+}

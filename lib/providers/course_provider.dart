@@ -88,6 +88,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#DFF5E4', // Mint
       mode: '200_level',
     ),
+    Course(
+      id: 'gst2202',
+      code: 'GST 2202',
+      name: 'Philosophy, Logic & Human Existence',
+      icon: '🧠',
+      colorHex: '#EAE2FA', // Lavender
+      mode: '200_level',
+    ),
     
   ];
 
