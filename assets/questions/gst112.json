@@ -1,72 +1,2737 @@
-{
-  "course_id": "gst112",
-  "course_name": "Citizenship Education",
-  "version": "1.0.0",
-  "questions": [
-    {
-      "id": "gst112_001",
-      "text": "What is the supreme law of the Federal Republic of Nigeria?",
-      "options": [
-        "The Criminal Code",
-        "The Constitution",
-        "Acts of the National Assembly",
-        "Customary Law"
-      ],
-      "correct_index": 1,
-      "explanation": "The Constitution of Nigeria is supreme, and its provisions have binding force on all authorities and persons throughout the country.",
-      "difficulty": 1
-    },
-    {
-      "id": "gst112_002",
-      "text": "According to the Nigerian Constitution, a person can acquire citizenship by birth if:",
-      "options": [
-        "They reside in Nigeria for 15 years",
-        "Either of their parents or grandparents was born in Nigeria and belongs to a community indigenous to Nigeria",
-        "They are married to a citizen of Nigeria",
-        "They register with the local government authority"
-      ],
-      "correct_index": 1,
-      "explanation": "Citizenship by birth under Section 25 of the 1999 Constitution is granted to anyone born in or outside Nigeria whose parents/grandparents are citizens of Nigeria by birth.",
-      "difficulty": 2
-    },
-    {
-      "id": "gst112_003",
-      "text": "Which organ of government is primarily responsible for making laws in Nigeria?",
-      "options": [
-        "The Executive",
-        "The Legislature",
-        "The Judiciary",
-        "The Civil Service"
-      ],
-      "correct_index": 1,
-      "explanation": "The Legislature (the National Assembly, consisting of the Senate and House of Representatives) is responsible for law-making.",
-      "difficulty": 1
-    },
-    {
-      "id": "gst112_004",
-      "text": "The arm of government responsible for interpreting laws and resolving disputes is the:",
-      "options": [
-        "Police",
-        "Legislature",
-        "Judiciary",
-        "Executive"
-      ],
-      "correct_index": 2,
-      "explanation": "The Judiciary (the court system headed by the Chief Justice of Nigeria) interprets the laws and administers justice.",
-      "difficulty": 1
-    },
-    {
-      "id": "gst112_005",
-      "text": "Which of the following is a fundamental civic duty of a Nigerian citizen?",
-      "options": [
-        "Receiving free tertiary education",
-        "Voting in elections, paying taxes, and respecting national symbols",
-        "Obtaining a passport",
-        "Working for the government"
-      ],
-      "correct_index": 1,
-      "explanation": "Civic duties are obligations of citizens, which include law obedience, tax payment, voting, and national respect.",
-      "difficulty": 1
-    }
-  ]
+﻿{
+    "course_id":  "gst112",
+    "course_name":  "Citizenship Education",
+    "version":  "2.0.0",
+    "questions":  [
+                      {
+                          "id":  "gst112_001",
+                          "text":  "Nigeria is located in which part of Africa?",
+                          "options":  [
+                                          "East Africa",
+                                          "West Africa",
+                                          "Central Africa",
+                                          "North Africa"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nigeria is an area in West Africa bordering the Gulf of Guinea, between Benin and Cameroon.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_002",
+                          "text":  "What is Nigeria\u0027s total land area?",
+                          "options":  [
+                                          "734,768 sq km",
+                                          "834,768 sq km",
+                                          "934,768 sq km",
+                                          "1,034,768 sq km"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nigeria has a total land area of 934,768 square kilometres.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_003",
+                          "text":  "How much of Nigeria\u0027s land area is covered by water?",
+                          "options":  [
+                                          "10,000 sq km",
+                                          "13,000 sq km",
+                                          "15,000 sq km",
+                                          "20,000 sq km"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "13,000 square kilometres of Nigeria\u0027s area is covered by water.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_004",
+                          "text":  "Nigeria shares borders with which countries?",
+                          "options":  [
+                                          "Ghana, Togo, Cameroon and Chad",
+                                          "Benin, Cameroon, Chad and Niger",
+                                          "Mali, Niger, Cameroon and Benin",
+                                          "Senegal, Guinea, Niger and Chad"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nigeria shares borders with Benin, Cameroon, Chad and Niger.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_005",
+                          "text":  "What was Nigeria\u0027s population at independence?",
+                          "options":  [
+                                          "35.14 million",
+                                          "40 million",
+                                          "45.14 million",
+                                          "50 million"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nigeria\u0027s population was 45.14 million at independence.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_006",
+                          "text":  "What was Nigeria\u0027s population in 2023?",
+                          "options":  [
+                                          "Over 150 million",
+                                          "Over 200 million",
+                                          "Over 223 million",
+                                          "Over 300 million"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nigeria\u0027s population increased to over 223 million in 2023.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_007",
+                          "text":  "Approximately how many ethnic groups make up Nigeria\u0027s population?",
+                          "options":  [
+                                          "About 100",
+                                          "About 200",
+                                          "About 300",
+                                          "About 500"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nigeria\u0027s population is made up of about 300 ethnic groups who speak over 500 languages.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_008",
+                          "text":  "How many languages are spoken in Nigeria?",
+                          "options":  [
+                                          "Over 100",
+                                          "Over 300",
+                                          "Over 500",
+                                          "Over 700"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nigeria\u0027s population speaks over 500 languages.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_009",
+                          "text":  "Over how many Nigerian ethnic groups are feared to have gone into extinction?",
+                          "options":  [
+                                          "Over 10",
+                                          "Over 20",
+                                          "Over 30",
+                                          "Over 50"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Over 20 of Nigeria\u0027s ethnic groups are feared to have gone into extinction.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_010",
+                          "text":  "What percentage of Nigeria\u0027s population does the Hausa-Fulani constitute?",
+                          "options":  [
+                                          "18%",
+                                          "21%",
+                                          "25%",
+                                          "29%"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "The Hausa-Fulani constitute 29% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_011",
+                          "text":  "What percentage of Nigeria\u0027s population are the Yoruba?",
+                          "options":  [
+                                          "18%",
+                                          "21%",
+                                          "25%",
+                                          "29%"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Yoruba constitute 21% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_012",
+                          "text":  "What percentage of Nigeria\u0027s population are the Igbo?",
+                          "options":  [
+                                          "10%",
+                                          "14%",
+                                          "18%",
+                                          "21%"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Igbo constitute 18% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_013",
+                          "text":  "Which empire was located in the North during Nigeria\u0027s pre-colonial history?",
+                          "options":  [
+                                          "Oyo Empire",
+                                          "Benin Kingdom",
+                                          "Borno Empire",
+                                          "Igbo Segmentary Societies"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Borno Empire was one of the independent states in the North of what is now Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_014",
+                          "text":  "What is the percentage of the Ijaw in Nigeria\u0027s population?",
+                          "options":  [
+                                          "4%",
+                                          "10%",
+                                          "12%",
+                                          "18%"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Ijaw constitute 10% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_015",
+                          "text":  "Archaeological records reveal people were living in present-day Nigeria as early as:",
+                          "options":  [
+                                          "5,000 BC",
+                                          "7,000 BC",
+                                          "9,000 BC",
+                                          "12,000 BC"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Archaeological records revealed that as early as 9,000 BC or even earlier, people were already living in the area now called Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_016",
+                          "text":  "Where is the Nok community located in present-day Nigeria?",
+                          "options":  [
+                                          "Kano State",
+                                          "Kaduna State",
+                                          "Plateau State",
+                                          "Borno State"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nok is a community in the present day Kaduna State.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_017",
+                          "text":  "The Nok Civilisation was particularly known for:",
+                          "options":  [
+                                          "Pottery and trade",
+                                          "Agriculture and iron works",
+                                          "Religion and governance",
+                                          "Art and sculpture"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Nok Civilisation produced the best early known civilisation in the Nigerian area, especially in agriculture and iron works.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_018",
+                          "text":  "How long did the Nok Civilisation last?",
+                          "options":  [
+                                          "3 centuries",
+                                          "5 centuries",
+                                          "7 centuries",
+                                          "10 centuries"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Nok Civilisation lasted for 7 centuries (500 BCE-200 BCE).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_019",
+                          "text":  "The Igbo-Ukwu Civilisation is located in present-day which state?",
+                          "options":  [
+                                          "Imo State",
+                                          "Anambra State",
+                                          "Enugu State",
+                                          "Rivers State"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Igbo-Ukwu Civilisation covers an area in the present Anambra State.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_020",
+                          "text":  "The Igbo-Ukwu Civilisation dates back to which century?",
+                          "options":  [
+                                          "7th century AD",
+                                          "8th century AD",
+                                          "9th century AD",
+                                          "10th century AD"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Igbo-Ukwu Civilisation dates back to the 9th century AD.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_021",
+                          "text":  "Ife Civilisation is located in present-day which state?",
+                          "options":  [
+                                          "Oyo State",
+                                          "Ekiti State",
+                                          "Ondo State",
+                                          "Osun State"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Ife or Ile-Ife is located in the present day Osun State.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_022",
+                          "text":  "The Ife Civilisation dates back to approximately:",
+                          "options":  [
+                                          "800-1000 C.E.",
+                                          "1000-1200 C.E.",
+                                          "1200-1400 C.E.",
+                                          "1400-1600 C.E."
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Ife Civilisation dates back to around 1200 to 1400 C.E.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_023",
+                          "text":  "Which of the following was NOT a notable area of early human settlement in Nigeria?",
+                          "options":  [
+                                          "Iwo-Eleru",
+                                          "Taruga",
+                                          "Jos-Plateau",
+                                          "Kano"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Notable areas of human settlements were Iwo-Eleru, Okigwe, Taruga, and Jos-Plateau. Kano is not listed among early settlement areas.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_024",
+                          "text":  "The Slave Trade Act of 1807 abolished slavery worldwide, but it continued in Nigeria until:",
+                          "options":  [
+                                          "The 1820s",
+                                          "The 1850s",
+                                          "The 1880s and beyond",
+                                          "1900"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Despite the Slave Trade Act of 1807, slave trade continued in Nigeria and Africa generally up to the 1880s and beyond.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_025",
+                          "text":  "What agricultural commodities drove European interest in Nigeria during the industrial revolution?",
+                          "options":  [
+                                          "Rice, wheat and rubber",
+                                          "Palm oil, palm kernel, cocoa and cotton",
+                                          "Coffee, tea and sugar",
+                                          "Groundnut, sorghum and millet"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The era of industrial revolution created the need for palm oil, palm kernel, cocoa and cotton.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_026",
+                          "text":  "Who amalgamated competing European trading firms into the National African Company?",
+                          "options":  [
+                                          "Lord Lugard",
+                                          "Dame Flora Shaw",
+                                          "Sir Taubman George Goldie",
+                                          "Jaja of Opobo"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Sir Taubman George Goldie amalgamated the competing firms into the National African Company.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_027",
+                          "text":  "The National African Company later became which company in 1886?",
+                          "options":  [
+                                          "West Africa Company",
+                                          "Royal Niger Company (RNC)",
+                                          "British Nigeria Company",
+                                          "Niger Delta Company"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The National African Company later became the Royal Niger Company (RNC) in 1886.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_028",
+                          "text":  "Lagos was bombarded and annexed by the British between:",
+                          "options":  [
+                                          "1840 and 1870",
+                                          "1851 and 1961",
+                                          "1851 and 1861",
+                                          "1860 and 1880"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Between 1851 and 1861, Lagos had been bombarded and annexed by the British.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_029",
+                          "text":  "British control was extended to Yorubaland between:",
+                          "options":  [
+                                          "1851 and 1861",
+                                          "1862 and 1893",
+                                          "1885 and 1900",
+                                          "1900 and 1914"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "British control was extended to Yorubaland between 1862 and 1893.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_030",
+                          "text":  "The Igbo, Ijaw and neighbouring ethnic groups became part of the British colonial empire in:",
+                          "options":  [
+                                          "1880",
+                                          "1885",
+                                          "1893",
+                                          "1900"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Igbo, Ijaw and other neighbouring ethnic groups became part of the British colonial empire in 1885.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_031",
+                          "text":  "The last major northern territory (Borno) to be subdued by the British was around:",
+                          "options":  [
+                                          "1900",
+                                          "1905",
+                                          "1910",
+                                          "1914"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Borno was not subdued until the period around 1914.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_032",
+                          "text":  "Who suggested the name \u0027Niger Area\u0027 for Nigeria in 1900?",
+                          "options":  [
+                                          "Lord Lugard",
+                                          "Dame Flora Shaw",
+                                          "George Goldie",
+                                          "Queen Victoria"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Dame Flora Shaw suggested the name Niger Area in 1900. She was a British journalist later known as Lady Lugard.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_033",
+                          "text":  "When was Lagos colony merged with the Protectorate of Southern Nigeria?",
+                          "options":  [
+                                          "1900",
+                                          "1903",
+                                          "1906",
+                                          "1914"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Lagos colony was merged with the Protectorate of Southern Nigeria in 1906. This was the first ever amalgamation by the British in Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_034",
+                          "text":  "When were the protectorates of Northern and Southern Nigeria amalgamated?",
+                          "options":  [
+                                          "1st January 1906",
+                                          "1st January 1914",
+                                          "1st October 1914",
+                                          "1st April 1939"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "On 1st January 1914, the protectorates of Northern and Southern Nigeria were amalgamated.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_035",
+                          "text":  "Who was the Governor of the new Nigeria after the 1914 amalgamation?",
+                          "options":  [
+                                          "George Goldie",
+                                          "Flora Shaw",
+                                          "Frederick Lugard",
+                                          "Henry Rawlinson"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Sir Frederick Lugard was the Governor of the new Nigeria after amalgamation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_036",
+                          "text":  "When did the British government split the Southern provinces into Eastern and Western provinces?",
+                          "options":  [
+                                          "1914",
+                                          "1930",
+                                          "April 1, 1939",
+                                          "1945"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "On April 1, 1939, the British government split the former Southern provinces into Eastern and Western provinces.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_037",
+                          "text":  "Caliph Muhammadu Attahiru I and many followers were killed in 1903 at a place called:",
+                          "options":  [
+                                          "Sokoto",
+                                          "Kano",
+                                          "Mbormi",
+                                          "Katsina"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In 1903, Attahiru and many of his followers were killed at a place called Mbormi (about 76 kilometres from the present day Gombe).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_038",
+                          "text":  "Which of the following Nigerian rulers did NOT resist British colonialism?",
+                          "options":  [
+                                          "Jaja of Opobo",
+                                          "Nana of Itshekiri",
+                                          "Ovonranwen of Benin",
+                                          "George Goldie"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "George Goldie was a British trader. Nigerian rulers who resisted include Jaja of Opobo, Nana of Itshekiri, Ovonranwen of Benin, and Caliph Attahiru I.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_039",
+                          "text":  "What was the immediate result of British colonial rule alienating Nigerians?",
+                          "options":  [
+                                          "The Biafran war",
+                                          "The birth of Nigerian nationalism",
+                                          "The formation of the RNC",
+                                          "The amalgamation of Nigeria"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The immediate result of British colonial rule alienating Nigerians was the birth of Nigerian nationalism.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_040",
+                          "text":  "The Nigerian Youth Movement (NYM) is described as:",
+                          "options":  [
+                                          "The first political party in Nigeria",
+                                          "The first true nationalist organization that emerged in Nigeria",
+                                          "A regional cultural organization",
+                                          "A military organization"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The NYM is best known as the \u0027first true nationalist organization\u0027 that emerged in Nigeria in 1936.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_041",
+                          "text":  "In which year was the Nigerian Youth Movement (NYM) formed?",
+                          "options":  [
+                                          "1930",
+                                          "1933",
+                                          "1936",
+                                          "1940"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The NYM emerged in Nigeria in 1936.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_042",
+                          "text":  "Who founded the National Council of Nigeria and the Cameroons (NCNC) in 1944?",
+                          "options":  [
+                                          "Obafemi Awolowo and Ahmadu Bello",
+                                          "Herbert Macaulay and Nnamdi Azikiwe",
+                                          "Tafawa Balewa and Aminu Kano",
+                                          "Samuel Akinsanya and H.O Davies"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The NCNC was founded by Herbert Macaulay and Nnamdi Azikiwe in 1944.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_043",
+                          "text":  "The Action Group (AG) was officially launched in which year?",
+                          "options":  [
+                                          "1944",
+                                          "1947",
+                                          "1949",
+                                          "1951"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "The Action Group (AG) was officially launched in 1951 by Obafemi Awolowo.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_044",
+                          "text":  "The Northern Peoples\u0027 Congress (NPC) was formed in 1949 with which leaders?",
+                          "options":  [
+                                          "Azikiwe, Macaulay, and Balewa",
+                                          "Ahmadu Bello, Abubakar Tafawa Balewa, and Aminu Kano",
+                                          "Awolowo, Akintola, and Bello",
+                                          "Ironsi, Gowon, and Buhari"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Northern Peoples\u0027 Congress was formed in 1949 with Ahmadu Bello, Abubakar Tafawa Balewa and Aminu Kano as its leaders.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_045",
+                          "text":  "The NPC developed from which Hausa/Fulani cultural organisation?",
+                          "options":  [
+                                          "Egbe Omo Oduduwa",
+                                          "Jamiyyar Mutanen Arewa",
+                                          "NCNC",
+                                          "Igbo Union"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The NPC developed from a Hausa/Fulani cultural organisation called Jamiyyar Mutanen Arewa.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_046",
+                          "text":  "Egbe Omo Oduduwa was founded in London in 1945 by:",
+                          "options":  [
+                                          "Nnamdi Azikiwe",
+                                          "Ahmadu Bello",
+                                          "Obafemi Awolowo",
+                                          "Herbert Macaulay"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Egbe Omo Oduduwa, a Yoruba socio-cultural group, was founded in London in 1945 by Obafemi Awolowo.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_047",
+                          "text":  "Nigeria became independent on:",
+                          "options":  [
+                                          "October 1st, 1958",
+                                          "October 1st, 1960",
+                                          "October 1st, 1963",
+                                          "January 1st, 1960"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nigeria became independent on October 1st 1960.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_048",
+                          "text":  "Who was Nigeria\u0027s first Prime Minister at independence?",
+                          "options":  [
+                                          "Nnamdi Azikiwe",
+                                          "Obafemi Awolowo",
+                                          "Abubakar Tafawa Balewa",
+                                          "Ahmadu Bello"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nigeria became independent on October 1 1960 with Abubakar Tafawa Balewa as its first Prime Minister.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_049",
+                          "text":  "Who became the first President when Nigeria became a Republic on October 1, 1963?",
+                          "options":  [
+                                          "Abubakar Tafawa Balewa",
+                                          "Ahmadu Bello",
+                                          "Nnamdi Azikiwe",
+                                          "Obafemi Awolowo"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Nnamdi Azikiwe became the President when Nigeria became a Republic on October 1 1963.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_050",
+                          "text":  "The January 1966 military coup was led by:",
+                          "options":  [
+                                          "Yakubu Gowon and Murtala Muhammed",
+                                          "Chukwuemeka Kaduna Nzeogu and Emmanuel Ifeajuna",
+                                          "Ibrahim Babangida and Sani Abacha",
+                                          "Aguiyi Ironsi and Muritala"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The January 1966 military coup was led by Chukwuemeka Kaduna Nzeogu and Emmanuel Ifeajuna.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_051",
+                          "text":  "Who was appointed to head the military government after the January 1966 coup?",
+                          "options":  [
+                                          "Yakubu Gowon",
+                                          "Murtala Muhammed",
+                                          "Aguiyi Ironsi",
+                                          "Ibrahim Babangida"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Aguiyi Ironsi was appointed to head the military government after the January 1966 coup.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_052",
+                          "text":  "The counter coup of July 28, 1966 was led by:",
+                          "options":  [
+                                          "Yakubu Gowon",
+                                          "Aguiyi Ironsi",
+                                          "General Murtala Muhammed",
+                                          "Chukwuemeka Ojukwu"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "On July 28 1966, General Murtala Muhammed led a group of military officers dominated by the North to stage a counter coup (July Rematch).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_053",
+                          "text":  "Who was appointed to head the government after the July 1966 counter coup?",
+                          "options":  [
+                                          "Murtala Muhammed",
+                                          "Yakubu Gowon",
+                                          "Ibrahim Babangida",
+                                          "Muhammadu Buhari"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Yakubu Gowon was appointed to head the government after the counter coup.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_054",
+                          "text":  "Isaac J. A. Boro declared the Niger Delta Republic in:",
+                          "options":  [
+                                          "January 1966",
+                                          "February 1966",
+                                          "July 1966",
+                                          "May 1967"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Isaac J. A. Boro led a movement that declared the Niger Delta Republic in February, 1966.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_055",
+                          "text":  "The Republic of Biafra was declared in May 1967 by:",
+                          "options":  [
+                                          "Isaac Boro",
+                                          "Aguiyi Ironsi",
+                                          "Chukwuemeka Odumegwu Ojukwu",
+                                          "Nnamdi Azikiwe"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Chukwuemeka Odumegwu Ojukwu, the Military Governor of the Eastern Region, declared the Republic of Biafra in May 1967.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_056",
+                          "text":  "The Nigerian Civil War ended on:",
+                          "options":  [
+                                          "15th January 1969",
+                                          "15th January 1970",
+                                          "1st October 1970",
+                                          "30th May 1970"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The war ended with the surrender of Biafran forces on 15th January, 1970.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_057",
+                          "text":  "Approximately how many people died from starvation-related causes during the Civil War?",
+                          "options":  [
+                                          "500 thousand",
+                                          "1 million",
+                                          "2 million",
+                                          "5 million"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Civil War resulted in starvation-related death of about 2 million people.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_058",
+                          "text":  "The Movement for the Actualisation of the Sovereign State of Biafra (MASSOB) was founded in:",
+                          "options":  [
+                                          "1990",
+                                          "1995",
+                                          "1999",
+                                          "2005"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The agitation for Biafra was rekindled in 1999 through MASSOB under the leadership of Ralph Uwazuruike.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_059",
+                          "text":  "Boko Haram\u0027s common name translates to:",
+                          "options":  [
+                                          "Northern freedom fighters",
+                                          "Western education is forbidden",
+                                          "Islamic state of Nigeria",
+                                          "People of the Sunnah"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Boko Haram means \u0027Western education is forbidden.\u0027",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_060",
+                          "text":  "The National Youth Service Corps (NYSC) was established in:",
+                          "options":  [
+                                          "1970",
+                                          "1972",
+                                          "1974",
+                                          "1976"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The National Youth Service Corps scheme was established in 1974 to ensure national unity, common national identity and integration.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_061",
+                          "text":  "Nigeria has how many official major ethnic groups?",
+                          "options":  [
+                                          "Two",
+                                          "Three",
+                                          "Five",
+                                          "Seven"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nigeria has three official major ethnic groups: the Hausa/Fulani, Yoruba and the Igbo.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_062",
+                          "text":  "Which ethnic group is believed to have the least internal diversity?",
+                          "options":  [
+                                          "Hausa",
+                                          "Yoruba",
+                                          "Igbo",
+                                          "Fulani"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "It is believed that the Igbo has the least internal diversity.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_063",
+                          "text":  "The south-south geopolitical zone of Nigeria comprises mainly:",
+                          "options":  [
+                                          "The Igbo",
+                                          "The Yoruba",
+                                          "Numerous minority ethnic groups",
+                                          "The Hausa-Fulani"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The south-south comprises numerous minority ethnic groups.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_064",
+                          "text":  "Hausa is the largest ethnic group in northern Nigeria, comprising how many northern states?",
+                          "options":  [
+                                          "12 states",
+                                          "15 states",
+                                          "19 states",
+                                          "21 states"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Hausa is the largest ethnic group in northern Nigeria, comprising the present 19 northern states and the Federal Capital Territory.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_065",
+                          "text":  "The 1804 jihad that led to the dominance of Hausa-Fulani was launched by:",
+                          "options":  [
+                                          "Ahmadu Bello",
+                                          "Usman Dan Fodio",
+                                          "Bayajida",
+                                          "Aminu Kano"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The 1804 Usman Dan Fodio jihad led to conquest and assimilation of Hausa states.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_066",
+                          "text":  "Before the 1804 jihad, the Hausa states were noted for all EXCEPT:",
+                          "options":  [
+                                          "Unhealthy rivalry",
+                                          "Corruption",
+                                          "Pagan practices",
+                                          "Strong governance"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Before the jihad, states were noted for rivalry, corruption, exploitation, slavery, and pagan practices â€” not strong governance.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_067",
+                          "text":  "The dominant oral tradition explaining the origin of the Hausa people is:",
+                          "options":  [
+                                          "The Bayajida legend",
+                                          "The Nri version",
+                                          "The Oyo tradition",
+                                          "The Israeli version"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The dominant and most acceptable oral tradition that attempts to explain the origin of the Hausa is the Bayajida legend.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_068",
+                          "text":  "According to the Bayajida legend, Bayajida fled from Baghdad to:",
+                          "options":  [
+                                          "Kano",
+                                          "Daura",
+                                          "Kanem Borno",
+                                          "Zazzau"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Bayajida fled from Baghdad in the Middle East to Kanem Borno.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_069",
+                          "text":  "The seven original Hausa states (Hausa Bokwai) include all EXCEPT:",
+                          "options":  [
+                                          "Daura",
+                                          "Kano",
+                                          "Kebbi",
+                                          "Gobir"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Hausa Bokwai are Biram, Daura, Katsina, Kano, Rano, Zazzau and Gobir. Kebbi is one of the Banza Bokwai.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_070",
+                          "text":  "The seven additional Hausa states (Banza Bokwai) include:",
+                          "options":  [
+                                          "Kano, Rano, Gobir",
+                                          "Kebbi, Zamfara, Nupe, Gwari, Yauri, Ilorin and Kwararafa",
+                                          "Daura, Katsina, Biram",
+                                          "Sokoto, Kaduna, Zaria"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Kebbi, Zamfara, Nupe, Gwari, Yauri, Ilorin and Kwararafa are referred to as Banza Bokwai.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_071",
+                          "text":  "At the apex of the Hausa political system was the:",
+                          "options":  [
+                                          "Galadima",
+                                          "Sarkin kasa",
+                                          "Qadi",
+                                          "Madawaki"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "At the apex of the political system was the Sarkin kasa, the chief executive who performed political and religious functions.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_072",
+                          "text":  "In the Hausa political system, the Galadima was:",
+                          "options":  [
+                                          "Palace administrator",
+                                          "Senior councillor",
+                                          "Overseer",
+                                          "Guard"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Galadima was the senior councillor in the Hausa political system.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_073",
+                          "text":  "Hausa government was funded through zakat, jangali and tributes. \u0027Jangali\u0027 means:",
+                          "options":  [
+                                          "Alms",
+                                          "Land tax",
+                                          "Cattle tax",
+                                          "Trade tax"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Jangali means cattle tax; zakat means alms.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_074",
+                          "text":  "Which of the following was an effect of the 1804 Usman Dan Fodio jihad?",
+                          "options":  [
+                                          "Adoption of English as lingua franca",
+                                          "Emergence of Hausa aristocracy in place of Fulani aristocracy",
+                                          "Adoption of Hausa as lingua franca and language of administration",
+                                          "Decline of Islam in the region"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The jihad led to the adoption of Hausa as lingua franca and language of administration, among other effects.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_075",
+                          "text":  "The Fulani are also known as:",
+                          "options":  [
+                                          "Kanuri or Nupe",
+                                          "Fellata, Fula or Fulbe",
+                                          "Bini or Edo",
+                                          "Ijaw or Izon"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Fulani are also known as Fellata, Fula or Fulbe.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_076",
+                          "text":  "The Fulani are widely believed to have originated from:",
+                          "options":  [
+                                          "The Arabian Peninsula",
+                                          "The Upper Senegal and Futajalon highlands",
+                                          "The North African coast",
+                                          "Central Africa"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Fulani are widely believed to have originated from the Upper Senegal and Futajalon highlands.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_077",
+                          "text":  "The nomadic Fulani are also known as:",
+                          "options":  [
+                                          "Fulanin gida",
+                                          "Fulanin daji or Fulanin bororo",
+                                          "Fulanin arewa",
+                                          "Fulanin kasa"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The nomadic Fulani are also known as Fulanin daji or Fulanin bororo.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_078",
+                          "text":  "The sedentary Fulani who settle in towns and villages are known as:",
+                          "options":  [
+                                          "Fulanin daji",
+                                          "Fulanin bororo",
+                                          "Fulanin gida",
+                                          "Fulanin jihad"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The sedentary Fulani are also known as Fulanin gida, and they engage in farming, teaching and trading.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_079",
+                          "text":  "Among the nomadic Fulani, ownership of cows is:",
+                          "options":  [
+                                          "Prohibited by tradition",
+                                          "Part of their culture and a definition of their wealth",
+                                          "A sign of poverty",
+                                          "Controlled by the government"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Ownership of cows is part of the nomadic Fulani\u0027s culture and a definition of their wealth.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_080",
+                          "text":  "The Yoruba ethnic group is believed to have been in existence since:",
+                          "options":  [
+                                          "4000 to 3000 BC",
+                                          "3000 to 2000 BC",
+                                          "2000 to 1000 BC",
+                                          "1000 to 500 BC"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Yoruba ethnic group is believed to have been in existence since the period between 2000 to 1000 BC.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_081",
+                          "text":  "The traditional homeland of the Yoruba includes:",
+                          "options":  [
+                                          "Ile-Ife, Oyo and Iwo-Eleru",
+                                          "Imo, Anambra and Enugu",
+                                          "Kano, Kaduna and Zaria",
+                                          "Borno, Yobe and Adamawa"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Yoruba traditional homeland includes Ile-Ife, Oyo and Iwo-Eleru (near Akure and Owo).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_082",
+                          "text":  "According to the Ife version of Yoruba origin, who sent immortals (Oye) from heaven?",
+                          "options":  [
+                                          "Oduduwa",
+                                          "Obatala",
+                                          "Olodumare or Olorun",
+                                          "Oramiyan"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "According to the Ife version, Olodumare or Olorun (the Most High God) sent sixteen Oye (immortals) from heaven.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_083",
+                          "text":  "In the Ife version of Yoruba origin, who became intoxicated with palm wine?",
+                          "options":  [
+                                          "Oduduwa",
+                                          "Obatala",
+                                          "Oramiyan",
+                                          "Olodumare"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Obatala was intoxicated after drinking palm wine, allowing Oduduwa to seize the symbols of authority.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_084",
+                          "text":  "According to the Oyo/Samuel Johnson version of Yoruba origin, the Yoruba migrated from:",
+                          "options":  [
+                                          "Egypt and Sudan",
+                                          "Mecca through Yemen and Egypt",
+                                          "Israel",
+                                          "Baghdad"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "According to the Oyo Tradition/Rev. Samuel Johnson version, the Yoruba migrated from Mecca, passed through Yemen and Egypt.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_085",
+                          "text":  "The kingdom of Oyo was founded by Oramiyan, a son of Oduduwa, in the:",
+                          "options":  [
+                                          "13th century",
+                                          "14th century",
+                                          "15th century",
+                                          "16th century"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The renowned kingdom of Oyo was founded by Oramiyan a son of Oduduwa in the 15th century.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_086",
+                          "text":  "At the head of the Yoruba (Oyo) political system was the:",
+                          "options":  [
+                                          "Bashorun",
+                                          "Alaafin",
+                                          "Are-Ona-Kankanfo",
+                                          "Oyomesi"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "At the head of the political system was the Alaafin who was regarded as \u0027the lord of many lands and companion of the gods.\u0027",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_087",
+                          "text":  "The Oyomesi (council of seven) was headed by the:",
+                          "options":  [
+                                          "Alaafin",
+                                          "Are-Ona-Kankanfo",
+                                          "Bashorun",
+                                          "Ogboni"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Oyomesi (council of seven) was headed by the Bashorun (prime minister).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_088",
+                          "text":  "According to Yoruba tradition, when an Alaafin is removed, he is expected to:",
+                          "options":  [
+                                          "Go into exile",
+                                          "Commit suicide",
+                                          "Become a councillor",
+                                          "Leave the kingdom"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "When an Alaafin is removed, he is expected to commit suicide.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_089",
+                          "text":  "The Ogboni cult in Yoruba politics served as:",
+                          "options":  [
+                                          "The military arm of government",
+                                          "A counter force and mediator between the Alaafin and Oyomesi",
+                                          "The judicial system",
+                                          "The treasury department"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Ogboni cult served as a counter force and a mediator in any conflict between the Alaafin and the Oyomesi.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_090",
+                          "text":  "The Are-Ona-Kankanfo in the Yoruba political system refers to:",
+                          "options":  [
+                                          "The prime minister",
+                                          "The council of seven",
+                                          "The Army with 70 war chiefs",
+                                          "The cult leaders"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Army or Are-Ona-Kankanfo was the military arm of the Yoruba government including 70 war chiefs.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_091",
+                          "text":  "The traditional homeland of the Igbo includes which states?",
+                          "options":  [
+                                          "Lagos, Oyo, Ogun",
+                                          "Imo, Anambra, Enugu, Ebonyi, Abia and parts of Delta and Rivers",
+                                          "Borno, Yobe and Adamawa",
+                                          "Plateau, Benue and Nassarawa"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The traditional homeland of the Igbo are Imo, Anambra, Enugu, Ebonyi, Abia and parts of Delta and Rivers.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_092",
+                          "text":  "According to the Nri version of Igbo origin, the ancestor of the Igbo, Eri, descended from:",
+                          "options":  [
+                                          "The sea",
+                                          "The sky",
+                                          "The Middle East",
+                                          "Ancient Egypt"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "According to Nri version, the ancestor of the Igbo, Eri, descended from the sky and sailed down the River Anambra.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_093",
+                          "text":  "The Israeli version of Igbo origin is based on:",
+                          "options":  [
+                                          "Archaeological evidence",
+                                          "Similarities between Igbo culture and ancient Hebrew culture",
+                                          "Migration records from Jerusalem",
+                                          "DNA analysis"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Israeli version is based on the so-called similarities between the cultures of the Igbo and the ancient Hebrew.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_094",
+                          "text":  "The Igbo society has always been known as:",
+                          "options":  [
+                                          "Monarchical",
+                                          "Theocratic",
+                                          "Acephalous (without a head)",
+                                          "Federal"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Igbo society has always been known as acephalous (segmentary), without a strong centralized ruler.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_095",
+                          "text":  "In traditional Igbo society, the centre of government was the:",
+                          "options":  [
+                                          "Kingdom",
+                                          "Province",
+                                          "Village",
+                                          "Age grade"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In traditional Igbo, the village was the centre of government, described as direct democracy.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_096",
+                          "text":  "Amala Oha in traditional Igbo society was:",
+                          "options":  [
+                                          "A military formation",
+                                          "A form of general assembly where male adult members met to perform legislative functions",
+                                          "The title of the Igbo king",
+                                          "A religious festival"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Amala Oha was a form of general assembly in traditional Igbo society where all male adult members met to perform legislative functions.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_097",
+                          "text":  "The symbol of authority and justice for each lineage head (Okpara) among the Igbo was the:",
+                          "options":  [
+                                          "Ofo",
+                                          "Ozo",
+                                          "Obi",
+                                          "Isi"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The Okpara\u0027s symbol of authority and justice was the Ofo.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_098",
+                          "text":  "The Awka or Orlu version of Igbo origin claims they existed since around:",
+                          "options":  [
+                                          "1,000 BC",
+                                          "2,000 BC",
+                                          "2,500 BC",
+                                          "5,000 BC"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Awka or Orlu version claims Igbo societies such as Nri, Awka and Orlu have been in existence since around 2,500 BC.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_099",
+                          "text":  "The Benin Empire is also known as:",
+                          "options":  [
+                                          "Ijaw or Izon",
+                                          "Bini or Edo",
+                                          "Efik or Ibibio",
+                                          "Urhobo or Isoko"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Benin are also known as Bini or Edo and are found in southern Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_100",
+                          "text":  "The Benin Empire was formed around which century?",
+                          "options":  [
+                                          "9th century",
+                                          "10th century",
+                                          "11th century",
+                                          "12th century"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Formed around the 11th century, the Benin Empire was one of the first areas to have contact with the Europeans.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_101",
+                          "text":  "The Benin Empire was the first empire on the West African coast to exchange ambassadors with Europeans between:",
+                          "options":  [
+                                          "1450 and 1470",
+                                          "1470 and 1490",
+                                          "1481 and 1504",
+                                          "1510 and 1530"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Benin Empire was the first empire on the West African coast to exchange ambassadors with the Europeans between 1481 and 1504.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_102",
+                          "text":  "In Bini political organization, succession to the throne was by:",
+                          "options":  [
+                                          "Election by the Uzama",
+                                          "Appointment by the Oba",
+                                          "Primogeniture (first surviving son succeeds)",
+                                          "Rotation among noble families"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Succession to the Bini throne was by primogeniture â€” the first surviving son succeeded his father.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_103",
+                          "text":  "The Bini society was classified into which two distinct classes?",
+                          "options":  [
+                                          "Priests and warriors",
+                                          "The nobility and the commoner",
+                                          "Traders and farmers",
+                                          "Chiefs and slaves"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Bini society was classified into two distinct classes: the nobility and the commoner.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_104",
+                          "text":  "The second version of Benin\u0027s origin states that Oduduwa sent his son ________ to serve as king.",
+                          "options":  [
+                                          "Oramiyan",
+                                          "Oranmiyan",
+                                          "Eweka",
+                                          "Onogie"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Oduduwa sent Oranmiyan to serve as king of Benin. His son from an Edo woman later became the first Oba, Eweka.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_105",
+                          "text":  "The political system of the Itsekiri is headed by the:",
+                          "options":  [
+                                          "Oba",
+                                          "Attah",
+                                          "Olu",
+                                          "Mai"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The political system of the Itsekiri is headed by the Olu who is also the spiritual leader.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_106",
+                          "text":  "The Ojoye in Itsekiri political system is:",
+                          "options":  [
+                                          "The king",
+                                          "A council of seven nobles and title holders",
+                                          "The army general",
+                                          "The judicial head"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Ojoye is a Council of seven nobles and title holders, similar to the Oyomesi in Yorubaland.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_107",
+                          "text":  "The Kanuri are found in which states?",
+                          "options":  [
+                                          "Kano and Katsina",
+                                          "Borno and Yobe",
+                                          "Adamawa and Gombe",
+                                          "Plateau and Bauchi"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Kanuri are found in Borno and Yobe States.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_108",
+                          "text":  "The central political system of the Kanuri was headed by the:",
+                          "options":  [
+                                          "Olu",
+                                          "Alaafin",
+                                          "Mai",
+                                          "Attah"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The central political system of the Kanuri was headed by the Mai or king.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_109",
+                          "text":  "According to the Saif bin Dhi Yazan version, the foundation of Kanem Borno was laid by an Arab between:",
+                          "options":  [
+                                          "7th and 8th centuries CE",
+                                          "9th and 10th centuries CE",
+                                          "11th and 12th centuries CE",
+                                          "13th and 14th centuries CE"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The foundation of Kanem Borno was laid between the 9th and the 10th centuries CE to an Arab, Saif bin Dhi Yazan.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_110",
+                          "text":  "The Nupe are found in which part of Nigeria?",
+                          "options":  [
+                                          "South eastern Nigeria",
+                                          "Central Nigerian area along the Niger Benue valley",
+                                          "North eastern Nigeria",
+                                          "South western Nigeria"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Nupe are found in the central Nigerian area along the Niger Benue valley.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_111",
+                          "text":  "The head of the Nupe Kingdom is called:",
+                          "options":  [
+                                          "Olu",
+                                          "Mai",
+                                          "Etsu",
+                                          "Attah"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Etsu is the head of the Nupe Kingdom.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_112",
+                          "text":  "The Igala are found at the confluence of which rivers?",
+                          "options":  [
+                                          "Rivers Niger and Benue",
+                                          "Rivers Niger and Rima",
+                                          "Rivers Benue and Cross",
+                                          "Rivers Niger and Anambra"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The Igala are found in central Nigeria at the confluence of Rivers Benue and Niger.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_113",
+                          "text":  "The political system of the Igala was headed by the:",
+                          "options":  [
+                                          "Aku",
+                                          "Attah",
+                                          "Mai",
+                                          "Tor Tiv"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The political system of the Igala was headed by the Attah, assisted by a council of nine chiefs known as Igalamela.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_114",
+                          "text":  "The Birom are largely located in which state?",
+                          "options":  [
+                                          "Bauchi State",
+                                          "Kaduna State",
+                                          "Plateau State",
+                                          "Benue State"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Birom are largely located in Plateau State but are also found in Bauchi and Kaduna States.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_115",
+                          "text":  "The Birom\u0027s rain festival is called:",
+                          "options":  [
+                                          "Nshor",
+                                          "Nzem Berom",
+                                          "Mandyang",
+                                          "Gbong Gwom"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Mandyang is the rain festival usually marked between March-April.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_116",
+                          "text":  "The paramount ruler of the entire Birom land is known as:",
+                          "options":  [
+                                          "Gwoms",
+                                          "Da Gwoms",
+                                          "Gbong Gwom Jos",
+                                          "Tor Birom"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The stool of the paramount ruler for the entire Birom land is known as Gbong Gwom Jos, established in 1935.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_117",
+                          "text":  "The Tiv ethnic group is predominantly domiciled in:",
+                          "options":  [
+                                          "Plateau State",
+                                          "Benue State",
+                                          "Nassarawa State",
+                                          "Taraba State"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Tiv ethnic group, though predominantly domiciled in Benue State, are also found in Nassarawa, Taraba, Plateau and FCT.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_118",
+                          "text":  "The Tiv lived within the Cameroun-Obudu complex between 1475 and 1505 before migrating to:",
+                          "options":  [
+                                          "The Niger Delta",
+                                          "The Benue Valley",
+                                          "The Sokoto basin",
+                                          "The Jos Plateau"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Tiv moved down the hills into the Benue Valley through four waves of migration that lasted between 1475-1900.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_119",
+                          "text":  "The political system Tor Agbande (Drum chief) was copied by the Tiv from the:",
+                          "options":  [
+                                          "Hausa",
+                                          "Yoruba",
+                                          "Jukun",
+                                          "Igbo"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Tiv instituted the Tor Agbande political system which they copied from the Jukun.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_120",
+                          "text":  "The traditional headquarter of Tivland is in:",
+                          "options":  [
+                                          "Makurdi",
+                                          "Gboko",
+                                          "Wukari",
+                                          "Lafia"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The seat of the Tor Tiv is in Gboko which is regarded as the traditional headquarter of Tivland.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_121",
+                          "text":  "The centralized political system of the Jukun is represented by the:",
+                          "options":  [
+                                          "Tor Tiv",
+                                          "Attah",
+                                          "Aku of Wukari",
+                                          "Etsu"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A centralised political system of the Jukun is represented by the Aku of Wukari.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_122",
+                          "text":  "The Jukun Wanu are:",
+                          "options":  [
+                                          "Homeland Jukun living around Wukari",
+                                          "Fishermen residing along the river banks of Benue and Niger",
+                                          "Warriors who fought the Fulani",
+                                          "Traders in the Niger Delta"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Jukun Wanu are fishermen residing along the banks of the river Benue and Niger.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_123",
+                          "text":  "The word \u0027culture\u0027 is derived from the Latin word \u0027colere\u0027, meaning:",
+                          "options":  [
+                                          "To communicate",
+                                          "To cultivate",
+                                          "To celebrate",
+                                          "To classify"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The word culture is from the Latin word colere, with its original meaning \u0027to cultivate\u0027.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_124",
+                          "text":  "Culture has been broadly defined as:",
+                          "options":  [
+                                          "The art and music of a people",
+                                          "The religious practices of a community",
+                                          "The way of life of a people",
+                                          "The economic system of a society"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Culture has been defined as \u0027the way of life of a people,\u0027 including codes of manners, dress, language, religion, rituals, norms and systems of belief.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_125",
+                          "text":  "The four elements of culture passed from generation to generation by learning are:",
+                          "options":  [
+                                          "Language, art, music and dance",
+                                          "Values, norms, institutions and artifacts",
+                                          "Religion, politics, economy and law",
+                                          "Symbols, beliefs, traditions and customs"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Culture consists of four elements: values, norms, institutions and artifacts.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_126",
+                          "text":  "According to Edward B. Tylor (1871), culture is:",
+                          "options":  [
+                                          "The sum total of knowledge, attitudes and habitual behaviour patterns",
+                                          "A complex whole including knowledge, beliefs, arts, morals, laws, customs and habits acquired by man as a member of society",
+                                          "The dynamic aspect of social life",
+                                          "The way of life of a people"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Tylor (1871) defined culture as that \u0027complex whole which includes knowledge, beliefs, arts, morals, laws, customs and any other capabilities and habits acquired by man as a member of society.\u0027",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_127",
+                          "text":  "Linton (1940) defined culture as:",
+                          "options":  [
+                                          "The way of life of a people",
+                                          "The sum total of knowledge, attitudes and habitual behaviour patterns, shared and transmitted by members of a particular society",
+                                          "A complex whole including knowledge, beliefs and arts",
+                                          "The dynamic aspect of social life"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Linton (1940) viewed culture as \u0027the sum total of knowledge, attitudes and habitual behaviour patterns, shared and transmitted by the members of a particular society.\u0027",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_128",
+                          "text":  "Material culture consists of:",
+                          "options":  [
+                                          "The words people use and the ideas they hold",
+                                          "Manufactured objects such as tools, furniture, automobiles and buildings",
+                                          "The rules of a game and player\u0027s skills",
+                                          "Customs, traditions and beliefs"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Material cultures are the aspects of culture that can be seen, felt and touched â€” manufactured objects like tools, furniture, automobiles, buildings, roads, bridges.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_129",
+                          "text":  "Non-material culture consists of:",
+                          "options":  [
+                                          "Tools, buildings and automobiles",
+                                          "The words people use, ideas, customs, beliefs and habits",
+                                          "Agricultural implements",
+                                          "Clothing and ornaments"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Non-material culture consists of the words people use, the ideas, customs, and beliefs they hold, and the habits they follow.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_130",
+                          "text":  "A \u0027symbol\u0027 in culture is:",
+                          "options":  [
+                                          "A physical object used in worship",
+                                          "A representation of something else that can communicate information in shorthand form",
+                                          "An art form unique to a culture",
+                                          "A traditional dance or music"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A symbol is a representation of something else that can communicate information in shorthand form.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_131",
+                          "text":  "The cross symbolizes Christianity while the star and moon symbolizes:",
+                          "options":  [
+                                          "Buddhism",
+                                          "Hinduism",
+                                          "Islam",
+                                          "Traditional religion"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The cross symbolizes Christianity while the star and moon symbolizes Islam.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_132",
+                          "text":  "Norms are of two types:",
+                          "options":  [
+                                          "Values and artifacts",
+                                          "Symbols and language",
+                                          "Folkways and mores",
+                                          "Material and non-material"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Norms are of two types: Folkways (norms performed widely but not necessary) and Mores (strong feelings of right or wrong whose violations attract sanctions).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_133",
+                          "text":  "Folkways are best described as:",
+                          "options":  [
+                                          "Strong feelings of right or wrong whose violations attract sanctions",
+                                          "Norms performed widely but not necessarily enforced",
+                                          "Laws written in a constitution",
+                                          "Religious rituals"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Folkways are norms performed widely, but not necessary, e.g. eating with knives and forks.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_134",
+                          "text":  "Mores are:",
+                          "options":  [
+                                          "Optional social conventions",
+                                          "Strong feelings of right or wrong whose violations attract sanctions in the society",
+                                          "Dietary restrictions",
+                                          "Traditional dances"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Mores are strong feelings of what is right or wrong whose violations attract sanctions in the society, e.g. pick-pocketing, arson, rape.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_135",
+                          "text":  "Which characteristic of culture states that it is not inherited biologically but learnt socially?",
+                          "options":  [
+                                          "Culture is shared",
+                                          "Culture is transmissive",
+                                          "Culture is learned",
+                                          "Culture is dynamic"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Culture is learned through socialization. It is not inherited biologically, but learnt socially by man.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_136",
+                          "text":  "The main vehicle through which culture is transmitted from generation to generation is:",
+                          "options":  [
+                                          "Art",
+                                          "Religion",
+                                          "Language",
+                                          "Politics"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Culture is transmitted not through genes but by means of language. Language is the main vehicle of culture.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_137",
+                          "text":  "Which characteristic of culture states that every society has its own unique culture?",
+                          "options":  [
+                                          "Culture is shared",
+                                          "Culture is learned",
+                                          "Culture varies from one society to another",
+                                          "Culture is transmissive"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Culture varies from one society to another. Every society has a culture of its own; cultures are not uniform.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_138",
+                          "text":  "Culture is dynamic and adaptive means:",
+                          "options":  [
+                                          "Culture never changes",
+                                          "Culture is inherited biologically",
+                                          "Culture is subjected to slow but constant changes over time",
+                                          "Culture is the same in all societies"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Culture is dynamic and adaptive â€” though relatively stable, it is subjected to slow but constant changes over time.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_139",
+                          "text":  "Ethnocentrism refers to:",
+                          "options":  [
+                                          "The view that different groups have different but equally valid sets of agreements",
+                                          "The view that one\u0027s own culture is most superior to others",
+                                          "The tendency to view one\u0027s culture as inferior",
+                                          "Difficulty adjusting to a new culture"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Ethnocentrism is the view that one\u0027s own group is the centre of everything and one\u0027s culture is most superior to others.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_140",
+                          "text":  "Xenocentrism refers to:",
+                          "options":  [
+                                          "Pride in one\u0027s own culture",
+                                          "The tendency to view one\u0027s culture as inferior and prefer foreign culture",
+                                          "Recognition that different cultures are equally valid",
+                                          "Difficulty adjusting to a new culture"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Xenocentrism refers to the tendency to view one\u0027s culture as inferior. An example is the quest for foreign culture among Nigerians.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_141",
+                          "text":  "Cultural Relativism refers to:",
+                          "options":  [
+                                          "The belief that one\u0027s culture is superior",
+                                          "Recognition that different groups have different sets of agreements without the feeling of superiority",
+                                          "The shock of encountering a new culture",
+                                          "The delay in cultural change"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Cultural Relativism refers to the recognition that different groups have different sets of agreements without the feeling that one set is superior to another.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_142",
+                          "text":  "Culture Shock is:",
+                          "options":  [
+                                          "The pride in one\u0027s own culture",
+                                          "A situation where an individual sees something differently because of contradictions and has difficulty adjusting to a new culture",
+                                          "The slow change in cultural elements",
+                                          "The belief that foreign cultures are superior"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Culture Shock is a situation whereby an individual sees something differently from his/her own perspective because of contradictions â€” difficulty to adjust to a new and different culture.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_143",
+                          "text":  "Culture lag refers to:",
+                          "options":  [
+                                          "The process of passing culture from parents to children",
+                                          "The tendency to view foreign culture as superior",
+                                          "How various elements of culture change at a different pace, creating disruption",
+                                          "The sharing of culture among society members"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Culture lag is a concept that explains how various elements of culture change at a different pace. Technology changes faster than non-material elements, causing disruption.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_144",
+                          "text":  "Sub-culture refers to:",
+                          "options":  [
+                                          "The dominant culture of a society",
+                                          "Group culture that emerges when people with certain statuses have shared experiences different from others",
+                                          "Culture imported from foreign countries",
+                                          "Religious culture"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Sub-culture refers to group culture that emerges whenever people occupying certain statuses have shared experiences quite different from those of others in the society.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_145",
+                          "text":  "Socialization is best defined as:",
+                          "options":  [
+                                          "The process of making friends in a community",
+                                          "The process by which persons acquire the knowledge, skills and disposition that makes them integrated members of their society",
+                                          "The process of learning a new language",
+                                          "The exchange of cultural practices between societies"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Socialization is the process by which persons acquire the knowledge, skills and disposition that makes them more or less integrated members of their society.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_146",
+                          "text":  "According to Giddens (2005), socialization is the process whereby:",
+                          "options":  [
+                                          "The helpless infant gradually becomes a self-aware, knowledgeable person skilled in the ways of the culture",
+                                          "Adults learn foreign languages",
+                                          "Society imposes laws on individuals",
+                                          "Cultural elements change over time"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "Giddens (2005) defines socialization as \u0027the process whereby the helpless infant gradually becomes a self-aware, knowledgeable person, skilled in ways of the culture into which she or he is born.\u0027",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_147",
+                          "text":  "According to Zanden (1977), in the absence of socialization, society could not:",
+                          "options":  [
+                                          "Develop economically",
+                                          "Perpetuate itself beyond a single generation",
+                                          "Create new laws",
+                                          "Maintain political stability"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Zanden (1977) pointed out that in the absence of socialization, society could not perpetuate itself beyond a single generation.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_148",
+                          "text":  "Primary socialization occurs during:",
+                          "options":  [
+                                          "Adolescence and early adulthood",
+                                          "Infancy and childhood",
+                                          "Middle age",
+                                          "Old age"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Primary Socialization occurs in infancy and childhood and is the most intense period of cultural learning.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_149",
+                          "text":  "The main agent of socialization during primary socialization is:",
+                          "options":  [
+                                          "The school",
+                                          "Peer groups",
+                                          "The family",
+                                          "The mass media"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The family is the main agent of socialization during primary socialization (infancy and childhood).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_150",
+                          "text":  "Secondary socialization takes place:",
+                          "options":  [
+                                          "Only in infancy",
+                                          "Later in childhood and into maturity",
+                                          "Only in old age",
+                                          "Only during religious ceremonies"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Secondary Socialization takes place later in childhood and into maturity, with school, peer groups, and media taking over from the family.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_151",
+                          "text":  "The peer group in socialization is defined as:",
+                          "options":  [
+                                          "A group defined by the same religion",
+                                          "A group composed of members of roughly equal age sharing equal status",
+                                          "A group of teachers and their students",
+                                          "A family unit"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The peer group is defined as a group composed of members of roughly equal age sharing equal status as well as pursuing some interests in common.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_152",
+                          "text":  "Schools are charged with the formal task of passing on:",
+                          "options":  [
+                                          "Only academic subjects",
+                                          "Many of a culture\u0027s symbols, beliefs, values and norms",
+                                          "Only vocational skills",
+                                          "Religious doctrines only"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Schools are charged with the formal task of passing on many of a culture\u0027s symbols, beliefs, values and norms.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_153",
+                          "text":  "Which agent of socialization is NOT a formal socializing institution but is a powerful instrument of socialization?",
+                          "options":  [
+                                          "The school",
+                                          "The family",
+                                          "The mass media",
+                                          "Religious institutions"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The mass media is not a formal socializing institution but could be used as a powerful instrument of socialization.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_154",
+                          "text":  "Traditional festivals in Nigeria are described as:",
+                          "options":  [
+                                          "Modern entertainment events",
+                                          "Periodic celebrations marking significant events and transmitting ideas and philosophy from one generation to another",
+                                          "Government-organized public holidays",
+                                          "Religious worship sessions"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Traditional festivals are periodic celebrations marking significant events and transmitting ideas, aspirations and the philosophy of a people from one generation to another.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_155",
+                          "text":  "A farming festival is performed to seek for:",
+                          "options":  [
+                                          "Fertility and good health",
+                                          "Individual achievements and promotion",
+                                          "Adequate and moderate rainfall, adequate food and to pray against crop failure",
+                                          "The passage of elders"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "A farming festival is performed to seek for adequate and moderate rainfall, adequate food and to pray against general crop failure.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_156",
+                          "text":  "The New Yam Festival is an example of which type of festival?",
+                          "options":  [
+                                          "Fertility festival",
+                                          "Farming festival",
+                                          "Religious festival",
+                                          "Title-taking festival"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The New Yam Festival is an example of a farming festival, during which the first harvests are offered to the gods and ancestors.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_157",
+                          "text":  "The Osun festival is organized by the Yoruba in honour of Osun, who is the wife of:",
+                          "options":  [
+                                          "Ogun",
+                                          "Ifa",
+                                          "Sango",
+                                          "Esu"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Osun festival is organized by the Yoruba in honour of Osun, the wife of Sango, the god of thunder.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_158",
+                          "text":  "The Osun annual festival takes place in which town?",
+                          "options":  [
+                                          "Ile-Ife",
+                                          "Ijebu-Ode",
+                                          "Oshogbo",
+                                          "Abeokuta"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Osun annual festival takes place at the sanctuary of the goddess in Oshogbo in the month of August.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_159",
+                          "text":  "The Sharo (flogging) festival is celebrated by the:",
+                          "options":  [
+                                          "Igbo",
+                                          "Yoruba",
+                                          "Fulani",
+                                          "Kanuri"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Sharo or Shadi festival is one of the significant festivals celebrated by the Fulani of northern Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_160",
+                          "text":  "The Sharo festival is celebrated how many times yearly?",
+                          "options":  [
+                                          "Once",
+                                          "Twice",
+                                          "Three times",
+                                          "Four times"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Sharo is usually celebrated twice yearly during the dry season and Sallah festival.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_161",
+                          "text":  "The Ofala festival is a festival of the:",
+                          "options":  [
+                                          "Yoruba",
+                                          "Hausa",
+                                          "Igbo",
+                                          "Benin"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Ofala festival is a festival that accompanies the successful conclusion of a military campaign by the Igbo.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_162",
+                          "text":  "The Igue festival is an old festival of which people?",
+                          "options":  [
+                                          "Yoruba",
+                                          "Hausa",
+                                          "Igbo",
+                                          "Benin"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "Igue is an old festival among the Benin people, celebrated in the month of September.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_163",
+                          "text":  "During the Igue festival in 1897, which significant historical event occurred?",
+                          "options":  [
+                                          "The Benin people declared independence",
+                                          "British soldiers invaded Benin, banished their king and looted artefacts",
+                                          "The Oba signed a peace treaty with the British",
+                                          "A new Oba was crowned"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "It was during the Igue festival in 1897 that British soldiers invaded Benin, banished their king (Oba) to Calabar and killed thousands of people.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_164",
+                          "text":  "The Argungu Fishing Festival takes place along which river?",
+                          "options":  [
+                                          "River Niger",
+                                          "River Benue",
+                                          "River Rima",
+                                          "River Kaduna"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Argungu Fishing Festival takes place along the River Rima.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_165",
+                          "text":  "The Awon (mass wedding) festival is a popular:",
+                          "options":  [
+                                          "Igbo festival",
+                                          "Yoruba festival",
+                                          "Hausa festival",
+                                          "Fulani festival"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Awon (mass wedding) festival is a popular Yoruba festival celebrated to acknowledge the presence of Awon goddess.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_166",
+                          "text":  "The Eje Alekwu Festival is the ancestral veneration festival of the:",
+                          "options":  [
+                                          "Tiv",
+                                          "Igala",
+                                          "Idoma",
+                                          "Nupe"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Eje Alekwu Festival is the Idoma ancestral veneration festival celebrated in the months of March and April.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_167",
+                          "text":  "Modern festivals in Nigeria include all EXCEPT:",
+                          "options":  [
+                                          "Christmas and Easter",
+                                          "New Year",
+                                          "Osun festival",
+                                          "Independence Day"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Modern festivals are not of Nigerian or African origin and include Christmas, Easter, New Year, May Day, Independence, Maulud, Salah. Osun festival is a traditional festival.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_168",
+                          "text":  "The Lebokun festival (Yakun) is celebrated annually in:",
+                          "options":  [
+                                          "Northern Kano",
+                                          "Upep, northeast of Calabar",
+                                          "Oshogbo, Osun State",
+                                          "Argungu, Kebbi State"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Lebokun festival (Yakun) is a sacred festival celebrated annually in Upep, northeast of Calabar.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_169",
+                          "text":  "Social vices are best defined as:",
+                          "options":  [
+                                          "Traditional practices",
+                                          "Deviant behaviours such as illicit sex, drug addiction, evil or immoral behaviour",
+                                          "Political activities",
+                                          "Cultural festivals"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Social vices are deviant behaviours such as illicit sex, drug addiction, evil or immoral behaviour such as murder, examination malpractice, thuggery and such other criminal tendencies.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_170",
+                          "text":  "Social vices are at variance with social norms and values which include all EXCEPT:",
+                          "options":  [
+                                          "Beliefs and attitudes",
+                                          "Honesty and hard work",
+                                          "Cultism and thuggery",
+                                          "Customs and traditions"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Social vices are at variance with social norms and values such as beliefs, honesty, hard work, customs and traditions. Cultism and thuggery are themselves social vices.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_171",
+                          "text":  "The National Orientation Agency (NOA) was established on:",
+                          "options":  [
+                                          "23rd August 1990",
+                                          "23rd August 1993",
+                                          "1st October 1993",
+                                          "25th July 1987"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "On 23rd August, 1993, an Act was passed to establish the National Orientation Agency.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_172",
+                          "text":  "MAMSER stands for:",
+                          "options":  [
+                                          "Mass Mobilization for Self Reliance, Social Justice, and Economic Recovery",
+                                          "Movement for African Mass Social Economic Reform",
+                                          "Military Action for Social and Economic Revolution",
+                                          "Mass Association for Social Mobilization and Economic Reform"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "MAMSER stands for Mass Mobilization for Self Reliance, Social Justice, and Economic Recovery.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_173",
+                          "text":  "MAMSER was inaugurated on:",
+                          "options":  [
+                                          "July 25th, 1985",
+                                          "July 25th, 1987",
+                                          "August 23rd, 1987",
+                                          "October 1st, 1987"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "MAMSER was inaugurated on July 25th, 1987.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_174",
+                          "text":  "MAMSER was undertaken under which Nigerian president?",
+                          "options":  [
+                                          "Muhammadu Buhari",
+                                          "Olusegun Obasanjo",
+                                          "Ibrahim Babangida",
+                                          "Ernest Shonekan"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "MAMSER was an exercise in political orientation in Nigeria undertaken by former president Ibrahim Babangida.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_175",
+                          "text":  "The War Against Indiscipline (WAI) was a programme of which regime?",
+                          "options":  [
+                                          "Murtala/Obasanjo regime",
+                                          "Shagari regime",
+                                          "Buhari regime",
+                                          "Babangida regime"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The War Against Indiscipline was a programme of the Buhari regime.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_176",
+                          "text":  "The Economic and Financial Crimes Commission (EFCC) was established under:",
+                          "options":  [
+                                          "Buhari regime",
+                                          "Babangida regime",
+                                          "Shonekan regime",
+                                          "Obasanjo regime"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "The EFCC (and ICPC) were established under the Obasanjo regime.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_177",
+                          "text":  "The West African Pilot and The Negro World were prominent newspapers that contributed to:",
+                          "options":  [
+                                          "The spread of British colonialism",
+                                          "The emergence of Nigerian nationalism",
+                                          "The formation of the RNC",
+                                          "The 1914 amalgamation"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The West African Pilot and The Negro World were the most prominent newspapers that contributed seriously to the emergence of Nigerian nationalism.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_178",
+                          "text":  "The Federal Character system ensures:",
+                          "options":  [
+                                          "All positions go to the majority ethnic group",
+                                          "Equitable and balanced appointment into public offices (enshrined in Section 14 of the 1999 Constitution)",
+                                          "Military rule in all states",
+                                          "Only northerners head the military"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Federal Character system ensures equitable and balanced appointment into public offices as enshrined in Section 14 of the 1999 Constitution of Nigeria.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_179",
+                          "text":  "The Nok Civilisation covered areas in central Nigeria including:",
+                          "options":  [
+                                          "Lagos and Ibadan",
+                                          "Jos Plateau and Abuja",
+                                          "Kano and Sokoto",
+                                          "Aba and Onitsha"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Nok civilisation covers many areas in central Nigeria, including Jos Plateau and Abuja.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_180",
+                          "text":  "The resistance movement at Mbormi in 1903 was approximately how many kilometres from present-day Gombe?",
+                          "options":  [
+                                          "50 km",
+                                          "76 km",
+                                          "100 km",
+                                          "120 km"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The resistance movement was at a place called Mbormi (about 76 kilometres from the present day Gombe).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_181",
+                          "text":  "The Yoruba are also found outside Nigeria in which countries?",
+                          "options":  [
+                                          "Ethiopia, Kenya and Tanzania",
+                                          "Eastern Benin (Dahomey), Ghana, Togo and Brazil",
+                                          "Morocco, Algeria and Libya",
+                                          "South Africa, Namibia and Zimbabwe"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Yoruba are also found in eastern Benin (formerly Dahomey), northern Ghana, Togo and Brazil.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_182",
+                          "text":  "The Yoruba economy was built primarily on:",
+                          "options":  [
+                                          "Trade",
+                                          "Agriculture",
+                                          "Industry",
+                                          "Mining"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The economy of the Yoruba was built primarily on agriculture. Other important aspects were trading, blacksmithing, carving and sculpturing.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_183",
+                          "text":  "The basic components of the traditional Igbo economy were:",
+                          "options":  [
+                                          "Mining, fishing and hunting",
+                                          "Agriculture, trade and industry",
+                                          "Herding, trading and weaving",
+                                          "Art, sculpture and commerce"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The basic components of the traditional economic system of the Igbo were agriculture, trade and industry.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_184",
+                          "text":  "In traditional Igbo agriculture, which crop was well known?",
+                          "options":  [
+                                          "Rice",
+                                          "Millet",
+                                          "Yam",
+                                          "Wheat"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "In Igbo agriculture, cultivation of root crops such as yam was well known.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_185",
+                          "text":  "The Hausa economy was NOT built on which of the following?",
+                          "options":  [
+                                          "Agriculture",
+                                          "Leather works and weaving",
+                                          "Long distance trade",
+                                          "Deep sea fishing"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "The Hausa economy was built on agriculture, industry (leather works, weaving, dyeing) and trade (especially long distance trade). Deep sea fishing is not part of it.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_186",
+                          "text":  "The 1962 and 1963 census controversies in Nigeria were rooted in:",
+                          "options":  [
+                                          "Lack of census officials",
+                                          "Allegations of manipulation of figures by different regions for political dominance",
+                                          "Population decline",
+                                          "Lack of funds to conduct census"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The census was controversial because of allegations of manipulation of figures by different regions, done in consideration of dominance and control of government.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_187",
+                          "text":  "Values in culture are:",
+                          "options":  [
+                                          "Physical objects produced by a culture",
+                                          "Ideas about what seems important in life",
+                                          "Specific rules guiding human behaviour",
+                                          "The structures of society where norms are taught"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Values include ideas about what seems important in life.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_188",
+                          "text":  "Institutions in the context of culture are:",
+                          "options":  [
+                                          "Physical buildings",
+                                          "Manufactured objects",
+                                          "The structures of society within which values and norms are taught and learned",
+                                          "Traditional dances and songs"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Institutions are the structures of a society within which values and norms are taught and learned.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_189",
+                          "text":  "The Kanuri political system\u0027s state council and advisory body was called the:",
+                          "options":  [
+                                          "Maigira",
+                                          "Khadi",
+                                          "Nokena (Council of twelve)",
+                                          "Mogaran"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Nokena (Council of the twelve) served as the state council and advisory body in the Kanuri political system.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_190",
+                          "text":  "According to the third version of Nupe origin, the founder Edegi arrived from Idah to found the kingdom in the:",
+                          "options":  [
+                                          "14th century",
+                                          "15th century",
+                                          "16th century",
+                                          "17th century"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "According to the third version, Edegi (the founder) arrived from Idah to found the Nupe kingdom in the 16th century.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_191",
+                          "text":  "One of the functions of the NOA is to:",
+                          "options":  [
+                                          "Collect taxes from citizens",
+                                          "Enlighten the general public on Federal Government policies, programmes and activities",
+                                          "Prosecute corrupt officials",
+                                          "Manage state elections"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "One function of the NOA is to enlighten the general public on Federal Government policies, programmes and activities.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_192",
+                          "text":  "Between 1957 and 1959, independence was granted to regional governments in:",
+                          "options":  [
+                                          "Only the East",
+                                          "Only the North",
+                                          "The East, West and North",
+                                          "Only the West and East"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Between 1957 and 1959, independence was granted to Regional governments in the East, West and North.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_193",
+                          "text":  "The Idu Festival is a feast of the creator observed by the:",
+                          "options":  [
+                                          "Yoruba",
+                                          "Nembe people",
+                                          "Igbo",
+                                          "Tiv"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Idu Festival (Nembe) is a feast of the creator who the Nembe people collectively respect.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_194",
+                          "text":  "The Argungu Fishing Festival dates back to the:",
+                          "options":  [
+                                          "16th century",
+                                          "17th century",
+                                          "18th century",
+                                          "19th century"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Argungu Fishing Festival dates back to the 18th century and has its origin in the traditional fishing festival called Su.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_195",
+                          "text":  "Isaac Boro\u0027s major grievance in declaring the Niger Delta Republic was:",
+                          "options":  [
+                                          "Political marginalization",
+                                          "Inadequate share of the proceeds of oil wealth derived from their land",
+                                          "Religious discrimination",
+                                          "The absence of schools in the Niger Delta"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Their major grievance was that they did not enjoy adequate share of the proceeds of the oil wealth that was derived from their land.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_196",
+                          "text":  "Which of the following is an ethnic group in Northern Nigeria?",
+                          "options":  [
+                                          "Ijaw",
+                                          "Ibibio",
+                                          "Ikwere",
+                                          "Kanuri"
+                                      ],
+                          "correct_index":  3,
+                          "explanation":  "The Kanuri is one of the ethnic groups in Northern Nigeria. Ijaw, Ibibio, and Ikwere are Southern Nigerian groups.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_197",
+                          "text":  "The area had been exposed to Islamic religion since the:",
+                          "options":  [
+                                          "10th and 11th centuries",
+                                          "12th and 13th centuries",
+                                          "14th and 15th centuries",
+                                          "16th and 17th centuries"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Apart from influence of the jihadists, the Hausa area had been exposed to Islamic religion since the 14th and 15th centuries.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_198",
+                          "text":  "A Portuguese explorer named Ruy de Sequeira arrived in Benin during the reign of:",
+                          "options":  [
+                                          "Oba Ozolua",
+                                          "Oba Ewuare",
+                                          "Oba Eweka",
+                                          "Oba Oranmiyan"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "A Portuguese, Ruy de Sequeira, arrived during Oba Ewuare\u0027s reign in 1472.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_199",
+                          "text":  "During the Igue festival, wearing of red cap is prohibited except for members of:",
+                          "options":  [
+                                          "The royal family",
+                                          "The Uzama",
+                                          "The armed forces",
+                                          "The priesthood"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "During the Igue festival wearing of red cap is prohibited except for members of the armed forces.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_200",
+                          "text":  "The \u0027July Rematch\u0027 of 1966 included officers such as all EXCEPT:",
+                          "options":  [
+                                          "Ibrahim Babangida",
+                                          "Muhammadu Buhari",
+                                          "Chukwuemeka Ojukwu",
+                                          "Sani Abacha"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The July Rematch officers included T.Y. Danjuma, Ibrahim Babangida, Shitu Alao, Muhammadu Buhari, Sani Abacha, B.S. Dimka, and others. Ojukwu was the Eastern Region Military Governor, not part of the counter coup.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_201",
+                          "text":  "Religious institutions (churches and mosques) as agents of socialization are interested in:",
+                          "options":  [
+                                          "Only academic learning",
+                                          "The moral aspects of personality development of both children and adults",
+                                          "Only economic activities",
+                                          "Political orientation exclusively"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Religious institutions are interested in the moral aspects of personality development of not only the children but the adults too.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_202",
+                          "text":  "According to Yoruba tradition, where did Oduduwa set down the pieces of iron and lump of earth to create the world?",
+                          "options":  [
+                                          "Oyo",
+                                          "Oke Oramfe in Ile-Ife",
+                                          "Iwo-Eleru",
+                                          "Ibadan"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "They descended at Oke Oramfe in Ile-Ife where Oduduwa set down the five pieces of iron and placed the lump of earth on them.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_203",
+                          "text":  "The Benin version of Igbo origin says which groups claim Benin origin?",
+                          "options":  [
+                                          "Nri and Awka",
+                                          "The Onitsha and the Igbo on the other side of River Niger (Delta Igbo)",
+                                          "The Umunri",
+                                          "The Aguleri people"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Onitsha and the Igbo on the other side of the River Niger (Delta Igbo) claim Benin origin.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_204",
+                          "text":  "The Igbo-Ukwu Civilisation proved existence of early civilisation in which areas?",
+                          "options":  [
+                                          "Iron works and agriculture only",
+                                          "Government, religion, agriculture, hunting and trade",
+                                          "Art and sculpture only",
+                                          "Military and trade"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Igbo-Ukwu dates back to the 9th century AD and proved existence of early civilisation in government, religion, agriculture, hunting and trade.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_205",
+                          "text":  "An example of ethnocentrism is:",
+                          "options":  [
+                                          "Nigerians preferring foreign goods and culture",
+                                          "Europeans\u0027 \u0027civilising mission\u0027 during colonialism and the Nazi holocaust",
+                                          "The recognition that all cultures are equally valid",
+                                          "Difficulty adjusting to a new culture abroad"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "Examples of ethnocentrism include the \u0027civilising mission\u0027 of Europeans during colonialism and the Nazi holocaust (determination to exterminate Jews as an inferior race).",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_206",
+                          "text":  "The Kanuri constitute what percentage of Nigeria\u0027s population?",
+                          "options":  [
+                                          "2.5%",
+                                          "3.5%",
+                                          "4%",
+                                          "10%"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "Kanuri constitute 4% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_207",
+                          "text":  "The Tiv constitute what percentage of Nigeria\u0027s population?",
+                          "options":  [
+                                          "2.5%",
+                                          "3.5%",
+                                          "4%",
+                                          "10%"
+                                      ],
+                          "correct_index":  0,
+                          "explanation":  "The Tiv constitute 2.5% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_208",
+                          "text":  "The Ibibio constitute what percentage of Nigeria\u0027s population?",
+                          "options":  [
+                                          "2.5%",
+                                          "3.5%",
+                                          "4%",
+                                          "5%"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "The Ibibio constitute 3.5% of Nigeria\u0027s population.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_209",
+                          "text":  "The Birom language belongs to which family of languages?",
+                          "options":  [
+                                          "Afro-Asiatic",
+                                          "Nilo-Saharan",
+                                          "Niger-Congo",
+                                          "Kordofanian"
+                                      ],
+                          "correct_index":  2,
+                          "explanation":  "The Birom language belongs to the large Niger-Congo family of languages.",
+                          "difficulty":  1
+                      },
+                      {
+                          "id":  "gst112_210",
+                          "text":  "NKST (Nongu u Kristu u i ser u sha Tar) stands for the Universal Reformed Christian Church and is significant because:",
+                          "options":  [
+                                          "It was founded by the British missionaries",
+                                          "It is one of the largest indigenous Christian Missions in Nigeria, proof of Christianity\u0027s impact on Tivland",
+                                          "It was established by the colonial government",
+                                          "It was founded by Usman Dan Fodio"
+                                      ],
+                          "correct_index":  1,
+                          "explanation":  "NKST â€” Nongu u Kristu u i ser u sha Tar (Universal Reformed Christian Church) â€” is one of the largest indigenous Christian Missions in Nigeria and is a proof of the tremendous impact of Christianity in Tivland.",
+                          "difficulty":  1
+                      }
+                  ]
 }
