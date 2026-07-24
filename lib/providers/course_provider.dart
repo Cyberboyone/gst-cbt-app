@@ -80,6 +80,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#FFF3CD', // Amber
       mode: '300_level',
     ),
+    Course(
+      id: 'gst2208',
+      code: 'GST 2208',
+      name: 'Peace Studies & Conflict Resolution',
+      icon: '🕊️',
+      colorHex: '#DFF5E4', // Mint
+      mode: '200_level',
+    ),
     
   ];
 
