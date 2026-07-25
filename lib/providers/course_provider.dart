@@ -104,6 +104,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#DCEEFF', // Sky
       mode: '300_level',
     ),
+    Course(
+      id: 'ent312',
+      code: 'ENT 312',
+      name: 'Entrepreneurship, Venture Creation & E-commerce',
+      icon: '🚀',
+      colorHex: '#FFF3CD', // Amber
+      mode: '300_level',
+    ),
     
   ];
 

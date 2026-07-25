@@ -1,0 +1,2607 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "ent312_001",
+                          "text":  "Venture creation is best defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A one-time activity limited to raising capital",
+                                          "The process through which individuals identify business opportunities, evaluate their feasibility, and establish enterprises to exploit those opportunities",
+                                          "Only the act of registering a company",
+                                          "The process of closing an unprofitable business"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_002",
+                          "text":  "Venture creation is described in the lecture as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A one-time activity",
+                                          "A continuous and dynamic process involving creativity, planning, risk-taking, and innovation",
+                                          "A purely financial exercise",
+                                          "A government-only responsibility"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_003",
+                          "text":  "Which of the following are the four key elements that venture creation combines?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Idea Generation, Resource Mobilization, Risk-Taking, Value Creation",
+                                          "Marketing, Pricing, Place, Promotion",
+                                          "Planning, Organizing, Leading, Controlling",
+                                          "Product, Process, People, Profit"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_004",
+                          "text":  "Developing new concepts, products, or services that solve problems or meet needs is referred to as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Resource Mobilization",
+                                          "Idea Generation",
+                                          "Risk-Taking",
+                                          "Value Creation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_005",
+                          "text":  "Gathering necessary resources such as capital, labour, technology, and information is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Idea Generation",
+                                          "Resource Mobilization",
+                                          "Value Creation",
+                                          "Risk-Taking"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_006",
+                          "text":  "The willingness of entrepreneurs to accept business uncertainty and take calculated chances is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Value Creation",
+                                          "Idea Generation",
+                                          "Risk-Taking",
+                                          "Resource Mobilization"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_007",
+                          "text":  "The ultimate goal of venture creation, in the form of profit, satisfaction, or social impact, is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Value Creation",
+                                          "Risk-Taking",
+                                          "Resource Mobilization",
+                                          "Idea Generation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_008",
+                          "text":  "In developing economies like Nigeria, venture creation is particularly important because it contributes to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Job creation, poverty reduction, and economic growth",
+                                          "Only government tax revenue",
+                                          "Only foreign investment",
+                                          "Reduction of entrepreneurship"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_009",
+                          "text":  "Which learning objective involves recognizing real-life problems and translating them into business ideas?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Understanding entrepreneurial finance",
+                                          "Identifying viable business opportunities",
+                                          "Managing small and family businesses",
+                                          "Demonstrating entrepreneurial skills"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_010",
+                          "text":  "Which learning objective focuses on assessing whether an idea is realistic, profitable, and sustainable?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Identifying viable business opportunities",
+                                          "Developing and evaluating business ideas",
+                                          "Applying marketing and e-commerce strategies",
+                                          "Understanding entrepreneurial finance"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_011",
+                          "text":  "Which learning objective involves knowing how businesses raise funds and manage financial resources?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Understanding entrepreneurial finance",
+                                          "Managing small and family businesses",
+                                          "Demonstrating entrepreneurial skills",
+                                          "Identifying viable business opportunities"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_012",
+                          "text":  "Which learning objective is demonstrated through pitching and presentations?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Demonstrating entrepreneurial skills",
+                                          "Understanding entrepreneurial finance",
+                                          "Applying marketing and e-commerce strategies",
+                                          "Identifying viable business opportunities"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_013",
+                          "text":  "Opportunity identification is described as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The final stage of entrepreneurship",
+                                          "The starting point of entrepreneurship, involving recognizing unmet needs or inefficiently solved problems",
+                                          "A purely legal process",
+                                          "Only relevant to large corporations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_014",
+                          "text":  "An opportunity exists, according to the lecture, when:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "There is a gap between demand and supply, existing solutions are inefficient/expensive, or new trends create emerging needs",
+                                          "Supply always exceeds demand",
+                                          "There are no competitors in any market",
+                                          "Government regulations are absent"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_015",
+                          "text":  "Which of the following is listed as a source of business opportunities related to Nigeria\u0027s natural resources?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Agriculture and solid minerals",
+                                          "Foreign stock exchanges",
+                                          "International tourism boards",
+                                          "Global shipping lanes"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_016",
+                          "text":  "Opportunities in crop farming, livestock, and agro-processing fall under which source of business opportunity?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Demographic changes",
+                                          "Agriculture (natural resources)",
+                                          "Government policies",
+                                          "Technological advancement"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_017",
+                          "text":  "Resources like limestone and gold create business opportunities in which sector?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mining and manufacturing (solid minerals)",
+                                          "FinTech",
+                                          "E-commerce",
+                                          "Tourism"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_018",
+                          "text":  "A large youth population leading to demand for education, digital services, fashion, and entertainment is an example of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Government policy influence",
+                                          "Demographic changes",
+                                          "Technological advancement",
+                                          "Environmental scanning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_019",
+                          "text":  "Movement of people to cities, increasing demand for housing, transportation, and logistics, is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Urbanization",
+                                          "Import substitution",
+                                          "Environmental scanning",
+                                          "Market research"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_020",
+                          "text":  "Policies that encourage local production of goods previously imported are called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "SME Programs",
+                                          "Import Substitution Policies",
+                                          "FinTech regulations",
+                                          "SWOT policies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_021",
+                          "text":  "Institutions like the Bank of Industry supporting small businesses through funding are examples of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Import Substitution Policies",
+                                          "SME Programs",
+                                          "Environmental scanning",
+                                          "Market gaps"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_022",
+                          "text":  "Mobile banking, POS services, and digital payments transforming financial services fall under:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "FinTech (technological advancement)",
+                                          "Government policy",
+                                          "Demographic change",
+                                          "Natural resources"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_023",
+                          "text":  "Online platforms that allow businesses to reach wider markets are an example of which source of opportunity?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "E-commerce (technological advancement)",
+                                          "SME Programs",
+                                          "Solid minerals",
+                                          "Demographic change"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_024",
+                          "text":  "Environmental scanning is best defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The process of gathering and analyzing information about the business environment",
+                                          "The act of recycling waste materials only",
+                                          "A legal audit process",
+                                          "A financial forecasting method only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_025",
+                          "text":  "Environmental scanning helps entrepreneurs to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Identify opportunities, detect threats, and make informed decisions",
+                                          "Avoid all business risk entirely",
+                                          "Eliminate the need for market research",
+                                          "Guarantee business success"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_026",
+                          "text":  "Inflation, income levels, and unemployment, which affect purchasing power, are classified under which component of environmental scanning?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Economic Factors",
+                                          "Political/Legal Factors",
+                                          "Social Factors",
+                                          "Technological Factors"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_027",
+                          "text":  "Laws, taxes, and regulations that influence business operations are classified under which component of environmental scanning?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Economic Factors",
+                                          "Political/Legal Factors",
+                                          "Social Factors",
+                                          "Technological Factors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_028",
+                          "text":  "Culture, beliefs, and lifestyle changes that affect consumer behavior are classified under which component of environmental scanning?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Economic Factors",
+                                          "Political/Legal Factors",
+                                          "Social Factors",
+                                          "Technological Factors"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_029",
+                          "text":  "Innovations that can disrupt or create industries are classified under which component of environmental scanning?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Economic Factors",
+                                          "Social Factors",
+                                          "Political/Legal Factors",
+                                          "Technological Factors"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "ent312_030",
+                          "text":  "SWOT is a tool used to analyze:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Strengths, Weaknesses, Opportunities, and Threats",
+                                          "Sales, Wages, Operations, and Taxes",
+                                          "Suppliers, Wholesalers, Outlets, and Traders",
+                                          "Systems, Workflow, Objectives, and Targets"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_031",
+                          "text":  "In SWOT analysis, internal advantages such as skills and capital are classified as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Threats",
+                                          "Strengths",
+                                          "Weaknesses",
+                                          "Opportunities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_032",
+                          "text":  "In SWOT analysis, internal limitations of a business are classified as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Weaknesses",
+                                          "Strengths",
+                                          "Opportunities",
+                                          "Threats"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_033",
+                          "text":  "In SWOT analysis, external favorable conditions are classified as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Strengths",
+                                          "Weaknesses",
+                                          "Opportunities",
+                                          "Threats"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_034",
+                          "text":  "In SWOT analysis, external risks or challenges are classified as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Threats",
+                                          "Strengths",
+                                          "Weaknesses",
+                                          "Opportunities"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_035",
+                          "text":  "SWOT analysis helps entrepreneurs to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Align their strengths with opportunities while managing risks",
+                                          "Avoid conducting market research",
+                                          "Eliminate the need for a business plan",
+                                          "Guarantee unlimited funding"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_036",
+                          "text":  "A situation where demand exceeds supply is referred to as a:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Demand-Supply Gap",
+                                          "Market Feasibility",
+                                          "SWOT Threat",
+                                          "Value Proposition"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_037",
+                          "text":  "When existing products do not fully satisfy customers, this is referred to as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Unmet Needs",
+                                          "Resource Mobilization",
+                                          "Environmental Scanning",
+                                          "Break-even Analysis"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_038",
+                          "text":  "Poor logistics leading to the emergence of delivery businesses is an example of exploiting:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Inefficiencies in the market",
+                                          "Government policy only",
+                                          "Demographic changes only",
+                                          "SWOT weaknesses only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_039",
+                          "text":  "Electricity shortages leading to the growth of solar energy firms is an example of exploiting:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Market gaps and unmet needs",
+                                          "Import substitution policy",
+                                          "Demographic change alone",
+                                          "Technology adoption gap alone"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_040",
+                          "text":  "Market research is best defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The systematic collection and analysis of information about a market",
+                                          "A one-time survey with no further analysis",
+                                          "The process of registering a trademark",
+                                          "A method of pricing products only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_041",
+                          "text":  "Market research helps entrepreneurs to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Understand customer preferences, analyze competitors, and identify trends",
+                                          "Avoid paying taxes",
+                                          "Eliminate all business risk",
+                                          "Bypass government regulations"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_042",
+                          "text":  "Which market research method collects quantitative data from many respondents?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Surveys",
+                                          "Interviews",
+                                          "Observation",
+                                          "Online Analytics"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_043",
+                          "text":  "Which market research method provides detailed insights through direct conversation?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Surveys",
+                                          "Interviews",
+                                          "Observation",
+                                          "Online Analytics"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_044",
+                          "text":  "Which market research method involves understanding real customer behavior directly?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Surveys",
+                                          "Interviews",
+                                          "Observation",
+                                          "Online Analytics"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_045",
+                          "text":  "Which market research method tracks digital user behavior?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Surveys",
+                                          "Interviews",
+                                          "Observation",
+                                          "Online Analytics"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "ent312_046",
+                          "text":  "Idle land that can be used for farming or real estate is an example of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Unutilised Resources",
+                                          "Government Policy",
+                                          "Market Research",
+                                          "SWOT Threats"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_047",
+                          "text":  "Skilled individuals without jobs represent which type of unutilised resource?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Idle Land",
+                                          "Unused Labour",
+                                          "Waste Materials",
+                                          "Solid Minerals"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_048",
+                          "text":  "Recycling businesses are built on which type of unutilised resource?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Idle Land",
+                                          "Unused Labour",
+                                          "Waste Materials",
+                                          "Demographic Changes"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_049",
+                          "text":  "Utilizing unutilised resources such as idle land, unused labour, and waste materials promotes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Efficiency and sustainability",
+                                          "Higher operational costs only",
+                                          "Market monopolies",
+                                          "Reduced innovation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_050",
+                          "text":  "Climate change is noted in the lecture to drive demand for which type of businesses?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Renewable energy and climate-smart agriculture",
+                                          "Traditional coal mining only",
+                                          "Non-recyclable packaging",
+                                          "Heavy industrial manufacturing only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_051",
+                          "text":  "Gaps in education, healthcare, and sanitation can be addressed through:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Social enterprises",
+                                          "Import substitution only",
+                                          "SWOT threats only",
+                                          "Solid mineral extraction"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_052",
+                          "text":  "A technology adoption gap refers to a situation where:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Technology exists but is not widely used",
+                                          "No technology exists at all",
+                                          "All technology is fully adopted everywhere",
+                                          "Technology is banned by government"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_053",
+                          "text":  "Expanding digital payment systems in rural areas is given as an example of addressing:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The technology adoption gap",
+                                          "Import substitution policy",
+                                          "SWOT weaknesses",
+                                          "Natural resource scarcity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_054",
+                          "text":  "Which of the following best summarizes the two entrepreneurial responses to a technology adoption gap?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Introduce technology and adapt it to local contexts",
+                                          "Ignore the technology entirely",
+                                          "Only import foreign technology without adaptation",
+                                          "Ban the use of the technology"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_055",
+                          "text":  "Which of the following is NOT listed as one of the four key elements of venture creation?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Idea Generation",
+                                          "Value Creation",
+                                          "Advertising Budgeting",
+                                          "Risk-Taking"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_056",
+                          "text":  "Which of the following is a source of business opportunity classified under \u0027Government Policies\u0027?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Youth population growth",
+                                          "Import substitution policies and SME programs",
+                                          "E-commerce platforms",
+                                          "Idle land"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_057",
+                          "text":  "Which of the following best fits \u0027Technological Advancement\u0027 as a source of business opportunity?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "FinTech and e-commerce",
+                                          "Agriculture and solid minerals",
+                                          "Import substitution",
+                                          "Idle land"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_058",
+                          "text":  "Understanding policy direction, such as SME programs, helps entrepreneurs to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Align their ventures with national priorities",
+                                          "Avoid all forms of taxation",
+                                          "Bypass market research",
+                                          "Eliminate competitors permanently"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_059",
+                          "text":  "Which of these best describes why venture creation is considered a continuous process rather than a one-time event?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "It requires ongoing creativity, planning, risk-taking, and innovation even after launch",
+                                          "Once a business is registered, no further activity is required",
+                                          "It only happens once at the idea stage",
+                                          "It ends once funding is secured"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_060",
+                          "text":  "Applying marketing and e-commerce strategies as a learning objective emphasizes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Understanding how to attract and retain customers, especially using digital tools",
+                                          "Only understanding manufacturing processes",
+                                          "Only legal registration processes",
+                                          "Only accounting principles"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_061",
+                          "text":  "Which of the following would be classified as a \u0027Political/Legal Factor\u0027 in environmental scanning?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Changes in consumer lifestyle",
+                                          "New government regulations on business licensing",
+                                          "A new mobile app innovation",
+                                          "Rising youth population"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_062",
+                          "text":  "Managing small and family businesses effectively is listed as a learning objective aimed at helping students:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Run and grow small enterprises effectively",
+                                          "Only understand large corporations",
+                                          "Avoid starting any business",
+                                          "Focus solely on multinational firms"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_063",
+                          "text":  "Which statement best reflects the relationship between opportunity identification and entrepreneurship?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Opportunity identification is unrelated to entrepreneurship",
+                                          "Opportunity identification is the starting point of entrepreneurship",
+                                          "Opportunity identification only occurs after a business fails",
+                                          "Opportunity identification is only relevant to government agencies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_064",
+                          "text":  "In the demand-supply gap example, entrepreneurs benefit primarily by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Filling the gap between what is demanded and what is supplied",
+                                          "Reducing supply further",
+                                          "Ignoring customer demand",
+                                          "Increasing prices without providing value"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_065",
+                          "text":  "Which best describes the overall purpose of Module One (Venture Creation \u0026 Opportunity Identification)?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "To help students understand the tax code",
+                                          "To equip students with an understanding of how ventures are created and how to identify viable business opportunities",
+                                          "To teach only accounting software",
+                                          "To focus exclusively on international trade law"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_066",
+                          "text":  "New business development refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The systematic process of identifying opportunities, creating innovative ventures, and launching sustainable businesses",
+                                          "Only the process of closing a failing business",
+                                          "A one-time legal registration exercise",
+                                          "Only the marketing of existing products"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_067",
+                          "text":  "New business development encompasses which of the following?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Strategic planning, validation, and execution",
+                                          "Only financial auditing",
+                                          "Only manufacturing processes",
+                                          "Only advertising"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_068",
+                          "text":  "A business plan is best described as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A formal roadmap outlining the vision, operations, and financial strategy of a new venture",
+                                          "A legal document required only for tax purposes",
+                                          "A single-page marketing flyer",
+                                          "A document used only after business failure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_069",
+                          "text":  "A typical business plan is described in the lecture as being:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1-2 pages long and never updated",
+                                          "20-50 pages long, iterative, and updated as the business evolves",
+                                          "Over 500 pages long",
+                                          "A verbal presentation only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_070",
+                          "text":  "Which section of a business plan is written last but placed first?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial Plan",
+                                          "Executive Summary",
+                                          "Organizational Structure",
+                                          "Marketing Strategy"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_071",
+                          "text":  "The Executive Summary highlights all of the following EXCEPT:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mission and key objectives",
+                                          "Unique value proposition and target market",
+                                          "Detailed employee payroll records",
+                                          "Funding requirements"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_072",
+                          "text":  "Which section of the business plan details the company\u0027s legal structure, location, and core purpose?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Business Description",
+                                          "Market Analysis",
+                                          "Financial Plan",
+                                          "Organizational Structure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_073",
+                          "text":  "A data-driven assessment of the industry, competitors, and target customers is found in which section?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Market Analysis",
+                                          "Executive Summary",
+                                          "Product/Service Line",
+                                          "Financial Plan"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_074",
+                          "text":  "Which tools are mentioned for competitor analysis in Market Analysis?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "SWOT or Porter\u0027s Five Forces",
+                                          "TAM/SAM/SOM only",
+                                          "IRR and NPV",
+                                          "Stage-Gate model"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_075",
+                          "text":  "TAM/SAM/SOM refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Total Addressable Market, Serviceable Addressable Market, Serviceable Obtainable Market",
+                                          "Total Assets, Sales, and Operating Margins",
+                                          "Technical Assessment Model, Sales Approval Metric, Sustainability Outcome Measure",
+                                          "Total Available Manpower, Skills, and Output Metrics"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_076",
+                          "text":  "Which section of the business plan outlines hierarchy, ownership, and key personnel?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Organizational Structure",
+                                          "Financial Plan",
+                                          "Market Analysis",
+                                          "Product/Service Line"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_077",
+                          "text":  "According to the lecture, investors prioritize which of the following, as demonstrated in the Organizational Structure section?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "People over ideas",
+                                          "Ideas over people",
+                                          "Only financial statements",
+                                          "Only legal documents"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_078",
+                          "text":  "Which section describes offerings, features, pricing, and intellectual property?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Product/Service Line",
+                                          "Market Analysis",
+                                          "Organizational Structure",
+                                          "Executive Summary"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_079",
+                          "text":  "The Marketing Strategy section of a business plan covers which of the following?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The 4Ps, digital strategies, sales channels, branding, and budget",
+                                          "Only financial projections",
+                                          "Only legal structure",
+                                          "Only organizational hierarchy"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_080",
+                          "text":  "Which metrics are projected in the Marketing Strategy section?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Customer acquisition cost (CAC) and lifetime value (LTV)",
+                                          "Net present value (NPV) and IRR only",
+                                          "Break-even point only",
+                                          "Payback period only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_081",
+                          "text":  "The quantitative backbone of a business plan, including income statement, cash flow, and balance sheet, is the:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial Plan",
+                                          "Executive Summary",
+                                          "Business Description",
+                                          "Organizational Structure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_082",
+                          "text":  "Testing scenarios like economic downturns in the Financial Plan is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sensitivity analysis",
+                                          "SWOT analysis",
+                                          "Break-even analysis only",
+                                          "Market segmentation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_083",
+                          "text":  "Feasibility analysis is best defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A pre-launch evaluation to determine if a business idea is practical and worth pursuing",
+                                          "A post-launch marketing report",
+                                          "A legal document for company registration",
+                                          "A tool used only after a business fails"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_084",
+                          "text":  "According to the lecture, the failure risk that feasibility analysis aims to reduce is noted at approximately:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "10% for startups",
+                                          "50% for startups",
+                                          "90% for startups",
+                                          "25% for startups"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_085",
+                          "text":  "Which type of feasibility examines whether a product can be developed with available technology, resources, and expertise?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Technical Feasibility",
+                                          "Financial Feasibility",
+                                          "Market Feasibility",
+                                          "Organizational Feasibility"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_086",
+                          "text":  "For a drone delivery service, testing battery life and regulatory compliance would fall under:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial Feasibility",
+                                          "Technical Feasibility",
+                                          "Market Feasibility",
+                                          "Screening"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_087",
+                          "text":  "Which type of feasibility evaluates profitability through metrics like NPV, IRR, payback period, and ROI?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Technical Feasibility",
+                                          "Market Feasibility",
+                                          "Financial Feasibility",
+                                          "Product Feasibility"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_088",
+                          "text":  "According to the lecture, if IRR falls below what industry benchmark range might an idea be rejected?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "5-10%",
+                                          "15-20%",
+                                          "40-50%",
+                                          "60-70%"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_089",
+                          "text":  "Which type of feasibility assesses demand via customer surveys, focus groups, and competitor benchmarking?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Technical Feasibility",
+                                          "Financial Feasibility",
+                                          "Market Feasibility",
+                                          "Legal Feasibility"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_090",
+                          "text":  "Google Trends is mentioned in the lecture as a tool used for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Trend analysis in market feasibility",
+                                          "Financial statement preparation",
+                                          "Technical prototyping",
+                                          "Organizational chart design"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_091",
+                          "text":  "The Product Development Process framework described in the lecture, involving staged iteration, is often called the:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Stage-Gate model",
+                                          "SWOT model",
+                                          "TAM/SAM/SOM model",
+                                          "4Ps model"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_092",
+                          "text":  "The Product Development Process aligns with which lean startup principle?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Build-measure-learn",
+                                          "Plan-do-check-act only",
+                                          "Buy-sell-hold",
+                                          "Input-process-output"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_093",
+                          "text":  "According to the lecture, the Product Development Process typically spans:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1-2 weeks",
+                                          "6-24 months",
+                                          "5-10 years",
+                                          "24 hours"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_094",
+                          "text":  "The creative phase where opportunities are brainstormed from customer feedback, market gaps, or trends is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Screening",
+                                          "Idea Generation",
+                                          "Prototype Development",
+                                          "Commercialization"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_095",
+                          "text":  "Which technique is mentioned as part of Idea Generation in product development?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "SCAMPER",
+                                          "SWOT",
+                                          "TAM/SAM/SOM",
+                                          "IRR calculation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_096",
+                          "text":  "The filtering stage that uses criteria like strategic alignment, technical viability, and market potential is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Screening",
+                                          "Idea Generation",
+                                          "Testing",
+                                          "Commercialization"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_097",
+                          "text":  "QFD, mentioned as a screening tool, stands for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Quality Function Deployment",
+                                          "Quick Financial Decision",
+                                          "Quantitative Feasibility Data",
+                                          "Quality Feasibility Document"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_098",
+                          "text":  "Approximately what percentage of ideas advance past the Screening stage, according to the lecture?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Top 10-20%",
+                                          "Top 90%",
+                                          "Top 50%",
+                                          "All ideas advance"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_099",
+                          "text":  "Building a minimum viable product (MVP) or scale model for real-world testing occurs at which stage?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Screening",
+                                          "Prototype Development",
+                                          "Commercialization",
+                                          "Idea Generation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_100",
+                          "text":  "According to the lecture, prototype development costs are typically controlled within which range?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "$10K-50K",
+                                          "$1M-5M",
+                                          "$100-500",
+                                          "$500K-1M"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_101",
+                          "text":  "Rigorous validation through alpha, beta, and pilot tests occurs at which stage of product development?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Testing",
+                                          "Screening",
+                                          "Idea Generation",
+                                          "Commercialization"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_102",
+                          "text":  "Which metric is mentioned for assessing market fit during the Testing stage?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Net Promoter Score",
+                                          "Break-even point",
+                                          "TAM/SAM/SOM",
+                                          "IRR"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_103",
+                          "text":  "A/B testing, mentioned in the Testing stage, is primarily used for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Comparing software variants",
+                                          "Calculating financial ratios",
+                                          "Designing organizational charts",
+                                          "Filing patents"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_104",
+                          "text":  "Full-scale launch involving manufacturing ramp-up, supply chain setup, and marketing rollout is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Screening",
+                                          "Prototype Development",
+                                          "Commercialization",
+                                          "Idea Generation"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_105",
+                          "text":  "According to the lecture, a success metric for Commercialization is achieving what within 6 months?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "80% capacity utilization",
+                                          "10% market share only",
+                                          "Zero customer complaints",
+                                          "100% profit margin"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_106",
+                          "text":  "Which of the following correctly lists all five stages of the Product Development Process?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Idea Generation, Screening, Prototype Development, Testing, Commercialization",
+                                          "Screening, Testing, Idea Generation, Commercialization, Prototype Development",
+                                          "Commercialization, Idea Generation, Testing, Screening, Prototype Development",
+                                          "Testing, Prototype Development, Screening, Commercialization, Idea Generation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_107",
+                          "text":  "Software mentioned in the lecture for managing business plans is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "LivePlan",
+                                          "Photoshop",
+                                          "AutoCAD",
+                                          "MongoDB"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_108",
+                          "text":  "Software mentioned in the lecture for managing business processes is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Asana",
+                                          "Excel only",
+                                          "PowerPoint",
+                                          "Slack only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_109",
+                          "text":  "According to the lecture, a disciplined approach to new business development statistically boosts survival rates over five years from 10% to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "20%+",
+                                          "50%+",
+                                          "99%+",
+                                          "15%+"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_110",
+                          "text":  "Which of the following best explains the overall relationship between business planning, feasibility analysis, and product development?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "They are entirely unrelated processes",
+                                          "A strong business plan incorporates feasibility insights, while product development feeds into planning",
+                                          "Only feasibility analysis matters; the other two are optional",
+                                          "Product development always occurs before opportunity identification"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_111",
+                          "text":  "Which of the following is an example given for a Business Description of a sustainable clothing brand?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Eco-friendly fabrics and commitment to ethical labor",
+                                          "Break-even analysis calculations",
+                                          "Organizational chart of the marketing team",
+                                          "Customer acquisition cost projections"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_112",
+                          "text":  "In Market Analysis, target market segmentation is based on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Demographics, psychographics, and behaviors",
+                                          "Only geographic location",
+                                          "Only company size",
+                                          "Only competitor names"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_113",
+                          "text":  "The Financial Plan section includes projections over how many years, according to the lecture?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One year",
+                                          "Three years",
+                                          "Ten years",
+                                          "Twenty years"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_114",
+                          "text":  "Which financial statement in the Financial Plan shows revenue, expenses, and profit?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Income statement",
+                                          "Balance sheet only",
+                                          "Cash flow statement only",
+                                          "Break-even chart only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_115",
+                          "text":  "For a plant-based meat alternative example in Market Feasibility, what percentage of consumers aged 18-34 was noted as interested?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "10%",
+                                          "30%",
+                                          "50%",
+                                          "70%"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_116",
+                          "text":  "According to the market feasibility example, the plant-based meat alternative market was noted to be growing at what CAGR?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "5%",
+                                          "10%",
+                                          "25%",
+                                          "50%"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ent312_117",
+                          "text":  "The break-even point in Financial Feasibility refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The units sold needed to cover costs",
+                                          "The total revenue in Year 1 only",
+                                          "The maximum possible profit",
+                                          "The number of employees hired"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_118",
+                          "text":  "If gaps exist in technical feasibility, such as unproven AI algorithms, the lecture suggests considering:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Alternatives like outsourcing",
+                                          "Immediate business closure",
+                                          "Ignoring the gap entirely",
+                                          "Doubling the price of the product"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_119",
+                          "text":  "Which of these best defines the purpose of the Executive Summary in capturing investor attention?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Investors often decide on interest based solely on this section",
+                                          "It is the least important section of the plan",
+                                          "It is only read after the Financial Plan",
+                                          "It replaces the need for a Market Analysis"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_120",
+                          "text":  "Which of the following is NOT one of the three main aspects of Feasibility Analysis mentioned in the lecture?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Technical Feasibility",
+                                          "Financial Feasibility",
+                                          "Market Feasibility",
+                                          "Political Feasibility"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "ent312_121",
+                          "text":  "The Product/Service Line section emphasizes differentiation, such as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "How a product\u0027s features solve pain points better than rivals",
+                                          "Only the price of the product",
+                                          "Only the company\u0027s legal structure",
+                                          "Only the hiring plan"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_122",
+                          "text":  "Which of the following best describes \u0027cross-functional teams\u0027 as used in the Product Development Process?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Teams involving multiple departments working together across stages",
+                                          "A single department working in isolation",
+                                          "Only external consultants",
+                                          "Only the finance department"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_123",
+                          "text":  "A scoring matrix, mentioned as a Screening tool, is used to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Filter and rank ideas based on set criteria",
+                                          "Calculate tax obligations",
+                                          "Design the company logo",
+                                          "Draft legal contracts"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_124",
+                          "text":  "According to the lecture, why is the Business Plan described as \u0027iterative\u0027?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Because it is updated as the business evolves",
+                                          "Because it is written only once and never changed",
+                                          "Because it is discarded after funding is secured",
+                                          "Because it applies only to large corporations"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_125",
+                          "text":  "Which section of a business plan would include hiring plans, compensation, and governance details?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Organizational Structure",
+                                          "Marketing Strategy",
+                                          "Financial Plan",
+                                          "Executive Summary"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_126",
+                          "text":  "Beta testing, as part of the Testing stage, involves:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Limited users testing the product",
+                                          "Only internal company staff",
+                                          "No real users at all",
+                                          "Only automated software checks"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_127",
+                          "text":  "Which of the following best reflects a possible outcome if a prototype fails testing, such as a 40% defect rate?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "It prompts redesign",
+                                          "The product is launched immediately regardless",
+                                          "The business plan is discarded entirely",
+                                          "No further action is taken"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_128",
+                          "text":  "The Stage-Gate model is designed primarily to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Convert ideas into market-ready products efficiently while minimizing waste",
+                                          "Calculate corporate tax rates",
+                                          "Design company logos",
+                                          "Replace the need for a business plan"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_129",
+                          "text":  "According to the lecture, entrepreneurs should seek which of the following for robust execution of new business development?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mentors",
+                                          "Only government subsidies",
+                                          "Only bank loans",
+                                          "Only automated software with no human guidance"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_130",
+                          "text":  "Which of the following best summarizes \u0027New Business Development\u0027 as covered in Module Two?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Business Planning, Feasibility Analysis, and Product Development Process integrated to transform ideas into viable enterprises",
+                                          "Only the legal registration of a company",
+                                          "Only social media marketing tactics",
+                                          "Only customer retention strategies"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_131",
+                          "text":  "Entrepreneurial marketing differs from traditional marketing because it focuses on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Innovation, creativity, customer relationships, flexibility, and limited-resource management",
+                                          "Only large advertising budgets",
+                                          "Only mass production",
+                                          "Only government regulation compliance"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_132",
+                          "text":  "E-commerce is best defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The use of digital technologies and the internet to conduct business transactions",
+                                          "Only the physical sale of goods in stores",
+                                          "A type of accounting software",
+                                          "A government tax policy"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_133",
+                          "text":  "The 4Ps of Marketing consist of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Product, Price, Place, Promotion",
+                                          "Product, Profit, Place, People",
+                                          "Price, Promotion, Planning, Profit",
+                                          "Product, Price, Planning, People"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_134",
+                          "text":  "A product, in marketing terms, refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Anything offered to customers to satisfy their needs or wants",
+                                          "Only a physical good",
+                                          "Only a service",
+                                          "Only a digital experience"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_135",
+                          "text":  "Which of the following is listed as an important feature of a good product?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Solve a customer problem",
+                                          "Be as expensive as possible",
+                                          "Be difficult to use",
+                                          "Ignore customer expectations"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_136",
+                          "text":  "Food items, clothing, and smartphones are examples of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Industrial Products",
+                                          "Consumer Products",
+                                          "Intangible Services",
+                                          "B2B Products only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_137",
+                          "text":  "Machinery, raw materials, and office equipment are examples of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Consumer Products",
+                                          "Industrial Products",
+                                          "C2C Products",
+                                          "Promotional Materials"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_138",
+                          "text":  "Product decisions regarding appearance, packaging, and functionality fall under:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Product Design",
+                                          "Branding",
+                                          "Product Quality",
+                                          "Packaging only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_139",
+                          "text":  "The ability of a product to perform effectively and satisfy customers refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Product Quality",
+                                          "Product Design",
+                                          "Branding",
+                                          "Place"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_140",
+                          "text":  "Creating a unique identity through names, symbols, logos, and packaging is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Branding",
+                                          "Pricing",
+                                          "Distribution",
+                                          "Promotion"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_141",
+                          "text":  "Which of the following are given as examples of strong Nigerian brands?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Dangote Group and Innoson Vehicle Manufacturing",
+                                          "Jumia and Konga only",
+                                          "Facebook and Instagram",
+                                          "Google and Amazon"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_142",
+                          "text":  "Which of the following correctly lists the stages of the Product Life Cycle?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Introduction, Growth, Maturity, Decline",
+                                          "Growth, Decline, Introduction, Maturity",
+                                          "Maturity, Introduction, Decline, Growth",
+                                          "Decline, Growth, Maturity, Introduction"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_143",
+                          "text":  "Price refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The amount customers pay for a product or service",
+                                          "The physical location of a store",
+                                          "The advertising budget of a company",
+                                          "The packaging design of a product"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_144",
+                          "text":  "Pricing directly affects which of the following, according to the lecture?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Profitability, customer perception, and demand",
+                                          "Only employee salaries",
+                                          "Only the company\u0027s legal structure",
+                                          "Only the product\u0027s physical weight"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_145",
+                          "text":  "Which factor influencing pricing includes raw materials, labour costs, transportation, and rent?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Cost of Production",
+                                          "Competitor Pricing",
+                                          "Customer Purchasing Power",
+                                          "Government Policies"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_146",
+                          "text":  "Studying competitors\u0027 prices to remain competitive relates to which pricing factor?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Competitor Pricing",
+                                          "Cost of Production",
+                                          "Market Demand",
+                                          "Government Policies"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_147",
+                          "text":  "Income levels influencing what customers can afford relates to which pricing factor?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Customer Purchasing Power",
+                                          "Cost of Production",
+                                          "Competitor Pricing",
+                                          "Government Policies"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_148",
+                          "text":  "Taxes and regulations affecting pricing fall under which factor?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Government Policies",
+                                          "Market Demand",
+                                          "Cost of Production",
+                                          "Customer Purchasing Power"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_149",
+                          "text":  "High demand allowing businesses to charge higher prices relates to which pricing factor?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Market Demand",
+                                          "Cost of Production",
+                                          "Government Policies",
+                                          "Competitor Pricing"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_150",
+                          "text":  "Charging low prices initially to attract customers describes which pricing strategy?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Penetration Pricing",
+                                          "Premium Pricing",
+                                          "Competitive Pricing",
+                                          "Discount Pricing"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_151",
+                          "text":  "Charging high prices to create an image of quality or exclusivity describes which pricing strategy?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Penetration Pricing",
+                                          "Premium Pricing",
+                                          "Competitive Pricing",
+                                          "Discount Pricing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_152",
+                          "text":  "Setting prices similar to competitors describes which pricing strategy?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Competitive Pricing",
+                                          "Premium Pricing",
+                                          "Penetration Pricing",
+                                          "Discount Pricing"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_153",
+                          "text":  "Offering temporary price reductions to increase sales describes which pricing strategy?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Discount Pricing",
+                                          "Premium Pricing",
+                                          "Penetration Pricing",
+                                          "Competitive Pricing"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_154",
+                          "text":  "Place, in the marketing context, refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The channels and methods used to distribute products to customers",
+                                          "The physical appearance of a product",
+                                          "The amount customers pay",
+                                          "The advertising message used"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_155",
+                          "text":  "When a producer sells directly to consumers via company websites or physical shops, this is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Direct Distribution",
+                                          "Indirect Distribution",
+                                          "B2B Distribution only",
+                                          "C2C Distribution only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_156",
+                          "text":  "When wholesalers and retailers are involved as middlemen, this is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Direct Distribution",
+                                          "Indirect Distribution",
+                                          "Personal Selling",
+                                          "Sales Promotion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_157",
+                          "text":  "Which of the following are given as examples of modern distribution platforms in Nigeria?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Jumia and Konga",
+                                          "Dangote and Innoson",
+                                          "TikTok and Instagram only",
+                                          "PubMed and JSTOR"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_158",
+                          "text":  "Efficient distribution, according to the lecture, does which of the following?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Improves customer satisfaction and expands market reach",
+                                          "Always increases product prices",
+                                          "Eliminates the need for promotion",
+                                          "Reduces product quality"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_159",
+                          "text":  "Promotion refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Communication activities aimed at informing, persuading, and reminding customers about products or services",
+                                          "Only the physical packaging of a product",
+                                          "Only the pricing strategy used",
+                                          "Only the distribution channel chosen"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_160",
+                          "text":  "Paid communication through television, radio, newspapers, and social media is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Advertising",
+                                          "Personal Selling",
+                                          "Public Relations",
+                                          "Sales Promotion"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_161",
+                          "text":  "Direct interaction between sellers and customers describes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Personal Selling",
+                                          "Advertising",
+                                          "Public Relations",
+                                          "Digital Marketing"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_162",
+                          "text":  "Discounts, coupons, and free samples are examples of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sales Promotion",
+                                          "Public Relations",
+                                          "Personal Selling",
+                                          "Product Design"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_163",
+                          "text":  "Activities aimed at maintaining a positive public image describe:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Public Relations",
+                                          "Sales Promotion",
+                                          "Personal Selling",
+                                          "Product Life Cycle"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_164",
+                          "text":  "Using online platforms such as Facebook, Instagram, TikTok, and WhatsApp Business describes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Digital Marketing",
+                                          "Personal Selling",
+                                          "Public Relations only",
+                                          "Direct Distribution"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_165",
+                          "text":  "Customer acquisition refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The process of attracting new customers to a business",
+                                          "The process of firing underperforming employees",
+                                          "The process of closing a business",
+                                          "The process of reducing product prices permanently"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_166",
+                          "text":  "Which of the following is listed as a customer acquisition strategy?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Referral Programs",
+                                          "Product Life Cycle stages",
+                                          "Break-even analysis",
+                                          "SWOT analysis"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_167",
+                          "text":  "Using search engines like Google to attract online traffic is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Search Engine Marketing",
+                                          "Personal Selling",
+                                          "Public Relations",
+                                          "Product Design"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_168",
+                          "text":  "Customer retention refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Efforts made to keep existing customers satisfied and loyal",
+                                          "The process of finding new suppliers",
+                                          "The process of increasing product prices only",
+                                          "The process of closing underperforming stores"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_169",
+                          "text":  "According to the lecture, retaining customers is generally:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "More expensive than attracting new ones",
+                                          "Cheaper than attracting new ones",
+                                          "Impossible to achieve",
+                                          "Irrelevant to profitability"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_170",
+                          "text":  "Rewarding repeat customers through points systems and discounts describes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Loyalty Programs",
+                                          "Search Engine Marketing",
+                                          "Referral Programs",
+                                          "Public Relations"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_171",
+                          "text":  "Tailoring products and communication to individual customer preferences is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Personalization",
+                                          "Sales Promotion",
+                                          "Public Relations",
+                                          "Branding"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_172",
+                          "text":  "Providing support after a purchase is known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "After-Sales Services",
+                                          "Customer Acquisition",
+                                          "Sales Promotion",
+                                          "Product Design"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_173",
+                          "text":  "Which of the following is listed as a benefit of customer retention?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reduced marketing costs",
+                                          "Increased legal fees",
+                                          "Reduced product quality",
+                                          "Elimination of customer service"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_174",
+                          "text":  "Transactions between businesses, such as manufacturers supplying retailers, describe which e-commerce model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "B2B (Business-to-Business)",
+                                          "B2C (Business-to-Consumer)",
+                                          "C2C (Consumer-to-Consumer)",
+                                          "G2C (Government-to-Consumer)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_175",
+                          "text":  "Which e-commerce model is characterized by large transaction volumes and long-term contracts?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "B2B",
+                                          "B2C",
+                                          "C2C",
+                                          "None of these"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_176",
+                          "text":  "Businesses selling directly to final consumers, such as online clothing stores, describe which e-commerce model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "B2B",
+                                          "B2C",
+                                          "C2C",
+                                          "B2G"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ent312_177",
+                          "text":  "Which e-commerce model has a strong focus on customer experience and fast transactions?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "B2C",
+                                          "B2B",
+                                          "C2C",
+                                          "None of these"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_178",
+                          "text":  "Individuals selling directly to other individuals through online platforms describe which e-commerce model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "C2C (Consumer-to-Consumer)",
+                                          "B2B",
+                                          "B2C",
+                                          "B2G"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_179",
+                          "text":  "Which of the following is listed as an advantage of the C2C e-commerce model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Low cost and easy market access",
+                                          "Long-term contracts only",
+                                          "Large transaction volumes only",
+                                          "Government regulation exemption"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_180",
+                          "text":  "Which of the following is listed as an importance of e-commerce?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Expands market reach and enables 24-hour business operations",
+                                          "Eliminates the need for customer service",
+                                          "Guarantees zero competition",
+                                          "Removes the need for secure payment systems"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_181",
+                          "text":  "First mover advantage refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The benefits enjoyed by a business that enters a market before competitors",
+                                          "The benefits enjoyed by the last business to enter a market",
+                                          "A pricing strategy only",
+                                          "A type of distribution channel"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_182",
+                          "text":  "Which of the following is listed as an advantage of first mover advantage?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Strong brand identity and market share capture",
+                                          "Guaranteed permanent monopoly",
+                                          "Zero financial risk",
+                                          "Immediate profitability"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_183",
+                          "text":  "Securing suppliers and distribution networks early is an advantage of first mover advantage described as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Control of Distribution Channels",
+                                          "Customer Loyalty only",
+                                          "Market Uncertainty",
+                                          "High Costs"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_184",
+                          "text":  "Which of the following is listed as a risk of being a first mover?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Market Uncertainty",
+                                          "Guaranteed customer loyalty",
+                                          "Zero competition forever",
+                                          "Automatic government support"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_185",
+                          "text":  "The risk that competitors may later introduce improved products is referred to in the lecture as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Technological Changes",
+                                          "Market Uncertainty",
+                                          "High Costs",
+                                          "Customer Loyalty"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_186",
+                          "text":  "The expense of creating awareness and educating customers as a first mover is referred to as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "High Costs",
+                                          "Market Uncertainty",
+                                          "Technological Changes",
+                                          "Control of Distribution Channels"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_187",
+                          "text":  "Which company is cited as gaining early recognition in African e-commerce as a first mover example?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Jumia",
+                                          "Amazon",
+                                          "eBay",
+                                          "Alibaba"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_188",
+                          "text":  "Which company is cited as benefiting from early digital payment adoption in Nigeria?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Paystack",
+                                          "Jumia",
+                                          "Konga",
+                                          "Dangote Group"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_189",
+                          "text":  "Businesses that sell products directly through websites or apps describe which e-commerce business model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Online Stores",
+                                          "Subscription Services",
+                                          "Marketplace Platforms",
+                                          "B2B only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_190",
+                          "text":  "Customers paying regularly for continuous access to products or services describes which e-commerce business model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Subscription Services",
+                                          "Online Stores",
+                                          "Marketplace Platforms",
+                                          "C2C only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_191",
+                          "text":  "Platforms that connect buyers and sellers, such as Jumia and Konga, describe which e-commerce business model?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Marketplace Platforms",
+                                          "Online Stores",
+                                          "Subscription Services",
+                                          "B2B only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_192",
+                          "text":  "Which of the following is listed as a benefit of Subscription Services?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Predictable income and long-term customer relationships",
+                                          "Zero customer retention needed",
+                                          "No need for a payment system",
+                                          "Guaranteed first-mover advantage"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_193",
+                          "text":  "Encryption, password protection, and secure payment gateways are examples of which successful e-commerce practice?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Secure Payment Systems",
+                                          "Efficient Delivery Systems",
+                                          "User-Friendly Platforms",
+                                          "Trust and Transparency"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_194",
+                          "text":  "Good transportation networks, warehouse management, and real-time tracking systems relate to which successful e-commerce practice?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Efficient Delivery Systems",
+                                          "Secure Payment Systems",
+                                          "Customer Support Services",
+                                          "Branding"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_195",
+                          "text":  "According to the lecture, websites and apps should be easy to navigate, mobile-friendly, and fast-loading to achieve:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "User-Friendly Platforms",
+                                          "Secure Payment Systems",
+                                          "First Mover Advantage",
+                                          "Market Feasibility"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_196",
+                          "text":  "Providing quick responses, complaint resolution, and multiple communication channels describes which successful e-commerce practice?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Customer Support Services",
+                                          "Secure Payment Systems",
+                                          "Efficient Delivery Systems",
+                                          "Branding"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_197",
+                          "text":  "Honest product descriptions, transparent pricing, and clear return policies relate to which successful e-commerce practice?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Trust and Transparency",
+                                          "Efficient Delivery Systems",
+                                          "Secure Payment Systems",
+                                          "User-Friendly Platforms"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_198",
+                          "text":  "According to the lecture, late deliveries can:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Damage customer trust",
+                                          "Have no effect on customer trust",
+                                          "Always increase customer loyalty",
+                                          "Improve a company\u0027s brand image"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_199",
+                          "text":  "Which of the following best summarizes why complex e-commerce systems are discouraged?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Complex systems discourage customers from using the platform",
+                                          "Complex systems always increase sales",
+                                          "Complex systems eliminate the need for customer support",
+                                          "Complex systems are required by law"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ent312_200",
+                          "text":  "Overall, according to the conclusion of the lecture, businesses that combine marketing knowledge with e-commerce strategies are more likely to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Survive, grow, and achieve long-term success",
+                                          "Fail within the first year",
+                                          "Avoid all forms of competition",
+                                          "Eliminate the need for a business plan"
+                                      ],
+                          "correct_index":  0
+                      }
+                  ],
+    "course_id":  "ent312",
+    "course_name":  "Entrepreneurship, Venture Creation \u0026 E-commerce",
+    "version":  "1.0.0"
+}
