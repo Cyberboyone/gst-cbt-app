@@ -1,0 +1,2737 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "slc399_001",
+                          "text":  "Service learning is best described as education that:",
+                          "explanation":  "Service learning is education in action which places a lot of emphasis on building communities through service, making learning and entrepreneurship come alive.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Takes place exclusively in the classroom",
+                                          "Places emphasis on building communities through service while making learning come alive",
+                                          "Only benefits the community, not the students",
+                                          "Replaces all formal classroom instruction"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_002",
+                          "text":  "Which of the following best defines service learning?",
+                          "explanation":  "Service learning is a method of teaching that combines formal instruction with related service in the community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A method of teaching that combines formal instruction with related service in the community",
+                                          "A punishment assigned by school management",
+                                          "Occasional volunteering during semester breaks",
+                                          "A method of assessing student performance"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "slc399_003",
+                          "text":  "Service learning helps students develop Knowledge, Skills and Abilities (KSAs) to deal effectively with:",
+                          "explanation":  "Service learning integrates service and academic learning to promote understanding of course content while helping students develop KSAs to deal effectively with complex social issues and problems.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only academic examinations",
+                                          "Complex social issues and problems",
+                                          "Personal financial management",
+                                          "International business operations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_004",
+                          "text":  "According to the American Association for Higher Education, service learning is coordinated by an institution of higher education and the community to:",
+                          "explanation":  "According to the AAHE, service learning is coordinated to help foster civic responsibilities and is integrated to enhance the academic curriculum of enrolled students.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replace traditional internships",
+                                          "Help foster civic responsibilities and enhance the academic curriculum",
+                                          "Generate income for the institution",
+                                          "Provide entertainment for students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_005",
+                          "text":  "The core principles of service learning are:",
+                          "explanation":  "The core principles of service learning are: engagement, reflection, reciprocity and public dissemination.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Competition, assessment, grading and reward",
+                                          "Engagement, reflection, reciprocity and public dissemination",
+                                          "Lecturing, testing, grading and certification",
+                                          "Planning, execution, monitoring and evaluation only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_006",
+                          "text":  "Service learning is regarded as a type of:",
+                          "explanation":  "Service learning is regarded as an experimental/experiential education that integrates meaningful community service with instruction and reflection.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Punitive education",
+                                          "Experimental/experiential education",
+                                          "Online education",
+                                          "Distance learning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_007",
+                          "text":  "The phrase \u0027experience enhances understanding; understanding leads to more effective action\u0027 best describes:",
+                          "explanation":  "In service learning, \u0027experience enhances understanding: understanding leads to more effective action\u0027 — describing the dynamic learning process.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Traditional classroom learning",
+                                          "Distance education",
+                                          "Service learning",
+                                          "Laboratory experiments"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_008",
+                          "text":  "Service learning may address complex issues such as:",
+                          "explanation":  "Service learning may address complex issues like disability awareness, cultural diversity, child abuse, child trafficking, drug abuse, community partnerships, etc.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only financial matters and economics",
+                                          "Disability awareness, cultural diversity, child abuse, drug abuse and community partnerships",
+                                          "Only sports and recreation",
+                                          "Purely academic theories"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_009",
+                          "text":  "Which of the following is a characteristic of well-planned service learning experiences?",
+                          "explanation":  "A well-planned service learning experience is positive, meaningful and real to the participants.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "They are competitive rather than cooperative",
+                                          "They address simplified problems in isolation",
+                                          "They are positive, meaningful and real to the participants",
+                                          "They only promote individual work"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_010",
+                          "text":  "Service learning promotes which type of experiences?",
+                          "explanation":  "Service learning experiences involve cooperative rather than competitive experiences and promote skills associated with teamwork, community involvement and citizenship.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Competitive experiences that promote individualism",
+                                          "Cooperative rather than competitive experiences, promoting teamwork and citizenship",
+                                          "Isolated academic exercises",
+                                          "One-sided experiences that only benefit students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_011",
+                          "text":  "Service learning addresses problems in:",
+                          "explanation":  "Service learning addresses complex problems in complex settings rather than simplified problems in isolation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Simple, isolated settings with clear-cut answers",
+                                          "Complex settings with complex problems rather than simplified problems in isolation",
+                                          "Only theoretical, abstract environments",
+                                          "Only laboratory settings"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_012",
+                          "text":  "Service learning promotes the habit of critical thinking defined as:",
+                          "explanation":  "Service learning offers powerful opportunities to acquire the habit of critical thinking — the ability to identify the most important questions or issues within a real-world situation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Memorizing textbook content",
+                                          "The ability to identify the most important questions or issues within a real-world situation",
+                                          "Following instructions without questioning",
+                                          "Competing with peers for grades"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_013",
+                          "text":  "Service learning is NOT about:",
+                          "explanation":  "Service learning is not about an episodic (occasional) volunteer program, though volunteering is an integral component of it.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Building communities through meaningful service",
+                                          "An episodic (occasional) volunteer program",
+                                          "Integrating service with academic learning",
+                                          "Structured reflection on service experiences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_014",
+                          "text":  "Service learning is NOT:",
+                          "explanation":  "Service learning is not only for university or college students; it is for all age groups.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A form of reciprocal learning",
+                                          "Only for university or college students",
+                                          "Connected to community needs",
+                                          "A structured learning activity"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_015",
+                          "text":  "Service learning is NOT compensatory service assigned as:",
+                          "explanation":  "Service learning is not compensatory service assigned as a form of punishment by school management.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A form of community development",
+                                          "A punishment by school management",
+                                          "An academic activity",
+                                          "A civic engagement tool"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_016",
+                          "text":  "The distinctive element of service learning is that it:",
+                          "explanation":  "The distinctive element is that service learning enhances the community through service, but also has powerful learning consequences for students and participating communities.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Benefits only students, not the community",
+                                          "Benefits only the community, not the students",
+                                          "Enhances the community through service AND has powerful learning consequences for students",
+                                          "Replaces all other forms of education"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_017",
+                          "text":  "One of the goals of service learning is to:",
+                          "explanation":  "One goal is to challenge the students\u0027 assumptions, enlarge their view of the world and invite them to further engage their intelligence and imagination.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Limit students\u0027 engagement with the outside world",
+                                          "Challenge students\u0027 assumptions and enlarge their view of the world",
+                                          "Focus exclusively on academic grades",
+                                          "Replace community organizations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_018",
+                          "text":  "Which of the following is a goal of service learning?",
+                          "explanation":  "One goal is to meet community identified needs and activate community partnerships.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "To isolate students from the community",
+                                          "To meet community identified needs and activate community partnerships",
+                                          "To reduce students\u0027 workload",
+                                          "To eliminate the role of faculty in education"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_019",
+                          "text":  "Service learning seeks to develop:",
+                          "explanation":  "One goal of service learning is to develop student leaders within the field of service learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Students who avoid community interaction",
+                                          "Student leaders within the field of service learning",
+                                          "Students who focus only on personal success",
+                                          "Students who depend entirely on faculty"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_020",
+                          "text":  "Which of the following is a benefit of service learning to students?",
+                          "explanation":  "Service learning enhances students\u0027 understanding of the academic curriculum.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reduces the need for academic study",
+                                          "Enhances their understanding of the academic curriculum",
+                                          "Eliminates the need for examinations",
+                                          "Guarantees employment after graduation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_021",
+                          "text":  "Service learning fosters which civic responsibility among students?",
+                          "explanation":  "Service learning fosters civic responsibility and encourages community involvement among students.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Avoidance of community issues",
+                                          "Only personal financial gain",
+                                          "Civic responsibility and community involvement",
+                                          "Competition with other students"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_022",
+                          "text":  "Service learning provides students with opportunity to:",
+                          "explanation":  "Service learning gives students the opportunity to interact with people of diverse cultures and lifestyles.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Avoid interaction with people of diverse cultures",
+                                          "Interact with people of diverse cultures and lifestyles",
+                                          "Focus only on their own cultural group",
+                                          "Avoid career exploration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_023",
+                          "text":  "What does service learning provide in terms of career development?",
+                          "explanation":  "Service learning provides valuable and competitive career exploration opportunities to students.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "No career benefits",
+                                          "Valuable and competitive career exploration opportunities",
+                                          "Only academic knowledge with no practical application",
+                                          "Guaranteed government employment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_024",
+                          "text":  "Service learning benefits faculty by:",
+                          "explanation":  "Service learning provides inspiration and invigoration of teaching methods among teachers.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reducing their teaching responsibilities",
+                                          "Providing inspiration and invigoration of teaching methods",
+                                          "Eliminating the need for research",
+                                          "Increasing their salary automatically"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_025",
+                          "text":  "Which of the following is a benefit of service learning to faculty/department?",
+                          "explanation":  "Service learning gives faculty opportunities to tap expertise of community agencies as co-teachers.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reduced student enrollment",
+                                          "Opportunities to tap expertise of community agencies as co-teachers",
+                                          "Elimination of community engagement",
+                                          "Reduced workload for students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_026",
+                          "text":  "Service learning benefits the community by providing:",
+                          "explanation":  "The community benefits through access to institution\u0027s resources (both human and materials).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only financial aid",
+                                          "Access to institution\u0027s resources (both human and materials)",
+                                          "Free education for all community members",
+                                          "Only infrastructure development"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_027",
+                          "text":  "How does service learning benefit the community in terms of employment?",
+                          "explanation":  "Service learning benefits the community through development of a pool of potential employees.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "By employing all community members",
+                                          "By development of a pool of potential employees",
+                                          "By replacing existing workers",
+                                          "By providing government contracts"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_028",
+                          "text":  "Service learning bridges the gap between:",
+                          "explanation":  "One benefit to the community is bridging the gap between the government and the community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Students and lecturers",
+                                          "The government and the community",
+                                          "Rich and poor students",
+                                          "Science and arts departments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_029",
+                          "text":  "Service learning benefits the institution by:",
+                          "explanation":  "Service learning facilitates faculty and students\u0027 engagement issues as one of its institutional benefits.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reducing its academic standards",
+                                          "Facilitating faculty and students\u0027 engagement issues",
+                                          "Eliminating the need for community outreach",
+                                          "Reducing student enrollment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_030",
+                          "text":  "One of the institutional benefits of service learning is:",
+                          "explanation":  "Service learning benefits institutions by increasing development and preparation of graduates for future life challenges.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reducing the institution\u0027s budget",
+                                          "Increased development and preparation of graduates for future life challenges",
+                                          "Eliminating research activities",
+                                          "Reducing the number of programs offered"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_031",
+                          "text":  "Which of the following is a component of service learning?",
+                          "explanation":  "Curricular connections are a key component — service learning involves integrating learning into a service project with clear academic ties.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Competitive grading",
+                                          "Curricular connections",
+                                          "Individual isolation",
+                                          "Purely theoretical instruction"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_032",
+                          "text":  "In community settings, \u0027Students\u0027 Voice\u0027 in service learning is alternatively called:",
+                          "explanation":  "Students\u0027 Voice, where students have opportunity to select, design, implement and evaluate their service activity, is alternatively called \u0027Youth voice\u0027 in community settings.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Community voice",
+                                          "Faculty voice",
+                                          "Youth voice",
+                                          "Admin voice"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_033",
+                          "text":  "Reflection as a component of service learning involves:",
+                          "explanation":  "Reflection involves structured opportunities for students to think, talk and write about their service experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only passive observation",
+                                          "Structural opportunities for students to think, talk and write about their service experience",
+                                          "Competitive evaluation of peers",
+                                          "Only physical service activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_034",
+                          "text":  "The \u0027balance of reflection and action\u0027 in service learning:",
+                          "explanation":  "The balance of reflection and action allows a student to constantly be aware of the impact of their work.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Is not important",
+                                          "Allows a student to be constantly aware of the impact of their work",
+                                          "Only applies to faculty",
+                                          "Replaces assessment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_035",
+                          "text":  "Community Partnership as a component of service learning is used to:",
+                          "explanation":  "Community Partnership provides partnership with community agencies to identify genuine needs, provide mentorship and contribute assets towards completing projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replace academic instruction",
+                                          "Identify genuine needs, provide mentorship and contribute assets towards completing projects",
+                                          "Limit student involvement in projects",
+                                          "Reduce faculty responsibilities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_036",
+                          "text":  "Authentic Community Needs as a component of service learning means:",
+                          "explanation":  "Authentic Community Needs means local community members or service recipients are involved in determining the significance and depth of service activities.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Faculty decides what the community needs",
+                                          "Local community members or service recipients are involved in determining the significance and depth of service activities",
+                                          "Students alone determine community needs",
+                                          "The government decides service activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_037",
+                          "text":  "The Assessment component of service learning provides:",
+                          "explanation":  "Well-structured assessment instruments with constructive feedback through reflection provide valuable information regarding positive \u0027reciprocal learning\u0027 and serving outcomes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only grades for students",
+                                          "Valuable information regarding reciprocal learning and serving outcomes through structured instruments and constructive feedback",
+                                          "Only evaluations of community agencies",
+                                          "A method to rank students competitively"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_038",
+                          "text":  "Which type of service learning involves direct person-to-person, face-to-face projects such as tutoring?",
+                          "explanation":  "Direct Service Learning involves direct person-to-person, face-to-face projects in which service impacts individuals who receive direct help (tutoring, work with elderly, peer mediation, etc.).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Indirect Service Learning",
+                                          "Advocacy Service Learning",
+                                          "Direct Service Learning",
+                                          "Research Service Learning"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_039",
+                          "text":  "Indirect Service Learning includes projects that benefit:",
+                          "explanation":  "Indirect Service Learning benefits the community as opposed to specific individuals — examples include environmental, construction, restoration, food or clothing drives.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Specific individuals only",
+                                          "The community as opposed to specific individuals (environmental, construction, restoration projects)",
+                                          "Only faculty members",
+                                          "Only the institution"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_040",
+                          "text":  "Advocacy Service Learning aims at:",
+                          "explanation":  "Advocacy Service Learning aims at working, acting, speaking, writing, presenting, informing — projects that encourage action or create awareness on issues of public interest.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Building physical structures",
+                                          "Working, acting, speaking, writing, presenting to encourage action or create awareness on issues of public interest",
+                                          "Conducting research surveys only",
+                                          "Providing direct tutoring services"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_041",
+                          "text":  "Research Service Learning includes:",
+                          "explanation":  "Research Service Learning includes surveys, studies, evaluation, experiments, data gathering, etc. to find, compile and report information on topics of public interest.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Face-to-face tutoring and peer mediation",
+                                          "Surveys, studies, evaluation, experiments and data gathering to report information on topics of public interest",
+                                          "Environmental construction and restoration",
+                                          "Creating public awareness campaigns only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_042",
+                          "text":  "Which type of service learning is exemplified by care for the environment, violence prevention and drug prevention awareness?",
+                          "explanation":  "Advocacy Service Learning includes projects that encourage action or create awareness on issues of public interest like care for the environment, violence, drug prevention, disaster preparedness, etc.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Direct Service Learning",
+                                          "Indirect Service Learning",
+                                          "Advocacy Service Learning",
+                                          "Research Service Learning"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_043",
+                          "text":  "Pure service learning courses are primarily focused on:",
+                          "explanation":  "Pure service learning courses have as their intellectual core the idea of service to communities. Students enroll because they are interested in volunteerism, student activism, and civic engagement.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A single academic discipline",
+                                          "Community service, volunteerism, student activism and civic engagement",
+                                          "Laboratory research only",
+                                          "Competitive academic performance"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_044",
+                          "text":  "In discipline-based service learning, students:",
+                          "explanation":  "In discipline-based service learning, students are expected to serve in the community throughout the semester and reflect on their experiences regularly using course content as a basis for analysis.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Serve only once during the semester",
+                                          "Serve in the community throughout the semester and reflect regularly using course content as a basis for analysis",
+                                          "Only study theory in the classroom",
+                                          "Are not required to reflect"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_045",
+                          "text":  "In Problem-Based Service Learning (PBSL), students relate to the community as:",
+                          "explanation":  "In PBSL, students relate to the community much as \u0027consultants\u0027 working for a \u0027client,\u0027 working to understand a specific community problem and develop solutions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Tourists visiting a new place",
+                                          "Consultants working for a client",
+                                          "Teachers delivering lectures",
+                                          "Researchers working in isolation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_046",
+                          "text":  "Capstone courses in service learning are generally designed for:",
+                          "explanation":  "Capstone courses are generally designed for majors and minors in a given discipline and are offered almost exclusively to students in their final year.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "First-year students",
+                                          "Students in their final year (majors and minors in a given discipline)",
+                                          "Faculty members only",
+                                          "Community members"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_047",
+                          "text":  "The goal of capstone courses in service learning is usually to:",
+                          "explanation":  "The goal of capstone courses is to synthesize students\u0027 understanding of their discipline and help students make the transition from the world of theory to the world of practice.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Introduce students to a new field completely",
+                                          "Synthesize students\u0027 understanding of their discipline and help transition from theory to practice",
+                                          "Reduce students\u0027 academic load",
+                                          "Replace community service with laboratory work"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_048",
+                          "text":  "Service internships differ from traditional internships primarily through:",
+                          "explanation":  "Service internships differ from traditional internships by their reflection component and focus on reciprocity — the idea that the community and the student benefit equally.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Higher pay",
+                                          "The reflection component and their focus on reciprocity",
+                                          "No academic connection",
+                                          "Working fewer hours per week"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_049",
+                          "text":  "How many hours per week do students typically work in service internships?",
+                          "explanation":  "In service internships, students typically work between 10 and 40 hours in the community setting.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1 to 5 hours",
+                                          "5 to 10 hours",
+                                          "10 to 40 hours",
+                                          "40 to 60 hours"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_050",
+                          "text":  "Community-based action research is similar to an independent study option appropriate for students who are:",
+                          "explanation":  "Community-based action research is appropriate for students with substantial experience in community service and adequate knowledge of research methodology.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "New to community work with no prior experience",
+                                          "Highly experienced in community work with adequate knowledge of research methodology",
+                                          "Only interested in classroom-based learning",
+                                          "In their first year of university"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_051",
+                          "text":  "Community needs in service learning refer to:",
+                          "explanation":  "Community needs are problems (unmet needs) that have been identified to hinder the growth and development of individual members as well as the community as a whole.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only financial needs of the community",
+                                          "Problems (unmet needs) that hinder the growth and development of individual members and the community",
+                                          "The academic needs of students only",
+                                          "Institutional budget requirements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_052",
+                          "text":  "Which of the following is an example of a community partner?",
+                          "explanation":  "Community partners include: public service agencies, non-profit organizations (Red Cross, CAN, JNI), governmental organizations (Ministries), and NGOs (Human Rights, Civil Societies).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only the university administration",
+                                          "Public service agencies, non-profit organizations, governmental and non-governmental organizations",
+                                          "Only private corporations",
+                                          "Only individual students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_053",
+                          "text":  "An example of a non-profit organization that can serve as a community partner is:",
+                          "explanation":  "Non-profit organizations such as Red Cross, CAN, and JNI are examples of community partners in service learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A commercial bank",
+                                          "Red Cross",
+                                          "Oil companies",
+                                          "Private law firms"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_054",
+                          "text":  "Community partnership in service learning is beneficial because it:",
+                          "explanation":  "Service learning and community partnership facilitates multi-faceted learning opportunities by connecting educators and students with service providers, non-profit organizations and other community agencies.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replaces the need for faculty involvement",
+                                          "Facilitates multi-faceted learning opportunities by connecting educators and students with community agencies",
+                                          "Reduces the academic workload of students",
+                                          "Eliminates the need for community service"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_055",
+                          "text":  "Community partnership helps build:",
+                          "explanation":  "Community partnership helps to build a shared sense of commitment and responsibility throughout the community, avoiding unnecessary duplication of efforts.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Individual competition among students",
+                                          "A shared sense of commitment and responsibility throughout the community",
+                                          "Only physical infrastructure",
+                                          "Bureaucratic processes"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_056",
+                          "text":  "The first step to establishing a successful community partnership is:",
+                          "explanation":  "The first step is identifying potential partners, which may include universities, NGOs, individuals, government, and recipients of services.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Setting up advisory boards",
+                                          "Identifying potential partners (universities, NGOs, individuals, government, recipients of services)",
+                                          "Determining monitoring frameworks",
+                                          "Redesigning relationships"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_057",
+                          "text":  "Partnership can be established through Networking which involves:",
+                          "explanation":  "Networking involves sharing information with community agencies on your plan of activities.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sharing of resources and realigning of activities",
+                                          "Sharing information with community agencies on your plan of activities",
+                                          "Sharing resources and information to enhance partner capacity",
+                                          "Scheduling joint activities with two or more agencies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_058",
+                          "text":  "Coordination in community partnership involves:",
+                          "explanation":  "Coordination involves sharing information and scheduling of joint activities with two or more community agencies for mutual benefits.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sharing information only",
+                                          "Sharing information and scheduling of joint activities with two or more community agencies for mutual benefit",
+                                          "Sharing resources and enhancing partner capacity",
+                                          "Realigning activities for mutual benefit"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_059",
+                          "text":  "Collaboration in community partnership involves:",
+                          "explanation":  "Collaboration involves sharing resources and information with different community agencies to enhance the capacity of other partners for the mutual benefit of all.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sharing information only with plan of activities",
+                                          "Scheduling joint activities",
+                                          "Sharing resources and information with different community agencies to enhance the capacity of other partners for mutual benefit",
+                                          "Sharing resources and realigning activities for mutual benefit"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_060",
+                          "text":  "Cooperation in community partnership involves:",
+                          "explanation":  "Cooperation involves sharing of resources, information and realigning of activities for the mutual benefit of all.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Sharing information with agencies on your plan of activities only",
+                                          "Scheduling of joint activities",
+                                          "Sharing resources information and realigning of activities for mutual benefit of all",
+                                          "Sharing resources to enhance partner capacity"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_061",
+                          "text":  "Community partnership through service learning demonstrates that young people:",
+                          "explanation":  "Community partnership through service learning provides students and youth with increased confidence in their ability and shows that young people can make valuable contributions to change things for the better.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Cannot contribute meaningfully to society",
+                                          "Can make valuable contributions to change things for the better (positive transformation)",
+                                          "Should only focus on academics",
+                                          "Should avoid community activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_062",
+                          "text":  "Volunteerism is defined as:",
+                          "explanation":  "Volunteerism is the practice of using volunteer workers especially in community service or educational organizations and programs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Paid community service",
+                                          "The practice of using volunteer workers especially in community service or educational organizations and programs",
+                                          "A mandatory school requirement",
+                                          "A competitive activity"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_063",
+                          "text":  "What distinguishes service learning from traditional volunteerism?",
+                          "explanation":  "Service learning is more than traditional volunteering because it combines service activities with structured reflections, fostering an ethic of civic responsibility.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Service learning does not involve community service",
+                                          "Service learning combines service activities with structured reflections",
+                                          "Volunteerism has more academic content than service learning",
+                                          "Service learning does not require student participation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_064",
+                          "text":  "It is the ________ that distinguishes service learning from volunteerism.",
+                          "explanation":  "It is the reflection that distinguishes service learning from the concept of volunteerism because it is not an episodic (occasional) volunteer program.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Service component",
+                                          "Community benefit",
+                                          "Reflection",
+                                          "Grading system"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_065",
+                          "text":  "Volunteerism is said to be ________ of service learning.",
+                          "explanation":  "Volunteerism is said to be an integral part of service learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A replacement",
+                                          "An integral part",
+                                          "An obstacle",
+                                          "Completely separate"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_066",
+                          "text":  "Civic engagement is defined as:",
+                          "explanation":  "Civic engagement is the state of being meshed (coming together) into working arrangement relating to one\u0027s contribution to the community or country — becoming a good citizen.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Political campaigning for elections",
+                                          "The state of being involved in working arrangements relating to one\u0027s contribution to the community or country",
+                                          "Engagement in academic competitions",
+                                          "Participation in business activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_067",
+                          "text":  "Examples of civic engagement/community action projects include:",
+                          "explanation":  "Examples of civic engagement/community action projects include college access weekend, environmental cleanliness, peace garden projects, and museum partnership.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only academic conferences",
+                                          "College access weekend, environmental cleanliness, peace garden projects, museum partnership",
+                                          "Only political party activities",
+                                          "Only sports competitions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_068",
+                          "text":  "In service learning, action projects are designed to provide student leaders opportunities to:",
+                          "explanation":  "Action projects are designed to provide students\u0027 leaders an opportunity to develop and practice leadership skills relevant to service learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Avoid community issues",
+                                          "Develop and practice leadership skills relevant to service learning",
+                                          "Only study academic content",
+                                          "Replace faculty in the classroom"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_069",
+                          "text":  "Leadership is defined as:",
+                          "explanation":  "Leadership is the ability to guide, direct or influence people.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The ability to manage finances",
+                                          "The ability to guide, direct or influence people",
+                                          "The ability to conduct research",
+                                          "The ability to pass academic examinations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_070",
+                          "text":  "Service learning student leadership within the classroom acts as:",
+                          "explanation":  "Service learning students\u0027 leadership within the classroom acts as peer mentors and facilitators of reflection, helping fellow students to explore sensitive issues related to service and social justice.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Academic assessors",
+                                          "Peer mentors and facilitators of reflection, helping fellow students explore sensitive issues",
+                                          "Administrative officers",
+                                          "Community supervisors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_071",
+                          "text":  "Service learning student leadership provides support for which three constituencies?",
+                          "explanation":  "Service learning students\u0027 leadership provides available support for all three constituencies in the service learning process: faculty, community partners and students.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Government, NGOs and businesses",
+                                          "Faculty, community partners and students",
+                                          "Parents, teachers and administrators",
+                                          "Federal, state and local governments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_072",
+                          "text":  "Service learning helps facilitate the development of:",
+                          "explanation":  "Service learning students\u0027 leadership helps to facilitate the development of a community motivated for social change.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A competitive academic environment",
+                                          "A community motivated for social change",
+                                          "Individual isolation and self-dependence",
+                                          "Opposition to community activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_073",
+                          "text":  "Youth Voice in service learning is:",
+                          "explanation":  "Youth Voice is the input/opinion of young people in developing and implementing policies, plans and projects to guide service learning efforts.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only the opinion of faculty about youth",
+                                          "The input/opinion of young people in developing and implementing policies, plans and projects",
+                                          "A formal governmental policy",
+                                          "Only the voices of adult community members"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_074",
+                          "text":  "Youth Voice benefits young people by:",
+                          "explanation":  "Youth Voice provides young people with increased self-esteem (confidence) and sense of personal control.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reducing their involvement in decision-making",
+                                          "Providing increased self-esteem and sense of personal control",
+                                          "Limiting their skills development",
+                                          "Keeping them away from organizational activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_075",
+                          "text":  "Youth Voice changes how adults view young people by:",
+                          "explanation":  "Youth Voice changes how adults view young people — they are likely to be viewed as critical to organizational improvement.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Keeping young people in subordinate roles",
+                                          "Making adults likely to view young people as critical to organizational improvement",
+                                          "Reducing adult involvement in organizations",
+                                          "Replacing adults in decision-making roles"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_076",
+                          "text":  "\u0027Youth as Trainers\u0027 in the models for engaging Youth Voice means:",
+                          "explanation":  "Youth as Trainers means well-trained youth are supported to design and deliver training about service learning or orientation for service learning projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Youth train adults on organizational management",
+                                          "Well-trained youth are supported to design and deliver training about service learning or orientation for service learning projects",
+                                          "Youth train other youth on sports",
+                                          "Youth are trained by corporate companies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_077",
+                          "text":  "\u0027Youth as Planners\u0027 involves youth in:",
+                          "explanation":  "Youth as Planners means engaging youth in planning and implementing service projects — identifying objectives, recruiting volunteers, developing action plans, timelines and evaluating projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only evaluating completed projects",
+                                          "Planning and implementing service projects: identifying objectives, recruiting volunteers, developing action plans and evaluating projects",
+                                          "Only fundraising for projects",
+                                          "Only training other youth"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_078",
+                          "text":  "\u0027Youth as Evaluators\u0027 involves youth in:",
+                          "explanation":  "Youth as Evaluators means youth assess program effectiveness by being involved in development and implementation of surveys, conducting interviews and documenting findings.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Training other youth",
+                                          "Assessing program effectiveness through surveys, interviews and documenting findings",
+                                          "Fundraising for projects",
+                                          "Planning and implementing service projects"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_079",
+                          "text":  "Youth Action/Advisory Councils (YAC) are:",
+                          "explanation":  "Youth Action/Advisory Councils (YAC) are groups of young people working with an existing organization to keep youth involved in the organization\u0027s mission — helping make decisions and address specific issues.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Government bodies that oversee youth",
+                                          "Groups of young people working with an existing organization to keep youth involved in the mission of the organization",
+                                          "Academic committees for youth research",
+                                          "Youth sports associations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_080",
+                          "text":  "\u0027Youth Summits\u0027 provide young people with an opportunity to:",
+                          "explanation":  "Youth Summits bring young people together for discussion and action around issues important to them, providing them with an opportunity to voice their concerns and develop solutions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Compete academically",
+                                          "Come together for discussion and action around issues important to them, voice concerns and develop solutions",
+                                          "Only listen to adult perspectives",
+                                          "Receive awards and recognition"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_081",
+                          "text":  "\u0027Youth as Funders\u0027 involves youth in:",
+                          "explanation":  "Youth as Funders involves youth\u0027s participation in philanthropy — raising money, developing request for proposals, reviewing proposals and determining who gets the money.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Receiving financial grants from adults",
+                                          "Philanthropy — raising money, developing proposals, reviewing proposals and determining who gets the money",
+                                          "Creating their own businesses",
+                                          "Managing institutional budgets"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_082",
+                          "text":  "\u0027Youth on Board\u0027 means young people serving as:",
+                          "explanation":  "Youth on Board means young people on organizational governing structures, especially boards, as full voting members with all the same place in organizational decision making as other board members.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Junior observers with no voting rights",
+                                          "Full voting members on organizational governing structures/boards with the same decision-making rights as other members",
+                                          "Temporary consultants",
+                                          "Student representatives with limited powers"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_083",
+                          "text":  "When preparing youth for decision/leadership roles, one should:",
+                          "explanation":  "To prepare youth for leadership roles, you should provide them with skills, tools and information they will need to be successful in the role identified.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Give them responsibilities without guidance",
+                                          "Provide them with skills, tools and information they will need to be successful in the identified role",
+                                          "Exclude them from key meetings",
+                                          "Limit their access to organizational information"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_084",
+                          "text":  "Academic service learning always involves:",
+                          "explanation":  "Academic service learning always involves some kind of formal involvement on the part of the University or its staff, unlike volunteering.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "No faculty or staff involvement",
+                                          "Some kind of formal involvement on the part of the university or its staff",
+                                          "Only extracurricular activities",
+                                          "Exclusively online engagement"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_085",
+                          "text":  "Service learning is almost always tied to:",
+                          "explanation":  "Service learning is almost always tied to a credit-bearing course, unlike volunteering.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A volunteer program only",
+                                          "A credit-bearing course",
+                                          "A government policy",
+                                          "A non-profit organization"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_086",
+                          "text":  "Service learning always includes:",
+                          "explanation":  "Service learning always includes critical reflection, which is one of the key differences from volunteerism.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Optional reflection",
+                                          "Critical reflection",
+                                          "Competitive grading only",
+                                          "Physical construction projects only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_087",
+                          "text":  "Volunteerism does NOT involve:",
+                          "explanation":  "Volunteerism does not involve a connection to a specific course and is designed for the benefit of recipients and community, without academic credit.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Community benefit",
+                                          "Student participation",
+                                          "A connection to a specific course for academic credit",
+                                          "Community service"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_088",
+                          "text":  "Service learning meets which three sets of needs simultaneously?",
+                          "explanation":  "Service learning meets community needs, university needs and student learning needs simultaneously.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Government, corporate and academic needs",
+                                          "Community needs, university needs and student learning needs",
+                                          "Only student learning needs",
+                                          "Only community needs"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_089",
+                          "text":  "The Philanthropic Model of service learning is:",
+                          "explanation":  "The Philanthropic Model is based on the perceived need for charity and philanthropy. It claims neutrality regarding social issues and argues for altruism and compensatory justice.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Based on democracy and equal participation",
+                                          "Based on the perceived need for charity and philanthropy, claiming neutrality regarding social issues",
+                                          "Based on communal human interaction",
+                                          "Based on competitive market principles"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_090",
+                          "text":  "The Philanthropic Model is best applied in situations where:",
+                          "explanation":  "Philanthropic Model is a tool of mitigation or immediate relief, best applied in cases and situations where other models of service learning have not yet been employed or considered.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "All other models have been tried and failed",
+                                          "Other models of service learning have not yet been employed or considered",
+                                          "The community is wealthy",
+                                          "Students are in their final year"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_091",
+                          "text":  "The Civic Engagement Model is based on the premise that:",
+                          "explanation":  "The Civic Engagement Model is based on the premise that democracy demands equal participation and voice of all citizens.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Humans are social beings who prioritize community",
+                                          "Democracy demands equal participation and voice of all citizens",
+                                          "Charity and philanthropy are the foundation of service",
+                                          "Individual egotism is the basis of social interaction"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_092",
+                          "text":  "The Communitarian Model assumes that:",
+                          "explanation":  "The Communitarian Model assumes that humans are social beings, not self-interested individual egotists. Service learning is central to developing a sense of human community at the local level.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Humans are self-interested individuals focused on liberty and property",
+                                          "Humans are social beings, not self-interested egotists, and service learning develops sense of community",
+                                          "Democracy is the only basis for civic action",
+                                          "Service learning should only benefit individuals"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_093",
+                          "text":  "The Civic Engagement Model renews the focus of higher education on:",
+                          "explanation":  "Civic engagement model renews and alters the focus of higher education institutions on service as the focal point of their mission of teaching, research, and professional service.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Revenue generation",
+                                          "Service as the focal point of their mission of teaching, research and professional service",
+                                          "Competitive academic rankings",
+                                          "International education partnerships only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_094",
+                          "text":  "The reflection process in service learning takes place:",
+                          "explanation":  "The reflection process in service learning takes place before, during and after projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only after the service project",
+                                          "Only before the service project",
+                                          "Before, during and after projects",
+                                          "Only during the service project"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_095",
+                          "text":  "Pre-service (before) reflection includes:",
+                          "explanation":  "Pre-service reflection includes: identifying a project, increasing awareness of important community issues, planning/preparation and imagining potential problems and possible solutions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Evaluating accomplishments",
+                                          "Identifying a project, increasing awareness of community issues, planning and imagining potential problems",
+                                          "Writing final reports",
+                                          "Only observation of the community"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_096",
+                          "text":  "During service, observation in reflection involves:",
+                          "explanation":  "During service, observation involves guidance to describe the projects in their social context, personal reaction, etc.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only writing academic papers",
+                                          "Guidance to describe the project in its social context, including personal reaction",
+                                          "Only analyzing academic theories",
+                                          "Setting up advisory boards"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_097",
+                          "text":  "Post-service reflection helps students to:",
+                          "explanation":  "Post-service reflection helps to further analyze current situations, assess accomplishments, promote increased sense of self-awareness, and evaluate the accomplishment of learning goals.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Identify new service projects only",
+                                          "Further analyze situations, assess accomplishments, promote self-awareness and evaluate learning",
+                                          "Avoid community engagement",
+                                          "Replace academic coursework"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_098",
+                          "text":  "Reflection is described as \u0027the glue that holds service and learning together to provide\u0027:",
+                          "explanation":  "Reflection is the glue that holds service and learning together to provide optimal educative experiences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial benefits",
+                                          "Optimal educative experiences",
+                                          "Community infrastructure",
+                                          "Academic grades"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_099",
+                          "text":  "Reflection in service learning leads to students\u0027:",
+                          "explanation":  "Reflection leads to students\u0027 new ideas and is crucial for integrating service experience with course material, enhancing critical understanding.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Disengagement from the community",
+                                          "New ideas and enhanced critical understanding of course topics",
+                                          "Reduced academic performance",
+                                          "Avoidance of social issues"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_100",
+                          "text":  "Successful reflection must be \u0027Continuous\u0027, meaning it:",
+                          "explanation":  "Reflection must be Continuous — it must take place before, during and after the completion of the service project to be fully useful.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only occurs once after the project",
+                                          "Must take place before, during and after the completion of the service project",
+                                          "Occurs only in written form",
+                                          "Is optional for some students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_101",
+                          "text":  "Successful reflection must be \u0027Challenging\u0027, meaning it:",
+                          "explanation":  "Challenging reflection involves pushing ourselves out of our comfort zones to make new connections between concepts and to think in new ways.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Must be easy and comfortable for students",
+                                          "Involves pushing ourselves out of comfort zones to make new connections between concepts and think in new ways",
+                                          "Should avoid difficult questions",
+                                          "Only focuses on positive experiences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_102",
+                          "text":  "Successful reflection must be \u0027Contextualized\u0027, meaning it is:",
+                          "explanation":  "Contextualized reflection is framed in a manner that is appropriate for the context in which the service experience takes place.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Generalized for all situations equally",
+                                          "Framed in a manner appropriate for the context in which the service experience takes place",
+                                          "Only based on academic theories",
+                                          "The same regardless of the service environment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_103",
+                          "text":  "Successful reflection can serve as a bridge between:",
+                          "explanation":  "Successful reflection can serve as a bridge between the service connected experience and our discipline-based academic knowledge.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Two competing community groups",
+                                          "The service-connected experience and discipline-based academic knowledge",
+                                          "Faculty and administration",
+                                          "Students and their families"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_104",
+                          "text":  "Which of the following is a best tip for successful reflection experience?",
+                          "explanation":  "Best tips for successful reflection include: be attentive to and mindful of the present moment.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Focus only on positive emotions",
+                                          "Be attentive to and mindful of the present moment",
+                                          "Avoid emotional responses",
+                                          "Only use textbook knowledge"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_105",
+                          "text":  "When reflecting, you should:",
+                          "explanation":  "A best tip for reflection is to use the lens of your past experiences to make links to the present.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only use your current experience",
+                                          "Use the lens of your past experiences to make links to the present",
+                                          "Avoid emotional engagement",
+                                          "Focus only on academic theory"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_106",
+                          "text":  "Service learning projects can be funded through which of the following?",
+                          "explanation":  "Service learning projects can be funded through students\u0027 contributions, grants from individual community members, donations from NGOs, foundations and contributions from community partners.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only government grants",
+                                          "Students\u0027 contributions, grants, donations from NGOs, foundations and community partners",
+                                          "Only institutional endowments",
+                                          "Only student fees"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_107",
+                          "text":  "Funds raised for service learning projects should be:",
+                          "explanation":  "Funds raised for every project should be used for the identified project and properly accounted for at the end of the project.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Used for any purpose the students choose",
+                                          "Used for the identified project and properly accounted for at the end of the project",
+                                          "Deposited in a bank account indefinitely",
+                                          "Divided equally among participating students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_108",
+                          "text":  "All service learning projects should be executed within:",
+                          "explanation":  "All projects identified and initiated should be executed within stipulated timelines and reports written and copied to all stakeholders and partners.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "An unlimited time frame",
+                                          "Stipulated timelines with reports written and copied to all stakeholders and partners",
+                                          "Only the academic semester",
+                                          "A period of exactly one year"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_109",
+                          "text":  "Evaluation of service learning projects should be done to:",
+                          "explanation":  "Evaluation of all projects should be done to update progress and identify any need for adjustments.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Eliminate unsuccessful projects permanently",
+                                          "Update progress and identify any need for adjustments",
+                                          "Replace project supervisors",
+                                          "Rank students competitively"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_110",
+                          "text":  "Service learning presents which type of experience for students and lecturers?",
+                          "explanation":  "Service learning presents unique and enriched learning and personal growth experiences for students and lecturers while strengthening communities by addressing unmet community needs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Standard classroom experiences only",
+                                          "Unique and enriched learning and personal growth experiences while strengthening communities",
+                                          "Only online learning experiences",
+                                          "Purely theoretical experiences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_111",
+                          "text":  "Service learning is described as a dynamic process through which students\u0027:",
+                          "explanation":  "Service learning is a dynamic process through which students\u0027 personal and social growth is tightly interwoven into their academic and cognitive development.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Academic knowledge alone is developed",
+                                          "Personal and social growth is tightly interwoven with their academic and cognitive development",
+                                          "Financial skills are primarily developed",
+                                          "Athletic abilities are enhanced"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_112",
+                          "text":  "Service learning draws on multiple knowledge sources which include:",
+                          "explanation":  "Service learning as a teaching method draws on multiple knowledge sources: academic, students\u0027 knowledge and experience, and community knowledge.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only textbook knowledge",
+                                          "Academic knowledge, students\u0027 knowledge and experience, and community knowledge",
+                                          "Only professional expert knowledge",
+                                          "Only government research"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_113",
+                          "text":  "Service learning is more likely to be personally meaningful because:",
+                          "explanation":  "Service learning promotes deeper learning because the results are immediate and uncontrived, making it more likely to be personally meaningful and generate emotional consequence, challenging values and ideas.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "It offers financial rewards",
+                                          "The results are immediate and uncontrived, generating emotional consequences and challenging values",
+                                          "It is easy and requires no effort",
+                                          "It provides guaranteed employment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_114",
+                          "text":  "Service learning seeks to disseminate models of service learning excellence to:",
+                          "explanation":  "One goal is to disseminate models of service learning excellence to stakeholders within and beyond the institution\u0027s community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only competing institutions",
+                                          "Stakeholders within and beyond the institution\u0027s community",
+                                          "Only government agencies",
+                                          "Only international organizations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_115",
+                          "text":  "Service learning provides diverse and practical experiences in:",
+                          "explanation":  "Service learning provides diverse and practical experiences in real world situations.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only laboratory settings",
+                                          "Real world situations",
+                                          "Only online environments",
+                                          "Only theoretical frameworks"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_116",
+                          "text":  "Service learning raises awareness of:",
+                          "explanation":  "Service learning raises awareness of social justice issues among students.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only institutional policies",
+                                          "Social justice issues",
+                                          "Only academic achievements",
+                                          "Only sports activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_117",
+                          "text":  "Service learning connects community with curriculum and makes faculty more aware of:",
+                          "explanation":  "Service learning connects the community with curriculum and makes faculty more aware of current social issues as they relate to academic areas of interest.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Student performance statistics",
+                                          "Current social issues as they relate to academic areas of interest",
+                                          "Only departmental budgets",
+                                          "Only administrative matters"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_118",
+                          "text":  "Service learning provides the community with short and long term solutions to:",
+                          "explanation":  "Service learning provides short and long term solutions to pressing community needs and problems.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only economic problems",
+                                          "Pressing community needs and problems",
+                                          "Only political issues",
+                                          "Only infrastructure deficits"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_119",
+                          "text":  "Students\u0027 Discussion as a component of service learning includes:",
+                          "explanation":  "Students\u0027 Discussion involves the opportunity to discuss their learning experiences in class discussion and includes the use of social networks.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only formal examinations",
+                                          "Discussion of learning experiences in class and the use of social networks",
+                                          "Only written assignments",
+                                          "Only individual reflection"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_120",
+                          "text":  "Tutoring and working with the elderly are examples of which type of service learning?",
+                          "explanation":  "Tutoring, work with the elderly, oral histories, and peer mediation are examples of Direct Service Learning — direct person-to-person, face-to-face projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Indirect Service Learning",
+                                          "Advocacy Service Learning",
+                                          "Direct Service Learning",
+                                          "Research Service Learning"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_121",
+                          "text":  "Water testing and energy surveys are examples of which type of service learning?",
+                          "explanation":  "Water testing, energy surveys, and studies on public buildings are examples of Research Service Learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Direct Service Learning",
+                                          "Indirect Service Learning",
+                                          "Advocacy Service Learning",
+                                          "Research Service Learning"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "slc399_122",
+                          "text":  "The academic purpose of pure service learning courses is to:",
+                          "explanation":  "The academic purpose of pure service learning courses is to prepare students for active and informed civic participation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Prepare students for professional careers only",
+                                          "Prepare students for active and informed civic participation",
+                                          "Replace discipline-based education",
+                                          "Prepare students for graduate school"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_123",
+                          "text":  "In PBSL, the final product delivered to the community represents:",
+                          "explanation":  "In PBSL, students develop a solution for the community need in the form of a final product to deliver to the community partner.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A fundraising report",
+                                          "A solution developed by student consultants for a specific community need",
+                                          "An academic dissertation",
+                                          "A government policy document"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_124",
+                          "text":  "Capstone courses help students make the transition from:",
+                          "explanation":  "Capstone courses offer an excellent way to help students make the transition from the world of theory to the world of practice by helping them establish professional contacts and gather personal experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "High school to university",
+                                          "Theory to practice by establishing professional contacts and gathering personal experience",
+                                          "University to graduate school",
+                                          "Study to retirement"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_125",
+                          "text":  "A local advisory board in community partnership is set up to:",
+                          "explanation":  "The local advisory board is set up to negotiate and agree upon desired outcomes for stakeholders, and to negotiate and agree upon the expectations of all stakeholders.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Manage the institution\u0027s finances",
+                                          "Negotiate and agree upon desired outcomes and expectations of stakeholders",
+                                          "Replace the institution\u0027s management",
+                                          "Conduct academic examinations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_126",
+                          "text":  "Periodic redesigning of relationships in community partnerships is based on:",
+                          "explanation":  "Partnerships should be periodically redesigned based on changing needs and circumstances.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Fixed annual schedules",
+                                          "Changing needs and circumstances",
+                                          "Government directives only",
+                                          "Student preferences only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_127",
+                          "text":  "Action projects in service learning aim to raise awareness and:",
+                          "explanation":  "Action projects engage in addressing important social and community issues and attempt to raise awareness and seek to inspire action.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Create competition between students",
+                                          "Seek to inspire action on important social and community issues",
+                                          "Replace government programs",
+                                          "Only generate academic publications"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_128",
+                          "text":  "Analysis during service in reflection involves:",
+                          "explanation":  "Analysis (during service) involves going beyond description and applying academic knowledge and course concepts as a means to better understand the service experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only describing what was observed",
+                                          "Going beyond description and applying academic knowledge and course concepts to better understand the service experience",
+                                          "Only identifying future projects",
+                                          "Only emotional expression"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_129",
+                          "text":  "Reflection is an essential process for:",
+                          "explanation":  "Reflection is an essential process for transforming experience gained from the service activities and the course materials into genuine learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only completing academic assignments",
+                                          "Transforming experience gained from service activities and course materials into genuine learning",
+                                          "Replacing academic examination",
+                                          "Only evaluating community agencies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_130",
+                          "text":  "A student who signs up to help build toilets for a primary school through a development association without academic course connection is engaged in:",
+                          "explanation":  "A student who volunteers with no faculty involvement or connection to a specific course is engaged in volunteerism, not service learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Service learning",
+                                          "Volunteerism",
+                                          "A capstone project",
+                                          "An internship"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_131",
+                          "text":  "Service learning is explicitly tied to:",
+                          "explanation":  "Service learning is explicitly tied to the learning objectives and academic content of a course.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Voluntary activities only",
+                                          "The learning objectives and academic content of a course",
+                                          "Government community service mandates",
+                                          "Only physical construction projects"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_132",
+                          "text":  "In service learning, students receive more than in a typical classroom situation because they:",
+                          "explanation":  "Students receive more from service learning experience than in a typical classroom because they are able to work with others, enhance communication skills and see working professionals.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Study more textbooks",
+                                          "Are able to work with others, enhance communication skills and see working professionals",
+                                          "Take more examinations",
+                                          "Attend more lectures"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_133",
+                          "text":  "The service learning process where \u0027experience enhances understanding and understanding leads to more effective action\u0027 is capable of effecting changes in:",
+                          "explanation":  "Service learning is capable of effecting social, economic, cultural, political, ethical education and positive developmental changes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only economic areas",
+                                          "Social, economic, cultural, political, ethical and positive developmental areas",
+                                          "Only political areas",
+                                          "Only educational institutions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_134",
+                          "text":  "Service learning is NOT an add-on to:",
+                          "explanation":  "Service learning is not an add-on to existing institutional curriculum — it integrates meaningfully with it.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Community service activities",
+                                          "Existing institutional curriculum",
+                                          "Student volunteer programs",
+                                          "Academic research"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_135",
+                          "text":  "Service learning seeks to provide support for faculty interested in:",
+                          "explanation":  "One goal is to provide support for faculty interested in integrating service learning into teaching, research, service and extension.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reducing their teaching workload",
+                                          "Integrating service learning into teaching, research, service and extension",
+                                          "Avoiding community engagement",
+                                          "Limiting student participation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_136",
+                          "text":  "Community-based action research requires students to work closely with faculty members and a community partner to:",
+                          "explanation":  "Community-based action research requires students to work closely with faculty members and a community partner to design a research project that addresses a specific community need.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Write academic papers only",
+                                          "Design a research project that addresses a specific community need",
+                                          "Manage institutional finances",
+                                          "Conduct sports activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_137",
+                          "text":  "Youth Voice is also about:",
+                          "explanation":  "Youth Voice is also about respecting the different perspectives and ideas of young people and adults working together.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Adults making all decisions for youth",
+                                          "Respecting the different perspectives and ideas of young people and adults working together",
+                                          "Young people working independently of adults",
+                                          "Only formal presentations by youth"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_138",
+                          "text":  "Youth Voice enhances the commitment of adults to the organization and increases their:",
+                          "explanation":  "Youth Voice enhances adults\u0027 commitment to the organization and increases their effectiveness and competency while working with youth.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial gains",
+                                          "Effectiveness and competency while working with youth",
+                                          "Authority over youth",
+                                          "Academic qualifications"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_139",
+                          "text":  "Service learning philosophies encourage faculty and students to pursue SL as:",
+                          "explanation":  "The notes encourage faculty and students to pursue SL as social and political activism, and as advocacy and transformational models and practices.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A passive learning exercise",
+                                          "Social and political activism, advocacy and transformational models and practices",
+                                          "A replacement for traditional examinations",
+                                          "Only a fundraising activity"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_140",
+                          "text":  "During reflection, one should \u0027go beyond your self and your personal perspective\u0027 because:",
+                          "explanation":  "Going beyond \u0027your self and your personal perspective\u0027 is a best tip for successful reflection — requiring broader awareness and perspective.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Personal perspectives are always wrong",
+                                          "Effective reflection requires broader awareness beyond one\u0027s own viewpoint",
+                                          "Only community perspectives matter",
+                                          "Personal experience is irrelevant in reflection"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_141",
+                          "text":  "In community-based action research, students serve as:",
+                          "explanation":  "In community-based action research, students work closely with faculty members to learn research methodology while serving as advocates for communities.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Passive observers",
+                                          "Advocates for communities while learning research methodology",
+                                          "Only data collectors",
+                                          "Financial managers"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_142",
+                          "text":  "Service learning enhances which type of skills?",
+                          "explanation":  "Service learning enhances analytical skills and social development.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only physical skills",
+                                          "Analytical skills and social development",
+                                          "Only financial skills",
+                                          "Only linguistic skills"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_143",
+                          "text":  "Service learning provides opportunity that accommodates:",
+                          "explanation":  "Service learning provides opportunity that accommodates different learning styles.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only one learning style (visual)",
+                                          "Different learning styles",
+                                          "Only auditory learners",
+                                          "Only kinesthetic learners"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_144",
+                          "text":  "Service learning provides faculty a new perspective in learning and:",
+                          "explanation":  "Service learning provides faculty a new perspective in learning and an increased understanding of how learning occurs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reduces their workload",
+                                          "An increased understanding of how learning occurs",
+                                          "Eliminates the need for preparation",
+                                          "Replaces traditional lectures"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_145",
+                          "text":  "Service learning helps faculty identify areas of:",
+                          "explanation":  "Service learning helps faculty identify areas of research and publication related to current trends and issues.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only student weaknesses",
+                                          "Research and publication related to current trends and issues",
+                                          "Budget cuts",
+                                          "Administrative procedures"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_146",
+                          "text":  "Service learning provides the community with positive relationship opportunities with:",
+                          "explanation":  "Service learning provides communities with positive relationship opportunities with the institution.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Government only",
+                                          "The institution",
+                                          "International organizations only",
+                                          "Competing communities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_147",
+                          "text":  "Service learning increases opportunities to extend the institution\u0027s:",
+                          "explanation":  "Service learning increases opportunities to extend the institution\u0027s knowledge and resources to the community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Administrative authority",
+                                          "Knowledge and resources to the community",
+                                          "Academic fees",
+                                          "Number of departments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_148",
+                          "text":  "Curricular connections in service learning ensure that:",
+                          "explanation":  "Curricular connections mean a key to successful service learning — academic ties should be clear and built upon existing disciplinary and social skills.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Service has no connection to academics",
+                                          "Academic ties to the service project are clear and built upon existing disciplinary and social skills",
+                                          "Students can choose any service activity without academic link",
+                                          "Community decides the academic curriculum"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_149",
+                          "text":  "Effective community partnership between stakeholders is vital to service learning. These stakeholders include:",
+                          "explanation":  "Effective community partnership between all stakeholders — agencies, universities, business, government and residents — is of vital benefit to service learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only universities and students",
+                                          "Agencies, universities, business, government and residents",
+                                          "Only faculty and students",
+                                          "Only NGOs and government"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_150",
+                          "text":  "Reflection in service learning enhances students\u0027 ability to assess their own:",
+                          "explanation":  "Reflection is crucial for integrating service experience with course material and enhances students\u0027 critical understanding and ability to assess their own values, goals and progress.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Academic grades only",
+                                          "Values, goals and progress",
+                                          "Physical fitness",
+                                          "Financial resources"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_151",
+                          "text":  "Service learning works best when it fits:",
+                          "explanation":  "Service learning works best when it fits the ages and developmental abilities of participants, includes interesting and engaging service activities, explores the context of societal issues, and addresses needs important to the community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only institutional requirements",
+                                          "The ages and developmental abilities of participants, with engaging service activities and community relevance",
+                                          "Only government policies",
+                                          "Only the curriculum without community input"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_152",
+                          "text":  "Service learning is a teaching method that engages students in active participation in integrated curriculum of:",
+                          "explanation":  "Service learning engages students in active participation in integrated curriculum of learning and service that meet the needs of the community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only academic study",
+                                          "Learning and service that meet the needs of the community",
+                                          "Competition and individual achievement",
+                                          "Research and publication only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_153",
+                          "text":  "Service learning students leadership partnership with community-based organizations helps:",
+                          "explanation":  "Service learning students\u0027 leadership partnership with community-based organizations helps to provide a model of service and engagement where personal experience is shared and relationships are established.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "To limit community interaction",
+                                          "To provide a model of service and engagement where personal experience is shared and relationships are established",
+                                          "To eliminate faculty involvement",
+                                          "To create competition between students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_154",
+                          "text":  "Civic engagement action projects are collaborative, meaning they require:",
+                          "explanation":  "Action projects are collaborative, requiring group process, action and interaction for successful implementation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Individual effort only",
+                                          "Group process, action and interaction for successful implementation",
+                                          "Only faculty involvement",
+                                          "Only community involvement without students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_155",
+                          "text":  "The most significant difference between service-learning and volunteerism is that service-learning:",
+                          "explanation":  "The significant differences are that service learning is tied to a credit-bearing course, explicitly tied to learning objectives, meets community and university needs, and always includes critical reflection.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Does not involve community benefit",
+                                          "Is tied to a credit-bearing course, is explicitly tied to learning objectives and always includes critical reflection",
+                                          "Only benefits the institution financially",
+                                          "Requires no structured reflection"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_156",
+                          "text":  "The Communitarian Model applies the notion of the \u0027golden rule\u0027 at the societal level, characterizing the good society as:",
+                          "explanation":  "The Communitarian Model applies the notion of the golden rule at the societal level to characterize the good society as one that nourishes both social virtues and individual rights.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One that prioritizes individual rights over social virtues",
+                                          "One that nourishes both social virtues and individual rights",
+                                          "One that focuses only on charity",
+                                          "One that restricts civic participation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_157",
+                          "text":  "Service learning is NOT one-sided, meaning it benefits:",
+                          "explanation":  "Service learning is not one-sided affairs benefiting either the student or the community only — it benefits both sides.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only the student",
+                                          "Only the community",
+                                          "Both the student and the community",
+                                          "Only the institution"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_158",
+                          "text":  "Food or clothing drives are examples of which type of service learning?",
+                          "explanation":  "Food or clothing drives benefit the community as opposed to specific individuals — this is Indirect Service Learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Direct Service Learning",
+                                          "Indirect Service Learning",
+                                          "Research Service Learning",
+                                          "Advocacy Service Learning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_159",
+                          "text":  "Students in service learning are asked to:",
+                          "explanation":  "Students of service learning are asked to observe, reflect and discuss their experiences with their course mates and at their community partner site.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only complete examinations",
+                                          "Observe, reflect and discuss their experiences with course mates and at their community partner site",
+                                          "Avoid community interactions",
+                                          "Only listen to faculty instructions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_160",
+                          "text":  "Which of the following is a valid source of funding for service learning projects?",
+                          "explanation":  "Foundations and contributions from institution\u0027s service learning units are valid sources of funding for service learning projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only student fees",
+                                          "Foundations and contributions from the institution\u0027s service learning unit",
+                                          "Only government grants",
+                                          "Only international donors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_161",
+                          "text":  "Service learning gives students the opportunity to see:",
+                          "explanation":  "Service learning gives students the opportunity to see working professionals during their service-learning experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only academic facilities",
+                                          "Working professionals during their service-learning experience",
+                                          "Only theoretical concepts",
+                                          "Only administrative procedures"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_162",
+                          "text":  "Service learning provides \u0027experience that enhances understanding, which leads to\u0027:",
+                          "explanation":  "Service learning provides \u0027experience that enhances understanding, which leads to more effective action.\u0027",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reduced academic engagement",
+                                          "More effective action",
+                                          "Avoidance of community issues",
+                                          "Only theoretical knowledge"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_163",
+                          "text":  "Service learning invites students to engage their intelligence and imagination while learning:",
+                          "explanation":  "Service learning invites students to further engage their intelligence and imagination while learning from and in partnership with the larger community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only from textbooks",
+                                          "From and in partnership with the larger community",
+                                          "From competing institutions",
+                                          "From only academic faculty"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_164",
+                          "text":  "Identifying the needs of mutual concern in community partnership involves:",
+                          "explanation":  "Identifying needs of mutual concern involves a need statement of the community with all stakeholders as well as planning and implementation process of the project execution.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only the university making decisions",
+                                          "A need statement of the community with all stakeholders as well as planning and implementation of project execution",
+                                          "Only NGO involvement",
+                                          "Individual student assessments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_165",
+                          "text":  "Service internships are further distinguished from traditional internships by their focus on:",
+                          "explanation":  "Service internships are distinguished from traditional internships by their focus on reciprocity: the idea that the community and the student benefit equally from the experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Higher academic grades",
+                                          "Reciprocity — the idea that community and student benefit equally",
+                                          "Only financial compensation",
+                                          "Only skill acquisition for the student"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_166",
+                          "text":  "During reflection, one must \u0027recognize the tension between\u0027:",
+                          "explanation":  "A tip for reflection is to recognize the tension between being attached and involved and then stepping back to gain a detached perspective of the situation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Different academic disciplines",
+                                          "Being attached and involved and then stepping back to gain a detached perspective",
+                                          "Students and faculty",
+                                          "Community and institution"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_167",
+                          "text":  "All models of Youth Voice incorporate some form of:",
+                          "explanation":  "All models of youth voice incorporate some form of youth/adult partnership — adults and young people working together, sharing power and learning from each other.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Adult authority over youth",
+                                          "Youth/adult partnership where adults and young people work together, share power and learn from each other",
+                                          "Youth working independently of adults",
+                                          "Government regulation of youth activities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_168",
+                          "text":  "Youth Voice provides greater development of skills including:",
+                          "explanation":  "Youth Voice provides greater development of skills including leadership, public speaking, dependability and job responsibility.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only academic writing",
+                                          "Leadership, public speaking, dependability and job responsibility",
+                                          "Only physical and athletic abilities",
+                                          "Only financial management"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_169",
+                          "text":  "Post-service reflection helps students review the lessons of service with a:",
+                          "explanation":  "Post-service reflection helps to review the lessons of the service with a \u0027bird\u0027s eye view\u0027 perspective.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Microscopic view",
+                                          "\u0027Bird\u0027s eye view\u0027 perspective",
+                                          "Tunnel vision perspective",
+                                          "Competitor\u0027s view"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_170",
+                          "text":  "Service learning projects reports should be:",
+                          "explanation":  "Reports from service learning projects should be written and copied to all stakeholders and partners.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Kept confidential by the institution",
+                                          "Written and copied to all stakeholders and partners",
+                                          "Only submitted to the academic department",
+                                          "Only kept by the students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_171",
+                          "text":  "The definition provided by AAHE includes that service learning must include \u0027structured time for students to\u0027:",
+                          "explanation":  "The AAHE definition includes that service learning must include structured time for students to reflect on the service experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Rest and relax",
+                                          "Reflect on the service experience",
+                                          "Compete with peers",
+                                          "Only study academic content"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_172",
+                          "text":  "Service learning requires participants to gain knowledge of:",
+                          "explanation":  "Service learning requires participants to gain knowledge of the specific context of their service-learning activity and community challenges, rather than only drawing upon generalized or abstract knowledge.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only abstract theories from textbooks",
+                                          "The specific context of their service-learning activity and community challenges",
+                                          "Only international best practices",
+                                          "Only institutional policies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_173",
+                          "text":  "Discipline-based service learning courses are found in:",
+                          "explanation":  "Discipline-based service learning courses are found in both major/minor and foundational studies courses.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only foundational studies",
+                                          "Both major/minor and foundational studies courses",
+                                          "Only major/minor courses",
+                                          "Only elective courses"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_174",
+                          "text":  "Community partnership through service learning provides students and youth with:",
+                          "explanation":  "Community partnership through service learning provides students and youth with increased confidence in their ability, showing the community that young people can make valuable contributions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial rewards",
+                                          "Increased confidence in their ability to make valuable contributions",
+                                          "Academic exemptions",
+                                          "Government employment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_175",
+                          "text":  "In the Civic Engagement Model, faculty and students serve as:",
+                          "explanation":  "In the Civic Engagement Model, faculty and students serve as agents of social change consistent with democratic principles.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Passive community observers",
+                                          "Agents of social change consistent with democratic principles",
+                                          "Government representatives",
+                                          "Only academic instructors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_176",
+                          "text":  "Research in Service Learning shows that the following types of plans are useful. Which one is NOT a recognized type?",
+                          "explanation":  "The four recognized types are Direct, Indirect, Advocacy and Research Service Learning. Competitive Service Learning is not a recognized type.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Direct Service Learning",
+                                          "Indirect Service Learning",
+                                          "Competitive Service Learning",
+                                          "Advocacy Service Learning"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_177",
+                          "text":  "Service learning provides students with unique opportunities to get involved with their communities in:",
+                          "explanation":  "Service learning gives young people unique opportunity to get involved with their communities in a tangible way by integrating service projects with classroom learning.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Abstract theoretical ways",
+                                          "A tangible way by integrating service projects with classroom learning",
+                                          "Only virtual/online ways",
+                                          "Only competitive academic ways"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_178",
+                          "text":  "Service learning supports which type of learning development?",
+                          "explanation":  "Service learning supports social, emotional and cognitive learning development.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only cognitive development",
+                                          "Social, emotional and cognitive learning development",
+                                          "Only physical development",
+                                          "Only academic development"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_179",
+                          "text":  "The process through which \u0027knowledge is created through the transformation of experience\u0027 in service learning is:",
+                          "explanation":  "Reflection is the process whereby knowledge is created through the transformation of experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Assessment",
+                                          "Reflection",
+                                          "Grading",
+                                          "Lecturing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_180",
+                          "text":  "Action projects in civic engagement are aimed at educating people about social and community issues in collaboration with:",
+                          "explanation":  "Action projects are aimed at educating people about social and community issues in collaborating with other institutions or community organizations.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only competing institutions",
+                                          "Other institutions or community organizations",
+                                          "Only government agencies",
+                                          "Only international bodies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_181",
+                          "text":  "A student who works with a community while simultaneously taking part in a class studying environmental techniques is engaged in:",
+                          "explanation":  "A student who works with a community while simultaneously taking part in a related academic class is engaged in a service learning project.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Volunteerism only",
+                                          "Service learning",
+                                          "An independent study",
+                                          "A punitive community service"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_182",
+                          "text":  "Service learning increases students\u0027 sense of:",
+                          "explanation":  "Service learning increases students\u0027 sense of self-efficacy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Self-pity",
+                                          "Self-efficacy",
+                                          "Complacency",
+                                          "Academic failure"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_183",
+                          "text":  "Community partners are key to identifying their:",
+                          "explanation":  "Community partners are key to identifying their real community needs and collaborating with others in meeting those needs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Academic needs only",
+                                          "Real community needs and collaborating with others in meeting those needs",
+                                          "Financial resources only",
+                                          "Political preferences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_184",
+                          "text":  "An important tip for reflection is to \u0027practice\u0027:",
+                          "explanation":  "Best tips for successful reflection include practicing acute observation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only reading academic articles",
+                                          "Acute observation",
+                                          "Competitive thinking",
+                                          "Passive listening"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_185",
+                          "text":  "Although service learning fosters civic responsibility, that is NOT the:",
+                          "explanation":  "Although service learning fosters civic responsibility, that is not the primary outcome of the experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Basis of all service projects",
+                                          "Primary outcome of the experience",
+                                          "Only benefit to students",
+                                          "Only goal of service learning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_186",
+                          "text":  "The monitoring and evaluation framework in community partnership is used to:",
+                          "explanation":  "The monitoring and evaluation framework is used to determine the best method for supervising and sustaining ongoing projects in the community.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Rank community agencies by performance",
+                                          "Determine the best method for supervising and sustainability of ongoing projects",
+                                          "Eliminate unsuccessful projects",
+                                          "Replace student involvement"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_187",
+                          "text":  "Service learning makes learning and entrepreneurship come alive by:",
+                          "explanation":  "It is common for students and lecturers to leave the classroom and get involved with their communities in order to make learning and entrepreneurship come alive.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Keeping students and lecturers in the classroom",
+                                          "Having students and lecturers leave the classroom and get involved with communities",
+                                          "Increasing examination frequency",
+                                          "Reducing community contact"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_188",
+                          "text":  "Service learning provides the community with opportunities for contributing to:",
+                          "explanation":  "Service learning provides the community with opportunities for contributing to the educational process.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only institutional research",
+                                          "The educational process",
+                                          "Only government policy",
+                                          "Only academic curriculum design"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_189",
+                          "text":  "The description \u0027Students serve as consultants for a community client\u0027 best describes which model?",
+                          "explanation":  "In Problem-Based Service Learning (PBSL), students relate to the community as \u0027consultants\u0027 working for a \u0027client.\u0027",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Pure Service Learning",
+                                          "Discipline-based Service Learning",
+                                          "Problem-based Service Learning (PBSL)",
+                                          "Capstone Courses"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "slc399_190",
+                          "text":  "All three characteristics of successful reflection share the letter \u0027C\u0027. These are:",
+                          "explanation":  "The three characteristics of successful reflection are: Continuous, Challenging and Contextualized.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Creative, Critical and Competitive",
+                                          "Continuous, Challenging and Contextualized",
+                                          "Consistent, Constructive and Clear",
+                                          "Comprehensive, Concrete and Cautious"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_191",
+                          "text":  "Service learning is described as \u0027becoming a practice combined with learning or learning while\u0027:",
+                          "explanation":  "Service learning \u0027becomes a practice combined with learning or learning while practicing.\u0027",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Studying",
+                                          "Practicing",
+                                          "Teaching",
+                                          "Testing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_192",
+                          "text":  "Youth Voice brings new ideas and energy to the organization and helps to clarify its:",
+                          "explanation":  "Youth Voice brings new ideas and energy to the organization and helps to clarify their mission, connection and responsiveness to projects.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial budget",
+                                          "Mission, connection and responsiveness to projects",
+                                          "Administrative structure",
+                                          "Academic curriculum"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_193",
+                          "text":  "Service learning student leadership both in the classroom and at community partner site facilitates:",
+                          "explanation":  "This process is facilitated by placing service learning students\u0027 leadership both in the classroom and at community partner site to connect concepts for success.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Academic competition",
+                                          "The process of supporting faculty and community partners in connecting concepts for successful service activities",
+                                          "Reducing community involvement",
+                                          "Eliminating student reflection"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_194",
+                          "text":  "Service learning as social and political activism represents an:",
+                          "explanation":  "Service learning philosophies and initiatives integrate the philanthropic, civic engagement and communitarian models and add emergent paradigms, including SL as social and political activism and advocacy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Optional add-on",
+                                          "Emergent paradigm added to the philanthropic, civic engagement and communitarian models",
+                                          "Replacement for all other models",
+                                          "Only a theoretical framework"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_195",
+                          "text":  "Service learning provides institutions access to wisdom and experience through:",
+                          "explanation":  "Service learning provides institutions access to wisdom and experience as co-lecturers — drawing on community expertise.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Online databases only",
+                                          "Co-lecturers from the community",
+                                          "International consultants only",
+                                          "Government archives"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_196",
+                          "text":  "Community partnership through service learning provides opportunity for people to:",
+                          "explanation":  "Community partnership provides opportunity for people to learn from each other, share resources which contribute to rebuilding healthy and caring communities.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Compete for resources",
+                                          "Learn from each other, share resources and contribute to rebuilding healthy and caring communities",
+                                          "Avoid interaction with other agencies",
+                                          "Only fulfill academic requirements"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_197",
+                          "text":  "Guides for effective service learning state that clear expectations should exist for:",
+                          "explanation":  "Clear expectations should exist for students, university, and the community at large regarding what work students will complete, how it connects to course objectives, and what agencies need from the university.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only students",
+                                          "Students, university and the community at large",
+                                          "Only faculty",
+                                          "Only community agencies"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_198",
+                          "text":  "Making conscious efforts to focus on the experience you are experiencing is a best tip for reflection that means being:",
+                          "explanation":  "Best tips for reflection include: make conscious efforts to focus on the experience you are experiencing — being mindful and present.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Distracted by past events",
+                                          "Mindful and present-focused",
+                                          "Only academically focused",
+                                          "Competitive with peers"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_199",
+                          "text":  "Service learning seeks to \u0027meet community identified needs\u0027 which means:",
+                          "explanation":  "One goal is to meet community identified needs — the community itself identifies its needs for activation of community partnerships.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The university decides what the community needs",
+                                          "The community itself identifies and communicates its needs for the partnership to address",
+                                          "Government determines community needs",
+                                          "Students choose what community service to do independently"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_200",
+                          "text":  "Service learning combines academic instruction with meaningful volunteerism in the larger community. It is described as:",
+                          "explanation":  "Service learning combines academic instruction with meaningful volunteerism in the larger community. It is international, community identified, reflective and celebratory.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Casual, individual and non-reflective",
+                                          "International, community identified, reflective and celebratory",
+                                          "Competitive, academic and isolated",
+                                          "Optional, informal and unstructured"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_201",
+                          "text":  "Service learning is NOT about logging a set of community service hours in order to:",
+                          "explanation":  "Service learning is not about logging a set of community service hours in order to graduate.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Serve the community",
+                                          "Graduate",
+                                          "Build leadership skills",
+                                          "Foster civic responsibility"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_202",
+                          "text":  "To prepare youth for decision-making roles, one must support, guide and communicate clearly about:",
+                          "explanation":  "You must support, guide and communicate clearly with youth, especially the expectations, roles and responsibilities the organization has for them.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial rewards available",
+                                          "The expectations, roles and responsibilities the organization has for them",
+                                          "Only their academic performance",
+                                          "Competition with other youth"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_203",
+                          "text":  "Service internships have reflective opportunities that can be done through:",
+                          "explanation":  "Service internship reflective opportunities can be done with small groups of peers, one-on-one meetings with faculty advisors, or even electronically with a faculty member providing feedback.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only written examinations",
+                                          "Small groups of peers, one-on-one meetings with faculty advisors, or electronically with faculty feedback",
+                                          "Only physical demonstrations",
+                                          "Only community presentations"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_204",
+                          "text":  "Service learning provides the community with affordable access to:",
+                          "explanation":  "Service learning provides the community with affordable access to professional development.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only free goods and services",
+                                          "Professional development",
+                                          "Only government contracts",
+                                          "Only agricultural resources"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_205",
+                          "text":  "In successful community partnership, both sides will:",
+                          "explanation":  "Where community partnership is successful, both sides will give to and benefit from the project.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Compete for resources",
+                                          "Give to and benefit from the project",
+                                          "Only receive benefits without contributing",
+                                          "Only contribute without receiving benefits"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_206",
+                          "text":  "Service learning may involve students traveling to far places to:",
+                          "explanation":  "Students and lecturers may travel to far places to \u0027serve\u0027 and \u0027learn\u0027 as part of the service learning experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Compete in academic contests",
+                                          "\u0027Serve\u0027 and \u0027learn\u0027",
+                                          "Attend international conferences only",
+                                          "Escape academic responsibilities"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_207",
+                          "text":  "Service learning provides students with \u0027ample opportunity for ethical and critical\u0027:",
+                          "explanation":  "Service learning provides students with ample opportunity for ethical and critical reflection and practice.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Competition",
+                                          "Reflection and practice",
+                                          "Examination",
+                                          "Employment"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_208",
+                          "text":  "Service learning guides students to implement their service learning projects at an off-site with:",
+                          "explanation":  "Community partnership helps to guide students to implement their service learning projects at an off-site with professionalism, creativity and appreciation of diversity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "No supervision or structure",
+                                          "Professionalism, creativity and appreciation of diversity",
+                                          "Only competitive mindset",
+                                          "Only financial focus"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_209",
+                          "text":  "During service reflection, \u0027Analysis\u0027 means going beyond description and applying academic knowledge as a means to:",
+                          "explanation":  "Analysis involves going beyond description and applying academic knowledge and course concepts as a means to better the service experience.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replace community service",
+                                          "Better the service experience",
+                                          "Avoid difficult community issues",
+                                          "Compete with other students"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "slc399_210",
+                          "text":  "Service learning, unlike volunteerism, helps the student contribute to the community and learn more about an academic area, for which the student receives:",
+                          "explanation":  "The service learning project is designed to help the student contribute to the community and learn more about a particular area of academic study, for which the student receives a portion of his or her course credit.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Financial payment",
+                                          "A portion of his or her course credit",
+                                          "A community award",
+                                          "Government recognition"
+                                      ],
+                          "correct_index":  1
+                      }
+                  ],
+    "course_id":  "slc399",
+    "course_name":  "Service Learning",
+    "version":  "1.0.0"
+}

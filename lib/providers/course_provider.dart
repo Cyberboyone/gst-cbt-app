@@ -96,6 +96,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#EAE2FA', // Lavender
       mode: '200_level',
     ),
+    Course(
+      id: 'slc399',
+      code: 'SLC 399',
+      name: 'Service Learning',
+      icon: '🤝',
+      colorHex: '#DCEEFF', // Sky
+      mode: '300_level',
+    ),
     
   ];
 
