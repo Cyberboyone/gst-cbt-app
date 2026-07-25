@@ -1,0 +1,1339 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "ssc301_000",
+                          "text":  "Innovation in social sciences refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Repeating traditional theories without change",
+                                          "Applying new methods and ideas to study society",
+                                          "Inventing new technologies for engineering",
+                                          "Focusing only on natural sciences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_001",
+                          "text":  "Which of the following is a methodological innovation in social sciences?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Designing new vaccines",
+                                          "Using AI to analyze social media data",
+                                          "Building faster microchips",
+                                          "Studying ancient texts without change"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_002",
+                          "text":  "Why is interdisciplinary collaboration important for innovation in social sciences?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "It eliminates the need for social theories",
+                                          "It allows integration of insights from multiple fields",
+                                          "It prevents the use of technology in research",
+                                          "It focuses only on economic growth"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_003",
+                          "text":  "Which concept highlights the role of innovation in addressing social problems?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Newton\u0027s laws of motion",
+                                          "Social entrepreneurship",
+                                          "Classical mechanics",
+                                          "Photosynthesis"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_004",
+                          "text":  "A key challenge in innovating within social sciences is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ignoring cultural diversity",
+                                          "Overreliance on laboratory experiments",
+                                          "Balancing ethical concerns with new methods",
+                                          "Lack of interest in human behavior"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ssc301_005",
+                          "text":  "The use of digital ethnography in research is an example of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Traditional theory application",
+                                          "Innovative methodological approach",
+                                          "Ignoring technology in social sciences",
+                                          "Purely economic analysis"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_006",
+                          "text":  "Social innovation often aims to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Increase profits only",
+                                          "Provide creative solutions to societal challenges",
+                                          "Replace natural sciences",
+                                          "Avoid interdisciplinary collaboration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_007",
+                          "text":  "One major benefit of innovation in social sciences is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Better understanding of complex social issues",
+                                          "Elimination of cultural diversity",
+                                          "Avoidance of ethical responsibility",
+                                          "Dependence on outdated theories"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_008",
+                          "text":  "Innovation in social sciences primarily refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Inventing new engineering technologies",
+                                          "Applying new ideas, strategies, and models to societal challenges",
+                                          "Repeating traditional theories without change",
+                                          "Focusing only on natural sciences"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_009",
+                          "text":  "Which of the following is NOT a benefit of innovation in social sciences?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Improving societal welfare",
+                                          "Addressing emerging challenges",
+                                          "Promoting sustainability",
+                                          "Ignoring cultural diversity"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "ssc301_010",
+                          "text":  "An example of community-centric innovation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Corporate social responsibility",
+                                          "Grassroots healthcare initiatives",
+                                          "Microchip development",
+                                          "Space exploration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_011",
+                          "text":  "Innovative ideas for societal problems must be:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Expensive and complex",
+                                          "Practical, scalable, and impactful",
+                                          "Limited to technology only",
+                                          "Focused only on economic growth"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_012",
+                          "text":  "Which of the following innovations addresses poverty reduction?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Microfinance initiatives",
+                                          "Space tourism",
+                                          "Genetic engineering",
+                                          "Nuclear energy"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_013",
+                          "text":  "Youth empowerment innovations include:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Vocational training and mentorship programs",
+                                          "Restricting access to education",
+                                          "Ignoring unemployment issues",
+                                          "Focusing only on elderly care"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_014",
+                          "text":  "A social enterprise differs from traditional businesses because it:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Focuses only on profit maximization",
+                                          "Prioritizes social impact while remaining financially sustainable",
+                                          "Avoids community engagement",
+                                          "Ignores environmental concerns"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_015",
+                          "text":  "Which of the following is NOT a funding source for social enterprises?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Grants and donations",
+                                          "Social impact investors",
+                                          "Crowdfunding",
+                                          "Ignoring financial planning"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "ssc301_016",
+                          "text":  "The purpose of a proposal in social sciences is to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Entertain stakeholders",
+                                          "Outline a plan to secure funding or support",
+                                          "Avoid clarity of purpose",
+                                          "Replace research entirely"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_017",
+                          "text":  "Which of the following is a common mistake in proposal writing?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Clear problem definition",
+                                          "Unrealistic budgets",
+                                          "Measurable outcomes",
+                                          "Sustainability planning"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_018",
+                          "text":  "Telemedicine services are an example of innovation in:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Affordable healthcare",
+                                          "Space exploration",
+                                          "Industrial engineering",
+                                          "Entertainment"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_019",
+                          "text":  "Conditional cash transfer programs are designed to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Provide income support linked to specific conditions",
+                                          "Promote luxury consumption",
+                                          "Reduce community participation",
+                                          "Ignore education and health outcomes"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_020",
+                          "text":  "Family Social Health Centres (FSHCs) provide:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only financial services",
+                                          "Integrated healthcare, education, and social services",
+                                          "Entertainment facilities",
+                                          "Political campaigns"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_021",
+                          "text":  "Community Gender Balancing Units (CGBUs) focus on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Promoting gender equality and women\u0027s empowerment",
+                                          "Ignoring cultural barriers",
+                                          "Limiting women\u0027s participation",
+                                          "Reducing community involvement"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_022",
+                          "text":  "Which of the following is an example of technology for social good?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Low-cost mobile phones for rural education",
+                                          "Luxury gadgets for elites",
+                                          "Space tourism apps",
+                                          "Video games only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_023",
+                          "text":  "Social scientists contribute to technology innovation by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ignoring human behavior",
+                                          "Understanding societal needs and ethical implications",
+                                          "Focusing only on profit",
+                                          "Avoiding interdisciplinary collaboration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_024",
+                          "text":  "Innovation in social sciences refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Applying new ideas and models to societal challenges",
+                                          "Repeating traditional theories",
+                                          "Inventing engineering technologies",
+                                          "Ignoring social structures"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_025",
+                          "text":  "The core aim of innovation in social sciences is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Profit maximization",
+                                          "Improving societal well-being",
+                                          "Avoiding change",
+                                          "Promoting inequality"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_026",
+                          "text":  "Which of the following is a public sector innovation?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Transparent governance structures",
+                                          "Luxury product design",
+                                          "Space tourism",
+                                          "Ignoring health crises"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_027",
+                          "text":  "Innovative ideas must be:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Practical, scalable, and impactful",
+                                          "Expensive and complex",
+                                          "Limited to technology only",
+                                          "Focused only on profit"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_028",
+                          "text":  "Microfinance institutions like Grameen Bank are examples of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Poverty reduction innovation",
+                                          "Entertainment innovation",
+                                          "Space exploration",
+                                          "Genetic engineering"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_029",
+                          "text":  "Solar-powered irrigation systems address:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Agricultural sustainability",
+                                          "Luxury farming",
+                                          "Urban housing",
+                                          "Political campaigns"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_030",
+                          "text":  "Digital platforms like Khan Academy promote:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Access to education",
+                                          "Space tourism",
+                                          "Fashion trends",
+                                          "Ignoring literacy"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_031",
+                          "text":  "Waste-to-energy projects contribute to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Environmental sustainability",
+                                          "Increased pollution",
+                                          "Ignoring recycling",
+                                          "Luxury consumption"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_032",
+                          "text":  "A social enterprise combines:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Social mission with business strategies",
+                                          "Profit maximization only",
+                                          "Ignoring communities",
+                                          "Entertainment goals"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_033",
+                          "text":  "Which of the following is a funding source for social enterprises?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Grants and donations",
+                                          "Ignoring financial planning",
+                                          "Restricting partnerships",
+                                          "Avoiding sustainability"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_034",
+                          "text":  "Crowdfunding platforms like Kickstarter support social enterprises by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Raising small amounts from many people",
+                                          "Limiting access to funds",
+                                          "Ignoring community support",
+                                          "Avoiding transparency"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_035",
+                          "text":  "Social impact investors provide:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Capital with both financial and social returns",
+                                          "Entertainment services",
+                                          "Ignoring sustainability",
+                                          "Restricting innovation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_036",
+                          "text":  "Effective resource management in social enterprises requires:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Transparency and accountability",
+                                          "Ignoring financial plans",
+                                          "Avoiding monitoring",
+                                          "Limiting partnerships"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_037",
+                          "text":  "A proposal is primarily used to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Secure funding or stakeholder support",
+                                          "Entertain readers",
+                                          "Avoid clarity of purpose",
+                                          "Replace research"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_038",
+                          "text":  "The executive summary of a proposal should:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Provide a brief overview of problem, solution, and outcomes",
+                                          "Ignore funding requests",
+                                          "Focus only on entertainment",
+                                          "Avoid clarity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_039",
+                          "text":  "SMART objectives in proposals are:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Specific, Measurable, Achievable, Relevant, Time-bound",
+                                          "Simple, Minimal, Avoidable, Random, Temporary",
+                                          "Ignoring outcomes",
+                                          "Focused only on profit"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_040",
+                          "text":  "A sustainability plan in proposals ensures:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Long-term impact beyond initial funding",
+                                          "Short-term entertainment",
+                                          "Ignoring communities",
+                                          "Avoiding partnerships"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_041",
+                          "text":  "A common mistake in proposal writing is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Unrealistic budgets",
+                                          "Clear problem definition",
+                                          "Measurable outcomes",
+                                          "Sustainability planning"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_042",
+                          "text":  "Telemedicine services are innovations in:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Affordable healthcare",
+                                          "Space exploration",
+                                          "Industrial engineering",
+                                          "Entertainment"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_043",
+                          "text":  "Mobile health clinics address:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Healthcare access in rural areas",
+                                          "Luxury consumption",
+                                          "Ignoring communities",
+                                          "Space tourism"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_044",
+                          "text":  "Conditional cash transfer programs provide:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Income support linked to specific conditions",
+                                          "Luxury goods",
+                                          "Ignoring education",
+                                          "Avoiding healthcare"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_045",
+                          "text":  "Family Social Health Centres (FSHCs) provide:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Integrated healthcare, education, and social services",
+                                          "Entertainment facilities",
+                                          "Political campaigns",
+                                          "Luxury goods"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_046",
+                          "text":  "Community Gender Balancing Units (CGBUs) focus on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Promoting gender equality",
+                                          "Ignoring cultural barriers",
+                                          "Limiting women\u0027s participation",
+                                          "Reducing community involvement"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_047",
+                          "text":  "Grassroots innovations are often:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Localized, low-cost, practical solutions",
+                                          "Luxury technologies",
+                                          "Ignoring communities",
+                                          "Focused only on elites"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_048",
+                          "text":  "Technology for social good includes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mobile apps for health services",
+                                          "Luxury gadgets",
+                                          "Space tourism apps",
+                                          "Video games only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_049",
+                          "text":  "Social scientists contribute to innovation by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Research, policy advocacy, and community engagement",
+                                          "Ignoring human behavior",
+                                          "Avoiding collaboration",
+                                          "Focusing only on profit"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_050",
+                          "text":  "A major challenge to innovation in social sciences is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Resistance to change",
+                                          "Ignoring ethics",
+                                          "Unlimited funding",
+                                          "Automatic scalability"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_051",
+                          "text":  "Scalability in social innovation refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Expanding programs to broader populations",
+                                          "Limiting impact",
+                                          "Ignoring sustainability",
+                                          "Avoiding communities"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_052",
+                          "text":  "Sustainability in innovation means:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Long-term impact considering social, environmental, and economic factors",
+                                          "Short-term profit only",
+                                          "Ignoring communities",
+                                          "Avoiding ethics"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_053",
+                          "text":  "Interdisciplinary collaboration in social innovation is important because:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "It integrates insights from multiple fields",
+                                          "It eliminates social theories",
+                                          "It prevents technology use",
+                                          "It focuses only on economics"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_054",
+                          "text":  "Which definition best matches \"social innovation\" as used in the course?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A new gadget that improves productivity",
+                                          "A novel solution to a social problem that creates value primarily for society",
+                                          "Any profit-driven startup in the tech sector",
+                                          "A government policy that increases taxes"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_055",
+                          "text":  "Which approach emphasizes community mobilization and behavioural change rather than only infrastructure provision?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Frugal innovation",
+                                          "Community-Led Total Sanitation (CLTS)",
+                                          "Social impact bonds",
+                                          "Positive deviance"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_056",
+                          "text":  "\"Frugal innovation\" (jugaad) primarily refers to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "High-cost, high-tech solutions",
+                                          "Affordable, good-enough solutions developed with minimal resources",
+                                          "Importing technologies from developed countries",
+                                          "Strict regulatory reforms"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_057",
+                          "text":  "Which example from the course illustrates mobile-enabled financial inclusion?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Wecyclers",
+                                          "M-Pesa",
+                                          "BudgIT",
+                                          "LifeBank"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_058",
+                          "text":  "Wecyclers\u0027 model in Lagos primarily combines:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "High-interest loans and microfinance",
+                                          "Cargo-bicycle waste collection with incentives for households",
+                                          "Government subsidies for plastic production",
+                                          "Export of raw plastic to foreign markets"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_059",
+                          "text":  "Positive deviance is best described as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Punishing non-conforming community members",
+                                          "Identifying uncommon successful behaviours within a community to scale solutions",
+                                          "Importing best practices from other countries",
+                                          "Radical policy overhaul by external experts"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_060",
+                          "text":  "Which theory explains how innovations spread through social systems?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Systems thinking",
+                                          "Diffusion of innovations (Rogers)",
+                                          "Constraint-based innovation",
+                                          "Participatory appraisal"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_061",
+                          "text":  "Which criterion is NOT one of Rogers\u0027 diffusion attributes?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Relative advantage",
+                                          "Complexity",
+                                          "Trialability",
+                                          "Profitability"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "ssc301_062",
+                          "text":  "An example of technology-enabled governance transparency from the course is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "LifeBank",
+                                          "BudgIT",
+                                          "CLTS",
+                                          "School for Life"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_063",
+                          "text":  "Which concept warns against applying tech fixes to fundamentally social problems?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Solutionism",
+                                          "Positive deviance",
+                                          "Frugal innovation",
+                                          "Collective impact"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_064",
+                          "text":  "Constraint-based innovation reframes constraints as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Reasons to stop innovating",
+                                          "Opportunities that stimulate creative solutions",
+                                          "Problems only solvable by external funding",
+                                          "Irrelevant to design choices"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_065",
+                          "text":  "Which is an example of policy innovation cited in the course?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "M-Pesa rollout in Kenya",
+                                          "Costa Rica\u0027s payments for ecosystem services",
+                                          "Wecyclers\u0027 cargo bikes",
+                                          "BudgIT platform"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_066",
+                          "text":  "Which approach engages community members as co-researchers and co-designers?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Participatory Rural Appraisal (PRA)",
+                                          "Social impact bonds",
+                                          "Positive deviance only",
+                                          "Frugal innovation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_067",
+                          "text":  "Social entrepreneurship is distinct because it emphasizes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Purely charitable donations",
+                                          "Financial sustainability and social impact together",
+                                          "Government-only solutions",
+                                          "Academic publishing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_068",
+                          "text":  "Which evaluation method is noted as prominent but limited for social innovations?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ethnography",
+                                          "Randomized controlled trials (RCTs)",
+                                          "Participatory mapping",
+                                          "Case study only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_069",
+                          "text":  "Which of the following is a climate-smart innovation example from the course?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Urban forestry in Abuja and Kano",
+                                          "M-Pesa mobile money",
+                                          "BudgIT budget visualizations",
+                                          "School for Life literacy program"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_070",
+                          "text":  "Indigenous knowledge in innovation is important because it:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Should always be replaced by imported technologies",
+                                          "Offers locally appropriate, sustainable practices to build upon",
+                                          "Is irrelevant to modern development",
+                                          "Only applies to traditional medicine"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_071",
+                          "text":  "Which scaling strategy involves modifying an innovation for new contexts?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replication",
+                                          "Adaptation",
+                                          "Influence",
+                                          "Collaboration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_072",
+                          "text":  "Collective impact initiatives are characterized by all EXCEPT:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Shared agenda",
+                                          "Aligned activities",
+                                          "Isolated measurement systems",
+                                          "Continuous communication"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ssc301_073",
+                          "text":  "Equity-focused innovation design must explicitly consider:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only cost-effectiveness",
+                                          "How different social groups will be affected and access solutions",
+                                          "Exclusively technological feasibility",
+                                          "Speed of rollout only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_074",
+                          "text":  "Which Nigerian program was cited as an innovative response to youth unemployment and national integration?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Tony Elumelu Foundation",
+                                          "National Youth Service Corps (NYSC)",
+                                          "Grameen Bank",
+                                          "School for Life"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_075",
+                          "text":  "Which financing mechanism repays investors only if outcomes are achieved?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Crowdfunding",
+                                          "Social impact bonds",
+                                          "Traditional grants",
+                                          "Microloans"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_076",
+                          "text":  "Which is a key role universities can play in social innovation?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Isolating research from communities",
+                                          "Serving as innovation laboratories and connecting stakeholders",
+                                          "Replacing community leadership",
+                                          "Only awarding degrees"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_077",
+                          "text":  "Which is an example of a radical educational innovation mentioned?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Improving teacher training only",
+                                          "Ghana\u0027s School for Life program",
+                                          "Adding more textbooks",
+                                          "Standardized testing expansion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_078",
+                          "text":  "Which of the following best captures \"systems thinking\"?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Solving problems by addressing isolated symptoms",
+                                          "Understanding interconnected elements, feedback loops, and leverage points",
+                                          "Prioritizing single-sector interventions",
+                                          "Ignoring emergent properties"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_079",
+                          "text":  "Which of these is a risk when digital innovations ignore context?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Increased inclusivity",
+                                          "Creation of new forms of disadvantage for marginalized groups",
+                                          "Immediate universal adoption",
+                                          "Reduced need for evaluation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_080",
+                          "text":  "Which example from the course addresses blood shortages through logistics coordination?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "BudgIT",
+                                          "LifeBank",
+                                          "Wecyclers",
+                                          "M-Pesa"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_081",
+                          "text":  "Which evaluation approach should complement RCTs to understand how and why innovations work?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only quantitative surveys",
+                                          "Qualitative research methods",
+                                          "Ignoring process evaluation",
+                                          "Sole reliance on administrative data"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_082",
+                          "text":  "Which of the following is NOT a recommended attribute for innovations likely to scale?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Simplicity",
+                                          "Affordability",
+                                          "High context-specific complexity that cannot be adapted",
+                                          "Evidence of effectiveness"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "ssc301_083",
+                          "text":  "Which concept involves learning from individuals within a community who succeed against the odds?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Diffusion of innovations",
+                                          "Positive deviance",
+                                          "Frugal innovation",
+                                          "Policy innovation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_084",
+                          "text":  "Which of the following best describes \"collective impact\"?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Single-organization-led projects",
+                                          "Multi-stakeholder coordinated efforts with shared measurement",
+                                          "Randomized trials only",
+                                          "Private sector-only initiatives"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_085",
+                          "text":  "Which is an example of an environmental social enterprise model from the course?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "BudgIT",
+                                          "Wecyclers",
+                                          "School for Life",
+                                          "Grameen Bank"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_086",
+                          "text":  "Which author is associated with \"Thinking in systems\"?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Rogers",
+                                          "Meadows",
+                                          "Christensen",
+                                          "Mulgan"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_087",
+                          "text":  "Which is a potential downside of innovations that ignore equity?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "They always scale faster",
+                                          "They can exacerbate existing inequalities",
+                                          "They are automatically sustainable",
+                                          "They eliminate the need for evaluation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_088",
+                          "text":  "Which of the following is a core element of responsible innovation?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Ignoring community consent",
+                                          "Transparency about uncertainties and mechanisms for accountability",
+                                          "Prioritizing speed over ethics",
+                                          "Exclusive reliance on external experts"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_089",
+                          "text":  "Which financing approach pools philanthropic, government, and commercial capital?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Crowdfunding",
+                                          "Blended finance",
+                                          "Microcredit only",
+                                          "Traditional grants"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_090",
+                          "text":  "Which of these is an example of adapting indigenous practices for sustainability?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Replacing local water harvesting with imported irrigation without consultation",
+                                          "Reviving traditional water harvesting techniques in semi-arid regions",
+                                          "Ignoring local knowledge entirely",
+                                          "Exporting local practices without adaptation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_091",
+                          "text":  "Which is a common barrier to scaling innovations?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Strong institutional support everywhere",
+                                          "Dependence on charismatic founders and unavailable resources in new contexts",
+                                          "Universal affordability",
+                                          "Clear evidence of effectiveness"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_092",
+                          "text":  "Which concept emphasizes testing on a small scale before wider adoption?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Trialability (Rogers)",
+                                          "Radical innovation only",
+                                          "Constraint-based thinking",
+                                          "Positive deviance"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_093",
+                          "text":  "Which of the following best summarizes the course\u0027s view of innovation for social scientists?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Innovation is only technological and export-driven",
+                                          "Innovation combines systems thinking, participatory methods, ethics, and evaluation to serve communities",
+                                          "Innovation ignores local contexts",
+                                          "Innovation is the sole responsibility of governments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_094",
+                          "text":  "The \"agbero\" informal transport system in Lagos is only harmful and offers no functions worth studying.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_095",
+                          "text":  "Rwanda\u0027s Imihigo performance contracts are cited as an example of policy innovation.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_096",
+                          "text":  "Randomized controlled trials are the only method needed to evaluate social innovations.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_097",
+                          "text":  "Universities can act as innovation incubators and engaged scholarship partners.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_098",
+                          "text":  "Frugal innovation is irrelevant in resource-constrained contexts.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_099",
+                          "text":  "Equity and inclusion must be considered when designing innovations to avoid exacerbating inequalities.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_100",
+                          "text":  "Solutionism refers to the uncritical application of technology to social problems.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_101",
+                          "text":  "Scaling always succeeds if an innovation works in one context.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "ssc301_102",
+                          "text":  "Participatory approaches like PRA help build ownership and ensure relevance of solutions.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "ssc301_103",
+                          "text":  "Indigenous knowledge can provide sustainable, culturally acceptable innovation pathways.",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "True",
+                                          "False"
+                                      ],
+                          "correct_index":  0
+                      }
+                  ],
+    "course_id":  "ssc301",
+    "course_name":  "Innovation in Social Sciences",
+    "version":  "1.0.0"
+}

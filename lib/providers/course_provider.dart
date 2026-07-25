@@ -120,6 +120,14 @@ class CourseProvider with ChangeNotifier {
       colorHex: '#FFF3CD', // Amber
       mode: '300_level',
     ),
+    Course(
+      id: 'ssc301',
+      code: 'SSC 301',
+      name: 'Innovation in Social Sciences',
+      icon: '💡',
+      colorHex: '#EAE2FA', // Lavender
+      mode: '300_level',
+    ),
     
   ];
 
