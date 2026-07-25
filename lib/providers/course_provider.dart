@@ -73,6 +73,14 @@ class CourseProvider with ChangeNotifier {
       mode: '100_level',
     ),
     Course(
+      id: 'mth102',
+      code: 'MTH 102',
+      name: 'Mathematics II',
+      icon: '📐',
+      colorHex: '#DCEEFF', // Sky
+      mode: '100_level',
+    ),
+    Course(
       id: 'chm102',
       code: 'CHM 102',
       name: 'Introductory Organic Chemistry',

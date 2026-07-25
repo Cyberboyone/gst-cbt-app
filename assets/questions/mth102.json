@@ -1,0 +1,2737 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "mth102_000",
+                          "text":  "A function is a special relation that maps each element of set A to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Two or more elements of set B",
+                                          "One and only one element of set B",
+                                          "No element of set B",
+                                          "All elements of set B"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_001",
+                          "text":  "For a function f: A → B, both sets A and B must be:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Empty",
+                                          "Non-empty",
+                                          "Equal",
+                                          "Finite only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_002",
+                          "text":  "If f(x) = 2x + 1, then f(3) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "5",
+                                          "6",
+                                          "7",
+                                          "8"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_003",
+                          "text":  "A function that maps each element of A to a distinct element of B is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Onto function",
+                                          "One-to-one function",
+                                          "Composite function",
+                                          "Inverse function"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_004",
+                          "text":  "One-to-one function is also known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Surjective",
+                                          "Injective",
+                                          "Bijective",
+                                          "Composite"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_005",
+                          "text":  "An onto function is also known as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Injective",
+                                          "Surjective",
+                                          "Bijective",
+                                          "Composite"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_006",
+                          "text":  "A function that is both one-to-one and onto is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Injective",
+                                          "Surjective",
+                                          "Bijective",
+                                          "Composite"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_007",
+                          "text":  "If f(x) = 3x + 1, then f(0) equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "3",
+                                          "4"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_008",
+                          "text":  "The set of all possible input values for a function is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Range",
+                                          "Co-domain",
+                                          "Domain",
+                                          "Image"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_009",
+                          "text":  "The set of all output values produced by a function is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Domain",
+                                          "Co-domain",
+                                          "Range",
+                                          "Pre-image"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_010",
+                          "text":  "Composite function fog is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f[g(x)]",
+                                          "g[f(x)]",
+                                          "f(x) + g(x)",
+                                          "f(x) × g(x)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_011",
+                          "text":  "If f(x) = 2x and g(x) = x + 1, then fog(x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2x + 1",
+                                          "2x + 2",
+                                          "2x² + 2x",
+                                          "2x - 1"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_012",
+                          "text":  "If f(x) = x² and g(x) = 2x, then gof(x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2x²",
+                                          "4x²",
+                                          "x² + 2x",
+                                          "4x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_013",
+                          "text":  "A function has an inverse if it is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "One-to-one only",
+                                          "Onto only",
+                                          "Both one-to-one and onto",
+                                          "Neither one-to-one nor onto"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_014",
+                          "text":  "The domain of f⁻¹ is the same as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Domain of f",
+                                          "Range of f",
+                                          "Co-domain of f",
+                                          "All real numbers"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_015",
+                          "text":  "If f(x) = 2x - 3, then f⁻¹(x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(x + 3)/2",
+                                          "(x - 3)/2",
+                                          "2x + 3",
+                                          "2x - 3"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_016",
+                          "text":  "If f(x) = (x + 1)/(x - 2), the value of x that makes f undefined is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "-1",
+                                          "2",
+                                          "-2"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_017",
+                          "text":  "The composition of functions is generally:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Commutative",
+                                          "Not commutative",
+                                          "Associative only",
+                                          "Distributive only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_018",
+                          "text":  "If f(x) = x + 3 and g(x) = 2x, then f(g(2)) equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "7",
+                                          "8",
+                                          "6",
+                                          "10"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_019",
+                          "text":  "If f(x) = x² and g(x) = √x, then fog(x) for x ≥ 0 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x",
+                                          "x²",
+                                          "√x",
+                                          "x⁴"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_020",
+                          "text":  "The concept of limit is fundamental in:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Algebra only",
+                                          "Calculus",
+                                          "Geometry",
+                                          "Trigonometry"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_021",
+                          "text":  "The limit of f(x) as x approaches a is denoted as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f(a)",
+                                          "lim f(x) as x→a",
+                                          "∫f(x)dx",
+                                          "df/dx"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_022",
+                          "text":  "If lim f(x) as x→a = L, then L is called the:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Derivative",
+                                          "Integral",
+                                          "Limit",
+                                          "Function value"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_023",
+                          "text":  "The value of lim x→2 (2x + 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3",
+                                          "4",
+                                          "5",
+                                          "6"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_024",
+                          "text":  "The value of lim x→1 (x² + x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_025",
+                          "text":  "If f(x) = 2x + 3, as x approaches 4, f(x) approaches:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "8",
+                                          "10",
+                                          "11",
+                                          "12"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_026",
+                          "text":  "The value of lim x→0 (x² + 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "2"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_027",
+                          "text":  "lim x→0 (x³ - x² + 2) equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "3"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_028",
+                          "text":  "lim x→2 (x² - 4)/(x - 2) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "2",
+                                          "4",
+                                          "6"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_029",
+                          "text":  "lim x→1 (x² - 1)/(x - 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "3"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_030",
+                          "text":  "lim x→3 (x² - 9)/(x - 3) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3",
+                                          "6",
+                                          "9",
+                                          "0"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_031",
+                          "text":  "lim x→0 (sin x)/x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "∞"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_032",
+                          "text":  "lim x→∞ (1/x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "∞",
+                                          "-∞"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_033",
+                          "text":  "lim x→∞ (1/x²) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "∞",
+                                          "-∞"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_034",
+                          "text":  "lim x→∞ (2x + 3)/(x + 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "3"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_035",
+                          "text":  "lim x→∞ (3x² + 2)/(x² + 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "3"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "mth102_036",
+                          "text":  "lim x→∞ (x² + 1)/(x³ + 2) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "∞",
+                                          "1/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_037",
+                          "text":  "lim x→0 (cos x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "∞"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_038",
+                          "text":  "lim x→π/2 (sin x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "1/2"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_039",
+                          "text":  "lim x→0 (tan x)/x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "∞"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_040",
+                          "text":  "lim x→0 (1 - cos x)/x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "∞"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_041",
+                          "text":  "If lim x→a f(x) exists, it is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Always positive",
+                                          "Always negative",
+                                          "Unique",
+                                          "Variable"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_042",
+                          "text":  "lim x→a f(x) = L means that as x gets closer to a, f(x) gets closer to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "a",
+                                          "L",
+                                          "0",
+                                          "∞"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_043",
+                          "text":  "lim x→-∞ (1/x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "∞"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_044",
+                          "text":  "lim x→∞ (5x³ + 2)/(2x³ + 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "2",
+                                          "2.5",
+                                          "5"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_045",
+                          "text":  "The derivative is the measure of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Rate of change",
+                                          "Total change",
+                                          "Average value",
+                                          "Area under curve"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_046",
+                          "text":  "The derivative of f(x) is denoted as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f\u0027(x)",
+                                          "∫f(x)dx",
+                                          "f(x)",
+                                          "f⁻¹(x)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_047",
+                          "text":  "The derivative of x^n with respect to x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "nx^(n-1)",
+                                          "nx^n",
+                                          "x^(n-1)",
+                                          "nx^(n+1)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_048",
+                          "text":  "The derivative of x^5 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "5x⁴",
+                                          "4x⁵",
+                                          "5x⁵",
+                                          "x⁴"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_049",
+                          "text":  "The derivative of a constant is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "The constant itself",
+                                          "Infinity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_050",
+                          "text":  "The derivative of e^x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "e^x",
+                                          "xe^(x-1)",
+                                          "ln x",
+                                          "1/x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_051",
+                          "text":  "The derivative of e^(3x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3e^(3x)",
+                                          "e^(3x)",
+                                          "3xe^(3x)",
+                                          "e^3"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_052",
+                          "text":  "The derivative of ln x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1/x",
+                                          "x",
+                                          "ln x",
+                                          "e^x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_053",
+                          "text":  "The derivative of sin x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "cos x",
+                                          "-sin x",
+                                          "-cos x",
+                                          "sec² x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_054",
+                          "text":  "The derivative of cos x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sin x",
+                                          "-sin x",
+                                          "-cos x",
+                                          "sec² x"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_055",
+                          "text":  "The derivative of tan x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sec² x",
+                                          "-cosec² x",
+                                          "-sec² x",
+                                          "cot x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_056",
+                          "text":  "The derivative of sec x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sec x tan x",
+                                          "-cosec x cot x",
+                                          "sec² x",
+                                          "tan x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_057",
+                          "text":  "The derivative of cot x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sec² x",
+                                          "-cosec² x",
+                                          "-sec² x",
+                                          "cot x"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_058",
+                          "text":  "The derivative of sin(2x + 3) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2cos(2x + 3)",
+                                          "cos(2x + 3)",
+                                          "-2cos(2x + 3)",
+                                          "2sin(2x + 3)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_059",
+                          "text":  "The derivative of (2x + 5)^4 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "4(2x + 5)³",
+                                          "8(2x + 5)³",
+                                          "4(2x + 5)^4",
+                                          "8(2x + 5)^4"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_060",
+                          "text":  "The derivative of cos(3x - 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3sin(3x - 1)",
+                                          "-3sin(3x - 1)",
+                                          "3cos(3x - 1)",
+                                          "-sin(3x - 1)"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_061",
+                          "text":  "The derivative of e^(5x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "5e^(5x)",
+                                          "e^(5x)",
+                                          "5xe^(5x)",
+                                          "e^5"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_062",
+                          "text":  "The derivative of ln(4x + 2) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "4/(4x + 2)",
+                                          "1/(4x + 2)",
+                                          "4x/(4x + 2)",
+                                          "1/4"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_063",
+                          "text":  "The derivative of √x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1/(2√x)",
+                                          "2√x",
+                                          "1/√x",
+                                          "1/(2x)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_064",
+                          "text":  "The derivative of 1/x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1/x²",
+                                          "-1/x²",
+                                          "-1/x",
+                                          "ln x"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_065",
+                          "text":  "The derivative of x³ + 2x² - 5x + 1 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3x² + 4x - 5",
+                                          "3x² + 2x - 5",
+                                          "x² + 4x - 5",
+                                          "3x² + 4x + 5"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_066",
+                          "text":  "The derivative of (x² + 1)(x - 2) using product rule is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3x² - 4x + 1",
+                                          "3x² - 4x - 1",
+                                          "3x² + 4x - 1",
+                                          "x² - 4x + 1"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_067",
+                          "text":  "The product rule states: d/dx(uv) =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "u\u0027v - uv\u0027",
+                                          "u\u0027v + uv\u0027",
+                                          "(u\u0027v - uv\u0027)/v²",
+                                          "u/v\u0027"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_068",
+                          "text":  "The quotient rule states: d/dx(u/v) =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(u\u0027v - uv\u0027)/v²",
+                                          "(u\u0027v + uv\u0027)/v²",
+                                          "(uv\u0027 - u\u0027v)/v²",
+                                          "u\u0027v - uv\u0027"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_069",
+                          "text":  "The derivative of (2x + 1)/(x - 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-3/(x-1)²",
+                                          "3/(x-1)²",
+                                          "-3/(x-1)",
+                                          "3/(x-1)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_070",
+                          "text":  "The derivative of x²sin x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2x sin x + x² cos x",
+                                          "2x cos x + x² sin x",
+                                          "x² cos x + 2x sin x",
+                                          "2x sin x - x² cos x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_071",
+                          "text":  "The derivative of e^x sin x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "e^x(cos x + sin x)",
+                                          "e^x(cos x - sin x)",
+                                          "e^x sin x",
+                                          "e^x cos x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_072",
+                          "text":  "For an implicit function, y is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Explicitly defined",
+                                          "Implied in the equation",
+                                          "Not defined",
+                                          "Always zero"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_073",
+                          "text":  "The derivative of x² + y² = 25 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "dy/dx = -x/y",
+                                          "dy/dx = x/y",
+                                          "dy/dx = -y/x",
+                                          "dy/dx = y/x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_074",
+                          "text":  "The derivative of x² + y² - 2x - 6y + 5 = 0 at (3,2) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "2",
+                                          "3",
+                                          "4"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_075",
+                          "text":  "Integration is the converse of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Algebra",
+                                          "Differentiation",
+                                          "Geometry",
+                                          "Trigonometry"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_076",
+                          "text":  "The integral of x^n dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x^(n+1)/(n+1) + c",
+                                          "nx^(n-1)",
+                                          "x^n/(n+1) + c",
+                                          "x^(n+1) + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_077",
+                          "text":  "The integral of x^4 dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x⁵/5 + c",
+                                          "x³/3 + c",
+                                          "x⁵ + c",
+                                          "5x⁵ + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_078",
+                          "text":  "The integral of 1/x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln x + c",
+                                          "1/x² + c",
+                                          "ln|x| + c",
+                                          "e^x + c"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_079",
+                          "text":  "The integral of sin x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "cos x + c",
+                                          "-cos x + c",
+                                          "sin x + c",
+                                          "-sin x + c"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_080",
+                          "text":  "The integral of cos x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sin x + c",
+                                          "-sin x + c",
+                                          "cos x + c",
+                                          "-cos x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_081",
+                          "text":  "The integral of sec² x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "tan x + c",
+                                          "-cot x + c",
+                                          "sin x + c",
+                                          "cos x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_082",
+                          "text":  "The integral of e^x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "e^x + c",
+                                          "xe^(x-1) + c",
+                                          "ln x + c",
+                                          "e^x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_083",
+                          "text":  "The integral of e^(3x) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "e^(3x)/3 + c",
+                                          "3e^(3x) + c",
+                                          "e^(3x) + c",
+                                          "e^(3x)/2 + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_084",
+                          "text":  "The integral of sin(2x) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-cos(2x)/2 + c",
+                                          "cos(2x)/2 + c",
+                                          "-cos(2x) + c",
+                                          "sin(2x)/2 + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_085",
+                          "text":  "The integral of cos(4x) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sin(4x)/4 + c",
+                                          "-sin(4x)/4 + c",
+                                          "sin(4x) + c",
+                                          "cos(4x)/4 + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_086",
+                          "text":  "The integral of (2x + 1)^5 dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(2x+1)^6/12 + c",
+                                          "(2x+1)^6/6 + c",
+                                          "(2x+1)^5/12 + c",
+                                          "(2x+1)^6/2 + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_087",
+                          "text":  "The integral of 1/(4x + 3) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(1/4)ln(4x+3) + c",
+                                          "ln(4x+3) + c",
+                                          "4ln(4x+3) + c",
+                                          "(1/4)(4x+3) + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_088",
+                          "text":  "The integral of (2x + 3)/(x² + 3x + 1) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln(x²+3x+1) + c",
+                                          "2ln(x²+3x+1) + c",
+                                          "(1/2)ln(x²+3x+1) + c",
+                                          "ln(2x+3) + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_089",
+                          "text":  "The integral of tan x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|sec x| + c",
+                                          "ln|sin x| + c",
+                                          "ln|cos x| + c",
+                                          "sec² x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_090",
+                          "text":  "The integral of cot x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|sin x| + c",
+                                          "ln|cos x| + c",
+                                          "-ln|sin x| + c",
+                                          "ln|sec x| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_091",
+                          "text":  "The constant of integration is added because:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The derivative of a constant is zero",
+                                          "All integrals have constants",
+                                          "It makes integration easier",
+                                          "It is required by the formula"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_092",
+                          "text":  "Integration by parts formula is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "∫u dv = uv - ∫v du",
+                                          "∫u dv = uv + ∫v du",
+                                          "∫u dv = u/v - ∫v du",
+                                          "∫u dv = ∫v du"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_093",
+                          "text":  "The integral of x e^x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "xe^x - e^x + c",
+                                          "xe^x + e^x + c",
+                                          "e^x + c",
+                                          "xe^x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_094",
+                          "text":  "The integral of x² ln x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(x³/3)ln x - x³/9 + c",
+                                          "(x³/3)ln x + x³/9 + c",
+                                          "x³ln x - x³/3 + c",
+                                          "(x²/2)ln x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_095",
+                          "text":  "A definite integral has:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "No limits",
+                                          "Upper and lower limits",
+                                          "Only an upper limit",
+                                          "Only a lower limit"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_096",
+                          "text":  "In a definite integral, the constant of integration:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Must be included",
+                                          "May be omitted",
+                                          "Is always included",
+                                          "Is doubled"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_097",
+                          "text":  "∫ₐᵃ f(x) dx equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "f(a)",
+                                          "∞"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_098",
+                          "text":  "∫ₐᵇ f(x) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-∫ᵇₐ f(x) dx",
+                                          "∫ᵇₐ f(x) dx",
+                                          "∫ᵇₐ -f(x) dx",
+                                          "0"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_099",
+                          "text":  "The integral of (x² + 1) dx from 0 to 2 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "14/3",
+                                          "8/3",
+                                          "10/3",
+                                          "4"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_100",
+                          "text":  "The definite integral can be used to find:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Area under a curve",
+                                          "Volume of revolution",
+                                          "Both area and volume",
+                                          "Only derivatives"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_101",
+                          "text":  "The area under the curve y = x² from x = 0 to x = 2 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "8/3",
+                                          "4/3",
+                                          "8",
+                                          "4"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_102",
+                          "text":  "The area under y = x from x = 0 to x = 3 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "4.5",
+                                          "3",
+                                          "6",
+                                          "9"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_103",
+                          "text":  "The area bounded by y = x², x = 1, x = 3, and the x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "26/3",
+                                          "28/3",
+                                          "8",
+                                          "9"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_104",
+                          "text":  "The volume of revolution about the x-axis of y = f(x) from x = a to x = b is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "π∫ₐᵇ f(x) dx",
+                                          "π∫ₐᵇ [f(x)]² dx",
+                                          "∫ₐᵇ [f(x)]² dx",
+                                          "2π∫ₐᵇ f(x) dx"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_105",
+                          "text":  "The volume of revolution of y = x² from x = 0 to x = 2 about x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "32π/5",
+                                          "8π/5",
+                                          "32π/3",
+                                          "16π/3"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_106",
+                          "text":  "The volume of revolution of y = x from x = 0 to x = 1 about x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "π/3",
+                                          "π/2",
+                                          "π",
+                                          "2π/3"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_107",
+                          "text":  "The volume of revolution of y = √x from x = 0 to x = 4 about x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "8π",
+                                          "4π",
+                                          "16π",
+                                          "2π"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_108",
+                          "text":  "The area between y = x² and the x-axis from x = -1 to x = 1 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2/3",
+                                          "4/3",
+                                          "1",
+                                          "2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_109",
+                          "text":  "The area under y = sin x from x = 0 to x = π is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "2",
+                                          "π"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_110",
+                          "text":  "The area under y = cos x from x = 0 to x = π/2 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "1/2",
+                                          "π/2"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_111",
+                          "text":  "The volume of a cone can be found using:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Integration",
+                                          "Differentiation only",
+                                          "Limits only",
+                                          "Algebra only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_112",
+                          "text":  "The area of a circle of radius r can be found using integration as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "πr²",
+                                          "2πr",
+                                          "πr",
+                                          "πr²/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_113",
+                          "text":  "The volume of a sphere of radius r can be found by integrating:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "π∫_{-r}^{r} (r² - x²) dx",
+                                          "π∫_{-r}^{r} (r² - x²) dx (This gives 4πr³/3)",
+                                          "2π∫_{0}^{r} x dx",
+                                          "4πr²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_114",
+                          "text":  "The volume of a cylinder of radius r and height h is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "πr²h",
+                                          "2πrh",
+                                          "πr²",
+                                          "2πr²h"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_115",
+                          "text":  "The area under the curve y = f(x) from a to b is given by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f(b) - f(a)",
+                                          "∫ₐᵇ f(x) dx",
+                                          "f\u0027(b) - f\u0027(a)",
+                                          "[f(b) - f(a)]/2"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_116",
+                          "text":  "The area above the x-axis and below y = f(x) is positive when:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f(x) \u003c 0",
+                                          "f(x) \u003e 0",
+                                          "f(x) = 0",
+                                          "f(x) is increasing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_117",
+                          "text":  "The area below the x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Positive",
+                                          "Negative",
+                                          "Zero",
+                                          "Infinite"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_118",
+                          "text":  "The area enclosed by y = x(x-1) and y = 0 between x = 0 and x = 1 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1/6",
+                                          "1/3",
+                                          "1/2",
+                                          "1"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_119",
+                          "text":  "To find the area between two curves, we:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Add the integrals",
+                                          "Subtract the integrals",
+                                          "Multiply the integrals",
+                                          "Divide the integrals"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_120",
+                          "text":  "Partial fractions are used to integrate:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Polynomial functions",
+                                          "Rational functions",
+                                          "Trigonometric functions",
+                                          "Exponential functions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_121",
+                          "text":  "In partial fractions, (x+1)/[(x-2)(x-3)] is decomposed as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A/(x-2) + B/(x-3)",
+                                          "A/(x-2)(x-3)",
+                                          "A/(x-2) + Bx/(x-3)",
+                                          "A/(x-3) + B/(x-2)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_122",
+                          "text":  "To find A and B in partial fractions, we:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Use differential equations",
+                                          "Equate coefficients",
+                                          "Use trigonometric identities",
+                                          "Use logarithmic functions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_123",
+                          "text":  "The integral of 1/[(x-1)(x-2)] dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|(x-2)/(x-1)| + c",
+                                          "ln|(x-1)/(x-2)| + c",
+                                          "ln|(x-1)(x-2)| + c",
+                                          "ln|(x-2)(x-1)| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_124",
+                          "text":  "If the denominator has repeated linear factors, the partial fraction decomposition includes:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only A/(x-a)",
+                                          "A/(x-a) + B/(x-a)²",
+                                          "A/(x-a) + B/(x-b)",
+                                          "A/(x²+a²)"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_125",
+                          "text":  "The integral of (x+1)/(x²-3x+2) dx after partial fractions is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3ln|x-2| - 2ln|x-1| + c",
+                                          "2ln|x-2| - 3ln|x-1| + c",
+                                          "3ln|x-1| + 2ln|x-2| + c",
+                                          "ln|(x-2)/(x-1)| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_126",
+                          "text":  "The integral of 1/(x²-1) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(1/2)ln|(x-1)/(x+1)| + c",
+                                          "ln|(x-1)/(x+1)| + c",
+                                          "(1/2)ln|(x+1)/(x-1)| + c",
+                                          "ln|x²-1| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_127",
+                          "text":  "For a rational function where the degree of numerator is greater than or equal to the degree of denominator, we first:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Use partial fractions",
+                                          "Divide the numerator by the denominator",
+                                          "Differentiate",
+                                          "Integrate directly"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_128",
+                          "text":  "In partial fractions with irreducible quadratic factors, the numerator is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A constant",
+                                          "A linear expression (Bx + C)",
+                                          "A quadratic expression",
+                                          "Zero"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_129",
+                          "text":  "The integral of 1/[(x+1)(x²+1)] dx requires:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Only linear partial fractions",
+                                          "Linear and quadratic partial fractions",
+                                          "Only quadratic partial fractions",
+                                          "Trigonometric substitution"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_130",
+                          "text":  "The chain rule is used to differentiate:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Product of two functions",
+                                          "Quotient of two functions",
+                                          "Composite functions",
+                                          "Sum of functions"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_131",
+                          "text":  "The chain rule states: dy/dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "dy/du + du/dx",
+                                          "dy/du × du/dx",
+                                          "du/dy × dx/du",
+                                          "dy/dx × du/du"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_132",
+                          "text":  "The derivative of sin(3x²) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "6x cos(3x²)",
+                                          "3x cos(3x²)",
+                                          "cos(3x²)",
+                                          "6x sin(3x²)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_133",
+                          "text":  "The derivative of cos(x²) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-2x sin(x²)",
+                                          "2x sin(x²)",
+                                          "-2x cos(x²)",
+                                          "2x cos(x²)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_134",
+                          "text":  "The derivative of e^(x²) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2x e^(x²)",
+                                          "e^(x²)",
+                                          "2e^(x²)",
+                                          "x e^(x²)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_135",
+                          "text":  "The derivative of ln(sin x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "cot x",
+                                          "tan x",
+                                          "sec x",
+                                          "cosec x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_136",
+                          "text":  "The derivative of √(x²+1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x/√(x²+1)",
+                                          "2x/√(x²+1)",
+                                          "1/√(x²+1)",
+                                          "x/(2√(x²+1))"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_137",
+                          "text":  "The derivative of (x²+1)^5 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "10x(x²+1)^4",
+                                          "5(x²+1)^4",
+                                          "10(x²+1)^4",
+                                          "5x(x²+1)^4"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_138",
+                          "text":  "The derivative of sin(cos x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-cos(cos x) sin x",
+                                          "cos(cos x) sin x",
+                                          "-sin(cos x)",
+                                          "sin(cos x) cos x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_139",
+                          "text":  "If y = (2x + 1)^(3/2), then dy/dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3√(2x+1)",
+                                          "3(2x+1)^(1/2)",
+                                          "3(2x+1)^(1/2)/2",
+                                          "3(2x+1)^(1/2)/√2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_140",
+                          "text":  "The derivative of (x³ + 2x)(x² - 1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(5x⁴ + 6x² - 2)",
+                                          "(5x⁴ - 6x² + 2)",
+                                          "(5x⁴ + 6x² + 2)",
+                                          "(3x² + 2)(x² - 1) + (x³ + 2x)(2x)"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "mth102_141",
+                          "text":  "The derivative of (x³+1)/(x²+1) using quotient rule is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(x⁴ + 3x² - 2x)/(x²+1)²",
+                                          "(x⁴ - 3x² + 2x)/(x²+1)²",
+                                          "(x⁴ + 3x² + 2x)/(x²+1)²",
+                                          "(x⁴ - 3x² - 2x)/(x²+1)²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_142",
+                          "text":  "The sum rule states: d/dx[f(x)+g(x)] =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f\u0027(x) + g\u0027(x)",
+                                          "f\u0027(x) - g\u0027(x)",
+                                          "f(x) + g\u0027(x)",
+                                          "f\u0027(x)g(x) + f(x)g\u0027(x)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_143",
+                          "text":  "The derivative of x³ sin x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "3x² sin x + x³ cos x",
+                                          "3x² cos x + x³ sin x",
+                                          "x³ cos x - 3x² sin x",
+                                          "3x² sin x - x³ cos x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_144",
+                          "text":  "The derivative of x² e^x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "e^x(x² + 2x)",
+                                          "e^x(2x + x²)",
+                                          "e^x(2x - x²)",
+                                          "2xe^x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_145",
+                          "text":  "The derivative of (2x+1)/(3x-1) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-5/(3x-1)²",
+                                          "5/(3x-1)²",
+                                          "-5/(3x-1)",
+                                          "5/(3x-1)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_146",
+                          "text":  "The derivative of x ln x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln x + 1",
+                                          "ln x - 1",
+                                          "ln x + x",
+                                          "1/x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_147",
+                          "text":  "The derivative of e^x cos x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "e^x(cos x - sin x)",
+                                          "e^x(cos x + sin x)",
+                                          "e^x sin x - cos x",
+                                          "e^x sin x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_148",
+                          "text":  "The derivative of (x² + 1)(x³ + 2) at x = 1 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "16",
+                                          "14",
+                                          "12",
+                                          "10"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_149",
+                          "text":  "The derivative of (sin x)/(cos x) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sec² x",
+                                          "-sec² x",
+                                          "cot x",
+                                          "-cot x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_150",
+                          "text":  "∫ (2x + 1)/(x² + x + 1) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|x² + x + 1| + c",
+                                          "2ln|x² + x + 1| + c",
+                                          "(1/2)ln|x² + x + 1| + c",
+                                          "ln|2x + 1| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_151",
+                          "text":  "∫ 1/(x² + a²) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(1/a)tan⁻¹(x/a) + c",
+                                          "(1/a)tan⁻¹(ax) + c",
+                                          "a tan⁻¹(x/a) + c",
+                                          "tan⁻¹(x/a) + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_152",
+                          "text":  "∫ 1/(x² - a²) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(1/2a)ln|(x-a)/(x+a)| + c",
+                                          "(1/a)ln|(x-a)/(x+a)| + c",
+                                          "(1/2)ln|(x-a)/(x+a)| + c",
+                                          "ln|(x-a)/(x+a)| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_153",
+                          "text":  "∫ x/(x²+1) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(1/2)ln(x²+1) + c",
+                                          "ln(x²+1) + c",
+                                          "2ln(x²+1) + c",
+                                          "tan⁻¹(x) + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_154",
+                          "text":  "∫ tan x dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-ln|cos x| + c",
+                                          "ln|cos x| + c",
+                                          "ln|sin x| + c",
+                                          "-ln|sin x| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_155",
+                          "text":  "∫ cot x dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|sin x| + c",
+                                          "-ln|sin x| + c",
+                                          "ln|cos x| + c",
+                                          "-ln|cos x| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_156",
+                          "text":  "∫ sec x dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|sec x + tan x| + c",
+                                          "ln|sec x - tan x| + c",
+                                          "tan x + sec x + c",
+                                          "ln|cos x| + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_157",
+                          "text":  "∫ sin² x dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(x/2) - (sin 2x)/4 + c",
+                                          "(x/2) + (sin 2x)/4 + c",
+                                          "-cos² x + c",
+                                          "sin³ x/3 + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_158",
+                          "text":  "∫ cos² x dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(x/2) + (sin 2x)/4 + c",
+                                          "(x/2) - (sin 2x)/4 + c",
+                                          "sin² x + c",
+                                          "-sin² x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_159",
+                          "text":  "∫ e^x sin x dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(e^x/2)(sin x - cos x) + c",
+                                          "(e^x/2)(sin x + cos x) + c",
+                                          "e^x sin x + c",
+                                          "e^x cos x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_160",
+                          "text":  "∫ₐᵇ f(x) dx + ∫ᵇᶜ f(x) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "∫ₐᶜ f(x) dx",
+                                          "∫ᶜₐ f(x) dx",
+                                          "0",
+                                          "∫ₐᵇ f(x) dx"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_161",
+                          "text":  "∫ₐᵇ k f(x) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "k∫ₐᵇ f(x) dx",
+                                          "∫ₐᵇ f(x) dx / k",
+                                          "∫ₐᵇ kx dx",
+                                          "k + ∫ₐᵇ f(x) dx"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_162",
+                          "text":  "∫ₐᵇ [f(x) + g(x)] dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "∫ₐᵇ f(x) dx + ∫ₐᵇ g(x) dx",
+                                          "∫ₐᵇ f(x) dx - ∫ₐᵇ g(x) dx",
+                                          "∫ₐᵇ f(x) dx × ∫ₐᵇ g(x) dx",
+                                          "∫ₐᵇ f(x)g(x) dx"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_163",
+                          "text":  "∫ₐᵇ f(x) dx = -∫ᵇₐ f(x) dx. This property is used when:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Swapping limits",
+                                          "Evaluating at a point",
+                                          "Multiplying by -1",
+                                          "Adding constants"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_164",
+                          "text":  "∫ₐᵃ f(x) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "f(a)",
+                                          "2f(a)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_165",
+                          "text":  "The value of ∫₀² (3x²) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "8",
+                                          "6",
+                                          "4",
+                                          "2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_166",
+                          "text":  "The value of ∫₁² (4x) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "6",
+                                          "4",
+                                          "8",
+                                          "2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_167",
+                          "text":  "The value of ∫₀¹ (x² + 2x) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "4/3",
+                                          "2/3",
+                                          "1",
+                                          "5/3"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_168",
+                          "text":  "The value of ∫₀^(π/2) sin x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "0",
+                                          "2",
+                                          "π/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_169",
+                          "text":  "The value of ∫₀^(π/2) cos x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "0",
+                                          "2",
+                                          "π/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_170",
+                          "text":  "The graph of y = x² is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A straight line",
+                                          "A parabola opening upward",
+                                          "A parabola opening downward",
+                                          "A circle"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "mth102_171",
+                          "text":  "The graph of y = -x² is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A straight line",
+                                          "A parabola opening upward",
+                                          "A parabola opening downward",
+                                          "A circle"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "mth102_172",
+                          "text":  "The graph of y = sin x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A sine wave",
+                                          "A cosine wave",
+                                          "A straight line",
+                                          "A parabola"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_173",
+                          "text":  "The graph of y = cos x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A sine wave shifted by π/2",
+                                          "A sine wave shifted by π",
+                                          "A straight line",
+                                          "A parabola"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_174",
+                          "text":  "The graph of y = e^x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Increasing exponential function",
+                                          "Decreasing exponential function",
+                                          "A straight line",
+                                          "A parabola"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_175",
+                          "text":  "The graph of y = ln x is defined for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x \u003e 0",
+                                          "x ≥ 0",
+                                          "x \u003c 0",
+                                          "All real x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_176",
+                          "text":  "The graph of y = tan x has vertical asymptotes at:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x = (π/2) + nπ",
+                                          "x = nπ",
+                                          "x = 0",
+                                          "x = π/4"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_177",
+                          "text":  "The graph of y = 1/x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A hyperbola",
+                                          "A parabola",
+                                          "A straight line",
+                                          "A circle"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_178",
+                          "text":  "The graph of y = |x| is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "V-shaped",
+                                          "U-shaped",
+                                          "Straight line",
+                                          "Circle"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_179",
+                          "text":  "The graph of y = √x is defined for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x ≥ 0",
+                                          "x \u003e 0",
+                                          "x \u003c 0",
+                                          "All real x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_180",
+                          "text":  "The graph of y = x³ is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A cubic curve",
+                                          "A quadratic curve",
+                                          "A straight line",
+                                          "A circle"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_181",
+                          "text":  "The graph of y = sin x crosses the x-axis at:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x = nπ",
+                                          "x = (π/2) + nπ",
+                                          "x = 0 only",
+                                          "x = π/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_182",
+                          "text":  "The graph of y = cos x crosses the x-axis at:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x = (π/2) + nπ",
+                                          "x = nπ",
+                                          "x = 0 only",
+                                          "x = π"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_183",
+                          "text":  "The graph of y = tan x crosses the x-axis at:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x = nπ",
+                                          "x = (π/2) + nπ",
+                                          "x = 0 only",
+                                          "x = π/4"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_184",
+                          "text":  "The graph of y = x² + 2x + 1 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A parabola with vertex at (-1,0)",
+                                          "A parabola with vertex at (0,1)",
+                                          "A straight line",
+                                          "A circle"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_185",
+                          "text":  "The Fundamental Theorem of Calculus relates:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Differentiation and integration",
+                                          "Algebra and geometry",
+                                          "Trigonometry and calculus",
+                                          "Logic and mathematics"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_186",
+                          "text":  "The Fundamental Theorem states that if f is continuous on [a,b], then:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "d/dx ∫ₐˣ f(t)dt = f(x)",
+                                          "d/dx ∫ₐˣ f(t)dt = f(a)",
+                                          "∫ₐˣ f\u0027(t)dt = f(x) - f(a)",
+                                          "Both A and C"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "mth102_187",
+                          "text":  "If F\u0027(x) = f(x), then ∫ₐᵇ f(x) dx =",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "F(b) - F(a)",
+                                          "F(a) - F(b)",
+                                          "F(b) + F(a)",
+                                          "F(ab)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_188",
+                          "text":  "The derivative of ∫₀ˣ t² dt is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x²",
+                                          "2x",
+                                          "x³/3",
+                                          "0"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_189",
+                          "text":  "The derivative of ∫₁ˣ (t² + 1) dt is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "x² + 1",
+                                          "2x",
+                                          "x²",
+                                          "0"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_190",
+                          "text":  "The derivative of ∫₀ˣ sin t dt is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sin x",
+                                          "cos x",
+                                          "-cos x",
+                                          "0"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_191",
+                          "text":  "The derivative of ∫₀^(x²) t³ dt is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2x⁷",
+                                          "x⁶",
+                                          "6x⁵",
+                                          "x⁷"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_192",
+                          "text":  "∫₀¹ 2x dx using FTC gives:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1",
+                                          "2",
+                                          "0",
+                                          "1/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_193",
+                          "text":  "∫₀^π sin x dx using FTC gives:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2",
+                                          "0",
+                                          "1",
+                                          "π"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_194",
+                          "text":  "The area under the curve can be found using:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Definite integration",
+                                          "Differentiation",
+                                          "Limits only",
+                                          "Algebra"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_195",
+                          "text":  "If f is continuous on [a,b], then ∫ₐᵇ f(x) dx exists and is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Unique",
+                                          "Infinite",
+                                          "Zero",
+                                          "Negative"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_196",
+                          "text":  "The mean value theorem for integrals states that there exists c in [a,b] such that:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f(c)(b-a) = ∫ₐᵇ f(x) dx",
+                                          "f(c) = ∫ₐᵇ f(x) dx",
+                                          "f\u0027(c) = (f(b)-f(a))/(b-a)",
+                                          "f(c) = f(a) + f(b)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_197",
+                          "text":  "The average value of f on [a,b] is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "(1/(b-a))∫ₐᵇ f(x) dx",
+                                          "∫ₐᵇ f(x) dx",
+                                          "f(b) - f(a)",
+                                          "f(a) + f(b)/2"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_198",
+                          "text":  "The derivative of ∫ₐ^(g(x)) f(t) dt is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f(g(x)) g\u0027(x)",
+                                          "f\u0027(g(x)) g(x)",
+                                          "f(g(x))",
+                                          "f\u0027(x)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_199",
+                          "text":  "The average value of sin x on [0,π] is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2/π",
+                                          "0",
+                                          "1",
+                                          "1/π"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_200",
+                          "text":  "The derivative of ln|f(x)| is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "f\u0027(x)/f(x)",
+                                          "f(x)/f\u0027(x)",
+                                          "1/f(x)",
+                                          "f\u0027(x)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_201",
+                          "text":  "The integral of f\u0027(x)/f(x) dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|f(x)| + c",
+                                          "f(x) + c",
+                                          "1/f(x) + c",
+                                          "f\u0027(x) + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_202",
+                          "text":  "The derivative of a^x (a \u003e 0) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "a^x ln a",
+                                          "x a^(x-1)",
+                                          "a^x",
+                                          "ln a^x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_203",
+                          "text":  "The integral of a^x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "a^x/ln a + c",
+                                          "a^x ln a + c",
+                                          "x a^(x-1) + c",
+                                          "a^x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_204",
+                          "text":  "The derivative of log_a x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1/(x ln a)",
+                                          "1/x",
+                                          "ln a/x",
+                                          "x ln a"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_205",
+                          "text":  "The integral of 1/x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ln|x| + c",
+                                          "ln x + c",
+                                          "1/x² + c",
+                                          "e^x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_206",
+                          "text":  "The derivative of sinh x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "cosh x",
+                                          "-cosh x",
+                                          "sinh x",
+                                          "cosh² x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_207",
+                          "text":  "The derivative of cosh x is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sinh x",
+                                          "-sinh x",
+                                          "cosh x",
+                                          "-cosh x"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_208",
+                          "text":  "The integral of sinh x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "cosh x + c",
+                                          "-cosh x + c",
+                                          "sinh x + c",
+                                          "-sinh x + c"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "mth102_209",
+                          "text":  "The integral of cosh x dx is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "sinh x + c",
+                                          "-sinh x + c",
+                                          "cosh x + c",
+                                          "-cosh x + c"
+                                      ],
+                          "correct_index":  0
+                      }
+                  ],
+    "course_id":  "mth102",
+    "course_name":  "Mathematics II",
+    "version":  "1.0.0"
+}
