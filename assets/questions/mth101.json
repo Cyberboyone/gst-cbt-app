@@ -1,0 +1,1207 @@
+{
+  "course_id": "mth101",
+  "course_name": "Mathematics I",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "id": "mth101_001",
+      "text": "A set is best defined as",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["a random collection of objects", "a well-defined collection of objects", "a list of numbers", "an unordered list"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_002",
+      "text": "Which of the following represents a set written in roster form?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["{x | x is a prime number}", "{2, 3, 5, 7}", "x belongs to N", "P(x)"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_003",
+      "text": "The symbol used to denote 'such that' in set-builder notation is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["=", "element of", "|", "subset"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_004",
+      "text": "The set of vowels in English alphabet written in roster form is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["{a, b, c, d}", "{a, e, i, o, u}", "{vowels}", "a through u"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_005",
+      "text": "Which of the following is not a way of describing a set?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Roster form", "Set-builder form", "Enumeration form", "Matrix form"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_006",
+      "text": "A set with a finite number of elements is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["infinite set", "null set", "finite set", "singleton set"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_007",
+      "text": "The set {1, 2, 3, ...} is an example of",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["finite set", "null set", "infinite set", "singleton set"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_008",
+      "text": "A set containing only one element is known as",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["empty set", "universal set", "singleton set", "power set"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_009",
+      "text": "Which symbol represents an empty (null) set?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["{}", "phi", "empty set symbol", "All of the above"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_010",
+      "text": "The number of elements in the null set is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "infinite", "undefined"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_011",
+      "text": "Two sets A and B are equal if",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["they have the same number of elements", "their elements are in the same order", "every element of A is in B and vice versa", "they are both finite"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_012",
+      "text": "If A is a subset of B and B is a subset of A, then",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["A is a proper subset of B", "A is not equal to B", "A equals B", "A is equivalent to B"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_013",
+      "text": "A proper subset of B is a set that",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["is equal to B", "has more elements than B", "is contained in B but not equal to B", "contains B"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_014",
+      "text": "If a set has 3 elements, the number of subsets is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["3", "6", "8", "9"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_015",
+      "text": "The set of all subsets of a given set is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["universal set", "equivalent set", "power set", "null set"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_016",
+      "text": "Two sets are said to be comparable if",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["they are equal", "one is a subset of the other", "both are infinite", "both are empty"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_017",
+      "text": "Sets with no common elements are called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["comparable sets", "equivalent sets", "disjoint sets", "universal sets"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_018",
+      "text": "If A intersection B is empty, then A and B are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["equal", "overlapping", "disjoint", "subsets"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_019",
+      "text": "A universal set is one that",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["has no elements", "contains only numbers", "contains all sets under consideration", "is finite"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_020",
+      "text": "Which of the following is always true?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["empty set is a subset of A", "A is a subset of empty set", "A union A equals empty set", "A intersection A equals empty set"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_021",
+      "text": "The union of sets A and B contains",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["only elements common to both", "all elements in A or B or both", "elements in A but not in B", "elements in B only"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_022",
+      "text": "If A = {1,2,3} and B = {3,4,5}, then A union B =",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["{3}", "{1,2,4,5}", "{1,2,3,4,5}", "{}"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_023",
+      "text": "Which property states that A union B = B union A?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Associative", "Commutative", "Distributive", "Idempotent"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_024",
+      "text": "A union empty set is equal to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["empty set", "{empty set}", "A", "1"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_025",
+      "text": "A union A is equal to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["empty set", "A", "2A", "U"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_026",
+      "text": "If A = {1,2} then the power set of A has",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["2 elements", "3 elements", "4 elements", "5 elements"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_027",
+      "text": "Which of the following is a family of sets?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["{1,2,3}", "{{1},{2},{3}}", "{1,{2},3}", "{empty set,1,2}"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_028",
+      "text": "Equivalent sets must have",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["the same elements", "the same order", "the same number of elements", "common elements"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_029",
+      "text": "The symbol 'subset' means",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["element of", "equal to", "subset of", "union"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_030",
+      "text": "If A has n elements, the number of elements in its power set is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n squared", "2n", "n factorial", "2 to the power n"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_031",
+      "text": "A quadratic equation is an equation of degree",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["1", "2", "3", "4"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_032",
+      "text": "The general form of a quadratic equation is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["ax + b = 0", "ax^2 + bx + c = 0, a not equal to 0", "ax^3 + bx^2 + c = 0", "x^2 + 1 = 0"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_033",
+      "text": "The highest power of x in a quadratic equation is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["1", "2", "3", "0"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_034",
+      "text": "The roots of a quadratic equation are the values of x that make the equation",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["positive", "undefined", "zero", "negative"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_035",
+      "text": "A quadratic equation can have at most",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["one root", "two roots", "three roots", "four roots"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_036",
+      "text": "Which of the following is NOT a method of solving quadratic equations?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Factorization", "Completing the square", "Differentiation", "Formula method"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_037",
+      "text": "The quadratic formula is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["x = -b/2a", "x = (-b plus/minus sqrt(b^2 - 4ac)) / 2a", "x = b^2 - 4ac", "x = 2a/-b"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_038",
+      "text": "The expression b^2 - 4ac is called the",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["root", "coefficient", "discriminant", "determinant"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_039",
+      "text": "If the discriminant is positive, the roots are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["equal", "imaginary", "real and distinct", "zero"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_040",
+      "text": "If the discriminant is zero, the roots are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["imaginary", "real and equal", "real and distinct", "undefined"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_041",
+      "text": "If the discriminant is negative, the roots are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["real", "equal", "imaginary", "rational"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_042",
+      "text": "The sum of the roots of ax^2 + bx + c = 0 is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["c/a", "-b/a", "-c/a", "b/a"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_043",
+      "text": "The product of the roots of ax^2 + bx + c = 0 is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["-b/a", "b/c", "c/a", "a/c"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_044",
+      "text": "If alpha and beta are roots, then alpha + beta equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["-b/a", "b/a", "c/a", "-c/a"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_045",
+      "text": "If alpha and beta are roots, then alpha*beta equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["-b/a", "b/a", "c/a", "a/c"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_046",
+      "text": "Which method makes the LHS a perfect square?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Graphical", "Formula", "Completing the square", "Factorization"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_047",
+      "text": "The graph of a quadratic equation is a",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["straight line", "circle", "parabola", "hyperbola"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_048",
+      "text": "A quadratic equation touches the x-axis at one point if the discriminant is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["positive", "negative", "zero", "imaginary"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_049",
+      "text": "If a = 0 in ax^2 + bx + c = 0, the equation becomes",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["quadratic", "cubic", "linear", "imaginary"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_050",
+      "text": "Which of the following is a quadratic equation?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["2x - 1 = 0", "x^3 + x = 0", "x^2 - 5x + 6 = 0", "1/x = 2"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_051",
+      "text": "The roots of x^2 - 9 = 0 are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["3 only", "-3 only", "plus/minus 3", "0 and 9"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_052",
+      "text": "The product of the roots of x^2 + 5x + 6 = 0 is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["5", "6", "-5", "-6"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_053",
+      "text": "A quadratic equation has equal roots when",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["b^2 - 4ac > 0", "b^2 - 4ac = 0", "b^2 - 4ac < 0", "a = 0"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_054",
+      "text": "The coefficient of x^2 in 3x^2 - 2x + 1 = 0 is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["-2", "1", "3", "0"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_055",
+      "text": "The constant term in 2x^2 - 7x + 4 = 0 is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["2", "-7", "4", "x"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_056",
+      "text": "The roots of x^2 = 16 are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["4", "-4", "plus/minus 4", "16"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_057",
+      "text": "The discriminant of x^2 - 4x + 4 = 0 is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "4", "-4", "16"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_058",
+      "text": "If alpha and beta are roots of x^2 - 6x + 5 = 0, then alpha + beta =",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["5", "-6", "6", "-5"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_059",
+      "text": "Which method involves plotting a graph?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Factorization", "Completing the square", "Formula", "Graphical"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_060",
+      "text": "The nature of roots depends on",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["coefficient a", "coefficient b", "discriminant", "constant c"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_061",
+      "text": "Mathematical induction is mainly used to prove statements involving",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["real numbers", "natural numbers", "integers only", "fractions"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_062",
+      "text": "The first step in mathematical induction is to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["assume the statement is true", "prove the statement for all n", "verify the statement for n = 1", "conclude the proof"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_063",
+      "text": "The step where we assume a statement is true for n = k is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["base case", "conclusion", "induction hypothesis", "verification"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_064",
+      "text": "The final step in induction is to prove the statement is true for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n = 1", "n = k", "n = k + 1", "n = 0"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_065",
+      "text": "Mathematical induction is suitable for proving",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["geometric theorems", "algebraic identities", "trigonometric identities", "probability rules"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_066",
+      "text": "Which of the following is NOT a step in mathematical induction?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Base case", "Induction hypothesis", "Inductive step", "Differentiation"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_067",
+      "text": "The base case is usually verified for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n = 0", "n = 1", "n = 2", "n = k"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_068",
+      "text": "In induction, k is assumed to be",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["a constant", "a real number", "a natural number", "a fraction"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_069",
+      "text": "Mathematical induction proves that a statement is true for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["one value of n", "two values of n", "all natural numbers", "some integers"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_070",
+      "text": "The induction hypothesis is used to prove",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["the base case", "the conclusion", "the inductive step", "the assumption"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_071",
+      "text": "If a statement is true for n = 1 and true for n = k implies n = k + 1, then it is true for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n = 2 only", "n = k only", "all natural numbers", "n = 0"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_072",
+      "text": "Mathematical induction is based on the principle of",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["contradiction", "implication", "deduction", "recursion"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_073",
+      "text": "The inductive step connects",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n = 1 to n = 2", "n = k to n = k + 1", "n = 0 to n = 1", "n = 2 to n = 3"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_074",
+      "text": "Which symbol is commonly used to denote the assumption in induction?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["therefore", "implies", "element of", "subset"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_075",
+      "text": "Mathematical induction is mostly applied to sequences and",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["series", "matrices", "graphs", "vectors"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_076",
+      "text": "The statement assumed to be true is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["conclusion", "theorem", "induction hypothesis", "base case"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_077",
+      "text": "Induction can be used to prove formulas for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["limits", "summations", "differentiation", "integration"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_078",
+      "text": "The base case must be shown to be",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["false", "assumed", "true", "imaginary"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_079",
+      "text": "Which of the following best describes mathematical induction?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["Guessing method", "Experimental method", "Logical proof technique", "Graphical method"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_080",
+      "text": "Mathematical induction does NOT apply to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n in natural numbers", "counting numbers", "continuous variables", "positive integers"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_081",
+      "text": "In induction, after proving the base case, the next step is to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["conclude the proof", "assume for n = k", "test for n = 2", "disprove the statement"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_082",
+      "text": "If a statement fails at the base case, the induction proof",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["is still valid", "becomes invalid", "is partially true", "continues"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_083",
+      "text": "Mathematical induction is sometimes called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["direct proof", "recursive proof", "stepwise proof", "circular proof"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_084",
+      "text": "The value k + 1 represents",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["previous case", "base case", "next case", "last case"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_085",
+      "text": "Mathematical induction is often used in proving",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["inequalities", "integrals", "derivatives", "limits"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_086",
+      "text": "In induction, the statement P(k + 1) is proved using",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["P(1)", "P(0)", "P(k)", "P(n)"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_087",
+      "text": "The induction principle works because",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["mathematics is exact", "natural numbers are infinite", "each case leads to the next", "formulas are simple"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_088",
+      "text": "Mathematical induction is mainly a method of",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["calculation", "estimation", "proof", "approximation"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_089",
+      "text": "The phrase 'assume P(k) is true' refers to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["base case", "inductive step", "induction hypothesis", "conclusion"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_090",
+      "text": "Mathematical induction establishes a result for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["a single value", "a fixed range", "all natural numbers", "real numbers"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_091",
+      "text": "A matrix is a",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["single number", "collection of equations", "rectangular array of numbers", "function"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_092",
+      "text": "The horizontal arrangement of elements in a matrix is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["column", "row", "diagonal", "determinant"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_093",
+      "text": "The vertical arrangement of elements in a matrix is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["row", "column", "vector", "scalar"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_094",
+      "text": "A matrix with m rows and n columns is said to be of order",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["n x m", "m + n", "m x n", "mn"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_095",
+      "text": "A matrix having only one row is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["column matrix", "row matrix", "square matrix", "diagonal matrix"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_096",
+      "text": "A matrix having only one column is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["row matrix", "column matrix", "square matrix", "zero matrix"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_097",
+      "text": "A square matrix whose diagonal elements are all zero is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["identity matrix", "diagonal matrix", "zero matrix", "null matrix"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_098",
+      "text": "A matrix in which all elements are zero is called",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["identity matrix", "zero matrix", "unit matrix", "scalar matrix"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_099",
+      "text": "The identity matrix is a square matrix whose diagonal elements are",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["zero", "equal", "one", "two"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_100",
+      "text": "The identity matrix is usually denoted by",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["A", "O", "I", "M"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_101",
+      "text": "Two matrices are equal if",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["they have same order only", "they have same elements only", "they have same order and corresponding elements equal", "they are both square"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_102",
+      "text": "Matrix addition is possible only when",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["matrices are square", "matrices are of same order", "matrices are diagonal", "matrices are zero"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_103",
+      "text": "If A and B are matrices of same order, then A + B is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["commutative", "not defined", "undefined", "imaginary"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_104",
+      "text": "The element a_ij of a matrix represents the element in",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["i-th column and j-th row", "j-th column and i-th row", "i-th row and j-th column", "diagonal"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_105",
+      "text": "Matrix subtraction requires that the matrices must",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["be square", "be diagonal", "have same order", "have determinant"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_106",
+      "text": "Multiplication of matrices A and B is possible if",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["both are square", "number of rows of A equals number of columns of B", "number of columns of A equals number of rows of B", "both are identity matrices"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_107",
+      "text": "Matrix multiplication is generally",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["commutative", "associative only", "not commutative", "distributive only"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_108",
+      "text": "The order of the product AB is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["same as A", "same as B", "rows of A x columns of B", "columns of A x rows of B"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_109",
+      "text": "The transpose of a matrix is obtained by",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["changing signs of elements", "interchanging rows and columns", "multiplying by -1", "finding determinant"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_110",
+      "text": "The transpose of matrix A is denoted by",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["A inverse", "A transpose", "|A|", "det(A)"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_111",
+      "text": "If A is a matrix, then (A transpose) transpose equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "I", "A", "A inverse"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_112",
+      "text": "The determinant of a matrix is defined only for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["rectangular matrices", "row matrices", "square matrices", "column matrices"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_113",
+      "text": "A matrix is singular if its determinant is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["1", "-1", "zero", "positive"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_114",
+      "text": "A matrix is non-singular if its determinant is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["zero", "undefined", "not zero", "imaginary"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_115",
+      "text": "The inverse of a matrix exists if",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["matrix is square", "determinant is zero", "determinant is not zero", "matrix is diagonal"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_116",
+      "text": "The inverse of matrix A is denoted by",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["A transpose", "A inverse", "|A|", "det(A)"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_117",
+      "text": "If A is a square matrix, then",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["A + A = I", "A x I = A", "A x 0 = I", "A - A = I"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_118",
+      "text": "Which of the following is true?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["A + B = B + A always", "AB = BA always", "A x 0 = 0 x A = I", "A transpose = A inverse"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_119",
+      "text": "Matrices are widely used in",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["trigonometry only", "statistics only", "computer science and engineering", "arithmetic only"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_120",
+      "text": "A rectangular matrix has",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["equal rows and columns", "more rows than columns", "unequal number of rows and columns", "only one row"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_121",
+      "text": "Trigonometry is the study of",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["triangles only", "angles only", "relationship between sides and angles of triangles", "circles"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_122",
+      "text": "The six basic trigonometric ratios are sine, cosine, tangent, cosecant, secant and",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["cotangent", "complement", "inverse", "angle"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_123",
+      "text": "In a right-angled triangle, sine of an angle theta is defined as",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["adjacent/hypotenuse", "opposite/hypotenuse", "opposite/adjacent", "hypotenuse/opposite"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_124",
+      "text": "Cosine of an angle theta is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["opposite/hypotenuse", "adjacent/hypotenuse", "opposite/adjacent", "hypotenuse/adjacent"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_125",
+      "text": "Tangent of an angle theta is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["adjacent/opposite", "opposite/adjacent", "hypotenuse/opposite", "hypotenuse/adjacent"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_126",
+      "text": "Which of the following is the reciprocal of sine?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["sec theta", "tan theta", "cos theta", "cosec theta"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_127",
+      "text": "The reciprocal of cosine is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["tan theta", "sec theta", "cosec theta", "cot theta"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_128",
+      "text": "The reciprocal of tangent is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["sine", "cosine", "secant", "cotangent"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_129",
+      "text": "sin squared theta + cos squared theta is equal to",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "2", "sin theta"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_130",
+      "text": "1 + tan squared theta equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["sec squared theta", "cosec squared theta", "sin squared theta", "cos squared theta"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_131",
+      "text": "1 + cot squared theta equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["tan squared theta", "sec squared theta", "cosec squared theta", "sin squared theta"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_132",
+      "text": "If sin theta = 1, then theta equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0 degrees", "30 degrees", "60 degrees", "90 degrees"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_133",
+      "text": "sin 30 degrees equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "1/2", "sqrt(3)/2"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_134",
+      "text": "cos 60 degrees equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["1", "0", "sqrt(3)/2", "1/2"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_135",
+      "text": "tan 45 degrees equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "sqrt(3)", "1/sqrt(3)"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_136",
+      "text": "sin 0 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "-1", "undefined"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_137",
+      "text": "cos 0 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "-1", "undefined"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_138",
+      "text": "tan 0 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["1", "-1", "0", "undefined"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_139",
+      "text": "sin 90 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "-1", "undefined"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_140",
+      "text": "cos 90 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "-1", "undefined"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_141",
+      "text": "tan 90 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "-1", "undefined"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_142",
+      "text": "Which of the following angles has sine equal to cosine?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["30 degrees", "45 degrees", "60 degrees", "90 degrees"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_143",
+      "text": "The value of tan 60 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["1", "1/sqrt(3)", "sqrt(3)", "0"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_144",
+      "text": "The value of cot 45 degrees is",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0", "1", "sqrt(3)", "1/sqrt(3)"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_145",
+      "text": "If cos theta = 0, then theta equals",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["0 degrees", "30 degrees", "60 degrees", "90 degrees"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_146",
+      "text": "Which trigonometric ratio is undefined at 90 degrees?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["sine", "cosine", "tangent", "cosecant"],
+      "correct_index": 2
+    },
+    {
+      "id": "mth101_147",
+      "text": "The hypotenuse of a right-angled triangle is the side",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["opposite the right angle", "adjacent to the right angle", "opposite the smallest angle", "adjacent to the smallest angle"],
+      "correct_index": 0
+    },
+    {
+      "id": "mth101_148",
+      "text": "Which identity is correct?",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["sin theta = 1/cos theta", "tan theta = sin theta / cos theta", "cos theta = 1/sin theta", "cot theta = sin theta / cos theta"],
+      "correct_index": 1
+    },
+    {
+      "id": "mth101_149",
+      "text": "Trigonometric ratios are defined for",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["acute angles only", "obtuse angles only", "right angles only", "angles in right-angled triangles"],
+      "correct_index": 3
+    },
+    {
+      "id": "mth101_150",
+      "text": "Trigonometry is widely applied in",
+      "explanation": "",
+      "difficulty": 1,
+      "options": ["agriculture only", "astronomy and engineering", "literature", "banking only"],
+      "correct_index": 1
+    }
+  ]
+}

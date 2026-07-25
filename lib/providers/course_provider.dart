@@ -73,6 +73,14 @@ class CourseProvider with ChangeNotifier {
       mode: '100_level',
     ),
     Course(
+      id: 'mth101',
+      code: 'MTH 101',
+      name: 'Mathematics I',
+      icon: '📐',
+      colorHex: '#FFF3CD', // Amber
+      mode: '100_level',
+    ),
+    Course(
       id: 'mth102',
       code: 'MTH 102',
       name: 'Mathematics II',
