@@ -65,6 +65,14 @@ class CourseProvider with ChangeNotifier {
       mode: '100_level',
     ),
     Course(
+      id: 'chm102',
+      code: 'CHM 102',
+      name: 'Introductory Organic Chemistry',
+      icon: '⚗️',
+      colorHex: '#DFF5E4', // Mint
+      mode: '100_level',
+    ),
+    Course(
       id: 'ssc202',
       code: 'SSC 202',
       name: 'Intro to Computing Sciences',

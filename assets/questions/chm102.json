@@ -1,0 +1,2607 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "chm102_001",
+                          "text":  "Who proposed the Vital Force Theory in 1807?",
+                          "explanation":  "Berzelius, in 1807, proposed the Vital Force Theory, suggesting that organic matter was created by a \u0027vital force\u0027 present only in living organisms.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Friedrich Wöhler",
+                                          "B. Berzelius",
+                                          "C. August Kekulé",
+                                          "D. Hermann Kolbe"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_002",
+                          "text":  "Friedrich Wöhler\u0027s landmark synthesis that disproved the Vital Force Theory was the synthesis of:",
+                          "explanation":  "Friedrich Wöhler accidentally synthesized urea — an organic compound found in urine — by heating ammonium cyanate, an inorganic salt, in 1828.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Acetic acid",
+                                          "B. Methane",
+                                          "C. Urea",
+                                          "D. Mauveine"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_003",
+                          "text":  "Wöhler\u0027s synthesis of urea was performed by heating:",
+                          "explanation":  "Wöhler synthesized urea by heating ammonium cyanate, an inorganic salt, proving that organic compounds could be produced without a vital force.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Ammonium sulfate",
+                                          "B. Ammonium cyanate",
+                                          "C. Ammonium nitrate",
+                                          "D. Ammonium chloride"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_004",
+                          "text":  "In which year did Wöhler synthesize urea, marking the turning point in organic chemistry?",
+                          "explanation":  "Friedrich Wöhler synthesized urea in 1828, effectively laying the foundation for synthetic organic chemistry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 1807",
+                                          "B. 1820",
+                                          "C. 1828",
+                                          "D. 1856"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_005",
+                          "text":  "Who proposed the tetravalent nature of carbon and its ability to form chains in 1858?",
+                          "explanation":  "August Kekulé and Archibald Scott Couper in 1858 proposed the tetravalent nature of carbon (carbon forms four bonds) and its ability to form chains.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Wöhler and Berzelius",
+                                          "B. Kekulé and Archibald Scott Couper",
+                                          "C. Kolbe and Berthelot",
+                                          "D. Perkin and Staudinger"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_006",
+                          "text":  "The first synthetic dye, mauveine, was synthesized in 1856 by:",
+                          "explanation":  "In 1856, William Perkin synthesized the first synthetic dye, mauveine, triggering commercial interest in synthetic chemistry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Hermann Kolbe",
+                                          "B. William Perkin",
+                                          "C. Berthelot",
+                                          "D. Hermann Staudinger"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_007",
+                          "text":  "Aspirin was mass-produced by which company in 1899?",
+                          "explanation":  "Mass production of aspirin by Bayer in 1899 was a major milestone in the chemical industry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Pfizer",
+                                          "B. Novartis",
+                                          "C. Bayer",
+                                          "D. AstraZeneca"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_008",
+                          "text":  "Who introduced chromatography in 1903, enabling easier isolation of organic compounds?",
+                          "explanation":  "The introduction of chromatography by Tsvet in 1903 allowed for easier isolation of compounds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Staudinger",
+                                          "B. Kekulé",
+                                          "C. Perkin",
+                                          "D. Tsvet"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_009",
+                          "text":  "Organic chemistry is critical to modern life because it covers:",
+                          "explanation":  "Organic chemistry is critical to modern life because it covers the chemical makeup of life itself and most products used daily.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Only industrial processes",
+                                          "B. The chemical makeup of life itself and most products used daily",
+                                          "C. Only pharmaceutical production",
+                                          "D. Only petroleum-based products"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_010",
+                          "text":  "Which of the following is NOT an application of organic chemistry?",
+                          "explanation":  "Nuclear fission is a nuclear/inorganic chemistry phenomenon. Organic chemistry covers medicine, polymers, agriculture, and energy but not nuclear reactions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Design of antibiotics",
+                                          "B. Production of synthetic polymers",
+                                          "C. Nuclear fission reactions",
+                                          "D. Development of pesticides"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_011",
+                          "text":  "Allotropy is defined as the property of a chemical element to exist in:",
+                          "explanation":  "Allotropy is the property of a chemical element to exist in two or more different physical forms (called allotropes) within the same physical state.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Different ionic states",
+                                          "B. Two or more different physical forms within the same physical state",
+                                          "C. Multiple oxidation states",
+                                          "D. Solid, liquid, and gaseous states simultaneously"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_012",
+                          "text":  "Allotropes of the same element differ in their:",
+                          "explanation":  "Allotropes are composed of the same single element but have different atomic arrangements or molecular structures, giving them distinct physical and chemical properties.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Atomic number",
+                                          "B. Number of electrons",
+                                          "C. Bonding arrangements or crystal lattice structure",
+                                          "D. Chemical composition"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_013",
+                          "text":  "The four primary allotropes of carbon are:",
+                          "explanation":  "The four primary allotropes of carbon are diamond, graphite, graphene, and fullerenes (including Buckminsterfullerene).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Diamond, graphite, coal, and charcoal",
+                                          "B. Diamond, graphite, graphene, and fullerenes",
+                                          "C. Diamond, graphite, soot, and buckyballs",
+                                          "D. Graphite, graphene, amorphous carbon, and coal"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_014",
+                          "text":  "Which property correctly distinguishes diamond from graphite?",
+                          "explanation":  "Diamond is transparent and the hardest known natural material; graphite is opaque, slippery, and conductive. Yet both are pure carbon.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Diamond conducts electricity; graphite does not",
+                                          "B. Diamond is the hardest natural material; graphite is soft and slippery",
+                                          "C. Diamond is opaque; graphite is transparent",
+                                          "D. Both have the same hybridization of carbon"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_015",
+                          "text":  "Allotropy also occurs in which of the following elements?",
+                          "explanation":  "Allotropy also occurs in phosphorus (white, red, black), oxygen (O₂ vs. O₃ ozone), sulfur (rhombic vs. monoclinic), and tin (gray vs. white).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Gold and silver",
+                                          "B. Oxygen, phosphorus, and sulfur",
+                                          "C. Iron and copper",
+                                          "D. Nitrogen and hydrogen"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_016",
+                          "text":  "IUPAC defines fullerenes as polyhedral closed cages made up entirely of n three-coordinate carbon atoms having 12 pentagonal faces and (n/2 - 10) hexagonal faces where n ≥:",
+                          "explanation":  "IUPAC defines fullerenes as polyhedral closed cages made up entirely of n three-coordinate carbon atoms with 12 pentagonal and (n/2-10) hexagonal faces, where n ≥ 20.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 12",
+                                          "B. 20",
+                                          "C. 60",
+                                          "D. 70"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_017",
+                          "text":  "Fullerenes were discovered in:",
+                          "explanation":  "Fullerenes had been predicted for some time, but after their accidental synthesis in 1985 they were detected in nature and outer space.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 1975",
+                                          "B. 1980",
+                                          "C. 1985",
+                                          "D. 1991"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_018",
+                          "text":  "Who won the Nobel Prize in 1996 for the discovery of fullerenes?",
+                          "explanation":  "Fullerenes were discovered in 1985 by Curl, Kroto, and Smalley, who won the Nobel Prize in 1996.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Kekulé, Kolbe, and Berthelot",
+                                          "B. Curl, Kroto, and Smalley",
+                                          "C. Tsvet, Staudinger, and Perkin",
+                                          "D. Krätchmer, Huffman, and Smalley"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_019",
+                          "text":  "Buckminsterfullerene (C₆₀) was named after:",
+                          "explanation":  "C₆₀ is named after Buckminster Fuller, a geodesic dome architect, because of the structural similarity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. A famous chemist called Fuller",
+                                          "B. Buckminster Fuller, a geodesic dome architect",
+                                          "C. The buckwheat plant",
+                                          "D. The city of Buckminster in the UK"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_020",
+                          "text":  "The molecular formula of Buckminsterfullerene is:",
+                          "explanation":  "Buckminsterfullerene has the molecular formula C₆₀ — 60 carbon atoms arranged as 20 hexagons and 12 pentagons.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. C₂₀",
+                                          "B. C₅₄",
+                                          "C. C₆₀",
+                                          "D. C₇₀"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_021",
+                          "text":  "The shape of C₆₀ (Buckminsterfullerene) resembles a:",
+                          "explanation":  "C₆₀ is arranged as a truncated icosahedron — 20 hexagons and 12 pentagons — resembling a soccer ball.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Tetrahedral diamond lattice",
+                                          "B. Flat graphene sheet",
+                                          "C. Truncated icosahedron (soccer ball)",
+                                          "D. Helical DNA strand"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_022",
+                          "text":  "The hybridization of carbon atoms in C₆₀ is:",
+                          "explanation":  "Each C atom in C₆₀ is sp² hybridized, bonded to 3 others, with delocalized π electrons.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. sp",
+                                          "B. sp²",
+                                          "C. sp³",
+                                          "D. sp³d"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_023",
+                          "text":  "The approximate diameter of a C₆₀ molecule is:",
+                          "explanation":  "The diameter of C₆₀ is approximately 0.7 nm, while its van der Waals diameter is about 1.1 nm.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 0.1 nm",
+                                          "B. 0.7 nm",
+                                          "C. 5 nm",
+                                          "D. 10 nm"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_024",
+                          "text":  "What is the characteristic reaction of fullerenes?",
+                          "explanation":  "The characteristic reaction of fullerenes is electrophilic addition at 6:6 double bonds, which reduces angle strain by changing sp²-hybridized carbons into sp³-hybridized ones.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Free radical substitution",
+                                          "B. Nucleophilic addition at 5:6 bonds",
+                                          "C. Electrophilic addition at 6:6 double bonds",
+                                          "D. Elimination reactions"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_025",
+                          "text":  "Fullerenes are unique among carbon allotropes because they are the only ones that can be:",
+                          "explanation":  "Fullerenes are the only known allotrope of carbon that can be dissolved in common solvents at room temperature.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Reduced by hydrogen",
+                                          "B. Dissolved in common organic solvents at room temperature",
+                                          "C. Oxidized by air",
+                                          "D. Used as lubricants"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_026",
+                          "text":  "Solutions of pure buckminsterfullerene (C₆₀) have a characteristic color of:",
+                          "explanation":  "Solutions of pure buckminsterfullerene have a deep purple color.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Yellow",
+                                          "B. Blue",
+                                          "C. Deep purple",
+                                          "D. Red-brown"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_027",
+                          "text":  "Solutions of C₇₀ fullerene appear:",
+                          "explanation":  "Solutions of C₇₀ are a reddish brown.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Deep purple",
+                                          "B. Reddish brown",
+                                          "C. Colorless",
+                                          "D. Yellow"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_028",
+                          "text":  "Normally, fullerenes are electrical insulators, but become conducting or superconducting when crystallized with:",
+                          "explanation":  "Fullerenes are normally electrical insulators, but when crystallized with alkali metals, the resultant compound can be conducting or even superconducting.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Transition metals",
+                                          "B. Alkaline earth metals",
+                                          "C. Alkali metals",
+                                          "D. Noble gases"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_029",
+                          "text":  "Which property of fullerenes makes them useful as lubricants?",
+                          "explanation":  "C₆₀ molecules act as nanoscale ball bearings between surfaces, achieving very low friction coefficients — making them useful as lubricants.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. High electrical conductivity",
+                                          "B. Their solubility in water",
+                                          "C. Their ability to act as nanoscale ball bearings",
+                                          "D. Their high melting point"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_030",
+                          "text":  "Endohedral fullerenes are fullerenes that:",
+                          "explanation":  "Endohedral fullerenes are inclusion compounds where additional atoms, ions, clusters, or small molecules are trapped inside fullerenes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Have atoms missing from their cage structure",
+                                          "B. Contain additional atoms, ions, or molecules trapped inside the cage",
+                                          "C. Are formed when two fullerenes fuse together",
+                                          "D. Have hexagons replaced by pentagons"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_031",
+                          "text":  "Heterofullerenes are fullerenes where:",
+                          "explanation":  "Heterofullerenes are classes of fullerenes in which at least one carbon atom is replaced by another element, discovered in 1993.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Two fullerene cages are linked together",
+                                          "B. At least one carbon atom is replaced by another element",
+                                          "C. The cage structure is partially open",
+                                          "D. Metal atoms are attached on the outside"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_032",
+                          "text":  "C₇₀ fullerene consists of how many hexagons and pentagons?",
+                          "explanation":  "C₇₀ comprises 25 hexagons and 12 pentagons, with an elongated, rugby ball-shaped structure.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 20 hexagons and 12 pentagons",
+                                          "B. 25 hexagons and 12 pentagons",
+                                          "C. 30 hexagons and 12 pentagons",
+                                          "D. 20 hexagons and 15 pentagons"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_033",
+                          "text":  "The smallest possible fullerene is:",
+                          "explanation":  "The smallest possible fullerene is the dodecahedral C₂₀.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. C₂₀",
+                                          "B. C₄₀",
+                                          "C. C₆₀",
+                                          "D. C₇₀"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "chm102_034",
+                          "text":  "Carbon nanotubes (CNTs) are best described as:",
+                          "explanation":  "Carbon nanotubes (CNTs) are cylindrical nanostructures made of rolled graphene sheets, known for high tensile strength and exceptional electrical conductivity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Spherical carbon cages",
+                                          "B. Flat graphene sheets",
+                                          "C. Cylindrical nanostructures made of rolled graphene sheets",
+                                          "D. Amorphous carbon particles"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_035",
+                          "text":  "Carbon nanotubes were discovered prominently in:",
+                          "explanation":  "Carbon nanotubes were discovered prominently in 1991.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 1985",
+                                          "B. 1991",
+                                          "C. 1996",
+                                          "D. 2000"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_036",
+                          "text":  "The two main types of carbon nanotubes (CNTs) are:",
+                          "explanation":  "CNTs exist as single-walled (SWCNT) — one graphene layer rolled seamlessly — or multi-walled (MWCNT) — concentric tubes nested inside one another.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Metallic and semiconducting",
+                                          "B. Single-walled (SWCNT) and multi-walled (MWCNT)",
+                                          "C. Open-ended and closed-ended",
+                                          "D. Chiral and achiral"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_037",
+                          "text":  "The electrical conductivity of CNTs is approximately:",
+                          "explanation":  "Carbon nanotubes are known for exceptional electrical conductivity of 3000–4000 S/m.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 300-400 S/m",
+                                          "B. 3000-4000 S/m",
+                                          "C. 30,000-40,000 S/m",
+                                          "D. 300,000-400,000 S/m"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_038",
+                          "text":  "The tensile strength of carbon nanotubes compared to steel is approximately:",
+                          "explanation":  "CNTs have extremely high tensile strength — approximately 100× steel at 1/6 the weight — making them ideal for lightweight composites.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Equal to steel",
+                                          "B. 10 times stronger",
+                                          "C. ~100 times stronger at 1/6 the weight",
+                                          "D. 50 times weaker"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_039",
+                          "text":  "Which method is classically used to synthesize fullerenes such as C₆₀ and C₇₀?",
+                          "explanation":  "Electric arc discharge is one of the classic methods for synthesizing fullerenes — specifically C₆₀ and C₇₀.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Catalytic cracking",
+                                          "B. Electric arc discharge",
+                                          "C. Fractional distillation",
+                                          "D. Electrolysis"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_040",
+                          "text":  "In the electric arc discharge method for fullerene synthesis, what atmosphere is used?",
+                          "explanation":  "Two graphite rods are placed in a chamber filled with an inert atmosphere (typically helium at ~100–200 Torr) during electric arc discharge synthesis.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Oxygen atmosphere",
+                                          "B. Nitrogen atmosphere",
+                                          "C. Inert atmosphere (typically helium)",
+                                          "D. Hydrogen atmosphere"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_041",
+                          "text":  "In the electric arc discharge synthesis, the percentage of fullerenes found in the resulting soot is approximately:",
+                          "explanation":  "The soot that deposits on the chamber walls contains about 5–15% fullerenes by mass, which are then extracted using organic solvents like toluene.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 1-2%",
+                                          "B. 5-15%",
+                                          "C. 30-40%",
+                                          "D. 50-60%"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_042",
+                          "text":  "Who produced the first macroscopic quantities of C₆₀ in 1990?",
+                          "explanation":  "Krätchmer, Huffman, and colleagues used arc discharge in 1990 to produce macroscopic quantities of C₆₀ for the first time.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Curl, Kroto, and Smalley",
+                                          "B. Krätchmer, Huffman, and colleagues",
+                                          "C. Kekulé and Couper",
+                                          "D. Wöhler and Berzelius"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_043",
+                          "text":  "Fullerenol is a highly water-soluble derivative of C₇₀ used in medicinal research for its properties as a(n):",
+                          "explanation":  "Fullerenol is a highly water-soluble C₇₀ derivative used in medicinal research for its properties as an antioxidant, antibacterial, and antiproliferative agent.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Antibiotic and antifungal agent",
+                                          "B. Antioxidant, antibacterial, and antiproliferative agent",
+                                          "C. Analgesic and anti-inflammatory agent",
+                                          "D. Antiviral and immunosuppressant"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_044",
+                          "text":  "Carbon nanotubes that are metallic or semiconducting depending on their chirality are used in:",
+                          "explanation":  "CNTs are metallic or semiconducting depending on chirality (twist angle) and are used in nanoscale transistors, conductive films, and logic circuits.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Biological imaging only",
+                                          "B. Nanoscale transistors, conductive films, and logic circuits",
+                                          "C. Water purification systems",
+                                          "D. Solar energy storage only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_045",
+                          "text":  "Which of the following is a challenge associated with carbon nanotubes?",
+                          "explanation":  "Challenges with CNTs include: high cost, difficulty separating metallic vs. semiconducting types, and toxicity concerns (asbestos-like fibers if inhaled).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. They are too heavy for practical use",
+                                          "B. They dissolve too easily in water",
+                                          "C. Difficulty in separating metallic vs. semiconducting CNTs and toxicity concerns",
+                                          "D. They cannot conduct electricity"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_046",
+                          "text":  "The hybridization of carbon in diamond is:",
+                          "explanation":  "Diamond has sp³ hybridization with 3D tetrahedral bonding, making it the hardest natural material.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. sp",
+                                          "B. sp²",
+                                          "C. sp³",
+                                          "D. sp³d"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_047",
+                          "text":  "The hybridization of carbon in graphite is:",
+                          "explanation":  "Graphite has sp² hybridization with 2D hexagonal layered bonding, making it soft and electrically conductive in-plane.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. sp",
+                                          "B. sp²",
+                                          "C. sp³",
+                                          "D. sp³d"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_048",
+                          "text":  "Which allotrope of carbon is a semiconductor in its pure state?",
+                          "explanation":  "Pure C₆₀ is a semiconductor; it can become a superconductor when doped with alkali metals.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Diamond",
+                                          "B. Graphite",
+                                          "C. Fullerene (C₆₀)",
+                                          "D. Amorphous carbon"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_049",
+                          "text":  "Which allotrope of carbon is insoluble in all common solvents?",
+                          "explanation":  "Diamond and graphite are both insoluble in common solvents. Fullerenes are the only carbon allotrope soluble in common solvents at room temperature.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Fullerene (C₆₀)",
+                                          "B. Graphite",
+                                          "C. Carbon nanotubes",
+                                          "D. Both B and C"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_050",
+                          "text":  "The best solvent for dissolving C₆₀ is:",
+                          "explanation":  "Among the best solvents for C₆₀ is 1-chloronaphthalene, which will dissolve 51 g/L of C₆₀.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Water",
+                                          "B. Ethanol",
+                                          "C. 1-chloronaphthalene",
+                                          "D. Acetone"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_051",
+                          "text":  "Fullerenes in the context of dimensional classification are considered:",
+                          "explanation":  "Fullerenes with a closed mesh topology are considered \u00270D\u0027 because they\u0027re nanoscale structures where all three dimensions are confined to the molecular scale.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 1D structures",
+                                          "B. 2D structures",
+                                          "C. 3D structures",
+                                          "D. 0D structures"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_052",
+                          "text":  "Carbon nanotubes in terms of dimensional classification are considered:",
+                          "explanation":  "Unlike fullerenes (0D), graphene (2D), or graphite/diamond (3D), carbon nanotubes are considered 1D structures — confined in two spatial dimensions but extended in one.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 0D structures",
+                                          "B. 1D structures",
+                                          "C. 2D structures",
+                                          "D. 3D structures"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_053",
+                          "text":  "Graphene in terms of dimensional classification is considered a:",
+                          "explanation":  "Graphene is a 2D structure — a single flat layer of carbon atoms arranged in a hexagonal lattice.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 0D structure",
+                                          "B. 1D structure",
+                                          "C. 2D structure",
+                                          "D. 3D structure"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_054",
+                          "text":  "Electronic theory in organic chemistry primarily explains:",
+                          "explanation":  "Electronic Theory explains how electrons are arranged in molecules, how they move during chemical reactions, why certain molecules are stable or unstable, and why some substances are acidic, basic, or reactive.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Only the physical state of organic compounds",
+                                          "B. How electrons are arranged, how they move during reactions, and why molecules are stable or reactive",
+                                          "C. Only the boiling points of organic compounds",
+                                          "D. Only the color of organic compounds"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_055",
+                          "text":  "In organic chemistry, the electrons most responsible for bond formation and reactivity are:",
+                          "explanation":  "Valence electrons (outer electrons) determine bond formation, reactivity, and chemical behavior in organic chemistry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Core electrons",
+                                          "B. Inner electrons",
+                                          "C. Valence (outer) electrons",
+                                          "D. Nuclear electrons"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_056",
+                          "text":  "A covalent bond in organic chemistry is formed when atoms:",
+                          "explanation":  "A covalent bond is formed when atoms share electrons. Example: Methane (CH₄) — carbon shares electrons with four hydrogen atoms.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Transfer electrons completely from one to another",
+                                          "B. Share electrons",
+                                          "C. Gain opposite charges and attract",
+                                          "D. Repel each other"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_057",
+                          "text":  "Electronegativity is defined as:",
+                          "explanation":  "Electronegativity is the ability of an atom to attract shared electrons toward itself.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. The energy released when an electron is added to an atom",
+                                          "B. The ability of an atom to attract shared electrons toward itself",
+                                          "C. The number of electrons in an atom\u0027s outer shell",
+                                          "D. The tendency of an atom to lose electrons"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_058",
+                          "text":  "The correct order of electronegativity from highest to lowest is:",
+                          "explanation":  "The correct electronegativity order is: F \u003e O \u003e N \u003e Cl \u003e Br \u003e I \u003e C \u003e H.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. F \u003e O \u003e N \u003e Cl \u003e Br \u003e I \u003e C \u003e H",
+                                          "B. H \u003e C \u003e I \u003e Br \u003e Cl \u003e N \u003e O \u003e F",
+                                          "C. O \u003e F \u003e N \u003e Cl \u003e C \u003e Br \u003e H \u003e I",
+                                          "D. F \u003e Cl \u003e O \u003e N \u003e Br \u003e I \u003e H \u003e C"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "chm102_059",
+                          "text":  "A polar bond is formed when two atoms share electrons:",
+                          "explanation":  "Polar bonds are formed when atoms with different electronegativities share electrons unequally, creating partial positive (δ⁺) and partial negative (δ⁻) charges.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Equally",
+                                          "B. Unequally due to different electronegativities",
+                                          "C. Not at all",
+                                          "D. In a metallic crystal lattice"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_060",
+                          "text":  "In the C–Cl bond of chloromethane (CH₃Cl), which atom carries the partial negative charge (δ⁻)?",
+                          "explanation":  "In the C–Cl bond: Carbon is δ⁺ (slightly positive) and Chlorine is δ⁻ (slightly negative) because chlorine has a higher electronegativity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Carbon",
+                                          "B. Hydrogen",
+                                          "C. Chlorine",
+                                          "D. Both carbon and chlorine equally"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_061",
+                          "text":  "The polarity of a drug molecule affects all of the following EXCEPT:",
+                          "explanation":  "Polarity affects solubility, drug absorption and distribution, and interaction with biological membranes. It does not affect atomic mass.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Solubility",
+                                          "B. Drug absorption and distribution",
+                                          "C. Interaction with biological membranes",
+                                          "D. The atomic mass of the drug"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_062",
+                          "text":  "The inductive effect is defined as the permanent displacement of electrons through:",
+                          "explanation":  "The inductive effect is the permanent displacement of electrons through sigma (σ) bonds due to electronegativity differences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Pi (π) bonds",
+                                          "B. Sigma (σ) bonds",
+                                          "C. Hydrogen bonds",
+                                          "D. Ionic bonds"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_063",
+                          "text":  "Which of the following groups exhibits the –I (electron-withdrawing inductive) effect?",
+                          "explanation":  "–Cl, –NO₂, and –COOH are examples of –I effect groups (electron-withdrawing groups, EWG) that pull electrons away from the carbon chain.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. –CH₃",
+                                          "B. –C₂H₅",
+                                          "C. –NO₂",
+                                          "D. Both A and B"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_064",
+                          "text":  "Which of the following groups exhibits the +I (electron-donating inductive) effect?",
+                          "explanation":  "–CH₃ and –C₂H₅ are examples of +I effect groups (electron-donating groups, EDG) that push electrons toward the carbon chain.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. –Cl",
+                                          "B. –NO₂",
+                                          "C. –COOH",
+                                          "D. –CH₃"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_065",
+                          "text":  "Electron-withdrawing groups (EWGs) have what effect on the acidity of a molecule?",
+                          "explanation":  "EWGs increase acidity while EDGs increase basicity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Decrease acidity",
+                                          "B. Have no effect on acidity",
+                                          "C. Increase acidity",
+                                          "D. Only affect basicity, not acidity"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_066",
+                          "text":  "Resonance occurs when electrons are:",
+                          "explanation":  "Resonance occurs when electrons are delocalized (spread over more than two atoms) and the molecule cannot be represented by a single Lewis structure.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Localized in one bond only",
+                                          "B. Delocalized and cannot be represented by a single Lewis structure",
+                                          "C. Transferred from one atom to another permanently",
+                                          "D. Found only in σ bonds"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_067",
+                          "text":  "Which of the following is an example of a molecule exhibiting resonance?",
+                          "explanation":  "Benzene and the carboxylate ion (–COO⁻) are classic examples of molecules exhibiting resonance.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Methane (CH₄)",
+                                          "B. Ethane (C₂H₆)",
+                                          "C. Benzene",
+                                          "D. Cyclohexane"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_068",
+                          "text":  "In resonance, which type of groups donate electrons (+R effect)?",
+                          "explanation":  "+R (electron-donating) groups include –OH and –NH₂, while –R (electron-withdrawing) groups include –NO₂ and –CHO.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. –NO₂ and –CHO",
+                                          "B. –OH and –NH₂",
+                                          "C. –COOH and –CN",
+                                          "D. Halogens"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_069",
+                          "text":  "Hyperconjugation involves the delocalization of electrons from:",
+                          "explanation":  "Hyperconjugation is the delocalization of electrons from C–H bonds adjacent to a double bond or carbocation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. O–H bonds",
+                                          "B. C–C bonds only",
+                                          "C. C–H bonds adjacent to a double bond or carbocation",
+                                          "D. Nitrogen lone pairs"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_070",
+                          "text":  "Hyperconjugation is also called:",
+                          "explanation":  "Hyperconjugation is also called \u0027no-bond resonance\u0027 because it involves delocalization without a formal bond.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Inductive resonance",
+                                          "B. No-bond resonance",
+                                          "C. Mesomeric effect",
+                                          "D. Dipole-dipole interaction"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_071",
+                          "text":  "The stability order of carbocations based on hyperconjugation is:",
+                          "explanation":  "Stability order of carbocations is: Tertiary \u003e Secondary \u003e Primary \u003e Methyl — greater number of hyperconjugative C–H bonds = greater stability.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Primary \u003e Secondary \u003e Tertiary \u003e Methyl",
+                                          "B. Methyl \u003e Primary \u003e Secondary \u003e Tertiary",
+                                          "C. Tertiary \u003e Secondary \u003e Primary \u003e Methyl",
+                                          "D. Secondary \u003e Tertiary \u003e Primary \u003e Methyl"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_072",
+                          "text":  "A carbocation is an organic ion where a carbon atom carries a:",
+                          "explanation":  "A carbocation is an organic ion in which a carbon atom carries a positive charge (C⁺) because it has lost electrons.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Negative charge (C⁻)",
+                                          "B. Positive charge (C⁺)",
+                                          "C. No charge but unpaired electrons",
+                                          "D. Double negative charge"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_073",
+                          "text":  "Electrophiles are species that are:",
+                          "explanation":  "Electrophiles are electron-deficient species that accept electrons. Examples include H⁺ and NO₂⁺.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Electron-rich and donate electrons",
+                                          "B. Electron-deficient and accept electrons",
+                                          "C. Neutral and do not react",
+                                          "D. Only found in inorganic chemistry"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_074",
+                          "text":  "Nucleophiles are species that are:",
+                          "explanation":  "Nucleophiles are electron-rich species that donate electrons. Examples include OH⁻ and NH₃.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Electron-deficient and accept electrons",
+                                          "B. Electron-rich and donate electrons",
+                                          "C. Positively charged only",
+                                          "D. Always neutral"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_075",
+                          "text":  "Which of the following is an example of a nucleophile?",
+                          "explanation":  "NH₃ and OH⁻ are examples of nucleophiles (electron donors). H⁺, NO₂⁺, and AlCl₃ are electrophiles.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. H⁺",
+                                          "B. NO₂⁺",
+                                          "C. NH₃",
+                                          "D. AlCl₃"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_076",
+                          "text":  "In organic reactions, curly arrows are used to show the movement of:",
+                          "explanation":  "Curly arrows show movement of electrons, not atoms, in organic reactions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Atoms",
+                                          "B. Protons",
+                                          "C. Electrons",
+                                          "D. Neutrons"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_077",
+                          "text":  "Aromaticity confers special stability on a molecule primarily due to:",
+                          "explanation":  "Aromaticity is a special stability in certain ring-shaped molecules because their electrons are delocalized (spread out evenly) in a π-electron system.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. High molecular weight",
+                                          "B. Delocalized π-electrons in the ring",
+                                          "C. Presence of sp³ carbons",
+                                          "D. Absence of hydrogen atoms"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_078",
+                          "text":  "According to Hückel\u0027s Rule, a molecule is aromatic if it has how many π-electrons?",
+                          "explanation":  "Hückel\u0027s Rule states a molecule is aromatic if it has 4n + 2 π-electrons where n = 0, 1, 2... (e.g., benzene has 6 π-electrons: n=1).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 4n π-electrons (n = 0, 1, 2...)",
+                                          "B. 4n + 2 π-electrons (n = 0, 1, 2...)",
+                                          "C. 4n – 2 π-electrons",
+                                          "D. Any even number of π-electrons"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_079",
+                          "text":  "For a molecule to be aromatic according to Hückel\u0027s Rule, it must satisfy all of the following EXCEPT:",
+                          "explanation":  "Hückel\u0027s Rule requires: (1) cyclic, (2) each ring atom has a p-orbital (planar), (3) 4n + 2 π-electrons, and (4) flat (planar). sp³ carbons disqualify aromaticity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Be cyclic",
+                                          "B. Have a p-orbital perpendicular to the ring on each atom",
+                                          "C. Have 4n + 2 π-electrons",
+                                          "D. Have alternating sp³ carbons in the ring"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_080",
+                          "text":  "How many π-electrons does benzene have?",
+                          "explanation":  "Benzene has 6 π-electrons (n=1 in 4n+2 formula: 4×1+2=6), satisfying Hückel\u0027s Rule.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 2",
+                                          "B. 4",
+                                          "C. 6",
+                                          "D. 8"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_081",
+                          "text":  "Which of the following naturally occurring molecules contain aromatic rings?",
+                          "explanation":  "DNA/RNA bases (adenine, guanine, thymine) and aromatic amino acids (phenylalanine, tyrosine, tryptophan, histidine) are naturally occurring aromatic compounds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Only petroleum-derived compounds",
+                                          "B. DNA/RNA bases and aromatic amino acids like phenylalanine",
+                                          "C. Only synthetic pharmaceutical compounds",
+                                          "D. Only agrochemicals"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_082",
+                          "text":  "Electron Donating Groups (EDGs) increase which property in nearby carbon atoms?",
+                          "explanation":  "EDGs push electrons toward the molecule, making nearby carbons more electron-rich, increasing nucleophilicity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Electrophilicity",
+                                          "B. Nucleophilicity",
+                                          "C. Acidity",
+                                          "D. Electronegativity"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_083",
+                          "text":  "Which of the following is an Electron Withdrawing Group (EWG)?",
+                          "explanation":  "–NO₂, –CHO, –C=O, –CN, –COOH, and halogens are Electron Withdrawing Groups (EWGs). –OH, –NH₂, and –OR are EDGs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. –OH",
+                                          "B. –NH₂",
+                                          "C. –OR",
+                                          "D. –CN"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_084",
+                          "text":  "Electrophilic Aromatic Substitution (EAS) reactions are made easier when a benzene ring carries:",
+                          "explanation":  "EDGs make benzene rings more reactive to electrophiles in EAS reactions. For example, –OH on phenol makes it easier to brominate.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Electron Withdrawing Groups (EWGs)",
+                                          "B. Electron Donating Groups (EDGs)",
+                                          "C. No substituents at all",
+                                          "D. Halogens only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_085",
+                          "text":  "In an SN1 reaction, the rate-determining step involves:",
+                          "explanation":  "SN1 forms a carbocation intermediate whose stability depends on electron distribution and hyperconjugation: Tertiary \u003e Secondary \u003e Primary.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Simultaneous attack of the nucleophile and departure of the leaving group",
+                                          "B. Formation of a carbocation intermediate",
+                                          "C. Back-side attack of the nucleophile",
+                                          "D. Radical formation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_086",
+                          "text":  "In an SN2 reaction, the nucleophile attacks:",
+                          "explanation":  "In SN2, the nucleophile attacks from the back side (back-side attack), with simultaneous departure of the leaving group, causing inversion of configuration.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. From the same side as the leaving group",
+                                          "B. At the π bond",
+                                          "C. From the back side (inversion of configuration)",
+                                          "D. Only at tertiary carbons"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_087",
+                          "text":  "Drug absorption is affected by electronic structure because polarity determines:",
+                          "explanation":  "Electron distribution affects solubility (water vs. fat), which affects drug uptake. Example: Aspirin is lipophilic and crosses membranes easily.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. The color of the drug",
+                                          "B. Water vs. fat solubility, affecting uptake",
+                                          "C. The molecular weight of the drug",
+                                          "D. The boiling point of the drug"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_088",
+                          "text":  "The cytochrome P450 system involved in drug metabolism depends on:",
+                          "explanation":  "Metabolism: Electron-rich or poor areas affect enzyme reactions (cytochrome P450). Drugs with EWGs are metabolized faster.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Atomic radius of drug molecules",
+                                          "B. Electronic effects — electron-rich or poor areas affecting enzyme reactions",
+                                          "C. Boiling points of drug molecules",
+                                          "D. Molecular weight alone"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_089",
+                          "text":  "Paracetamol overdose causes liver damage because:",
+                          "explanation":  "Electron-deficient drugs can react with DNA/proteins causing toxicity. Paracetamol overdose generates reactive metabolites that damage the liver.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. It has too high a molecular weight",
+                                          "B. It is electron-deficient and reacts with liver DNA/proteins as a reactive metabolite",
+                                          "C. It is an aromatic compound only",
+                                          "D. It disrupts hydrogen bonds in liver cells"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_090",
+                          "text":  "Penicillin causes allergic reactions in some patients because:",
+                          "explanation":  "Electron-rich drugs can bind proteins, triggering an immune response (hapten formation). Penicillin hapten formation leads to allergic reactions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. It is too large to be absorbed",
+                                          "B. It is electron-rich and binds to proteins forming haptens, triggering immune response",
+                                          "C. It has no carbon atoms",
+                                          "D. It is insoluble in water"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_091",
+                          "text":  "Which drug\u0027s effectiveness depends on the CYP2C9 genotype, illustrating pharmacogenomics?",
+                          "explanation":  "Warfarin effectiveness depends on CYP2C9 genotype — an example of how genetic differences affect enzyme activity and drug metabolism.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Aspirin",
+                                          "B. Penicillin",
+                                          "C. Warfarin",
+                                          "D. Paracetamol"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_092",
+                          "text":  "Cisplatin is used in cancer therapy because it:",
+                          "explanation":  "Cisplatin binds DNA through electron interactions, inhibiting replication and making it effective in cancer therapy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Blocks COX enzymes to reduce inflammation",
+                                          "B. Binds DNA through electron interactions, inhibiting replication",
+                                          "C. Acts as a blood thinner",
+                                          "D. Delivers oxygen to cancer cells"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_093",
+                          "text":  "NSAIDs like Ibuprofen reduce inflammation by:",
+                          "explanation":  "NSAIDs like Ibuprofen — through their electron properties — bind to the COX enzyme, reducing inflammation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Binding to DNA",
+                                          "B. Electron properties allowing binding to COX enzyme, reducing inflammation",
+                                          "C. Increasing prostaglandin production",
+                                          "D. Dissolving in fatty membranes only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_094",
+                          "text":  "The delocalization of electrons over more than two atoms in a molecule (instead of being restricted to one bond) is called:",
+                          "explanation":  "Delocalization is the spreading of electrons over more than two atoms instead of being restricted to one bond or one atom, as seen in resonance structures.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Induction",
+                                          "B. Hyperconjugation",
+                                          "C. Delocalization",
+                                          "D. Polarization"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_095",
+                          "text":  "Which organic chemistry concept directly explains why benzene is unusually stable for a molecule with three double bonds?",
+                          "explanation":  "Benzene\u0027s unusual stability is explained by aromaticity — the delocalization of π-electrons over all six carbons in the ring (resonance), satisfying Hückel\u0027s Rule.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Inductive effect",
+                                          "B. Hyperconjugation",
+                                          "C. Aromaticity and resonance delocalization",
+                                          "D. Polar covalent bonding"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_096",
+                          "text":  "Which of the following statements about the inductive effect is CORRECT?",
+                          "explanation":  "The inductive effect is the permanent displacement of electrons through sigma (σ) bonds due to electronegativity differences.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. It operates through π bonds only",
+                                          "B. It is a temporary effect that disappears when the molecule is not reacting",
+                                          "C. It is a permanent displacement of electrons through σ bonds due to electronegativity differences",
+                                          "D. It only affects ionic compounds"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_097",
+                          "text":  "Beta-blockers lower blood pressure by:",
+                          "explanation":  "Beta-blockers bind beta-adrenergic receptors through electron interactions, which lowers blood pressure — an example of electronic theory in drug action.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Donating electrons to the heart muscle",
+                                          "B. Binding to beta-adrenergic receptors through electron-rich/deficient interactions",
+                                          "C. Blocking sodium channels in neurons",
+                                          "D. Increasing oxygen supply to tissues"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_098",
+                          "text":  "The organic chemistry concept that explains why molecules with more α-hydrogens are more stable as carbocations is:",
+                          "explanation":  "Hyperconjugation explains carbocation stability — greater number of hyperconjugative C–H structures (more α-H) = greater stability.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Inductive effect",
+                                          "B. Resonance",
+                                          "C. Hyperconjugation",
+                                          "D. Electronegativity"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_099",
+                          "text":  "Which of the following aromatic amino acids helps build proteins?",
+                          "explanation":  "Aromatic amino acids include phenylalanine, tyrosine, tryptophan, and histidine, which help build proteins.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Glycine and alanine",
+                                          "B. Leucine and valine",
+                                          "C. Phenylalanine, tyrosine, and tryptophan",
+                                          "D. Serine and threonine"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_100",
+                          "text":  "Which of the following DNA/RNA bases is aromatic?",
+                          "explanation":  "DNA/RNA bases such as adenine, guanine, thymine, and cytosine are aromatic compounds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Ribose sugar",
+                                          "B. Deoxyribose sugar",
+                                          "C. Adenine",
+                                          "D. Phosphate group"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_101",
+                          "text":  "The era of vitalism believed that organic compounds could only be made:",
+                          "explanation":  "In the era of vitalism (before 1828), chemists believed organic compounds were created by a \u0027vital force\u0027 present only in living organisms and could not be synthesized in a laboratory.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. In industrial laboratories",
+                                          "B. By living organisms through a vital force",
+                                          "C. By heating inorganic salts",
+                                          "D. Through electrical discharge"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_102",
+                          "text":  "Which of the following was a consequence of Wöhler\u0027s 1828 synthesis of urea?",
+                          "explanation":  "Wöhler\u0027s synthesis proved that organic compounds could be produced without a vital force, effectively laying the foundation for synthetic organic chemistry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. It confirmed the vital force theory",
+                                          "B. It proved that organic and inorganic compounds are the same",
+                                          "C. It laid the foundation for synthetic organic chemistry",
+                                          "D. It showed that urea cannot be synthesized chemically"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_103",
+                          "text":  "The concept of isomerism — compounds with the same formula but different structures — was made possible by the development of:",
+                          "explanation":  "The understanding of isomerism was enabled by structural theory — driven by Kekulé and Couper — based on the tetravalent nature of carbon and its ability to form chains.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Chromatography",
+                                          "B. X-ray crystallography",
+                                          "C. Structural theory and the tetravalent nature of carbon",
+                                          "D. Spectroscopy (NMR and IR)"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_104",
+                          "text":  "Hermann Staudinger is associated with the development of:",
+                          "explanation":  "The 20th century saw the rise of polymer chemistry (Hermann Staudinger) and the development of the petrochemical industry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Dyes industry",
+                                          "B. Polymer chemistry",
+                                          "C. Chromatography",
+                                          "D. Aspirin synthesis"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_105",
+                          "text":  "Which analytical technique introduced by advances in science allowed scientists to determine complex organic structures?",
+                          "explanation":  "Advances in spectroscopy (NMR, IR) and X-ray crystallography allowed scientists to determine complex organic structures.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Titration and gravimetric analysis",
+                                          "B. NMR, IR spectroscopy, and X-ray crystallography",
+                                          "C. Mass spectrometry only",
+                                          "D. Flame tests"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_106",
+                          "text":  "Organic chemistry is the foundation of the pharmaceutical industry because medicinal chemists:",
+                          "explanation":  "Organic chemistry is the foundation of the pharmaceutical industry. Medicinal organic chemists design and synthesize compounds for treating diseases, including antibiotics, antivirals, and anti-cancer chemotherapy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Produce only inorganic drugs",
+                                          "B. Design and synthesize carbon-based compounds for treating diseases",
+                                          "C. Only study the biochemistry of natural products",
+                                          "D. Focus exclusively on gene editing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_107",
+                          "text":  "DDT (DichloroDiphenylTrichloroethane) is an example of an organic compound used as a:",
+                          "explanation":  "DDT (DichloroDiphenylTrichloroethane) is an organochlorine pesticide used in agriculture.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Fertilizer",
+                                          "B. Herbicide",
+                                          "C. Pesticide",
+                                          "D. Fungicide"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_108",
+                          "text":  "ATP (Adenosine TriPhosphate) and DNA are examples of organic compounds studied in:",
+                          "explanation":  "Because organic chemistry studies chemical reactions inside living cells, it is essential for biochemistry — understanding metabolism, enzyme function, and DNA/RNA structures.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Inorganic chemistry",
+                                          "B. Nuclear chemistry",
+                                          "C. Biochemistry and biotechnology",
+                                          "D. Physical chemistry only"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_109",
+                          "text":  "Modern green chemistry in organic chemistry focuses on:",
+                          "explanation":  "Modern trends in organic chemistry focus on green chemistry and sustainable practices, such as developing biofuels and biodegradable plastics.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Increasing use of fossil fuels",
+                                          "B. Developing biofuels and biodegradable plastics as sustainable practices",
+                                          "C. Maximizing chemical waste",
+                                          "D. Only studying natural compounds"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_110",
+                          "text":  "Which type of fullerene (azafullerene) is formed when nitrogen replaces a carbon atom in the cage?",
+                          "explanation":  "Azafullerenes are heterofullerenes where nitrogen replaces one or more carbon atoms in the fullerene cage.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Borafullerene",
+                                          "B. Oxafullerene",
+                                          "C. Azafullerene",
+                                          "D. Germafullerene"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_111",
+                          "text":  "Carbon nanotubes applied in batteries serve as:",
+                          "explanation":  "CNT anodes in Li-ion batteries provide higher capacity and faster charge compared to conventional materials.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Electrolyte solutions",
+                                          "B. CNT anodes in Li-ion batteries providing higher capacity and faster charge",
+                                          "C. Cathode material only",
+                                          "D. Separator membranes"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_112",
+                          "text":  "In which application are CNTs used as sensors?",
+                          "explanation":  "CNTs have a high surface-to-volume ratio and electrical sensitivity, enabling them to detect gases (NO₂, NH₃), biomolecules (glucose, DNA), and pressure.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Detecting light intensity only",
+                                          "B. Detecting gases (NO₂, NH₃), biomolecules (glucose, DNA), and pressure",
+                                          "C. Measuring temperature only",
+                                          "D. Detecting radioactive substances only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_113",
+                          "text":  "Which of the following describes \u0027Carbon nano-onions\u0027?",
+                          "explanation":  "Nested closed fullerenes have been named \u0027bucky onions\u0027 or \u0027carbon nano-onions\u0027 — concentric fullerene shells proposed for use as lubricants.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Single-walled CNTs filled with metal atoms",
+                                          "B. Nested closed fullerenes (concentric fullerene shells)",
+                                          "C. Flat graphene sheets stacked in layers",
+                                          "D. Ring-shaped CNTs"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_114",
+                          "text":  "PCBM ([6,6]-phenyl-C₆₁-butyric acid methyl ester) is used as:",
+                          "explanation":  "PCBM is the gold-standard electron acceptor in bulk-heterojunction solar cells and is a fullerene derivative.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. A cancer drug",
+                                          "B. A lubricant in machinery",
+                                          "C. The gold-standard electron acceptor in bulk-heterojunction solar cells",
+                                          "D. An antioxidant supplement"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_115",
+                          "text":  "Endohedral fullerenes like N@C₆₀ are being explored in quantum technologies as:",
+                          "explanation":  "Endohedral fullerenes (N@C₆₀, P@C₆₀) are being explored as qubits with exceptionally long coherence times for quantum computing.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Battery anodes",
+                                          "B. Qubits with exceptionally long coherence times",
+                                          "C. Drug delivery vehicles",
+                                          "D. Solar cell acceptors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_116",
+                          "text":  "The fraction of C₆₀ in toluene used for crystallization from benzene solution crystallizes below 30°C as a:",
+                          "explanation":  "Crystallization of C₆₀ from benzene solution below 30°C yields a triclinic solid solvate C₆₀·4C₆H₆. Above 30°C, solvate-free fcc C₆₀ is obtained.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Pure fcc C₆₀",
+                                          "B. Triclinic solid solvate C₆₀·4C₆H₆",
+                                          "C. Monoclinic crystal",
+                                          "D. Amorphous solid"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_117",
+                          "text":  "The bond lengths in C₆₀ buckminsterfullerene are:",
+                          "explanation":  "C₆₀ has two bond lengths: the 6:6 ring bonds (double, 1.401 Å) are shorter than the 6:5 bonds (1.458 Å). The weighted average is 1.44 Å.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. All equal at 1.44 Å",
+                                          "B. Two types: 6:6 bonds (1.401 Å) shorter than 6:5 bonds (1.458 Å)",
+                                          "C. Single bond only at 1.54 Å",
+                                          "D. Triple bond at 1.20 Å"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_118",
+                          "text":  "The \u0027bottom-up\u0027 theory for fullerene formation proposes that:",
+                          "explanation":  "The older \u0027bottom-up\u0027 theory proposes that fullerenes are built atom-by-atom, while the \u0027top-down\u0027 theory claims they form when larger structures break into constituent parts.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Large structures break into smaller fullerene parts",
+                                          "B. Fullerenes are built atom-by-atom",
+                                          "C. Fullerenes form from pre-existing graphite layers",
+                                          "D. Carbon atoms rearrange from diamond structure"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_119",
+                          "text":  "The nuclear magnetic resonance (NMR) spectrum of buckminsterfullerene reveals:",
+                          "explanation":  "A nuclear magnetic resonance spectrum of buckminsterfullerene reveals a single band because every carbon atom is equivalent in the highly symmetric molecule.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Multiple peaks showing different carbon environments",
+                                          "B. A single band, confirming all carbons are equivalent",
+                                          "C. Two distinct bands for hexagonal and pentagonal carbons",
+                                          "D. No NMR signal due to its symmetry"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_120",
+                          "text":  "What is the main challenge regarding pristine C₆₀ in biological applications?",
+                          "explanation":  "Pristine C₆₀ is practically insoluble in water and most organic solvents — functionalization is mandatory for biological applications.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. It is too reactive with water",
+                                          "B. It is practically insoluble in water — functionalization is mandatory for biology",
+                                          "C. It dissolves too readily in biological fluids",
+                                          "D. It is too small to interact with biomolecules"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_121",
+                          "text":  "Wöhler was a student of which scientist who had proposed the vital force theory?",
+                          "explanation":  "Friedrich Wöhler was a student of Berzelius, who had proposed the Vital Force Theory in 1807.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Kekulé",
+                                          "B. Kolbe",
+                                          "C. Berzelius",
+                                          "D. Berthelot"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_122",
+                          "text":  "The tetravalent nature of carbon means carbon forms:",
+                          "explanation":  "Kekulé and Couper proposed the tetravalent nature of carbon — that carbon forms four bonds — in 1858.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. One bond",
+                                          "B. Two bonds",
+                                          "C. Three bonds",
+                                          "D. Four bonds"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_123",
+                          "text":  "Polymer chemistry developed significantly in the 20th century, particularly through the work of:",
+                          "explanation":  "The 20th century saw the rise of polymer chemistry through the work of Hermann Staudinger.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. August Kekulé",
+                                          "B. Hermann Staudinger",
+                                          "C. William Perkin",
+                                          "D. Tsvet"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_124",
+                          "text":  "PVC (PolyVinylChloride) and polyethylene are examples of:",
+                          "explanation":  "Plastics like PVC, polyethylene, and polypropylene are synthetic organic polymers — products of polymer chemistry.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Natural organic compounds",
+                                          "B. Synthetic organic polymers produced by organic chemistry",
+                                          "C. Inorganic minerals",
+                                          "D. Aromatic amino acids"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_125",
+                          "text":  "CRISPR gene editing technology is enabled by understanding of:",
+                          "explanation":  "Organic chemistry enables biotechnology innovations like gene editing (CRISPR) and the production of monoclonal antibodies by understanding DNA/RNA structures.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Physical chemistry of metals",
+                                          "B. Biochemistry and organic chemistry of DNA/RNA structures",
+                                          "C. Nuclear chemistry",
+                                          "D. Inorganic coordination chemistry"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_126",
+                          "text":  "The C₆₀ molecule is described as a truncated icosahedron, which contains:",
+                          "explanation":  "Buckminsterfullerene C₆₀ has 20 hexagons and 12 pentagons arranged as a truncated icosahedron.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 10 hexagons and 12 pentagons",
+                                          "B. 20 hexagons and 12 pentagons",
+                                          "C. 20 hexagons and 20 pentagons",
+                                          "D. 12 hexagons and 20 pentagons"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_127",
+                          "text":  "Fullerenes are also informally called \u0027buckyballs\u0027 because they resemble:",
+                          "explanation":  "The closed fullerenes, especially C₆₀, are informally called \u0027buckyballs\u0027 for their resemblance to the standard ball of association football (soccer ball).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Buckwheat grain",
+                                          "B. The standard ball of association football (soccer ball)",
+                                          "C. The shape of a rugby ball",
+                                          "D. A dodecahedron"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_128",
+                          "text":  "Which of the following best describes the bonding in graphite that gives it electrical conductivity?",
+                          "explanation":  "Graphite has sp² hybridization with delocalized π electrons within layers, making it electrically conductive in-plane.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. sp³ hybridization and 3D covalent network",
+                                          "B. sp² hybridization with delocalized π electrons in layers",
+                                          "C. Ionic bonds between carbon atoms",
+                                          "D. Hydrogen bonds between layers"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_129",
+                          "text":  "Diamond is the hardest natural material because:",
+                          "explanation":  "Diamond is the hardest natural material because each carbon is sp³ hybridized and bonded to four others in a rigid 3D tetrahedral covalent network.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. It has delocalized electrons",
+                                          "B. It is composed of sp² hybridized carbons",
+                                          "C. Each carbon is sp³ hybridized and bonded to four other carbons in a rigid 3D tetrahedral network",
+                                          "D. Its layers slide over each other easily"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_130",
+                          "text":  "The solubility of C₆₀ in carbon disulfide is approximately:",
+                          "explanation":  "Solubilities of fullerenes are generally rather low, such as 8 g/L for C₆₀ in carbon disulfide.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 0.1 g/L",
+                                          "B. 8 g/L",
+                                          "C. 51 g/L",
+                                          "D. 200 g/L"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_131",
+                          "text":  "In the electric arc discharge synthesis of fullerenes, the temperature of the carbon plasma reaches approximately:",
+                          "explanation":  "The extreme heat (~3000–4000 °C) vaporizes the graphite into a carbon plasma plume during electric arc discharge synthesis.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 500–1000 °C",
+                                          "B. 1500–2000 °C",
+                                          "C. 3000–4000 °C",
+                                          "D. 6000–7000 °C"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_132",
+                          "text":  "After electric arc discharge synthesis, fullerenes are extracted from soot using:",
+                          "explanation":  "The soot is extracted using organic solvents like toluene to obtain fullerenes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Water",
+                                          "B. Organic solvents like toluene",
+                                          "C. Dilute acid",
+                                          "D. Concentrated sulfuric acid"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_133",
+                          "text":  "The electron affinity of fullerenes is described as:",
+                          "explanation":  "Fullerenes have a high electron affinity — they easily accept electrons, making them useful as electron acceptors in solar cells.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Very low — they rarely accept electrons",
+                                          "B. High — they easily accept electrons",
+                                          "C. Zero — they are neutral with respect to electrons",
+                                          "D. Variable depending on the solvent"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_134",
+                          "text":  "The non-polar nature of C₆₀ means it is more soluble in:",
+                          "explanation":  "Fullerenes are soluble in many organic (non-polar) solvents such as toluene, chlorobenzene, and 1,2,3-trichloropropane.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Polar solvents like water",
+                                          "B. Non-polar organic solvents like toluene and benzene",
+                                          "C. Inorganic acids",
+                                          "D. Ionic solutions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_135",
+                          "text":  "The concept that the driving force behind all organic reactions is the behavior of electrons is the basis of:",
+                          "explanation":  "Electronic Theory states that the real driving force behind all organic reactions is the behavior of electrons.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Atomic theory",
+                                          "B. Electronic theory in organic chemistry",
+                                          "C. Kinetic molecular theory",
+                                          "D. Crystal field theory"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_136",
+                          "text":  "Which of the following illustrates delocalization in a molecule?",
+                          "explanation":  "Benzene is the classic example of delocalization — π electrons are spread (delocalized) over all 6 carbon atoms, increasing stability.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. CH₄ — all electrons localized in C–H bonds",
+                                          "B. Benzene — π electrons spread over all 6 carbons",
+                                          "C. NaCl — ionic bonding",
+                                          "D. H₂ — shared electrons between two identical atoms"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_137",
+                          "text":  "ACE inhibitors control blood pressure by:",
+                          "explanation":  "ACE inhibitors bind to ACE (Angiotensin-Converting Enzyme) through electron interactions, controlling blood pressure — illustrating electronic theory in drug action.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Increasing potassium levels",
+                                          "B. Blocking enzyme activity through electron interactions with the ACE enzyme",
+                                          "C. Dilating blood vessels by releasing nitric oxide",
+                                          "D. Reducing red blood cell count"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_138",
+                          "text":  "Water-soluble drugs like morphine-6-glucuronide are excreted faster because:",
+                          "explanation":  "Electron properties affect renal elimination. Water-soluble drugs like morphine-6-glucuronide are excreted faster due to their polarity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. They are metabolized more slowly",
+                                          "B. Polarity and electron distribution allow rapid renal elimination",
+                                          "C. They accumulate in fatty tissues",
+                                          "D. They have higher molecular weight"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_139",
+                          "text":  "When the angle strain in fullerenes is reduced by electrophilic addition, the hybridization of the reacting carbon changes from:",
+                          "explanation":  "Electrophilic addition changes sp²-hybridized carbons into sp³-hybridized ones. The bond angles decrease from ~120° (sp²) to ~109.5° (sp³), reducing angle strain.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. sp³ to sp²",
+                                          "B. sp to sp²",
+                                          "C. sp² to sp³",
+                                          "D. sp² to sp"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_140",
+                          "text":  "Photodynamic therapy using fullerenes works because fullerenes:",
+                          "explanation":  "Fullerenes generate singlet oxygen under light, acting as photosensitizers to kill cancer cells in photodynamic therapy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Emit light to destroy cancer cells",
+                                          "B. Generate singlet oxygen under light, acting as photosensitizers to kill cancer cells",
+                                          "C. Carry chemotherapy drugs directly into the nucleus",
+                                          "D. Block blood supply to tumors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_141",
+                          "text":  "As radical scavengers, C₃-symmetric fullerene derivatives are reported to be how many times more effective than vitamin E?",
+                          "explanation":  "Fullerenes\u0027 electron-deficient surface makes them powerful radical sponges — up to 100× more effective than vitamin E at neutralizing free radicals.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 5 times",
+                                          "B. 10 times",
+                                          "C. 50 times",
+                                          "D. ~100 times"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_142",
+                          "text":  "The bulk solid form of pure or mixed fullerenes is called:",
+                          "explanation":  "The bulk solid form of pure or mixed fullerenes is called fullerite.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Fullerite",
+                                          "B. Buckyballs",
+                                          "C. Fullerenol",
+                                          "D. Buckytubes"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "chm102_143",
+                          "text":  "Carbon nanobuds are described as:",
+                          "explanation":  "Carbon nanobuds are hybrid structures — nanotubes capped by hemispherical meshes or larger \u0027buckybuds\u0027 — existing between the two major families of fullerenes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Pure spherical fullerenes",
+                                          "B. Nanotubes capped by hemispherical meshes or larger \u0027buckybuds\u0027 — hybrids of nanotubes and fullerenes",
+                                          "C. Open-ended nanotubes with no caps",
+                                          "D. Graphene sheets rolled into tubes"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_144",
+                          "text":  "The \u0027isolated pentagon rule\u0027 in fullerene chemistry states that:",
+                          "explanation":  "Buckminsterfullerene is the smallest fullerene in which no two pentagons share an edge — sharing would be destabilizing (as in pentalene).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. All faces must be pentagons",
+                                          "B. No two pentagons should share an edge (for stability)",
+                                          "C. There must be exactly 12 pentagons",
+                                          "D. Pentagons must alternate with hexagons uniformly"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_145",
+                          "text":  "The Raman spectroscopy technique can be used to analyze the bonding state in:",
+                          "explanation":  "The bonding state in C₆₀ can be analyzed by Raman spectroscopy, IR spectroscopy, and X-ray photoelectron spectroscopy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Ionic crystals only",
+                                          "B. C₆₀ and other fullerenes",
+                                          "C. Only biological molecules",
+                                          "D. Only inorganic compounds"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_146",
+                          "text":  "Multi-walled CNTs (MWCNTs) consist of:",
+                          "explanation":  "Multi-walled CNTs (MWCNTs) consist of concentric tubes nested inside one another, with ends often capped with fullerene-like hemispheres.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. One graphene layer rolled seamlessly",
+                                          "B. Two concentric tubes only",
+                                          "C. Concentric tubes nested inside one another with fullerene-like hemispherical caps",
+                                          "D. Stacked flat graphene sheets"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_147",
+                          "text":  "Which of the following best characterizes the –R (electron-withdrawing resonance) effect?",
+                          "explanation":  "–R (electron-withdrawing resonance) effect is exhibited by groups like –NO₂ and –CHO which withdraw electrons through the π system.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Groups like –OH and –NH₂ donate electrons through π bonds",
+                                          "B. Groups like –NO₂ and –CHO withdraw electrons through π bonds",
+                                          "C. Alkyl groups like –CH₃ push electrons through σ bonds",
+                                          "D. Halogens pull electrons through σ bonds only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_148",
+                          "text":  "The reaction of ammonium cyanate to form urea is what type of reaction?",
+                          "explanation":  "The conversion of ammonium cyanate to urea is a rearrangement (isomerization) reaction — the same molecular formula reorganizes into urea.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Addition reaction",
+                                          "B. Elimination reaction",
+                                          "C. Rearrangement (isomerization) reaction",
+                                          "D. Free radical substitution"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_149",
+                          "text":  "Which analogy best describes delocalization of electrons in organic chemistry?",
+                          "explanation":  "Delocalization is like money in a joint family account — everyone benefits and the family (molecule) is more stable, compared to money in one pocket (localized).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Money kept in one person\u0027s pocket (localized)",
+                                          "B. Money in a joint family account — everyone benefits (delocalized)",
+                                          "C. A locked safe — inaccessible to all",
+                                          "D. Personal savings — owned by one person"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_150",
+                          "text":  "The Raman spectroscopy, IR spectroscopy, and X-ray photoelectron spectroscopy are all techniques used to analyze bonding in:",
+                          "explanation":  "The bonding state in C₆₀ (hybridization, bond types) can be analyzed by Raman spectroscopy, IR spectroscopy, and X-ray photoelectron spectroscopy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Ionic compounds only",
+                                          "B. Fullerenes like C₆₀",
+                                          "C. Metals only",
+                                          "D. Biological tissues only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_151",
+                          "text":  "Which common inorganic compound was converted to produce urea in Wöhler\u0027s landmark 1828 experiment?",
+                          "explanation":  "Wöhler synthesized urea (organic) from ammonium cyanate (inorganic salt) by heating.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Ammonium sulfate",
+                                          "B. Ammonium cyanate",
+                                          "C. Potassium cyanide",
+                                          "D. Calcium carbonate"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_152",
+                          "text":  "Structural isomers are compounds that have:",
+                          "explanation":  "Isomers are compounds with the same formula but different structures, which was understood after the development of structural theory by Kekulé and Couper.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Different molecular formulas but same structures",
+                                          "B. The same molecular formula but different structural arrangements",
+                                          "C. The same structure and the same molecular formula",
+                                          "D. Different elements but the same molecular mass"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_153",
+                          "text":  "In organic photovoltaics, fullerenes are currently being challenged by:",
+                          "explanation":  "Non-fullerene acceptors (NFAs) are overtaking fullerenes in efficiency (\u003e19% vs ~11% for fullerene-based solar cells).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Metal oxides",
+                                          "B. Silicon semiconductors",
+                                          "C. Non-fullerene acceptors (NFAs) with higher efficiency (\u003e19%)",
+                                          "D. Gallium arsenide-based materials"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_154",
+                          "text":  "In the context of superconductivity, which fullerene compound has shown superconductivity at the highest temperature (~38 K)?",
+                          "explanation":  "Alkali-doped fullerenes like K₃C₆₀ and RbCs₂C₆₀ show superconductivity up to ~38 K.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. C₆₀ alone",
+                                          "B. Rb₃C₆₀ (rubidium-doped C₆₀)",
+                                          "C. C₇₀ with oxygen doping",
+                                          "D. RbCs₂C₆₀"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_155",
+                          "text":  "A space elevator would require extremely strong cables, for which which material is being proposed?",
+                          "explanation":  "One highly speculative proposed use of CNTs in space technologies is to produce high-tensile carbon cables required by a space elevator.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Steel-reinforced concrete",
+                                          "B. High-tensile carbon cables made from CNTs",
+                                          "C. Kevlar fibers",
+                                          "D. Titanium alloys"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_156",
+                          "text":  "Open-cage fullerenes are formed by:",
+                          "explanation":  "Open-cage fullerenes are made by chemically \u0027cutting\u0027 windows into the cage, allowing controlled loading/release of guests — turning them into switchable containers.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Heating fullerenes above 1000°C",
+                                          "B. Chemically \u0027cutting\u0027 windows into the cage to allow controlled loading/release of guests",
+                                          "C. Doping with alkali metals",
+                                          "D. Polymerizing C₆₀ under high pressure"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_157",
+                          "text":  "The organic compound penicillin causes allergies by acting as a hapten. A hapten is:",
+                          "explanation":  "Penicillin hapten formation occurs when the drug binds to proteins and the resulting complex triggers an immune (allergic) response.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. A large protein that directly triggers immunity",
+                                          "B. A small molecule that binds to proteins to trigger an immune response",
+                                          "C. A specific type of enzyme inhibitor",
+                                          "D. A DNA-binding molecule"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_158",
+                          "text":  "The ability of CNTs to penetrate cell membranes due to their needle-like shape makes them useful for:",
+                          "explanation":  "Functionalized CNTs can carry drugs, genes, or vaccines and penetrate cell membranes (needle-like shape) for targeted therapy.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Water filtration systems",
+                                          "B. Targeted drug delivery and gene therapy",
+                                          "C. Building construction materials",
+                                          "D. Electromagnetic shielding"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_159",
+                          "text":  "The 6:6 ring bond in C₆₀ is considered a \u0027double bond\u0027 and is:",
+                          "explanation":  "The 6:6 ring bonds (between two hexagons) are shorter (1.401 Å) — considered \u0027double bonds\u0027 — compared to the 6:5 bonds (1.458 Å).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Longer than the 6:5 bond",
+                                          "B. Shorter than the 6:5 bond at 1.401 Å",
+                                          "C. Equal in length to the 6:5 bond",
+                                          "D. A single bond longer than 1.5 Å"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_160",
+                          "text":  "The application of CNTs in field emission displays is based on their ability to:",
+                          "explanation":  "CNTs emit electrons at low voltage — used in field emission displays (flat-panel screens, X-ray sources).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Absorb all light wavelengths",
+                                          "B. Emit electrons at low voltage for flat-panel screens and X-ray sources",
+                                          "C. Store large amounts of charge like capacitors",
+                                          "D. Change color under electric fields"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_161",
+                          "text":  "Hermann Kolbe synthesized which organic compound to support the emerging field of synthetic organic chemistry after Wöhler?",
+                          "explanation":  "Following Wöhler, Hermann Kolbe synthesized acetic acid as one of the early confirmations that organic compounds could be made in the lab.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Urea",
+                                          "B. Mauveine",
+                                          "C. Acetic acid",
+                                          "D. Aspirin"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_162",
+                          "text":  "Berthelot\u0027s contribution to the rise of synthetic organic chemistry was the synthesis of:",
+                          "explanation":  "Following Wöhler, Berthelot synthesized methane as another organic compound, confirming that laboratory synthesis of organic compounds was possible.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Urea",
+                                          "B. Acetic acid",
+                                          "C. Methane",
+                                          "D. Mauveine"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_163",
+                          "text":  "The +R mesomeric effect (resonance electron donation) is exhibited by which of the following?",
+                          "explanation":  "+R (electron-donating resonance) effect is exhibited by –OH and –NH₂, which donate electrons into the π system.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. –NO₂",
+                                          "B. –CHO",
+                                          "C. –OH",
+                                          "D. –CN"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_164",
+                          "text":  "The stability of delocalized electrons in benzene explains why it preferentially undergoes:",
+                          "explanation":  "Benzene preferentially undergoes electrophilic aromatic substitution (EAS) rather than addition, to maintain its aromatic stability.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Addition reactions (like alkenes)",
+                                          "B. Elimination reactions",
+                                          "C. Electrophilic aromatic substitution (maintaining aromaticity)",
+                                          "D. Free radical reactions"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_165",
+                          "text":  "A higher number of hyperconjugative structures in a carbocation leads to:",
+                          "explanation":  "Greater number of hyperconjugative structures = greater stability of the carbocation.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Lower stability",
+                                          "B. Greater stability",
+                                          "C. No change in stability",
+                                          "D. Faster decomposition"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_166",
+                          "text":  "Drug–receptor binding that depends on electron donation and acceptance is an example of:",
+                          "explanation":  "Drug–receptor interaction depends on electron donation and acceptance, hydrogen bonding, ionic interactions, and resonance stabilization — all governed by electronic theory.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Physical chemistry principles only",
+                                          "B. Electronic theory applied to medical sciences",
+                                          "C. Nuclear chemistry principles",
+                                          "D. Thermodynamic principles only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_167",
+                          "text":  "The pKa of a drug, which determines its absorption and bioavailability, is influenced by:",
+                          "explanation":  "The acidity (pKa) of drugs is influenced by inductive and resonance effects, which determines absorption and bioavailability.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Only its molecular weight",
+                                          "B. Inductive and resonance electronic effects",
+                                          "C. Only its melting point",
+                                          "D. The color of the drug"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_168",
+                          "text":  "Which of the following is NOT a property of fullerenes?",
+                          "explanation":  "Fullerenes are NOT harder than diamond. They form soft molecular crystals. Diamond remains the hardest natural material.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Soluble in organic solvents",
+                                          "B. Semiconductor in pure form",
+                                          "C. High electron affinity",
+                                          "D. Harder than diamond"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_169",
+                          "text":  "What role does organic chemistry play in agriculture?",
+                          "explanation":  "Organic chemists develop agrochemicals, including fertilizers, pesticides, and herbicides, which increase crop yields and food security.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. None — agriculture uses only inorganic compounds",
+                                          "B. Organic chemists develop agrochemicals including fertilizers, pesticides, and herbicides that increase crop yields",
+                                          "C. It only produces food packaging materials",
+                                          "D. It provides irrigation systems"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_170",
+                          "text":  "Carbon nanotubes used in supercapacitors benefit from their:",
+                          "explanation":  "CNTs in supercapacitors benefit from their high surface area, enabling rapid charge/discharge cycles.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Low surface area and slow charge/discharge",
+                                          "B. High surface area enabling rapid charge/discharge cycles",
+                                          "C. Magnetic properties",
+                                          "D. Transparency to light"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_171",
+                          "text":  "The principal quantum mechanical reason why fullerenes undergo electrophilic addition more readily than graphite is:",
+                          "explanation":  "The sp²-hybridized carbons in fullerenes are bent from their planar graphite minimum, producing angle strain that drives electrophilic addition reactions.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Fullerenes have no π electrons",
+                                          "B. Bending of graphene into a cage creates angle strain in sp² carbons, making them reactive",
+                                          "C. Fullerenes are sp³ hybridized",
+                                          "D. Graphite has no available π bonds"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_172",
+                          "text":  "Chirality in fullerenes such as C₇₆ and C₇₈ arises from their:",
+                          "explanation":  "Some fullerenes (e.g. C₇₆, C₇₈, C₈₀, C₈₄) are inherently chiral because they are D₂-symmetric and have been successfully resolved into enantiomers.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Unsymmetrical doping with metals",
+                                          "B. D₂-symmetry making them inherently chiral",
+                                          "C. Presence of heteroatoms",
+                                          "D. Number of pentagons and hexagons"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_173",
+                          "text":  "The reaction of NH₄(OCN) → NH₃ + HOCN ⇌ (NH₂)₂CO represents:",
+                          "explanation":  "This is the mechanism of Wöhler\u0027s synthesis: ammonium cyanate decomposes to ammonia and cyanic acid, which react to produce urea.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Decomposition of urea",
+                                          "B. The mechanism of Wöhler\u0027s synthesis — ammonium cyanate rearranging to urea",
+                                          "C. Industrial synthesis of ammonia",
+                                          "D. Reduction of cyanate ion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_174",
+                          "text":  "In terms of fullerene applications in life sciences, functionalized fullerenes are being studied as inhibitors of:",
+                          "explanation":  "Functionalized fullerenes are being studied as HIV protease inhibitors and neuroprotective agents (for Parkinson\u0027s, ALS) in biomedical research.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. COX enzymes",
+                                          "B. HIV protease",
+                                          "C. Acetylcholinesterase",
+                                          "D. Carbonic anhydrase"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_175",
+                          "text":  "Which of the following correctly describes graphene\u0027s classification?",
+                          "explanation":  "Graphene is a 2D single-layer hexagonal lattice of carbon atoms — distinct from 0D fullerenes, 1D CNTs, and 3D graphite/diamond.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. A 0D carbon cage",
+                                          "B. A 1D carbon nanotube",
+                                          "C. A 2D single-layer hexagonal carbon lattice",
+                                          "D. A 3D diamond structure"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_176",
+                          "text":  "Which of the following is a medical application where polarity of organic drugs is critical?",
+                          "explanation":  "Polarity determines lipophilicity vs hydrophilicity of drugs, which directly affects absorption across biological membranes and bioavailability.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Determination of molecular weight",
+                                          "B. Drug absorption across biological membranes (lipophilicity vs hydrophilicity)",
+                                          "C. Synthesis of the drug",
+                                          "D. Boiling point of drug solutions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_177",
+                          "text":  "Buckytubes is another name for:",
+                          "explanation":  "Cylindrical fullerenes are also called carbon nanotubes or \u0027buckytubes\u0027.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Buckyballs",
+                                          "B. Carbon nanotubes (cylindrical fullerenes)",
+                                          "C. Bucky onions",
+                                          "D. Carbon nano-onions"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_178",
+                          "text":  "Metallofullerenes are formed by:",
+                          "explanation":  "Metallofullerenes (endohedral fullerenes with metal inside) are made by drilling a hole in the graphite rod and packing it with metal oxides/graphite powder.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Reacting fullerenes with alkali metals on the outside",
+                                          "B. Metal-doped anodes in arc discharge — packing metal oxides/graphite in graphite rods to trap metal atoms inside the cage",
+                                          "C. Adding metal coatings to fullerene surfaces",
+                                          "D. Substituting carbon atoms with metal atoms"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_179",
+                          "text":  "The mesomeric effect (resonance effect) operates through which type of bonds?",
+                          "explanation":  "The mesomeric (resonance) effect involves electron delocalization through π bonds and lone pairs in conjugated systems — distinct from the inductive effect which operates through σ bonds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Sigma (σ) bonds only",
+                                          "B. Pi (π) bonds and lone pairs (conjugated system)",
+                                          "C. Hydrogen bonds",
+                                          "D. Van der Waals forces"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_180",
+                          "text":  "In the SN2 reaction mechanism, which factor most affects the reaction rate?",
+                          "explanation":  "In SN2 reactions, the rate depends on electron density at the carbon bearing the leaving group — EWGs reduce electron density, facilitating nucleophilic attack.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Stability of the carbocation formed",
+                                          "B. Electron density at the carbon bearing the leaving group",
+                                          "C. Temperature alone",
+                                          "D. The solvent polarity only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_181",
+                          "text":  "The 20th century development of the petrochemical industry converted petroleum into all of the following EXCEPT:",
+                          "explanation":  "The petrochemical industry converts petroleum into fuels, rubbers, and plastics. Vitamins are not petrochemical products — they are biochemical compounds.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Fuels",
+                                          "B. Rubbers",
+                                          "C. Plastics",
+                                          "D. Vitamins"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "chm102_182",
+                          "text":  "Which of the following is a correct statement about allotropes?",
+                          "explanation":  "Allotropes are composed of the same element but have different atomic arrangements, giving them distinct physical and chemical properties — as seen with diamond and graphite.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Allotropes have different chemical compositions",
+                                          "B. Allotropes of the same element can have radically different physical properties due to different atomic arrangements",
+                                          "C. Allotropes only exist for carbon",
+                                          "D. Allotropes always have the same physical properties"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_183",
+                          "text":  "The C₆₀ polymerized under high pressure showed superconductivity at approximately:",
+                          "explanation":  "The 2015 discovery that C₆₀ polymerized under high pressure superconducts at ~60 K reignited interest in fullerene superconductivity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 4 K",
+                                          "B. 38 K",
+                                          "C. ~60 K",
+                                          "D. Room temperature (298 K)"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_184",
+                          "text":  "Which spectroscopic technique was pivotal in determining the structure of complex organic compounds in the 20th century?",
+                          "explanation":  "Advances in spectroscopy (NMR, IR) and X-ray crystallography allowed scientists to determine complex organic structures.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Flame spectroscopy only",
+                                          "B. NMR and IR spectroscopy and X-ray crystallography",
+                                          "C. UV-Vis only",
+                                          "D. Mass spectrometry only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_185",
+                          "text":  "The lone pair electrons on –NH₂ (amino group) can donate electrons into a π system, demonstrating the:",
+                          "explanation":  "–NH₂ exhibits the +R effect — lone pair electrons on N are donated into the π system of an adjacent unsaturated group, increasing electron density.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. –R (electron-withdrawing resonance) effect",
+                                          "B. –I (electron-withdrawing inductive) effect",
+                                          "C. +R (electron-donating resonance/mesomeric) effect",
+                                          "D. +I (electron-donating inductive) effect"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_186",
+                          "text":  "Open-cage fullerenes have potential as which type of functional material?",
+                          "explanation":  "Open-cage fullerenes (made by chemically \u0027cutting\u0027 windows into the cage) allow controlled loading/release of guests, turning them into switchable containers.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Permanent magnets",
+                                          "B. Switchable molecular containers for controlled loading/release of guest molecules",
+                                          "C. Superconducting wires",
+                                          "D. High-strength structural composites"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_187",
+                          "text":  "The inhibition by drugs of the –I (electron-withdrawing) effect on carboxyl groups explains why electron-withdrawing substituents:",
+                          "explanation":  "EWGs pull electron density away from the carboxylate anion, stabilizing it and making the carboxylic acid more acidic (lower pKa).",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Decrease the acidity of carboxylic acids",
+                                          "B. Increase the acidity of carboxylic acids by stabilizing the carboxylate anion",
+                                          "C. Have no effect on acid strength",
+                                          "D. Make the compound less polar"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_188",
+                          "text":  "The main toxicity concern with pristine C₆₀ aggregates in biological systems is that they are:",
+                          "explanation":  "Pristine C₆₀ aggregates are cytotoxic. Functionalized forms are generally safe, but long-term biodistribution data is sparse.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Highly soluble and quickly metabolized",
+                                          "B. Cytotoxic — functionalized forms are generally safer",
+                                          "C. Non-reactive and completely inert",
+                                          "D. Immediately excreted by the kidneys"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_189",
+                          "text":  "Which of the following statements about EWGs in drug metabolism is CORRECT?",
+                          "explanation":  "Drugs with electron-withdrawing groups (EWGs) are metabolized faster by cytochrome P450 enzymes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Drugs with EWGs are metabolized more slowly",
+                                          "B. Drugs with EWGs are metabolized faster",
+                                          "C. EWGs have no effect on drug metabolism",
+                                          "D. Only EDGs affect metabolism"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_190",
+                          "text":  "Which of the following is an example of a carbon nanotube application in composite materials?",
+                          "explanation":  "CNTs added to polymers, ceramics, and metals produce lightweight, strong composites used in aircraft and sports equipment due to their extremely high tensile strength.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Being used as fuel in combustion engines",
+                                          "B. Being added to polymers and ceramics to produce lightweight, strong composites for aircraft and sports equipment",
+                                          "C. Being used as a solvent for other nanoparticles",
+                                          "D. Replacing water in industrial cooling systems"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_191",
+                          "text":  "In the context of pharmacogenomics, why might two patients with the same disease respond differently to the same drug?",
+                          "explanation":  "Genetic differences (e.g., in CYP2C9) affect enzyme activity, so drug metabolism varies — this is the basis of pharmacogenomics and personalized medicine.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. They have different body sizes only",
+                                          "B. Genetic differences affect enzyme activity, altering how each person metabolizes the drug",
+                                          "C. One patient takes the drug with food and the other does not",
+                                          "D. The drugs have different colors"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_192",
+                          "text":  "The Raman, IR, and XPS techniques used to study fullerenes all belong to the category of:",
+                          "explanation":  "Raman spectroscopy, IR spectroscopy, and X-ray photoelectron spectroscopy (XPS) are all spectroscopic techniques used to analyze the bonding state in fullerenes.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Chromatographic separation techniques",
+                                          "B. Spectroscopic analysis techniques",
+                                          "C. Thermal analysis techniques",
+                                          "D. Electrochemical analysis techniques"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_193",
+                          "text":  "Carbon nanotubes for hydrogen storage utilize their:",
+                          "explanation":  "For hydrogen storage, the hollow interior of CNTs can adsorb H₂ molecules, making them candidates for energy storage.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Electrical conductivity to split water",
+                                          "B. Hollow interior to adsorb H₂ molecules",
+                                          "C. High thermal conductivity to dissipate heat from hydrogen",
+                                          "D. Magnetic properties to align H₂ molecules"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_194",
+                          "text":  "In organic chemistry, the term \u0027lone pair\u0027 refers to:",
+                          "explanation":  "A lone pair is a non-bonding pair of electrons on an atom that can participate in resonance, coordinate bonding, or act as a nucleophile.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. A pair of covalent bonds between two atoms",
+                                          "B. Non-bonding pair of electrons on an atom",
+                                          "C. A pair of hydrogen atoms bonded to carbon",
+                                          "D. Two atoms sharing four electrons (double bond)"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_195",
+                          "text":  "Nylon and polyester are both examples of synthetic polymers produced by:",
+                          "explanation":  "Nylon and polyester are synthetic organic polymers — products of organic/polymer chemistry — used in textiles and manufacturing.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Inorganic chemistry processes",
+                                          "B. Organic chemistry and polymer chemistry",
+                                          "C. Nuclear chemistry",
+                                          "D. Extractive metallurgy"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_196",
+                          "text":  "The relationship between fullerenes and graphene is best described as:",
+                          "explanation":  "Insight into fullerene stability supports the theory that fullerenes can form from graphene when appropriate molecular bonds are severed to close the cage.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Fullerenes are 3D versions of graphene",
+                                          "B. Fullerenes can be thought of as graphene rolled and closed into a 0D cage, while graphene remains 2D",
+                                          "C. Graphene and fullerenes have no structural relationship",
+                                          "D. Graphene is a special form of C₆₀"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_197",
+                          "text":  "ADME in pharmacology stands for:",
+                          "explanation":  "ADME stands for Absorption, Distribution, Metabolism, and Excretion — the four main pharmacokinetic processes, all influenced by electronic properties of drugs.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Absorption, Distribution, Metabolism, Excretion",
+                                          "B. Administration, Dose, Mechanism, Effect",
+                                          "C. Action, Distribution, Metabolism, Elimination",
+                                          "D. Absorption, Dose, Metabolites, Excretion"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "chm102_198",
+                          "text":  "The fact that organic chemistry underpins understanding of \u0027enzyme function and DNA/RNA structures\u0027 is particularly relevant to which modern technology?",
+                          "explanation":  "Understanding of enzyme function and DNA/RNA structures enables biotechnology innovations like gene editing (CRISPR) and production of monoclonal antibodies.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Nuclear energy production",
+                                          "B. CRISPR gene editing and monoclonal antibody production",
+                                          "C. Fracking of natural gas",
+                                          "D. Steel manufacturing"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "chm102_199",
+                          "text":  "The atomic orbital theory states that electrons in organic molecules are found in regions called orbitals. In organic chemistry, which electrons are most important for determining reactivity?",
+                          "explanation":  "Valence electrons (outer electrons) determine bond formation, reactivity, and chemical behavior in organic molecules.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. 1s core electrons",
+                                          "B. Inner shell electrons",
+                                          "C. Valence (outermost shell) electrons",
+                                          "D. Neutrons in the nucleus"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "chm102_200",
+                          "text":  "Overall, the electronic theory in organic chemistry is important in medicine because it provides a foundation for understanding:",
+                          "explanation":  "Electronic Theory is the foundation of organic chemistry and a bridge to medical sciences — understanding how electrons behave helps grasp drug action, enzyme catalysis, metabolism, and toxicity.",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A. Only the physical appearance of drugs",
+                                          "B. Drug action, enzyme catalysis, metabolism, and toxicity at the molecular electron level",
+                                          "C. Only the production process of drugs",
+                                          "D. The economic cost of drug development"
+                                      ],
+                          "correct_index":  1
+                      }
+                  ],
+    "course_id":  "chm102",
+    "course_name":  "Introductory Organic Chemistry",
+    "version":  "1.0.0"
+}
