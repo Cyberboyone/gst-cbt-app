@@ -1,0 +1,2672 @@
+﻿{
+    "questions":  [
+                      {
+                          "id":  "phy101_000",
+                          "text":  "Physics is based on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Theory only",
+                                          "Experiments and measurements",
+                                          "Guesswork",
+                                          "Observations only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_001",
+                          "text":  "The standard system of units used in physics is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "CGS",
+                                          "MKS",
+                                          "SI",
+                                          "FPS"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_002",
+                          "text":  "Which of the following is a fundamental quantity?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Velocity",
+                                          "Force",
+                                          "Length",
+                                          "Work"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_003",
+                          "text":  "The SI unit of mass is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Gram",
+                                          "Kilogram",
+                                          "Pound",
+                                          "Slug"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_004",
+                          "text":  "The SI unit of electric current is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Volt",
+                                          "Ohm",
+                                          "Ampere",
+                                          "Coulomb"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_005",
+                          "text":  "Which of the following is a derived quantity?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Time",
+                                          "Mass",
+                                          "Velocity",
+                                          "Temperature"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_006",
+                          "text":  "The SI unit of velocity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "m/s",
+                                          "m/s²",
+                                          "km/h",
+                                          "m²/s"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_007",
+                          "text":  "The SI unit of acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "m/s",
+                                          "m/s²",
+                                          "km/h",
+                                          "m²/s"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_008",
+                          "text":  "1 Newton is equal to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "kg·m/s",
+                                          "kg·m/s²",
+                                          "kg·m²/s²",
+                                          "kg/s²"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_009",
+                          "text":  "The dimension of length is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "L",
+                                          "M",
+                                          "T",
+                                          "LT"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_010",
+                          "text":  "The dimension of mass is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "L",
+                                          "M",
+                                          "T",
+                                          "LT"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_011",
+                          "text":  "The dimension of time is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "L",
+                                          "M",
+                                          "T",
+                                          "LT"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_012",
+                          "text":  "The dimension of velocity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "LT",
+                                          "LT⁻¹",
+                                          "LT⁻²",
+                                          "L²T⁻²"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_013",
+                          "text":  "The dimension of acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "LT",
+                                          "LT⁻¹",
+                                          "LT⁻²",
+                                          "L²T⁻²"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_014",
+                          "text":  "Dimensional analysis is used to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Find numerical values",
+                                          "Check the correctness of equations",
+                                          "Measure mass",
+                                          "Calibrate instruments"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_015",
+                          "text":  "Which equation is dimensionally correct for distance traveled with constant acceleration?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "s = at",
+                                          "s = at²",
+                                          "s = ½at²",
+                                          "s = ½at³"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_016",
+                          "text":  "Systematic errors are caused by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Carelessness",
+                                          "Faulty apparatus",
+                                          "Random fluctuations",
+                                          "Human reaction time"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_017",
+                          "text":  "Random errors can be reduced by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Using a new apparatus",
+                                          "Taking many readings and averaging",
+                                          "Ignoring outliers",
+                                          "Rounding off numbers"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_018",
+                          "text":  "Zero error in an instrument is a type of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Random error",
+                                          "Systematic error",
+                                          "Human error",
+                                          "Personal error"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_019",
+                          "text":  "The number of significant figures in 0.00450 is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2",
+                                          "3",
+                                          "4",
+                                          "5"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_020",
+                          "text":  "A scalar quantity has:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Magnitude only",
+                                          "Direction only",
+                                          "Both magnitude and direction",
+                                          "Neither magnitude nor direction"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_021",
+                          "text":  "A vector quantity has:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Magnitude only",
+                                          "Direction only",
+                                          "Both magnitude and direction",
+                                          "Neither magnitude nor direction"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_022",
+                          "text":  "Which of the following is a scalar?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Displacement",
+                                          "Velocity",
+                                          "Speed",
+                                          "Acceleration"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_023",
+                          "text":  "Which of the following is a vector?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mass",
+                                          "Temperature",
+                                          "Force",
+                                          "Energy"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_024",
+                          "text":  "A unit vector has magnitude:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "10",
+                                          "100"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_025",
+                          "text":  "The unit vector in the x-direction is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "î",
+                                          "ĵ",
+                                          "k̂",
+                                          "r̂"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_026",
+                          "text":  "Two vectors are equal if they have:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Same magnitude only",
+                                          "Same direction only",
+                                          "Same magnitude and direction",
+                                          "Same starting point"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_027",
+                          "text":  "Vector addition is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Commutative",
+                                          "Not commutative",
+                                          "Associative only",
+                                          "Distributive only"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_028",
+                          "text":  "The resultant of two vectors is maximum when the angle between them is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°",
+                                          "45°",
+                                          "90°",
+                                          "180°"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_029",
+                          "text":  "The resultant of two vectors is minimum when the angle between them is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°",
+                                          "45°",
+                                          "90°",
+                                          "180°"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_030",
+                          "text":  "The dot product of two perpendicular vectors is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Maximum",
+                                          "Minimum",
+                                          "Zero",
+                                          "Negative"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_031",
+                          "text":  "The dot product is also called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Cross product",
+                                          "Scalar product",
+                                          "Vector product",
+                                          "Tensor product"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_032",
+                          "text":  "The cross product of two parallel vectors is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Maximum",
+                                          "Minimum",
+                                          "Zero",
+                                          "Unity"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_033",
+                          "text":  "The cross product î × ĵ equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "î",
+                                          "ĵ",
+                                          "k̂",
+                                          "0"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_034",
+                          "text":  "The dot product î · î equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "î"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_035",
+                          "text":  "The magnitude of vector A = 3î + 4ĵ is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "5",
+                                          "7",
+                                          "12",
+                                          "25"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_036",
+                          "text":  "The x-component of a vector A at angle θ to the x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A sinθ",
+                                          "A cosθ",
+                                          "A tanθ",
+                                          "A cotθ"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_037",
+                          "text":  "The y-component of a vector A at angle θ to the x-axis is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A sinθ",
+                                          "A cosθ",
+                                          "A tanθ",
+                                          "A cotθ"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_038",
+                          "text":  "The direction of a vector is given by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "tan⁻¹(Ay/Ax)",
+                                          "tan⁻¹(Ax/Ay)",
+                                          "sin⁻¹(Ax/Ay)",
+                                          "cos⁻¹(Ay/Ax)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_039",
+                          "text":  "If A·B = AB, the angle between A and B is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°",
+                                          "90°",
+                                          "180°",
+                                          "45°"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_040",
+                          "text":  "If A·B = 0, the angle between A and B is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°",
+                                          "90°",
+                                          "180°",
+                                          "45°"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_041",
+                          "text":  "The cross product A×B is perpendicular to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A only",
+                                          "B only",
+                                          "Both A and B",
+                                          "Neither A nor B"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_042",
+                          "text":  "If A = 2î + 3ĵ and B = 4î + 5ĵ, then A + B is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "6î + 8ĵ",
+                                          "2î + 2ĵ",
+                                          "8î + 15ĵ",
+                                          "6î - 8ĵ"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_043",
+                          "text":  "If A = 2î + 3ĵ and B = 4î + 5ĵ, then A - B is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "-2î - 2ĵ",
+                                          "6î + 8ĵ",
+                                          "2î + 2ĵ",
+                                          "8î + 15ĵ"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_044",
+                          "text":  "Multiplying a vector by a negative scalar:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Changes magnitude and reverses direction",
+                                          "Changes magnitude only",
+                                          "Reverses direction only",
+                                          "Does nothing"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_045",
+                          "text":  "Displacement is a:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Scalar",
+                                          "Vector",
+                                          "Dimensionless",
+                                          "Unitless"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_046",
+                          "text":  "Distance is a:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Scalar",
+                                          "Vector",
+                                          "Tensor",
+                                          "None"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_047",
+                          "text":  "Speed is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Distance/Time",
+                                          "Displacement/Time",
+                                          "Change in velocity/Time",
+                                          "Force/Mass"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_048",
+                          "text":  "Velocity is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Distance/Time",
+                                          "Displacement/Time",
+                                          "Change in velocity/Time",
+                                          "Force/Mass"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_049",
+                          "text":  "Acceleration is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Distance/Time",
+                                          "Displacement/Time",
+                                          "Change in velocity/Time",
+                                          "Force × Time"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_050",
+                          "text":  "The equation v = u + at is valid for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Variable acceleration",
+                                          "Uniform acceleration only",
+                                          "All motions",
+                                          "Circular motion only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_051",
+                          "text":  "The equation s = ut + ½at² gives:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Velocity",
+                                          "Displacement",
+                                          "Acceleration",
+                                          "Force"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_052",
+                          "text":  "The equation v² = u² + 2as relates:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Velocity and time",
+                                          "Velocity and displacement",
+                                          "Acceleration and time",
+                                          "Force and displacement"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_053",
+                          "text":  "In free fall, acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero",
+                                          "Constant (g)",
+                                          "Variable",
+                                          "Negative always"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_054",
+                          "text":  "The value of g near Earth\u0027s surface is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "9.8 m/s²",
+                                          "9.8 m/s",
+                                          "98 m/s²",
+                                          "0.98 m/s²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_055",
+                          "text":  "When a body is thrown upward, its acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero at the top",
+                                          "Constant throughout (g downward)",
+                                          "Maximum at the top",
+                                          "Zero throughout"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_056",
+                          "text":  "The slope of a displacement-time graph gives:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Acceleration",
+                                          "Velocity",
+                                          "Force",
+                                          "Work"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_057",
+                          "text":  "The slope of a velocity-time graph gives:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Acceleration",
+                                          "Displacement",
+                                          "Force",
+                                          "Work"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_058",
+                          "text":  "The area under a velocity-time graph gives:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Acceleration",
+                                          "Displacement",
+                                          "Force",
+                                          "Work"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_059",
+                          "text":  "A body moving with constant velocity has:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero acceleration",
+                                          "Constant acceleration",
+                                          "Variable acceleration",
+                                          "Negative acceleration"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_060",
+                          "text":  "Negative acceleration is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Retardation",
+                                          "Velocity",
+                                          "Speed",
+                                          "Displacement"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_061",
+                          "text":  "In projectile motion, the horizontal acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "g",
+                                          "-g",
+                                          "0",
+                                          "Variable"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_062",
+                          "text":  "In projectile motion, the vertical acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "g (downward)",
+                                          "Variable",
+                                          "Maximum at top"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_063",
+                          "text":  "The time of flight of a projectile depends on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Initial speed only",
+                                          "Angle only",
+                                          "Both initial speed and angle",
+                                          "Mass only"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_064",
+                          "text":  "The range of a projectile is maximum at angle:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "30°",
+                                          "45°",
+                                          "60°",
+                                          "90°"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_065",
+                          "text":  "At maximum height, the vertical component of velocity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Maximum",
+                                          "Zero",
+                                          "Equal to horizontal component",
+                                          "Equal to initial velocity"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_066",
+                          "text":  "The path of a projectile is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Circular",
+                                          "Parabolic",
+                                          "Elliptical",
+                                          "Hyperbolic"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_067",
+                          "text":  "The range formula for a projectile is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "u²sin2θ/g",
+                                          "u²sinθ/g",
+                                          "u²cosθ/g",
+                                          "u²tanθ/g"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_068",
+                          "text":  "The maximum height formula for a projectile is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "u²sin²θ/2g",
+                                          "u²cos²θ/2g",
+                                          "u²sin2θ/g",
+                                          "u²tanθ/g"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_069",
+                          "text":  "Instantaneous velocity is the velocity at:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A particular instant",
+                                          "The end of motion",
+                                          "The start of motion",
+                                          "Average over time"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_070",
+                          "text":  "Newton\u0027s First Law is called the law of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Acceleration",
+                                          "Inertia",
+                                          "Action and Reaction",
+                                          "Gravitation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_071",
+                          "text":  "Newton\u0027s Second Law states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "F = ma",
+                                          "F = mv",
+                                          "F = m/a",
+                                          "F = a/m"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_072",
+                          "text":  "Newton\u0027s Third Law states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "For every action there is an equal and opposite reaction",
+                                          "F = ma",
+                                          "Force causes acceleration",
+                                          "Energy is conserved"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_073",
+                          "text":  "The SI unit of force is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Joule",
+                                          "Newton",
+                                          "Watt",
+                                          "Pascal"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_074",
+                          "text":  "Impulse is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Force × displacement",
+                                          "Force × time",
+                                          "Mass × velocity",
+                                          "Mass × acceleration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_075",
+                          "text":  "Momentum is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mass × velocity",
+                                          "Force × time",
+                                          "Mass × acceleration",
+                                          "Force × displacement"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_076",
+                          "text":  "The unit of momentum is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "kg·m/s",
+                                          "kg·m/s²",
+                                          "N·s",
+                                          "Both A and C"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_077",
+                          "text":  "The principle of conservation of momentum states that total momentum is constant if:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "No external force acts",
+                                          "External force acts",
+                                          "Friction is present",
+                                          "Gravity acts"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_078",
+                          "text":  "Kinetic energy is given by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½mv²",
+                                          "mgh",
+                                          "½kx²",
+                                          "mv²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_079",
+                          "text":  "Potential energy is given by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½mv²",
+                                          "mgh",
+                                          "½kx²",
+                                          "mv²"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_080",
+                          "text":  "Work is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Force × displacement",
+                                          "Force × time",
+                                          "Mass × acceleration",
+                                          "Energy × time"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_081",
+                          "text":  "The SI unit of work is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Newton",
+                                          "Joule",
+                                          "Watt",
+                                          "Pascal"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_082",
+                          "text":  "Work is a:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Vector",
+                                          "Scalar",
+                                          "Tensor",
+                                          "None"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_083",
+                          "text":  "Power is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Work × time",
+                                          "Work/time",
+                                          "Force × displacement",
+                                          "Energy × time"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_084",
+                          "text":  "The SI unit of power is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Joule",
+                                          "Newton",
+                                          "Watt",
+                                          "Pascal"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_085",
+                          "text":  "In an elastic collision, which is conserved?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Momentum only",
+                                          "Kinetic energy only",
+                                          "Both momentum and kinetic energy",
+                                          "Neither"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_086",
+                          "text":  "In an inelastic collision, which is conserved?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Momentum only",
+                                          "Kinetic energy only",
+                                          "Both momentum and kinetic energy",
+                                          "Neither"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_087",
+                          "text":  "The coefficient of restitution for a perfectly elastic collision is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "0.5"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_088",
+                          "text":  "The coefficient of restitution for a perfectly inelastic collision is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "-1",
+                                          "0.5"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_089",
+                          "text":  "A conservative force is one where work done is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Path dependent",
+                                          "Path independent",
+                                          "Always zero",
+                                          "Always positive"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_090",
+                          "text":  "Which is a conservative force?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Friction",
+                                          "Air resistance",
+                                          "Gravitational force",
+                                          "Viscous force"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_091",
+                          "text":  "Which is a non-conservative force?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Gravitational force",
+                                          "Electrostatic force",
+                                          "Frictional force",
+                                          "Spring force"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_092",
+                          "text":  "The work-energy theorem states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Work = change in kinetic energy",
+                                          "Work = change in potential energy",
+                                          "Work = change in momentum",
+                                          "Work = change in force"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_093",
+                          "text":  "The law of conservation of energy states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Energy can be created",
+                                          "Energy can be destroyed",
+                                          "Energy can be transformed but not created or destroyed",
+                                          "Energy is always lost"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_094",
+                          "text":  "The impulse-momentum theorem states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Impulse = change in momentum",
+                                          "Impulse = change in kinetic energy",
+                                          "Impulse = change in potential energy",
+                                          "Impulse = change in force"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_095",
+                          "text":  "The SI unit of temperature is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Celsius",
+                                          "Fahrenheit",
+                                          "Kelvin",
+                                          "Rankine"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_096",
+                          "text":  "Absolute zero is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°C",
+                                          "-273.15°C",
+                                          "273.15°C",
+                                          "32°C"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_097",
+                          "text":  "The freezing point of water in Kelvin is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0 K",
+                                          "273.15 K",
+                                          "373.15 K",
+                                          "100 K"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_098",
+                          "text":  "The boiling point of water in Kelvin is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "273.15 K",
+                                          "373.15 K",
+                                          "100 K",
+                                          "212 K"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_099",
+                          "text":  "A liquid-in-glass thermometer works on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Thermal expansion of liquid",
+                                          "Electrical resistance",
+                                          "Thermoelectric effect",
+                                          "Gas expansion"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_100",
+                          "text":  "The coefficient of linear expansion (α) is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ΔL/(L₀ΔT)",
+                                          "ΔL/L₀",
+                                          "ΔL/ΔT",
+                                          "L₀ΔL/ΔT"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_101",
+                          "text":  "For solids, the coefficient of volume expansion β is related to α by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "β = α",
+                                          "β = 2α",
+                                          "β = 3α",
+                                          "β = 4α"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_102",
+                          "text":  "Specific heat capacity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Energy to raise 1 kg by 1°C",
+                                          "Energy to raise any mass by 1°C",
+                                          "Energy to change phase",
+                                          "Energy to melt"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_103",
+                          "text":  "Latent heat of fusion is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Energy to change solid to liquid at constant temperature",
+                                          "Energy to change liquid to gas",
+                                          "Energy to raise temperature",
+                                          "Energy to change gas to solid"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_104",
+                          "text":  "Latent heat of vaporization is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Energy to change liquid to gas at constant temperature",
+                                          "Energy to change solid to liquid",
+                                          "Energy to raise temperature",
+                                          "Energy to change gas to liquid"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_105",
+                          "text":  "Newton\u0027s Law of Cooling states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Rate of cooling ∝ temperature difference",
+                                          "Rate of cooling ∝ temperature",
+                                          "Rate of cooling is constant",
+                                          "Rate of cooling ∝ 1/temperature"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_106",
+                          "text":  "Which thermometer is most accurate for low temperatures?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mercury thermometer",
+                                          "Alcohol thermometer",
+                                          "Platinum resistance thermometer",
+                                          "Clinical thermometer"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_107",
+                          "text":  "The Zeroth Law of Thermodynamics is used to define:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Work",
+                                          "Temperature",
+                                          "Entropy",
+                                          "Pressure"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_108",
+                          "text":  "The temperature at which a solid melts is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Boiling point",
+                                          "Melting point",
+                                          "Freezing point",
+                                          "Condensation point"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_109",
+                          "text":  "The temperature at which a liquid boils is called:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Melting point",
+                                          "Freezing point",
+                                          "Boiling point",
+                                          "Sublimation point"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_110",
+                          "text":  "The kinetic theory of gases assumes molecules:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Are at rest",
+                                          "Are in constant random motion",
+                                          "Attract each other strongly",
+                                          "Have large volumes"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_111",
+                          "text":  "Gas pressure is due to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Molecular weight",
+                                          "Molecular collisions with walls",
+                                          "Molecular attraction",
+                                          "Molecular repulsion"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_112",
+                          "text":  "Average kinetic energy of gas molecules is proportional to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Pressure",
+                                          "Volume",
+                                          "Absolute temperature",
+                                          "Mass"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_113",
+                          "text":  "Boyle\u0027s Law states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "PV = constant at constant T",
+                                          "V/T = constant at constant P",
+                                          "P/T = constant at constant V",
+                                          "PV = nRT"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_114",
+                          "text":  "Charles\u0027 Law states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "PV = constant",
+                                          "V/T = constant at constant P",
+                                          "P/T = constant at constant V",
+                                          "PV = nRT"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_115",
+                          "text":  "The ideal gas equation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "PV = nRT",
+                                          "PV = mRT",
+                                          "PV = kT",
+                                          "P = nRT/V"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_116",
+                          "text":  "The value of R (universal gas constant) is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "8.31 J/mol·K",
+                                          "8.31 J/kg·K",
+                                          "8.31 cal/mol·K",
+                                          "8.31 atm·L/mol·K"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_117",
+                          "text":  "Boltzmann\u0027s constant is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "R/Nₐ",
+                                          "Nₐ/R",
+                                          "R·Nₐ",
+                                          "k = 1.38 × 10⁻²³ J/K"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_118",
+                          "text":  "The molar specific heat at constant volume for a monoatomic gas is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½R",
+                                          "R",
+                                          "³/₂R",
+                                          "⁵/₂R"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_119",
+                          "text":  "The molar specific heat at constant pressure for a monoatomic gas is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½R",
+                                          "R",
+                                          "³/₂R",
+                                          "⁵/₂R"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_120",
+                          "text":  "The ratio Cp/Cv for a monoatomic gas is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1.0",
+                                          "1.4",
+                                          "1.67",
+                                          "2.0"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_121",
+                          "text":  "Mayer\u0027s relation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Cp - Cv = R",
+                                          "Cp + Cv = R",
+                                          "Cp/Cv = R",
+                                          "Cp × Cv = R"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_122",
+                          "text":  "In an isothermal process:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Temperature is constant",
+                                          "Pressure is constant",
+                                          "Volume is constant",
+                                          "No heat is exchanged"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_123",
+                          "text":  "In an adiabatic process:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Temperature is constant",
+                                          "No heat is exchanged with surroundings",
+                                          "Pressure is constant",
+                                          "Volume is constant"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_124",
+                          "text":  "Work done by gas in isothermal expansion is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "nRT ln(V₂/V₁)",
+                                          "nRT(V₂ - V₁)",
+                                          "½nRT(V₂² - V₁²)",
+                                          "nRT/(V₂ - V₁)"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_125",
+                          "text":  "Average translational kinetic energy per molecule is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½kT",
+                                          "³/₂kT",
+                                          "⁵/₂kT",
+                                          "kT"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_126",
+                          "text":  "Internal energy of an ideal gas depends only on:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Pressure",
+                                          "Volume",
+                                          "Temperature",
+                                          "Both pressure and volume"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_127",
+                          "text":  "Avogadro\u0027s number is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "6.022 × 10²³",
+                                          "6.022 × 10²⁴",
+                                          "6.022 × 10²²",
+                                          "6.022 × 10²¹"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_128",
+                          "text":  "The First Law of Thermodynamics is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Conservation of energy",
+                                          "Conservation of momentum",
+                                          "Conservation of mass",
+                                          "Conservation of charge"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_129",
+                          "text":  "The First Law is expressed as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ΔU = Q + W",
+                                          "ΔU = Q - W",
+                                          "ΔU = W - Q",
+                                          "ΔU = QW"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_130",
+                          "text":  "In a cyclic process, the change in internal energy is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero",
+                                          "Maximum",
+                                          "Minimum",
+                                          "Positive"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_131",
+                          "text":  "In an adiabatic process, heat exchange Q is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero",
+                                          "Maximum",
+                                          "Constant",
+                                          "Positive"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_132",
+                          "text":  "In an isochoric process, which is constant?",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Pressure",
+                                          "Volume",
+                                          "Temperature",
+                                          "Heat"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_133",
+                          "text":  "The Second Law of Thermodynamics states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Heat flows from cold to hot naturally",
+                                          "Heat cannot flow from cold to hot without external work",
+                                          "Energy is conserved",
+                                          "Entropy always decreases"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_134",
+                          "text":  "A Carnot engine operates between:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Two isothermal and two adiabatic processes",
+                                          "Two isothermal and two isobaric processes",
+                                          "Two adiabatic and two isochoric processes",
+                                          "Four isothermal processes"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_135",
+                          "text":  "The efficiency of a Carnot engine is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1 - Tc/Th",
+                                          "Tc/Th",
+                                          "1 + Tc/Th",
+                                          "Th/Tc"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_136",
+                          "text":  "The Carnot engine is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "The most efficient heat engine",
+                                          "The least efficient heat engine",
+                                          "Impossible to construct",
+                                          "Always 100% efficient"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_137",
+                          "text":  "Thermal conduction occurs through:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Molecular collisions",
+                                          "Mass transfer",
+                                          "Radiation",
+                                          "Convection"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_138",
+                          "text":  "Thermal radiation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Transfer of heat through electromagnetic waves",
+                                          "Transfer through molecular collisions",
+                                          "Transfer through mass movement",
+                                          "Transfer through convection"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_139",
+                          "text":  "Stefan\u0027s Law states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "P = σeAT⁴",
+                                          "P = σeAT²",
+                                          "P = σeAT",
+                                          "P = σeAT³"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_140",
+                          "text":  "Wien\u0027s Law relates:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Wavelength of peak emission to temperature",
+                                          "Total energy emitted to temperature",
+                                          "Temperature to pressure",
+                                          "Volume to temperature"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_141",
+                          "text":  "A black body:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Absorbs all radiation incident on it",
+                                          "Emits no radiation",
+                                          "Reflects all radiation",
+                                          "Transmits all radiation"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_142",
+                          "text":  "The emissivity of a black body is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0",
+                                          "1",
+                                          "0.5",
+                                          "Infinity"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_143",
+                          "text":  "Efficiency of a heat engine is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Work output / Heat input",
+                                          "Heat input / Work output",
+                                          "Heat output / Work input",
+                                          "Work input / Heat output"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_144",
+                          "text":  "Entropy is a measure of:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Order",
+                                          "Disorder",
+                                          "Energy",
+                                          "Temperature"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_145",
+                          "text":  "Stress is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Force per unit area",
+                                          "Extension per unit length",
+                                          "Force per unit length",
+                                          "Area per unit force"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_146",
+                          "text":  "Strain is defined as:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Force per unit area",
+                                          "Extension per unit length",
+                                          "Force per unit length",
+                                          "Area per unit force"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_147",
+                          "text":  "Hooke\u0027s Law states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Stress ∝ Strain within elastic limit",
+                                          "Force ∝ Extension within elastic limit",
+                                          "Both A and B",
+                                          "None"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_148",
+                          "text":  "Young\u0027s modulus is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Stress/Strain",
+                                          "Strain/Stress",
+                                          "Force/Extension",
+                                          "Extension/Force"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_149",
+                          "text":  "The SI unit of Young\u0027s modulus is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "N/m",
+                                          "N/m²",
+                                          "N·m",
+                                          "m/N"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_150",
+                          "text":  "The elastic limit is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Point beyond which material does not return to original shape",
+                                          "Point where material breaks",
+                                          "Point where stress is maximum",
+                                          "Point where strain is maximum"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_151",
+                          "text":  "A ductile material:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Breaks immediately after elastic limit",
+                                          "Undergoes plastic deformation before breaking",
+                                          "Does not deform at all",
+                                          "Is always brittle"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_152",
+                          "text":  "A brittle material:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Breaks immediately after elastic limit",
+                                          "Undergoes plastic deformation before breaking",
+                                          "Does not deform at all",
+                                          "Is always ductile"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_153",
+                          "text":  "Shear modulus is for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Tensile deformation",
+                                          "Shear deformation",
+                                          "Volume deformation",
+                                          "Compressive deformation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_154",
+                          "text":  "Bulk modulus is for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Tensile deformation",
+                                          "Shear deformation",
+                                          "Volume deformation",
+                                          "Compressive deformation"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_155",
+                          "text":  "Energy stored in a stretched wire is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½Fe",
+                                          "Fe",
+                                          "2Fe",
+                                          "¼Fe"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_156",
+                          "text":  "Stiffness of a wire is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Force per unit extension",
+                                          "Extension per unit force",
+                                          "Stress per unit strain",
+                                          "Strain per unit stress"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_157",
+                          "text":  "Force due to thermal expansion when prevented is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "YAαΔT",
+                                          "YAΔT/α",
+                                          "YαΔT/A",
+                                          "YA/αΔT"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_158",
+                          "text":  "The breaking point is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Where it begins to deform",
+                                          "Where it cannot withstand any more load",
+                                          "Where it returns to original shape",
+                                          "Where stress is zero"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_159",
+                          "text":  "The yield point is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Before elastic limit",
+                                          "After elastic limit, small load causes large extension",
+                                          "At breaking point",
+                                          "At the start of deformation"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_160",
+                          "text":  "Surface tension is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Force per unit area",
+                                          "Force per unit length",
+                                          "Energy per unit area",
+                                          "Both B and C"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_161",
+                          "text":  "The SI unit of surface tension is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "N/m",
+                                          "N/m²",
+                                          "J/m²",
+                                          "Both A and C"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_162",
+                          "text":  "Capillary action is due to:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Surface tension",
+                                          "Gravity",
+                                          "Viscosity",
+                                          "Pressure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_163",
+                          "text":  "The angle of contact for water with glass is approximately:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°",
+                                          "90°",
+                                          "150°",
+                                          "45°"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_164",
+                          "text":  "The angle of contact for mercury with glass is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "0°",
+                                          "90°",
+                                          "150°",
+                                          "45°"
+                                      ],
+                          "correct_index":  2
+                      },
+                      {
+                          "id":  "phy101_165",
+                          "text":  "Capillary rise height is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Directly proportional to tube radius",
+                                          "Inversely proportional to tube radius",
+                                          "Independent of radius",
+                                          "Proportional to tube length"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_166",
+                          "text":  "Cohesive forces are between:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Like molecules",
+                                          "Unlike molecules",
+                                          "Solid and liquid",
+                                          "Gas molecules"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_167",
+                          "text":  "Adhesive forces are between:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Like molecules",
+                                          "Unlike molecules",
+                                          "Liquid molecules only",
+                                          "Gas molecules only"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_168",
+                          "text":  "Pressure at depth h in a fluid is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "P₀ + ρgh",
+                                          "P₀ - ρgh",
+                                          "ρgh",
+                                          "P₀gh"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_169",
+                          "text":  "Pascal\u0027s Principle states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Pressure applied to fluid is transmitted undiminished",
+                                          "Pressure decreases with depth",
+                                          "Pressure increases with depth",
+                                          "Pressure is zero at surface"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_170",
+                          "text":  "Archimedes\u0027 Principle states:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Buoyant force equals weight of displaced fluid",
+                                          "Buoyant force equals weight of object",
+                                          "Pressure equals force per unit area",
+                                          "Volume equals mass × density"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_171",
+                          "text":  "The buoyant force is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Always upward",
+                                          "Always downward",
+                                          "Depends on object weight",
+                                          "Depends on object shape"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_172",
+                          "text":  "The continuity equation for fluids is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "A₁v₁ = A₂v₂",
+                                          "A₁v₁² = A₂v₂²",
+                                          "P₁v₁ = P₂v₂",
+                                          "ρ₁v₁ = ρ₂v₂"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_173",
+                          "text":  "Bernoulli\u0027s equation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "P + ½ρv² + ρgy = constant",
+                                          "P + ρv² + ρgy = constant",
+                                          "P + ½ρv² = constant",
+                                          "P + ρgy = constant"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_174",
+                          "text":  "Viscosity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Internal friction in fluid flow",
+                                          "Surface tension",
+                                          "Density",
+                                          "Pressure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_175",
+                          "text":  "Terminal velocity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Maximum velocity reached in fluid",
+                                          "Minimum velocity",
+                                          "Initial velocity",
+                                          "Average velocity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_176",
+                          "text":  "Reynolds number determines whether flow is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Laminar or turbulent",
+                                          "Fast or slow",
+                                          "Hot or cold",
+                                          "High or low pressure"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_177",
+                          "text":  "For a floating object, weight equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Buoyant force",
+                                          "Surface tension",
+                                          "Viscous force",
+                                          "Pressure force"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_178",
+                          "text":  "The fraction of a floating object submerged equals:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "ρ_object/ρ_fluid",
+                                          "ρ_fluid/ρ_object",
+                                          "ρ_object - ρ_fluid",
+                                          "ρ_object + ρ_fluid"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_179",
+                          "text":  "Angular velocity is measured in:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "rad/s",
+                                          "m/s",
+                                          "rad",
+                                          "m/s²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_180",
+                          "text":  "Linear speed v is related to angular velocity ω by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "v = rω",
+                                          "v = ω/r",
+                                          "v = r/ω",
+                                          "v = ω²r"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_181",
+                          "text":  "Centripetal acceleration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "v²/r",
+                                          "r²/v",
+                                          "v/r²",
+                                          "r/v²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_182",
+                          "text":  "Centripetal force is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "mv²/r",
+                                          "mr²/v",
+                                          "m/r",
+                                          "mv/r"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_183",
+                          "text":  "Period of a mass-spring system is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2π√(m/k)",
+                                          "2π√(k/m)",
+                                          "2πm/k",
+                                          "2πk/m"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_184",
+                          "text":  "Frequency is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "1/T",
+                                          "T",
+                                          "2π/T",
+                                          "T/2π"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_185",
+                          "text":  "Period of a simple pendulum is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "2π√(L/g)",
+                                          "2π√(g/L)",
+                                          "2πL/g",
+                                          "2πg/L"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_186",
+                          "text":  "In SHM, acceleration is proportional to displacement and:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Opposite in direction",
+                                          "Same direction",
+                                          "Independent",
+                                          "Proportional to velocity"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_187",
+                          "text":  "Total energy in SHM is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "½kA²",
+                                          "½mv²",
+                                          "kA²",
+                                          "mv²"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_188",
+                          "text":  "At equilibrium in SHM, velocity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Maximum",
+                                          "Minimum",
+                                          "Zero",
+                                          "Constant"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_189",
+                          "text":  "At maximum displacement in SHM, velocity is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero",
+                                          "Maximum",
+                                          "Minimum",
+                                          "Constant"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_190",
+                          "text":  "Newton\u0027s Law of Gravitation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "F = Gm₁m₂/r²",
+                                          "F = Gm₁m₂/r",
+                                          "F = Gm₁m₂/r³",
+                                          "F = Gm₁m₂/r⁴"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_191",
+                          "text":  "The value of G is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "6.67 × 10⁻¹¹ N·m²/kg²",
+                                          "6.67 × 10¹¹ N·m²/kg²",
+                                          "6.67 × 10⁻¹¹ N·m/kg²",
+                                          "6.67 × 10⁻¹¹ N·m²/kg"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_192",
+                          "text":  "A wave is a disturbance that transfers:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Energy",
+                                          "Matter",
+                                          "Mass",
+                                          "Charge"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_193",
+                          "text":  "In transverse waves, particle vibration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Perpendicular to wave direction",
+                                          "Parallel to wave direction",
+                                          "Circular",
+                                          "Random"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_194",
+                          "text":  "In longitudinal waves, particle vibration is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Perpendicular to wave direction",
+                                          "Parallel to wave direction",
+                                          "Circular",
+                                          "Random"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_195",
+                          "text":  "Sound waves are:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Transverse",
+                                          "Longitudinal",
+                                          "Electromagnetic",
+                                          "Surface waves"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_196",
+                          "text":  "Light waves are:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Mechanical",
+                                          "Electromagnetic",
+                                          "Longitudinal",
+                                          "Both B and C"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_197",
+                          "text":  "Wavelength is distance between:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Two successive crests",
+                                          "Two successive troughs",
+                                          "Crest and trough",
+                                          "Both A and B"
+                                      ],
+                          "correct_index":  3
+                      },
+                      {
+                          "id":  "phy101_198",
+                          "text":  "Wave speed is given by:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "fλ",
+                                          "λ/f",
+                                          "f/λ",
+                                          "2πf"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_199",
+                          "text":  "The Doppler effect is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Change in frequency due to relative motion",
+                                          "Change in wavelength due to medium",
+                                          "Change in speed due to reflection",
+                                          "Change in amplitude due to interference"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_200",
+                          "text":  "In a stationary wave, nodes have:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero amplitude",
+                                          "Maximum amplitude",
+                                          "Maximum velocity",
+                                          "Maximum acceleration"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_201",
+                          "text":  "In a stationary wave, antinodes have:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Zero amplitude",
+                                          "Maximum amplitude",
+                                          "Zero velocity",
+                                          "Zero acceleration"
+                                      ],
+                          "correct_index":  1
+                      },
+                      {
+                          "id":  "phy101_202",
+                          "text":  "Diffraction is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Bending of waves around obstacles",
+                                          "Reflection from surfaces",
+                                          "Refraction through media",
+                                          "Interference of waves"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_203",
+                          "text":  "Polarization occurs only for:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "Transverse waves",
+                                          "Longitudinal waves",
+                                          "Both",
+                                          "Neither"
+                                      ],
+                          "correct_index":  0
+                      },
+                      {
+                          "id":  "phy101_204",
+                          "text":  "The wave equation is:",
+                          "explanation":  "",
+                          "difficulty":  1,
+                          "options":  [
+                                          "y = A sin(ωt - kx)",
+                                          "y = A cos(ωt - kx)",
+                                          "Both A and B",
+                                          "None"
+                                      ],
+                          "correct_index":  2
+                      }
+                  ],
+    "course_id":  "phy101",
+    "course_name":  "General Physics I",
+    "version":  "1.0.0"
+}

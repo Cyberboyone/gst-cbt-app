@@ -57,11 +57,19 @@ class CourseProvider with ChangeNotifier {
       mode: '100_level',
     ),
     Course(
+      id: 'phy101',
+      code: 'PHY 101',
+      name: 'General Physics I',
+      icon: '⚡',
+      colorHex: '#FFF3CD', // Amber
+      mode: '100_level',
+    ),
+    Course(
       id: 'phy102',
       code: 'PHY 102',
       name: 'Electromagnetism',
-      icon: '⚡',
-      colorHex: '#FFF3CD', // Amber
+      icon: '🧲',
+      colorHex: '#FFE8D6', // Peach
       mode: '100_level',
     ),
     Course(
