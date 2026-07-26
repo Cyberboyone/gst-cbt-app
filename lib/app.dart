@@ -6,6 +6,7 @@ import 'providers/profile_provider.dart';
 import 'providers/settings_provider.dart';
 import 'providers/course_provider.dart';
 import 'providers/quiz_provider.dart';
+import 'services/ad_service.dart';
 import 'screens/splash_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'screens/home_screen.dart';
@@ -18,8 +19,32 @@ import 'screens/about_screen.dart';
 import 'screens/shop_screen.dart';
 import 'screens/badges_screen.dart';
 
-class GstCbtApp extends StatelessWidget {
+class GstCbtApp extends StatefulWidget {
   const GstCbtApp({super.key});
+
+  @override
+  State<GstCbtApp> createState() => _GstCbtAppState();
+}
+
+class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      AdService.instance.onAppResume();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

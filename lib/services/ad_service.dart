@@ -54,11 +54,21 @@ class AdService {
 
   void _startPeriodicPreload() {
     _bannerRetryTimer?.cancel();
-    _bannerRetryTimer = Timer.periodic(const Duration(seconds: 30), (_) {
+    _bannerRetryTimer = Timer.periodic(const Duration(seconds: 15), (_) {
       if (!_initFailed) {
+        preloadInterstitial();
+        preloadRewarded();
         preloadBanner();
       }
     });
+  }
+
+  /// Call this when app resumes from background to refresh ad cache
+  void onAppResume() {
+    if (!_initFailed) {
+      debugPrint('[AdService] App resumed - refreshing ad cache');
+      _preloadAll();
+    }
   }
 
   void dispose() {
