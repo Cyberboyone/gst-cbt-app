@@ -423,7 +423,8 @@ class _HomeTab extends StatelessWidget {
               ..._buildCourseListWithBanners(context, courseProvider, filteredCourses),
 
               const PoweredByFooter(),
-          ],
+            ],
+          ),
         ),
       ),
     );
