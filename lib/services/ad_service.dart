@@ -11,6 +11,7 @@ class AdService {
   bool _initialized = false;
   bool _initFailed = false;
   StreamSubscription? _connectivitySubscription;
+  Timer? _bannerRetryTimer;
 
   Future<void> init() async {
     if (_initialized) return;
@@ -29,6 +30,7 @@ class AdService {
       },
     );
     _listenConnectivity();
+    _startPeriodicBannerPreload();
   }
 
   void _preloadAll() {
@@ -47,8 +49,19 @@ class AdService {
     });
   }
 
+  /// Preload banners every 30 seconds so they're always ready
+  void _startPeriodicBannerPreload() {
+    _bannerRetryTimer?.cancel();
+    _bannerRetryTimer = Timer.periodic(const Duration(seconds: 30), (_) {
+      if (!_initFailed) {
+        preloadBanner();
+      }
+    });
+  }
+
   void dispose() {
     _connectivitySubscription?.cancel();
+    _bannerRetryTimer?.cancel();
   }
 
   void preload(String placementId) {
@@ -60,8 +73,13 @@ class AdService {
     UnityAds.load(
       placementId: placementId,
       onComplete: (id) => debugPrint('[AdService] Loaded: $id'),
-      onFailed: (id, error, msg) =>
-          debugPrint('[AdService] Load failed: $id – $error – $msg'),
+      onFailed: (id, error, msg) {
+        debugPrint('[AdService] Load failed: $id – $error – $msg');
+        // Retry banner load after 5 seconds
+        if (placementId == AppConstants.unityBannerPlacement) {
+          Timer(const Duration(seconds: 5), () => preloadBanner());
+        }
+      },
     );
   }
 

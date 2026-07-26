@@ -9,6 +9,7 @@ import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/quiz_provider.dart';
 import '../providers/settings_provider.dart';
+import '../services/ad_service.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/streak_card.dart';
 import '../widgets/course_card.dart';
@@ -422,12 +423,54 @@ class _HomeTab extends StatelessWidget {
               ..._buildCourseListWithBanners(context, courseProvider, filteredCourses),
 
               const PoweredByFooter(),
-            ],
-          ),
+          ],
         ),
       ),
     );
   }
+}
+
+class _BannerAdWidget extends StatefulWidget {
+  const _BannerAdWidget({super.key});
+
+  @override
+  State<_BannerAdWidget> createState() => _BannerAdWidgetState();
+}
+
+class _BannerAdWidgetState extends State<_BannerAdWidget> {
+  int _retryCount = 0;
+  bool _failed = false;
+
+  void _retry() {
+    if (_retryCount < 3) {
+      setState(() {
+        _retryCount++;
+        _failed = false;
+      });
+      AdService.instance.preloadBanner();
+    } else {
+      setState(() => _failed = true);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_failed) return const SizedBox.shrink();
+
+    return UnityBannerAd(
+      placementId: AppConstants.unityBannerPlacement,
+      onLoad: (_) => debugPrint('[Banner] Loaded'),
+      onClick: (_) => debugPrint('[Banner] Clicked'),
+      onShown: (_) => debugPrint('[Banner] Shown'),
+      onFailed: (_, __, ___) {
+        debugPrint('[Banner] Failed - retry ${_retryCount + 1}/3');
+        Future.delayed(const Duration(seconds: 3), () {
+          if (mounted) _retry();
+        });
+      },
+    );
+  }
+}
 
   List<Widget> _buildCourseListWithBanners(BuildContext context, CourseProvider courseProvider, List<Course> filteredCourses) {
     final List<Widget> widgets = [];
@@ -449,13 +492,7 @@ class _HomeTab extends StatelessWidget {
         widgets.add(
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 12.0),
-            child: UnityBannerAd(
-              placementId: AppConstants.unityBannerPlacement,
-              onLoad: (_) {},
-              onClick: (_) {},
-              onShown: (_) {},
-              onFailed: (_, __, ___) {},
-            ),
+            child: _BannerAdWidget(key: ValueKey('banner_$i')),
           ),
         );
       }
