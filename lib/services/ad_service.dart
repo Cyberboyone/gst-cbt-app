@@ -13,6 +13,9 @@ class AdService {
   StreamSubscription? _connectivitySubscription;
   Timer? _bannerRetryTimer;
 
+  bool _interstitialReady = false;
+  bool _rewardedReady = false;
+
   Future<void> init() async {
     if (_initialized) return;
     _initialized = true;
@@ -25,12 +28,12 @@ class AdService {
         _preloadAll();
       },
       onFailed: (error, message) {
-        debugPrint('[AdService] Init failed: $error – $message');
+        debugPrint('[AdService] Init failed: $error - $message');
         _initFailed = true;
       },
     );
     _listenConnectivity();
-    _startPeriodicBannerPreload();
+    _startPeriodicPreload();
   }
 
   void _preloadAll() {
@@ -43,14 +46,13 @@ class AdService {
     _connectivitySubscription?.cancel();
     _connectivitySubscription = Connectivity().onConnectivityChanged.listen((result) {
       if (result != ConnectivityResult.none) {
-        debugPrint('[AdService] Network available – preloading ads');
+        debugPrint('[AdService] Network available - preloading ads');
         _preloadAll();
       }
     });
   }
 
-  /// Preload banners every 30 seconds so they're always ready
-  void _startPeriodicBannerPreload() {
+  void _startPeriodicPreload() {
     _bannerRetryTimer?.cancel();
     _bannerRetryTimer = Timer.periodic(const Duration(seconds: 30), (_) {
       if (!_initFailed) {
@@ -66,26 +68,30 @@ class AdService {
 
   void preload(String placementId) {
     if (_initFailed) {
-      debugPrint('[AdService] Skipping preload – init failed');
+      debugPrint('[AdService] Skipping preload - init failed');
       return;
     }
     debugPrint('[AdService] Preloading: $placementId');
     UnityAds.load(
       placementId: placementId,
-      onComplete: (id) => debugPrint('[AdService] Loaded: $id'),
+      onComplete: (id) {
+        debugPrint('[AdService] Loaded: $id');
+        if (id == AppConstants.unityInterstitialPlacement) _interstitialReady = true;
+        if (id == AppConstants.unityRewardedPlacement) _rewardedReady = true;
+      },
       onFailed: (id, error, msg) {
-        debugPrint('[AdService] Load failed: $id – $error – $msg');
-        // Retry banner load after 5 seconds
-        if (placementId == AppConstants.unityBannerPlacement) {
+        debugPrint('[AdService] Load failed: $id - $error - $msg');
+        if (id == AppConstants.unityBannerPlacement) {
           Timer(const Duration(seconds: 5), () => preloadBanner());
         }
       },
     );
   }
 
+  /// Show interstitial only if preloaded and ready, otherwise skip immediately
   void showInterstitial({VoidCallback? onComplete}) {
     final id = AppConstants.unityInterstitialPlacement;
-    debugPrint('[AdService] showInterstitial called for $id');
+    debugPrint('[AdService] showInterstitial called for $id (ready: $_interstitialReady)');
 
     bool callbackFired = false;
     void fireCallback() {
@@ -95,13 +101,22 @@ class AdService {
       }
     }
 
-    // Timeout: if ad not ready within 5 seconds, skip
+    // If not ready, skip immediately without showing
+    if (!_interstitialReady) {
+      debugPrint('[AdService] Interstitial not ready - skipping');
+      Future.microtask(() => fireCallback());
+      return;
+    }
+
+    // Safety timeout
     Timer(const Duration(seconds: 5), () {
       if (!callbackFired) {
-        debugPrint('[AdService] Interstitial timeout – skipping');
+        debugPrint('[AdService] Interstitial timeout - skipping');
         fireCallback();
       }
     });
+
+    _interstitialReady = false;
 
     UnityAds.showVideoAd(
       placementId: id,
@@ -116,15 +131,16 @@ class AdService {
         fireCallback();
       },
       onFailed: (_, e, m) {
-        debugPrint('[AdService] Interstitial show failed: $e – $m');
+        debugPrint('[AdService] Interstitial show failed: $e - $m');
         fireCallback();
       },
     );
   }
 
+  /// Show rewarded only if preloaded and ready, otherwise fail immediately
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
     final id = AppConstants.unityRewardedPlacement;
-    debugPrint('[AdService] showRewarded called for $id');
+    debugPrint('[AdService] showRewarded called for $id (ready: $_rewardedReady)');
 
     bool callbackFired = false;
     void fireReward() {
@@ -141,19 +157,28 @@ class AdService {
       }
     }
 
-    // Timeout: if ad not ready within 5 seconds, fail
+    // If not ready, fail immediately
+    if (!_rewardedReady) {
+      debugPrint('[AdService] Rewarded not ready - skipping');
+      Future.microtask(() => fireFail());
+      return;
+    }
+
+    // Safety timeout
     Timer(const Duration(seconds: 5), () {
       if (!callbackFired) {
-        debugPrint('[AdService] Rewarded timeout – skipping');
+        debugPrint('[AdService] Rewarded timeout - skipping');
         fireFail();
       }
     });
+
+    _rewardedReady = false;
 
     UnityAds.showVideoAd(
       placementId: id,
       onStart: (_) => debugPrint('[AdService] Rewarded started'),
       onComplete: (_) {
-        debugPrint('[AdService] Rewarded completed – granting reward');
+        debugPrint('[AdService] Rewarded completed - granting reward');
         preloadRewarded();
         fireReward();
       },
@@ -162,7 +187,7 @@ class AdService {
         fireFail();
       },
       onFailed: (_, e, m) {
-        debugPrint('[AdService] Rewarded show failed: $e – $m');
+        debugPrint('[AdService] Rewarded show failed: $e - $m');
         fireFail();
       },
     );
