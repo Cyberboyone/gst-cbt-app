@@ -34,6 +34,7 @@ class AdService {
   void _preloadAll() {
     preloadInterstitial();
     preloadRewarded();
+    preloadBanner();
   }
 
   void _listenConnectivity() {
@@ -67,10 +68,13 @@ class AdService {
   void showInterstitial({VoidCallback? onComplete}) {
     final id = AppConstants.unityInterstitialPlacement;
     debugPrint('[AdService] showInterstitial called for $id');
-    _showInterstitialVideo(id, onComplete);
-  }
 
-  void _showInterstitialVideo(String id, VoidCallback? onComplete) {
+    // Timeout: skip ad if not ready within 5 seconds
+    Timer(const Duration(seconds: 5), () {
+      debugPrint('[AdService] Interstitial timeout – skipping');
+      onComplete?.call();
+    });
+
     UnityAds.showVideoAd(
       placementId: id,
       onStart: (_) => debugPrint('[AdService] Interstitial started'),
@@ -93,10 +97,13 @@ class AdService {
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
     final id = AppConstants.unityRewardedPlacement;
     debugPrint('[AdService] showRewarded called for $id');
-    _showRewardedVideo(id, onRewarded, onFailed);
-  }
 
-  void _showRewardedVideo(String id, VoidCallback? onRewarded, VoidCallback? onFailed) {
+    // Timeout: if ad not ready within 5 seconds, fail
+    Timer(const Duration(seconds: 5), () {
+      debugPrint('[AdService] Rewarded timeout – skipping');
+      onFailed?.call();
+    });
+
     UnityAds.showVideoAd(
       placementId: id,
       onStart: (_) => debugPrint('[AdService] Rewarded started'),
@@ -119,4 +126,6 @@ class AdService {
   void preloadInterstitial() => preload(AppConstants.unityInterstitialPlacement);
 
   void preloadRewarded() => preload(AppConstants.unityRewardedPlacement);
+
+  void preloadBanner() => preload(AppConstants.unityBannerPlacement);
 }

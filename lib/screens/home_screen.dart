@@ -419,33 +419,7 @@ class _HomeTab extends StatelessWidget {
               ),
               const SizedBox(height: 20.0),
 
-              ListView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: filteredCourses.length,
-                itemBuilder: (context, index) {
-                  final course = filteredCourses[index];
-                  final completion = courseProvider.getCompletionPercentage(course.id);
-                  return CourseCard(
-                    course: course,
-                    progressPercentage: completion,
-                    onTap: () => _startCourseQuiz(context, course),
-                  );
-                },
-              ),
-
-              // Banner Ad
-              if (!Provider.of<SettingsProvider>(context, listen: false).settings.adsRemoved)
-                Padding(
-                  padding: const EdgeInsets.only(top: 16.0),
-                  child: UnityBannerAd(
-                    placementId: AppConstants.unityBannerPlacement,
-                    onLoad: (_) {},
-                    onClick: (_) {},
-                    onShown: (_) {},
-                    onFailed: (_, __, ___) {},
-                  ),
-                ),
+              ..._buildCourseListWithBanners(context, courseProvider, filteredCourses),
 
               const PoweredByFooter(),
             ],
@@ -453,6 +427,41 @@ class _HomeTab extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  List<Widget> _buildCourseListWithBanners(BuildContext context, CourseProvider courseProvider, List<Course> filteredCourses) {
+    final List<Widget> widgets = [];
+    final adsRemoved = Provider.of<SettingsProvider>(context, listen: false).settings.adsRemoved;
+
+    for (int i = 0; i < filteredCourses.length; i++) {
+      final course = filteredCourses[i];
+      final completion = courseProvider.getCompletionPercentage(course.id);
+      widgets.add(
+        CourseCard(
+          course: course,
+          progressPercentage: completion,
+          onTap: () => _startCourseQuiz(context, course),
+        ),
+      );
+
+      // Show banner after every 4 courses (not after the last one)
+      if ((i + 1) % 4 == 0 && i < filteredCourses.length - 1 && !adsRemoved) {
+        widgets.add(
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12.0),
+            child: UnityBannerAd(
+              placementId: AppConstants.unityBannerPlacement,
+              onLoad: (_) {},
+              onClick: (_) {},
+              onShown: (_) {},
+              onFailed: (_, __, ___) {},
+            ),
+          ),
+        );
+      }
+    }
+
+    return widgets;
   }
 
   void _startCourseQuiz(BuildContext context, Course course) {
