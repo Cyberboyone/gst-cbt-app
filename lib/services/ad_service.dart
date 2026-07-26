@@ -69,10 +69,20 @@ class AdService {
     final id = AppConstants.unityInterstitialPlacement;
     debugPrint('[AdService] showInterstitial called for $id');
 
-    // Timeout: skip ad if not ready within 5 seconds
+    bool callbackFired = false;
+    void fireCallback() {
+      if (!callbackFired) {
+        callbackFired = true;
+        onComplete?.call();
+      }
+    }
+
+    // Timeout: if ad not ready within 5 seconds, skip
     Timer(const Duration(seconds: 5), () {
-      debugPrint('[AdService] Interstitial timeout – skipping');
-      onComplete?.call();
+      if (!callbackFired) {
+        debugPrint('[AdService] Interstitial timeout – skipping');
+        fireCallback();
+      }
     });
 
     UnityAds.showVideoAd(
@@ -80,16 +90,16 @@ class AdService {
       onStart: (_) => debugPrint('[AdService] Interstitial started'),
       onSkipped: (_) {
         debugPrint('[AdService] Interstitial skipped');
-        onComplete?.call();
+        fireCallback();
       },
       onComplete: (_) {
         debugPrint('[AdService] Interstitial completed');
         preloadInterstitial();
-        onComplete?.call();
+        fireCallback();
       },
       onFailed: (_, e, m) {
         debugPrint('[AdService] Interstitial show failed: $e – $m');
-        onComplete?.call();
+        fireCallback();
       },
     );
   }
@@ -98,10 +108,27 @@ class AdService {
     final id = AppConstants.unityRewardedPlacement;
     debugPrint('[AdService] showRewarded called for $id');
 
+    bool callbackFired = false;
+    void fireReward() {
+      if (!callbackFired) {
+        callbackFired = true;
+        onRewarded?.call();
+      }
+    }
+
+    void fireFail() {
+      if (!callbackFired) {
+        callbackFired = true;
+        onFailed?.call();
+      }
+    }
+
     // Timeout: if ad not ready within 5 seconds, fail
     Timer(const Duration(seconds: 5), () {
-      debugPrint('[AdService] Rewarded timeout – skipping');
-      onFailed?.call();
+      if (!callbackFired) {
+        debugPrint('[AdService] Rewarded timeout – skipping');
+        fireFail();
+      }
     });
 
     UnityAds.showVideoAd(
@@ -110,15 +137,15 @@ class AdService {
       onComplete: (_) {
         debugPrint('[AdService] Rewarded completed – granting reward');
         preloadRewarded();
-        onRewarded?.call();
+        fireReward();
       },
       onSkipped: (_) {
         debugPrint('[AdService] Rewarded skipped');
-        onFailed?.call();
+        fireFail();
       },
       onFailed: (_, e, m) {
         debugPrint('[AdService] Rewarded show failed: $e – $m');
-        onFailed?.call();
+        fireFail();
       },
     );
   }

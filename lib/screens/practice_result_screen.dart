@@ -10,6 +10,7 @@ import '../config/constants.dart';
 import '../config/routes.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
+import '../providers/quiz_provider.dart';
 import '../providers/settings_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/powered_by_footer.dart';
@@ -407,6 +408,38 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
               ],
             ),
             const SizedBox(height: 36.0),
+
+            SizedBox(
+              width: double.infinity,
+              height: 50.0,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  final courseProvider = Provider.of<CourseProvider>(context, listen: false);
+                  final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                  final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+                  final course = courseProvider.courses.firstWhere(
+                    (c) => c.id == widget.courseId,
+                    orElse: () => courseProvider.courses.first,
+                  );
+                  Navigator.of(context).popUntil((route) => route.isFirst);
+                  quizProvider.startSession(
+                    course: course,
+                    mode: QuizMode.practice,
+                    soundOn: settingsProvider.settings.soundOn,
+                  ).then((_) {
+                    Navigator.pushNamed(context, AppRoutes.practice);
+                  });
+                },
+                icon: const Icon(Icons.replay_rounded, size: 20),
+                label: const Text('Retake Practice', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: AppColors.onPrimary,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
 
             SizedBox(
               width: double.infinity,
