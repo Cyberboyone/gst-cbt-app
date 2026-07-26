@@ -429,49 +429,6 @@ class _HomeTab extends StatelessWidget {
       ),
     );
   }
-}
-
-class _BannerAdWidget extends StatefulWidget {
-  const _BannerAdWidget({super.key});
-
-  @override
-  State<_BannerAdWidget> createState() => _BannerAdWidgetState();
-}
-
-class _BannerAdWidgetState extends State<_BannerAdWidget> {
-  int _retryCount = 0;
-  bool _failed = false;
-
-  void _retry() {
-    if (_retryCount < 3) {
-      setState(() {
-        _retryCount++;
-        _failed = false;
-      });
-      AdService.instance.preloadBanner();
-    } else {
-      setState(() => _failed = true);
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    if (_failed) return const SizedBox.shrink();
-
-    return UnityBannerAd(
-      placementId: AppConstants.unityBannerPlacement,
-      onLoad: (_) => debugPrint('[Banner] Loaded'),
-      onClick: (_) => debugPrint('[Banner] Clicked'),
-      onShown: (_) => debugPrint('[Banner] Shown'),
-      onFailed: (_, __, ___) {
-        debugPrint('[Banner] Failed - retry ${_retryCount + 1}/3');
-        Future.delayed(const Duration(seconds: 3), () {
-          if (mounted) _retry();
-        });
-      },
-    );
-  }
-}
 
   List<Widget> _buildCourseListWithBanners(BuildContext context, CourseProvider courseProvider, List<Course> filteredCourses) {
     final List<Widget> widgets = [];
@@ -608,6 +565,48 @@ class _BannerAdWidgetState extends State<_BannerAdWidget> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _BannerAdWidget extends StatefulWidget {
+  const _BannerAdWidget({super.key});
+
+  @override
+  State<_BannerAdWidget> createState() => _BannerAdWidgetState();
+}
+
+class _BannerAdWidgetState extends State<_BannerAdWidget> {
+  int _retryCount = 0;
+  bool _failed = false;
+
+  void _retry() {
+    if (_retryCount < 3) {
+      setState(() {
+        _retryCount++;
+        _failed = false;
+      });
+      AdService.instance.preloadBanner();
+    } else {
+      setState(() => _failed = true);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_failed) return const SizedBox.shrink();
+
+    return UnityBannerAd(
+      placementId: AppConstants.unityBannerPlacement,
+      onLoad: (_) => debugPrint('[Banner] Loaded'),
+      onClick: (_) => debugPrint('[Banner] Clicked'),
+      onShown: (_) => debugPrint('[Banner] Shown'),
+      onFailed: (_, __, ___) {
+        debugPrint('[Banner] Failed - retry ${_retryCount + 1}/3');
+        Future.delayed(const Duration(seconds: 3), () {
+          if (mounted) _retry();
+        });
+      },
     );
   }
 }
