@@ -90,12 +90,14 @@ class _ExamScreenState extends State<ExamScreen> {
     }
 
     final adsRemoved = Provider.of<SettingsProvider>(context, listen: false).settings.adsRemoved;
-    if (adsRemoved) {
-      _navigateToResult();
-    } else {
+
+    // Always navigate to results immediately — never block on ads
+    _navigateToResult();
+
+    // Show interstitial after navigation (non-blocking, no context needed)
+    if (!adsRemoved) {
       AdService.instance.showInterstitial(onComplete: () {
         AdService.instance.preloadInterstitial();
-        _navigateToResult();
       });
     }
   }
