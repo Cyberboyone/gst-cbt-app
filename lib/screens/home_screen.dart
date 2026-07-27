@@ -579,34 +579,49 @@ class _BannerAdWidget extends StatefulWidget {
 class _BannerAdWidgetState extends State<_BannerAdWidget> {
   int _retryCount = 0;
   bool _failed = false;
+  bool _loaded = false;
 
   void _retry() {
     if (_retryCount < 3) {
       setState(() {
         _retryCount++;
         _failed = false;
+        _loaded = false;
       });
-      AdService.instance.preloadBanner();
+      debugPrint('[Banner] Retry attempt $_retryCount/3');
     } else {
       setState(() => _failed = true);
+      debugPrint('[Banner] Max retries reached, giving up');
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    if (_failed) return const SizedBox.shrink();
+    if (_failed) {
+      debugPrint('[Banner] Widget build - failed state, returning empty');
+      return const SizedBox.shrink();
+    }
 
-    return UnityBannerAd(
-      placementId: AppConstants.unityBannerPlacement,
-      onLoad: (_) => debugPrint('[Banner] Loaded'),
-      onClick: (_) => debugPrint('[Banner] Clicked'),
-      onShown: (_) => debugPrint('[Banner] Shown'),
-      onFailed: (_, __, ___) {
-        debugPrint('[Banner] Failed - retry ${_retryCount + 1}/3');
-        Future.delayed(const Duration(seconds: 3), () {
-          if (mounted) _retry();
-        });
-      },
+    debugPrint('[Banner] Widget build - loaded: $_loaded, retryCount: $_retryCount');
+
+    return SizedBox(
+      height: 50, // Standard banner height
+      width: double.infinity,
+      child: UnityBannerAd(
+        placementId: AppConstants.unityBannerPlacement,
+        onLoad: (_) {
+          debugPrint('[Banner] Loaded successfully');
+          if (mounted) setState(() => _loaded = true);
+        },
+        onClick: (_) => debugPrint('[Banner] Clicked'),
+        onShown: (_) => debugPrint('[Banner] Shown'),
+        onFailed: (_, __, ___) {
+          debugPrint('[Banner] Failed - retry ${_retryCount + 1}/3');
+          Future.delayed(const Duration(seconds: 3), () {
+            if (mounted) _retry();
+          });
+        },
+      ),
     );
   }
 }
