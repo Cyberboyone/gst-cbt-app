@@ -16,7 +16,7 @@ void main() async {
   await Firebase.initializeApp();
   FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
 
-  // Initialize Unity Ads (non-blocking so app launches fast)
+  // Initialize AdMob (non-blocking so app launches fast)
   AdService.instance.init();
 
   // Initialize Hive local database

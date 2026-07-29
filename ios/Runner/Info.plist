@@ -36,8 +36,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UnityAdsGameID</key>
-	<string>6160345</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-9529770421530115~5491366918</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
@@ -51,6 +51,14 @@
 		<dict>
 			<key>SKAdNetworkIdentifier</key>
 			<string>c6k4g5qg8m.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>zq492l623r.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>lmxlaxy9ft.skadnetwork</string>
 		</dict>
 	</array>
 	<key>NSAppTransportSecurity</key>

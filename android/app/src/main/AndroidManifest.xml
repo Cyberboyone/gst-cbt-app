@@ -28,8 +28,8 @@
             android:name="flutterEmbedding"
             android:value="2" />
         <meta-data
-            android:name="unityads.gameId"
-            android:value="6160344" />
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9529770421530115~5491366918" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileProvider"

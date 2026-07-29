@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:unity_ads_plugin/unity_ads_plugin.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../config/theme.dart';
 import '../config/constants.dart';
 import '../config/routes.dart';
@@ -577,51 +577,55 @@ class _BannerAdWidget extends StatefulWidget {
 }
 
 class _BannerAdWidgetState extends State<_BannerAdWidget> {
-  int _retryCount = 0;
-  bool _failed = false;
+  BannerAd? _bannerAd;
   bool _loaded = false;
+  int _retryCount = 0;
 
-  void _retry() {
-    if (_retryCount < 3) {
-      setState(() {
-        _retryCount++;
-        _failed = false;
-        _loaded = false;
-      });
-      debugPrint('[Banner] Retry attempt $_retryCount/3');
-    } else {
-      setState(() => _failed = true);
-      debugPrint('[Banner] Max retries reached, giving up');
-    }
+  @override
+  void initState() {
+    super.initState();
+    _loadAd();
+  }
+
+  void _loadAd() {
+    if (_retryCount >= 3) return;
+    final width = MediaQueryData.fromView(View.of(context)).size.width.truncate();
+    BannerAd(
+      adUnitId: AppConstants.admobBannerUnitId,
+      request: const AdRequest(),
+      size: AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(width),
+      listener: BannerAdListener(
+        onAdLoaded: (ad) {
+          debugPrint('[Banner] Loaded');
+          if (mounted) setState(() { _bannerAd = ad as BannerAd; _loaded = true; });
+        },
+        onAdFailedToLoad: (ad, error) {
+          debugPrint('[Banner] Failed: $error - retry ${_retryCount + 1}/3');
+          ad.dispose();
+          _retryCount++;
+          Future.delayed(const Duration(seconds: 5), () {
+            if (mounted) _loadAd();
+          });
+        },
+      ),
+    )..load();
+  }
+
+  @override
+  void dispose() {
+    _bannerAd?.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    if (_failed) {
-      debugPrint('[Banner] Widget build - failed state, returning empty');
-      return const SizedBox.shrink();
+    if (!_loaded || _bannerAd == null) {
+      return const SizedBox(height: 50);
     }
-
-    debugPrint('[Banner] Widget build - loaded: $_loaded, retryCount: $_retryCount');
-
     return SizedBox(
-      height: 50, // Standard banner height
+      height: _bannerAd!.size.height.toDouble(),
       width: double.infinity,
-      child: UnityBannerAd(
-        placementId: AppConstants.unityBannerPlacement,
-        onLoad: (_) {
-          debugPrint('[Banner] Loaded successfully');
-          if (mounted) setState(() => _loaded = true);
-        },
-        onClick: (_) => debugPrint('[Banner] Clicked'),
-        onShown: (_) => debugPrint('[Banner] Shown'),
-        onFailed: (_, __, ___) {
-          debugPrint('[Banner] Failed - retry ${_retryCount + 1}/3');
-          Future.delayed(const Duration(seconds: 3), () {
-            if (mounted) _retry();
-          });
-        },
-      ),
+      child: AdWidget(ad: _bannerAd!),
     );
   }
 }

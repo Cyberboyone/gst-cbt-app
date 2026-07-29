@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:unity_ads_plugin/unity_ads_plugin.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../config/constants.dart';
 import 'dart:async';
 
@@ -11,97 +11,133 @@ class AdService {
   bool _initialized = false;
   bool _initFailed = false;
   StreamSubscription? _connectivitySubscription;
-  Timer? _bannerRetryTimer;
+  Timer? _periodicTimer;
 
-  bool _interstitialReady = false;
-  bool _rewardedReady = false;
+  InterstitialAd? _interstitialAd;
+  RewardedAd? _rewardedAd;
+
+  bool get _interstitialReady => _interstitialAd != null;
+  bool get _rewardedReady => _rewardedAd != null;
 
   Future<void> init() async {
     if (_initialized) return;
     _initialized = true;
-    debugPrint('[AdService] Initializing with gameId: ${AppConstants.unityAdsGameId}');
-    await UnityAds.init(
-      gameId: AppConstants.unityAdsGameId,
-      testMode: kDebugMode,
-      onComplete: () {
-        debugPrint('[AdService] Unity Ads initialized successfully');
-        _preloadAll();
-      },
-      onFailed: (error, message) {
-        debugPrint('[AdService] Init failed: $error - $message');
-        _initFailed = true;
-      },
-    );
+    debugPrint('[AdService] Initializing Google Mobile Ads');
+    await MobileAds.instance.initialize();
+    debugPrint('[AdService] Google Mobile Ads initialized');
+    _loadAll();
     _listenConnectivity();
     _startPeriodicPreload();
   }
 
-  void _preloadAll() {
-    preloadInterstitial();
-    preloadRewarded();
-    preloadBanner();
+  void _loadAll() {
+    loadInterstitial();
+    loadRewarded();
   }
 
   void _listenConnectivity() {
     _connectivitySubscription?.cancel();
     _connectivitySubscription = Connectivity().onConnectivityChanged.listen((result) {
       if (result != ConnectivityResult.none) {
-        debugPrint('[AdService] Network available - preloading ads');
-        _preloadAll();
+        debugPrint('[AdService] Network available - loading ads');
+        _loadAll();
       }
     });
   }
 
   void _startPeriodicPreload() {
-    _bannerRetryTimer?.cancel();
-    _bannerRetryTimer = Timer.periodic(const Duration(seconds: 15), (_) {
+    _periodicTimer?.cancel();
+    _periodicTimer = Timer.periodic(const Duration(seconds: 30), (_) {
       if (!_initFailed) {
-        preloadInterstitial();
-        preloadRewarded();
-        preloadBanner();
+        _loadAll();
       }
     });
   }
 
-  /// Call this when app resumes from background to refresh ad cache
   void onAppResume() {
     if (!_initFailed) {
       debugPrint('[AdService] App resumed - refreshing ad cache');
-      _preloadAll();
+      _loadAll();
     }
   }
 
   void dispose() {
     _connectivitySubscription?.cancel();
-    _bannerRetryTimer?.cancel();
+    _periodicTimer?.cancel();
+    _interstitialAd?.dispose();
+    _rewardedAd?.dispose();
   }
 
-  void preload(String placementId) {
-    if (_initFailed) {
-      debugPrint('[AdService] Skipping preload - init failed');
-      return;
-    }
-    debugPrint('[AdService] Preloading: $placementId');
-    UnityAds.load(
-      placementId: placementId,
-      onComplete: (id) {
-        debugPrint('[AdService] Loaded: $id');
-        if (id == AppConstants.unityInterstitialPlacement) _interstitialReady = true;
-        if (id == AppConstants.unityRewardedPlacement) _rewardedReady = true;
-      },
-      onFailed: (id, error, msg) {
-        debugPrint('[AdService] Load failed: $id - $error - $msg');
-        if (id == AppConstants.unityBannerPlacement) {
-          Timer(const Duration(seconds: 5), () => preloadBanner());
-        }
-      },
+  void loadInterstitial() {
+    if (_initFailed) return;
+    debugPrint('[AdService] Loading interstitial');
+    InterstitialAd.load(
+      adUnitId: AppConstants.admobInterstitialUnitId,
+      request: const AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (ad) {
+          debugPrint('[AdService] Interstitial loaded');
+          _interstitialAd = ad;
+          ad.fullScreenContentCallback = FullScreenContentCallback(
+            onAdDismissedFullScreenContent: (ad) {
+              debugPrint('[AdService] Interstitial dismissed');
+              ad.dispose();
+              _interstitialAd = null;
+              loadInterstitial();
+            },
+            onAdFailedToShowFullScreenContent: (ad, error) {
+              debugPrint('[AdService] Interstitial show failed: $error');
+              ad.dispose();
+              _interstitialAd = null;
+              loadInterstitial();
+            },
+          );
+        },
+        onAdFailedToLoad: (error) {
+          debugPrint('[AdService] Interstitial load failed: $error');
+          _interstitialAd = null;
+          Timer(const Duration(seconds: 10), () => loadInterstitial());
+        },
+      ),
     );
   }
 
-  /// Show interstitial only if preloaded and ready, otherwise skip immediately
+  void loadRewarded() {
+    if (_initFailed) return;
+    debugPrint('[AdService] Loading rewarded');
+    RewardedAd.load(
+      adUnitId: AppConstants.admobRewardedUnitId,
+      request: const AdRequest(),
+      adLoadCallback: RewardedAdLoadCallback(
+        onAdLoaded: (ad) {
+          debugPrint('[AdService] Rewarded loaded');
+          _rewardedAd = ad;
+          ad.fullScreenContentCallback = FullScreenContentCallback(
+            onAdDismissedFullScreenContent: (ad) {
+              debugPrint('[AdService] Rewarded dismissed');
+              ad.dispose();
+              _rewardedAd = null;
+              loadRewarded();
+            },
+            onAdFailedToShowFullScreenContent: (ad, error) {
+              debugPrint('[AdService] Rewarded show failed: $error');
+              ad.dispose();
+              _rewardedAd = null;
+              loadRewarded();
+            },
+          );
+        },
+        onAdFailedToLoad: (error) {
+          debugPrint('[AdService] Rewarded load failed: $error');
+          _rewardedAd = null;
+          Timer(const Duration(seconds: 10), () => loadRewarded());
+        },
+      ),
+    );
+  }
+
   void showInterstitial({VoidCallback? onComplete}) {
-    final id = AppConstants.unityInterstitialPlacement;
-    debugPrint('[AdService] showInterstitial called for $id (ready: $_interstitialReady)');
+    debugPrint('[AdService] showInterstitial called (ready: $_interstitialReady)');
 
     bool callbackFired = false;
     void fireCallback() {
@@ -111,46 +147,37 @@ class AdService {
       }
     }
 
-    // If not ready, skip immediately without showing
-    if (!_interstitialReady) {
+    if (!_interstitialReady || _interstitialAd == null) {
       debugPrint('[AdService] Interstitial not ready - skipping');
       Future.microtask(() => fireCallback());
       return;
     }
 
-    // Safety timeout
-    Timer(const Duration(seconds: 5), () {
-      if (!callbackFired) {
-        debugPrint('[AdService] Interstitial timeout - skipping');
-        fireCallback();
-      }
-    });
+    final ad = _interstitialAd!;
+    _interstitialAd = null;
 
-    _interstitialReady = false;
-
-    UnityAds.showVideoAd(
-      placementId: id,
-      onStart: (_) => debugPrint('[AdService] Interstitial started'),
-      onSkipped: (_) {
-        debugPrint('[AdService] Interstitial skipped');
+    ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdDismissedFullScreenContent: (a) {
+        debugPrint('[AdService] Interstitial dismissed');
+        a.dispose();
+        loadInterstitial();
         fireCallback();
       },
-      onComplete: (_) {
-        debugPrint('[AdService] Interstitial completed');
-        preloadInterstitial();
-        fireCallback();
-      },
-      onFailed: (_, e, m) {
-        debugPrint('[AdService] Interstitial show failed: $e - $m');
+      onAdFailedToShowFullScreenContent: (a, error) {
+        debugPrint('[AdService] Interstitial show failed: $error');
+        a.dispose();
+        loadInterstitial();
         fireCallback();
       },
     );
+
+    ad.show(
+      onUserEarnedReward: (ad, reward) {},
+    );
   }
 
-  /// Show rewarded only if preloaded and ready, otherwise fail immediately
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {
-    final id = AppConstants.unityRewardedPlacement;
-    debugPrint('[AdService] showRewarded called for $id (ready: $_rewardedReady)');
+    debugPrint('[AdService] showRewarded called (ready: $_rewardedReady)');
 
     bool callbackFired = false;
     void fireReward() {
@@ -167,45 +194,39 @@ class AdService {
       }
     }
 
-    // If not ready, fail immediately
-    if (!_rewardedReady) {
+    if (!_rewardedReady || _rewardedAd == null) {
       debugPrint('[AdService] Rewarded not ready - skipping');
       Future.microtask(() => fireFail());
       return;
     }
 
-    // Safety timeout
-    Timer(const Duration(seconds: 5), () {
-      if (!callbackFired) {
-        debugPrint('[AdService] Rewarded timeout - skipping');
+    final ad = _rewardedAd!;
+    _rewardedAd = null;
+
+    ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdDismissedFullScreenContent: (a) {
+        debugPrint('[AdService] Rewarded dismissed');
+        a.dispose();
+        loadRewarded();
         fireFail();
-      }
-    });
+      },
+      onAdFailedToShowFullScreenContent: (a, error) {
+        debugPrint('[AdService] Rewarded show failed: $error');
+        a.dispose();
+        loadRewarded();
+        fireFail();
+      },
+    );
 
-    _rewardedReady = false;
-
-    UnityAds.showVideoAd(
-      placementId: id,
-      onStart: (_) => debugPrint('[AdService] Rewarded started'),
-      onComplete: (_) {
+    ad.show(
+      onUserEarnedReward: (ad, reward) {
         debugPrint('[AdService] Rewarded completed - granting reward');
-        preloadRewarded();
         fireReward();
-      },
-      onSkipped: (_) {
-        debugPrint('[AdService] Rewarded skipped');
-        fireFail();
-      },
-      onFailed: (_, e, m) {
-        debugPrint('[AdService] Rewarded show failed: $e - $m');
-        fireFail();
       },
     );
   }
 
-  void preloadInterstitial() => preload(AppConstants.unityInterstitialPlacement);
-
-  void preloadRewarded() => preload(AppConstants.unityRewardedPlacement);
-
-  void preloadBanner() => preload(AppConstants.unityBannerPlacement);
+  void preloadInterstitial() => loadInterstitial();
+  void preloadRewarded() => loadRewarded();
+  void preloadBanner() {}
 }
