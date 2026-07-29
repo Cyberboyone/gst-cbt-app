@@ -133,7 +133,8 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
 
     final newLevel = AppConstants.getLevelForXp(profile.profile?.xp ?? 0);
 
-    if (newBadges.isNotEmpty || newLevel > previousLevel) {
+    final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
+    if (isPassed && (newBadges.isNotEmpty || newLevel > previousLevel)) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         _showRewardsDialog(context, newBadges, newLevel > previousLevel, newLevel, profile);
       });
@@ -571,6 +572,38 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               ],
             ),
             const SizedBox(height: 36.0),
+
+            SizedBox(
+              width: double.infinity,
+              height: 50.0,
+              child: ElevatedButton.icon(
+                onPressed: () {
+                  final courseProvider = Provider.of<CourseProvider>(context, listen: false);
+                  final quizProvider = Provider.of<QuizProvider>(context, listen: false);
+                  final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+                  final course = courseProvider.courses.firstWhere(
+                    (c) => c.id == widget.courseId,
+                    orElse: () => courseProvider.courses.first,
+                  );
+                  Navigator.of(context).popUntil((route) => route.isFirst);
+                  quizProvider.startSession(
+                    course: course,
+                    mode: QuizMode.exam,
+                    soundOn: settingsProvider.settings.soundOn,
+                  ).then((_) {
+                    Navigator.pushNamed(context, AppRoutes.exam);
+                  });
+                },
+                icon: const Icon(Icons.replay_rounded, size: 20),
+                label: const Text('Retake Exam', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: AppColors.onPrimary,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10.0),
 
             SizedBox(
               width: double.infinity,
