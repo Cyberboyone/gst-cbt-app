@@ -589,11 +589,10 @@ class _BannerAdWidgetState extends State<_BannerAdWidget> {
 
   void _loadAd() {
     if (_retryCount >= 3) return;
-    final width = MediaQueryData.fromView(View.of(context)).size.width.truncate();
     BannerAd(
       adUnitId: AppConstants.admobBannerUnitId,
       request: const AdRequest(),
-      size: AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(width),
+      size: AdSize.banner,
       listener: BannerAdListener(
         onAdLoaded: (ad) {
           debugPrint('[Banner] Loaded');

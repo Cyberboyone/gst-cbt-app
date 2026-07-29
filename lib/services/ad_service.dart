@@ -108,7 +108,7 @@ class AdService {
     RewardedAd.load(
       adUnitId: AppConstants.admobRewardedUnitId,
       request: const AdRequest(),
-      adLoadCallback: RewardedAdLoadCallback(
+      rewardedAdLoadCallback: RewardedAdLoadCallback(
         onAdLoaded: (ad) {
           debugPrint('[AdService] Rewarded loaded');
           _rewardedAd = ad;
@@ -171,9 +171,7 @@ class AdService {
       },
     );
 
-    ad.show(
-      onUserEarnedReward: (ad, reward) {},
-    );
+    ad.show();
   }
 
   void showRewarded({VoidCallback? onRewarded, VoidCallback? onFailed}) {

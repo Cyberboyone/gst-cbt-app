@@ -10,6 +10,7 @@ import '../config/constants.dart';
 import '../config/routes.dart';
 import '../providers/profile_provider.dart';
 import '../providers/course_provider.dart';
+import '../providers/quiz_provider.dart';
 import '../providers/settings_provider.dart';
 import '../widgets/progress_ring.dart';
 import '../widgets/powered_by_footer.dart';
