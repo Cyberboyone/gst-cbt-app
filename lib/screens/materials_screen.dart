@@ -54,7 +54,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
         StudyMaterial(
           id: 'mat_gst_answers_qna',
           title: 'GST Answers and Questions Compilation',
-          courseId: 'gst101',
+          courseId: 'gst111',
           fileUrl: 'bundled://materials/gst_answers_questions.pdf',
           version: 1,
           size: '557 KB',
@@ -94,7 +94,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
         StudyMaterial(
           id: 'mat_past_q_general',
           title: 'Past Questions (General)',
-          courseId: 'gst101',
+          courseId: 'gst111',
           fileUrl: 'bundled://materials/past_questions_general.pdf',
           version: 1,
           size: '5.2 MB',

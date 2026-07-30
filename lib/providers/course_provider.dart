@@ -9,14 +9,6 @@ class CourseProvider with ChangeNotifier {
   final List<Course> _courses = [
     // 100 Level (University) Courses
     Course(
-      id: 'gst101',
-      code: 'GST 101',
-      name: 'Use of English',
-      icon: '📘',
-      colorHex: '#FFE8D6', // Peach
-      mode: '100_level',
-    ),
-    Course(
       id: 'gst102',
       code: 'GST 102',
       name: 'Nigerian Peoples & Culture',
@@ -27,9 +19,9 @@ class CourseProvider with ChangeNotifier {
     Course(
       id: 'gst111',
       code: 'GST 111',
-      name: 'Logic & Philosophy',
-      icon: '🧠',
-      colorHex: '#DFF5E4', // Mint
+      name: 'Use of English',
+      icon: '📘',
+      colorHex: '#FFE8D6', // Peach
       mode: '100_level',
     ),
     Course(
