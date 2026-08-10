@@ -1,6 +1,139 @@
 import 'package:flutter/material.dart';
 
+class _Palette {
+  const _Palette({
+    required this.background,
+    required this.surface,
+    required this.card,
+    required this.glassBg,
+    required this.glassBorder,
+    required this.foreground,
+    required this.textPrimary,
+    required this.textSecondary,
+    required this.textMuted,
+    required this.muted,
+    required this.border,
+    required this.divider,
+    required this.correctLight,
+    required this.incorrectLight,
+    required this.warningLight,
+    required this.goldLight,
+    required this.xpLight,
+    required this.streakLight,
+    required this.coinsLight,
+    required this.sky,
+    required this.peach,
+    required this.mint,
+    required this.lavender,
+    required this.darkGradient,
+    required this.glassGradient,
+  });
+
+  final Color background;
+  final Color surface;
+  final Color card;
+  final Color glassBg;
+  final Color glassBorder;
+  final Color foreground;
+  final Color textPrimary;
+  final Color textSecondary;
+  final Color textMuted;
+  final Color muted;
+  final Color border;
+  final Color divider;
+  final Color correctLight;
+  final Color incorrectLight;
+  final Color warningLight;
+  final Color goldLight;
+  final Color xpLight;
+  final Color streakLight;
+  final Color coinsLight;
+  final Color sky;
+  final Color peach;
+  final Color mint;
+  final Color lavender;
+  final LinearGradient darkGradient;
+  final LinearGradient glassGradient;
+}
+
 class AppColors {
+  // ── Runtime mode flag (swapped by the app root) ──
+  static bool isDark = true;
+
+  static const _Palette _darkPalette = _Palette(
+    background: Color(0xFF0A1628),
+    surface: Color(0xFF111D35),
+    card: Color(0xFF162040),
+    glassBg: Color(0x331A2A50),
+    glassBorder: Color(0x3300D4FF),
+    foreground: Color(0xFFFFFFFF),
+    textPrimary: Color(0xFFFFFFFF),
+    textSecondary: Color(0xFF8899BB),
+    textMuted: Color(0xFF556688),
+    muted: Color(0xFF1A2A50),
+    border: Color(0xFF1E3060),
+    divider: Color(0xFF1A2A50),
+    correctLight: Color(0x3300E676),
+    incorrectLight: Color(0x33FF5252),
+    warningLight: Color(0x33FFAB40),
+    goldLight: Color(0x33FFD700),
+    xpLight: Color(0x33BB86FC),
+    streakLight: Color(0x33FF6B9D),
+    coinsLight: Color(0x33FFD700),
+    sky: Color(0x3300D4FF),
+    peach: Color(0x33FF6B9D),
+    mint: Color(0x3300E676),
+    lavender: Color(0x33BB86FC),
+    darkGradient: LinearGradient(
+      colors: [Color(0xFF0A1628), Color(0xFF111D35)],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    ),
+    glassGradient: LinearGradient(
+      colors: [Color(0x1A00D4FF), Color(0x0DFFFFFF)],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    ),
+  );
+
+  static const _Palette _lightPalette = _Palette(
+    background: Color(0xFFF3F6FB),
+    surface: Color(0xFFFFFFFF),
+    card: Color(0xFFF4F8FD),
+    glassBg: Color(0xFFEAF0FA),
+    glassBorder: Color(0x5900D4FF),
+    foreground: Color(0xFF0F1B33),
+    textPrimary: Color(0xFF0F1B33),
+    textSecondary: Color(0xFF516171),
+    textMuted: Color(0xFF8B98AE),
+    muted: Color(0xFFE2E9F4),
+    border: Color(0xFFD9E2F0),
+    divider: Color(0xFFE6ECF5),
+    correctLight: Color(0xFFE2F8EC),
+    incorrectLight: Color(0xFFFFE9EA),
+    warningLight: Color(0xFFFFF3E1),
+    goldLight: Color(0xFFFFF4D8),
+    xpLight: Color(0xFFF2E9FF),
+    streakLight: Color(0xFFFFE9F2),
+    coinsLight: Color(0xFFFFF4D8),
+    sky: Color(0xFFE0F6FF),
+    peach: Color(0xFFFFEAF2),
+    mint: Color(0xFFE2F8EC),
+    lavender: Color(0xFFF2E9FF),
+    darkGradient: LinearGradient(
+      colors: [Color(0xFFF6F9FE), Color(0xFFEDF2FA)],
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+    ),
+    glassGradient: LinearGradient(
+      colors: [Color(0x1400D4FF), Color(0x0DFFFFFF)],
+      begin: Alignment.topLeft,
+      end: Alignment.bottomRight,
+    ),
+  );
+
+  static _Palette get _c => isDark ? _darkPalette : _lightPalette;
+
   // ── Primary (Cyan) ──
   static const Color primary = Color(0xFF00D4FF);
   static const Color primaryLight = Color(0xFF5CE1FF);
@@ -16,54 +149,54 @@ class AppColors {
   static const Color accentLight = Color(0xFFFFE566);
 
   // ── Backgrounds ──
-  static const Color background = Color(0xFF0A1628);
-  static const Color surface = Color(0xFF111D35);
-  static const Color card = Color(0xFF162040);
+  static Color get background => _c.background;
+  static Color get surface => _c.surface;
+  static Color get card => _c.card;
 
   // ── Glass ──
-  static const Color glassBg = Color(0x331A2A50);
-  static const Color glassBorder = Color(0x3300D4FF);
+  static Color get glassBg => _c.glassBg;
+  static Color get glassBorder => _c.glassBorder;
 
   // ── Text ──
-  static const Color foreground = Color(0xFFFFFFFF);
-  static const Color textPrimary = Color(0xFFFFFFFF);
-  static const Color textSecondary = Color(0xFF8899BB);
-  static const Color textMuted = Color(0xFF556688);
+  static Color get foreground => _c.foreground;
+  static Color get textPrimary => _c.textPrimary;
+  static Color get textSecondary => _c.textSecondary;
+  static Color get textMuted => _c.textMuted;
 
   // ── Muted / Borders ──
-  static const Color muted = Color(0xFF1A2A50);
-  static const Color border = Color(0xFF1E3060);
-  static const Color divider = Color(0xFF1A2A50);
+  static Color get muted => _c.muted;
+  static Color get border => _c.border;
+  static Color get divider => _c.divider;
 
   // ── Semantic States ──
   static const Color correct = Color(0xFF00E676);
-  static const Color correctLight = Color(0x3300E676);
+  static Color get correctLight => _c.correctLight;
   static const Color incorrect = Color(0xFFFF5252);
-  static const Color incorrectLight = Color(0x33FF5252);
+  static Color get incorrectLight => _c.incorrectLight;
   static const Color warning = Color(0xFFFFAB40);
-  static const Color warningLight = Color(0x33FFAB40);
+  static Color get warningLight => _c.warningLight;
   static const Color destructive = Color(0xFFFF5252);
 
   // ── Gamification ──
   static const Color gold = Color(0xFFFFD700);
-  static const Color goldLight = Color(0x33FFD700);
+  static Color get goldLight => _c.goldLight;
   static const Color xp = Color(0xFFBB86FC);
-  static const Color xpLight = Color(0x33BB86FC);
+  static Color get xpLight => _c.xpLight;
   static const Color streak = Color(0xFFFF6B9D);
-  static const Color streakLight = Color(0x33FF6B9D);
+  static Color get streakLight => _c.streakLight;
   static const Color coins = Color(0xFFFFD700);
-  static const Color coinsLight = Color(0x33FFD700);
+  static Color get coinsLight => _c.coinsLight;
 
   // ── Legacy aliases ──
-  static const Color navy = Color(0xFF0A1628);
+  static Color get navy => _c.background;
   static const Color orange = accent;
-  static const Color cream = background;
-  static const Color inkSoft = textSecondary;
-  static const Color white = textPrimary;
-  static const Color peach = Color(0x33FF6B9D);
-  static const Color sky = Color(0x3300D4FF);
-  static const Color mint = Color(0x3300E676);
-  static const Color lavender = Color(0x33BB86FC);
+  static Color get cream => _c.background;
+  static Color get inkSoft => _c.textSecondary;
+  static Color get white => _c.textPrimary;
+  static Color get peach => _c.peach;
+  static Color get sky => _c.sky;
+  static Color get mint => _c.mint;
+  static Color get lavender => _c.lavender;
   static const Color cardShadow = Color(0x1A00D4FF);
 
   // ── Shadows ──
@@ -141,38 +274,49 @@ class AppColors {
     end: Alignment.bottomRight,
   );
 
-  static const LinearGradient darkGradient = LinearGradient(
-    colors: [Color(0xFF0A1628), Color(0xFF111D35)],
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-  );
-
-  static const LinearGradient glassGradient = LinearGradient(
-    colors: [Color(0x1A00D4FF), Color(0x0DFFFFFF)],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-  );
+  static LinearGradient get darkGradient => _c.darkGradient;
+  static LinearGradient get glassGradient => _c.glassGradient;
 }
 
 class AppTheme {
-  static final ThemeData darkTheme = _buildTheme();
-  static ThemeData _buildTheme() {
+  static final ThemeData darkTheme = _buildTheme(dark: true);
+  static final ThemeData lightTheme = _buildTheme(dark: false);
+
+  static ThemeData _buildTheme({required bool dark}) {
+    final previous = AppColors.isDark;
+    AppColors.isDark = dark;
+    final theme = _compose();
+    AppColors.isDark = previous;
+    return theme;
+  }
+
+  static ThemeData _compose() {
     return ThemeData(
       useMaterial3: true,
-      brightness: Brightness.dark,
+      brightness: AppColors.isDark ? Brightness.dark : Brightness.light,
       scaffoldBackgroundColor: AppColors.background,
       primaryColor: AppColors.primary,
-      colorScheme: const ColorScheme.dark(
-        primary: AppColors.primary,
-        secondary: AppColors.secondary,
-        tertiary: AppColors.accent,
-        surface: AppColors.surface,
-        error: AppColors.destructive,
-        onPrimary: AppColors.onPrimary,
-        onSurface: AppColors.textPrimary,
-      ),
+      colorScheme: AppColors.isDark
+          ? ColorScheme.dark(
+              primary: AppColors.primary,
+              secondary: AppColors.secondary,
+              tertiary: AppColors.accent,
+              surface: AppColors.surface,
+              error: AppColors.destructive,
+              onPrimary: AppColors.onPrimary,
+              onSurface: AppColors.textPrimary,
+            )
+          : ColorScheme.light(
+              primary: AppColors.primary,
+              secondary: AppColors.secondary,
+              tertiary: AppColors.accent,
+              surface: AppColors.surface,
+              error: AppColors.destructive,
+              onPrimary: AppColors.onPrimary,
+              onSurface: AppColors.textPrimary,
+            ),
       fontFamily: 'Nunito',
-      textTheme: const TextTheme(
+      textTheme: TextTheme(
         displayLarge: TextStyle(
           fontSize: 48.0,
           fontWeight: FontWeight.w900,
@@ -254,7 +398,7 @@ class AppTheme {
           letterSpacing: 0.5,
         ),
       ),
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: Colors.transparent,
         foregroundColor: AppColors.textPrimary,
         elevation: 0,
@@ -300,7 +444,7 @@ class AppTheme {
       ),
       snackBarTheme: SnackBarThemeData(
         backgroundColor: AppColors.surface,
-        contentTextStyle: const TextStyle(
+        contentTextStyle: TextStyle(
           fontFamily: 'Nunito',
           fontSize: 14.0,
           fontWeight: FontWeight.w600,
@@ -311,29 +455,47 @@ class AppTheme {
         ),
         behavior: SnackBarBehavior.floating,
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: AppColors.surface,
         selectedItemColor: AppColors.primary,
         unselectedItemColor: AppColors.textMuted,
         type: BottomNavigationBarType.fixed,
         elevation: 0,
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: const TextStyle(
           fontFamily: 'Nunito',
           fontSize: 11,
           fontWeight: FontWeight.w700,
         ),
-        unselectedLabelStyle: TextStyle(
+        unselectedLabelStyle: const TextStyle(
           fontFamily: 'Nunito',
           fontSize: 11,
           fontWeight: FontWeight.w600,
         ),
       ),
-      bottomSheetTheme: const BottomSheetThemeData(
+      bottomSheetTheme: BottomSheetThemeData(
         backgroundColor: AppColors.surface,
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(top: Radius.circular(24.0)),
         ),
       ),
     );
   }
+}
+
+/// Inherited scope exposing the current light/dark mode so that any widget
+/// tree can subscribe to palette changes simply by reading [AppThemeScope.isDark].
+class AppThemeScope extends InheritedWidget {
+  const AppThemeScope({
+    super.key,
+    required this.isDark,
+    required super.child,
+  });
+
+  final bool isDark;
+
+  static bool of(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<AppThemeScope>()?.isDark ?? AppColors.isDark;
+
+  @override
+  bool updateShouldNotify(AppThemeScope oldWidget) => oldWidget.isDark != isDark;
 }

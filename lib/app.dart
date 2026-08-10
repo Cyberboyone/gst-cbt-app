@@ -55,29 +55,41 @@ class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
         ChangeNotifierProvider(create: (_) => CourseProvider()),
         ChangeNotifierProvider(create: (_) => QuizProvider()),
       ],
-      child: MaterialApp(
-        title: 'CBT',
-        debugShowCheckedModeBanner: false,
-        theme: AppTheme.darkTheme,
-        initialRoute: AppRoutes.splash,
-        routes: {
-          AppRoutes.splash: (context) => const SplashScreen(),
-          AppRoutes.onboarding: (context) => const OnboardingScreen(),
-          AppRoutes.home: (context) => const HomeScreen(),
-          AppRoutes.practice: (context) => const PracticeScreen(),
-          AppRoutes.exam: (context) => const ExamScreen(),
-          AppRoutes.leaderboard: (context) => const LeaderboardScreen(),
-          AppRoutes.invite: (context) => const InviteScreen(),
-          AppRoutes.settings: (context) => const SettingsScreen(),
-          AppRoutes.about: (context) => const AboutScreen(),
-          AppRoutes.shop: (context) => const ShopScreen(),
-          AppRoutes.badges: (context) => const BadgesScreen(),
+      child: Consumer<SettingsProvider>(
+        builder: (context, settingsProvider, _) {
+          final isDarkMode = settingsProvider.settings.isDarkMode;
+          AppColors.isDark = isDarkMode;
+          return MaterialApp(
+            title: 'CBT',
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.lightTheme,
+            darkTheme: AppTheme.darkTheme,
+            themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+            builder: (context, child) => AppThemeScope(
+              isDark: isDarkMode,
+              child: child ?? const SizedBox.shrink(),
+            ),
+            initialRoute: AppRoutes.splash,
+            routes: {
+              AppRoutes.splash: (context) => const SplashScreen(),
+              AppRoutes.onboarding: (context) => const OnboardingScreen(),
+              AppRoutes.home: (context) => const HomeScreen(),
+              AppRoutes.practice: (context) => const PracticeScreen(),
+              AppRoutes.exam: (context) => const ExamScreen(),
+              AppRoutes.leaderboard: (context) => const LeaderboardScreen(),
+              AppRoutes.invite: (context) => const InviteScreen(),
+              AppRoutes.settings: (context) => const SettingsScreen(),
+              AppRoutes.about: (context) => const AboutScreen(),
+              AppRoutes.shop: (context) => const ShopScreen(),
+              AppRoutes.badges: (context) => const BadgesScreen(),
+            },
+            onUnknownRoute: (settings) => MaterialPageRoute(
+              builder: (_) => const Scaffold(
+                body: Center(child: Text('Page not found')),
+              ),
+            ),
+          );
         },
-        onUnknownRoute: (settings) => MaterialPageRoute(
-          builder: (_) => const Scaffold(
-            body: Center(child: Text('Page not found')),
-          ),
-        ),
       ),
     );
   }

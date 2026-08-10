@@ -14,7 +14,7 @@ class PoweredByFooter extends StatelessWidget {
       child: Center(
         child: RichText(
           text: TextSpan(
-            style: const TextStyle(
+            style: TextStyle(
               fontFamily: 'Nunito',
               fontSize: 12.0,
               fontWeight: FontWeight.w600,

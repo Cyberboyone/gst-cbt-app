@@ -105,6 +105,7 @@ class _InviteScreenState extends State<InviteScreen> {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final profile = context.watch<ProfileProvider>().profile;
     final code = profile?.referralCode ?? '';
 
@@ -138,9 +139,9 @@ class _InviteScreenState extends State<InviteScreen> {
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Share the Knowledge', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.textPrimary)),
+            Text('Share the Knowledge', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w900, color: AppColors.textPrimary)),
             const SizedBox(height: 8.0),
-            const Text(
+            Text(
               'Invite your classmates to practice on CBT. You both receive 20 bonus coins when they enter your code!',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 13.5, height: 1.45),
             ),
@@ -155,7 +156,7 @@ class _InviteScreenState extends State<InviteScreen> {
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 children: [
-                  const Text('YOUR REFERRAL CODE', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold, letterSpacing: 0.5)),
+                  Text('YOUR REFERRAL CODE', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold, letterSpacing: 0.5)),
                   const SizedBox(height: 8.0),
                   Container(
                     decoration: BoxDecoration(color: AppColors.muted, borderRadius: BorderRadius.circular(12.0)),
@@ -192,7 +193,7 @@ class _InviteScreenState extends State<InviteScreen> {
             const SizedBox(height: 24.0),
 
             if (!_claimed) ...[
-              const Text('Enter Invite Code', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+              Text('Enter Invite Code', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
               const SizedBox(height: 8.0),
               Container(
                 decoration: BoxDecoration(
@@ -203,7 +204,7 @@ class _InviteScreenState extends State<InviteScreen> {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
-                    const Text(
+                    Text(
                       'Paste a friend\'s code (format: XXXX-XXXX) to unlock 20 starter coins immediately.',
                       style: TextStyle(color: AppColors.textSecondary, fontSize: 12.0, height: 1.3),
                     ),
@@ -213,17 +214,17 @@ class _InviteScreenState extends State<InviteScreen> {
                         Expanded(
                           child: TextField(
                             controller: _friendCodeController,
-                            style: const TextStyle(color: AppColors.textPrimary),
+                            style: TextStyle(color: AppColors.textPrimary),
                             decoration: InputDecoration(
                               hintText: 'e.g., MUSA-A1B2',
-                              hintStyle: const TextStyle(fontSize: 13.0, color: AppColors.textMuted),
+                              hintStyle: TextStyle(fontSize: 13.0, color: AppColors.textMuted),
                               border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12.0),
-                                borderSide: const BorderSide(color: AppColors.border),
+                                borderSide: BorderSide(color: AppColors.border),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12.0),
-                                borderSide: const BorderSide(color: AppColors.border),
+                                borderSide: BorderSide(color: AppColors.border),
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(12.0),

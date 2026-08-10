@@ -210,7 +210,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(badge['name']!, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 13.0)),
-                            Text(badge['description']!, style: const TextStyle(color: AppColors.textSecondary, fontSize: 11.0)),
+                            Text(badge['description']!, style: TextStyle(color: AppColors.textSecondary, fontSize: 11.0)),
                           ],
                         ),
                       ),
@@ -402,6 +402,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final profile = context.watch<ProfileProvider>().profile;
     final nickname = profile?.nickname ?? 'Student';
     final isPassed = widget.scorePercentage >= AppConstants.passingScorePercentage;
@@ -492,7 +493,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                           isPerfect
                               ? 'Flawless performance! You aced every single question!'
                               : (isPassed ? 'Congratulations! You performed above the credit cut-off of 45%.' : 'The passing score is 45%. Take another review practice.'),
-                          style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
+                          style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
                         ),
                       ],
                     ),
@@ -502,7 +503,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+            Text('Exam Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
@@ -514,14 +515,14 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
               child: Column(
                 children: [
                   _buildStatRow('Course Subject', widget.courseCode),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Questions Attempted', '${widget.totalQuestions}'),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Correct Answers', '${widget.correctAnswers}'),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Time Spent', _formatTime(widget.timeSpentSeconds)),
                   if (streakMultiplier > 1.0) ...[
-                    const Divider(height: 1, color: AppColors.divider),
+                    Divider(height: 1, color: AppColors.divider),
                     _buildStatRow('Streak Multiplier', 'x${streakMultiplier.toStringAsFixed(1)}'),
                   ],
                 ],
@@ -529,7 +530,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+            Text('Rewards Unlocked', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Row(
               children: [
@@ -544,7 +545,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('XP Earned', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        Text('XP Earned', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
                         Text('+$earnedXp XP', style: const TextStyle(color: AppColors.xp, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
@@ -563,7 +564,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Coins Reward', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        Text('Coins Reward', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
                         Text('+$earnedCoins', style: const TextStyle(color: AppColors.coins, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
@@ -661,7 +662,7 @@ class _ResultScreenState extends State<ResultScreen> with SingleTickerProviderSt
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13.5, fontWeight: FontWeight.bold)),
+          Text(label, style: TextStyle(color: AppColors.textSecondary, fontSize: 13.5, fontWeight: FontWeight.bold)),
           Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 13.5, fontWeight: FontWeight.w800)),
         ],
       ),

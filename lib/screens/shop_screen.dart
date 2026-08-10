@@ -1,4 +1,4 @@
-﻿import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../config/theme.dart';
 import '../config/constants.dart';
@@ -10,6 +10,7 @@ class ShopScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final profileProvider = Provider.of<ProfileProvider>(context);
     final profile = profileProvider.profile;
     final coins = profile?.coins ?? 0;
@@ -69,9 +70,9 @@ class ShopScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24.0),
-            const Text('Power-ups', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+            Text('Power-ups', style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 4.0),
-            const Text('Spend your earned coins on useful items', style: TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+            Text('Spend your earned coins on useful items', style: TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
             const SizedBox(height: 14.0),
             _buildShopItem(
               context,
@@ -123,7 +124,7 @@ class ShopScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('How to earn more coins', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary, fontSize: 14.0)),
+                  Text('How to earn more coins', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary, fontSize: 14.0)),
                   const SizedBox(height: 10.0),
                   _buildEarnRow('Answer questions correctly', '+1 coin each'),
                   _buildEarnRow('Pass an exam (45%+)', '+5 bonus coins'),
@@ -176,7 +177,7 @@ class ShopScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Text(title, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary, fontSize: 15.0)),
+                    Text(title, style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary, fontSize: 15.0)),
                     if (badge != null) ...[
                       const SizedBox(width: 6.0),
                       Container(
@@ -188,7 +189,7 @@ class ShopScreen extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 4.0),
-                Text(description, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.0, height: 1.3)),
+                Text(description, style: TextStyle(color: AppColors.textSecondary, fontSize: 12.0, height: 1.3)),
               ],
             ),
           ),
@@ -222,7 +223,7 @@ class ShopScreen extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
+          Text(label, style: TextStyle(color: AppColors.textSecondary, fontSize: 12.5)),
           Text(amount, style: const TextStyle(color: AppColors.accent, fontSize: 12.5, fontWeight: FontWeight.bold)),
         ],
       ),

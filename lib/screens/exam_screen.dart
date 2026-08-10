@@ -166,13 +166,14 @@ class _ExamScreenState extends State<ExamScreen> {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final quizProvider = Provider.of<QuizProvider>(context);
     final activeCourse = quizProvider.activeCourse;
     final questions = quizProvider.questions;
     final currentQ = quizProvider.currentQuestion;
 
     if (activeCourse == null || quizProvider.isLoading) {
-      return const Scaffold(backgroundColor: AppColors.background, body: Center(child: CircularProgressIndicator(color: AppColors.primary)));
+      return Scaffold(backgroundColor: AppColors.background, body: Center(child: CircularProgressIndicator(color: AppColors.primary)));
     }
 
     if (questions.isEmpty || currentQ == null) {
@@ -284,7 +285,7 @@ class _ExamScreenState extends State<ExamScreen> {
                       padding: const EdgeInsets.all(22.0),
                       child: Text(
                         currentQ!.text,
-                        style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.textPrimary, height: 1.4),
+                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w700, color: AppColors.textPrimary, height: 1.4),
                       ),
                     ),
                     const SizedBox(height: 24.0),
@@ -379,7 +380,7 @@ class _ExamScreenState extends State<ExamScreen> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         backgroundColor: AppColors.surface,
         title: const Text('Submit Exam?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
-        content: Text(alertText, style: const TextStyle(color: AppColors.textSecondary)),
+        content: Text(alertText, style: TextStyle(color: AppColors.textSecondary)),
         actions: [
           TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel', style: TextStyle(color: AppColors.primary))),
           TextButton(

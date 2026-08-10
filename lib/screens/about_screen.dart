@@ -8,6 +8,7 @@ class AboutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
@@ -36,12 +37,12 @@ class AboutScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 16.0),
-                  const Text(
+                  Text(
                     AppConstants.appName,
                     style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
                   ),
                   const SizedBox(height: 4.0),
-                  const Text(
+                  Text(
                     'Version ${AppConstants.appVersion}',
                     style: TextStyle(fontSize: 13.0, color: AppColors.textSecondary),
                   ),
@@ -55,7 +56,7 @@ class AboutScreen extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
-            const Text(
+            Text(
               'CBT is a specialized computer-based test training platform crafted for Nigerian university undergraduates studying General Studies (GST) courses. It provides complete offline support for taking exam simulations, and analyzing performance metrics over time.',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.45),
             ),
@@ -77,7 +78,7 @@ class AboutScreen extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
-            const Text(
+            Text(
               'Siyayya.com is your campus marketplace — a platform to buy, sell, and discover products and services across Nigerian university campuses.',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.45),
             ),
@@ -88,7 +89,7 @@ class AboutScreen extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary, fontSize: 15.0),
             ),
             const SizedBox(height: 8.0),
-            const Text(
+            Text(
               'Encountered a bug or have questions/suggestions? Please reach out to us:',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 13.0, height: 1.4),
             ),
@@ -115,9 +116,9 @@ class AboutScreen extends StatelessWidget {
           Expanded(
             child: RichText(
               text: TextSpan(
-                style: const TextStyle(fontFamily: 'Nunito', fontSize: 13.0, color: AppColors.textSecondary),
+                style: TextStyle(fontFamily: 'Nunito', fontSize: 13.0, color: AppColors.textSecondary),
                 children: [
-                  TextSpan(text: '$title: ', style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
+                  TextSpan(text: '$title: ', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
                   TextSpan(text: desc),
                 ],
               ),

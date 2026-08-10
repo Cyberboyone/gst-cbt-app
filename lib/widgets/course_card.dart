@@ -67,7 +67,7 @@ class CourseCard extends StatelessWidget {
                       children: [
                         Text(
                           course.code,
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: AppColors.textMuted,
                             fontSize: 11.0,
                             fontWeight: FontWeight.w700,

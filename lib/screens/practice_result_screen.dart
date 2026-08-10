@@ -240,6 +240,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final profile = context.watch<ProfileProvider>().profile;
     final nickname = profile?.nickname ?? 'Student';
     final isPassed = _scorePercentage >= 45;
@@ -324,7 +325,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                           isHigh
                               ? 'Outstanding performance! You nailed most of the questions.'
                               : (isPassed ? 'Nice work! Review the ones you missed.' : 'Practice makes perfect. Try again to improve!'),
-                          style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
+                          style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
                         ),
                       ],
                     ),
@@ -334,7 +335,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Session Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+            Text('Session Summary', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Container(
               decoration: BoxDecoration(
@@ -346,25 +347,25 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
               child: Column(
                 children: [
                   _buildStatRow('Course', widget.courseCode),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Questions Attempted', '${widget.totalQuestions}'),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   _buildStatRow('Correct Answers', '${widget.correctAnswers}'),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   if (widget.bestCombo >= 3) ...[
                     _buildStatRow('Best Combo', '${widget.bestCombo}x \u{1F525}'),
-                    const Divider(height: 1, color: AppColors.divider),
+                    Divider(height: 1, color: AppColors.divider),
                   ],
                   if (widget.multiplier > 1.0) ...[
                     _buildStatRow('Multiplier', 'x${widget.multiplier.toStringAsFixed(1)}'),
-                    const Divider(height: 1, color: AppColors.divider),
+                    Divider(height: 1, color: AppColors.divider),
                   ],
                 ],
               ),
             ),
             const SizedBox(height: 24.0),
 
-            const Text('Rewards Earned', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+            Text('Rewards Earned', style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
             const SizedBox(height: 12.0),
             Row(
               children: [
@@ -379,7 +380,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('XP Earned', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        Text('XP Earned', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
                         Text('+$widget.xpEarned XP', style: const TextStyle(color: AppColors.xp, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
@@ -398,7 +399,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Coins Reward', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
+                        Text('Coins Reward', style: TextStyle(color: AppColors.textMuted, fontSize: 11.0, fontWeight: FontWeight.bold)),
                         const SizedBox(height: 4.0),
                         Text('+${widget.coinsEarned}', style: const TextStyle(color: AppColors.coins, fontSize: 18.0, fontWeight: FontWeight.w900)),
                       ],
@@ -496,7 +497,7 @@ class _PracticeResultScreenState extends State<PracticeResultScreen> with Single
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(label, style: const TextStyle(color: AppColors.textSecondary, fontSize: 13.5, fontWeight: FontWeight.bold)),
+          Text(label, style: TextStyle(color: AppColors.textSecondary, fontSize: 13.5, fontWeight: FontWeight.bold)),
           Text(value, style: const TextStyle(color: AppColors.primary, fontSize: 13.5, fontWeight: FontWeight.w800)),
         ],
       ),

@@ -10,6 +10,7 @@ class BadgesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final profileProvider = Provider.of<ProfileProvider>(context);
     final profile = profileProvider.profile;
     final unlockedIds = Set<String>.from(profile?.unlockedBadgeIds ?? []);

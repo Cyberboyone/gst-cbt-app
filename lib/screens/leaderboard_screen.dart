@@ -14,6 +14,7 @@ class LeaderboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final profileProvider = Provider.of<ProfileProvider>(context);
     final courseProvider = Provider.of<CourseProvider>(context);
     final profile = profileProvider.profile;
@@ -85,7 +86,7 @@ class LeaderboardScreen extends StatelessWidget {
           const SizedBox(height: 24.0),
         ],
 
-        const Text('Your Best High Scores', style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+        Text('Your Best High Scores', style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
         const SizedBox(height: 12.0),
 
         ...courseProvider.courses.map((course) {
@@ -108,7 +109,7 @@ class LeaderboardScreen extends StatelessWidget {
               title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
               subtitle: Text(
                 'Attempted: ${progress.questionsAttempted} | Accuracy: $accuracy%',
-                style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
+                style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
               ),
               trailing: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 8.0),
@@ -199,7 +200,7 @@ class LeaderboardScreen extends StatelessWidget {
         children: [
           Text(value, style: TextStyle(color: iconColor, fontSize: 16.0, fontWeight: FontWeight.w900)),
           const SizedBox(height: 2.0),
-          Text(label, style: const TextStyle(color: AppColors.textMuted, fontSize: 12.0, fontWeight: FontWeight.bold)),
+          Text(label, style: TextStyle(color: AppColors.textMuted, fontSize: 12.0, fontWeight: FontWeight.bold)),
         ],
       ),
     );

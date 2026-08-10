@@ -47,6 +47,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
@@ -74,7 +75,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
               ),
               const SizedBox(height: 24.0),
-              const Text(
+              Text(
                 'Get Started',
                 style: TextStyle(
                   fontSize: 32.0,
@@ -85,7 +86,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
               ),
               const SizedBox(height: 8.0),
-              const Text(
+              Text(
                 'Enter a nickname to track your CBT practice progress and rank on the leaderboard.',
                 style: TextStyle(
                   color: AppColors.textSecondary,
@@ -98,11 +99,11 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 key: _formKey,
                 child: TextFormField(
                   controller: _nicknameController,
-                  style: const TextStyle(color: AppColors.textPrimary),
+                  style: TextStyle(color: AppColors.textPrimary),
                   decoration: InputDecoration(
                     labelText: 'Nickname',
                     hintText: 'e.g., Musab',
-                    labelStyle: const TextStyle(color: AppColors.textSecondary),
+                    labelStyle: TextStyle(color: AppColors.textSecondary),
                     floatingLabelStyle: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.bold),
                     focusedBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
@@ -110,7 +111,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      borderSide: const BorderSide(color: AppColors.border, width: 1.5),
+                      borderSide: BorderSide(color: AppColors.border, width: 1.5),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16.0),

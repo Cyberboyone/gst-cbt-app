@@ -60,6 +60,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
@@ -82,7 +83,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     ),
                   ),
                   const SizedBox(height: 24.0),
-                  const Text(
+                  Text(
                     'CBT',
                     style: TextStyle(
                       color: AppColors.textPrimary,

@@ -49,7 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         backgroundColor: AppColors.surface,
         title: const Text('Overwrite All Data?', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
-        content: const Text('This will permanently delete your current progress and replace it with the backup data. Continue?', style: TextStyle(color: AppColors.textSecondary)),
+        content: Text('This will permanently delete your current progress and replace it with the backup data. Continue?', style: TextStyle(color: AppColors.textSecondary)),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
@@ -128,7 +128,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 12.0),
           children: [
             if (profile != null) ...[
-              const Text(
+              Text(
                 'Identity',
                 style: TextStyle(color: AppColors.textMuted, fontWeight: FontWeight.bold, fontSize: 12.0),
               ),
@@ -151,7 +151,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       child: _isEditingName
                           ? TextField(
                               controller: _nicknameController..text = profile.nickname,
-                              style: const TextStyle(color: AppColors.textPrimary),
+                              style: TextStyle(color: AppColors.textPrimary),
                               decoration: const InputDecoration(
                                 isDense: true,
                                 contentPadding: EdgeInsets.symmetric(vertical: 8),
@@ -163,12 +163,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               children: [
                                 Text(
                                   profile.nickname,
-                                  style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
+                                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
                                 ),
                                 const SizedBox(height: 2.0),
                                 Text(
                                   'Referral Code: ${profile.referralCode}',
-                                  style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
+                                  style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary),
                                 ),
                               ],
                             ),
@@ -191,7 +191,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 24.0),
             ],
 
-            const Text(
+            Text(
               'App Configurations',
               style: TextStyle(color: AppColors.textMuted, fontWeight: FontWeight.bold, fontSize: 12.0),
             ),
@@ -205,18 +205,28 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: Column(
                 children: [
                   SwitchListTile(
-                    title: const Text('Sound Effects', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
-                    subtitle: const Text('Play audio cues for answers', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                    title: Text('Dark Mode', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
+                    subtitle: Text('Switch between light and dark theme', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                    value: settings.isDarkMode,
+                    activeColor: AppColors.primary,
+                    onChanged: (val) {
+                      settingsProvider.toggleDarkMode(val);
+                    },
+                  ),
+                  Divider(height: 1, color: AppColors.divider),
+                  SwitchListTile(
+                    title: Text('Sound Effects', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
+                    subtitle: Text('Play audio cues for answers', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
                     value: settings.soundOn,
                     activeColor: AppColors.primary,
                     onChanged: (val) {
                       settingsProvider.toggleSound(val);
                     },
                   ),
-                  const Divider(height: 1, color: AppColors.divider),
+                  Divider(height: 1, color: AppColors.divider),
                   SwitchListTile(
-                    title: const Text('Low Data Mode', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
-                    subtitle: const Text('Prompt before loading large assets', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                    title: Text('Low Data Mode', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
+                    subtitle: Text('Prompt before loading large assets', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
                     value: settings.lowDataMode,
                     activeColor: AppColors.primary,
                     onChanged: (val) {
@@ -228,7 +238,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             const SizedBox(height: 24.0),
 
-            const Text(
+            Text(
               'Progress Backup & Recovery',
               style: TextStyle(color: AppColors.textMuted, fontWeight: FontWeight.bold, fontSize: 12.0),
             ),
@@ -243,7 +253,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     'Backup your offline practice metrics, Streaks, XP, and unlock milestones. Generates an encrypted string code to paste on any new device.',
                     style: TextStyle(color: AppColors.textSecondary, fontSize: 12.0, height: 1.4),
                   ),
@@ -259,7 +269,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     ),
                   ),
                   
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.symmetric(vertical: 16.0),
                     child: Divider(height: 1, color: AppColors.divider),
                   ),
@@ -271,17 +281,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   const SizedBox(height: 8.0),
                   TextField(
                     controller: _restoreController,
-                    style: const TextStyle(color: AppColors.textPrimary),
+                    style: TextStyle(color: AppColors.textPrimary),
                     decoration: InputDecoration(
                       hintText: 'Paste backup code here...',
-                      hintStyle: const TextStyle(fontSize: 13.0, color: AppColors.textMuted),
+                      hintStyle: TextStyle(fontSize: 13.0, color: AppColors.textMuted),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12.0),
-                        borderSide: const BorderSide(color: AppColors.border),
+                        borderSide: BorderSide(color: AppColors.border),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12.0),
-                        borderSide: const BorderSide(color: AppColors.border),
+                        borderSide: BorderSide(color: AppColors.border),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12.0),
@@ -312,13 +322,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 border: Border.all(color: AppColors.glassBorder, width: 1),
               ),
               child: ListTile(
-                leading: const CircleAvatar(
+                leading: CircleAvatar(
                   backgroundColor: AppColors.xpLight,
                   child: Icon(Icons.emoji_events_rounded, color: AppColors.xp),
                 ),
-                title: const Text('Achievements', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
-                subtitle: const Text('View your badges and milestones', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
-                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
+                title: Text('Achievements', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
+                subtitle: Text('View your badges and milestones', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                trailing: Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                 onTap: () {
                   Navigator.pushNamed(context, AppRoutes.badges);
@@ -334,13 +344,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 border: Border.all(color: AppColors.glassBorder, width: 1),
               ),
               child: ListTile(
-                leading: const CircleAvatar(
+                leading: CircleAvatar(
                   backgroundColor: AppColors.coinsLight,
                   child: Icon(Icons.monetization_on_rounded, color: AppColors.coins),
                 ),
-                title: const Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
-                subtitle: const Text('Spend coins on hints and streak freezes', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
-                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
+                title: Text('Coin Shop', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
+                subtitle: Text('Spend coins on hints and streak freezes', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                trailing: Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                 onTap: () {
                   Navigator.pushNamed(context, AppRoutes.shop);
@@ -356,13 +366,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 border: Border.all(color: AppColors.glassBorder, width: 1),
               ),
               child: ListTile(
-                leading: const CircleAvatar(
+                leading: CircleAvatar(
                   backgroundColor: AppColors.correctLight,
                   child: Icon(Icons.card_giftcard_rounded, color: AppColors.correct),
                 ),
-                title: const Text('Invite Friends', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
-                subtitle: const Text('Share your code and earn 20 bonus coins', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
-                trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
+                title: Text('Invite Friends', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.textPrimary)),
+                subtitle: Text('Share your code and earn 20 bonus coins', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                trailing: Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0)),
                 onTap: () {
                   Navigator.pushNamed(context, AppRoutes.invite);
@@ -383,7 +393,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   children: [
                     const Icon(Icons.workspace_premium_rounded, color: AppColors.secondary, size: 24.0),
                     const SizedBox(width: 14.0),
-                    const Expanded(
+                    Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -420,7 +430,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: [
                   const Text('Danger Zone', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.destructive)),
                   const SizedBox(height: 4.0),
-                  const Text('Clears all profiles and offline caching progress from this device.', style: TextStyle(fontSize: 11.5, color: AppColors.textSecondary)),
+                  Text('Clears all profiles and offline caching progress from this device.', style: TextStyle(fontSize: 11.5, color: AppColors.textSecondary)),
                   const SizedBox(height: 12.0),
                   TextButton(
                     onPressed: () {

@@ -65,7 +65,7 @@ class StreakCard extends StatelessWidget {
                       children: [
                         Text(
                           '$streakCount',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 28.0,
                             fontWeight: FontWeight.w900,
                             color: AppColors.textPrimary,
@@ -77,7 +77,7 @@ class StreakCard extends StatelessWidget {
                           padding: const EdgeInsets.only(bottom: 2.0),
                           child: Text(
                             'day${streakCount == 1 ? '' : 's'}',
-                            style: const TextStyle(
+                            style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w600,
                               color: AppColors.textSecondary,

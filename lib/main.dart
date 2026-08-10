@@ -3,8 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'services/hive_service.dart';
 import 'services/ad_service.dart';
+import 'services/sound_service.dart';
 import 'models/question.dart';
 import 'config/constants.dart';
 import 'app.dart';
@@ -18,6 +20,10 @@ void main() async {
 
   // Initialize AdMob (non-blocking so app launches fast)
   AdService.instance.init();
+
+  // Make all sound effects mix with (never interrupt) audio already
+  // playing on the device.
+  await AudioPlayer.global.setAudioContext(AppSound.context);
 
   // Initialize Hive local database
   final hiveService = HiveService();

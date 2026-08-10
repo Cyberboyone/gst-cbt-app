@@ -24,6 +24,12 @@ class SettingsProvider with ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> toggleDarkMode(bool value) async {
+    _settings = _settings.copyWith(isDarkMode: value);
+    await _hiveService.saveSettings(_settings);
+    notifyListeners();
+  }
+
   Future<void> setAdsRemoved(bool value) async {
     _settings = _settings.copyWith(adsRemoved: value);
     await _hiveService.saveSettings(_settings);

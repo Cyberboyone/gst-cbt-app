@@ -165,7 +165,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
             title: const Text('Low Data Warning ⚠️', style: TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
             content: Text(
               'Low Data Mode is enabled in your settings. This download requires $size of data. Do you want to proceed?',
-              style: const TextStyle(color: AppColors.inkSoft),
+              style: TextStyle(color: AppColors.inkSoft),
             ),
             actions: [
               TextButton(
@@ -200,12 +200,13 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final courseProvider = Provider.of<CourseProvider>(context);
 
     final body = ListView(
       padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
       children: [
-        const Text(
+        Text(
           'Download and study official GST course materials offline. These files are saved locally on your device.',
           style: TextStyle(color: AppColors.inkSoft, fontSize: 13.5, height: 1.4),
         ),
@@ -268,7 +269,7 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
                         const SizedBox(height: 6.0),
                         Text(
                           'Size: ${material.size} • Version ${material.version}',
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: AppColors.inkSoft,
                             fontSize: 11.0,
                           ),
@@ -367,7 +368,7 @@ class _MockPdfViewer extends StatelessWidget {
               Text(
                 'This screen runs the PDF viewer for: "$title". Fully integrated offline and printable.',
                 textAlign: TextAlign.center,
-                style: const TextStyle(color: AppColors.inkSoft, height: 1.4),
+                style: TextStyle(color: AppColors.inkSoft, height: 1.4),
               ),
               const SizedBox(height: 36.0),
               ElevatedButton.icon(

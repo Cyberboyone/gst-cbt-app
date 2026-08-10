@@ -36,6 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     return Scaffold(
       body: _buildActiveTab(),
       bottomNavigationBar: NavBar(
@@ -116,7 +117,7 @@ class _HomeTab extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'Welcome back',
                             style: TextStyle(
                               color: AppColors.textMuted,
@@ -127,7 +128,7 @@ class _HomeTab extends StatelessWidget {
                           const SizedBox(height: 2.0),
                           Text(
                             'Hello, ${profile.nickname}',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 19.0,
                               fontWeight: FontWeight.w800,
@@ -138,36 +139,62 @@ class _HomeTab extends StatelessWidget {
                       ),
                     ],
                   ),
-                  GestureDetector(
-                    onTap: () => _showAnnouncementsDialog(context),
-                    child: Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Container(
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+                          settingsProvider.toggleDarkMode(!AppThemeScope.of(context));
+                        },
+                        child: Container(
                           width: 40.0,
                           height: 40.0,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: AppColors.glassBg,
-                            border: Border.fromBorderSide(BorderSide(color: AppColors.glassBorder)),
+                            border: Border.all(color: AppColors.glassBorder),
                           ),
                           alignment: Alignment.center,
-                          child: const Icon(Icons.notifications_outlined, color: AppColors.primary, size: 20.0),
-                        ),
-                        Positioned(
-                          top: 8,
-                          right: 8,
-                          child: Container(
-                            width: 7.0,
-                            height: 7.0,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: AppColors.secondary,
-                            ),
+                          child: Icon(
+                            AppThemeScope.of(context) ? Icons.dark_mode_outlined : Icons.light_mode_outlined,
+                            color: AppColors.primary,
+                            size: 20.0,
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                      const SizedBox(width: 8.0),
+                      GestureDetector(
+                        onTap: () => _showAnnouncementsDialog(context),
+                        child: Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                              width: 40.0,
+                              height: 40.0,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: AppColors.glassBg,
+                                border: Border.all(color: AppColors.glassBorder),
+                              ),
+                              alignment: Alignment.center,
+                              child: const Icon(Icons.notifications_outlined, color: AppColors.primary, size: 20.0),
+                            ),
+                            Positioned(
+                              top: 8,
+                              right: 8,
+                              child: Container(
+                                width: 7.0,
+                                height: 7.0,
+                                decoration: const BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: AppColors.secondary,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -271,7 +298,7 @@ class _HomeTab extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'Today\'s goal',
                             style: TextStyle(
                               color: AppColors.textMuted,
@@ -282,7 +309,7 @@ class _HomeTab extends StatelessWidget {
                           const SizedBox(height: 2.0),
                           Text(
                             '$questionsDone of $dailyGoal questions done',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 14.0,
                               fontWeight: FontWeight.w700,
@@ -304,7 +331,7 @@ class _HomeTab extends StatelessWidget {
                 textBaseline: TextBaseline.alphabetic,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 children: [
-                  const Text(
+                  Text(
                     'Your Streak',
                     style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
                   ),
@@ -327,7 +354,7 @@ class _HomeTab extends StatelessWidget {
                 textBaseline: TextBaseline.alphabetic,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
                 children: [
-                  const Text(
+                  Text(
                     'Courses',
                     style: TextStyle(fontSize: 16.5, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
                   ),
@@ -366,7 +393,7 @@ class _HomeTab extends StatelessWidget {
                           children: [
                             const Icon(Icons.quiz_rounded, color: AppColors.primary, size: 28.0),
                             const SizedBox(height: 10.0),
-                            const Text(
+                            Text(
                               'Practice',
                               style: TextStyle(color: AppColors.textPrimary, fontSize: 15.0, fontWeight: FontWeight.w800),
                             ),
@@ -402,7 +429,7 @@ class _HomeTab extends StatelessWidget {
                           children: [
                             const Icon(Icons.timer_outlined, color: AppColors.secondary, size: 28.0),
                             const SizedBox(height: 10.0),
-                            const Text(
+                            Text(
                               'Exam',
                               style: TextStyle(color: AppColors.textPrimary, fontSize: 15.0, fontWeight: FontWeight.w800),
                             ),
@@ -483,7 +510,7 @@ class _HomeTab extends StatelessWidget {
           '7-13 days: 1.5x XP\n'
           '14-29 days: 2x XP\n'
           '30+ days: 3x XP',
-          style: const TextStyle(color: AppColors.textSecondary, height: 1.4),
+          style: TextStyle(color: AppColors.textSecondary, height: 1.4),
         ),
         actions: [
           TextButton(
@@ -502,7 +529,7 @@ class _HomeTab extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         backgroundColor: AppColors.surface,
         title: const Text('Announcements', style: TextStyle(fontWeight: FontWeight.w800, color: AppColors.primary)),
-        content: const Text(
+        content: Text(
           'Welcome to the CBT App!\n\nAll features are 100% offline. Pick a course and start practicing to prepare for your GST exams.',
           style: TextStyle(color: AppColors.textSecondary, height: 1.4),
         ),
@@ -542,12 +569,12 @@ class _HomeTab extends StatelessWidget {
                       child: Text(course.icon),
                     ),
                     title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
-                    subtitle: Text(course.name, style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
-                    trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
+                    subtitle: Text(course.name, style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                    trailing: Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
                     tileColor: AppColors.card,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      side: const BorderSide(color: AppColors.border),
+                      side: BorderSide(color: AppColors.border),
                     ),
                     onTap: () {
                       Navigator.pop(context);
@@ -634,6 +661,7 @@ class _PracticeTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppThemeScope.of(context);
     final courseProvider = Provider.of<CourseProvider>(context);
     final profileProvider = Provider.of<ProfileProvider>(context);
 
@@ -649,7 +677,7 @@ class _PracticeTab extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 8.0),
           children: [
-            const Text(
+            Text(
               'Select a course to begin your study session. You can practice untimed with instant feedback, or take a timed exam simulation.',
               style: TextStyle(color: AppColors.textSecondary, fontSize: 13.5, height: 1.4),
             ),
@@ -675,7 +703,7 @@ class _PracticeTab extends StatelessWidget {
             ),
             const SizedBox(height: 28.0),
 
-            const Text(
+            Text(
               'Quick Stats',
               style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary),
             ),
@@ -719,7 +747,7 @@ class _PracticeTab extends StatelessWidget {
                   children: [
                     const Icon(Icons.store_rounded, color: AppColors.accent, size: 24.0),
                     const SizedBox(width: 12.0),
-                    const Expanded(
+                    Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -767,13 +795,13 @@ class _PracticeTab extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(title, style: const TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
+                  Text(title, style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800, color: AppColors.textPrimary)),
                   const SizedBox(height: 4.0),
-                  Text(subtitle, style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary, height: 1.3)),
+                  Text(subtitle, style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary, height: 1.3)),
                 ],
               ),
             ),
-            const Icon(Icons.arrow_forward_ios_rounded, color: AppColors.textMuted, size: 16.0),
+            Icon(Icons.arrow_forward_ios_rounded, color: AppColors.textMuted, size: 16.0),
           ],
         ),
       ),
@@ -793,9 +821,9 @@ class _PracticeTab extends StatelessWidget {
         children: [
           Icon(icon, color: iconColor, size: 20.0),
           const SizedBox(height: 8.0),
-          Text(label, style: const TextStyle(color: AppColors.textMuted, fontSize: 11.5, fontWeight: FontWeight.bold)),
+          Text(label, style: TextStyle(color: AppColors.textMuted, fontSize: 11.5, fontWeight: FontWeight.bold)),
           const SizedBox(height: 4.0),
-          Text(value, style: const TextStyle(color: AppColors.textPrimary, fontSize: 18.0, fontWeight: FontWeight.w800)),
+          Text(value, style: TextStyle(color: AppColors.textPrimary, fontSize: 18.0, fontWeight: FontWeight.w800)),
         ],
       ),
     );
@@ -832,12 +860,12 @@ class _PracticeTab extends StatelessWidget {
                       child: Text(course.icon),
                     ),
                     title: Text(course.code, style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
-                    subtitle: Text(course.name, style: const TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
-                    trailing: const Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
+                    subtitle: Text(course.name, style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                    trailing: Icon(Icons.chevron_right_rounded, color: AppColors.textMuted),
                     tileColor: AppColors.card,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.0),
-                      side: const BorderSide(color: AppColors.border),
+                      side: BorderSide(color: AppColors.border),
                     ),
                     onTap: () {
                       Navigator.pop(context);
