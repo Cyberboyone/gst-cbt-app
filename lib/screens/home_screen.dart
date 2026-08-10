@@ -308,7 +308,7 @@ class _HomeTab extends StatelessWidget {
                           ),
                           const SizedBox(height: 2.0),
                           Text(
-                            '$questionsDone of $dailyGoal questions done',
+                            '${questionsDone.clamp(0, dailyGoal)} of $dailyGoal questions done',
                             style: TextStyle(
                               color: AppColors.textPrimary,
                               fontSize: 14.0,

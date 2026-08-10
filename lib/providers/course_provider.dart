@@ -25,14 +25,6 @@ class CourseProvider with ChangeNotifier {
       mode: '100_level',
     ),
     Course(
-      id: 'gst112',
-      code: 'GST 112',
-      name: 'Citizenship Education',
-      icon: '🏛️',
-      colorHex: '#EAE2FA', // Lavender
-      mode: '100_level',
-    ),
-    Course(
       id: 'cos101',
       code: 'COS 101',
       name: 'Intro to Computer Science',

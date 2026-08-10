@@ -42,16 +42,6 @@ class _MaterialsScreenState extends State<MaterialsScreen> {
       // Create defaults
       final defaults = [
         StudyMaterial(
-          id: 'mat_gst112_npc',
-          title: 'GST 112 - Nigerian Peoples and Culture',
-          courseId: 'gst112',
-          fileUrl: 'bundled://materials/gst112_nigerian_peoples_culture.pdf',
-          version: 1,
-          size: '600 KB',
-          isDownloaded: true,
-          localPath: 'bundled',
-        ),
-        StudyMaterial(
           id: 'mat_gst_answers_qna',
           title: 'GST Answers and Questions Compilation',
           courseId: 'gst111',

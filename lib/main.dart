@@ -38,7 +38,7 @@ void main() async {
 /// Seeds the local Hive question cache from bundled JSON assets
 /// so the app is usable immediately after install with zero internet.
 Future<void> _seedStarterQuestions(HiveService hiveService) async {
-  const courseIds = ['gst102', 'gst111', 'gst112', 'cos101', 'bio101', 'phy101', 'phy102', 'mth101', 'mth102', 'chm102', 'ssc202', 'ssc301', 'gst301', 'gst2208', 'gst2202', 'slc399', 'ent312'];
+  const courseIds = ['gst102', 'gst111', 'cos101', 'bio101', 'phy101', 'phy102', 'mth101', 'mth102', 'chm102', 'ssc202', 'ssc301', 'gst301', 'gst2208', 'gst2202', 'slc399', 'ent312'];
 
   for (final courseId in courseIds) {
     final cached = hiveService.getCachedQuestions(courseId);

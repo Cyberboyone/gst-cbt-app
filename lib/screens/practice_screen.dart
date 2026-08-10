@@ -431,10 +431,15 @@ class PracticeScreen extends StatelessWidget {
       profile.addCoins(coinsEarned);
       profile.updateStreak();
 
+      final practiceScore = quiz.sessionAttempted > 0
+          ? ((quiz.sessionCorrectAnswers / quiz.sessionAttempted) * 100).round()
+          : 0;
+
       courses.updateCourseProgress(
         courseId: quiz.activeCourse!.id,
         additionalAttempted: quiz.sessionAttempted,
         additionalCorrect: quiz.sessionCorrectAnswers,
+        newExamScore: practiceScore,
       );
 
       final questionsNow = profile.profile?.questionsToday ?? 0;

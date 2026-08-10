@@ -99,7 +99,7 @@ class AppColors {
   static const _Palette _lightPalette = _Palette(
     background: Color(0xFFF3F6FB),
     surface: Color(0xFFFFFFFF),
-    card: Color(0xFFF4F8FD),
+    card: Color(0xFFE8EEF7),
     glassBg: Color(0xFFEAF0FA),
     glassBorder: Color(0x5900D4FF),
     foreground: Color(0xFF0F1B33),
