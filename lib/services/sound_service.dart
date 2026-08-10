@@ -4,20 +4,19 @@ import 'package:audioplayers/audioplayers.dart';
 ///
 /// Configured so that app sounds NEVER interrupt or pause audio that is
 /// already playing on the device (music, podcasts, etc.):
-/// - Android: no audio focus is requested and other apps' focus requests
-///   are ignored, so background playback continues untouched.
+/// - Android: audio focus is never requested (AUDIOFOCUS_NONE), so
+///   background playback continues untouched.
 /// - iOS: "ambient" session category + mixWithOthers, so the sounds mix
 ///   over whatever else is playing instead of stopping it.
 class AppSound {
   static final AudioContext context = AudioContext(
     android: AudioContextAndroid(
-      audioMode: AudioMode.normal,
-      audioFocus: AudioFocus.none,
-      respectAudioFocus: false,
+      audioMode: AndroidAudioMode.normal,
+      audioFocus: AndroidAudioFocus.none,
     ),
-    ios: AudioContextIOS(
+    iOS: AudioContextIOS(
       category: AVAudioSessionCategory.ambient,
-      options: {AVAudioSessionOptions.mixWithOthers},
+      options: const {AVAudioSessionOptions.mixWithOthers},
     ),
   );
 }
