@@ -5,7 +5,6 @@ import '../models/profile.dart';
 import '../models/progress.dart';
 import '../models/settings.dart';
 import '../models/question.dart';
-import '../models/material.dart';
 
 class HiveService {
   static final HiveService _instance = HiveService._internal();
@@ -23,7 +22,6 @@ class HiveService {
     await Hive.openBox(AppConstants.progressBox);
     await Hive.openBox(AppConstants.settingsBox);
     await Hive.openBox(AppConstants.questionsBox);
-    await Hive.openBox(AppConstants.downloadsBox);
     await Hive.openBox(AppConstants.claimedCodesBox);
 
     _initialized = true;
@@ -129,24 +127,6 @@ class HiveService {
     await box.put(courseId, dataList);
   }
 
-  // --- Study Materials Operations ---
-  List<StudyMaterial> getAllMaterials() {
-    final box = Hive.box(AppConstants.downloadsBox);
-    return box.values.map((data) => StudyMaterial.fromMap(data as Map)).toList();
-  }
-
-  StudyMaterial? getMaterial(String materialId) {
-    final box = Hive.box(AppConstants.downloadsBox);
-    final data = box.get(materialId);
-    if (data == null) return null;
-    return StudyMaterial.fromMap(data as Map);
-  }
-
-  Future<void> saveMaterial(StudyMaterial material) async {
-    final box = Hive.box(AppConstants.downloadsBox);
-    await box.put(material.id, material.toMap());
-  }
-
   // --- Claimed Referral Codes ---
   bool isReferralCodeClaimed(String code) {
     final box = Hive.box(AppConstants.claimedCodesBox);
@@ -164,7 +144,6 @@ class HiveService {
     await Hive.box(AppConstants.progressBox).clear();
     await Hive.box(AppConstants.settingsBox).clear();
     await Hive.box(AppConstants.questionsBox).clear();
-    await Hive.box(AppConstants.downloadsBox).clear();
     _initDefaults();
   }
 }

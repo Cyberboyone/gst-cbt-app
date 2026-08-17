@@ -1,6 +1,3 @@
-import 'package:flutter/material.dart';
-import 'theme.dart';
-
 // ── Design Tokens ──
 class AppSpacing {
   static const double xs = 4.0;
@@ -40,14 +37,12 @@ class AppConstants {
   static const String manifestPath = '/config/manifest.json';
   static const String appConfigPath = '/config/app_config.json';
   static const String questionsDir = '/questions';
-  static const String materialsDir = '/materials';
 
   // Local Storage (Hive Box Names)
   static const String profileBox = 'profile_box';
   static const String progressBox = 'progress_box';
   static const String settingsBox = 'settings_box';
   static const String questionsBox = 'questions_box';
-  static const String downloadsBox = 'downloads_box';
   static const String claimedCodesBox = 'claimed_codes_box';
 
   // Hive Keys
