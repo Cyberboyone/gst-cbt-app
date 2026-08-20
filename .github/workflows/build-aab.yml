@@ -11,7 +11,14 @@ jobs:
       KEY_ALIAS: cbtapp
       KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
       KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-      KEYSTORE_PATH: android/app/keystore.jks
+      # Must be an ABSOLUTE path. build.gradle resolves this via `new File(...)`,
+      # and a relative path here is ambiguous because Gradle/Flutter invoke the
+      # app module's build.gradle from a working directory that does not match
+      # the repo root where this file is actually written below -- a relative
+      # path silently fails to resolve, which combined with the previous
+      # (now-fixed) signing-config bug is part of why release builds were
+      # falling back to debug signing.
+      KEYSTORE_PATH: ${{ github.workspace }}/android/app/keystore.jks
 
     steps:
       - name: Checkout Repository

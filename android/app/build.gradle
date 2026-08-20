@@ -52,18 +52,58 @@ android {
         multiDexEnabled true
     }
 
+    // Resolve release-signing inputs once, from either CI env vars (used by the
+    // GitHub Actions workflow, which decodes the keystore to a temp path and
+    // exports KEYSTORE_PATH/KEY_ALIAS/KEY_PASSWORD/KEYSTORE_PASSWORD) or a local
+    // android/key.properties file (used for local `flutter build` release builds).
+    def resolvedStoreFilePath = System.getenv("KEYSTORE_PATH") ?: keystoreProperties['storeFile']
+    def resolvedKeyAlias = System.getenv("KEY_ALIAS") ?: keystoreProperties['keyAlias']
+    def resolvedKeyPassword = System.getenv("KEY_PASSWORD") ?: keystoreProperties['keyPassword']
+    def resolvedStorePassword = System.getenv("KEYSTORE_PASSWORD") ?: keystoreProperties['storePassword']
+    // Only treat release signing as "available" if a keystore file actually exists on
+    // disk at the resolved path AND all required credentials are present. Previously
+    // this check looked ONLY at keystoreProperties['storeFile'] (the key.properties
+    // file), which is never present in CI -- CI supplies KEYSTORE_PATH as an env var
+    // instead. That mismatch meant the release buildType silently fell back to
+    // signingConfigs.debug in every CI build, producing a debug-signed AAB/APK that
+    // Google Play Console rejects with "You uploaded an APK or Android App Bundle
+    // that was signed in debug mode."
+    def hasReleaseSigning = resolvedStoreFilePath &&
+        new File(resolvedStoreFilePath).exists() &&
+        resolvedKeyAlias &&
+        resolvedKeyPassword &&
+        resolvedStorePassword
+
+    // In CI, never allow a silent fallback to debug signing for a release build --
+    // fail the build immediately with a clear error instead of shipping an
+    // unusable (debug-signed) artifact that only gets caught later at Play Console
+    // upload time.
+    if (System.getenv("GITHUB_ACTIONS") == "true" &&
+            gradle.startParameter.taskNames.any { it.toLowerCase().contains("release") } &&
+            !hasReleaseSigning) {
+        throw new GradleException(
+            "Release signing is not configured in CI (missing/invalid KEYSTORE_PATH, " +
+            "KEY_ALIAS, KEY_PASSWORD, or KEYSTORE_PASSWORD / the keystore file does not " +
+            "exist at the resolved path). Refusing to fall back to debug signing for a " +
+            "release build -- fix the GitHub Actions secrets (ANDROID_KEYSTORE_BASE64, " +
+            "ANDROID_KEY_PASSWORD) and the 'Decode Keystore' step."
+        )
+    }
+
     signingConfigs {
         release {
-            keyAlias System.getenv("KEY_ALIAS") ?: (keystoreProperties['keyAlias'] ?: '')
-            keyPassword System.getenv("KEY_PASSWORD") ?: (keystoreProperties['keyPassword'] ?: '')
-            storeFile System.getenv("KEYSTORE_PATH") ? file(System.getenv("KEYSTORE_PATH")) : (keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null)
-            storePassword System.getenv("KEYSTORE_PASSWORD") ?: (keystoreProperties['storePassword'] ?: '')
+            if (hasReleaseSigning) {
+                keyAlias resolvedKeyAlias
+                keyPassword resolvedKeyPassword
+                storeFile file(resolvedStoreFilePath)
+                storePassword resolvedStorePassword
+            }
         }
     }
 
     buildTypes {
         release {
-            signingConfig keystoreProperties['storeFile'] ? signingConfigs.release : signingConfigs.debug
+            signingConfig hasReleaseSigning ? signingConfigs.release : signingConfigs.debug
         }
     }
 }
