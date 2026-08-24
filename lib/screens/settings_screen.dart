@@ -204,14 +204,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
               child: Column(
                 children: [
-                  SwitchListTile(
-                    title: Text('Dark Mode', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
-                    subtitle: Text('Switch between light and dark theme', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
-                    value: settings.isDarkMode,
-                    activeColor: AppColors.primary,
-                    onChanged: (val) {
-                      settingsProvider.toggleDarkMode(val);
-                    },
+                  ListTile(
+                    title: Text('Appearance', style: TextStyle(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
+                    subtitle: Text('Automatic by time of day (light in daytime, dark at night)', style: TextStyle(fontSize: 12.0, color: AppColors.textSecondary)),
+                    trailing: Icon(Icons.brightness_auto_rounded, color: AppColors.primary),
                   ),
                   Divider(height: 1, color: AppColors.divider),
                   SwitchListTile(

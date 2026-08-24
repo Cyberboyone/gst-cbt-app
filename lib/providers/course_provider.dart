@@ -9,35 +9,11 @@ class CourseProvider with ChangeNotifier {
   final List<Course> _courses = [
     // 100 Level (University) Courses
     Course(
-      id: 'gst102',
-      code: 'GST 102',
-      name: 'Nigerian Peoples & Culture',
-      icon: '🌍',
-      colorHex: '#DCEEFF', // Sky
-      mode: '100_level',
-    ),
-    Course(
       id: 'gst111',
       code: 'GST 111',
       name: 'Use of English',
       icon: '📘',
       colorHex: '#FFE8D6', // Peach
-      mode: '100_level',
-    ),
-    Course(
-      id: 'cos101',
-      code: 'COS 101',
-      name: 'Intro to Computer Science',
-      icon: '💻',
-      colorHex: '#FFE8D6', // Peach
-      mode: '100_level',
-    ),
-    Course(
-      id: 'bio101',
-      code: 'BIO 101',
-      name: 'General Biology',
-      icon: '🧬',
-      colorHex: '#DFF5E4', // Mint
       mode: '100_level',
     ),
     Course(

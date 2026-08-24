@@ -107,7 +107,7 @@ class AppConstants {
   static const int examMaxQuestions = 50;
 
   // App Metadata
-  static const String appVersion = '1.0.0';
+  static const String appVersion = '1.0.1';
   static const String appName = 'CBT';
   static const String poweredBy = 'Powered by Siyayya.com';
   static const String contactEmail = 'support@siyayya.com';

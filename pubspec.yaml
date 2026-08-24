@@ -1,6 +1,6 @@
 name: gst_cbt
 description: A complete CBT practice app for Nigerian university GST courses, powered by a GitHub content backend and offline-first local Hive storage.
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: '>=3.2.0 <4.0.0'

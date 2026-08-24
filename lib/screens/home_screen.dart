@@ -142,28 +142,6 @@ class _HomeTab extends StatelessWidget {
                   Row(
                     children: [
                       GestureDetector(
-                        onTap: () {
-                          final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
-                          settingsProvider.toggleDarkMode(!AppThemeScope.of(context));
-                        },
-                        child: Container(
-                          width: 40.0,
-                          height: 40.0,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: AppColors.glassBg,
-                            border: Border.all(color: AppColors.glassBorder),
-                          ),
-                          alignment: Alignment.center,
-                          child: Icon(
-                            AppThemeScope.of(context) ? Icons.dark_mode_outlined : Icons.light_mode_outlined,
-                            color: AppColors.primary,
-                            size: 20.0,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 8.0),
-                      GestureDetector(
                         onTap: () => _showAnnouncementsDialog(context),
                         child: Stack(
                           clipBehavior: Clip.none,

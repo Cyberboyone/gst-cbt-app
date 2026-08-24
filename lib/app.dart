@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'config/theme.dart';
@@ -27,15 +28,28 @@ class GstCbtApp extends StatefulWidget {
 }
 
 class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
+  Timer? _themeTimer;
+
+  /// Light theme during daytime (06:00–17:59) and dark theme at night,
+  /// based on the device's local time zone.
+  bool _isDarkByLocalTime() {
+    final hour = DateTime.now().hour;
+    return hour < 6 || hour >= 18;
+  }
+
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    _themeTimer = Timer.periodic(const Duration(minutes: 1), (_) {
+      if (mounted) setState(() {});
+    });
   }
 
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    _themeTimer?.cancel();
     super.dispose();
   }
 
@@ -43,6 +57,7 @@ class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.resumed) {
       AdService.instance.onAppResume();
+      if (mounted) setState(() {});
     }
   }
 
@@ -56,8 +71,8 @@ class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
         ChangeNotifierProvider(create: (_) => QuizProvider()),
       ],
       child: Consumer<SettingsProvider>(
-        builder: (context, settingsProvider, _) {
-          final isDarkMode = settingsProvider.settings.isDarkMode;
+        builder: (context, _, _) {
+          final isDarkMode = _isDarkByLocalTime();
           AppColors.isDark = isDarkMode;
           return MaterialApp(
             title: 'CBT',

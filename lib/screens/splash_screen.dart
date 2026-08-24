@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../config/theme.dart';
 import '../config/routes.dart';
 import '../providers/profile_provider.dart';
+import '../services/ad_service.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -40,6 +41,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
     await profileProvider.loadProfile();
     if (!mounted) return;
+    AdService.instance.showInterstitial();
     if (profileProvider.hasProfile) {
       Navigator.of(context).pushReplacementNamed(AppRoutes.home);
     } else {
