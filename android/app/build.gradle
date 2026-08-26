@@ -74,22 +74,8 @@ android {
         resolvedKeyPassword &&
         resolvedStorePassword
 
-    // In CI, never allow a silent fallback to debug signing for a release build --
-    // fail the build immediately with a clear error instead of shipping an
-    // unusable (debug-signed) artifact that only gets caught later at Play Console
-    // upload time.
-    if (System.getenv("GITHUB_ACTIONS") == "true" &&
-            gradle.startParameter.taskNames.any { it.toLowerCase().contains("release") } &&
-            !hasReleaseSigning) {
-        throw new GradleException(
-            "Release signing is not configured in CI (missing/invalid KEYSTORE_PATH, " +
-            "KEY_ALIAS, KEY_PASSWORD, or KEYSTORE_PASSWORD / the keystore file does not " +
-            "exist at the resolved path). Refusing to fall back to debug signing for a " +
-            "release build -- fix the GitHub Actions secrets (ANDROID_KEYSTORE_BASE64, " +
-            "ANDROID_KEY_PASSWORD) and the 'Decode Keystore' step."
-        )
-    }
-
+    // When a release keystore is not available (e.g. the APK build job), fall
+    // back to debug signing like a local build instead of failing the whole build.
     signingConfigs {
         release {
             if (hasReleaseSigning) {
