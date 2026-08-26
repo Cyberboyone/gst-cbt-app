@@ -71,7 +71,7 @@ class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
         ChangeNotifierProvider(create: (_) => QuizProvider()),
       ],
       child: Consumer<SettingsProvider>(
-        builder: (context, _, _) {
+        builder: (context, _, __) {
           final isDarkMode = _isDarkByLocalTime();
           AppColors.isDark = isDarkMode;
           return MaterialApp(
