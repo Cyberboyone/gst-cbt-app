@@ -1,4 +1,4 @@
-import 'dart:async';
+﻿import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'config/theme.dart';
@@ -44,6 +44,9 @@ class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
     _themeTimer = Timer.periodic(const Duration(minutes: 1), (_) {
       if (mounted) setState(() {});
     });
+    Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) AdService.instance.handleAppOpened();
+    });
   }
 
   @override
@@ -56,7 +59,7 @@ class _GstCbtAppState extends State<GstCbtApp> with WidgetsBindingObserver {
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.resumed) {
-      AdService.instance.onAppResume();
+      AdService.instance.handleAppOpened();
       if (mounted) setState(() {});
     }
   }
