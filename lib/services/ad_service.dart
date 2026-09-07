@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+﻿import 'package:flutter/foundation.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '../config/constants.dart';
@@ -59,6 +59,33 @@ class AdService {
       debugPrint('[AdService] App resumed - refreshing ad cache');
       _loadAll();
     }
+  }
+
+  /// Minimum time between interstitial impressions shown on app open.
+  static const Duration _interstitialCooldown = Duration(minutes: 3);
+  DateTime? _lastInterstitialShown;
+  bool _showingInterstitial = false;
+
+  /// Called when the app is opened or resumed from the background.
+  /// Preloads ads and, if an interstitial is ready and the cooldown has
+  /// expired, shows it. Cooldown-limited so it never over-shows.
+  void handleAppOpened() {
+    if (_initFailed || _showingInterstitial) return;
+    _loadAll();
+
+    final now = DateTime.now();
+    final cooldownExpired =
+        _lastInterstitialShown == null ||
+        now.difference(_lastInterstitialShown!) >= _interstitialCooldown;
+
+    if (!cooldownExpired) return;
+    if (!_interstitialReady || _interstitialAd == null) return;
+
+    _lastInterstitialShown = now;
+    _showingInterstitial = true;
+    showInterstitial(onComplete: () {
+      _showingInterstitial = false;
+    });
   }
 
   void dispose() {
